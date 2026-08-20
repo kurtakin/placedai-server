@@ -22,6 +22,12 @@ let questionCache = null;
 function loadQuestions() {
   if (questionCache) return questionCache;
 
+  if (!fs.existsSync(INDEX_PATH)) {
+    console.warn('[questions] question_bank_index.json not found — returning empty cache');
+    questionCache = [];
+    return questionCache;
+  }
+
   const index = JSON.parse(fs.readFileSync(INDEX_PATH, 'utf8'));
   const all   = [];
 
@@ -81,11 +87,13 @@ async function questionsRoutes(fastify) {
   });
 
   fastify.get('/sectors', async () => {
+    if (!fs.existsSync(INDEX_PATH)) return { sectors: [] };
     const index = JSON.parse(fs.readFileSync(INDEX_PATH, 'utf8'));
     return { sectors: index.files.map((f) => ({ sector: f.sector, file: f.file, total: f.total })) };
   });
 
   fastify.get('/stats', async () => {
+    if (!fs.existsSync(INDEX_PATH)) return {};
     const index = JSON.parse(fs.readFileSync(INDEX_PATH, 'utf8'));
     return index.metadata;
   });
