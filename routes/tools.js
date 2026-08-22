@@ -12,6 +12,7 @@ const XLSX     = require('xlsx');
 const mammoth  = require('mammoth');
 const { createMessage }              = require('../lib/ai');
 const { sendApplicationNotification, isConfigured } = require('../lib/mailer');
+const { requireAuth }                = require('../middleware/auth');
 
 // ── PDF metin çıkarıcı (pdf-parse yerine — browser API gerektirmez) ───────────
 function extractPDFText(buffer) {
@@ -172,6 +173,7 @@ Rules:
 - requirements: top 5 only`;
 
 async function toolsRoutes(fastify) {
+  fastify.addHook('preHandler', requireAuth);
 
   // ── POST /fetch-job — fetch a job URL and extract structured job data ──────
   fastify.post('/fetch-job', async (request, reply) => {

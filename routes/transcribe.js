@@ -14,8 +14,10 @@
 'use strict';
 
 const { transcribeBase64 } = require('../lib/whisper');
+const { requireAuth }      = require('../middleware/auth');
 
 async function transcribeRoutes(fastify) {
+  fastify.addHook('preHandler', requireAuth);
 
   fastify.post('/', async (request, reply) => {
     const { audio_base64, mime_type = 'audio/webm' } = request.body ?? {};

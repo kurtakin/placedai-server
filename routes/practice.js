@@ -27,6 +27,7 @@
 const { createMessage } = require('../lib/ai');
 const path = require('path');
 const fs   = require('fs');
+const { requireAuth }   = require('../middleware/auth');
 
 function safeParseJSON(raw) {
   if (!raw) return null;
@@ -200,6 +201,7 @@ Return ONLY valid JSON, no markdown:
 }`;
 
 async function practiceRoutes(fastify) {
+  fastify.addHook('preHandler', requireAuth);
 
   // ── POST /analyze-jd — analyze job description, predict interview questions ─
   fastify.post('/analyze-jd', async (request, reply) => {

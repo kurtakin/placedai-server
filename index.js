@@ -23,6 +23,7 @@ const practiceRoutes    = require('./routes/practice');
 const toolsRoutes       = require('./routes/tools');
 const duoRoutes         = require('./routes/duo');
 const feedbackRoutes    = require('./routes/feedback');
+const adminRoutes       = require('./routes/admin');
 
 const PORT = process.env.PORT || 3001;
 
@@ -56,6 +57,7 @@ async function build() {
   await app.register(toolsRoutes,      { prefix: '/api/v1/tools' });
   await app.register(duoRoutes,        { prefix: '/api/v1/duo' });
   await app.register(feedbackRoutes,   { prefix: '/api/v1/feedback' });
+  await app.register(adminRoutes,      { prefix: '/api/v1/admin' });
 
   // ── Health check ──────────────────────────────────────────────────────────
   app.get('/health', async () => ({ status: 'ok', ts: Date.now() }));

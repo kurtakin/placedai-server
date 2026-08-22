@@ -11,6 +11,7 @@
 
 const fs   = require('fs');
 const path = require('path');
+const { requireAuth } = require('../middleware/auth');
 
 const BANK_DIR = path.join(__dirname, '..', '..'); // root of interview-aid-app
 
@@ -69,6 +70,7 @@ function keywordSearch(questions, query, sector, seniority, limit = 5) {
 
 // ── Route ─────────────────────────────────────────────────────────────────────
 async function questionsRoutes(fastify) {
+  fastify.addHook('preHandler', requireAuth);
 
   // Pre-load on startup
   fastify.addHook('onReady', async () => { loadQuestions(); });
