@@ -25,6 +25,39 @@ const duoRoutes         = require('./routes/duo');
 const feedbackRoutes    = require('./routes/feedback');
 const adminRoutes       = require('./routes/admin');
 
+// ── Question bank self-check (used by /health) ────────────────────────────────
+const _fs = require('fs');
+const _path = require('path');
+let _bankInfo = null;
+
+function bankInfo() {
+  if (_bankInfo) return _bankInfo;
+
+  const candidates = [
+    _path.join(__dirname, 'questions'),
+    _path.join(__dirname, '..'),
+  ];
+
+  for (const dir of candidates) {
+    const idx = _path.join(dir, 'question_bank_index.json');
+    if (!_fs.existsSync(idx)) continue;
+    try {
+      const index = JSON.parse(_fs.readFileSync(idx, 'utf8'));
+      let count = 0;
+      for (const entry of index.files) {
+        try {
+          count += JSON.parse(_fs.readFileSync(_path.join(dir, entry.file), 'utf8')).questions.length;
+        } catch (_) { /* skip unreadable file */ }
+      }
+      _bankInfo = { dir, count };
+      return _bankInfo;
+    } catch (_) { /* try next candidate */ }
+  }
+
+  _bankInfo = { dir: null, count: 0 };
+  return _bankInfo;
+}
+
 const PORT = process.env.PORT || 3001;
 
 async function build() {
@@ -60,7 +93,14 @@ async function build() {
   await app.register(adminRoutes,      { prefix: '/api/v1/admin' });
 
   // ── Health check ──────────────────────────────────────────────────────────
-  app.get('/health', async () => ({ status: 'ok', ts: Date.now() }));
+  // `questions` reports how many entries the question bank resolved to, so a
+  // broken/missing bank on the deployed instance is visible without a login.
+  app.get('/health', async () => ({
+    status:    'ok',
+    ts:        Date.now(),
+    bank_dir:  bankInfo().dir,
+    questions: bankInfo().count,
+  }));
 
   return app;
 }
