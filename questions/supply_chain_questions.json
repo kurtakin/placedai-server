@@ -1,0 +1,1301 @@
+{
+  "metadata": {
+    "sector": "Supply Chain & Logistics",
+    "generated": "2026-04-14",
+    "total": 46,
+    "categories": [
+      "behavioral",
+      "technical",
+      "situational",
+      "motivation",
+      "manager"
+    ]
+  },
+  "questions": [
+    {
+      "id": "sc_b_001",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about a time you identified a problem in the inventory process and fixed it.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Describe how you spotted the gap \u2014 data anomaly, cycle count, system vs physical discrepancy",
+          "Explain the root cause you identified",
+          "Walk through your specific action \u2014 process change, system config, team training",
+          "Quantify the result: shrinkage %, accuracy rate, time saved"
+        ],
+        "strong_answer_signals": [
+          "% improvement in accuracy",
+          "reduced write-offs",
+          "new SOP or control introduced"
+        ],
+        "avoid": [
+          "Blaming the team or predecessor",
+          "Vague 'I improved the process' with no numbers"
+        ]
+      }
+    },
+    {
+      "id": "sc_b_002",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Describe a time when a supplier failed to deliver and you had to solve it fast.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Set the stakes \u2014 what would have stopped if you did nothing",
+          "Your immediate triage: what info did you need first",
+          "How you sourced alternatives or negotiated partial delivery",
+          "Communication to internal stakeholders throughout"
+        ],
+        "strong_answer_signals": [
+          "proactive escalation",
+          "alternative sourcing speed",
+          "downstream impact avoided"
+        ],
+        "avoid": [
+          "Waiting passively for the supplier to respond",
+          "Only mentioning the problem, not your actions"
+        ]
+      }
+    },
+    {
+      "id": "sc_b_003",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you had to manage conflicting priorities across multiple stakeholders.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Name the stakeholders and their conflicting needs",
+          "How you assessed which was truly urgent vs important",
+          "Communication approach \u2014 how you set expectations with each party",
+          "Outcome and what you would do differently"
+        ],
+        "strong_answer_signals": [
+          "transparent communication",
+          "prioritization logic explained",
+          "both parties satisfied or informed"
+        ],
+        "avoid": [
+          "Saying you 'just worked harder'",
+          "Leaving one stakeholder in the dark"
+        ]
+      }
+    },
+    {
+      "id": "sc_b_004",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Describe a time you used data to change a decision that was already in motion.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "What decision was being made and by whom",
+          "What data you found that contradicted the current direction",
+          "How you presented it \u2014 to whom, in what format",
+          "Result: was the decision changed? What was the impact?"
+        ],
+        "strong_answer_signals": [
+          "specific data source used",
+          "influence without authority",
+          "measurable business outcome"
+        ],
+        "avoid": [
+          "Generic 'I like data-driven decisions'",
+          "Claiming credit for the whole outcome"
+        ]
+      }
+    },
+    {
+      "id": "sc_b_005",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "Tell me about a time you led a cross-functional project with supply chain at its core.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Scope of project and which functions were involved",
+          "Your specific role \u2014 did you have formal authority or not",
+          "How you aligned different teams with different incentives",
+          "Delivery outcome and lessons learned"
+        ],
+        "strong_answer_signals": [
+          "stakeholder mapping",
+          "governance structure",
+          "on-time delivery",
+          "conflict resolution"
+        ],
+        "avoid": [
+          "Describing a single-team project as cross-functional",
+          "Not mentioning how you handled disagreements"
+        ]
+      }
+    },
+    {
+      "id": "sc_t_001",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Walk me through how you build a demand forecast from scratch for a new product.",
+      "answer_framework": {
+        "structure": "Process walkthrough",
+        "key_points": [
+          "Identify analogous products and use their history as baseline",
+          "Gather market data: launch promotions, distribution plan, seasonal patterns",
+          "Use qualitative input: sales team, marketing, customer commitments",
+          "Set initial safety stock higher to absorb uncertainty, reduce as actuals come in",
+          "Establish a review cadence \u2014 weekly for first 90 days"
+        ],
+        "strong_answer_signals": [
+          "analogue method",
+          "consensus forecasting",
+          "error tracking from day one"
+        ],
+        "avoid": [
+          "'I'd just use historical data' \u2014 there is none for new products",
+          "Not mentioning forecast error measurement"
+        ]
+      }
+    },
+    {
+      "id": "sc_t_002",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "What forecasting methods have you used and when would you choose one over another?",
+      "answer_framework": {
+        "structure": "Compare and contrast",
+        "key_points": [
+          "Moving average: simple, works for stable demand with no trend",
+          "Exponential smoothing: weights recent data more, good for trends",
+          "ARIMA: handles seasonality and autocorrelation, needs clean history",
+          "ML models: high-volume SKUs with rich feature data",
+          "Causal models: when external drivers (promotions, weather) strongly influence demand"
+        ],
+        "strong_answer_signals": [
+          "knows when NOT to use complex models",
+          "mentions data requirements for each",
+          "MAPE or WMAPE tracking"
+        ],
+        "avoid": [
+          "Only naming methods without explaining trade-offs",
+          "Claiming ML is always better"
+        ]
+      }
+    },
+    {
+      "id": "sc_t_003",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How do you calculate reorder point and safety stock? Walk me through your approach.",
+      "answer_framework": {
+        "structure": "Formula + context",
+        "key_points": [
+          "Reorder Point = (Average daily demand \u00d7 Lead time) + Safety stock",
+          "Safety stock = Z-score \u00d7 \u03c3(demand) \u00d7 \u221aLead time \u2014 for service level target",
+          "Factors that change it: lead time variability, demand variability, service level target",
+          "ABC classification to apply different service level targets by SKU importance",
+          "Review cycle: how often do you recalculate as actuals change?"
+        ],
+        "strong_answer_signals": [
+          "mentions service level explicitly",
+          "differentiates A/B/C SKU treatment",
+          "knows Z-score for 95% = 1.65"
+        ],
+        "avoid": [
+          "Giving formula without context",
+          "Not mentioning lead time variability as a key driver"
+        ]
+      }
+    },
+    {
+      "id": "sc_t_004",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What is ABC analysis and how have you used it in inventory management?",
+      "answer_framework": {
+        "structure": "Define + apply",
+        "key_points": [
+          "A items: ~20% of SKUs, ~80% of value \u2014 tight control, frequent counts",
+          "B items: moderate value \u2014 standard controls",
+          "C items: high quantity, low value \u2014 bulk ordering, less frequent review",
+          "Can extend to XYZ for demand variability (X=stable, Z=erratic)",
+          "Practical use: cycle count frequency, service level targets, reorder strategy"
+        ],
+        "strong_answer_signals": [
+          "mentions XYZ extension",
+          "links ABC to actual policy differences",
+          "used it to reduce counting labor"
+        ],
+        "avoid": [
+          "Only defining it without a practical example of how you used it"
+        ]
+      }
+    },
+    {
+      "id": "sc_t_005",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Describe your experience with S&OP. What was your role and what made it effective or ineffective?",
+      "answer_framework": {
+        "structure": "Experience + critique",
+        "key_points": [
+          "S&OP steps: demand review \u2192 supply review \u2192 pre-S&OP \u2192 executive S&OP",
+          "Your specific role: data preparation, facilitation, or decision-making",
+          "What worked: clear ownership, standardized data, pre-reads circulated in advance",
+          "What didn't: siloed inputs, HiPPO decisions overriding data, no action tracking"
+        ],
+        "strong_answer_signals": [
+          "understands the cross-functional nature",
+          "can critique the process not just describe it",
+          "mentions bias in demand inputs"
+        ],
+        "avoid": [
+          "Describing it as just a monthly meeting",
+          "Not mentioning the balance between supply and demand"
+        ]
+      }
+    },
+    {
+      "id": "sc_t_006",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How do you measure forecast accuracy and what do you do when it consistently misses?",
+      "answer_framework": {
+        "structure": "Metrics + response process",
+        "key_points": [
+          "MAPE: mean absolute percentage error \u2014 good for comparison across SKUs",
+          "WMAPE: weighted by revenue \u2014 avoids low-volume SKU noise",
+          "Bias: are you consistently over or under forecasting?",
+          "Root cause analysis: new competitor, promo not captured, seasonality shift",
+          "Corrective actions: model recalibration, adding causal variables, consensus adjustment"
+        ],
+        "strong_answer_signals": [
+          "knows the difference between MAPE and bias",
+          "has a structured review process",
+          "mentions acting on bias separately from error"
+        ],
+        "avoid": [
+          "Only citing MAPE without bias tracking",
+          "No clear action when accuracy is poor"
+        ]
+      }
+    },
+    {
+      "id": "sc_t_007",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "What ERP or planning tools have you worked with? How deeply did you use them?",
+      "answer_framework": {
+        "structure": "Tool inventory + depth of use",
+        "key_points": [
+          "Name specific systems: SAP (MM/PP/APO), Oracle, Microsoft D365, Blue Yonder, Kinaxis, o9",
+          "Distinguish between user vs configurator vs implementer",
+          "Specific modules: MRP run, safety stock planning, transportation management",
+          "Any custom reporting or integration work you contributed to"
+        ],
+        "strong_answer_signals": [
+          "specific module names not just system names",
+          "honest about depth",
+          "mentions pain points and workarounds"
+        ],
+        "avoid": [
+          "Listing tools without explaining how you used them",
+          "Overstating experience \u2014 interviewers probe deeply"
+        ]
+      }
+    },
+    {
+      "id": "sc_t_008",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How would you reduce inventory carrying cost without increasing stockout risk?",
+      "answer_framework": {
+        "structure": "Levers + trade-offs",
+        "key_points": [
+          "Improve forecast accuracy \u2192 reduce safety stock needed",
+          "Reduce lead time variability through supplier collaboration",
+          "Implement vendor-managed inventory (VMI) for C-items",
+          "Review min/max and reorder points \u2014 many are set and forgotten",
+          "Consignment stock for slow-moving high-value items"
+        ],
+        "strong_answer_signals": [
+          "quantifies the carrying cost % they targeted",
+          "differentiates by SKU class",
+          "mentions supplier collaboration not just internal levers"
+        ],
+        "avoid": [
+          "Just saying 'order less' \u2014 misses the service level trade-off",
+          "Not addressing the stockout risk explicitly"
+        ]
+      }
+    },
+    {
+      "id": "sc_t_009",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "Walk me through how you would implement a new demand planning system.",
+      "answer_framework": {
+        "structure": "Implementation phases",
+        "key_points": [
+          "Discovery: current state pain points, data availability, integration landscape",
+          "Requirements: user stories from planners, finance, sales",
+          "Data readiness: cleanliness, history length, master data governance",
+          "Pilot: one product family, one region first \u2014 measure before scaling",
+          "Change management: training, champion network, parallel run period"
+        ],
+        "strong_answer_signals": [
+          "data readiness first \u2014 most implementations fail here",
+          "mentions parallel run",
+          "change management is not an afterthought"
+        ],
+        "avoid": [
+          "Going straight to vendor selection",
+          "Not mentioning data quality as a blocker"
+        ]
+      }
+    },
+    {
+      "id": "sc_t_010",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "What is the bullwhip effect and how have you dealt with it?",
+      "answer_framework": {
+        "structure": "Define + mitigate",
+        "key_points": [
+          "Demand variability amplifies upstream: retailer orders > wholesaler orders > manufacturer orders",
+          "Causes: batch ordering, price fluctuations, shortage gaming, forecast errors",
+          "Mitigations: share POS data directly with suppliers, reduce order batching",
+          "Vendor-managed inventory reduces information distortion",
+          "Shorter replenishment cycles, better visibility across the chain"
+        ],
+        "strong_answer_signals": [
+          "can name causes specifically",
+          "has a practical example of reducing it",
+          "mentions information sharing as the core fix"
+        ],
+        "avoid": [
+          "Only defining it from a textbook",
+          "Not connecting it to practical supply chain tools"
+        ]
+      }
+    },
+    {
+      "id": "sc_s_001",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "You have three high-priority replenishment orders due today and only enough resource to complete two. What do you do?",
+      "answer_framework": {
+        "structure": "Decision framework",
+        "key_points": [
+          "Triage by impact: which stockout causes the most business damage",
+          "Check if any can be partially fulfilled to buy time",
+          "Communicate immediately \u2014 do not let the miss be a surprise",
+          "Escalate if the trade-off is above your authority",
+          "Document the decision and rationale"
+        ],
+        "strong_answer_signals": [
+          "proactive communication before the miss happens",
+          "clear triage logic",
+          "escalation awareness"
+        ],
+        "avoid": [
+          "Just 'working harder to do all three'",
+          "Making the call silently without informing stakeholders"
+        ]
+      }
+    },
+    {
+      "id": "sc_s_002",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Your forecast model has been accurate for two years. Suddenly it's missing badly. What's your process?",
+      "answer_framework": {
+        "structure": "Diagnostic process",
+        "key_points": [
+          "First: is the data input correct? Check for feed errors or master data changes",
+          "Look at bias direction \u2014 consistently over or under?",
+          "Segment by product, region, channel \u2014 where is the miss concentrated?",
+          "External drivers: competitor entry, economic shift, channel mix change",
+          "Short-term: override manually with judgment; long-term: recalibrate model"
+        ],
+        "strong_answer_signals": [
+          "data integrity check first",
+          "segmentation before conclusion",
+          "separates short-term fix from long-term fix"
+        ],
+        "avoid": [
+          "Immediately blaming the model",
+          "Making a global model change based on a few data points"
+        ]
+      }
+    },
+    {
+      "id": "sc_s_003",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Sales is pushing you to increase forecast by 30% for next quarter to support a key customer deal. Finance says hold the line. What do you do?",
+      "answer_framework": {
+        "structure": "Mediation + data-driven decision",
+        "key_points": [
+          "Ask sales for the specifics: committed PO or optimistic projection?",
+          "Model two scenarios: base case and upside case \u2014 show the inventory risk of each",
+          "Present the financial cost of being wrong in both directions",
+          "Recommend a consensus position with a trigger point to act on the upside",
+          "Get alignment in writing before committing supply"
+        ],
+        "strong_answer_signals": [
+          "scenario modeling not just one answer",
+          "gets specifics from sales before deciding",
+          "written consensus"
+        ],
+        "avoid": [
+          "Just picking one side",
+          "Agreeing without understanding the source of the 30%"
+        ]
+      }
+    },
+    {
+      "id": "sc_s_004",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You discover a warehouse discrepancy: the system shows 500 units but a physical count found 320. What are your next steps?",
+      "answer_framework": {
+        "structure": "Investigation + resolution",
+        "key_points": [
+          "Recount first \u2014 rule out counting error",
+          "Check recent transactions: receipts, shipments, transfers, adjustments",
+          "Look for timing issues: in-transit not yet received, goods in quarantine",
+          "If confirmed: write-off or adjustment with approval, update system",
+          "Root cause: is this a one-time event or a systemic process gap?"
+        ],
+        "strong_answer_signals": [
+          "recount before acting",
+          "transaction history audit",
+          "asks why not just fixes the number"
+        ],
+        "avoid": [
+          "Immediately adjusting the system without investigating",
+          "Not flagging to management"
+        ]
+      }
+    },
+    {
+      "id": "sc_s_005",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "You're asked to cut inventory by 20% in 90 days. How do you approach this without damaging service levels?",
+      "answer_framework": {
+        "structure": "Structured reduction plan",
+        "key_points": [
+          "Baseline analysis: where does the current inventory sit? Which SKUs are slow/excess?",
+          "Quick wins: liquidate obsolete stock, cancel open POs where possible",
+          "Demand signal review: are min/max parameters still correct?",
+          "Supplier negotiations: reduce order quantities, increase frequency",
+          "Monitor service level weekly \u2014 stop reduction if fill rate degrades"
+        ],
+        "strong_answer_signals": [
+          "starts with data not with targets",
+          "protects A-items first",
+          "has a monitoring mechanism with a stop rule"
+        ],
+        "avoid": [
+          "Cutting uniformly across all SKUs",
+          "Not tracking service level impact during the process"
+        ]
+      }
+    },
+    {
+      "id": "sc_m_001",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Why do you want to move from operations into demand planning?",
+      "answer_framework": {
+        "structure": "Career narrative",
+        "key_points": [
+          "Bridge what you've done to what you want: operations gave you ground-level insight into supply variability",
+          "Express what pulls you toward planning: the analytical, strategic, cross-functional nature",
+          "Name a specific moment that crystallized the transition for you",
+          "Show preparation: certifications, tools learned, courses taken"
+        ],
+        "strong_answer_signals": [
+          "specific moment or insight, not vague desire",
+          "shows preparation not just ambition",
+          "connects past experience as an asset not a liability"
+        ],
+        "avoid": [
+          "'I want a desk job'",
+          "Implying operations was just a stepping stone you tolerated"
+        ]
+      }
+    },
+    {
+      "id": "sc_m_002",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "What does good supply chain performance look like to you?",
+      "answer_framework": {
+        "structure": "Philosophy + metrics",
+        "key_points": [
+          "Balance: service level (fill rate, OTIF) alongside cost (inventory turns, carrying cost)",
+          "Visibility: knowing what's happening before it becomes a problem",
+          "Resilience: can the chain absorb disruption without catastrophic failure",
+          "Collaboration: internal alignment between sales, ops, finance \u2014 not siloed optimization"
+        ],
+        "strong_answer_signals": [
+          "mentions both service AND cost \u2014 not just one",
+          "talks about resilience not just efficiency",
+          "cross-functional framing"
+        ],
+        "avoid": [
+          "Only mentioning cost reduction",
+          "Abstract answer with no specific metrics"
+        ]
+      }
+    },
+    {
+      "id": "sc_m_003",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "What's the most complex supply chain problem you've worked on, and why did it matter?",
+      "answer_framework": {
+        "structure": "Showcase story",
+        "key_points": [
+          "Choose a problem with real stakes \u2014 revenue, service, or cost impact",
+          "Explain why it was complex: multiple variables, stakeholders, or unknowns",
+          "Walk through your approach \u2014 not just what you did but how you thought",
+          "Quantify the outcome and reflect on what you'd do differently"
+        ],
+        "strong_answer_signals": [
+          "self-reflection at the end",
+          "honest about constraints",
+          "shows systems thinking not just task execution"
+        ],
+        "avoid": [
+          "Choosing a simple problem and over-dramatizing it",
+          "Not quantifying the impact"
+        ]
+      }
+    },
+    {
+      "id": "sc_mgr_001",
+      "category": "manager",
+      "seniority": [
+        "manager"
+      ],
+      "text": "How do you build a demand planning team's capability when you inherit planners with varying skill levels?",
+      "answer_framework": {
+        "structure": "Team development approach",
+        "key_points": [
+          "Start with a skills assessment: technical (tools, stats), process, and judgment",
+          "Pair stronger planners with developing ones on rotations or shadow reviews",
+          "Create a standard operating model: templates, review cadence, escalation rules",
+          "Invest in training: APICS, IBF certification, internal workshops",
+          "Measure and celebrate accuracy improvements to build culture of ownership"
+        ],
+        "strong_answer_signals": [
+          "assessment before action",
+          "peer learning not just top-down training",
+          "ties development to business outcomes"
+        ],
+        "avoid": [
+          "Replacing the team immediately",
+          "Only sending people to courses without structural change"
+        ]
+      }
+    },
+    {
+      "id": "sc_mgr_002",
+      "category": "manager",
+      "seniority": [
+        "manager"
+      ],
+      "text": "How do you get executive buy-in for a supply chain technology investment?",
+      "answer_framework": {
+        "structure": "Business case framing",
+        "key_points": [
+          "Quantify the current cost: excess inventory, expediting, stockouts, planner time",
+          "Model the ROI: conservative, base, and upside scenario",
+          "Address risk: implementation risk, change management, data readiness",
+          "Find an internal champion in finance or operations",
+          "Propose a pilot first \u2014 reduces commitment anxiety"
+        ],
+        "strong_answer_signals": [
+          "ROI in $ not just % improvement",
+          "acknowledges risk proactively",
+          "pilot strategy to reduce perceived risk"
+        ],
+        "avoid": [
+          "Leading with features of the technology",
+          "Not having a finance-aligned business case"
+        ]
+      }
+    },
+    {
+      "id": "sc_mgr_003",
+      "category": "manager",
+      "seniority": [
+        "manager"
+      ],
+      "text": "Describe how you've managed the tension between sales optimism and supply chain realism in forecasting.",
+      "answer_framework": {
+        "structure": "Governance + relationship",
+        "key_points": [
+          "Establish a structured consensus process \u2014 not a negotiation, a data review",
+          "Show sales the cost of over-forecasting: write-offs, working capital tied up",
+          "Create shared accountability: if sales commits to a number, they own it",
+          "Track and publish forecast accuracy by input source \u2014 transparency reduces gaming",
+          "Build the relationship outside the forecast meeting \u2014 trust reduces politics"
+        ],
+        "strong_answer_signals": [
+          "shared accountability mechanism",
+          "uses data to depoliticize the conversation",
+          "relationship-building outside the process"
+        ],
+        "avoid": [
+          "Framing it as supply chain vs sales",
+          "Letting sales override without consequence or tracking"
+        ]
+      }
+    },
+    {
+      "id": "sc_b_006",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about a time you improved a KPI that had been stuck for a long time.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Name the KPI and why it had been difficult to move",
+          "Describe your diagnostic approach \u2014 what had been tried before",
+          "Explain your specific intervention and why it was different",
+          "Quantify the improvement and how long it held"
+        ],
+        "strong_answer_signals": [
+          "understands why previous attempts failed",
+          "data-driven diagnosis",
+          "sustainable improvement not a one-time fix"
+        ],
+        "avoid": [
+          "Vague 'I improved efficiency'",
+          "Not explaining why it had been stuck"
+        ]
+      }
+    },
+    {
+      "id": "sc_b_007",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Describe a time you had to learn a new system or tool quickly under pressure.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "What was the system and the deadline",
+          "Your learning approach: documentation, peer help, trial and error",
+          "How you ensured accuracy while still learning",
+          "What you'd do differently with more time"
+        ],
+        "strong_answer_signals": [
+          "proactive self-direction",
+          "asked for help strategically",
+          "delivered despite the learning curve"
+        ],
+        "avoid": [
+          "Implying you struggled so much the work suffered",
+          "Not showing any initiative"
+        ]
+      }
+    },
+    {
+      "id": "sc_b_008",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Tell me about a time you had to push back on a request from a senior leader.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "What was being asked and why it was problematic",
+          "How you prepared your case \u2014 data, alternatives, risk framing",
+          "How you delivered the pushback \u2014 timing, tone, setting",
+          "The outcome and what you learned about managing upward"
+        ],
+        "strong_answer_signals": [
+          "respectful but direct",
+          "came with alternatives not just objections",
+          "maintained the relationship"
+        ],
+        "avoid": [
+          "Framing it as 'I was right, they were wrong'",
+          "Never having pushed back \u2014 raises a red flag"
+        ]
+      }
+    },
+    {
+      "id": "sc_b_009",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Give an example of when you caught an error before it became a costly problem.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "What type of error: data entry, system, process, forecast",
+          "How you caught it \u2014 routine check, anomaly detection, gut instinct confirmed by data",
+          "What would have happened if uncaught \u2014 quantify the risk",
+          "What process change you put in place to prevent recurrence"
+        ],
+        "strong_answer_signals": [
+          "proactive detection not reactive",
+          "quantifies the averted cost",
+          "built a preventive control"
+        ],
+        "avoid": [
+          "Trivial errors that had minimal impact",
+          "No follow-up prevention step"
+        ]
+      }
+    },
+    {
+      "id": "sc_b_010",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Describe a time you worked with a difficult colleague to get a supply chain project across the line.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Describe the difficulty specifically \u2014 different priorities, communication style, or conflict of interest",
+          "How you adjusted your approach to work with them",
+          "What compromises or trade-offs were made",
+          "Outcome and whether the relationship improved"
+        ],
+        "strong_answer_signals": [
+          "empathy and adaptability",
+          "found common ground",
+          "project delivered despite friction"
+        ],
+        "avoid": [
+          "Making the colleague sound incompetent",
+          "Claiming there was no difficulty"
+        ]
+      }
+    },
+    {
+      "id": "sc_t_011",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "What is OTIF and how do you improve it when it's consistently below target?",
+      "answer_framework": {
+        "structure": "Define + improve",
+        "key_points": [
+          "OTIF = On Time In Full \u2014 % of orders delivered complete and on schedule",
+          "Decompose: is the issue On Time, In Full, or both? They have different root causes",
+          "On Time failures: lead time miscalculation, carrier issues, production delays",
+          "In Full failures: inventory shortage, picking errors, supplier partial shipments",
+          "Fix cycle: measure by SKU, lane, and carrier \u2014 address the biggest buckets first"
+        ],
+        "strong_answer_signals": [
+          "separates OT from IF root causes",
+          "measures at granular level not just total",
+          "tracks carrier and supplier performance separately"
+        ],
+        "avoid": [
+          "Treating OTIF as one undifferentiated metric",
+          "Focusing only on internal fixes when carrier or supplier is the issue"
+        ]
+      }
+    },
+    {
+      "id": "sc_t_012",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Explain the difference between MRP and MPS. When would you use each?",
+      "answer_framework": {
+        "structure": "Compare",
+        "key_points": [
+          "MPS (Master Production Schedule): what finished goods to produce and when \u2014 driven by demand forecast and orders",
+          "MRP (Material Requirements Planning): what components and raw materials are needed to support the MPS",
+          "MPS is the input; MRP is the explosion downstream",
+          "MPS is used by planning and sales; MRP is used by procurement and production",
+          "Both feed from the demand plan but operate at different levels of the BOM"
+        ],
+        "strong_answer_signals": [
+          "understands the hierarchy",
+          "can explain the BOM explosion logic",
+          "ties both back to demand plan"
+        ],
+        "avoid": [
+          "Confusing them or treating them as interchangeable"
+        ]
+      }
+    },
+    {
+      "id": "sc_t_013",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How do you handle seasonality in your demand forecasting?",
+      "answer_framework": {
+        "structure": "Method + application",
+        "key_points": [
+          "Seasonal index: calculate ratio of period demand to average demand across the year",
+          "Apply the index to the baseline trend to get the seasonal forecast",
+          "Use at least 2-3 years of history to smooth out anomalous seasons",
+          "Adjust for known changes: new store openings, discontinued promotions",
+          "Flag and quarantine COVID or other extreme outlier years before calculating indices"
+        ],
+        "strong_answer_signals": [
+          "knows how to calculate the index",
+          "excludes outlier years explicitly",
+          "adjusts for structural changes not just pattern-matching"
+        ],
+        "avoid": [
+          "Just saying 'I use the same period last year'",
+          "Not accounting for year-over-year structural changes"
+        ]
+      }
+    },
+    {
+      "id": "sc_t_014",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "What is Days on Hand (DOH) and how do you use it to manage inventory health?",
+      "answer_framework": {
+        "structure": "Define + use",
+        "key_points": [
+          "DOH = (Inventory on Hand / Average Daily Demand)",
+          "Tells you how many days of supply you're holding at current consumption rate",
+          "Use to identify excess: if DOH >> your target cycle stock + safety stock",
+          "Segment: track separately by SKU class, not just in aggregate",
+          "Set targets by category: fast movers vs slow movers require different DOH targets"
+        ],
+        "strong_answer_signals": [
+          "links DOH to carrying cost explicitly",
+          "sets different targets by SKU class",
+          "uses it proactively not just for reporting"
+        ],
+        "avoid": [
+          "Treating a single DOH target as right for all SKUs"
+        ]
+      }
+    },
+    {
+      "id": "sc_t_015",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "How do you handle slow-moving and obsolete (SLOB) inventory?",
+      "answer_framework": {
+        "structure": "Identify + disposition",
+        "key_points": [
+          "Definition: slow-moving = below X turns/year; obsolete = end-of-life or superseded",
+          "Identification: run regular aging reports \u2014 flag items with no movement > 90/180 days",
+          "Disposition options: liquidation, return to supplier, donation, redeployment, write-off",
+          "Prevention: better new product launch forecasting, min order quantity negotiation, shorter replenishment cycles",
+          "Finance partnership: provision early to avoid year-end surprises"
+        ],
+        "strong_answer_signals": [
+          "has a clear definition threshold",
+          "covers multiple disposition options",
+          "mentions prevention not just reactive management"
+        ],
+        "avoid": [
+          "Only talking about writing it off",
+          "No mention of prevention"
+        ]
+      }
+    },
+    {
+      "id": "sc_t_016",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "Walk me through how you would design a Sales & Operations Planning process from scratch.",
+      "answer_framework": {
+        "structure": "Design blueprint",
+        "key_points": [
+          "Step 1: Data review \u2014 statistical baseline, actuals vs forecast, inventory position",
+          "Step 2: Demand review \u2014 sales and marketing input, assumptions documented",
+          "Step 3: Supply review \u2014 capacity, supplier constraints, production plan",
+          "Step 4: Pre-S&OP \u2014 align finance, resolve gaps, escalate unresolved issues",
+          "Step 5: Executive S&OP \u2014 decision-making, investment calls, strategic alignment",
+          "Key success factors: pre-reads sent 48h in advance, decisions logged, action tracker maintained"
+        ],
+        "strong_answer_signals": [
+          "knows all five steps",
+          "emphasizes documentation and action tracking",
+          "mentions executive buy-in as critical"
+        ],
+        "avoid": [
+          "Describing it as just a monthly meeting",
+          "Not mentioning finance integration"
+        ]
+      }
+    },
+    {
+      "id": "sc_t_017",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How do you manage a multi-echelon inventory network?",
+      "answer_framework": {
+        "structure": "Structure + optimization",
+        "key_points": [
+          "Multi-echelon: central DC \u2192 regional DC \u2192 store/customer \u2014 each level holds stock",
+          "Challenge: optimizing total system inventory, not just each node in isolation",
+          "Key principle: safety stock should be held at the right echelon based on lead time and variability",
+          "Techniques: inventory positioning analysis, postponement strategy, lateral transshipment",
+          "Tools: multi-echelon optimization software (e.g., Llamasoft, ToolsGroup, Blue Yonder)"
+        ],
+        "strong_answer_signals": [
+          "understands system-wide optimization vs node-level",
+          "mentions postponement",
+          "knows specific tools"
+        ],
+        "avoid": [
+          "Treating each node as independent",
+          "Not mentioning the trade-off between holding cost and service level at each echelon"
+        ]
+      }
+    },
+    {
+      "id": "sc_s_006",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "A key raw material is facing a global shortage. You have 6 weeks of supply. What do you do right now?",
+      "answer_framework": {
+        "structure": "Crisis response plan",
+        "key_points": [
+          "Immediate: lock in any available supply \u2014 buy forward if economics allow",
+          "Triage demand: which customers or products are highest priority?",
+          "Explore substitutes: engineering or procurement review of alternative materials",
+          "Communicate: sales, operations, and leadership need to know now \u2014 not when stock runs out",
+          "Build a daily tracker: supply remaining, consumption rate, projected stockout date"
+        ],
+        "strong_answer_signals": [
+          "acts immediately not after more analysis",
+          "involves cross-functional teams fast",
+          "daily tracking cadence",
+          "communicates proactively"
+        ],
+        "avoid": [
+          "Waiting for the situation to clarify before acting",
+          "Only focusing on procurement without rationing demand"
+        ]
+      }
+    },
+    {
+      "id": "sc_s_007",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Your top customer suddenly doubles their order with two weeks notice. How do you respond?",
+      "answer_framework": {
+        "structure": "Feasibility + response",
+        "key_points": [
+          "First: check actual available inventory and open POs",
+          "Can you expedite inbound supply? At what cost?",
+          "Check production or warehouse capacity constraints",
+          "Commercial check: is this firm demand or a hedge? Get commitment in writing",
+          "If you can't fulfill fully: partial shipment plan with clear timeline, communicated proactively"
+        ],
+        "strong_answer_signals": [
+          "fact-checks before promising",
+          "gets demand confirmation in writing",
+          "proactive partial fulfillment plan if constrained",
+          "involves commercial team early"
+        ],
+        "avoid": [
+          "Saying yes before checking feasibility",
+          "Surprising the customer with a shortfall at delivery"
+        ]
+      }
+    },
+    {
+      "id": "sc_s_008",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "Finance wants you to hit an inventory reduction target that you believe will cause stockouts in Q4, your peak season. How do you handle it?",
+      "answer_framework": {
+        "structure": "Evidence-based escalation",
+        "key_points": [
+          "Build the model: project service level at the proposed inventory level using historical demand variability",
+          "Quantify the revenue at risk from stockouts \u2014 in dollars finance understands",
+          "Present two scenarios: hit the target and risk X in lost sales vs hold inventory and carry Y in cost",
+          "Propose an alternative: reduce non-peak items, not peak-season critical SKUs",
+          "Escalate with a recommendation, not just a problem"
+        ],
+        "strong_answer_signals": [
+          "quantifies stockout risk in revenue terms",
+          "offers a middle-ground alternative",
+          "escalates with data not just instinct"
+        ],
+        "avoid": [
+          "Just complaining that the target is unrealistic",
+          "Not quantifying the risk"
+        ]
+      }
+    },
+    {
+      "id": "sc_s_009",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "You join a new company and find the demand planning process is entirely manual in Excel. What's your 90-day plan?",
+      "answer_framework": {
+        "structure": "90-day roadmap",
+        "key_points": [
+          "Days 1-30: listen and learn \u2014 understand why it's manual, what pain points exist, where the data lives",
+          "Days 31-60: quick wins \u2014 standardize the Excel model, document the process, fix obvious data quality issues",
+          "Days 60-90: build the business case for a planning tool \u2014 quantify planner time, error rate, missed signals",
+          "Don't implement a system in 90 days \u2014 earn trust first, fix the data, then automate"
+        ],
+        "strong_answer_signals": [
+          "diagnosis before action",
+          "builds credibility before proposing change",
+          "data quality before system change"
+        ],
+        "avoid": [
+          "Announcing a new system on week two",
+          "Dismissing the existing process before understanding it"
+        ]
+      }
+    },
+    {
+      "id": "sc_m_004",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "What do you think is the biggest challenge in supply chain planning today?",
+      "answer_framework": {
+        "structure": "Informed perspective",
+        "key_points": [
+          "Demand volatility: post-pandemic demand patterns are harder to model",
+          "Supply chain visibility: most companies still can't see past tier-1 suppliers",
+          "Data quality: planning tools are only as good as the master data feeding them",
+          "Talent: demand planning is still under-valued and under-staffed vs its business impact",
+          "Technology adoption: gap between what tools can do and what companies actually use"
+        ],
+        "strong_answer_signals": [
+          "has a genuine point of view not a textbook answer",
+          "ties the challenge to their own experience",
+          "shows awareness of industry trends"
+        ],
+        "avoid": [
+          "'AI and automation' as a generic answer without substance",
+          "Not connecting the challenge to practical implications"
+        ]
+      }
+    },
+    {
+      "id": "sc_m_005",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "What certifications or learning have you done to develop in supply chain?",
+      "answer_framework": {
+        "structure": "Development story",
+        "key_points": [
+          "Name certifications: CPIM (ASCM), CSCP, CLTD, IBF CPF, PMP if project-heavy",
+          "Self-directed learning: books (Bowersox, Hopp & Spearman), courses, podcasts",
+          "On-the-job stretch: took on a project outside your scope to learn something new",
+          "Communities: CSCMP, ISM, local supply chain groups"
+        ],
+        "strong_answer_signals": [
+          "shows self-investment not just employer-funded training",
+          "connects learning to specific skill gaps",
+          "ongoing not just a historical list"
+        ],
+        "avoid": [
+          "Only listing employer-mandated training",
+          "No evidence of self-directed development"
+        ]
+      }
+    },
+    {
+      "id": "sc_mgr_004",
+      "category": "manager",
+      "seniority": [
+        "manager"
+      ],
+      "text": "How do you measure and improve your demand planning team's performance?",
+      "answer_framework": {
+        "structure": "Metrics + development",
+        "key_points": [
+          "Team KPIs: WMAPE by planner, forecast bias, on-time completion of planning cycle",
+          "Individual development: skill matrix updated quarterly, training tied to gaps",
+          "Review cadence: weekly accuracy review, monthly retrospective on biggest misses",
+          "Recognition: celebrate when a difficult forecast was accurate \u2014 not just when it was easy",
+          "Accountability: if a planner's number is consistently off, diagnose together before judging"
+        ],
+        "strong_answer_signals": [
+          "distinguishes team metrics from individual metrics",
+          "development is systematic not ad hoc",
+          "accountability with fairness"
+        ],
+        "avoid": [
+          "Only measuring accuracy without measuring effort or process quality",
+          "No development component"
+        ]
+      }
+    },
+    {
+      "id": "sc_mgr_005",
+      "category": "manager",
+      "seniority": [
+        "manager"
+      ],
+      "text": "Describe how you've driven adoption of a new planning process or tool across a resistant team.",
+      "answer_framework": {
+        "structure": "Change management",
+        "key_points": [
+          "Understand the resistance first: fear of job loss, distrust of the tool, extra workload perception",
+          "Find early adopters \u2014 get them results first, let them be advocates",
+          "Show the 'what's in it for me': less firefighting, more strategic work, better data",
+          "Train in small groups with real data, not generic demos",
+          "Track adoption metrics and celebrate progress publicly"
+        ],
+        "strong_answer_signals": [
+          "diagnoses resistance before responding to it",
+          "uses peer influence not just authority",
+          "measures adoption"
+        ],
+        "avoid": [
+          "Mandating use without addressing the why",
+          "One big training event and hoping for adoption"
+        ]
+      }
+    }
+  ]
+}

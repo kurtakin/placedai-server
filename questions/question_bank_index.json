@@ -1,0 +1,121 @@
+{
+  "metadata": {
+    "description": "Master index for the Interview Aid App question bank",
+    "generated": "2026-04-19",
+    "grand_total": 484,
+    "total_files": 10,
+    "schema_version": "1.0"
+  },
+  "files": [
+    {
+      "file": "supply_chain_questions.json",
+      "sector": "Supply Chain & Logistics",
+      "total": 46,
+      "categories": ["behavioral","manager","motivation","situational","technical"],
+      "seniority_levels": ["entry","manager","mid","senior"]
+    },
+    {
+      "file": "finance_questions.json",
+      "sector": "Finance",
+      "total": 46,
+      "categories": ["behavioral","manager","motivation","situational","technical"],
+      "seniority_levels": ["entry","manager","mid","senior"]
+    },
+    {
+      "file": "operations_questions.json",
+      "sector": "Operations & Manufacturing",
+      "total": 46,
+      "categories": ["behavioral","manager","motivation","situational","technical"],
+      "seniority_levels": ["entry","manager","mid","senior"]
+    },
+    {
+      "file": "universal_behavioral_questions.json",
+      "sector": "Universal Behavioral",
+      "total": 108,
+      "categories": ["behavioral"],
+      "seniority_levels": ["entry","manager","mid","senior"]
+    },
+    {
+      "file": "technology_questions.json",
+      "sector": "Technology",
+      "total": 40,
+      "categories": ["behavioral","manager","motivation","situational","technical"],
+      "seniority_levels": ["entry","manager","mid","senior"]
+    },
+    {
+      "file": "data_analyst_questions.json",
+      "sector": "Data Analyst",
+      "total": 40,
+      "categories": ["behavioral","manager","motivation","situational","technical"],
+      "seniority_levels": ["entry","manager","mid","senior"]
+    },
+    {
+      "file": "logistics_questions.json",
+      "sector": "Logistics & Transportation",
+      "total": 40,
+      "categories": ["behavioral","manager","motivation","situational","technical"],
+      "seniority_levels": ["entry","manager","mid","senior"]
+    },
+    {
+      "file": "inventory_planner_questions.json",
+      "sector": "Inventory Planner",
+      "total": 38,
+      "categories": ["behavioral","manager","motivation","situational","technical"],
+      "seniority_levels": ["entry","manager","mid","senior"]
+    },
+    {
+      "file": "inventory_analyst_questions.json",
+      "sector": "Inventory Analyst",
+      "total": 38,
+      "categories": ["behavioral","manager","motivation","situational","technical"],
+      "seniority_levels": ["entry","manager","mid","senior"]
+    },
+    {
+      "file": "inventory_control_analyst_questions.json",
+      "sector": "Inventory Control Analyst",
+      "total": 42,
+      "categories": ["behavioral","manager","motivation","situational","technical"],
+      "seniority_levels": ["entry","manager","mid","senior"]
+    }
+  ],
+  "sector_tags": {
+    "supply_chain":         "supply_chain_questions.json",
+    "finance":              "finance_questions.json",
+    "operations":           "operations_questions.json",
+    "universal_behavioral": "universal_behavioral_questions.json",
+    "technology":           "technology_questions.json",
+    "data_analyst":         "data_analyst_questions.json",
+    "logistics":            "logistics_questions.json",
+    "inventory_planner":    "inventory_planner_questions.json",
+    "inventory_analyst":         "inventory_analyst_questions.json",
+    "inventory_control_analyst": "inventory_control_analyst_questions.json"
+  },
+  "category_index": {
+    "behavioral": [
+      "supply_chain_questions.json","finance_questions.json","operations_questions.json",
+      "universal_behavioral_questions.json","technology_questions.json",
+      "data_analyst_questions.json","logistics_questions.json",
+      "inventory_planner_questions.json","inventory_analyst_questions.json","inventory_control_analyst_questions.json"
+    ],
+    "technical": [
+      "supply_chain_questions.json","finance_questions.json","operations_questions.json",
+      "technology_questions.json","data_analyst_questions.json","logistics_questions.json",
+      "inventory_planner_questions.json","inventory_analyst_questions.json","inventory_control_analyst_questions.json"
+    ],
+    "situational": [
+      "supply_chain_questions.json","finance_questions.json","operations_questions.json",
+      "technology_questions.json","data_analyst_questions.json","logistics_questions.json",
+      "inventory_planner_questions.json","inventory_analyst_questions.json","inventory_control_analyst_questions.json"
+    ],
+    "motivation": [
+      "supply_chain_questions.json","finance_questions.json","operations_questions.json",
+      "technology_questions.json","data_analyst_questions.json","logistics_questions.json",
+      "inventory_planner_questions.json","inventory_analyst_questions.json","inventory_control_analyst_questions.json"
+    ],
+    "manager": [
+      "supply_chain_questions.json","finance_questions.json","operations_questions.json",
+      "technology_questions.json","data_analyst_questions.json","logistics_questions.json",
+      "inventory_planner_questions.json","inventory_analyst_questions.json","inventory_control_analyst_questions.json"
+    ]
+  }
+}

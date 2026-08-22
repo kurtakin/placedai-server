@@ -13,7 +13,12 @@ const fs   = require('fs');
 const path = require('path');
 const { requireAuth } = require('../middleware/auth');
 
-const BANK_DIR = path.join(__dirname, '..', '..'); // root of interview-aid-app
+// Question bank location.
+// Deployed (Railway): the bank ships inside the server folder → server/questions/
+// Local (Electron):   the bank lives in the project root → ../..
+const BANK_DIR = fs.existsSync(path.join(__dirname, '..', 'questions', 'question_bank_index.json'))
+  ? path.join(__dirname, '..', 'questions')
+  : path.join(__dirname, '..', '..');
 
 // ── Load and cache all question files on startup ──────────────────────────────
 const INDEX_PATH = path.join(BANK_DIR, 'question_bank_index.json');

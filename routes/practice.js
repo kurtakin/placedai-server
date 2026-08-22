@@ -38,7 +38,12 @@ function safeParseJSON(raw) {
   if (start !== -1 && end > start) { try { return JSON.parse(raw.slice(start, end + 1)); } catch {} }
   return null;
 }
-const BANK_DIR = path.join(__dirname, '..', '..');
+// Question bank location.
+// Deployed (Railway): the bank ships inside the server folder → server/questions/
+// Local (Electron):   the bank lives in the project root → ../..
+const BANK_DIR = fs.existsSync(path.join(__dirname, '..', 'questions', 'question_bank_index.json'))
+  ? path.join(__dirname, '..', 'questions')
+  : path.join(__dirname, '..', '..');
 
 // ── Load question by ID across all sector files ───────────────────────────────
 let _questionMap = null;
@@ -46,18 +51,34 @@ let _questionMap = null;
 function getQuestionMap() {
   if (_questionMap) return _questionMap;
 
-  const indexPath = path.join(BANK_DIR, 'question_bank_index.json');
-  const index     = JSON.parse(fs.readFileSync(indexPath, 'utf8'));
-
   _questionMap = new Map();
 
+  const indexPath = path.join(BANK_DIR, 'question_bank_index.json');
+  if (!fs.existsSync(indexPath)) {
+    console.warn('[practice] question_bank_index.json not found at', indexPath, '— question bank is empty');
+    return _questionMap;
+  }
+
+  let index;
+  try {
+    index = JSON.parse(fs.readFileSync(indexPath, 'utf8'));
+  } catch (err) {
+    console.warn('[practice] Could not parse question_bank_index.json:', err.message);
+    return _questionMap;
+  }
+
   for (const entry of index.files) {
-    const data = JSON.parse(fs.readFileSync(path.join(BANK_DIR, entry.file), 'utf8'));
-    for (const q of data.questions) {
-      _questionMap.set(q.id, { ...q, _sector: entry.sector, _file: entry.file });
+    try {
+      const data = JSON.parse(fs.readFileSync(path.join(BANK_DIR, entry.file), 'utf8'));
+      for (const q of data.questions) {
+        _questionMap.set(q.id, { ...q, _sector: entry.sector, _file: entry.file });
+      }
+    } catch (err) {
+      console.warn(`[practice] Could not load ${entry.file}:`, err.message);
     }
   }
 
+  console.log(`[practice] Loaded ${_questionMap.size} questions from ${BANK_DIR}`);
   return _questionMap;
 }
 

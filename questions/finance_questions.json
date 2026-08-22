@@ -1,0 +1,1252 @@
+{
+  "metadata": {
+    "sector": "Finance",
+    "generated": "2026-04-14",
+    "total": 46,
+    "categories": ["behavioral", "technical", "situational", "motivation", "manager"]
+  },
+  "questions": [
+    {
+      "id": "fin_b_001",
+      "category": "behavioral",
+      "seniority": ["entry", "mid", "senior"],
+      "text": "Tell me about a time you identified a financial discrepancy and resolved it.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Describe the discrepancy specifically: amount, account, or process area (e.g., 'reconciliation variance of $150K in accounts payable')",
+          "Walk through your investigation method: what tools, data sources, or people you engaged; show systematic thinking",
+          "Explain the root cause clearly: was it a data entry error, system mapping issue, timing mismatch, or process breakdown?",
+          "Share the resolution and impact: how you corrected it, what controls you implemented, and what you learned for future prevention"
+        ],
+        "strong_answer_signals": [
+          "Specific dollar amounts and timelines demonstrating ownership of large balances",
+          "Evidence of cross-functional collaboration or persistence in digging through layers of data",
+          "Implementation of a preventive control or process change that reduced recurrence risk",
+          "Clear ownership: 'I discovered' not 'we found' — shows personal contribution"
+        ],
+        "avoid": [
+          "Vague discrepancies ('money wasn't adding up') without specifics",
+          "Blaming others or the system without owning investigation responsibility",
+          "Resolving it passively by asking a manager to fix it rather than driving the fix yourself",
+          "Failure to articulate what you learned or how it improved processes going forward"
+        ]
+      }
+    },
+    {
+      "id": "fin_b_002",
+      "category": "behavioral",
+      "seniority": ["mid", "senior"],
+      "text": "Describe a time when you had to present complex financial data to non-financial stakeholders.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Set the context: who the audience was (sales, product, ops leaders) and what financial message was critical",
+          "Explain your simplification strategy: which metrics you led with, what analogies or visuals you used, what jargon you avoided",
+          "Share a specific visual or framing example: 'I showed revenue per customer as a simple trend line rather than 15 P&L line items'",
+          "Demonstrate impact: did they make the decision you were supporting? Did they request follow-up analysis? Did engagement improve?"
+        ],
+        "strong_answer_signals": [
+          "Mention of specific visual aids: dashboard, one-pager, waterfall chart, or business metaphor",
+          "Evidence of tailoring: different messages for different audiences (e.g., sales cares about margin, ops cares about COGS)",
+          "Quantified business outcome: 'This led to a $5M cost reallocation decision' or 'Enabled faster approvals'",
+          "Feedback from the audience showing understanding: 'They had no follow-up questions' or 'They referenced it in later decisions'"
+        ],
+        "avoid": [
+          "Dumping raw financial statements or complex P&L architectures without translation",
+          "Assuming non-finance audiences care about accounting technicalities",
+          "No evidence of testing comprehension or adjusting your approach mid-presentation",
+          "Leaving the story at 'I presented' without showing how it influenced their thinking"
+        ]
+      }
+    },
+    {
+      "id": "fin_b_003",
+      "category": "behavioral",
+      "seniority": ["entry", "mid", "senior"],
+      "text": "Tell me about a time you worked under tight month-end or quarter-end close pressure.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Describe the stakes and timeline pressure: days to close, concurrent priorities, complexity of your close scope",
+          "Show planning and organization: how you prioritized tasks, built a close calendar, or identified risks ahead of time",
+          "Demonstrate resilience: manage stress, maintain quality, ask for help when needed — not just working longer hours",
+          "Highlight the outcome: closed on time, quality was high, team morale survived, or you improved close timing for next period"
+        ],
+        "strong_answer_signals": [
+          "Specific timeline: 'We closed in 3 days for a 5-day quarter vs. the typical 10 days due to an investor call'",
+          "Process improvement: 'I created a pre-close checklist that cut manual review time by 20%'",
+          "Quantified scope: 'Owned close for three business units with $200M in revenue'",
+          "Teamwork: 'Coordinated across AR, AP, and GL teams; we all hit the deadline without errors'"
+        ],
+        "avoid": [
+          "Burnout narrative: 'I just worked 16 hours a day' without showing smart prioritization",
+          "Implying corners were cut: 'We got it done fast' sounds like speed over accuracy",
+          "Lack of ownership: 'My manager coordinated everything' — they want to see your agency",
+          "No reflection on lessons learned or sustainable processes for next close"
+        ]
+      }
+    },
+    {
+      "id": "fin_b_004",
+      "category": "behavioral",
+      "seniority": ["mid", "senior", "manager"],
+      "text": "Describe a situation where your financial analysis directly influenced a major business decision.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Articulate the business question clearly: was this about geography expansion, product launch, M&A, restructuring, or pricing?",
+          "Explain your analysis: what data did you pull? What assumption or insight was non-obvious? Why was your analysis the tipping point?",
+          "Show the decision made: leadership chose option A over B specifically because of your recommendation or numbers",
+          "Quantify the business impact: revenue gained, costs avoided, risk mitigated, or time-to-market accelerated"
+        ],
+        "strong_answer_signals": [
+          "Decision that was genuinely uncertain before your analysis (not a pre-decided option your numbers just validated)",
+          "Complex analysis: scenario modeling, sensitivity testing, or data you had to source and clean yourself",
+          "Clear ownership: 'My model' or 'I recommended' rather than 'the team analyzed'",
+          "Material impact: $500K+ savings, strategic market entry, or avoided major loss"
+        ],
+        "avoid": [
+          "Analysis that merely confirmed what leadership already believed",
+          "Vague decision: 'We decided to do better cost management' instead of a specific choice",
+          "No real impact or outcome stated",
+          "Overstating your influence: 'My spreadsheet made the $10M acquisition happen' when you were one input"
+        ]
+      }
+    },
+    {
+      "id": "fin_b_005",
+      "category": "behavioral",
+      "seniority": ["entry", "mid"],
+      "text": "Tell me about a time you had to work with incomplete or unreliable financial data.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Describe the data problem specifically: Was data missing, incorrect, from legacy systems, or manually maintained?",
+          "Show your diagnostic approach: How did you validate data quality? What tests or reconciliations did you run?",
+          "Explain your workaround or fix: Did you rebuild the data, source it differently, or create manual controls?",
+          "Share the outcome: delivered analysis on time, identified the systemic issue, or prevented bad decision-making"
+        ],
+        "strong_answer_signals": [
+          "Specific issue: 'Our trial balance didn't tie to the general ledger due to 2017 data migration errors'",
+          "Proactive testing: 'I spot-checked 100 invoices and found a 15% error rate in a key GL account'",
+          "Solution-oriented: 'I rebuilt Q2 revenue data from source systems and implemented a weekly reconciliation'",
+          "Risk prevention: 'Caught this before external audit' or 'Prevented a $2M balance sheet error'"
+        ],
+        "avoid": [
+          "Giving up: 'The data was bad so I just used what we had' — they want to see you solve it",
+          "Blame-shifting: 'IT gave us corrupted data' without explaining your recovery steps",
+          "No validation: 'I assumed it was correct and built my analysis on it'",
+          "Lack of escalation: If it was unsolvable, did you flag it to your manager or the CFO?"
+        ]
+      }
+    },
+    {
+      "id": "fin_b_006",
+      "category": "behavioral",
+      "seniority": ["mid", "senior"],
+      "text": "Describe a time you identified and implemented an improvement to a financial reporting process.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identify the pain point: what process was slow, error-prone, or manual? Be specific about time and impact",
+          "Explain your diagnosis: Did you observe a bottleneck? Did users complain? Did errors spike?",
+          "Describe your solution: automation, template redesign, system configuration, or new workflow? Keep it realistic (not 'I built a custom app')",
+          "Share the adoption and impact: time saved per close, error reduction %, user feedback, or broader process improvements"
+        ],
+        "strong_answer_signals": [
+          "Quantified baseline pain: 'Manual consolidation took 15 hours per month'",
+          "Simple, scalable solution: 'I created a standardized template in Excel that auto-populated from our GL system'",
+          "User adoption: 'All 12 business units use it now' or 'Training was two emails'",
+          "Multiplied impact: 'This freed up 40 hours per month; the team redeployed to financial analysis'"
+        ],
+        "avoid": [
+          "Overengineering: 'I convinced IT to build a custom database' when a template would have done it",
+          "Idea without execution: 'I identified the problem but someone else built the solution'",
+          "No adoption: 'I created a better process but people kept the old way'",
+          "Trivial improvement: 'I reorganized the folder structure' when they're looking for material efficiency gains"
+        ]
+      }
+    },
+    {
+      "id": "fin_b_007",
+      "category": "behavioral",
+      "seniority": ["mid", "senior", "manager"],
+      "text": "Tell me about a time you had to manage a budget that came under significant pressure.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Set the scenario: Was spend exceeding budget by 20%+? Was there a revenue miss forcing cuts? Was a new priority added mid-year?",
+          "Show your response: Did you replan proactively or react to a crisis? Did you model different scenarios?",
+          "Explain your prioritization: What spend did you cut, defer, or redirect? What was kept and why?",
+          "Share the outcome: stabilized the budget, protected critical initiatives, or maintained business momentum despite constraints"
+        ],
+        "strong_answer_signals": [
+          "Specific pressure point: 'Revenue missed by 15% in Q2, forcing a $3M budget reduction'",
+          "Data-driven trade-offs: 'I modeled the impact of deferring the new hire vs. cutting discretionary spend'",
+          "Cross-functional negotiation: 'I worked with ops and marketing to find $500K in efficiencies without crippling growth'",
+          "Resilience: 'Delivered on original strategic goals despite budget constraints' or 'Team morale stayed high'"
+        ],
+        "avoid": [
+          "Passive acceptance: 'We just cut 10% across the board' — that's not managing, that's dividing equally",
+          "Short-term only: Cut spend for one quarter without explaining sustainability",
+          "No stakeholder buy-in: 'I made cuts and they complained' vs. building alignment on priorities",
+          "Vague outcome: Left unclear whether you actually came in on budget or just slowed the bleed"
+        ]
+      }
+    },
+    {
+      "id": "fin_b_008",
+      "category": "behavioral",
+      "seniority": ["mid", "senior"],
+      "text": "Describe a situation where you disagreed with a financial projection or assumption and what you did about it.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identify the disagreement: What assumption did you challenge? Why did it feel wrong? (historical trend, peer data, your ground truth)",
+          "Show your evidence: What data, comps, or logic supported your view? Did you do your own analysis?",
+          "Explain how you raised it: Did you flag it respectfully? To whom? With what tone and evidence?",
+          "Share the outcome: Was your view validated? Did you adjust your analysis? What did you learn about collaboration?"
+        ],
+        "strong_answer_signals": [
+          "Specific assumption: 'Sales projected 40% growth based on 1 new hire; historical productivity was 15% per hire'",
+          "Evidence-backed: 'I benchmarked against Gartner data and our peer set to validate my skepticism'",
+          "Professional tone: 'I asked my manager to discuss the assumption with the CFO rather than pushing back publicly'",
+          "Outcome flexibility: 'We landed on 25% growth, and my team owned the sensitivity around the disagreement'"
+        ],
+        "avoid": [
+          "Arrogance: 'I knew they were wrong' without strong evidence or peer review",
+          "Insubordination: 'I refused to use their numbers in my model'",
+          "No follow-through: 'I disagreed but didn't do anything about it'",
+          "Personal conflict: 'The CFO is overly optimistic' rather than addressing the specific assumption"
+        ]
+      }
+    },
+    {
+      "id": "fin_b_009",
+      "category": "behavioral",
+      "seniority": ["senior", "manager"],
+      "text": "Tell me about a time you had to deliver bad financial news to leadership.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Describe the bad news: missed earnings, impairment charge, covenant breach, or major cost overrun? Be specific on magnitude",
+          "Explain your preparation: Did you sense the problem early? When did you first flag it? To whom?",
+          "Show how you communicated: Did you lead with facts or cushion bad news? Did you bring options/solutions?",
+          "Demonstrate impact and lessons: How did leadership react? What changed? What would you do differently?"
+        ],
+        "strong_answer_signals": [
+          "Early detection: 'I flagged the revenue issue in week 2 of the quarter, giving us time to plan'",
+          "Solution-oriented: 'I brought three options to address the shortfall and recommended option B based on impact analysis'",
+          "Calm professionalism: 'I presented facts without emotion' or 'CFO appreciated the honesty and data'",
+          "Constructive outcome: 'We adjusted guidance and avoided a bigger shock' or 'Used the lesson to build better controls'"
+        ],
+        "avoid": [
+          "Delivering news late: Waiting until close to reveal a problem rather than early visibility",
+          "Defensiveness: 'It wasn't my fault' instead of focusing on solutions",
+          "Vagueness: 'Things didn't go as planned' rather than clear numbers and impact",
+          "No accountability: Blaming external factors entirely without discussing what your team could have prevented or foreseen"
+        ]
+      }
+    },
+    {
+      "id": "fin_b_010",
+      "category": "behavioral",
+      "seniority": ["mid", "senior", "manager"],
+      "text": "Describe a cross-functional project you supported or led that had a major financial component.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Define the project scope: Was it a system implementation, product launch, restructuring, or geographic expansion?",
+          "Explain your financial role: Did you build the business case, manage the budget, track ROI, or provide ongoing analysis?",
+          "Show cross-functional leadership: Who did you work with? How did you translate finance for them? Any conflicts you resolved?",
+          "Share measurable outcomes: project delivered on time and budget, financial targets hit, ROI realized, or strategic goals met"
+        ],
+        "strong_answer_signals": [
+          "Significant scope: '$50M ERP implementation' or 'New market entry affecting $200M in revenue'",
+          "Finance impact: 'I built the $8M implementation budget and tracked actuals to prevent overruns'",
+          "Cross-functional evidence: 'Worked with IT, operations, and regional leads to align on cost allocation'",
+          "Real outcome: 'Delivered 3 weeks early under budget' or 'Exceeded ROI targets by 12%'"
+        ],
+        "avoid": [
+          "Finance as bystander: 'I just reported numbers' — they want to see your contribution to success",
+          "Vague project description: 'Worked on a company initiative' without clarity on what it was",
+          "Solo hero narrative: 'I made the project succeed' instead of collaborative credit",
+          "No financial outcome: Left unclear whether the project was financially sound or how you contributed to that"
+        ]
+      }
+    },
+    {
+      "id": "fin_t_001",
+      "category": "technical",
+      "seniority": ["mid", "senior"],
+      "text": "Walk me through how you build a 3-statement financial model from scratch.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start with income statement: Lay out revenue drivers, COGS, operating expenses, taxes. Explain how you link to operational metrics (units, ASP, headcount)",
+          "Build the balance sheet next: Assets (AR, inventory, PPE), liabilities (AP, debt), equity. Show how IS items flow (NI retained earnings, depreciation impact)",
+          "Construct the cash flow statement: Reconcile three sections (operating CF from NI plus adjustments, investing CF, financing CF) to show cash generation and use",
+          "Tie it all together: Walk through how retained earnings from IS feeds equity; how depreciation in IS becomes add-back in CF; how debt schedules connect to BS and CF"
+        ],
+        "strong_answer_signals": [
+          "Mentions input assumptions: 'I start with historical averages or guidance for revenue growth, margin, CapEx intensity, working capital'",
+          "Shows awareness of mechanics: 'Working capital changes are important because cash N/I—deferred revenue can really swing cash flow'",
+          "Links the three statements explicitly: 'The change in cash from the P&L flows to operating activities; any debt issuance shows in financing'",
+          "Discusses order of build: 'I build IS first because it flows to BS and CF; that prevents errors'"
+        ],
+        "avoid": [
+          "Building in wrong order: 'I start with cash flow' (usually done last)",
+          "Not linking between statements: Describing each in isolation without showing the connections",
+          "Oversimplifying: 'I just put revenue and subtract expenses' — ignore working capital, capex, and debt mechanics",
+          "Excel jargon without substance: 'I use vlookup and pivot tables' without explaining the financial logic"
+        ]
+      }
+    },
+    {
+      "id": "fin_t_002",
+      "category": "technical",
+      "seniority": ["entry", "mid"],
+      "text": "How do you approach building a budget vs. actual variance analysis?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start with the framework: Pull budgeted figures (by department, cost center, or business unit) and actual spend (from GL or cost accounting system)",
+          "Calculate variance: Absolute dollars and as a % of budget. Flag items exceeding thresholds (e.g., 10% or $50K)",
+          "Do a quick root-cause sort: Volume variance (did we sell more/less?), rate variance (did prices or headcount change?), timing (one-time items?)",
+          "Present actionably: Show top 5-10 variances with severity, whether they're one-time or recurring, and forecast impact for remainder of period"
+        ],
+        "strong_answer_signals": [
+          "Specific approach: 'I always separate volume and rate variance because they require different actions'",
+          "Shows sophistication: 'I flag timing issues separately—a big Q4 spend isn't a problem if it was planned'",
+          "Mentions drill-down: 'I talk to the cost center owner to understand each variance > 10%'",
+          "Connects to action: 'If the variance is recurring, we reforecast; if it's one-time, we don't overreact'"
+        ],
+        "avoid": [
+          "Only reporting absolute dollars: No percentage context makes it hard to prioritize",
+          "No investigation: 'Budget was $100K, actual was $120K, variance is $20K' — stop there and dig deeper",
+          "Treating all variances as failures: 'We came in over, so we failed' (ignore that volume or external factors may have driven it)",
+          "No forward-looking view: Left unclear how you'd forecast the rest of the year based on the variance"
+        ]
+      }
+    },
+    {
+      "id": "fin_t_003",
+      "category": "technical",
+      "seniority": ["entry", "mid", "senior"],
+      "text": "Explain how you assess a company's financial health using ratio analysis.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Cover liquidity ratios: Current ratio (short-term ability to pay debts), quick ratio (more conservative), cash ratio. What do you look for? (typically >1.0 for current)",
+          "Discuss profitability ratios: Gross margin, operating margin, net margin, and ROE/ROAS. Compare to peers and historical trends to spot deterioration",
+          "Address leverage/solvency: Debt-to-equity, interest coverage, debt-to-EBITDA. How much debt can they service? Is it sustainable?",
+          "Mention efficiency ratios: Asset turnover, receivables days, inventory turnover. Are they converting assets and working capital efficiently?"
+        ],
+        "strong_answer_signals": [
+          "Comparative lens: 'I compare ratios to peers and the company's 3-year trend to spot red flags'",
+          "Context-aware: 'Gross margin compression could mean pricing pressure or input cost inflation—context matters'",
+          "Integrated view: 'High profitability + high leverage + low cash conversion is a warning sign'",
+          "Specific thresholds: 'I watch for current ratio <1.0 or interest coverage <2x as signs of stress'"
+        ],
+        "avoid": [
+          "One-metric focus: Looking at just debt-to-equity and ignoring operating margin trends",
+          "No peer context: 'ROE of 12% is bad' — bad for whom? Utilities have lower ROE than tech",
+          "Mechanical calculation: 'Current ratio = current assets / current liabilities' without explaining what it means",
+          "No follow-up: Left unclear what you'd do if ratios flagged risk — would you dig deeper or escalate?"
+        ]
+      }
+    },
+    {
+      "id": "fin_t_004",
+      "category": "technical",
+      "seniority": ["mid", "senior"],
+      "text": "Walk me through a DCF valuation — key steps and assumptions.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Project free cash flow: Forecast revenue, apply margins, subtract taxes, add back D&A, subtract CapEx and change in NWC. Usually 5-10 year explicit period",
+          "Calculate terminal value: Use perpetuity growth (typically 2-3% GDP-like growth) or exit multiple. This often represents 60-80% of value, so it drives the output",
+          "Discount to present value: Apply WACC (cost of equity for unlevered firm plus cost of debt). This reflects risk and time value of money",
+          "Sanity check: Compare valuation to peers, historical multiples, and sensitivity analysis. Does the output make intuitive sense?"
+        ],
+        "strong_answer_signals": [
+          "Specific assumptions: 'I use 10% revenue growth tapering to 3% by year 5' and 'WACC of 8% based on 60/40 equity/debt structure'",
+          "Shows risk awareness: 'Terminal value is 75% of the output, so I always stress-test the perpetuity growth rate'",
+          "Realistic exit: 'I use a 15x exit multiple if exiting to a strategic buyer in year 5' — not just perpetuity",
+          "Sensitivity: 'I model valuation across WACC and perpetuity growth ranges to show the range of outcomes'"
+        ],
+        "avoid": [
+          "No terminal value discussion: DCF without addressing how you value cash flows after year 5",
+          "Unrealistic assumptions: 'Revenue grows 50% perpetually' or 'WACC of 3%' without justification",
+          "Single-point output: 'The company is worth $50M' without explaining sensitivity or ranges",
+          "No peer/sanity check: Built a model that outputs a valuation completely misaligned with public comps"
+        ]
+      }
+    },
+    {
+      "id": "fin_t_005",
+      "category": "technical",
+      "seniority": ["mid", "senior"],
+      "text": "How do you approach a 13-week cash flow forecast?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start with the opening cash balance: Link to your GL or prior period forecast to validate",
+          "Build operating cash drivers: Revenue (timing of collection), COGS (timing of payment), operating expenses (payroll, utilities, accruals). Show weekly or biweekly detail",
+          "Layer in working capital: AR aging (when do customers pay?), AP aging (when do you pay suppliers?), inventory build/drawdown. This is huge for cash timing",
+          "Add investing and financing: CapEx, loan draws or repayments, dividend timing. Forecast ending cash to validate liquidity buffer"
+        ],
+        "strong_answer_signals": [
+          "Detailed cash drivers: 'I tie AR aging directly to revenue collections; we typically collect in 45 days'",
+          "Weekly or biweekly view: '13 weeks at weekly or biweekly granularity to catch seasonality and timing mismatches'",
+          "Uses data: 'I pull AR aging from our subledger and validate payroll dates with HR'",
+          "Identifies risk: 'If cash dips below our $5M covenant threshold in week 7, we discuss a short-term line of credit early'"
+        ],
+        "avoid": [
+          "Monthly view only: Missing the point of a 13-week forecast, which is to catch intra-month cash swings",
+          "Net income approach: 'Cash = NI + depreciation' without addressing working capital timing",
+          "No data inputs: 'I estimate collections based on gut feel' instead of pulling actual AR aging",
+          "Left unclear on use: Is this for treasury management, covenant tracking, or something else? What decision does it inform?"
+        ]
+      }
+    },
+    {
+      "id": "fin_t_006",
+      "category": "technical",
+      "seniority": ["mid", "senior"],
+      "text": "Explain the difference between EBITDA and free cash flow — when does each metric matter most?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Define EBITDA: Earnings before interest, taxes, depreciation, amortization. It's profit excluding financing decisions and non-cash charges. A proxy for operating cash generation",
+          "Define FCF: Operating cash flow minus CapEx. What's left after you've paid for the growth (maintenance + expansion capital). The true cash available to shareholders/debt holders",
+          "Show the disconnect: 'A company can be profitable on EBITDA but burn cash if CapEx is high or working capital deteriorates'",
+          "Explain use cases: EBITDA for comparing operating profitability (debt multiples, covenant testing). FCF for valuation, dividend capacity, and financial health"
+        ],
+        "strong_answer_signals": [
+          "Specific example: 'High-growth SaaS has capex of 5-10% of revenue; EBITDA looks great but FCF is weak because of CapEx'",
+          "Shows mechanics: 'FCF = Operating CF - CapEx. Operating CF is not EBITDA; it includes working capital changes'",
+          "Covenant context: 'Many debt agreements use EBITDA multiples (leverage) or EBITDA/Interest (coverage) because it's comparable across peers'",
+          "Valuation insight: 'I value on FCF because it's what you can actually extract; EBITDA is one input to FCF'"
+        ],
+        "avoid": [
+          "Confusing EBITDA with operating CF: They're not the same (working capital changes matter)",
+          "Ignoring the 'why': 'EBITDA and FCF are different' without explaining which is more relevant for which decision",
+          "Assuming EBITDA = FCF: 'If EBITDA is positive, cash is positive' — wrong if CapEx is high",
+          "No context on maintenance vs. growth CapEx: Lumping all CapEx together when the mix matters for long-term sustainability"
+        ]
+      }
+    },
+    {
+      "id": "fin_t_007",
+      "category": "technical",
+      "seniority": ["mid", "senior"],
+      "text": "How do you build a sensitivity or scenario analysis in a financial model?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Identify key drivers: What 2-3 variables have the biggest impact on your output (e.g., WACC and perpetuity growth in DCF; revenue growth and margin in valuation)?",
+          "Build a sensitivity table: Create a two-dimensional table with one variable on the x-axis, one on the y. Shows how the output varies with each driver",
+          "Define scenarios: Base case (your central estimate), upside (higher growth, lower costs), downside (recession, pricing pressure). Show assumptions for each",
+          "Present ranges: Show outcome ranges across scenarios and sensitivities. Helps leadership understand downside risk and upside potential"
+        ],
+        "strong_answer_signals": [
+          "Specific driver pairs: 'WACC sensitivity from 6-10% and perpetuity growth 2-4% because these drive 70%+ of variance'",
+          "Color-coded output: 'Green for upside, red for downside, helps the CFO immediately see risk'",
+          "Realistic scenarios: 'Base case assumes 15% revenue growth; upside assumes 25% (if we win two large customers); downside assumes 5% (if market contracts)'",
+          "Uses insights: 'The sensitivity showed that valuation is most sensitive to CapEx intensity, so we pressure-tested that assumption with ops'"
+        ],
+        "avoid": [
+          "Too many variables: Trying to vary 5+ inputs at once; focus on the 2-3 that matter most",
+          "One-way tables: Only varying one variable at a time often less useful than two-way tables",
+          "No real scenarios: Scenarios that don't reflect business risks (e.g., upside where revenue grows 100% for no reason)",
+          "Output without interpretation: 'Valuation ranges from $30M to $70M' without explaining what drives the range or likelihood"
+        ]
+      }
+    },
+    {
+      "id": "fin_t_008",
+      "category": "technical",
+      "seniority": ["entry", "mid"],
+      "text": "Walk me through how you close the books at month-end.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Prepare for close: Review the close calendar, identify open items from prior period, gather cutoff documentation (final invoices, timecards, etc.)",
+          "Reconcile balance sheet accounts: Cash (bank reconciliation), AR (tie to subledger, review aging), AP (vendor statement reconciliation), accruals, and reserves",
+          "Record accruals and adjustments: Revenue (cut-off review, deferred revenue), expenses (accrued payroll, utilities), depreciation, and any manual journal entries",
+          "Final steps: GL tie-out to trial balance, P&L review for anomalies, management review of results, and sign-off for external reporting"
+        ],
+        "strong_answer_signals": [
+          "Specific timeline: 'We close cash on day 1, AR and AP by day 3, final accruals by day 5, and GL sign-off by day 7'",
+          "Shows sequencing: 'I always reconcile cash first because everything ties to that'",
+          "Mentions controls: 'I review cutoff transactions within 3 days of month-end to catch late invoices'",
+          "Knows the details: 'Revenue cutoff is critical; we verify the date the invoice was issued and when the service was delivered'"
+        ],
+        "avoid": [
+          "Vague close description: 'We close the books' without specifying steps or sequence",
+          "Missing key reconciliations: No mention of bank recs, AR aging review, or cutoff testing",
+          "No timeline: Left unclear when in the month-end process each step happens and how long close takes",
+          "No mention of quality control: Doesn't discuss how you validate data or who reviews your work"
+        ]
+      }
+    },
+    {
+      "id": "fin_t_009",
+      "category": "technical",
+      "seniority": ["mid", "senior"],
+      "text": "How do you approach revenue recognition under ASC 606?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Understand the five-step model: Identify the customer contract, identify performance obligations, determine transaction price, allocate price to obligations, recognize revenue when obligations are satisfied",
+          "Assess timing: Is revenue recognized at a point in time (goods delivered) or over time (services rendered)? How do you determine 'control' of the goods/services?",
+          "Address variable consideration: If there are discounts, returns, refunds, or performance bonuses, how do you estimate these? Use historical data or constraint principle",
+          "Document and disclose: Create a revenue policy, document non-standard contracts, and ensure disclosures align with ASC 606 requirements"
+        ],
+        "strong_answer_signals": [
+          "Specific application: 'For our SaaS business, we recognize ratably over the subscription term because the customer simultaneously receives and consumes value'",
+          "Shows judgment: 'For our services contracts with variable fees based on milestones, we use historical completion rates to estimate the transaction price'",
+          "Mentions controls: 'We document every non-standard contract and have the CFO review any new revenue streams before we book them'",
+          "Audit-ready: 'We maintain a revenue schedule showing each contract's terms, performance obligations, and recognition policy'"
+        ],
+        "avoid": [
+          "Oversimplifying: 'We recognize when we invoice' — that's not ASC 606",
+          "Ignoring complexity: 'Most revenue is straightforward' when contracts have bundled services, refunds, or contingencies",
+          "No controls: 'We handle ASC 606 issue-by-issue' vs. having a systematic approach and documented policy",
+          "Not tracking changes: 'If ASC 606 interpretations change, we'll deal with it then' — best practice is to monitor standards bodies"
+        ]
+      }
+    },
+    {
+      "id": "fin_t_010",
+      "category": "technical",
+      "seniority": ["mid", "senior"],
+      "text": "What is your approach to working capital management and optimization?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Define the components: Current assets (AR, inventory) minus current liabilities (AP, accruals). Minimize this cycle to free up cash and improve ROI",
+          "Optimize AR: Shorten days sales outstanding via invoicing processes, payment terms negotiation, or collection follow-up. Example: if DSO is 50 days and revenue is $200M, reducing to 45 days frees $5M+ cash",
+          "Optimize inventory: Align inventory turns to demand (avoid overstock and stockouts). Use EOQ models or forecasting to minimize holding costs while meeting service levels",
+          "Optimize AP: Negotiate extended payment terms with suppliers without damaging relationships. Use cash discount economics to decide early pay vs. extended terms"
+        ],
+        "strong_answer_signals": [
+          "Specific metrics: 'Our DSO was 60 days; I implemented net-30 terms and automated dunning, reducing it to 45 days'",
+          "Quantified impact: 'That $X working capital reduction freed up $2M cash without raising capital'",
+          "Shows tradeoffs: 'Extended AP terms to 60 days, but that's sustainable because we have strong supplier relationships'",
+          "Balanced view: 'Optimizing working capital improves cash, but we balance it against service level and supplier health'"
+        ],
+        "avoid": [
+          "Squeezing suppliers or customers: 'I just forced everyone to pay in 60 days' sounds aggressive and unsustainable",
+          "Inventory stockpiling: 'High inventory is bad' without addressing the trade-off between cash and service level",
+          "No metrics: Left unclear whether you're actually measuring DSO, inventory turns, or DPO",
+          "Ignoring operational impact: Working capital moves that create customer or supply chain risk aren't worth it"
+        ]
+      }
+    },
+    {
+      "id": "fin_t_011",
+      "category": "technical",
+      "seniority": ["senior", "manager"],
+      "text": "How do you assess capital allocation decisions — build vs. buy vs. partner?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Build: Develop in-house. Analyze: internal development cost and timeline, required capability in-house, strategic advantage of proprietary IP, risk of delays or cost overruns",
+          "Buy: Acquire capability or company. Analyze: acquisition cost, integration timeline and cost, cultural fit, retention of key talent, purchase price allocation (goodwill, intangibles)",
+          "Partner: Invest alongside or license from others. Analyze: capital required, upside sharing, control loss, exit options, strategic flexibility vs. ownership",
+          "Decision framework: Compare NPV of each path, timeline to capability, capital efficiency, and strategic control. Consider risk tolerance and financial headroom"
+        ],
+        "strong_answer_signals": [
+          "Specific trade-off: 'Build would take 18 months and cost $5M; buying a vendor cost $15M but gives us capability in 3 months'",
+          "Incorporates risk: 'Build carries execution risk; buy carries integration risk; partner means less control'",
+          "Uses metrics: 'We compare cost per outcome, capital intensity, and time to market for each option'",
+          "Shows judgment: 'Depending on competitive window and available capital, different paths make sense at different times'"
+        ],
+        "avoid": [
+          "Defaulting to one approach: 'We always buy' without analyzing each decision on its merits",
+          "Ignoring integration costs: 'A $50M acquisition cost $50M; here's the financial upside' without adding integration expense",
+          "Not addressing strategic nuance: 'Build is cheaper' ignores IP ownership, speed to market, or risk mitigation value of acquisition",
+          "Overlooking working capital: Acquisition capital requirements beyond purchase price (increased inventory, payroll, etc.)"
+        ]
+      }
+    },
+    {
+      "id": "fin_t_012",
+      "category": "technical",
+      "seniority": ["senior", "manager"],
+      "text": "How do you model out the financial impact of a potential acquisition?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start with standalone financials: Project the target's revenue, EBITDA, and FCF. Compare to asking price to assess valuation reasonableness",
+          "Layer in synergies: Revenue synergies (cross-sell, market expansion), cost synergies (eliminating duplicates, scale leverage), working capital benefits. Be realistic and conservative on timing",
+          "Model integration costs: Severance, system migration, facility consolidation. These are real cash outflows that reduce NPV",
+          "Assess accretion/dilution: Compare combined company EPS to standalone buyer EPS. Model how the acquisition affects buyer's P&L, balance sheet, and FCF"
+        ],
+        "strong_answer_signals": [
+          "Specific assumptions: 'Target is $10M revenue growing 20% at 25% EBITDA margins. Asking price is $120M, which is 4.8x current EBITDA'",
+          "Conservative synergies: 'We assume 15% cost synergies (industry standard is 20%) and 18-month realization timeline'",
+          "Quantified integration: 'Integration cost is $3M including severance and system migration'",
+          "Clear decision metric: 'Deal is accretive if we realize 50%+ of stated synergies; breakeven is at 35% realization'"
+        ],
+        "avoid": [
+          "Overly optimistic synergies: 'We'll cut 30% of duplicative costs' without specificity on which roles or functions",
+          "No integration costs: 'Synergies are $5M so the deal is great' while ignoring $2M integration cost",
+          "Ignoring cultural/execution risk: 'On paper, synergies are $10M' without discussing likelihood of capture",
+          "No sensitivity: Valuation at a point estimate (e.g., 'Deal is accretive at $120M') without showing range if synergies vary"
+        ]
+      }
+    },
+    {
+      "id": "fin_s_001",
+      "category": "situational",
+      "seniority": ["mid", "senior"],
+      "text": "A department submits a budget request 40% over approved spend. How do you handle it?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Understand the ask: Schedule a meeting to ask what changed since the budget was approved. Is this a crisis, scope creep, or a new opportunity?",
+          "Assess business case: Is the additional spend tied to revenue growth, customer retention, or cost savings? Or is it discretionary?",
+          "Explore trade-offs: Can they deliver 80% of the scope with less spend? Can other departments delay non-critical projects?",
+          "Escalate with options: Present CFO with department's request, your analysis of whether it's justified, and 2-3 options (fund it, negotiate down, defer, reallocate from elsewhere)"
+        ],
+        "strong_answer_signals": [
+          "Curious approach: 'I asked why the budget changed before passing judgment'",
+          "Business perspective: 'The $2M raise in marketing spend could drive $10M in revenue, so I recommended approving it'",
+          "Shows discipline: 'If they couldn't articulate a business reason, I recommended a 10% increase max, with a reforecast in Q2'",
+          "Collaborative tone: 'I helped them prioritize their top needs so we could find a middle ground'"
+        ],
+        "avoid": [
+          "Reflexive 'no': 'Budget is locked, so no' without understanding the request",
+          "Rubber stamp: 'They asked for it, so I approved it' without scrutiny",
+          "Blame shifting: 'The department asked for too much' (you're supposed to manage this expectation)",
+          "Unilateral decision: Making the call yourself instead of presenting options to leadership"
+        ]
+      }
+    },
+    {
+      "id": "fin_s_002",
+      "category": "situational",
+      "seniority": ["mid", "senior"],
+      "text": "Your model shows a product line is unprofitable, but the sales team pushes back hard. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Validate your model: Walk through your assumptions with the sales team. Are you using the right cost allocations? Are you underestimating volume or margin?",
+          "Understand their perspective: Ask sales why they believe it's profitable. Are there strategic benefits (customer stickiness, cross-sell opportunity) you're not modeling?",
+          "Separate fact from opinion: If they claim higher volume or margin, ask for data to support it. If they claim strategic benefit, can you model it?",
+          "Propose next steps: If the model is right, recommend a path to profitability (reduce costs, raise prices, exit). If you're wrong, update it and communicate the revision"
+        ],
+        "strong_answer_signals": [
+          "Intellectual humility: 'I walked through my model with them line-by-line to find errors'",
+          "Found the issue: 'I was using an allocation method that double-counted overhead. When we corrected it, margins improved 15%'",
+          "Quantified the tradeoff: 'Even if they're right about the strategic value, the business case is marginal. We should set a deadline to achieve profitability'",
+          "Professional tone: 'We disagreed respectfully; I made the update based on their data and we agreed to remodel in 90 days'"
+        ],
+        "avoid": [
+          "Defending your model without review: 'My model is right, they're just being defensive'",
+          "Dismissing their perspective: 'Sales is always optimistic; ignore them' — they may have data or insight you're missing",
+          "Vague resolution: 'We disagreed and moved on' without clarity on profitability path",
+          "Creating political tension: Taking the disagreement to the CFO as 'sales is lying' vs. 'we need to align on cost allocation'"
+        ]
+      }
+    },
+    {
+      "id": "fin_s_003",
+      "category": "situational",
+      "seniority": ["mid", "senior", "manager"],
+      "text": "It's day 3 of close and a material error is found in revenue recognition. What are your steps?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Assess the severity: What's the dollar impact? Does it affect reported earnings, compliance, or covenant calculations? Is it a one-time issue or recurring?",
+          "Pause and escalate: If it's material, notify the CFO and controller immediately. Don't proceed with close or external reporting until resolved",
+          "Investigate root cause: Was it a system error, a judgment call that's defensible but needs documentation, or a true mistake? How many contracts are affected?",
+          "Determine fix and impact: Correct the error in the current period or prior period (if it's a catch-up)? Communicate to auditors (if external audit is in-flight) and disclose if required"
+        ],
+        "strong_answer_signals": [
+          "Specific error: 'We booked $5M in revenue for a multi-year contract as if it were one-time'",
+          "Quick escalation: 'I flagged it to the controller within 30 minutes'",
+          "Proactive investigation: 'I reviewed 15 similar contracts to scope the full impact — $12M was affected'",
+          "Resolution detail: 'We corrected current period revenue and created a prior-period adjustment; auditors reviewed and approved the treatment'"
+        ],
+        "avoid": [
+          "Hiding the error: Hoping no one notices and correcting it quietly later",
+          "Over-correcting: Making a change that's larger than the error itself to 'catch up'",
+          "No escalation: Trying to fix it yourself without involving the CFO or controller",
+          "Incomplete investigation: Fixing one contract without checking for similar errors system-wide"
+        ]
+      }
+    },
+    {
+      "id": "fin_s_004",
+      "category": "situational",
+      "seniority": ["mid", "senior"],
+      "text": "A key assumption in your annual forecast proves wrong by July. How do you handle the reforecast?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Quantify the impact: What assumption was wrong (market size, customer acquisition, churn)? How does it affect full-year revenue and EBITDA?",
+          "Update your model: Revise the full-year forecast using YTD actuals and updated assumptions for H2. Model multiple scenarios if the new assumptions are uncertain",
+          "Communicate early: Don't wait until the August board meeting. Prep the CFO in advance so leadership can align on a message",
+          "Provide options: Present a revised forecast, but also show what changes in pricing, costs, or headcount would be needed to hit original targets (if desired)"
+        ],
+        "strong_answer_signals": [
+          "Specific assumption: 'We assumed 25% customer acquisition growth; YTD is 12%, implying $8M annual revenue miss'",
+          "Timely update: 'I flagged this in early July, not September, giving the team time to adjust'",
+          "Scenario planning: 'I modeled the base case (12% growth continues) and an upside if we accelerate marketing in H2'",
+          "Actionable options: 'To hit $100M revenue, we'd need 30% growth H2, which requires specific initiatives; here's the probability'"
+        ],
+        "avoid": [
+          "Late detection: 'We didn't realize the assumption was wrong until September close'",
+          "Defensive tone: 'The assumption was reasonable at the time' (true, but focus on the fix, not the excuse)",
+          "Vague impact: 'Revenue will miss the forecast' without quantifying the delta",
+          "No options: Saying 'the forecast is wrong' without providing direction on next steps or scenarios"
+        ]
+      }
+    },
+    {
+      "id": "fin_s_005",
+      "category": "situational",
+      "seniority": ["senior", "manager"],
+      "text": "You are asked to find $2M in cost savings without reducing headcount. How do you approach it?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Segment expenses: Separate into categories (IT, travel, contractors, subscriptions, supplies). Identify opportunities that are high-impact and low-disruption",
+          "Do quick wins first: Renegotiate vendor contracts (IT, telecom), consolidate subscriptions, eliminate unused licenses. Often 20-30% savings with minimal effort",
+          "Find productivity improvements: Can you automate processes or consolidate roles? Example: 'Outsource back-office to a third party instead of using FTE'",
+          "Quantify and validate: Confirm each saving is real and sustainable. Some vendors will reinstate price increases later, so build in revalidation steps"
+        ],
+        "strong_answer_signals": [
+          "Specific breakdown: 'Contracts $800K (negotiate IT/telecom/real estate), subscriptions $400K (consolidate), process automation $600K, consulting $200K'",
+          "Shows discipline: 'Each saving is traceable to a specific action and owner'",
+          "Risk-aware: 'We defer travel and training savings because they'll rebound; we focus on durable vendor and automation moves'",
+          "Implemented quickly: 'We realized $2M in the first 90 days; ongoing savings were tracked for the remainder of the year'"
+        ],
+        "avoid": [
+          "Cutting across the board: '10% cut everywhere' — hits low-value and high-value spending equally",
+          "One-time savings: Deferring expenses that will come back (e.g., maintenance, training), masking the problem",
+          "No validation: 'Here are $2M in suggested savings' without confirming with vendors or process owners",
+          "Ignoring impact: Cutting so deeply that service or product quality suffers"
+        ]
+      }
+    },
+    {
+      "id": "fin_s_006",
+      "category": "situational",
+      "seniority": ["senior", "manager"],
+      "text": "A potential acquisition target has been presented. What are your first steps in financial due diligence?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Validate historical financials: Audit 3 years of revenue, EBITDA, and cash flow. Are numbers growing or declining? Are margins stable?",
+          "Assess revenue quality: Concentration (% from top 5 customers), growth drivers (organic vs. acquisition), sustainability of customer base, churn or upsell trends",
+          "Analyze balance sheet health: Debt levels, covenant status, working capital needs, hidden liabilities, contingencies. Is there undisclosed risk?",
+          "Identify material items: Off-balance-sheet arrangements, litigation, pending regulations, key customer contracts, founder dependencies. Interview management"
+        ],
+        "strong_answer_signals": [
+          "Specific risk areas: 'Top 3 customers are 60% of revenue; I'd want to interview them directly'",
+          "Documents requested: 'I pulled 3 years of financials, tax returns, customer contracts, debt agreements, and material contracts'",
+          "Red flags identified: 'EBITDA is flat despite revenue growth (margin compression); I dug in and found increasing product costs'",
+          "Timeline set: 'We have 4 weeks for financial DD; I created a checklist and assigned responsibilities'"
+        ],
+        "avoid": [
+          "Relying on target's financials without validation: 'They said EBITDA is $20M, so I based valuation on it'",
+          "Missed customer concentration: Assuming $50M revenue is strong without asking who the customer is",
+          "No contingency review: Not asking about pending litigation, regulatory changes, or founder equity cliffs",
+          "Insufficient timeline: Rushing through DD to meet an artificial deadline set by the seller"
+        ]
+      }
+    },
+    {
+      "id": "fin_s_007",
+      "category": "situational",
+      "seniority": ["mid", "senior"],
+      "text": "Your CFO asks for a board-ready financial summary in 4 hours. How do you prioritize?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Clarify the ask: What does board-ready mean? Financial performance vs. budget? Comparison to peers? Forecast for next quarter? Get specificity",
+          "Identify what exists: Do you have a draft prepared? Can you pull from last month's board deck? Reusing 80% existing content is faster than starting from scratch",
+          "Ruthlessly prioritize: What's the core message (e.g., 'beat plan by 5%')? What data points prove it? Build the summary around those, skip the details",
+          "Quality over perfection: Board members care about accuracy and clarity, not perfect formatting. A simple table with key numbers beats a slow, pretty deck"
+        ],
+        "strong_answer_signals": [
+          "Quick clarification: 'I asked if it was for a board call or a formal meeting; turned out to be a call so we could do a simple email'",
+          "Reused content: 'Our monthly business review had 70% of the data; I extracted and reformatted it'",
+          "Asked for help: 'I reached out to AR, AP, and ops to validate specific numbers while I built the narrative'",
+          "Delivered on time: 'We got the summary to the CFO in 3.5 hours, he reviewed it in 15 minutes, and it was board-ready'"
+        ],
+        "avoid": [
+          "Starting from scratch: Building a full analysis from raw data in 4 hours",
+          "Over-polishing: Spending 2 hours on fonts and colors when content should take priority",
+          "Vague output: 'Here's a lot of numbers' without highlighting the key takeaways",
+          "No validation: Delivering data you didn't verify — mistakes in a 4-hour rush are likely"
+        ]
+      }
+    },
+    {
+      "id": "fin_s_008",
+      "category": "situational",
+      "seniority": ["senior", "manager"],
+      "text": "Two business units are in conflict over cost allocations. How do you mediate?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Understand both perspectives: Meet with each unit separately. What do they think is fair? What costs do they contest?",
+          "Review the current allocation: Is it based on headcount, revenue, square footage, or something else? Is it transparent and defendable?",
+          "Identify the real issue: Is it a methodology dispute, or is one unit using allocation as a political lever? Be honest about the incentives at play",
+          "Present options: Cost allocation isn't binary. You can use multiple methods for different cost pools. Present 2-3 allocation options with trade-offs and ask for agreement"
+        ],
+        "strong_answer_signals": [
+          "Specific conflict: 'Unit A pays 60% of shared services because of headcount; Unit B says it should be by revenue; method change is $2M swing'",
+          "Transparent process: 'I gathered data on how peers allocate similar costs and shared it with both units'",
+          "Found middle ground: 'We agreed on a hybrid: 50% by headcount, 50% by revenue. This reduced variance and both units accepted it'",
+          "Implemented changes: 'We updated the allocation and documented it in the accounting manual so future disputes have precedent'"
+        ],
+        "avoid": [
+          "Choosing sides: 'Unit A is right' without hearing both perspectives fully",
+          "Complex methodology: Creating an allocation that's so sophisticated that no one understands it",
+          "Forcing unanimity: 'Everyone has to agree' can mean no change ever happens; sometimes you decide and move on",
+          "No documentation: Resolving the dispute but not capturing the decision, leading to the same argument next year"
+        ]
+      }
+    },
+    {
+      "id": "fin_s_009",
+      "category": "situational",
+      "seniority": ["mid", "senior"],
+      "text": "Finance systems are down the morning of a critical investor reporting deadline. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Assess the scope: How long will the system be down? Do you have backups or reports already extracted? Can you work around it?",
+          "Communicate immediately: Alert IT to the business impact. Alert the CFO. If external deadline, determine if you can request a delay (usually you can't)",
+          "Activate the workaround: Have you pre-pulled data? Can you access the database directly? Can you reconstruct from paper records or emails?",
+          "Document everything: Write down what happened, how you fixed it, and what controls will prevent recurrence (e.g., daily backup exports)"
+        ],
+        "strong_answer_signals": [
+          "Quick response: 'I realized IT would need 4 hours; that was too late, so I started pulling data from the previous day's backup'",
+          "Prepared for this: 'We maintain a daily extract of key GL accounts in spreadsheet format for exactly this reason'",
+          "Workaround executed: 'I rebuilt the investor report from the backup data and sent it on time'",
+          "Systemic improvement: 'This led us to implement automated daily data exports and a disaster recovery plan'"
+        ],
+        "avoid": [
+          "Panic: 'The system is down so we can't deliver' — that's not an acceptable answer to your CFO",
+          "Doing it manually without verification: Transcribing numbers from memory or old reports and hoping they're right",
+          "Not escalating: Quietly working around the issue so no one notices (management should know about critical system failures)",
+          "No follow-up: Fixing the immediate problem but not addressing the root cause or preventive controls"
+        ]
+      }
+    },
+    {
+      "id": "fin_s_010",
+      "category": "situational",
+      "seniority": ["senior", "manager"],
+      "text": "A new regulation changes how you must recognize a significant revenue stream. How do you manage the transition?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Understand the requirement: What changed (ASC 606, lease accounting, tax rule)? When does it take effect? How does it affect your revenue or P&L?",
+          "Assess impact: Quantify the effect on current period and prior periods. Is there a catch-up adjustment? Does it affect debt covenants or earnings guidance?",
+          "Plan the implementation: When will you update your accounting system and controls? Do you need auditor pre-approval? Who needs to know (board, investors, lenders)?",
+          "Communicate proactively: Give stakeholders advance notice of the change. Explain the impact in simple terms. Show that you have a plan"
+        ],
+        "strong_answer_signals": [
+          "Specific regulation: 'ASC 606 changed our multi-year contracts from upfront recognition to rateable over the contract life'",
+          "Quantified impact: 'Current revenue overstated by $8M; prior period adjustment is $15M; 2024 revenue impact is $5M headwind'",
+          "Proactive communication: 'We discussed the impact with the CFO and board 3 months before the effective date'",
+          "Clean execution: 'We updated our revenue policy, retrained the GL team, and ran test closes before the official effective date'"
+        ],
+        "avoid": [
+          "Last-minute discovery: Realizing the regulation applies only when close day arrives",
+          "Downplaying impact: 'It's a minor change' when it's actually material to revenue or earnings",
+          "No audit coordination: Making the change without discussing with external auditors first",
+          "Incomplete documentation: Changing how you recognize revenue without updating the accounting manual or policy"
+        ]
+      }
+    },
+    {
+      "id": "fin_m_001",
+      "category": "motivation",
+      "seniority": ["entry", "mid"],
+      "text": "Why do you want to work in FP&A as opposed to other finance roles?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Articulate what excites you about FP&A: Is it the forward-looking analysis? The influence on strategy? The breadth of the business you see?",
+          "Contrast with other finance roles: Mention a role you considered (accounting, treasury, IB) and explain why FP&A appeals to you more",
+          "Connect to your background: Share a project or moment when you realized FP&A was the right fit",
+          "Show the fit: Mention something specific about the role or the company that attracts you to FP&A in this context"
+        ],
+        "strong_answer_signals": [
+          "Authentic passion: 'I love the detective work of building forecasts; it's different every month as the business evolves'",
+          "Thoughtful comparison: 'I considered public accounting but realized I prefer analyzing one company deeply over auditing many'",
+          "Concrete example: 'My project modeling pricing scenarios showed the CEO a $10M opportunity; seeing financial analysis drive strategy was the moment I committed to FP&A'",
+          "Company fit: 'Your company's growth stage means FP&A is mission-critical; I want to be in that position'"
+        ],
+        "avoid": [
+          "Generic answer: 'I like numbers and helping the business' (applies to many roles)",
+          "Negative contrasts: 'Accounting is boring' or 'IB has terrible hours' (focus on what you want, not what you don't)",
+          "No depth: 'FP&A seemed cool' without showing real interest",
+          "Misalignment with the role: 'I want to work in a specific function' when FP&A is cross-functional and requires agility"
+        ]
+      }
+    },
+    {
+      "id": "fin_m_002",
+      "category": "motivation",
+      "seniority": ["entry", "mid"],
+      "text": "What excites you about financial modeling and analysis?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Emphasize the intellectual challenge: Building a model that captures real business dynamics; finding the insight hidden in data",
+          "Highlight the influence: A good model or analysis drives business decisions and real outcomes",
+          "Mention the craft: There's a satisfaction in clean architecture, error-free logic, and communicating complexity clearly",
+          "Connect to outcomes: Share how modeling led to a decision that mattered (cost savings, strategic opportunity, risk avoidance)"
+        ],
+        "strong_answer_signals": [
+          "Problem-solving focus: 'I love the puzzle of building a model that actually reflects how the business works'",
+          "Intellectual rigor: 'Stress-testing assumptions and finding the sensitivity drivers is deeply satisfying'",
+          "Impact narrative: 'A model I built showed that a proposed deal was overpriced; the company didn't buy it and saved $50M'",
+          "Continuous learning: 'Every company and product is different; there's always a new modeling challenge'"
+        ],
+        "avoid": [
+          "Tool obsession: 'I love Excel and VBA' (tools are means, not the end)",
+          "Vague benefits: 'Models help the business' without explaining what about it excites you",
+          "False certainty: 'Models predict the future accurately' — they're approximations",
+          "No learning mindset: 'I know how to model everything' vs. 'I love learning new modeling approaches'"
+        ]
+      }
+    },
+    {
+      "id": "fin_m_003",
+      "category": "motivation",
+      "seniority": ["entry", "mid", "senior"],
+      "text": "Where do you see your finance career in five years?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Show progression: Do you want to advance to senior/manager level? Move from FP&A to controller to CFO? Stay deep in modeling?",
+          "Connect to this role: Explain how this position is a stepping stone to where you want to go",
+          "Demonstrate ambition and realism: Aim high but grounded. 'Controller in 5 years' is realistic; 'CFO at a Fortune 500 in 5 years' from entry level is not",
+          "Ask what success looks like: Ask the interviewer how people progress in their organization; show flexibility about the path"
+        ],
+        "strong_answer_signals": [
+          "Clear milestone: 'I want to be a senior FP&A analyst owning strategic planning for a business unit'",
+          "Skill development: 'I want to deepen my modeling expertise and add tech/product knowledge to move toward CFO eventually'",
+          "Shows fit: 'This role gives me the technical foundation and exposure to global business I need for that path'",
+          "Flexibility: 'I'm open to whether that's FP&A or treasury or operations; the common thread is strategic finance'"
+        ],
+        "avoid": [
+          "Vagueness: 'I want to grow' without specifying in what direction",
+          "Misaligned ambition: 'I want to run my own company' when interviewing for a large corporation",
+          "No connection to the role: 'In 5 years I want to be a CFO' without explaining how this job helps you get there",
+          "Overconfidence: '5 years to CFO' (realistic is 8-12 years with strong progression)"
+        ]
+      }
+    },
+    {
+      "id": "fin_m_004",
+      "category": "motivation",
+      "seniority": ["mid", "senior"],
+      "text": "What drew you to corporate finance over investment banking, or vice versa?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Show you've considered both: Explain what appeals to you about corporate finance (deep knowledge of a business, long-term strategy) vs. IB (variety, deal closure, valuation expertise)",
+          "Be honest about tradeoffs: IB offers deal experience and external credibility but demands more hours and shorter tenure per company. Corporate offers depth but less variety",
+          "Connect to your strengths: Do you prefer the depth of ownership? The long-term relationships? Staying in one company? Or do you thrive on variety?",
+          "Reference real experience if possible: Have you done IB internship? Know someone in IB? Reference their insights about the tradeoff"
+        ],
+        "strong_answer_signals": [
+          "Thoughtful tradeoff: 'IB gives you breadth in valuation; corporate gives you depth in operations. I prefer understanding one business really well'",
+          "Honest about stage: 'I did two IB internships and learned I love the deal work, but I wanted more stability and longer-term impact'",
+          "Values clarity: 'I realized I wanted to influence strategy from inside the company rather than advising from the outside'",
+          "Realistic about change: 'I keep an open mind; IB skills transfer, so if I want to move later, I can'"
+        ],
+        "avoid": [
+          "Dismissing the other path: 'IB is just transactional' or 'Corporate is boring' — both are legitimate",
+          "No real consideration: 'I chose corporate without really thinking about IB'",
+          "Regret narrative: 'I chose corporate but now I wish I'd gone IB' — shows uncertainty about your path",
+          "External pressure: 'My parents wanted me in corporate' (own your choice)"
+        ]
+      }
+    },
+    {
+      "id": "fin_m_005",
+      "category": "motivation",
+      "seniority": ["mid", "senior"],
+      "text": "What has been your most challenging financial project and why did it energize you?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Identify a project that was genuinely hard: Data complexity, scope, tight deadline, ambiguity, or interpersonal challenge",
+          "Explain what made it challenging: Be specific about the difficulty; don't overstate",
+          "Show how you overcame it: Perseverance, collaboration, creativity, or learning",
+          "Articulate why it energized you: What about the challenge brought you fulfillment? Growth? Pride?"
+        ],
+        "strong_answer_signals": [
+          "Specific challenge: 'Modeling the financial impact of a potential acquisition on our balance sheet given uncertain earn-out terms'",
+          "Real obstacle: 'Data was scattered across three systems; I had to rebuild it manually first'",
+          "Energy source: 'The project was hard because it mattered; seeing the CFO use my model to negotiate the deal structure was incredibly rewarding'",
+          "Learning outcome: 'It taught me how critical data quality is and how to push back on tight timelines when the problem is underestimated'"
+        ],
+        "avoid": [
+          "Trivial challenge: 'Building a budget was challenging' (budgets are standard)",
+          "Victim narrative: 'It was hard because everyone else was incompetent' — reflect on what you'd do differently",
+          "No outcome: 'It was a challenging project' without explaining how it turned out or what you learned",
+          "Misplaced energy: 'I loved it because I worked 80 hours' — that's burnout, not energization"
+        ]
+      }
+    },
+    {
+      "id": "fin_m_006",
+      "category": "motivation",
+      "seniority": ["mid", "senior", "manager"],
+      "text": "Why do you want to work for a company at this stage — startup, scale-up, or enterprise?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Articulate what draws you: At a startup, you own more and move faster. At scale-up, you build systems and processes at the right scale. At enterprise, you have resources and scope",
+          "Connect to your strengths: Are you a builder, a systematizer, or a strategist? Match to the stage",
+          "Show you've thought about tradeoffs: Startup = chaos and equity upside but financial risk. Scaleup = growth but uncertain execution. Enterprise = stability but more process",
+          "Be specific to the company: Reference something about this company's stage that appeals to you (market position, growth rate, maturity)"
+        ],
+        "strong_answer_signals": [
+          "Stage-fit clarity: 'I'm drawn to scale-ups because I've learned I prefer building repeatable processes, not doing everything manually as in startups'",
+          "Honest tradeoffs: 'Enterprises offer stability and resources, but decisions move slowly. For me, that's a fair tradeoff if the company is strategic'",
+          "Company-specific: 'Your company is at the inflection point where FP&A becomes mission-critical; that's when I can have the most impact'",
+          "Realistic about risk: 'I understand startups are risky, but I've built financial reserves to absorb that risk'"
+        ],
+        "avoid": [
+          "Generic stage preference: 'I like startups because they're dynamic' (true, but needs to connect to you)",
+          "Stage hopping narrative: 'I was at a startup, then scaleup, now enterprise' without showing intentionality",
+          "Regret about prior stage: 'Startups were too chaotic' — that's valuable learning, but own it maturely",
+          "Misalignment with this company: 'I prefer startups' when interviewing at a Fortune 500"
+        ]
+      }
+    },
+    {
+      "id": "fin_mg_001",
+      "category": "manager",
+      "seniority": ["manager"],
+      "text": "How do you ensure accuracy and quality control across your team's financial reporting?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Set clear standards: Define what accuracy means (error thresholds, reconciliation requirements, review criteria). Document in the team playbook",
+          "Build in reviews: Establish who reviews whose work, at what stage (before posting, before close, before external reporting). Peer review catches errors",
+          "Create controls: Reconciliation checks, variance analysis, GL tie-outs. Make controls part of the workflow, not a nice-to-have",
+          "Foster ownership: Hold team members accountable for quality in their specific area. Regular 1:1s discussing error patterns and coaching"
+        ],
+        "strong_answer_signals": [
+          "Specific controls: 'All accruals over $100K require a secondary review before posting; all reconciliations must show 0 variance'",
+          "Measured results: 'Our error rate dropped from 2% to 0.1% after implementing paired reviews'",
+          "Team accountability: 'I track errors by individual and discuss patterns in our monthly team meetings'",
+          "Continuous improvement: 'When we find an error, we add a control to prevent it; we revisit controls quarterly to see if they're working'"
+        ],
+        "avoid": [
+          "Blame culture: 'People make mistakes, so I police everything heavily' — that's demotivating and doesn't scale",
+          "No clear standards: 'High quality' without defining what that means to the team",
+          "All-reviewing: Reviewing every piece of work rather than building team competence and systematic controls",
+          "Reactive controls: Only adding controls after errors occur rather than building them proactively"
+        ]
+      }
+    },
+    {
+      "id": "fin_mg_002",
+      "category": "manager",
+      "seniority": ["senior", "manager"],
+      "text": "Describe how you have developed and mentored junior analysts.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Show intentionality: Do you have a development plan? Regular 1:1s focused on growth, not just task completion?",
+          "Give stretch assignments: Junior analysts need projects that are a bit beyond their comfort zone, with your support and feedback",
+          "Provide real feedback: Specific, timely feedback on what they did well and what to improve. Not just 'great job'",
+          "Model and teach: Show them your thinking. Walk through how you'd approach a problem, not just the answer"
+        ],
+        "strong_answer_signals": [
+          "Concrete mentee progression: 'My analyst went from month-end close support to leading the cash flow forecast'",
+          "Development approach: 'I meet with each analyst monthly to discuss career goals and identify skills to build'",
+          "Feedback culture: 'I do weekly 15-minute 1:1s where we discuss what they're learning, not just deadlines'",
+          "Results: 'Three of my junior analysts have been promoted to senior within three years; one moved to controller in another company'"
+        ],
+        "avoid": [
+          "Transactional mentoring: 'I assigned them tasks and reviewed their work' without development focus",
+          "No challenge: 'I give them simple work to build confidence' (they need stretch, not just comfort)",
+          "Feedback aversion: 'I only give feedback if something goes wrong' — regular positive and developmental feedback is motivating",
+          "Unconscious bias: Only mentoring people who remind you of yourself or show immediate promise"
+        ]
+      }
+    },
+    {
+      "id": "fin_mg_003",
+      "category": "manager",
+      "seniority": ["manager"],
+      "text": "How do you prioritize competing deadlines during close periods as a finance leader?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Plan ahead: Before close starts, map out dependencies, identify critical path items, and sequence work. Don't improvise during close",
+          "Set clear priorities: Which deliverables are non-negotiable (board reporting, covenant calculations)? Which have flexibility (detailed variance analysis)?",
+          "Allocate resources strategically: Assign your strongest people to the most critical tasks. Consider bringing in temporary help for high-volume work",
+          "Communicate with stakeholders: Tell them what will deliver on time, what might slip, and what trade-offs exist. Manage expectations"
+        ],
+        "strong_answer_signals": [
+          "Proactive planning: 'I create a close calendar in the prior month identifying all deliverables, dependencies, and owners'",
+          "Clear prioritization: 'Non-negotiable: investor reporting by day 7. Important: variance analysis by day 10. Nice-to-have: detailed project accounting by day 14'",
+          "Team communication: 'I hold a daily standup during close to flag blockers and reallocate resources if someone is behind'",
+          "Measurable success: 'We've consistently closed in 7 days and hit all external deadlines while maintaining team morale'"
+        ],
+        "avoid": [
+          "Firefighting approach: 'Things are always chaotic during close; we just power through' — that's a sign of bad planning",
+          "No delegation: Trying to own everything yourself rather than trusting the team",
+          "Overcommitting: Promising all tasks in the original timeline when that's not realistic",
+          "No team visibility: Not communicating with the team about what's critical so they don't know what to prioritize"
+        ]
+      }
+    },
+    {
+      "id": "fin_mg_004",
+      "category": "manager",
+      "seniority": ["manager"],
+      "text": "How do you build a culture of financial integrity and accountability in your team?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Model it: Your own integrity is the template. Be honest about mistakes, transparent about decisions, and consistent in applying standards",
+          "Make it explicit: Discuss what integrity means in your team. Accurate reporting, honest estimates, speaking up about concerns",
+          "Reward it: Recognize and promote people who demonstrate integrity and accountability. It's the strongest signal of what you value",
+          "Respond to breaches: If someone cuts a corner or hides a problem, address it immediately and clearly. Silence is permission"
+        ],
+        "strong_answer_signals": [
+          "Lived example: 'I found an error in my own work and corrected it publicly, showing that mistakes are owned, not hidden'",
+          "Clear standards: 'In our team meetings, we talk about integrity explicitly. Everyone knows we value honest forecasts over optimistic ones'",
+          "Accountability structure: 'I require sign-off on key numbers; that creates ownership and makes people think twice'",
+          "Responsive leadership: 'When someone bent the truth about project hours, I addressed it directly and we discussed what caused it'"
+        ],
+        "avoid": [
+          "Lip service: 'Integrity matters' without acting on it consistently",
+          "Selective accountability: Holding some people to standards but not others (creates resentment and undermines culture)",
+          "Punitive approach: 'I fire people who make mistakes' (that drives people to hide problems rather than report them)",
+          "No consequences: Tolerating integrity breaches because the person is skilled or tenure-protected"
+        ]
+      }
+    },
+    {
+      "id": "fin_mg_005",
+      "category": "manager",
+      "seniority": ["manager"],
+      "text": "How do you keep your finance team aligned with business strategy?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Understand the strategy: Don't assume you know it. Regularly meet with the CEO/CFO to understand strategic priorities for the quarter or year",
+          "Translate to finance: Articulate how finance supports the strategy. What metrics matter? What analysis does the team need to provide?",
+          "Communicate to the team: Hold team meetings to discuss strategy and what it means for finance priorities and projects. Make it concrete",
+          "Measure alignment: Track whether your team's projects and analyses are supporting the strategic initiatives. Adjust if you're misaligned"
+        ],
+        "strong_answer_signals": [
+          "Strategy ownership: 'I attend quarterly strategy reviews with the leadership team to ensure finance understands what's changing'",
+          "Clear translation: 'When leadership prioritized customer retention, I shifted my team's focus to cohort analysis and churn forecasting'",
+          "Team visibility: 'My team understands that we're supporting a geographic expansion, and their work on market-level P&Ls is directly enabling that'",
+          "Measured results: 'We reduced time spent on non-strategic reporting and redirected 30% of capacity to strategic projects'"
+        ],
+        "avoid": [
+          "Strategy in a vacuum: 'We do our job and assume finance is always supporting strategy' without explicit alignment",
+          "No translation: Leadership sets strategy; you don't translate it for the team",
+          "Assuming static strategy: 'Strategy was set in January; let's stick to that plan' when market or priorities shift",
+          "Finance isolation: Not participating in strategic discussions; only receiving marching orders"
+        ]
+      }
+    },
+    {
+      "id": "fin_mg_006",
+      "category": "manager",
+      "seniority": ["manager"],
+      "text": "How do you manage a high-performing finance professional who is underperforming during a critical period?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Diagnose the issue: Is it capability, motivation, distraction, personal crisis, or unclear expectations? Have a direct conversation",
+          "Be direct but empathetic: 'I've noticed your close work isn't at your usual standard; what's going on?' Open the door for them to explain",
+          "Provide support: If it's a personal issue, be flexible. If it's capability, offer coaching or resources. If it's motivation, explore what's changed",
+          "Set clear expectations: Be explicit about what you need during this critical period. Make a plan together to get back on track"
+        ],
+        "strong_answer_signals": [
+          "Quick diagnosis: 'I noticed the issue in the first week and had a conversation rather than waiting'",
+          "Empathy-first: 'Turns out their parent was sick; I adjusted their close responsibilities and found backup help'",
+          "Support offered: 'They were struggling with a new task; I paired them with a mentor and gave them smaller batches to build confidence'",
+          "Follow-up: 'We checked in weekly; they returned to high performance within two weeks and felt supported, not blamed'"
+        ],
+        "avoid": [
+          "Avoidance: Hoping they improve on their own; ignoring the problem",
+          "Public criticism: 'I called them out in a team meeting' — that damages trust and doesn't solve the issue",
+          "Immediate consequences: 'They're underperforming, so I reassigned them' without understanding the root cause",
+          "One-way conversation: 'I told them what to do' without listening to their perspective"
+        ]
+      }
+    },
+    {
+      "id": "fin_mg_007",
+      "category": "manager",
+      "seniority": ["senior", "manager"],
+      "text": "How do you evaluate whether to hire, outsource, or automate a finance function?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Define the workload: Is it high-volume, low-complexity work? Recurring but variable? Strategic and deep? Volume and nature guide the decision",
+          "Assess economics: Hire: fixed cost, requires management, builds capability. Outsource: variable cost, less control, no IP development. Automate: high upfront, low recurring cost, requires skills",
+          "Consider control and IP: If the function is strategic (core valuation, strategic forecasting), hire. If it's transactional (AP, data entry), outsource or automate",
+          "Evaluate risk: Outsourcing has vendor risk. Automation has execution risk. Hiring has people risk. Choose the tradeoff you're comfortable with"
+        ],
+        "strong_answer_signals": [
+          "Workload data: 'AP processing is 300 invoices per month; 70% are routine, 30% need judgment'",
+          "Economic analysis: 'Automating AP costs $80K upfront; it pays back in 18 months through labor savings'",
+          "Strategic assessment: 'Revenue forecasting is strategic to our business, so we hire. AP processing is transactional, so we automate'",
+          "Risk mitigation: 'We automated 60% of close but kept the human review layer because accuracy is critical'"
+        ],
+        "avoid": [
+          "Knee-jerk decisions: 'We'll just hire' without considering outsource or automate",
+          "Financial optimization only: 'Outsourcing is cheapest' ignoring quality and control risks",
+          "Overcomplicating: 'Every function might benefit from automation' when some are better left to people",
+          "No ongoing management: Outsource without oversight, automate without monitoring for errors"
+        ]
+      }
+    },
+    {
+      "id": "fin_mg_008",
+      "category": "manager",
+      "seniority": ["manager"],
+      "text": "How have you led a finance team through a major systems implementation or ERP migration?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Scope the change: What are you moving from and to? What processes are affected? How much disruption do you expect during transition?",
+          "Build a plan: Phased rollout, parallel runs, cutover checklist, rollback procedures. Identify dependencies and risks",
+          "Engage the team: People fear change. Be transparent about the timeline, involve them in decisions, and provide training early",
+          "Manage the cutover: Intensive support during go-live. Run redundant close processes initially if needed. Measure issues and resolve quickly"
+        ],
+        "strong_answer_signals": [
+          "Specific scope: 'We moved from legacy accounting software to NetSuite; 15 GL accounts, AR, AP, and fixed assets affected'",
+          "Structured approach: 'We ran parallel for three months, trained the team on modules weekly, and had a 48-hour IT hotline during cutover'",
+          "Team communication: 'I held weekly updates on progress and concerns; team members felt heard and involved'",
+          "Successful execution: 'We closed on time after cutover with only minor issues; team morale stayed high because we'd prepared well'"
+        ],
+        "avoid": [
+          "Big bang approach: 'We turned off the old system and turned on the new one' with no parallel run",
+          "No team involvement: 'IT led the project; finance just complied' — your team needs to drive requirements",
+          "Training after go-live: Telling team members how to use the system once it's live and in crisis mode",
+          "No contingency: No rollback plan or parallel close process; betting everything on the new system working perfectly"
+        ]
+      }
+    }
+  ]
+}
