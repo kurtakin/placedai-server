@@ -81,4 +81,38 @@ async function optionalAuth(request, reply) {
   request.user = data?.user ?? null;
 }
 
-module.exports = { requireAuth, optionalAuth };
+/**
+ * requirePlan — preHandler factory for paid-tier endpoints.
+ *
+ * Must run AFTER requireAuth (it reads request.user).
+ * Replies 402 Payment Required (not 403) so the client can tell
+ * "you need to upgrade" apart from "you are not allowed here".
+ *
+ * In local dev, when Supabase is not configured, requireAuth injects a
+ * synthetic dev user — that case is allowed through so the app stays usable.
+ *
+ * @param {string[]} allowed  plans that may access the route
+ */
+function requirePlan(allowed = ['pro', 'multi']) {
+  return async function planGate(request, reply) {
+    const user = request.user;
+    if (!user) {
+      return reply.status(401).send({ error: 'Authentication required' });
+    }
+
+    // Dev mode (no Supabase env) — requireAuth already let this through.
+    if (user.id === 'dev-user') return;
+
+    const plan = user.app_metadata?.plan ?? 'free';
+    if (!allowed.includes(plan)) {
+      return reply.status(402).send({
+        error:    'plan_required',
+        message:  'This feature is available on the Pro plan.',
+        plan,
+        required: allowed,
+      });
+    }
+  };
+}
+
+module.exports = { requireAuth, optionalAuth, requirePlan };

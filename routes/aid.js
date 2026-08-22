@@ -16,7 +16,7 @@
 
 const { Readable }     = require('stream');
 const { streamMessage } = require('../lib/ai');
-const { requireAuth }  = require('../middleware/auth');
+const { requireAuth, requirePlan } = require('../middleware/auth');
 const { checkAndIncrement, getUsage } = require('../lib/usage');
 
 // ── System prompts — 3 interview types × 2 lengths ───────────────────────────
@@ -243,10 +243,30 @@ function resolvePrompt(answer_length, has_web_context, interview_type = 'job_int
 }
 
 // ── Route ─────────────────────────────────────────────────────────────────────
+/**
+ * meterFreePlan — preHandler that spends one Free-plan credit.
+ *
+ * Used on streaming routes, where the check has to happen before the SSE
+ * response starts. Paid plans short-circuit inside checkAndIncrement.
+ */
+async function meterFreePlan(request, reply) {
+  const usage = await checkAndIncrement(request.user);
+  if (!usage.allowed) {
+    return reply.code(429).send({
+      error:   'monthly_limit_reached',
+      message: `Free plan limit of ${usage.limit} answers/month reached. Upgrade to Pro for unlimited answers.`,
+      used:    usage.used,
+      limit:   usage.limit,
+    });
+  }
+}
+
 async function aidRoutes(fastify) {
   fastify.addHook('preHandler', requireAuth);
 
-  fastify.post('/stream', (request, reply) => {
+  // The live interview answer endpoint — the core paid feature, so it spends
+  // a Free-plan credit before the stream opens.
+  fastify.post('/stream', { preHandler: meterFreePlan }, (request, reply) => {
     const { question, sector = 'universal_behavioral', seniority = 'mid', model, memory = '', web_context = '', jd_context = '', answer_length = 'short', interview_type = 'job_interview', language = 'en' } = request.body ?? {};
 
     if (!question || typeof question !== 'string' || question.trim().length < 5) {
@@ -372,7 +392,8 @@ async function aidRoutes(fastify) {
     }
   });
   // ── POST /screenshot — ekran görüntüsü → AI analiz ──────────────────────────
-  fastify.post('/screenshot', async (request, reply) => {
+  // Screenshot analysis is a Pro feature (see lib/features-config.ts).
+  fastify.post('/screenshot', { preHandler: requirePlan() }, async (request, reply) => {
     try {
       const { image_base64, jd_context = '' } = request.body ?? {};
       if (!image_base64) return reply.code(400).send({ error: 'image_base64 required' });
@@ -442,7 +463,8 @@ async function aidRoutes(fastify) {
     }
   });
   // ── POST /chat — mülakat sonrası koçluk sohbeti (SSE) ──────────────────────
-  fastify.post('/chat', (request, reply) => {
+  // Post-interview coaching chat is a Pro feature (see lib/features-config.ts).
+  fastify.post('/chat', { preHandler: requirePlan() }, (request, reply) => {
     const { messages = [], transcripts = [], jd_context = '', language = 'en' } = request.body ?? {};
 
     if (!messages.length) {

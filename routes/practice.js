@@ -28,6 +28,7 @@ const { createMessage } = require('../lib/ai');
 const path = require('path');
 const fs   = require('fs');
 const { requireAuth }   = require('../middleware/auth');
+const { checkAndIncrement } = require('../lib/usage');
 
 function safeParseJSON(raw) {
   if (!raw) return null;
@@ -221,8 +222,53 @@ Return ONLY valid JSON, no markdown:
   "suggested_answer": "1-2 sentence strong STAR-structured model answer under 50 words."
 }`;
 
+// Endpoints that cost an AI call — these count against the Free plan's monthly
+// allowance. Cheap lookups (/questions) and plain scraping are deliberately absent.
+const METERED_ROUTES = new Set([
+  '/analyze-jd',
+  '/generate',
+  '/generate-answers',
+  '/evaluate',
+  '/evaluate-custom',
+  '/cover-letter',
+  '/ats-score',
+  '/adapt-cv',
+  '/build-resume',
+  '/full-package',
+  '/apply-package',
+  '/online-assessment',
+  '/experience-letter',
+  '/optimize-linkedin',
+  '/linkedin-headlines',
+]);
+
+/** Route path without the /api/v1/practice prefix, across Fastify versions. */
+function routeTail(request) {
+  const full = request.routeOptions?.url || request.routerPath || request.url || '';
+  const i = full.indexOf('/api/v1/practice');
+  return i === -1 ? full : full.slice(i + '/api/v1/practice'.length);
+}
+
 async function practiceRoutes(fastify) {
   fastify.addHook('preHandler', requireAuth);
+
+  // ── Free plan metering ──────────────────────────────────────────────────
+  // Paid plans short-circuit inside checkAndIncrement, so this is a no-op for them.
+  // 429 + `monthly_limit_reached` matches what the overlay already handles.
+  fastify.addHook('preHandler', async (request, reply) => {
+    if (request.method !== 'POST') return;
+    if (!METERED_ROUTES.has(routeTail(request))) return;
+
+    const usage = await checkAndIncrement(request.user);
+    if (!usage.allowed) {
+      return reply.code(429).send({
+        error:   'monthly_limit_reached',
+        message: `Free plan limit of ${usage.limit} AI requests/month reached. Upgrade to Pro for unlimited use.`,
+        used:    usage.used,
+        limit:   usage.limit,
+      });
+    }
+  });
 
   // ── POST /analyze-jd — analyze job description, predict interview questions ─
   fastify.post('/analyze-jd', async (request, reply) => {
