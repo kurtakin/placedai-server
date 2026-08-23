@@ -13,22 +13,70 @@
 
 const { Readable } = require('stream');
 const os           = require('os');
+const crypto       = require('crypto');
+const { requireAuth } = require('../middleware/auth');
 
 // ── In-memory oturum deposu ────────────────────────────────────────────────────
-// sessions: Map<sessionId, { intervieweeStreams, helperStreams, messages }>
+// sessions: Map<sessionId, { ownerId, created, expiresAt, messages, streams }>
+//
+// The session code IS the credential the helper uses — they join as a guest,
+// with no account. So it must be unguessable, must not be created by strangers,
+// and must expire. Everything below follows from that.
 const sessions = new Map();
 
-function getSession(id) {
-  if (!sessions.has(id)) {
-    sessions.set(id, {
-      id,
-      created: Date.now(),
-      messages: [],
-      intervieweeStreams: new Set(),
-      helperStreams:      new Set(),
-    });
+const SESSION_TTL_MS      = 4 * 60 * 60 * 1000; // 4 hours
+const MAX_SESSIONS_PER_USER = 3;
+
+// Ambiguous characters (0/O, 1/I/L) left out so a code can be read aloud
+// or typed from a phone screen without mistakes.
+const CODE_ALPHABET = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789';
+const CODE_LENGTH   = 8;
+
+/** Cryptographically random join code — ~1.1e12 combinations. */
+function makeCode() {
+  const bytes = crypto.randomBytes(CODE_LENGTH);
+  let out = '';
+  for (let i = 0; i < CODE_LENGTH; i++) {
+    out += CODE_ALPHABET[bytes[i] % CODE_ALPHABET.length];
   }
-  return sessions.get(id);
+  return out;
+}
+
+/** Look up a live session. Returns null for unknown or expired codes — it never creates one. */
+function getSession(id) {
+  if (!id) return null;
+  const s = sessions.get(id);
+  if (!s) return null;
+  if (Date.now() > s.expiresAt) {
+    closeSession(s);
+    return null;
+  }
+  return s;
+}
+
+/** Drop a session and hang up every stream attached to it. */
+function closeSession(s) {
+  for (const set of [s.intervieweeStreams, s.helperStreams]) {
+    set.forEach((stream) => { try { stream.push(null); } catch {} });
+    set.clear();
+  }
+  sessions.delete(s.id);
+}
+
+// Periodic sweep so abandoned sessions can't pile up in memory.
+setInterval(() => {
+  const now = Date.now();
+  for (const s of [...sessions.values()]) {
+    if (now > s.expiresAt) closeSession(s);
+  }
+}, 15 * 60 * 1000).unref?.();
+
+/** Public base URL of this API, used to build the helper link. */
+function publicBaseUrl(request) {
+  if (process.env.PUBLIC_API_URL) return process.env.PUBLIC_API_URL.replace(/\/$/, '');
+  const proto = request.headers['x-forwarded-proto'] || request.protocol || 'https';
+  const host  = request.headers['x-forwarded-host'] || request.headers.host;
+  return `${proto}://${host}`;
 }
 
 function push(streams, event) {
@@ -211,12 +259,65 @@ if (SESSION) setTimeout(connect, 200);
 // ─────────────────────────────────────────────────────────────────────────────
 async function duoRoutes(fastify) {
 
+  // ── Oturum aç (interviewee) ───────────────────────────────────────────────
+  // Only a signed-in user can create a session, and the code comes from the
+  // server — the browser no longer invents it.
+  fastify.post('/session', { preHandler: requireAuth }, async (request, reply) => {
+    const ownerId = request.user.id;
+
+    const mine = [...sessions.values()].filter((s) => s.ownerId === ownerId);
+    if (mine.length >= MAX_SESSIONS_PER_USER) {
+      // Reclaim the oldest instead of refusing — the user probably left a tab open.
+      mine.sort((a, b) => a.created - b.created);
+      closeSession(mine[0]);
+    }
+
+    let id = makeCode();
+    while (sessions.has(id)) id = makeCode();
+
+    const now = Date.now();
+    const session = {
+      id,
+      ownerId,
+      created:   now,
+      expiresAt: now + SESSION_TTL_MS,
+      messages:  [],
+      intervieweeStreams: new Set(),
+      helperStreams:      new Set(),
+    };
+    sessions.set(id, session);
+
+    fastify.log.info({ session_id: id, ownerId }, '[duo] Oturum açıldı');
+
+    return {
+      session_id: id,
+      helper_url: `${publicBaseUrl(request)}/api/v1/duo/helper?session=${id}`,
+      expires_at: new Date(session.expiresAt).toISOString(),
+    };
+  });
+
+  // ── Oturumu kapat ─────────────────────────────────────────────────────────
+  fastify.post('/session/close', { preHandler: requireAuth }, async (request, reply) => {
+    const { session_id } = request.body ?? {};
+    const session = getSession(session_id);
+    if (!session) return { ok: true, already_closed: true };
+    if (session.ownerId !== request.user.id) {
+      return reply.code(403).send({ error: 'Not your session' });
+    }
+    closeSession(session);
+    return { ok: true };
+  });
+
   // ── SSE subscribe ─────────────────────────────────────────────────────────
+  // EventSource cannot send headers, so the (now unguessable) code is the
+  // credential here. Unknown or expired codes get 404 — no session is created.
   fastify.get('/subscribe', (request, reply) => {
     const { session_id, role } = request.query;
     if (!session_id) return reply.code(400).send({ error: 'session_id required' });
 
-    const session  = getSession(session_id);
+    const session = getSession(session_id);
+    if (!session) return reply.code(404).send({ error: 'session_not_found' });
+
     const readable = new Readable({ read() {} });
 
     const streams = role === 'helper' ? session.helperStreams : session.intervieweeStreams;
@@ -250,11 +351,16 @@ async function duoRoutes(fastify) {
   });
 
   // ── Soru gönder (interviewee → helpers) ──────────────────────────────────
-  fastify.post('/question', async (request, reply) => {
+  // The candidate sends this, and the candidate is always a signed-in user.
+  fastify.post('/question', { preHandler: requireAuth }, async (request, reply) => {
     const { session_id, question } = request.body ?? {};
     if (!session_id || !question) return reply.code(400).send({ error: 'session_id ve question gerekli' });
 
     const session = getSession(session_id);
+    if (!session) return reply.code(404).send({ error: 'session_not_found' });
+    if (session.ownerId !== request.user.id) {
+      return reply.code(403).send({ error: 'Not your session' });
+    }
     const msg = { type: 'question', question, ts: Date.now() };
     session.messages.push(msg);
     if (session.messages.length > 200) session.messages.shift();
@@ -269,7 +375,9 @@ async function duoRoutes(fastify) {
     const { session_id, tip, helper_name = 'Yardımcı' } = request.body ?? {};
     if (!session_id || !tip) return reply.code(400).send({ error: 'session_id ve tip gerekli' });
 
+    // Helpers join as guests — the session code is what proves they were invited.
     const session = getSession(session_id);
+    if (!session) return reply.code(404).send({ error: 'session_not_found' });
     const msg = { type: 'tip', tip, helper_name, ts: Date.now() };
     session.messages.push(msg);
 
@@ -282,10 +390,14 @@ async function duoRoutes(fastify) {
   });
 
   // ── Oturum bilgisi ─────────────────────────────────────────────────────────
-  fastify.get('/session-info', async (request, reply) => {
+  // Owner-only: this used to be an open "does this code exist?" oracle.
+  fastify.get('/session-info', { preHandler: requireAuth }, async (request, reply) => {
     const { session_id } = request.query;
-    if (!sessions.has(session_id)) return { connected_helpers: 0, messages: 0, exists: false };
-    const s = sessions.get(session_id);
+    const s = getSession(session_id);
+    if (!s) return { connected_helpers: 0, messages: 0, exists: false };
+    if (s.ownerId !== request.user.id) {
+      return reply.code(403).send({ error: 'Not your session' });
+    }
     return {
       connected_helpers: s.helperStreams.size,
       messages: s.messages.length,
@@ -295,16 +407,34 @@ async function duoRoutes(fastify) {
   });
 
   // ── Yerel ağ IP ───────────────────────────────────────────────────────────
-  fastify.get('/network-info', async () => ({
-    local_ip: getLocalIP(),
-    port: 3001,
-    helper_url: `http://${getLocalIP()}:3001/api/v1/duo/helper`,
+  // Kept for the Electron build, where helper and candidate share a LAN.
+  // In the hosted app the helper link must be the public API URL — the old
+  // version returned the container's private IP, which no phone can reach.
+  fastify.get('/network-info', async (request) => ({
+    local_ip:   getLocalIP(),
+    port:       process.env.PORT || 3001,
+    helper_url: `${publicBaseUrl(request)}/api/v1/duo/helper`,
   }));
 
   // ── Helper HTML sayfası ───────────────────────────────────────────────────
+  // Public on purpose: the helper opens this link on their own phone, with no
+  // account. An unknown code renders a plain message instead of a live console.
   fastify.get('/helper', async (request, reply) => {
     const { session } = request.query;
-    reply.header('Content-Type', 'text/html; charset=utf-8').send(helperHTML(session || ''));
+    const known = !!getSession(session);
+    reply.header('Content-Type', 'text/html; charset=utf-8');
+    if (!known) {
+      return reply.send(`<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PlacedAI — session not found</title></head>
+<body style="margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#080a12;color:#fff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;text-align:center;padding:24px">
+<div><div style="font-size:40px;margin-bottom:12px">🔗</div>
+<h1 style="font-size:18px;margin:0 0 8px">This session is not available</h1>
+<p style="font-size:14px;color:rgba(255,255,255,.5);max-width:320px;margin:0 auto">
+The code is wrong, or the session has ended. Ask for a fresh link — sessions expire after 4 hours.</p></div>
+</body></html>`);
+    }
+    return reply.send(helperHTML(session));
   });
 
   fastify.log.info('[duo] Duo rotaları yüklendi');
