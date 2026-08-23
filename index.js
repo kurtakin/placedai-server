@@ -24,6 +24,8 @@ const toolsRoutes       = require('./routes/tools');
 const duoRoutes         = require('./routes/duo');
 const feedbackRoutes    = require('./routes/feedback');
 const adminRoutes       = require('./routes/admin');
+const errorRoutes       = require('./routes/errors');
+const { logError }      = require('./lib/errors');
 
 // ── Question bank self-check (used by /health) ────────────────────────────────
 const _fs = require('fs');
@@ -91,6 +93,33 @@ async function build() {
   await app.register(duoRoutes,        { prefix: '/api/v1/duo' });
   await app.register(feedbackRoutes,   { prefix: '/api/v1/feedback' });
   await app.register(adminRoutes,      { prefix: '/api/v1/admin' });
+  await app.register(errorRoutes,      { prefix: '/api/v1/errors' });
+
+  // ── Merkezi hata yakalayıcı ───────────────────────────────────────────────
+  // 5xx hataları ia_errors'a yazılır; kullanıcıya iç detay sızmaz.
+  // 4xx (doğrulama, yetki) kullanıcı hatasıdır — kaydedilmez, olduğu gibi döner.
+  app.setErrorHandler(async (err, request, reply) => {
+    const status = err.statusCode || 500;
+
+    if (status >= 500) {
+      await logError({
+        source:     'server',
+        level:      'error',
+        message:    err.message,
+        stack:      err.stack,
+        route:      request.routerPath || request.url,
+        method:     request.method,
+        status,
+        user_id:    request.user?.id,
+        user_email: request.user?.email,
+        user_agent: request.headers['user-agent'],
+      });
+      return reply.status(status).send({ error: 'Sunucu hatası. Sorun kaydedildi, en kısa sürede bakılacak.' });
+    }
+
+    return reply.status(status).send({ error: err.message });
+  });
+
 
   // ── Health check ──────────────────────────────────────────────────────────
   // `questions` reports how many entries the question bank resolved to, so a
@@ -104,6 +133,20 @@ async function build() {
 
   return app;
 }
+
+// ── Yakalanmamış hatalar ─────────────────────────────────────────────────────
+// Süreci öldürmeden önce hatayı kaydetmeye çalış; Railway yeniden başlatır.
+process.on('unhandledRejection', (reason) => {
+  const err = reason instanceof Error ? reason : new Error(String(reason));
+  logError({ source: 'server', level: 'fatal', message: `unhandledRejection: ${err.message}`, stack: err.stack })
+    .catch(() => {});
+});
+
+process.on('uncaughtException', (err) => {
+  logError({ source: 'server', level: 'fatal', message: `uncaughtException: ${err.message}`, stack: err.stack })
+    .catch(() => {})
+    .finally(() => setTimeout(() => process.exit(1), 1500));
+});
 
 // ── Bootstrap ────────────────────────────────────────────────────────────────
 build().then(async (app) => {
