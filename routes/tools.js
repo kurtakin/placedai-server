@@ -202,7 +202,7 @@ async function toolsRoutes(fastify) {
       });
 
       const jobData = safeParseJSON(raw);
-      if (!jobData) return reply.code(500).send({ error: 'Parse failed — tekrar deneyin.' });
+      if (!jobData) return reply.code(500).send({ error: 'Parse failed — please try again.' });
 
       jobData.source_url = url;
       return jobData;
@@ -234,7 +234,7 @@ async function toolsRoutes(fastify) {
       const jobData = safeParseJSON(raw);
       if (!jobData) {
         fastify.log.error({ raw }, '[tools/parse-job-text] JSON parse failed');
-        return reply.code(500).send({ error: 'Parse failed — AI yanıtı JSON formatında değil. Tekrar deneyin.' });
+        return reply.code(500).send({ error: 'Parse failed — the AI response was not valid JSON. Please try again.' });
       }
 
       jobData.source_url = url || null;
@@ -348,7 +348,7 @@ async function toolsRoutes(fastify) {
     } catch (err) {
       fastify.log.error(err, '[tools/headshot]');
       if (err.code === 'content_policy_violation') {
-        return reply.code(422).send({ error: 'İçerik politikası hatası. Açıklamayı değiştirip tekrar deneyin.' });
+        return reply.code(422).send({ error: 'Content policy error. Change the description and try again.' });
       }
       return reply.code(500).send({ error: err.message });
     }
@@ -420,11 +420,11 @@ async function toolsRoutes(fastify) {
   fastify.post('/parse-cv', async (request, reply) => {
     try {
       if (!process.env.ANTHROPIC_API_KEY) {
-        return reply.code(503).send({ error: 'ANTHROPIC_API_KEY .env dosyasında eksik' });
+        return reply.code(503).send({ error: 'ANTHROPIC_API_KEY is missing from the environment' });
       }
 
       const { filename = '', data } = request.body ?? {};
-      if (!data) return reply.code(400).send({ error: 'Dosya verisi eksik' });
+      if (!data) return reply.code(400).send({ error: 'File data is missing' });
 
       // Base64 → Buffer
       let buffer;
@@ -485,8 +485,8 @@ async function toolsRoutes(fastify) {
       return reply.send(parsed);
 
     } catch (err) {
-      fastify.log.error('[parse-cv] Beklenmeyen hata:', err);
-      return reply.code(500).send({ error: `Sunucu hatası: ${err.message}` });
+      fastify.log.error('[parse-cv] Unexpected error:', err);
+      return reply.code(500).send({ error: `Server error: ${err.message}` });
     }
   });
 
@@ -786,7 +786,7 @@ Generate 10 likely interview questions for this specific job.`;
       const parsed = safeParseJSON(raw);
       if (!parsed || !Array.isArray(parsed.questions)) {
         fastify.log.error({ raw: raw.slice(0, 500) }, '[analyze-job-questions] JSON parse failed');
-        return reply.code(500).send({ error: 'AI yanıtı beklenmeyen formatta — tekrar deneyin.' });
+        return reply.code(500).send({ error: 'The AI response had an unexpected format — please try again.' });
       }
 
       // Normalize et
@@ -854,7 +854,7 @@ Consolidate similar questions. Return 6-10 patterns. No text outside the JSON ar
 
       const parsed = safeParseJSON(raw);
       if (!Array.isArray(parsed)) {
-        return reply.code(500).send({ error: 'AI yanıtı parse edilemedi' });
+        return reply.code(500).send({ error: 'Could not parse the AI response' });
       }
 
       return { patterns: parsed, analyzedJobCount: jobs.length };

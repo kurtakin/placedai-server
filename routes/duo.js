@@ -354,7 +354,7 @@ async function duoRoutes(fastify) {
   // The candidate sends this, and the candidate is always a signed-in user.
   fastify.post('/question', { preHandler: requireAuth }, async (request, reply) => {
     const { session_id, question } = request.body ?? {};
-    if (!session_id || !question) return reply.code(400).send({ error: 'session_id ve question gerekli' });
+    if (!session_id || !question) return reply.code(400).send({ error: 'session_id and question are required' });
 
     const session = getSession(session_id);
     if (!session) return reply.code(404).send({ error: 'session_not_found' });
@@ -373,7 +373,7 @@ async function duoRoutes(fastify) {
   // ── İpucu gönder (helper → interviewee) ───────────────────────────────────
   fastify.post('/tip', async (request, reply) => {
     const { session_id, tip, helper_name = 'Yardımcı' } = request.body ?? {};
-    if (!session_id || !tip) return reply.code(400).send({ error: 'session_id ve tip gerekli' });
+    if (!session_id || !tip) return reply.code(400).send({ error: 'session_id and tip are required' });
 
     // Helpers join as guests — the session code is what proves they were invited.
     const session = getSession(session_id);

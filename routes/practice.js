@@ -278,7 +278,7 @@ async function practiceRoutes(fastify) {
       return reply.code(400).send({ error: 'job_description required (min 50 chars)' });
     }
     if (/^https?:\/\//i.test(job_description.trim())) {
-      return reply.code(400).send({ error: 'URL değil ilan metni girin: sayfayı açın → Ctrl+A → Ctrl+C → buraya yapıştırın.' });
+      return reply.code(400).send({ error: 'Not a URL — paste the listing text: open the page → Ctrl+A → Ctrl+C → paste here.' });
     }
     if (!process.env.ANTHROPIC_API_KEY) {
       return reply.code(503).send({ error: 'ANTHROPIC_API_KEY not set' });
@@ -848,7 +848,7 @@ Analyze the match and return the JSON scorecard.`;
         messages:   [{ role: 'user', content: userPrompt }],
       });
       const result = safeParseJSON(raw);
-      if (!result) return reply.code(500).send({ error: 'Parse failed — tekrar deneyin.' });
+      if (!result) return reply.code(500).send({ error: 'Parse failed — please try again.' });
       return result;
     } catch (err) {
       fastify.log.error(err, '[practice/ats-score]');

@@ -114,7 +114,7 @@ async function build() {
         user_email: request.user?.email,
         user_agent: request.headers['user-agent'],
       });
-      return reply.status(status).send({ error: 'Sunucu hatası. Sorun kaydedildi, en kısa sürede bakılacak.' });
+      return reply.status(status).send({ error: 'Server error. The problem has been logged and will be looked at.' });
     }
 
     return reply.status(status).send({ error: err.message });

@@ -387,7 +387,7 @@ async function aidRoutes(fastify) {
       fastify.log.info({ answer: answer.slice(0, 80) }, '[aid/answer]');
       return { points: [], answer };
     } catch(err) {
-      fastify.log.error(err, '[aid/answer] hata');
+      fastify.log.error(err, '[aid/answer] error');
       return reply.code(500).send({ error: err.message });
     }
   });
@@ -411,7 +411,7 @@ async function aidRoutes(fastify) {
 
       // "data:image/png;base64,<data>" → parts
       const match = image_base64.match(/^data:image\/(\w+);base64,(.+)$/);
-      if (!match) return reply.code(400).send({ error: 'Geçersiz görüntü formatı' });
+      if (!match) return reply.code(400).send({ error: 'Invalid image format' });
 
       const mediaType = 'image/' + match[1]; // e.g. 'image/png'
       const imgData   = match[2];            // raw base64
@@ -458,7 +458,7 @@ async function aidRoutes(fastify) {
       });
 
     } catch (err) {
-      fastify.log.error(err, '[aid/screenshot] hata');
+      fastify.log.error(err, '[aid/screenshot] error');
       return reply.code(500).send({ error: err.message });
     }
   });
@@ -517,7 +517,7 @@ async function aidRoutes(fastify) {
       fastify.log.info({ msgs: messages.length, q: pairs.length }, '[aid/chat] done');
     })
     .catch((err) => {
-      fastify.log.error(err, '[aid/chat] hata');
+      fastify.log.error(err, '[aid/chat] error');
       send({ type: 'error', data: err.message });
       readable.push(null);
     });
@@ -593,7 +593,7 @@ async function aidRoutes(fastify) {
       return reply.send(result);
 
     } catch (err) {
-      fastify.log.error(err, '[aid/scorecard] hata');
+      fastify.log.error(err, '[aid/scorecard] error');
       return reply.code(500).send({ error: err.message });
     }
   });
@@ -604,7 +604,7 @@ async function aidRoutes(fastify) {
       const result = await getUsage(request.user);
       return reply.send(result);
     } catch (err) {
-      fastify.log.error(err, '[aid/usage] hata');
+      fastify.log.error(err, '[aid/usage] error');
       return reply.code(500).send({ error: err.message });
     }
   });
