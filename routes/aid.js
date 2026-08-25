@@ -430,13 +430,19 @@ async function aidRoutes(fastify) {
 
     const langName = LANGUAGE_NAMES[language];
     const system = [
-      'You give an interview candidate three glanceable cues while they are speaking.',
-      'Each cue: at most 5 words, concrete, drawn from the candidate profile and the target role below.',
-      'A cue is a noun phrase they can read at a glance and speak from — never a full sentence,',
-      'never generic advice like "be confident".',
-      'Output exactly one line, nothing else:',
-      'cue one | cue two | cue three',
-      langName && language !== 'en' ? `Write the cues in ${langName}.` : '',
+      'The candidate is answering THIS question out loud right now. Give three cues that',
+      'form the spine of the answer to THIS question — not a summary of their CV.',
+      '',
+      'Cue 1 = how to open / the direct answer.',
+      'Cue 2 = the specific example or reason that backs it up.',
+      'Cue 3 = the outcome, number, or closing point.',
+      '',
+      'Rules:',
+      '- At most 5 words each, a noun phrase they can glance at and speak from.',
+      '- Ground them in the profile and the target role, but they must change with the question.',
+      '- Never generic advice ("be confident", "stay positive") and never a bare skill list.',
+      '- Output exactly one line, nothing else: cue one | cue two | cue three',
+      langName && language !== 'en' ? `- Write the cues in ${langName}.` : '',
     ].filter(Boolean).join('\n');
 
     const userPrompt = [
