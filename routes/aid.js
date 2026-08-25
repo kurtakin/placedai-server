@@ -221,13 +221,35 @@ const LANGUAGE_NAMES = {
   ko: 'Korean',
 };
 
-function resolvePrompt(answer_length, has_web_context, interview_type = 'job_interview', language = 'en') {
+// Cue-first directive. The candidate is speaking RIGHT NOW, so the three cues
+// must arrive before the full answer — they are the only thing a person can
+// actually read mid-sentence. The overlay renders them the moment this first
+// line completes, while the answer is still streaming.
+const POINTS_DIRECTIVE = `
+OUTPUT FORMAT — exactly two lines, in this order:
+
+POINTS: <cue 1> | <cue 2> | <cue 3>
+ANSWER: <the spoken answer>
+
+The POINTS line comes FIRST and must be complete before the answer starts.
+Each cue: at most 5 words, concrete, glanceable — a noun phrase the candidate
+can read at a glance and speak from. Draw them from the candidate's own
+background and the target role. No full sentences, no filler like "be confident".
+Output nothing outside these two lines — no markdown, no labels, no preamble.`;
+
+function resolvePrompt(answer_length, has_web_context, interview_type = 'job_interview', language = 'en', with_points = false) {
   const type     = PROMPTS[interview_type] ? interview_type : 'job_interview';
   const detailed = answer_length === 'detailed';
   let   system   = PROMPTS[type][detailed ? 'detailed' : 'short'];
 
   if (has_web_context && !detailed) {
     system += '\n\n[Web search results about the company are included — reference them naturally if relevant]';
+  }
+
+  if (with_points) {
+    // The base prompts end with "Output ONLY the spoken answer" — the format
+    // block below replaces that instruction, so it must come last.
+    system += '\n' + POINTS_DIRECTIVE;
   }
 
   // Language directive — append only when not English
@@ -238,8 +260,31 @@ function resolvePrompt(answer_length, has_web_context, interview_type = 'job_int
 
   return {
     system,
-    max_tokens: detailed ? 550 : (has_web_context ? 350 : 320),
+    // +60 tokens for the POINTS line so it never eats into the answer budget
+    max_tokens: (detailed ? 550 : (has_web_context ? 350 : 320)) + (with_points ? 60 : 0),
   };
+}
+
+/**
+ * Split the model's two-line output into cues and the spoken answer.
+ * Tolerates a missing POINTS line — then everything is the answer.
+ */
+function splitPointsAndAnswer(raw) {
+  const text = (raw || '').trim();
+  const pointsMatch = text.match(/POINTS:\s*(.+?)(?:\r?\n|ANSWER:|$)/i);
+  const answerMatch = text.match(/ANSWER:\s*([\s\S]+)/i);
+
+  const points = pointsMatch
+    ? pointsMatch[1].split('|').map(x => x.trim()).filter(Boolean).slice(0, 3)
+    : [];
+
+  let answer = answerMatch ? answerMatch[1].trim() : '';
+  if (!answer) {
+    // No ANSWER: label — treat the whole thing as the answer, minus any
+    // POINTS line we already consumed.
+    answer = pointsMatch ? text.replace(pointsMatch[0], '').trim() : text;
+  }
+  return { points, answer };
 }
 
 // ── Route ─────────────────────────────────────────────────────────────────────
@@ -267,7 +312,7 @@ async function aidRoutes(fastify) {
   // The live interview answer endpoint — the core paid feature, so it spends
   // a Free-plan credit before the stream opens.
   fastify.post('/stream', { preHandler: meterFreePlan }, (request, reply) => {
-    const { question, sector = 'universal_behavioral', seniority = 'mid', model, memory = '', web_context = '', jd_context = '', answer_length = 'short', interview_type = 'job_interview', language = 'en' } = request.body ?? {};
+    const { question, sector = 'universal_behavioral', seniority = 'mid', model, memory = '', web_context = '', jd_context = '', answer_length = 'short', interview_type = 'job_interview', language = 'en', with_points = false } = request.body ?? {};
 
     if (!question || typeof question !== 'string' || question.trim().length < 5) {
       return reply.code(400).send({ error: 'question is required (min 5 chars)' });
@@ -311,7 +356,9 @@ async function aidRoutes(fastify) {
     const hasWebContext = web_context && web_context.trim().length > 20;
     const hasJdContext  = jd_context  && jd_context.trim().length  > 10;
     const webSection   = hasWebContext ? `\n\nWEB SEARCH RESULTS:\n${web_context.slice(0, 1200)}` : '';
-    const jdSection    = hasJdContext  ? `\n\nJOB CONTEXT: ${jd_context.slice(0, 400)}`          : '';
+    // 1500 chars, not 400: the candidate profile, the target role and the
+    // learned corrections all travel in this field — 400 truncated the CV away.
+    const jdSection    = hasJdContext  ? `\n\nJOB CONTEXT: ${jd_context.slice(0, 1500)}`         : '';
     const userPrompt = `${sector} / ${seniority}: "${question.trim()}"${memory ? memory : ''}${jdSection}${webSection}`;
     const t0 = Date.now();
 
@@ -319,7 +366,7 @@ async function aidRoutes(fastify) {
     const aiModel = model || 'claude-haiku';
     if (hasWebContext) fastify.log.info({ ms: 0 }, '[aid] web context enjekte edildi');
 
-    const { system: streamSystem, max_tokens: streamMaxTokens } = resolvePrompt(answer_length, hasWebContext, interview_type, language);
+    const { system: streamSystem, max_tokens: streamMaxTokens } = resolvePrompt(answer_length, hasWebContext, interview_type, language, with_points);
 
     streamMessage({
       model:      aiModel,
@@ -375,7 +422,7 @@ async function aidRoutes(fastify) {
       ].join('');
 
       const { createMessage } = require('../lib/ai');
-      const { system: ansSystem, max_tokens: ansTokens } = resolvePrompt(answer_length, false, interview_type, language);
+      const { system: ansSystem, max_tokens: ansTokens } = resolvePrompt(answer_length, false, interview_type, language, true);
       const raw = await createMessage({
         model:      model || 'claude-haiku',
         max_tokens: ansTokens,
@@ -383,9 +430,11 @@ async function aidRoutes(fastify) {
         messages: [{ role: 'user', content: prompt }],
       });
 
-      const answer = (raw || '').trim();
-      fastify.log.info({ answer: answer.slice(0, 80) }, '[aid/answer]');
-      return { points: [], answer };
+      // Same two-line format as /stream, parsed here so the non-streaming
+      // fallback shows the cues too instead of always returning points: [].
+      const { points, answer } = splitPointsAndAnswer(raw);
+      fastify.log.info({ points: points.length, answer: answer.slice(0, 80) }, '[aid/answer]');
+      return { points, answer };
     } catch(err) {
       fastify.log.error(err, '[aid/answer] error');
       return reply.code(500).send({ error: err.message });
