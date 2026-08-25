@@ -221,6 +221,17 @@ const LANGUAGE_NAMES = {
   ko: 'Korean',
 };
 
+// Her cevap prompt'una eklenen kural.
+const NO_FABRICATION = `
+
+NEVER invent facts. Do not state a number, percentage, money amount, date,
+company name, job title, tool or certification unless it appears in the
+candidate's profile or the job posting provided. If a metric would strengthen
+the answer but you do not have one, refer to it in general terms ("a measurable
+drop in forecast error") or leave a slot the candidate can fill from memory.
+The candidate speaks this answer aloud in a real interview — a fabricated
+detail becomes their lie, and can cost them the offer at reference check.`;
+
 // Cue-first directive. The candidate is speaking RIGHT NOW, so the three cues
 // must arrive before the full answer — they are the only thing a person can
 // actually read mid-sentence. The overlay renders them the moment this first
@@ -245,6 +256,11 @@ function resolvePrompt(answer_length, has_web_context, interview_type = 'job_int
   if (has_web_context && !detailed) {
     system += '\n\n[Web search results about the company are included — reference them naturally if relevant]';
   }
+
+  // Uydurma yasağı her mülakat tipi için geçerli. Kullanıcı bu cevabı gerçek bir
+  // görüşmede sesli okuyor; uydurulmuş bir rakam onu yalan söylemiş duruma
+  // düşürür ve referans kontrolünde teklifini kaybettirir.
+  system += NO_FABRICATION;
 
   if (with_points) {
     // The base prompts end with "Output ONLY the spoken answer" — the format
@@ -441,6 +457,11 @@ async function aidRoutes(fastify) {
       '- At most 5 words each, a noun phrase they can glance at and speak from.',
       '- Ground them in the profile and the target role, but they must change with the question.',
       '- Never generic advice ("be confident", "stay positive") and never a bare skill list.',
+      '- NEVER invent numbers, percentages, money amounts, company names, dates or job titles.',
+      '  Use a figure ONLY if it appears verbatim in the profile below. If there is none,',
+      '  cue 3 names the KIND of outcome to mention ("the accuracy gain you achieved"),',
+      '  never a made-up one. The candidate may read this out loud in a real interview.',
+      '- Always output three cues.',
       '- Output exactly one line, nothing else: cue one | cue two | cue three',
       langName && language !== 'en' ? `- Write the cues in ${langName}.` : '',
     ].filter(Boolean).join('\n');
