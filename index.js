@@ -25,6 +25,7 @@ const duoRoutes         = require('./routes/duo');
 const feedbackRoutes    = require('./routes/feedback');
 const adminRoutes       = require('./routes/admin');
 const errorRoutes       = require('./routes/errors');
+const sttRoutes         = require('./routes/stt');
 const { logError }      = require('./lib/errors');
 
 // ── Question bank self-check (used by /health) ────────────────────────────────
@@ -94,6 +95,7 @@ async function build() {
   await app.register(feedbackRoutes,   { prefix: '/api/v1/feedback' });
   await app.register(adminRoutes,      { prefix: '/api/v1/admin' });
   await app.register(errorRoutes,      { prefix: '/api/v1/errors' });
+  await app.register(sttRoutes,        { prefix: '/api/v1/stt' });
 
   // ── Merkezi hata yakalayıcı ───────────────────────────────────────────────
   // 5xx hataları ia_errors'a yazılır; kullanıcıya iç detay sızmaz.
