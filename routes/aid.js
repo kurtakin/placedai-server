@@ -393,6 +393,67 @@ async function aidRoutes(fastify) {
       readable.push(null);
     });
   });
+  // ── POST /cues — yalnızca üç ip ucu, mümkün olan en hızlı yoldan ──────────
+  //
+  // Overlay bunu /stream ile AYNI ANDA çağırır. Cevabın tamamı iyi bir modelde
+  // akmaya devam ederken, ekranda okunabilir ilk içerik bu uçtan gelir.
+  // Groq'un ilk token süresi tipik olarak 150–300 ms; Claude'da bu ~800 ms idi.
+  //
+  // Kredi düşmez: bu, /stream ile aynı sorunun parçası, ayrı bir cevap değil.
+  fastify.post('/cues', async (request, reply) => {
+    const { question, jd_context = '', language = 'en' } = request.body ?? {};
+    if (!question || String(question).trim().length < 5) {
+      return reply.code(400).send({ error: 'question is required (min 5 chars)' });
+    }
+
+    const langName = LANGUAGE_NAMES[language];
+    const system = [
+      'You give an interview candidate three glanceable cues while they are speaking.',
+      'Each cue: at most 5 words, concrete, drawn from the candidate profile and the target role below.',
+      'A cue is a noun phrase they can read at a glance and speak from — never a full sentence,',
+      'never generic advice like "be confident".',
+      'Output exactly one line, nothing else:',
+      'cue one | cue two | cue three',
+      langName && language !== 'en' ? `Write the cues in ${langName}.` : '',
+    ].filter(Boolean).join('\n');
+
+    const userPrompt = [
+      `Question: "${String(question).trim()}"`,
+      jd_context ? `\nCANDIDATE PROFILE AND TARGET ROLE:\n${String(jd_context).slice(0, 1500)}` : '',
+    ].join('');
+
+    const t0 = Date.now();
+    try {
+      const groq = require('../lib/groq');
+      let raw;
+
+      if (groq.isConfigured()) {
+        raw = await groq.createMessage({
+          model: 'groq-fast', max_tokens: 60, temperature: 0.3,
+          system, messages: [{ role: 'user', content: userPrompt }],
+        });
+      } else {
+        // Groq yoksa mevcut sağlayıcıya düş — yine paralel, sadece daha yavaş
+        const { createMessage } = require('../lib/ai');
+        raw = await createMessage({
+          model: 'claude-haiku', max_tokens: 60,
+          system, messages: [{ role: 'user', content: userPrompt }],
+        });
+      }
+
+      const cues = String(raw || '')
+        .replace(/^\s*(POINTS|CUES)\s*:\s*/i, '')
+        .split('|').map(x => x.trim()).filter(Boolean).slice(0, 3);
+
+      fastify.log.info({ ms: Date.now() - t0, cues: cues.length, groq: groq.isConfigured() }, '[aid/cues]');
+      return { cues, ms: Date.now() - t0 };
+    } catch (err) {
+      // İp uçları bir bonus — başarısız olursa cevap akışı yine de çalışır
+      fastify.log.warn({ err: err.message }, '[aid/cues] failed');
+      return reply.code(200).send({ cues: [], error: err.message });
+    }
+  });
+
   // ── POST /answer — basit JSON, SSE yok ───────────────────────────────────
   fastify.post('/answer', async (request, reply) => {
     try {
