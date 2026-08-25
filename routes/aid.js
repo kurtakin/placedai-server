@@ -469,7 +469,10 @@ async function aidRoutes(fastify) {
       const out = { cues, ms: Date.now() - t0 };
       // Boş çıktıysa modelin ne döndürdüğünü görebilelim — sessiz başarısızlık
       // en kötü hata türü.
-      if (!cues.length) out.raw_preview = String(raw || '').slice(0, 200);
+      if (!cues.length) {
+        out.raw_preview = String(raw || '').slice(0, 200);
+        out.diag        = groq.isConfigured() ? groq.diagnostics() : { model: 'claude-haiku' };
+      }
       return out;
     } catch (err) {
       // İp uçları bir bonus — başarısız olursa cevap akışı yine de çalışır
