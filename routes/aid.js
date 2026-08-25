@@ -287,6 +287,28 @@ function splitPointsAndAnswer(raw) {
   return { points, answer };
 }
 
+/**
+ * Modelin ip ucu satırını ayrıştır.
+ * İdeal biçim "a | b | c" ama modeller satır sonu, tire veya numara da
+ * kullanabiliyor — hepsini kabul et, boş dönmektense esnek ol.
+ */
+function parseCues(raw) {
+  let text = String(raw || '').trim();
+  if (!text) return [];
+
+  text = text.replace(/^\s*(POINTS|CUES)\s*:\s*/i, '');
+
+  let parts = text.includes('|')
+    ? text.split('|')
+    : text.split(/\r?\n/);
+
+  return parts
+    .map(x => x.replace(/^\s*(?:[-*•]|\d+[.)])\s*/, '').trim())   // madde imi / numara
+    .map(x => x.replace(/^["'`]|["'`]$/g, '').trim())
+    .filter(x => x.length > 1 && x.length < 60)
+    .slice(0, 3);
+}
+
 // ── Route ─────────────────────────────────────────────────────────────────────
 /**
  * meterFreePlan — preHandler that spends one Free-plan credit.
@@ -441,12 +463,14 @@ async function aidRoutes(fastify) {
         });
       }
 
-      const cues = String(raw || '')
-        .replace(/^\s*(POINTS|CUES)\s*:\s*/i, '')
-        .split('|').map(x => x.trim()).filter(Boolean).slice(0, 3);
+      const cues = parseCues(raw);
 
       fastify.log.info({ ms: Date.now() - t0, cues: cues.length, groq: groq.isConfigured() }, '[aid/cues]');
-      return { cues, ms: Date.now() - t0 };
+      const out = { cues, ms: Date.now() - t0 };
+      // Boş çıktıysa modelin ne döndürdüğünü görebilelim — sessiz başarısızlık
+      // en kötü hata türü.
+      if (!cues.length) out.raw_preview = String(raw || '').slice(0, 200);
+      return out;
     } catch (err) {
       // İp uçları bir bonus — başarısız olursa cevap akışı yine de çalışır
       fastify.log.warn({ err: err.message }, '[aid/cues] failed');
