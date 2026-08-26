@@ -807,6 +807,115 @@ Generate 10 likely interview questions for this specific job.`;
     }
   });
 
+  // ── POST /job-site ────────────────────────────────────────────────────────
+  // Kullanıcının listesine eklemek istediği iş sitesi için arama URL şablonu.
+  //
+  // Model bir siteyi tanımıyorsa TAHMİN ETMEZ — { unknown: true } döner.
+  // Uydurulmuş bir arama adresi kullanıcıyı 404'e götürür ve sessizce
+  // "bu site çalışmıyor" izlenimi bırakır; bilmemek bundan iyidir.
+  // Dönen şablon yine de istemcide test edilmeden kaydedilmemeli.
+  // ─────────────────────────────────────────────────────────────────────────
+  fastify.post('/job-site', async (request, reply) => {
+    const { query, model } = request.body ?? {};
+    const q = String(query || '').trim();
+
+    if (q.length < 2)   return reply.code(400).send({ error: 'query required' });
+    if (q.length > 120) return reply.code(400).send({ error: 'query too long' });
+    if (!process.env.ANTHROPIC_API_KEY && !process.env.OPENAI_API_KEY) {
+      return reply.code(503).send({ error: 'AI is not configured on this server' });
+    }
+
+    const systemPrompt = `You map a job board's name or homepage to its job-search URL pattern.
+
+Return ONLY a JSON object. No prose, no markdown, no code fences.
+
+If you recognise the site and know how its job search URL is built:
+{
+  "name": "Short display name, max 18 characters",
+  "homepage": "https://example.com",
+  "url_template": "https://example.com/jobs?q={keyword}&l={location}",
+  "icon": "a single emoji",
+  "country": "ISO country code, or 'global'",
+  "confidence": "high" | "medium"
+}
+
+If you do NOT recognise the site, or you are not sure how its search URL is
+built, or the site is not a job board:
+{ "unknown": true, "reason": "one short sentence for the user" }
+
+Hard rules:
+- NEVER invent a URL pattern. A wrong pattern sends the user to a dead page
+  and they will believe the product is broken. "unknown" is the correct and
+  useful answer whenever you are guessing.
+- url_template MUST start with https:// and MUST contain {keyword}.
+- Include {location} only if that site actually supports a location parameter.
+- Use the site's real, current public search path. Do not use tracking or
+  affiliate parameters. Do not use a logged-in or API endpoint.
+- Set confidence to "medium" if you know the site but are less certain about
+  the exact parameter names.`;
+
+    try {
+      const raw = await createMessage({
+        model:      model || 'claude-haiku',
+        max_tokens: 400,
+        system:     systemPrompt,
+        messages:   [{ role: 'user', content: `Job board: ${q}` }],
+      });
+
+      const parsed = safeParseJSON(raw);
+      if (!parsed) {
+        fastify.log.error({ raw: String(raw).slice(0, 300) }, '[job-site] JSON parse failed');
+        return reply.code(502).send({ error: 'The AI response had an unexpected format — please try again.' });
+      }
+
+      if (parsed.unknown) {
+        return { unknown: true, reason: String(parsed.reason || 'This site is not one I can map reliably.').slice(0, 200) };
+      }
+
+      // ── Şablonu doğrula. Model doğru formatta yanıt verse bile
+      //    adresin kendisi güvenli ve kullanılabilir olmalı.
+      const tpl = String(parsed.url_template || '').trim();
+      if (!tpl || tpl.length > 500)      return { unknown: true, reason: 'The suggested address was not usable.' };
+      if (!/^https:\/\//i.test(tpl))     return { unknown: true, reason: 'The suggested address was not a secure https link.' };
+      if (!tpl.includes('{keyword}'))    return { unknown: true, reason: 'The suggested address had no place to put your search term.' };
+
+      let host = '';
+      try {
+        const probe = new NodeURL(tpl.replace(/\{keyword\}/g, 'analyst').replace(/\{location\}/g, 'london'));
+        host = probe.hostname.toLowerCase();
+      } catch {
+        return { unknown: true, reason: 'The suggested address was not a valid URL.' };
+      }
+
+      // Yerel ve özel ağ adresleri asla kabul edilmez.
+      if (!host.includes('.') ||
+          host === 'localhost' ||
+          /^\d+\.\d+\.\d+\.\d+$/.test(host) ||
+          /(^|\.)(local|internal|localhost)$/.test(host)) {
+        return { unknown: true, reason: 'The suggested address did not point at a public website.' };
+      }
+
+      const icon = String(parsed.icon || '').trim();
+
+      const site = {
+        name:         String(parsed.name || host.replace(/^www\./, '')).trim().slice(0, 18),
+        homepage:     String(parsed.homepage || `https://${host}`).slice(0, 200),
+        url_template: tpl,
+        icon:         icon && [...icon].length <= 2 ? icon : '🔗',
+        country:      String(parsed.country || 'global').slice(0, 12),
+        confidence:   parsed.confidence === 'high' ? 'high' : 'medium',
+        has_location: tpl.includes('{location}'),
+      };
+
+      fastify.log.info({ query: q, host, confidence: site.confidence }, '[job-site] OK');
+      return site;
+
+    } catch (err) {
+      fastify.log.error(err, '[job-site]');
+      return reply.code(500).send({ error: err.message });
+    }
+  });
+
   // ── POST /analyze-job-pattern ─────────────────────────────────────────────
   // Birden fazla analiz edilmiş iş ilanından ortak soru örüntüsü çıkar
   // ─────────────────────────────────────────────────────────────────────────
