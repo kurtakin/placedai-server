@@ -150,11 +150,18 @@ async function billingRoutes(fastify) {
         await setUserPlan(user.id, user.app_metadata?.plan || 'free', { stripe_customer_id: customerId });
       }
 
+      // Managed Payments: Stripe merchant of record olur ve 80+ ülkede satış
+      // vergisi / VAT / GST yükümlülüğünü üstlenir; karşılığında işlem başına
+      // %3.5 ek ücret alır. Panelde açılmadan bu parametreyi göndermek Checkout
+      // çağrısını hataya düşürür, o yüzden değişkene bağlı.
+      const managed = String(process.env.STRIPE_MANAGED_PAYMENTS || '') === '1';
+
       const session = await stripe.checkout.sessions.create({
         mode:                'subscription',
         customer:            customerId,
         line_items:          [{ price, quantity: 1 }],
         client_reference_id: user.id,
+        ...(managed ? { managed_payments: { enabled: true } } : {}),
         // Abonelik olaylarında kullanıcıyı bulabilmek için: müşteri kaydı
         // silinse bile abonelik metadata'sı olayla birlikte geliyor.
         subscription_data:   { metadata: { user_id: user.id, plan: wanted } },
@@ -194,9 +201,10 @@ async function billingRoutes(fastify) {
 
   // ── GET /status ───────────────────────────────────────────────────────────
   fastify.get('/status', { preHandler: requireAuth }, async (request) => ({
-    plan:            request.user.app_metadata?.plan || 'free',
+    plan:             request.user.app_metadata?.plan || 'free',
     has_subscription: !!request.user.app_metadata?.stripe_customer_id,
     billing_ready:    !!process.env.STRIPE_SECRET_KEY,
+    merchant_of_record: String(process.env.STRIPE_MANAGED_PAYMENTS || '') === '1' ? 'stripe' : 'placedai',
   }));
 
   // ── POST /webhook ─────────────────────────────────────────────────────────
