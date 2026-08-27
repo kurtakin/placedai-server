@@ -31,7 +31,8 @@ function getSupabase() {
   return _sb;
 }
 
-const VALID_PLANS = ['free', 'pro', 'multi'];
+const { ALL_PLANS } = require('../lib/plans');
+const VALID_PLANS = ALL_PLANS;
 const VALID_ROLES = ['admin', 'user'];
 
 /**

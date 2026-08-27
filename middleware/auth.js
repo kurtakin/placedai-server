@@ -9,6 +9,8 @@
  * verifies it with Supabase, and attaches req.user to the request.
  */
 
+const { PAID_PLANS } = require('../lib/plans');
+
 // Supabase client is loaded lazily — only when env vars are present.
 // This prevents a startup crash when @supabase/supabase-js is not installed locally.
 let supabase = null;
@@ -93,7 +95,7 @@ async function optionalAuth(request, reply) {
  *
  * @param {string[]} allowed  plans that may access the route
  */
-function requirePlan(allowed = ['pro', 'multi']) {
+function requirePlan(allowed = PAID_PLANS) {
   return async function planGate(request, reply) {
     const user = request.user;
     if (!user) {
