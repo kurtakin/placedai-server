@@ -12,7 +12,7 @@ const XLSX     = require('xlsx');
 const mammoth  = require('mammoth');
 const { createMessage }              = require('../lib/ai');
 const { sendApplicationNotification, isConfigured } = require('../lib/mailer');
-const { requireAuth }                = require('../middleware/auth');
+const { requireAuth, requirePlan }   = require('../middleware/auth');
 
 // ── PDF metin çıkarıcı (pdf-parse yerine — browser API gerektirmez) ───────────
 function extractPDFText(buffer) {
@@ -498,7 +498,9 @@ async function toolsRoutes(fastify) {
   }));
 
   // ── POST /performance-analysis — post-interview performance ───────────────
-  fastify.post('/performance-analysis', async (request, reply) => {
+  // Ultimate: mulakat sonrasi gelisim dongusu. Tek mulakata hazirlanan
+  // kisiye degil, cok mulakat yapana deger uretiyor.
+  fastify.post('/performance-analysis', { preHandler: requirePlan(['ultimate']) }, async (request, reply) => {
     const { qa_pairs = [], company = '', model } = request.body ?? {};
 
     if (!qa_pairs || qa_pairs.length === 0) {
@@ -551,7 +553,10 @@ Return ONLY valid JSON, no markdown:
   });
 
   // ── POST /coding-solve — coding interview solution ─────────────────────────
-  fastify.post('/coding-solve', async (request, reply) => {
+  // Ucretli katmanlarda: yazilimci adaylar bu kategorinin en buyuk kitlesi,
+  // ve rakipler bunu giris fiyatina veriyor. Ultimate'e kilitlemek onlari
+  // kapida elerdi.
+  fastify.post('/coding-solve', { preHandler: requirePlan() }, async (request, reply) => {
     const { question, language = 'Python', difficulty = 'Medium', attempt, model } = request.body ?? {};
 
     if (!question || question.trim().length < 20) {

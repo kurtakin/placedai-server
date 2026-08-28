@@ -14,7 +14,13 @@
 const { Readable } = require('stream');
 const os           = require('os');
 const crypto       = require('crypto');
-const { requireAuth } = require('../middleware/auth');
+const { requireAuth, requirePlan } = require('../middleware/auth');
+
+// Duo Ultimate'e ait — ama YALNIZCA oturumu acan taraf icin. Yardimci,
+// arkadasin tarayicisindan katilan misafir; bizim musterimiz degil, giris
+// bile yapmis olmayabilir. Onun yollarini (/tip, /subscribe, /helper)
+// kapatmak, ozelligi satin alan kisi icin de calismaz hale getirirdi.
+const requireDuo = [requireAuth, requirePlan(['ultimate'])];
 
 // ── In-memory oturum deposu ────────────────────────────────────────────────────
 // sessions: Map<sessionId, { ownerId, created, expiresAt, messages, streams }>
@@ -262,7 +268,7 @@ async function duoRoutes(fastify) {
   // ── Oturum aç (interviewee) ───────────────────────────────────────────────
   // Only a signed-in user can create a session, and the code comes from the
   // server — the browser no longer invents it.
-  fastify.post('/session', { preHandler: requireAuth }, async (request, reply) => {
+  fastify.post('/session', { preHandler: requireDuo }, async (request, reply) => {
     const ownerId = request.user.id;
 
     const mine = [...sessions.values()].filter((s) => s.ownerId === ownerId);
@@ -297,7 +303,7 @@ async function duoRoutes(fastify) {
   });
 
   // ── Oturumu kapat ─────────────────────────────────────────────────────────
-  fastify.post('/session/close', { preHandler: requireAuth }, async (request, reply) => {
+  fastify.post('/session/close', { preHandler: requireDuo }, async (request, reply) => {
     const { session_id } = request.body ?? {};
     const session = getSession(session_id);
     if (!session) return { ok: true, already_closed: true };
@@ -352,7 +358,7 @@ async function duoRoutes(fastify) {
 
   // ── Soru gönder (interviewee → helpers) ──────────────────────────────────
   // The candidate sends this, and the candidate is always a signed-in user.
-  fastify.post('/question', { preHandler: requireAuth }, async (request, reply) => {
+  fastify.post('/question', { preHandler: requireDuo }, async (request, reply) => {
     const { session_id, question } = request.body ?? {};
     if (!session_id || !question) return reply.code(400).send({ error: 'session_id and question are required' });
 
@@ -391,7 +397,7 @@ async function duoRoutes(fastify) {
 
   // ── Oturum bilgisi ─────────────────────────────────────────────────────────
   // Owner-only: this used to be an open "does this code exist?" oracle.
-  fastify.get('/session-info', { preHandler: requireAuth }, async (request, reply) => {
+  fastify.get('/session-info', { preHandler: requireDuo }, async (request, reply) => {
     const { session_id } = request.query;
     const s = getSession(session_id);
     if (!s) return { connected_helpers: 0, messages: 0, exists: false };

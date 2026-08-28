@@ -27,7 +27,7 @@
 const { createMessage } = require('../lib/ai');
 const path = require('path');
 const fs   = require('fs');
-const { requireAuth }   = require('../middleware/auth');
+const { requireAuth, requirePlan } = require('../middleware/auth');
 const { checkAndIncrement } = require('../lib/usage');
 
 function safeParseJSON(raw) {
@@ -488,7 +488,9 @@ Evaluate this answer against the framework and return your JSON scorecard.`.trim
   });
 
   // ── POST /online-assessment — platform bazlı sınav yardımı ──────────────────
-  fastify.post('/online-assessment', async (request, reply) => {
+  // Ultimate: bes ayri platform destegi (HireVue, CodeSignal, HackerRank,
+  // Codility, TestGorilla) — eleme surecini yogun yasayan aday profili.
+  fastify.post('/online-assessment', { preHandler: requirePlan(['ultimate']) }, async (request, reply) => {
     const { platform = 'general', question_type = 'video_behavioral', question = '', language = 'Python', difficulty = 'Medium', time_limit = 120, model } = request.body ?? {};
     if (!question.trim()) return reply.code(400).send({ error: 'question required' });
 
