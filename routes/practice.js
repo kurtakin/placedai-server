@@ -488,9 +488,10 @@ Evaluate this answer against the framework and return your JSON scorecard.`.trim
   });
 
   // ── POST /online-assessment — platform bazlı sınav yardımı ──────────────────
-  // Ultimate: bes ayri platform destegi (HireVue, CodeSignal, HackerRank,
-  // Codility, TestGorilla) — eleme surecini yogun yasayan aday profili.
-  fastify.post('/online-assessment', { preHandler: requirePlan(['ultimate']) }, async (request, reply) => {
+  // Ucretli katmanlar: HireVue bir video mulakat elemesi, TestGorilla yetenek
+  // sinavi. Elemeyi ust katmana kilitlemek, Pro musterisini mulakata varmadan
+  // savunmasiz birakirdi.
+  fastify.post('/online-assessment', { preHandler: requirePlan() }, async (request, reply) => {
     const { platform = 'general', question_type = 'video_behavioral', question = '', language = 'Python', difficulty = 'Medium', time_limit = 120, model } = request.body ?? {};
     if (!question.trim()) return reply.code(400).send({ error: 'question required' });
 
