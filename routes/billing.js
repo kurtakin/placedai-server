@@ -73,6 +73,20 @@ function isActive(status) {
 }
 
 /**
+ * Aboneligin icinde bulundugu fatura doneminin baslangici, ISO damgasi olarak.
+ *
+ * Kota penceresi buna demirleniyor: takvim ayi kullanmak, ayin sonunda abone
+ * olan kullaniciya birkac gunde iki pencerelik hak verirdi.
+ *
+ * Stripe bu alani 2025-03-31 surumunde abonelikten kalemlere tasidi; ikisine
+ * de bakiyoruz ki API surumu degisince sessizce bozulmasin.
+ */
+function periodStartOf(sub) {
+  const secs = sub?.items?.data?.[0]?.current_period_start ?? sub?.current_period_start;
+  return Number.isFinite(secs) ? new Date(secs * 1000).toISOString() : null;
+}
+
+/**
  * Kullanıcının planını yaz. app_metadata'nın diğer alanlarını (role gibi)
  * korumak için önce okuyup birleştiriyoruz — üzerine yazmak admin rolünü siler.
  */
@@ -238,12 +252,14 @@ async function billingRoutes(fastify) {
           const userId = s.client_reference_id || s.metadata?.user_id;
           if (!userId) { console.warn('[billing] checkout completed without a user reference'); break; }
 
-          let plan = 'pro';
+          let plan   = 'pro';
+          let anchor = null;
           if (s.subscription) {
             const sub = await stripe.subscriptions.retrieve(s.subscription);
-            plan = planForPrice(sub.items?.data?.[0]?.price?.id) || sub.metadata?.plan || 'pro';
+            plan   = planForPrice(sub.items?.data?.[0]?.price?.id) || sub.metadata?.plan || 'pro';
+            anchor = periodStartOf(sub);
           }
-          await setUserPlan(userId, plan, { stripe_customer_id: s.customer });
+          await setUserPlan(userId, plan, { stripe_customer_id: s.customer, billing_anchor: anchor });
           break;
         }
 
@@ -253,10 +269,15 @@ async function billingRoutes(fastify) {
           const userId = sub.metadata?.user_id || await userIdFromCustomer(sub.customer);
           if (!userId) { console.warn('[billing] subscription event without a user reference'); break; }
 
-          const plan = isActive(sub.status)
+          const active = isActive(sub.status);
+          const plan = active
             ? (planForPrice(sub.items?.data?.[0]?.price?.id) || sub.metadata?.plan || 'pro')
             : 'free';
-          await setUserPlan(userId, plan, { stripe_customer_id: sub.customer });
+          // Plan dustuyse demiri de birakiyoruz; kota yeniden kayit tarihine baglanir.
+          await setUserPlan(userId, plan, {
+            stripe_customer_id: sub.customer,
+            billing_anchor:     active ? periodStartOf(sub) : null,
+          });
           break;
         }
 
@@ -264,7 +285,7 @@ async function billingRoutes(fastify) {
           const sub    = event.data.object;
           const userId = sub.metadata?.user_id || await userIdFromCustomer(sub.customer);
           if (!userId) { console.warn('[billing] cancellation without a user reference'); break; }
-          await setUserPlan(userId, 'free', { stripe_customer_id: sub.customer });
+          await setUserPlan(userId, 'free', { stripe_customer_id: sub.customer, billing_anchor: null });
           break;
         }
 
