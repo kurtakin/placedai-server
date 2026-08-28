@@ -20,6 +20,7 @@
 'use strict';
 
 const { requireAuth } = require('../middleware/auth');
+const { FEATURE_PLANS, LIVE_MINUTES, ALL_PLANS } = require('../lib/plans');
 const { logError }    = require('../lib/errors');
 
 const APP_URL = process.env.APP_URL || 'https://www.placedai.app';
@@ -247,6 +248,16 @@ async function billingRoutes(fastify) {
       merchant_of_record:    String(process.env.STRIPE_MANAGED_PAYMENTS || '') === '1' ? 'stripe' : 'placedai',
     };
   });
+
+  // ── GET /plans ────────────────────────────────────────────────────────────
+  // Kilit haritasi ve kotalar. Dashboard bunu cekip kartlara kilit ciziyor —
+  // ayni nesneden beslendigi icin arayuzdeki kilit ile sunucudaki kapi
+  // celisemez. Kimlik istemiyoruz: bu bilgi zaten fiyat sayfasinda yaziyor.
+  fastify.get('/plans', async () => ({
+    features:     FEATURE_PLANS,
+    live_minutes: LIVE_MINUTES,
+    plans:        ALL_PLANS,
+  }));
 
   // ── POST /webhook ─────────────────────────────────────────────────────────
   // Kimlik doğrulaması YOK — çağıran Stripe. Güvenlik imzadan geliyor.
