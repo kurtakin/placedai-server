@@ -12,6 +12,7 @@
 'use strict';
 
 const { requireAuth } = require('../middleware/auth');
+const { getLiveUsage, addLiveSeconds } = require('../lib/usage');
 
 // Model adı sabitlenmedi: katalog değişiyor. Ortam değişkeniyle geçersiz
 // kılınabilir; hata metni istemciye döner ki körlemesine tahmin etmeyelim.
@@ -24,6 +25,17 @@ async function sttRoutes(fastify) {
     const key = process.env.OPENAI_API_KEY;
     if (!key) {
       return reply.code(503).send({ error: 'realtime_stt_unavailable', reason: 'OPENAI_API_KEY not set' });
+    }
+
+    // Kota bitmisse anahtar hic uretilmesin: uretilen her anahtar para harcayan
+    // bir baglanti acabilir. Kapi burada, baglanti kurulmadan once.
+    const quota = await getLiveUsage(request.user);
+    if (quota.exhausted) {
+      return reply.code(402).send({
+        error:   'live_quota_exhausted',
+        message: 'You have used all your live interview minutes this period.',
+        ...quota,
+      });
     }
 
     const body = {
@@ -65,11 +77,35 @@ async function sttRoutes(fastify) {
         return reply.code(502).send({ error: 'realtime_stt_no_secret', shape: Object.keys(data).slice(0, 10) });
       }
 
-      return { client_secret: secret, model: MODEL, expires_at: data.expires_at || null };
+      return {
+        client_secret: secret,
+        model:         MODEL,
+        expires_at:    data.expires_at || null,
+        // Istemci kalan sureyi bilsin: gostergeyi ve uyariyi buna gore cizecek.
+        remaining_seconds: quota.remaining_seconds,
+        limit_seconds:     quota.limit_seconds,
+      };
     } catch (err) {
       fastify.log.error(err, '[stt/session] error');
       return reply.code(500).send({ error: err.message });
     }
+  });
+
+  /**
+   * POST /heartbeat — akan oturumun harcadigi sureyi bildirir.
+   *
+   * Oturum bir kez basladiktan sonra tarayicida calisiyor; sunucu sureyi
+   * kendisi goremez. Istemci dakikada bir gecen sureyi yolluyor, biz ekleyip
+   * kalani geri veriyoruz. Kota biterse `stop: true` doner ve istemci kapatir.
+   *
+   * Istemci kullanicinin tarayicisinda oldugu icin eksik bildirebilir. Bu bir
+   * maliyet onlemi, guvenlik siniri degil — oyle oldugunu bilerek yapiyoruz.
+   * Tek atisin ekleyebilecegi sure yine de sinirli (lib/usage.js).
+   */
+  fastify.post('/heartbeat', async (request) => {
+    const seconds = Number(request.body?.seconds) || 0;
+    const usage   = await addLiveSeconds(request.user, seconds);
+    return { ...usage, stop: usage.exhausted };
   });
 }
 
