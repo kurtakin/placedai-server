@@ -86,6 +86,21 @@ function periodStartOf(sub) {
   return Number.isFinite(secs) ? new Date(secs * 1000).toISOString() : null;
 }
 
+/** Donemin bitisi — yenilenme ya da iptal tarihi. periodStartOf ile ayni tuzak. */
+function periodEndOf(sub) {
+  const secs = sub?.items?.data?.[0]?.current_period_end ?? sub?.current_period_end;
+  return Number.isFinite(secs) ? new Date(secs * 1000).toISOString() : null;
+}
+
+/** Abonelikten okunan, arayuzun gostermesi gereken her sey. */
+function billingFacts(sub) {
+  return {
+    subscription_status:  sub?.status || null,
+    subscription_ends_at: periodEndOf(sub),
+    subscription_cancels: !!sub?.cancel_at_period_end,
+  };
+}
+
 /**
  * Kullanıcının planını yaz. app_metadata'nın diğer alanlarını (role gibi)
  * korumak için önce okuyup birleştiriyoruz — üzerine yazmak admin rolünü siler.
@@ -217,12 +232,21 @@ async function billingRoutes(fastify) {
   });
 
   // ── GET /status ───────────────────────────────────────────────────────────
-  fastify.get('/status', { preHandler: requireAuth }, async (request) => ({
-    plan:             request.user.app_metadata?.plan || 'free',
-    has_subscription: !!request.user.app_metadata?.stripe_customer_id,
-    billing_ready:    !!process.env.STRIPE_SECRET_KEY,
-    merchant_of_record: String(process.env.STRIPE_MANAGED_PAYMENTS || '') === '1' ? 'stripe' : 'placedai',
-  }));
+  fastify.get('/status', { preHandler: requireAuth }, async (request) => {
+    const meta = request.user.app_metadata || {};
+    return {
+      plan:                  meta.plan || 'free',
+      subscription_status:   meta.subscription_status  || null,
+      subscription_ends_at:  meta.subscription_ends_at || null,
+      cancels_at_period_end: !!meta.subscription_cancels,
+      // Musteri kaydi duruyorsa portal acilabilir — iptal etmis biri de fatura
+      // gecmisini gorebilmeli. Bu alan aboneligi degil, o kaydi olcuyor; adi da
+      // artik bunu soyluyor.
+      has_billing_account:   !!meta.stripe_customer_id,
+      billing_ready:         !!process.env.STRIPE_SECRET_KEY,
+      merchant_of_record:    String(process.env.STRIPE_MANAGED_PAYMENTS || '') === '1' ? 'stripe' : 'placedai',
+    };
+  });
 
   // ── POST /webhook ─────────────────────────────────────────────────────────
   // Kimlik doğrulaması YOK — çağıran Stripe. Güvenlik imzadan geliyor.
@@ -254,12 +278,14 @@ async function billingRoutes(fastify) {
 
           let plan   = 'pro';
           let anchor = null;
+          let facts  = {};
           if (s.subscription) {
             const sub = await stripe.subscriptions.retrieve(s.subscription);
             plan   = planForPrice(sub.items?.data?.[0]?.price?.id) || sub.metadata?.plan || 'pro';
             anchor = periodStartOf(sub);
+            facts  = billingFacts(sub);
           }
-          await setUserPlan(userId, plan, { stripe_customer_id: s.customer, billing_anchor: anchor });
+          await setUserPlan(userId, plan, { stripe_customer_id: s.customer, billing_anchor: anchor, ...facts });
           break;
         }
 
@@ -277,6 +303,7 @@ async function billingRoutes(fastify) {
           await setUserPlan(userId, plan, {
             stripe_customer_id: sub.customer,
             billing_anchor:     active ? periodStartOf(sub) : null,
+            ...billingFacts(sub),
           });
           break;
         }
@@ -285,7 +312,13 @@ async function billingRoutes(fastify) {
           const sub    = event.data.object;
           const userId = sub.metadata?.user_id || await userIdFromCustomer(sub.customer);
           if (!userId) { console.warn('[billing] cancellation without a user reference'); break; }
-          await setUserPlan(userId, 'free', { stripe_customer_id: sub.customer, billing_anchor: null });
+          await setUserPlan(userId, 'free', {
+            stripe_customer_id:   sub.customer,
+            billing_anchor:       null,
+            subscription_status:  'canceled',
+            subscription_ends_at: null,
+            subscription_cancels: false,
+          });
           break;
         }
 
