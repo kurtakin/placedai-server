@@ -166,7 +166,10 @@ async function billingRoutes(fastify) {
         // silinse bile abonelik metadata'sı olayla birlikte geliyor.
         subscription_data:   { metadata: { user_id: user.id, plan: wanted } },
         allow_promotion_codes: true,
-        success_url: `${APP_URL}/dashboard?checkout=success`,
+        // Plan adini geri tasiyoruz: donus sayfasi oturumu tazelerken neyi
+        // bekledigini bilmeli. "Plan degisti mi" kiyaslamasi, ayni plani
+        // yeniden satin alan kullanicida yanlis sonuc verirdi.
+        success_url: `${APP_URL}/dashboard?checkout=success&plan=${wanted}`,
         cancel_url:  `${APP_URL}/#pricing`,
       });
 
