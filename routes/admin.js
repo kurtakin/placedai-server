@@ -91,7 +91,7 @@ async function adminRoutes(fastify) {
 
   /**
    * POST /api/v1/admin/set-plan
-   * Body: { user_id: string, plan: 'free'|'pro'|'multi' }
+   * Body: { user_id: string, plan: 'free'|'pro'|'ultimate' }
    */
   fastify.post('/set-plan', {
     preHandler: requireAdmin,
