@@ -29,6 +29,7 @@ const path = require('path');
 const fs   = require('fs');
 const { requireAuth, requirePlan } = require('../middleware/auth');
 const { checkAndIncrement } = require('../lib/usage');
+const { NO_EM_DASH } = require('../lib/style-rules');
 
 function safeParseJSON(raw) {
   if (!raw) return null;
@@ -107,7 +108,7 @@ Return ONLY valid JSON, no markdown, no extra text:
   "strengths": "1-2 sentences on what the candidate did particularly well.",
   "improvements": "1-2 sentences on the single most impactful improvement to make.",
   "rewrite_tip": "Take their weakest sentence and rewrite it as a stronger version. Start with the original, then show the improved version."
-}`;
+}` + NO_EM_DASH;
 
 // ─────────────────────────────────────────────────────────────────────────────
 
@@ -134,7 +135,7 @@ Rules:
 - key_skills: exactly 5-7 most critical skills from the JD, be specific
 - focus_areas: exactly 3 interview themes (e.g. "Cross-functional collaboration", "Data-driven decision making")
 - predicted_questions: exactly 5 behavioral or situational questions this company is MOST LIKELY to ask, written as actual interview questions
-- seniority: infer from years of experience, title, and responsibilities mentioned`;
+- seniority: infer from years of experience, title, and responsibilities mentioned` + NO_EM_DASH;
 
 // ── Cover Letter system prompt ───────────────────────────────────────────────
 const COVER_LETTER_SYSTEM = `You are an expert career coach and professional cover letter writer.
@@ -142,14 +143,14 @@ Write a compelling, personalized cover letter based on the provided candidate in
 
 Rules:
 - Exactly 4 paragraphs, 280-350 words total
-- Paragraph 1: Strong opening hook — connect the candidate's specific background to THIS role (avoid "I am writing to express my interest")
+- Paragraph 1: Strong opening hook: connect the candidate's specific background to THIS role (avoid "I am writing to express my interest")
 - Paragraph 2: Most relevant achievement with concrete metrics or outcomes
-- Paragraph 3: Why this specific company/role — alignment with their mission or values
+- Paragraph 3: Why this specific company/role, alignment with their mission or values
 - Paragraph 4: Confident call-to-action close
 - Match the tone requested (professional / warm / confident)
 - Write in the same language as the job description
-- Output ONLY the letter text — start with salutation, end with sign-off + candidate name
-- Do NOT add subject line, date, or mailing addresses`;
+- Output ONLY the letter text: start with salutation, end with sign-off + candidate name
+- Do NOT add subject line, date, or mailing addresses` + NO_EM_DASH;
 
 // ── ATS Score system prompt ───────────────────────────────────────────────────
 const ATS_SYSTEM = `You are an ATS (Applicant Tracking System) expert and resume analyst.
@@ -178,25 +179,25 @@ const RESUME_SYSTEM = `You are an expert resume writer specializing in ATS-optim
 Create a clean, well-structured resume from the provided information.
 
 Format rules:
-- Plain text only — no tables, no graphics, no columns, no special characters
+- Plain text only: no tables, no graphics, no columns, no special characters
 - Use exact section headers: PROFESSIONAL SUMMARY, PROFESSIONAL EXPERIENCE, EDUCATION, SKILLS
 - Bullet points with strong action verbs (Led, Developed, Achieved, Reduced, Increased, Built)
 - Quantify achievements with metrics where possible based on the provided information
 - Each bullet under 20 words
 - Total length: 400-550 words
-- Output ONLY the resume text, start directly with the candidate's name`;
+- Output ONLY the resume text, start directly with the candidate's name` + NO_EM_DASH;
 
 // ── CV Adaptation system prompt ───────────────────────────────────────────────
 const ADAPT_CV_SYSTEM = `You are an expert resume writer. Your job is to adapt a candidate's existing CV/resume to better match a specific job description.
 
 Rules:
-- Keep contact information, company names, job titles, and dates EXACTLY as provided — do NOT invent or change facts
+- Keep contact information, company names, job titles, and dates EXACTLY as provided, do NOT invent or change facts
 - Rewrite the Professional Summary (2-3 sentences) to directly address this specific role
 - Reorder the Skills section to prioritize the most relevant skills for this job
-- Adjust 2-3 experience bullet points to better highlight relevant achievements using the job's keywords — only reframe existing information, never fabricate
+- Adjust 2-3 experience bullet points to better highlight relevant achievements using the job's keywords, only reframe existing information, never fabricate
 - Keep education section unchanged
 - Output ONLY the adapted CV text in plain text format
-- Use the same section headers as the original CV`;
+- Use the same section headers as the original CV` + NO_EM_DASH;
 
 // ── Auto-apply package system prompt ─────────────────────────────────────────
 const APPLY_PACKAGE_SYSTEM = `You are an expert career coach. Given a job description and candidate profile, create a complete application package.
@@ -210,7 +211,7 @@ Return ONLY valid JSON, no markdown:
   "questions_to_ask": ["thoughtful question to ask interviewer 1", "question 2", "question 3"],
   "red_flags": ["potential concern 1 (or empty array if none)"],
   "apply_recommendation": "Strong Match / Good Match / Partial Match / Weak Match"
-}`;
+}` + NO_EM_DASH;
 
 // ── Generate prompt for custom questions ─────────────────────────────────────
 const GENERATE_SYSTEM = `You are an expert interview coach. Given any interview question, generate a structured answer framework.
@@ -220,7 +221,7 @@ Return ONLY valid JSON, no markdown:
   "strong_answer_signals": ["metric or proof point to include", "metric or proof point to include"],
   "avoid": ["common mistake to avoid", "common mistake to avoid"],
   "suggested_answer": "1-2 sentence strong STAR-structured model answer under 50 words."
-}`;
+}` + NO_EM_DASH;
 
 // Endpoints that cost an AI call — these count against the Free plan's monthly
 // allowance. Cheap lookups (/questions) and plain scraping are deliberately absent.
@@ -278,7 +279,7 @@ async function practiceRoutes(fastify) {
       return reply.code(400).send({ error: 'job_description required (min 50 chars)' });
     }
     if (/^https?:\/\//i.test(job_description.trim())) {
-      return reply.code(400).send({ error: 'Not a URL — paste the listing text: open the page → Ctrl+A → Ctrl+C → paste here.' });
+      return reply.code(400).send({ error: 'Not a URL, paste the listing text: open the page → Ctrl+A → Ctrl+C → paste here.' });
     }
     if (!process.env.ANTHROPIC_API_KEY) {
       return reply.code(503).send({ error: 'ANTHROPIC_API_KEY not set' });
@@ -357,7 +358,7 @@ Seniority: ${seniority}
 
 ANSWER FRAMEWORK:
 Key points to address:
-${key_points.map((p) => `  • ${p}`).join('\n') || '  • Not specified — evaluate on general STAR quality'}
+${key_points.map((p) => `  • ${p}`).join('\n') || '  • Not specified: evaluate on general STAR quality'}
 
 Strong signals:
 ${strong_answer_signals.map((s) => `  ✓ ${s}`).join('\n') || '  ✓ Quantified outcomes, specific actions'}
@@ -509,7 +510,7 @@ Evaluate this answer against the framework and return your JSON scorecard.`.trim
 
     // MCQ / Yazılı
     if (question_type === 'mcq' || question_type === 'written') {
-      const systemPrompt = `You are an expert assessment coach for ${platform}. Analyze the question and provide a comprehensive answer guide. Be direct and specific. Return plain text (no JSON).`;
+      const systemPrompt = `You are an expert assessment coach for ${platform}. Analyze the question and provide a comprehensive answer guide. Be direct and specific. Return plain text (no JSON).` + NO_EM_DASH;
       try {
         const analysis = await createMessage({ model: model || 'claude-haiku', max_tokens: 600, system: systemPrompt, messages: [{ role: 'user', content: `Platform: ${platform}\nType: ${question_type}\nQuestion:\n${question}` }] });
         return { type: 'mcq', analysis };
@@ -528,7 +529,7 @@ Evaluate this answer against the framework and return your JSON scorecard.`.trim
   "avoid": ["3 things to avoid specific to this question"],
   "time_plan": "How to split ${timeStr} across STAR: e.g. S:15s T:10s A:45s R:20s (adjust for actual limit)"
 }
-${isSituational ? 'This is situational — use hypothetical framing: "In that situation I would…"' : 'This is behavioral — use past tense: "There was a time when…"'}`;
+${isSituational ? 'This is situational, use hypothetical framing: "In that situation I would…"' : 'This is behavioral, use past tense: "There was a time when…"'}`;
 
     try {
       const raw = await createMessage({ model: model || 'claude-haiku', max_tokens: 500, system: systemPrompt, messages: [{ role: 'user', content: `Platform: ${platform}\nTime limit: ${timeStr}\nQuestion: "${question}"` }] });
@@ -552,11 +553,11 @@ ${isSituational ? 'This is situational — use hypothetical framing: "In that si
 Rules:
 - Max 220 chars each
 - Tone: ${tone}
-- Mix separators: | · — / (vary between options)
+- Mix separators: | · / (vary between options)
 - Front-load the most important keyword
 - Include role + top 2-3 skills + value hint
 - Avoid clichés: "results-driven", "passionate", "dynamic", "guru", "ninja"
-- Each variation should feel genuinely different (not just reordered)`;
+- Each variation should feel genuinely different (not just reordered)` + NO_EM_DASH;
 
     const userPrompt = `Current title: ${current_title}
 Target role: ${target_role || current_title}
@@ -585,7 +586,7 @@ Generate ${count} headline variations.`;
 
     const typeLabel = { experience: 'Deneyim Mektubu / Experience Letter', reference: 'Referans/Tavsiye Mektubu / Reference Letter', employment: 'Çalışma Belgesi / Employment Certificate' }[type] || 'Experience Letter';
 
-    const systemPrompt = `You are an expert HR professional. Write a formal ${typeLabel} in ${language}. Output ONLY the letter text — no explanation, no markdown, no JSON. Use professional business letter format with date, recipient section, body paragraphs, and signature block.`;
+    const systemPrompt = `You are an expert HR professional. Write a formal ${typeLabel} in ${language}. Output ONLY the letter text, no explanation, no markdown, no JSON. Use professional business letter format with date, recipient section, body paragraphs, and signature block.` + NO_EM_DASH;
 
     const userPrompt = `Employee: ${emp_name}, ${emp_title}
 Company: ${company}
@@ -647,13 +648,13 @@ Return ONLY valid JSON (no markdown):
 
 Rules:
 - Tone: ${tone}
-- Target role: ${target_role || 'not specified — infer from profile'}
+- Target role: ${target_role || 'not specified, infer from profile'}
 - Industry: ${industry}
 - Headline: pack 3-4 keywords, separate with | or ·, no buzzwords like "results-driven"
 - About: use first-person, start with a hook (not "I am"), include 2-3 numbers, end with "Let's connect" or similar
 - Skills: pick the 10 most searched/valued for the target role, mix technical + soft
 - Keywords: terms recruiters actually search for this role in LinkedIn Recruiter
-- Recommendations: be specific (e.g. "Add a Featured section with your top project", not "improve your profile")`;
+- Recommendations: be specific (e.g. "Add a Featured section with your top project", not "improve your profile")` + NO_EM_DASH;
 
     const userPrompt = `Target role: ${target_role || '(infer from profile)'}
 Industry: ${industry}
@@ -709,19 +710,19 @@ ${trimmed}`;
       ? cvText.slice(0, 3000)
       : `Title: ${title}. Skills: ${skills}`;
 
-    const systemPrompt = `You are a senior interview coach. Write natural, engaging spoken STAR answers — the kind that keeps an interviewer nodding, not checking their phone.
+    const systemPrompt = `You are a senior interview coach. Write natural, engaging spoken STAR answers, the kind that keeps an interviewer nodding, not checking their phone.
 
 Language: ${language}
 
 Tone & style:
-- Write exactly as someone would SPEAK in an interview — warm, confident, natural flow
-- No bullet points, no headers, no "Situation:", "Task:" labels — just flowing speech
+- Write exactly as someone would SPEAK in an interview, warm, confident, natural flow
+- No bullet points, no headers, no "Situation:", "Task:" labels, just flowing speech
 - Use "I", "we", "my team" naturally
 - Include one concrete detail or number to make it credible (%, time saved, team size, revenue impact)
-- Engaging opening that hooks — don't start with "In my previous role" every time
+- Engaging opening that hooks: don't start with "In my previous role" every time
 - Close with a clear result and optionally a lesson learned or what it shows about you
 
-Length: 80-110 words — enough to be complete and satisfying, short enough to stay sharp.
+Length: 80-110 words: enough to be complete and satisfying, short enough to stay sharp.
 Never pad. Never repeat yourself. If the candidate's background lacks detail, invent plausible specifics consistent with their title and skills.
 
 For each question return a JSON object:
@@ -729,9 +730,9 @@ For each question return a JSON object:
 - "answer": the spoken answer (80-110 words, in ${language})
 - "key_points": 3 short phrases (each 4-7 words) the candidate should remember to hit
 
-Return a JSON array only — no markdown, no extra text.`;
+Return a JSON array only, no markdown and no extra text.` + NO_EM_DASH;
 
-    const userPrompt = `Candidate: ${name} — ${title}
+    const userPrompt = `Candidate: ${name} · ${title}
 Background:
 ${background}
 
@@ -851,7 +852,7 @@ Analyze the match and return the JSON scorecard.`;
         messages:   [{ role: 'user', content: userPrompt }],
       });
       const result = safeParseJSON(raw);
-      if (!result) return reply.code(500).send({ error: 'Parse failed — please try again.' });
+      if (!result) return reply.code(500).send({ error: 'Parse failed, please try again.' });
       return result;
     } catch (err) {
       fastify.log.error(err, '[practice/ats-score]');
@@ -883,7 +884,7 @@ Analyze the match and return the JSON scorecard.`;
 
     const eduText = education.length
       ? education.map((e) =>
-          `• ${e.degree || 'Degree'} — ${e.institution || 'Institution'} (${e.year || ''})`
+          `• ${e.degree || 'Degree'} · ${e.institution || 'Institution'} (${e.year || ''})`
         ).join('\n')
       : 'Not provided';
 
@@ -941,7 +942,7 @@ JOB DESCRIPTION:
 ${job_description.trim()}
 
 CANDIDATE PROFILE (optional context):
-${candidate_profile.trim() || 'Not provided — evaluate based on JD alone'}
+${candidate_profile.trim() || 'Not provided, evaluate based on JD alone'}
 
 Create the application package JSON now.`;
 
@@ -1040,7 +1041,7 @@ Return the adapted CV now.`;
       // 3. ATS score
       createMessage({
         model: 'claude-haiku-4-5-20251001', max_tokens: 700, system: ATS_SYSTEM,
-        messages: [{ role: 'user', content: `Feedback in ${language}.\n\nJOB DESCRIPTION:\n${job_description.trim()}\n\nCV:\n${base_cv.trim() || 'Not provided — evaluate based on candidate skills: ' + skillsText}` }],
+        messages: [{ role: 'user', content: `Feedback in ${language}.\n\nJOB DESCRIPTION:\n${job_description.trim()}\n\nCV:\n${base_cv.trim() || 'Not provided: evaluate based on candidate skills: ' + skillsText}` }],
       }),
     ]);
 

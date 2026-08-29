@@ -107,7 +107,7 @@ function helperHTML(sessionId = '') {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Interview Aid — Yardımcı Modu 🤝</title>
+<title>PlacedAI · Yardımcı Modu 🤝</title>
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { background: #0d0f1a; color: rgba(255,255,255,.88); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px; }
@@ -144,7 +144,7 @@ input:focus { border-color: rgba(99,102,241,.5); }
 <body>
 <div id="app">
   <h1>🤝 Yardımcı Modu</h1>
-  <p class="sub">Interview Aid — Arkadaşınızın mülakatını gerçek zamanlı takip edin ve ipuçları gönderin</p>
+  <p class="sub">PlacedAI, arkadaşınızın mülakatını gerçek zamanlı takip edin ve ipuçları gönderin</p>
 
   <div class="panel" id="setup-panel">
     <div style="font-size:13px;font-weight:600;color:#a5b4fc;margin-bottom:12px">Bağlantı Kurulumu</div>
@@ -174,12 +174,12 @@ input:focus { border-color: rgba(99,102,241,.5); }
 <div class="send-bar">
   <div class="send-inner">
     <div class="quicks">
-      <button class="q-btn" onclick="qt('⭐ STAR yöntemi kullan — Durum, Görev, Eylem, Sonuç!')">⭐ STAR</button>
+      <button class="q-btn" onclick="qt('⭐ STAR yöntemi kullan. Durum, Görev, Eylem, Sonuç!')">⭐ STAR</button>
       <button class="q-btn" onclick="qt('📊 Sayısal örnek ver! (%, $, süre)')">📊 Sayı</button>
       <button class="q-btn" onclick="qt('🎤 Biraz yavaşla, net konuş.')">🎤 Yavaşla</button>
       <button class="q-btn" onclick="qt('💡 Güçlü yanından bahset!')">💡 Güçlü Yan</button>
       <button class="q-btn" onclick="qt('👍 Harika gidiyor! Devam et.')">👍 Teşvik</button>
-      <button class="q-btn" onclick="qt('⏱️ Kısa tut — max 2 dakika.')">⏱️ Süre</button>
+      <button class="q-btn" onclick="qt('⏱️ Kısa tut, max 2 dakika.')">⏱️ Süre</button>
     </div>
     <div class="row">
       <textarea id="tip-input" rows="2" placeholder="İpucu yaz… (Enter = gönder, Shift+Enter = yeni satır)" disabled></textarea>
@@ -214,7 +214,7 @@ function connect() {
   };
 
   es.onerror = () => {
-    document.getElementById('status-text').textContent = '⚠️ Bağlantı kesildi — yenileniyor…';
+    document.getElementById('status-text').textContent = '⚠️ Bağlantı kesildi, yenileniyor…';
     setTimeout(() => { try { es.close(); } catch{} connect(); }, 3000);
   };
 }
@@ -432,12 +432,12 @@ async function duoRoutes(fastify) {
     if (!known) {
       return reply.send(`<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>PlacedAI — session not found</title></head>
+<title>PlacedAI · session not found</title></head>
 <body style="margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#080a12;color:#fff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;text-align:center;padding:24px">
 <div><div style="font-size:40px;margin-bottom:12px">🔗</div>
 <h1 style="font-size:18px;margin:0 0 8px">This session is not available</h1>
 <p style="font-size:14px;color:rgba(255,255,255,.5);max-width:320px;margin:0 auto">
-The code is wrong, or the session has ended. Ask for a fresh link — sessions expire after 4 hours.</p></div>
+The code is wrong, or the session has ended. Ask for a fresh link, sessions expire after 4 hours.</p></div>
 </body></html>`);
     }
     return reply.send(helperHTML(session));

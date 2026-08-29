@@ -45,7 +45,7 @@ async function transcribeRoutes(fastify) {
 
       if (err.message?.includes('OPENAI_API_KEY')) {
         return reply.code(503).send({
-          error: 'Transcription service not configured — set OPENAI_API_KEY in .env',
+          error: 'Transcription service not configured, set OPENAI_API_KEY in .env',
         });
       }
 

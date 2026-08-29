@@ -68,7 +68,7 @@ async function feedbackRoutes(fastify) {
       fastify.log.info('[feedback] (dev mode, not persisted)', { userId, rating, category, content });
     }
 
-    return reply.status(201).send({ ok: true, message: 'Feedback received — thank you!' });
+    return reply.status(201).send({ ok: true, message: 'Feedback received, thank you!' });
   });
 
   /**

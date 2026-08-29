@@ -18,6 +18,7 @@ const { Readable }     = require('stream');
 const { streamMessage } = require('../lib/ai');
 const { requireAuth, requirePlan } = require('../middleware/auth');
 const { checkAndIncrement, getUsage } = require('../lib/usage');
+const { NO_EM_DASH } = require('../lib/style-rules');
 
 // ── System prompts — 3 interview types × 2 lengths ───────────────────────────
 
@@ -29,8 +30,8 @@ const PROMPTS = {
 
 Rules:
 - 2-3 sentences MAX, natural conversational speech, first person
-- Use candidate's actual roles, skills, and career history — be specific
-- Sound like talking, not writing — casual but confident
+- Use candidate's actual roles, skills, and career history, be specific
+- Sound like talking, not writing: casual but confident
 - Output ONLY the spoken answer, nothing else`,
 
     detailed: `You are a real-time interview coach. Write a DETAILED spoken answer using the candidate's PROFILE and CAREER BACKGROUND.
@@ -51,7 +52,7 @@ Goal: help them understand the client's needs, qualify the opportunity, and posi
 Rules:
 - 2-3 sentences MAX, natural conversational speech, first person
 - Focus: active listening, asking sharp clarifying questions, articulating value without overselling
-- Sound consultative and confident — never pushy or salesy
+- Sound consultative and confident: never pushy or salesy
 - Output ONLY the spoken response, nothing else`,
 
     detailed: `You are a real-time coaching assistant for a client discovery call.
@@ -60,7 +61,7 @@ Goal: help the consultant deeply understand client needs and position their solu
 Rules:
 - 5-6 sentences, first person, natural consultative speech
 - Structure: (1) empathize/acknowledge → (2) dig deeper with a clarifying question → (3) share a relevant insight or reframe → (4) position your approach/value → (5) suggest a clear next step
-- Sound professional but human — like a trusted advisor, not a salesperson
+- Sound professional but human: like a trusted advisor, not a salesperson
 - Output ONLY the spoken response, nothing else`,
   },
 
@@ -72,7 +73,7 @@ Goal: help them negotiate rates, clarify scope, and set professional expectation
 Rules:
 - 2-3 sentences MAX, natural conversational speech, first person
 - Focus: scope clarification, rate/timeline negotiation, professional boundaries, handling scope creep
-- Confident but approachable — protect their time and value without being stiff
+- Confident but approachable: protect their time and value without being stiff
 - Output ONLY the spoken response, nothing else`,
 
     detailed: `You are a real-time coaching assistant helping a freelancer during a client call.
@@ -81,7 +82,7 @@ Goal: help them articulate value, negotiate confidently, and set clear professio
 Rules:
 - 5-6 sentences, first person, natural speech
 - Structure: (1) acknowledge the request → (2) clarify scope or requirements → (3) state your approach/value → (4) address rate, timeline, or deliverables → (5) set expectation or suggest next step
-- Confident and warm — position them as the expert without sounding defensive
+- Confident and warm: position them as the expert without sounding defensive
 - Output ONLY the spoken response, nothing else`,
   },
 
@@ -93,7 +94,7 @@ Rules:
 - 2-4 sentences, clear and precise technical language, first person
 - Lead with the approach/algorithm/pattern, then complexity if relevant
 - Reference candidate's actual tech stack and experience when useful
-- Sound confident and methodical — not rushed
+- Sound confident and methodical: not rushed
 - Output ONLY the spoken answer, nothing else`,
 
     detailed: `You are a real-time technical interview coach helping with coding, design, or system questions.
@@ -101,7 +102,7 @@ Rules:
 Rules:
 - 5-7 sentences, first person, clear technical speech
 - Structure: (1) name the approach/pattern → (2) walk through the logic step by step → (3) mention edge cases or trade-offs → (4) state time/space complexity if relevant → (5) reference similar work from candidate's background
-- Speak like you're thinking aloud — confident but showing reasoning
+- Speak like you're thinking aloud: confident but showing reasoning
 - Output ONLY the spoken answer, nothing else`,
   },
 
@@ -119,7 +120,7 @@ Rules:
 
 Rules:
 - 5-7 sentences, first person, confident storytelling
-- Strict STAR structure: (1) Situation — set the scene briefly → (2) Task — what was your responsibility → (3) Action — specific steps YOU took (use "I", not "we") → (4) Result — quantifiable outcome or impact → (5) brief reflection or takeaway
+- Strict STAR structure: (1) Situation: set the scene briefly → (2) Task: what was your responsibility → (3) Action: specific steps YOU took (use "I", not "we") → (4) Result: quantifiable outcome or impact → (5) brief reflection or takeaway
 - Use real details from the candidate's career: roles, companies, metrics
 - Output ONLY the spoken answer, nothing else`,
   },
@@ -178,7 +179,7 @@ Rules:
 Rules:
 - 5-7 sentences, first person, structured PM thinking
 - Structure: (1) clarify the goal and constraints → (2) identify user segments and their pain points → (3) propose 2-3 solution directions → (4) recommend one with rationale (impact vs effort) → (5) define success metrics → (6) note risks or dependencies
-- Balance user empathy with business outcomes — always tie to metrics
+- Balance user empathy with business outcomes, always tie to metrics
 - Output ONLY the spoken answer, nothing else`,
   },
 
@@ -189,7 +190,7 @@ Rules:
 Rules:
 - 2-3 sentences MAX, polished but natural, first person
 - Lead with a clear message/soundbite, then one supporting point
-- Confident, on-brand, never defensive — pivot away from traps gracefully
+- Confident, on-brand, never defensive, pivot away from traps gracefully
 - Output ONLY the spoken response, nothing else`,
 
     detailed: `You are a real-time media coaching assistant helping with press interviews, podcasts, or public speaking.
@@ -197,7 +198,7 @@ Rules:
 Rules:
 - 4-5 sentences, first person, polished conversational speech
 - Structure: (1) clear message or soundbite first → (2) one concrete example or proof point → (3) bridge back to your key narrative → (4) end with a forward-looking or positive statement
-- Never get defensive — acknowledge and pivot. Stay on-message.
+- Never get defensive: acknowledge and pivot. Stay on-message.
 - Use power language: confident, quotable, zero filler words
 - Output ONLY the spoken response, nothing else`,
   },
@@ -229,7 +230,7 @@ company name, job title, tool or certification unless it appears in the
 candidate's profile or the job posting provided. If a metric would strengthen
 the answer but you do not have one, refer to it in general terms ("a measurable
 drop in forecast error") or leave a slot the candidate can fill from memory.
-The candidate speaks this answer aloud in a real interview — a fabricated
+The candidate speaks this answer aloud in a real interview, so a fabricated
 detail becomes their lie, and can cost them the offer at reference check.`;
 
 // Cue-first directive. The candidate is speaking RIGHT NOW, so the three cues
@@ -237,16 +238,16 @@ detail becomes their lie, and can cost them the offer at reference check.`;
 // actually read mid-sentence. The overlay renders them the moment this first
 // line completes, while the answer is still streaming.
 const POINTS_DIRECTIVE = `
-OUTPUT FORMAT — exactly two lines, in this order:
+OUTPUT FORMAT: exactly two lines, in this order:
 
 POINTS: <cue 1> | <cue 2> | <cue 3>
 ANSWER: <the spoken answer>
 
 The POINTS line comes FIRST and must be complete before the answer starts.
-Each cue: at most 5 words, concrete, glanceable — a noun phrase the candidate
+Each cue: at most 5 words, concrete, glanceable, a noun phrase the candidate
 can read at a glance and speak from. Draw them from the candidate's own
 background and the target role. No full sentences, no filler like "be confident".
-Output nothing outside these two lines — no markdown, no labels, no preamble.`;
+Output nothing outside these two lines, no markdown, no labels, no preamble.`;
 
 function resolvePrompt(answer_length, has_web_context, interview_type = 'job_interview', language = 'en', with_points = false) {
   const type     = PROMPTS[interview_type] ? interview_type : 'job_interview';
@@ -254,13 +255,14 @@ function resolvePrompt(answer_length, has_web_context, interview_type = 'job_int
   let   system   = PROMPTS[type][detailed ? 'detailed' : 'short'];
 
   if (has_web_context && !detailed) {
-    system += '\n\n[Web search results about the company are included — reference them naturally if relevant]';
+    system += '\n\n[Web search results about the company are included, reference them naturally if relevant]';
   }
 
   // Uydurma yasağı her mülakat tipi için geçerli. Kullanıcı bu cevabı gerçek bir
   // görüşmede sesli okuyor; uydurulmuş bir rakam onu yalan söylemiş duruma
   // düşürür ve referans kontrolünde teklifini kaybettirir.
   system += NO_FABRICATION;
+  system += NO_EM_DASH;
 
   if (with_points) {
     // The base prompts end with "Output ONLY the spoken answer" — the format
@@ -447,7 +449,7 @@ async function aidRoutes(fastify) {
     const langName = LANGUAGE_NAMES[language];
     const system = [
       'The candidate is answering THIS question out loud right now. Give three cues that',
-      'form the spine of the answer to THIS question — not a summary of their CV.',
+      'form the spine of the answer to THIS question, not a summary of their CV.',
       '',
       'Cue 1 = how to open / the direct answer.',
       'Cue 2 = the specific example or reason that backs it up.',
@@ -456,6 +458,7 @@ async function aidRoutes(fastify) {
       'Rules:',
       '- At most 5 words each, a noun phrase they can glance at and speak from.',
       '- Ground them in the profile and the target role, but they must change with the question.',
+      '- Never use an em dash or an en dash anywhere in a cue.',
       '- Never generic advice ("be confident", "stay positive") and never a bare skill list.',
       '- NEVER invent numbers, percentages, money amounts, company names, dates or job titles.',
       '  Use a figure ONLY if it appears verbatim in the profile below. If there is none,',
@@ -594,6 +597,7 @@ async function aidRoutes(fastify) {
         'Output format (strictly two labeled sections):',
         'QUESTION: [the question or task you identified, 1 sentence]',
         'ANSWER: [2-4 sentence spoken answer; for coding: key approach + 2-3 steps]',
+        NO_EM_DASH,
       ].filter(Boolean).join('\n');
 
       const raw = await createMessage({
@@ -658,6 +662,7 @@ async function aidRoutes(fastify) {
       '- Identify missing concrete examples, vague language, or missed opportunities',
       '- Be encouraging but direct and honest',
       '- Keep responses concise (3-5 sentences) unless asked for a detailed rewrite',
+      NO_EM_DASH,
       LANGUAGE_NAMES[language] && language !== 'en'
         ? `\nIMPORTANT: Respond ONLY in ${LANGUAGE_NAMES[language]}. Do not use English at all.`
         : '',
@@ -712,7 +717,8 @@ async function aidRoutes(fastify) {
         '',
         'Evaluate the Q&A pairs holistically. Consider: structure (STAR), specificity, confidence, conciseness, relevance.',
         '',
-        'Output EXACTLY this format — no extra text:',
+        NO_EM_DASH,
+      'Output EXACTLY this format, with no extra text:',
         'SCORE: [1-10]',
         'GRADE: [A+|A|A-|B+|B|B-|C+|C|C-|D|F]',
         'SUMMARY: [2-3 sentences overall assessment]',

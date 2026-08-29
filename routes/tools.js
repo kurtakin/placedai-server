@@ -11,6 +11,7 @@ const OpenAI   = require('openai');
 const XLSX     = require('xlsx');
 const mammoth  = require('mammoth');
 const { createMessage }              = require('../lib/ai');
+const { NO_EM_DASH }                 = require('../lib/style-rules');
 const { sendApplicationNotification, isConfigured } = require('../lib/mailer');
 const { requireAuth, requirePlan }   = require('../middleware/auth');
 
@@ -160,7 +161,7 @@ function parseRSS(xml) {
 }
 
 // ── Job extraction prompt ─────────────────────────────────────────────────────
-const EXTRACT_JOB_SYSTEM = `You are a JSON-only job listing parser. Your entire response must be a single valid JSON object — no prose, no markdown, no code fences, no explanation before or after.
+const EXTRACT_JOB_SYSTEM = `You are a JSON-only job listing parser. Your entire response must be a single valid JSON object, no prose, no markdown, no code fences, no explanation before or after.
 
 Respond with exactly this structure (replace values, keep all keys):
 {"title":"job title or null","company":"company name or null","location":"city/country or null","job_type":"full-time or part-time or contract or remote or null","salary":"salary text or null","description":"full job description text","requirements":["req1","req2","req3"],"apply_url":"url or null"}
@@ -202,7 +203,7 @@ async function toolsRoutes(fastify) {
       });
 
       const jobData = safeParseJSON(raw);
-      if (!jobData) return reply.code(500).send({ error: 'Parse failed — please try again.' });
+      if (!jobData) return reply.code(500).send({ error: 'Parse failed, please try again.' });
 
       jobData.source_url = url;
       return jobData;
@@ -234,7 +235,7 @@ async function toolsRoutes(fastify) {
       const jobData = safeParseJSON(raw);
       if (!jobData) {
         fastify.log.error({ raw }, '[tools/parse-job-text] JSON parse failed');
-        return reply.code(500).send({ error: 'Parse failed — the AI response was not valid JSON. Please try again.' });
+        return reply.code(500).send({ error: 'Parse failed, the AI response was not valid JSON. Please try again.' });
       }
 
       jobData.source_url = url || null;
@@ -337,7 +338,8 @@ async function toolsRoutes(fastify) {
       `Professional LinkedIn headshot portrait photograph of ${gender || 'a person'}.`,
       `Wearing ${clothing}.`,
       `Background: ${background}.`,
-      `Style: ${style} — confident, approachable, and polished.`,
+      `Style: ${style}, confident, approachable and polished.`,
+      NO_EM_DASH,
       extra || '',
       'Studio-quality lighting, sharp focus, photorealistic, high resolution.',
       'The subject is looking directly at the camera with a natural, professional expression.',
@@ -530,7 +532,7 @@ Return ONLY valid JSON, no markdown:
   "top_strengths": ["strength 1", "strength 2", "strength 3"],
   "key_improvements": ["improvement 1", "improvement 2", "improvement 3"],
   "next_steps": "2-3 sentence personalized practice recommendation"
-}`;
+}` + NO_EM_DASH;
 
     const prompt = `Company: ${company || 'Not specified'}\n\nInterview Q&A:\n${
       qa_pairs.map((qa, i) => `Q${i+1}: ${qa.question}\nA${i+1}: ${qa.answer}`).join('\n\n')
@@ -582,7 +584,7 @@ Return ONLY valid JSON, no markdown:
     "What follow-up questions to expect"
   ],
   "code_review": "if user provided their own code, specific feedback on it (empty string if no attempt given)"
-}`;
+}` + NO_EM_DASH;
 
     const userPrompt = `Language: ${language}\nDifficulty: ${difficulty}\n\nProblem:\n${question.trim()}${
       attempt ? `\n\nCandidate's attempt:\n\`\`\`${language}\n${attempt.trim()}\n\`\`\`` : ''
@@ -747,7 +749,7 @@ Return ONLY valid JSON, no markdown:
 
     const trimmedDesc = description.trim().slice(0, 6000);
 
-    const systemPrompt = `You are an expert job interview coach. Analyze a job posting and return ONLY a JSON object — no prose, no markdown, no code fences.
+    const systemPrompt = `You are an expert job interview coach. Analyze a job posting and return ONLY a JSON object, no prose, no markdown, no code fences.
 
 JSON schema (strictly follow this):
 {
@@ -767,10 +769,10 @@ JSON schema (strictly follow this):
 Rules:
 - Generate exactly 10 questions
 - Mix: 3 behavioral (STAR), 3 technical (role-specific), 2 situational, 1 motivation, 1 "do you have questions"
-- Make questions SPECIFIC to the job — reference actual requirements, tools, or duties from the posting
+- Make questions SPECIFIC to the job: reference actual requirements, tools, or duties from the posting
 - answerTips: 4-5 concise bullet points starting with •
 - matchKeys: lowercase short phrases (2-5 words each)
-- Do NOT add any text before or after the JSON object`;
+- Do NOT add any text before or after the JSON object` + NO_EM_DASH;
 
     const userPrompt = `Job Title: ${title || 'Unknown'}
 Company: ${company || 'Unknown'}
@@ -793,7 +795,7 @@ Generate 10 likely interview questions for this specific job.`;
       const parsed = safeParseJSON(raw);
       if (!parsed || !Array.isArray(parsed.questions)) {
         fastify.log.error({ rawChars: raw.length }, '[analyze-job-questions] JSON parse failed');
-        return reply.code(500).send({ error: 'The AI response had an unexpected format — please try again.' });
+        return reply.code(500).send({ error: 'The AI response had an unexpected format, please try again.' });
       }
 
       // Normalize et
@@ -875,7 +877,7 @@ Hard rules:
       const parsed = safeParseJSON(raw);
       if (!parsed) {
         fastify.log.error({ rawChars: String(raw).length }, '[job-site] JSON parse failed');
-        return reply.code(502).send({ error: 'The AI response had an unexpected format — please try again.' });
+        return reply.code(502).send({ error: 'The AI response had an unexpected format, please try again.' });
       }
 
       if (parsed.unknown) {
@@ -961,7 +963,7 @@ Return ONLY a JSON array of pattern objects:
   }
 ]
 
-Consolidate similar questions. Return 6-10 patterns. No text outside the JSON array.`;
+Consolidate similar questions. Return 6-10 patterns. No text outside the JSON array.` + NO_EM_DASH;
 
     try {
       const raw = await createMessage({
