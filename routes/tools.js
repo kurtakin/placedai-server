@@ -476,9 +476,11 @@ async function toolsRoutes(fastify) {
 
       const parsed = safeParseJSON(raw || '');
       if (!parsed || typeof parsed !== 'object') {
-        const preview = (raw || '').slice(0, 300);
-        fastify.log.error('[parse-cv] AI raw response:', preview);
-        return reply.code(422).send({ error: `AI CV'yi parse edemedi. AI yanıtı: ${preview || '(boş)'}` });
+        // Ham cikti kullanicinin ozgecmisinden parcalar tasiyor. Loga da,
+        // hata mesajina da koymuyoruz: hata mesaji da bize geri raporlanip
+        // ia_errors tablosuna dusebiliyor.
+        fastify.log.error({ rawChars: (raw || '').length }, '[parse-cv] AI yaniti cozulemedi');
+        return reply.code(422).send({ error: 'Could not read that CV. Please try again, or paste the text directly.' });
       }
 
       if (!parsed.cv_text) parsed.cv_text = trimmed;
@@ -790,7 +792,7 @@ Generate 10 likely interview questions for this specific job.`;
 
       const parsed = safeParseJSON(raw);
       if (!parsed || !Array.isArray(parsed.questions)) {
-        fastify.log.error({ raw: raw.slice(0, 500) }, '[analyze-job-questions] JSON parse failed');
+        fastify.log.error({ rawChars: raw.length }, '[analyze-job-questions] JSON parse failed');
         return reply.code(500).send({ error: 'The AI response had an unexpected format — please try again.' });
       }
 
@@ -803,7 +805,10 @@ Generate 10 likely interview questions for this specific job.`;
         idx:        i,
       }));
 
-      fastify.log.info({ title, company, qCount: parsed.questions.length }, '[analyze-job-questions] OK');
+      // Sirket adi da loga girmiyor: zaman damgasiyla birlikte, kullanicinin
+      // hangi sirketle gorustugunu gosteren bir kayit olurdu. Bu urunun sattigi
+      // sey gizlilik; kendi loglarimiz onu delen ilk yer olamaz.
+      fastify.log.info({ qCount: parsed.questions.length }, '[analyze-job-questions] OK');
       return parsed;
 
     } catch (err) {
@@ -869,7 +874,7 @@ Hard rules:
 
       const parsed = safeParseJSON(raw);
       if (!parsed) {
-        fastify.log.error({ raw: String(raw).slice(0, 300) }, '[job-site] JSON parse failed');
+        fastify.log.error({ rawChars: String(raw).length }, '[job-site] JSON parse failed');
         return reply.code(502).send({ error: 'The AI response had an unexpected format — please try again.' });
       }
 

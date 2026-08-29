@@ -548,7 +548,10 @@ async function aidRoutes(fastify) {
       // Same two-line format as /stream, parsed here so the non-streaming
       // fallback shows the cues too instead of always returning points: [].
       const { points, answer } = splitPointsAndAnswer(raw);
-      fastify.log.info({ points: points.length, answer: answer.slice(0, 80) }, '[aid/answer]');
+      // Cevabin metnini loglamiyoruz. Bu bir mulakat cevabi: kullanicinin
+      // kendi is gecmisi, sayilari, sirket adlari. Teshis icin uzunlugu
+      // yeterli, icerigi degil.
+      fastify.log.info({ points: points.length, answerChars: answer.length }, '[aid/answer]');
       return { points, answer };
     } catch(err) {
       fastify.log.error(err, '[aid/answer] error');
@@ -615,7 +618,9 @@ async function aidRoutes(fastify) {
       const qMatch = raw.match(/QUESTION:\s*(.+?)(?:\n|$)/i);
       const aMatch = raw.match(/ANSWER:\s*([\s\S]+)/i);
 
-      fastify.log.info({ q: (qMatch?.[1] || '').slice(0, 80) }, '[aid/screenshot]');
+      // Sorunun metni de loga gitmiyor; ekran goruntusunden cikan soru,
+      // kullanicinin o an hangi sirketle gorustugunu ele verebilir.
+      fastify.log.info({ questionFound: !!qMatch }, '[aid/screenshot]');
       return reply.send({
         question: (qMatch?.[1] || '📸 Ekran görüntüsü').trim(),
         answer:   (aMatch?.[1] || raw).trim(),

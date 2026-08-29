@@ -294,8 +294,8 @@ async function practiceRoutes(fastify) {
 
       const analysis = safeParseJSON(raw);
       if (!analysis) {
-        fastify.log.error('[analyze-jd] AI raw:', (raw||'').slice(0,400));
-        return reply.code(500).send({ error: `Parse failed — AI yanıtı: ${(raw||'(boş)').slice(0,200)}` });
+        fastify.log.error({ rawChars: (raw || '').length }, '[analyze-jd] AI yaniti cozulemedi');
+        return reply.code(500).send({ error: 'Could not read that job listing. Please try again.' });
       }
 
       return analysis;
