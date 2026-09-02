@@ -1,0 +1,1367 @@
+{
+  "metadata": {
+    "sector": "Restaurant & Food Service",
+    "generated": "2026-09-02",
+    "total": 46,
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ],
+    "region": "North America",
+    "schema_version": "1.1",
+    "note": "Fast food and counter workers 3.9M, waiters and waitresses 2.27M, restaurant cooks 1.41M and first-line food service supervisors 1.22M (BLS May 2025), roughly 8.8 million workers combined. Covers food safety and temperature control, allergen handling, responsible alcohol service, drive through and counter speed, kitchen communication, food and labour cost, health inspections and the shift lead track."
+  },
+  "questions": [
+    {
+      "id": "fs_b_001",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about yourself and your food service experience.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Say the format: quick service, fast casual, full service restaurant, cafe, bar, catering, institutional. The pace and the standards are different in each",
+          "Position and stations: front counter, drive through, server, host, bar, line cook, prep, dish, expo. Say which stations you can run alone",
+          "Volume in numbers: covers per shift, tickets per hour, average check, team size on a shift",
+          "Certifications: food handler card, alcohol service certification, allergen training, first aid. Say whether they are current",
+          "Availability last, clearly. Nights, weekends and holidays are the job"
+        ],
+        "strong_answer_signals": [
+          "Names the stations they can run without supervision",
+          "Gives volume, which tells them what pace they are used to",
+          "States certifications and availability without being asked"
+        ],
+        "avoid": [
+          "Being vague about which stations they can actually work",
+          "No mention of food safety certification",
+          "Hiding a scheduling constraint that will surface in week two"
+        ]
+      }
+    },
+    {
+      "id": "fs_b_002",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you handled a complaint about food or service.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Situation: what was wrong. Wrong order, cold food, long wait, an allergen concern, a billing error",
+          "Action: apologise for the experience without arguing about the cause, then fix it fast. Speed matters more than explanation here",
+          "Say what you were authorised to do: remake, remove from the bill, offer something while they wait, involve the manager",
+          "Tell the kitchen or the team so it is corrected rather than repeated",
+          "Result: how the table or the customer left, and whether they came back"
+        ],
+        "strong_answer_signals": [
+          "Fixes it before explaining it",
+          "Knows the limit of their own authority",
+          "Closes the loop with the kitchen"
+        ],
+        "avoid": [
+          "Arguing about whether the food was really cold",
+          "Blaming the kitchen in front of the guest",
+          "A story that ends with the manager solving it while you watched"
+        ]
+      }
+    },
+    {
+      "id": "fs_b_003",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about the busiest rush you have worked.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Set it concretely: a lunch rush, a post event surge, a short staffed Saturday, a drive through queue around the building",
+          "Action: how you prioritised. Communication with the line, calling out timings, working your station clean, not abandoning your position",
+          "Say how you kept quality and safety while moving fast, since that is the real question",
+          "Result with a number: tickets served, ticket times held, no complaints, or the queue cleared"
+        ],
+        "strong_answer_signals": [
+          "Keeps station discipline instead of jumping around",
+          "Communicates timings out loud",
+          "Protects food safety and quality at speed"
+        ],
+        "avoid": [
+          "Claiming rushes never stress you",
+          "Cutting a safety or hygiene step to go faster",
+          "Blaming a colleague for the backlog"
+        ]
+      }
+    },
+    {
+      "id": "fs_b_004",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you worked with a difficult teammate.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Situation: describe the behaviour, not the personality. Not pulling weight, poor handover, cutting corners on cleaning, tension in the moment",
+          "Action: talk to them directly and privately first, focused on the shift and the work rather than on them",
+          "Escalate to a supervisor when it affects food safety, guests, or keeps repeating",
+          "Result: how the shift ran afterwards, and whether the relationship recovered",
+          "Kitchens and floors are small teams under pressure. Show you can keep it professional"
+        ],
+        "strong_answer_signals": [
+          "Speaks to the person before escalating",
+          "Describes behaviour rather than character",
+          "Escalates when safety is involved"
+        ],
+        "avoid": [
+          "A story that is mostly complaining",
+          "Public confrontation during service",
+          "Letting a food safety issue go to avoid conflict"
+        ]
+      }
+    },
+    {
+      "id": "fs_b_005",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you made a mistake during service.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Choose something real: a wrong order, a missed allergen check, a dropped tray, a mis rung ticket, forgetting a table",
+          "Own it immediately and tell whoever needed to know. In food service a hidden mistake can become a safety issue",
+          "Action: what you did to fix it and how you protected the guest experience while doing it",
+          "Result and the habit that changed",
+          "If it involved an allergen, say plainly why that one can never be hidden"
+        ],
+        "strong_answer_signals": [
+          "Tells someone immediately",
+          "Names the habit that changed",
+          "Treats allergen mistakes as a different category"
+        ],
+        "avoid": [
+          "Saying you have never made one",
+          "Serving food you knew was wrong to avoid the wait",
+          "Blaming the ticket system"
+        ]
+      }
+    },
+    {
+      "id": "fs_b_006",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you upsold or improved a guest experience.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Frame it as improving the meal, not increasing the bill: a starter that fits the wait, a drink pairing, a dessert to share, the combo that saves them money",
+          "Read the table: a business lunch on a clock is a different conversation from a celebration",
+          "Say what you asked and how you recommended from what they already ordered",
+          "Result: the check average, the guest reaction, or the repeat visit"
+        ],
+        "strong_answer_signals": [
+          "Recommends from what they ordered rather than from a script",
+          "Reads the table before suggesting",
+          "Mentions check average or a real outcome"
+        ],
+        "avoid": [
+          "Pushing the most expensive item regardless",
+          "Ignoring a table that wants to be left alone",
+          "Recommending something you have never tasted"
+        ]
+      }
+    },
+    {
+      "id": "fs_b_007",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you kept your station clean and organised under pressure.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Say why it matters: clean as you go is faster, not slower, and it is the difference between a controlled rush and chaos",
+          "Action: the routine you keep. Wiping down between tickets, restocking during lulls, sanitiser bucket changes, keeping raw and ready to eat separated",
+          "Say what you do when there is genuinely no time, and how you catch up",
+          "Result: the shift ran clean, the health inspection passed, the close was quick"
+        ],
+        "strong_answer_signals": [
+          "Treats clean as you go as a speed tool, not a chore",
+          "Keeps raw and ready to eat separation under pressure",
+          "Restocks during lulls rather than during the rush"
+        ],
+        "avoid": [
+          "Leaving the clean down entirely to the close",
+          "Cross contaminating to save a step",
+          "Blaming the previous shift for the state of the station"
+        ]
+      }
+    },
+    {
+      "id": "fs_b_008",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you helped a new team member.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Say what you actually taught: the station, the ticket system, the timings, the standards, or just where everything is",
+          "Action: show, then watch, then let them do it. Telling alone does not work during service",
+          "Be honest about the pressure of training during a busy shift and how you handled it",
+          "Result: how quickly they got up to speed and whether they stayed"
+        ],
+        "strong_answer_signals": [
+          "Shows rather than tells",
+          "Patient about repeated questions",
+          "Connects training to retention"
+        ],
+        "avoid": [
+          "Leaving a new person to sink or swim",
+          "Complaining about having to train people",
+          "Teaching shortcuts that break the standards"
+        ]
+      }
+    },
+    {
+      "id": "fs_b_009",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about feedback you received from a manager or chef.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Pick real feedback: ticket times, plate presentation, upselling, table attentiveness, cleanliness, tone with the kitchen",
+          "Action: what you asked to understand it, and what you practised",
+          "Result: the measurable change and how you know it stuck",
+          "Kitchens can deliver feedback bluntly. Show you can take the content without taking the tone personally"
+        ],
+        "strong_answer_signals": [
+          "Separates the content of feedback from the delivery",
+          "Practises deliberately rather than intending to improve",
+          "Evidence the change lasted"
+        ],
+        "avoid": [
+          "Reacting to how the feedback was delivered rather than what it said",
+          "Feedback that was really a compliment",
+          "No evidence of change"
+        ]
+      }
+    },
+    {
+      "id": "fs_b_010",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you had to work a long or double shift.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Be honest about the reality. Doubles, splits and closing after midnight are normal in this industry",
+          "Action: how you managed energy, food, hydration and focus, and how you kept standards in the last hour",
+          "Say when you asked for help or flagged that you were at your limit, since that is the responsible answer",
+          "Result: the shift covered without quality or safety slipping"
+        ],
+        "strong_answer_signals": [
+          "Realistic about the physical demand",
+          "Protects standards late in the shift",
+          "Knows when to say they are at their limit"
+        ],
+        "avoid": [
+          "Claiming unlimited stamina",
+          "A story where standards slipped and nobody noticed",
+          "Complaining about the industry hours"
+        ]
+      }
+    },
+    {
+      "id": "fs_t_001",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What do you know about food safety and temperature control?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Name the danger zone and why it matters: the temperature band where bacteria multiply fastest, and the time limit for food held in it",
+          "Cooking, holding, cooling and reheating each have their own targets. Say that cooling is the step most often done wrong",
+          "Use a probe thermometer and record temperatures. Sanitise the probe between uses",
+          "Cross contamination control: separate boards and utensils, raw below ready to eat in the fridge, hand washing between tasks",
+          "Say what you do with food that has been out of temperature. It is discarded, not served, and that is not negotiable",
+          "Mention your food handler certification and whether it is current"
+        ],
+        "strong_answer_signals": [
+          "Knows cooling is the most commonly failed step",
+          "Records temperatures rather than eyeballing",
+          "Discards out of temperature food without hesitation"
+        ],
+        "avoid": [
+          "Serving food that has been out of temperature to avoid waste",
+          "Not knowing the danger zone at all",
+          "Storing raw meat above ready to eat food"
+        ]
+      }
+    },
+    {
+      "id": "fs_t_002",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle an allergen request?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Treat it as safety critical, not a preference. Ask whether it is an allergy or a dietary choice, because the handling is different",
+          "Know the major allergens and where they hide: sauces, marinades, fryer oil, dressings, thickeners, garnishes, cross contact on shared equipment",
+          "Tell the kitchen explicitly and mark the ticket. Never rely on remembering it",
+          "Prepare separately: clean surfaces, fresh gloves, separate utensils, and a different fryer where shared oil is a risk",
+          "Never guess about an ingredient. Check the specification or ask the chef, every time",
+          "Deliver the plate yourself and say what it is, so it is not confused at the table"
+        ],
+        "strong_answer_signals": [
+          "Asks whether it is an allergy or a preference",
+          "Knows shared fryer oil is a cross contact risk",
+          "Refuses to guess about an ingredient"
+        ],
+        "avoid": [
+          "Saying it should be fine without checking",
+          "Picking an ingredient off a finished dish",
+          "Forgetting to mark the ticket"
+        ]
+      }
+    },
+    {
+      "id": "fs_t_003",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Walk me through your station setup and mise en place.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Set up before service: everything prepped, portioned, labelled, within reach, and in the same place every shift",
+          "Check quantities against the expected covers rather than guessing, and know what takes longest to replace",
+          "Label and date everything. First in first out rotation is how you avoid both waste and a safety incident",
+          "Keep the station clean and cold as required, with sanitiser and a working thermometer at hand",
+          "Restock during lulls, never during a rush",
+          "Say what you do when you run low mid service: call it out early rather than at the moment you run out"
+        ],
+        "strong_answer_signals": [
+          "Calls out low stock early rather than at zero",
+          "Labels and dates consistently",
+          "Sets up the same way every time so it is muscle memory"
+        ],
+        "avoid": [
+          "Starting service under prepped and hoping",
+          "Undated containers in the fridge",
+          "Leaving restocking until the rush"
+        ]
+      }
+    },
+    {
+      "id": "fs_t_004",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you take and manage an order accurately?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Repeat the order back. That single habit removes most ticket errors",
+          "Capture the modifiers precisely: cooking temperature, substitutions, allergies, sides, no ice, on the side",
+          "Enter it correctly in the system so the kitchen sees what you heard. Verbal additions get lost",
+          "Sequence the ticket: know what fires when so the table eats together",
+          "Check the plate before it leaves: right dish, right modifiers, right table",
+          "Say how you handle a mid service change without confusing the line"
+        ],
+        "strong_answer_signals": [
+          "Repeats the order back as a routine",
+          "Enters modifiers in the system rather than telling the kitchen verbally",
+          "Checks the plate before it goes out"
+        ],
+        "avoid": [
+          "Relying on memory for a large table",
+          "Shouting changes at the kitchen without changing the ticket",
+          "Sending a plate without checking the modifiers"
+        ]
+      }
+    },
+    {
+      "id": "fs_t_005",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle payment, tips and the till?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Accuracy first: confirm the total, apply discounts correctly, and split the bill exactly as the table asked",
+          "Handle cash cleanly: state the amount received, keep the note visible until change is given, and never share a till login",
+          "Card handling: never take a card out of sight where policy forbids it, and know the contactless and chip procedures",
+          "Tips: follow the house rules on pooling and declaring. Say that you declare tips properly, since it is a legal obligation",
+          "Voids and refunds go through a supervisor. Unauthorised voids are one of the most common forms of internal theft",
+          "Cash up honestly and report a discrepancy rather than balancing it away"
+        ],
+        "strong_answer_signals": [
+          "Knows voids and refunds require oversight",
+          "Declares tips properly",
+          "Reports discrepancies rather than adjusting"
+        ],
+        "avoid": [
+          "Sharing a till login",
+          "Voiding a paid ticket and keeping the cash",
+          "Guessing at a split bill"
+        ]
+      }
+    },
+    {
+      "id": "fs_t_006",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you work a drive through or counter at speed?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Greet immediately. The clock and the customer experience both start at the acknowledgement",
+          "Repeat the order back before totalling, since a correction at the window costs far more time",
+          "Work the sequence: take, total, take payment, assemble, verify, hand out. Keep the positions separate when you have the team for it",
+          "Verify the bag before it leaves: the drink, the sauces, the straw, the modifiers. A missed item is a return trip and a bad review",
+          "Watch the timing boards but never at the cost of accuracy. A wrong order served fast is still a failure",
+          "Communicate a wait honestly rather than parking someone with no explanation"
+        ],
+        "strong_answer_signals": [
+          "Verifies the bag before handing it over",
+          "Repeats back before totalling",
+          "Refuses to trade accuracy for the timing board"
+        ],
+        "avoid": [
+          "Hitting the timer by handing out incomplete orders",
+          "Parking a customer with no update",
+          "Skipping the order repeat to save seconds"
+        ]
+      }
+    },
+    {
+      "id": "fs_t_007",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What do you know about serving alcohol responsibly?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know your certification and the local law. Serving is a licensed activity and the liability is personal as well as corporate",
+          "Check identification for anyone who could be under the challenge age, every time, and know how to spot a fake",
+          "Recognise the signs of intoxication: speech, coordination, behaviour changes, and drinking pace",
+          "Refuse service calmly and early. It is far easier to slow someone down than to cut them off late",
+          "Offer alternatives: food, water, a soft drink, a taxi. Never let someone drive when you have concerns",
+          "Tell a manager and log the refusal per house policy",
+          "Never serve someone buying for a minor or an intoxicated person"
+        ],
+        "strong_answer_signals": [
+          "Knows the liability is personal",
+          "Refuses early rather than late",
+          "Has a plan for getting the guest home safely"
+        ],
+        "avoid": [
+          "Serving because the guest is a regular or a big spender",
+          "Not knowing the local challenge age",
+          "Letting a manager overrule a refusal you are legally responsible for"
+        ]
+      }
+    },
+    {
+      "id": "fs_t_008",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle cleaning, sanitation and closing checks?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know the difference between cleaning and sanitising, and that you must clean before you sanitise",
+          "Follow the sanitiser concentration and contact time. Too weak does nothing and too strong is a chemical hazard",
+          "Work the checklist rather than from memory, and sign off honestly for what you actually did",
+          "Cover the areas inspectors actually check: hand wash stations stocked, fridge temperatures logged, food covered and dated, floor drains, ice machine, under equipment",
+          "Chemical safety: correct storage away from food, labelled containers, never mixing products",
+          "Leave the kitchen ready for the morning, since a bad close makes a bad open"
+        ],
+        "strong_answer_signals": [
+          "Knows clean before sanitise and why",
+          "Signs the checklist honestly",
+          "Names the areas inspectors actually check"
+        ],
+        "avoid": [
+          "Signing a cleaning checklist for work not done",
+          "Mixing chemicals",
+          "Storing chemicals near food"
+        ]
+      }
+    },
+    {
+      "id": "fs_t_009",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you manage timing and communication with the kitchen?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Use the standard call outs: ordering, firing, walking in, all day. Clear language prevents most service errors",
+          "Understand ticket times per dish so you can sequence a table rather than sending everything at once",
+          "Fire courses to the table pace, and tell the kitchen when a table is slow or in a hurry",
+          "Communicate problems early: a delay, a missing modifier, an eighty six on an item",
+          "Keep it professional both ways. The pass is a pressure point and tone escalates fast",
+          "Check the plate at the pass before it goes out. The last check is yours"
+        ],
+        "strong_answer_signals": [
+          "Uses standard call out language",
+          "Manages table pace with the kitchen rather than against it",
+          "Communicates an eighty six immediately"
+        ],
+        "avoid": [
+          "Silently letting a delay run",
+          "Arguing at the pass during service",
+          "Sending a plate you know is wrong"
+        ]
+      }
+    },
+    {
+      "id": "fs_t_010",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What do you do about waste, portioning and cost control?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Portion to spec every time. Inconsistent portions cost margin and produce complaints about fairness",
+          "Rotate stock and date everything. Most waste is rotation failure rather than over ordering",
+          "Record waste honestly. Unrecorded waste hides the problem and looks like theft in the numbers",
+          "Prep to the forecast, not to the maximum. Over prepping on a quiet day is a guaranteed loss",
+          "Use trim and off cuts where it is safe and appropriate, following the recipe specification",
+          "Speak up when you see a recurring waste pattern, since that is where the real money is"
+        ],
+        "strong_answer_signals": [
+          "Records waste honestly",
+          "Knows rotation failure is the main waste source",
+          "Preps to forecast rather than to comfort"
+        ],
+        "avoid": [
+          "Free pouring or eyeballing portions to be generous",
+          "Hiding waste to keep the numbers looking good",
+          "Prepping the same volume regardless of the day"
+        ]
+      }
+    },
+    {
+      "id": "fs_t_011",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you use the point of sale and kitchen display systems?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Name the systems you have used and be honest about depth. Every group uses something different and they expect training",
+          "Say what you can do: open and split tables, modifiers, course firing, discounts, voids, transfers, end of shift reports",
+          "On the kitchen side: reading and bumping tickets, understanding the timing display, and what happens when a ticket is bumped by mistake",
+          "Say what you do when the system fails at peak: manual tickets, the agreed fallback, and how you reconcile afterwards",
+          "Accuracy habits: check the ticket on screen matches what the guest said before sending"
+        ],
+        "strong_answer_signals": [
+          "Honest about system depth",
+          "Has a fallback for a system failure at peak",
+          "Knows how to recover a wrongly bumped ticket"
+        ],
+        "avoid": [
+          "Overstating experience with a system",
+          "No plan for a system outage during service",
+          "Sending tickets without checking the screen"
+        ]
+      }
+    },
+    {
+      "id": "fs_t_012",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What restaurant numbers do you understand?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Ticket time and table turn time: how fast the kitchen and the floor move, and where the bottleneck sits",
+          "Average check and items per cover, which is where upselling and menu design show up",
+          "Food cost percentage and how portioning, waste and price changes move it",
+          "Labour cost percentage against sales, and why scheduling to the forecast matters so much",
+          "Covers per shift and the day part pattern, since a restaurant lives or dies on peak throughput",
+          "Say which one you personally influenced and how"
+        ],
+        "strong_answer_signals": [
+          "Connects food cost to portioning and waste",
+          "Understands labour cost against sales",
+          "Names a number they personally moved"
+        ],
+        "avoid": [
+          "Thinking revenue alone measures a shift",
+          "No awareness of food or labour cost percentages",
+          "Reciting terms without knowing what moves them"
+        ]
+      }
+    },
+    {
+      "id": "fs_s_001",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A guest says their food made them ill. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Take it seriously immediately and stay calm. Never dismiss it or argue about whether it was your food",
+          "Get a manager involved at once. This is not a server level decision",
+          "Do not admit liability, and do not accuse the guest. Record the facts: what they ate, when, the symptoms, and their contact details",
+          "Preserve any remaining food from that batch rather than throwing it away, since it may be needed",
+          "Check whether anything else from the same batch is still in service and pull it if there is any doubt",
+          "Report it through the company procedure. In many places a suspected foodborne illness is legally reportable"
+        ],
+        "strong_answer_signals": [
+          "Escalates to a manager immediately",
+          "Preserves the batch rather than discarding it",
+          "Records facts without admitting or denying"
+        ],
+        "avoid": [
+          "Telling the guest it could not have been the food",
+          "Throwing away the evidence",
+          "Handling it alone without telling a manager"
+        ]
+      }
+    },
+    {
+      "id": "fs_s_002",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "An order comes back wrong during the rush. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Apologise for the experience, take the plate, and get the correct one moving before anything else",
+          "Tell the kitchen exactly what is wrong so the remake is right the first time",
+          "Manage the table: offer something while they wait, and keep the rest of the table from finishing alone",
+          "Tell the manager if it is a bill adjustment or if the table is unhappy beyond the plate",
+          "Afterwards, find out why so it does not repeat. Ticket error, kitchen error, or a modifier that was never entered"
+        ],
+        "strong_answer_signals": [
+          "Fires the remake before doing anything else",
+          "Manages the rest of the table while one guest waits",
+          "Finds the cause afterwards"
+        ],
+        "avoid": [
+          "Debating whose fault it was during service",
+          "Sending it back with no explanation to the kitchen",
+          "Leaving one guest without food while the table eats"
+        ]
+      }
+    },
+    {
+      "id": "fs_s_003",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A guest appears intoxicated and orders another drink. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Stop serving alcohol. This is a legal obligation, not a judgement call, and the liability includes you personally",
+          "Tell the manager immediately and agree the approach together",
+          "Refuse politely, privately, and without lecturing. Offer water, food, and a soft drink",
+          "Arrange safe transport and never let them drive. Offer to call a taxi or a friend",
+          "Watch for someone else buying for them",
+          "Log the refusal per house policy"
+        ],
+        "strong_answer_signals": [
+          "Stops service without hesitation",
+          "Involves the manager and logs it",
+          "Takes responsibility for how the guest gets home"
+        ],
+        "avoid": [
+          "Serving one more to avoid a scene",
+          "Letting an intoxicated guest drive",
+          "Making the refusal a public humiliation"
+        ]
+      }
+    },
+    {
+      "id": "fs_s_004",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You are short staffed and the restaurant is full. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Tell the manager early so decisions can be made: call in cover, pause seating, extend quoted wait times, or simplify the menu",
+          "Set expectations with guests honestly. A quoted wait that is met beats a short quote that is missed",
+          "Cover the critical positions first: the pass, the till, and drinks. Everything else can flex",
+          "Work the section systematically rather than reacting to whoever waves. A route around the floor beats random movement",
+          "Protect the non negotiables: allergen checks, food temperature, hand washing. Those never flex for speed"
+        ],
+        "strong_answer_signals": [
+          "Quotes honest wait times",
+          "Works a systematic route rather than reacting",
+          "Names what never flexes for speed"
+        ],
+        "avoid": [
+          "Seating everyone and hoping",
+          "Cutting a food safety step",
+          "Letting one loud table absorb the whole section"
+        ]
+      }
+    },
+    {
+      "id": "fs_s_005",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A colleague is not following hygiene rules. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Say something in the moment, quietly and without drama. Most of it is habit rather than defiance",
+          "Be specific: gloves, hand washing, hair, a cut not covered, phone use at the station, working while unwell",
+          "Escalate to a supervisor if it continues or if it is serious, particularly someone working while sick",
+          "Working with vomiting or diarrhoea symptoms is an exclusion issue in most jurisdictions and must be reported, not covered for",
+          "Frame it as protecting the guest and the team rather than as telling on someone"
+        ],
+        "strong_answer_signals": [
+          "Addresses it directly first",
+          "Knows illness reporting is not optional",
+          "Escalates without hesitation when it is serious"
+        ],
+        "avoid": [
+          "Ignoring it because it feels awkward",
+          "Covering for someone working while sick",
+          "Confronting them loudly in front of guests"
+        ]
+      }
+    },
+    {
+      "id": "fs_s_006",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A large group arrives without a reservation. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Check what is actually possible: table availability, kitchen capacity, and staffing on the floor before promising anything",
+          "Talk to the kitchen. A large group landing unannounced can stop a service if the line is not warned",
+          "Be honest about the wait or the limitations. A shortened menu or a staggered seating is better than a failed service",
+          "Get a manager for anything that affects other bookings",
+          "If you can take them, plan it: one server, split checks agreed up front, and sequenced firing"
+        ],
+        "strong_answer_signals": [
+          "Warns the kitchen before accepting",
+          "Honest about wait and limitations",
+          "Plans the service rather than improvising"
+        ],
+        "avoid": [
+          "Seating them without telling the kitchen",
+          "Promising a wait time you cannot meet",
+          "Sacrificing existing bookings"
+        ]
+      }
+    },
+    {
+      "id": "fs_s_007",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You cut yourself or burn yourself during service. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Stop and deal with it. Continuing to handle food with an open wound is a contamination risk",
+          "Wash, treat, cover with a blue detectable dressing where used, and put on a glove over it",
+          "Report it to the supervisor and record it in the accident book. Every injury gets recorded, however small",
+          "Discard any food that was contaminated. This is not negotiable and it is not a waste decision",
+          "For anything serious, get proper medical attention rather than pushing through",
+          "Afterwards, look at the cause: a blunt knife, a crowded station, a missing glove, a wet floor"
+        ],
+        "strong_answer_signals": [
+          "Stops rather than pushing through",
+          "Records it even when minor",
+          "Discards contaminated food without debate"
+        ],
+        "avoid": [
+          "Carrying on with an uncovered cut",
+          "Not reporting a minor injury",
+          "Serving food that was contaminated"
+        ]
+      }
+    },
+    {
+      "id": "fs_s_008",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A guest is unhappy and asking for the meal to be free. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Listen fully first. Often the complaint is about being ignored rather than about the food",
+          "Fix the actual problem if you still can: a remake, a replacement, a drink while they wait",
+          "Know your authority. If a comp is above your level, get the manager rather than promising it",
+          "Do not argue about whether the complaint is fair. Focus on what happens now",
+          "Feed it back so it is not repeated, and note whether the same issue keeps coming up"
+        ],
+        "strong_answer_signals": [
+          "Fixes the problem before discussing money",
+          "Knows their comp authority",
+          "Does not argue about fairness"
+        ],
+        "avoid": [
+          "Comping automatically to end the conversation",
+          "Promising a refund you cannot authorise",
+          "Getting defensive about the kitchen"
+        ]
+      }
+    },
+    {
+      "id": "fs_s_009",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "An item is eighty sixed in the middle of service. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Tell the floor immediately and make sure everyone hears it, including the host and the bar",
+          "Update the point of sale so it cannot be ordered, rather than relying on memory",
+          "Approach tables who already ordered it before they wait, and offer a specific alternative rather than an apology alone",
+          "Tell the kitchen if you see the same item running low before it hits zero next time",
+          "Say why this matters: a guest discovering their dish is unavailable twenty minutes in is a service failure"
+        ],
+        "strong_answer_signals": [
+          "Updates the system, not just the team",
+          "Reaches the affected tables before they wait",
+          "Offers a specific alternative"
+        ],
+        "avoid": [
+          "Relying on the team to remember",
+          "Letting an ordered table wait to be told",
+          "Blaming the kitchen to the guest"
+        ]
+      }
+    },
+    {
+      "id": "fs_s_010",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Two of you are scheduled but only one section is busy. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Help rather than stand. Run food, clear tables, restock, check on the busy section",
+          "Ask the busy colleague what they need instead of guessing, since uncoordinated help creates confusion",
+          "Use the lull deliberately: restock, prep, side work, and reset for the next wave",
+          "Tell the supervisor if the section split is consistently uneven so the floor plan can change",
+          "Say plainly that in this industry the shift is shared, not divided"
+        ],
+        "strong_answer_signals": [
+          "Asks what is needed rather than guessing",
+          "Uses lulls for side work and restock",
+          "Raises an uneven split constructively"
+        ],
+        "avoid": [
+          "Standing around because it is not your section",
+          "Taking over a colleague table without asking",
+          "Waiting to be told to help"
+        ]
+      }
+    },
+    {
+      "id": "fs_m_001",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you run a shift as a supervisor or manager?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Pre shift brief: covers expected, reservations, specials, eighty sixes, allergen notes, staffing and stations, one focus for the shift",
+          "Position people to the trade and change it as the pattern shifts. A fixed floor plan on a moving night loses money",
+          "Be visible during peak, at the pass and on the floor, not in the office",
+          "Watch the leading indicators live: ticket times, table turns, queue at the door, the pass backing up",
+          "Debrief and hand over: what worked, what broke, what the next shift needs to know"
+        ],
+        "strong_answer_signals": [
+          "Runs a real pre shift brief",
+          "Adjusts positions during the shift",
+          "Watches ticket times as a live signal"
+        ],
+        "avoid": [
+          "No brief and no handover",
+          "Managing from the office at peak",
+          "Doing a station themselves instead of running the shift"
+        ]
+      }
+    },
+    {
+      "id": "fs_m_002",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you control food cost and labour cost?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know the two big percentages and what actually moves them, since almost all restaurant margin lives here",
+          "Food cost levers: portion control, waste recording, ordering to forecast, rotation, recipe adherence, supplier pricing, menu engineering",
+          "Labour levers: scheduling to the forecast by day part, sending people home early when trade dies, cross training so fewer people cover more, controlling overtime",
+          "Do inventory properly and consistently. Inconsistent counts make every other number meaningless",
+          "Protect quality and safety while cutting. Cost control that produces bad food is a slower failure",
+          "Give a number: food cost from [X]% to [Y]%, or labour held at [Z]% through a peak season"
+        ],
+        "strong_answer_signals": [
+          "Names specific levers rather than cutting generally",
+          "Understands consistent inventory as the base",
+          "Refuses to cut into quality and safety"
+        ],
+        "avoid": [
+          "Cutting portions to fix food cost",
+          "Understaffing peak to hit a labour target",
+          "Not knowing the current percentages"
+        ]
+      }
+    },
+    {
+      "id": "fs_m_003",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you handle a health inspection?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be ready every day rather than preparing for a visit. Continuous readiness is the only approach that survives a surprise inspection",
+          "Know what they check: temperature logs, hand washing facilities, storage order, dating and labelling, chemical storage, pest evidence, cleaning records, staff illness policy, certification",
+          "During the visit: cooperate fully, accompany the inspector, answer honestly, and fix anything you can on the spot",
+          "Never argue or obstruct. Note what is found and ask for clarity on the requirement",
+          "Afterwards: correct everything immediately, document the correction, and change the routine so it holds",
+          "Run your own internal audits on the same criteria so the real one holds no surprises"
+        ],
+        "strong_answer_signals": [
+          "Treats readiness as daily rather than event based",
+          "Fixes on the spot and documents it",
+          "Runs internal audits on the same criteria"
+        ],
+        "avoid": [
+          "Cleaning frantically when the inspector arrives",
+          "Arguing with a finding",
+          "Correcting the issue but not the routine"
+        ]
+      }
+    },
+    {
+      "id": "fs_m_004",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you hire and keep staff in a high turnover industry?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Hire for reliability and attitude, and train the skill. Most kitchen and floor skills can be taught, showing up cannot",
+          "Onboard properly. A first week with no training and no introduction is the single biggest cause of early leaving",
+          "Give predictable schedules published in advance, since unpredictable hours drive people out faster than pay",
+          "Respect the basics: breaks that happen, being paid correctly and on time, and a manager who does not shout",
+          "Create a path: trainer, shift lead, key stations, certification funding",
+          "Deal with the person nobody wants to work with, because good staff leave over them",
+          "Give the number: turnover reduced, or average tenure improved"
+        ],
+        "strong_answer_signals": [
+          "Names schedule predictability and breaks before perks",
+          "Fixes onboarding as the retention lever",
+          "Deals with the problem staff member"
+        ],
+        "avoid": [
+          "Accepting turnover as just how the industry is",
+          "Relying on pay alone",
+          "Tolerating a shouting culture in the kitchen"
+        ]
+      }
+    },
+    {
+      "id": "fs_m_005",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you deal with a serious complaint or a bad public review?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Respond quickly, publicly and without defensiveness. The reply is written for everyone reading it, not just the reviewer",
+          "Acknowledge the specific issue rather than posting a template. Templates are visible and make it worse",
+          "Take it offline for the detail: an email or a phone number, and an actual conversation",
+          "Investigate honestly with the team involved. Sometimes the review is unfair and you still fix the impression it creates",
+          "Fix the underlying cause and say what changed, since that is what future readers are looking for",
+          "Never argue publicly or share details about the guest"
+        ],
+        "strong_answer_signals": [
+          "Responds specifically rather than with a template",
+          "Investigates rather than assuming the guest is wrong",
+          "Fixes the cause and says so"
+        ],
+        "avoid": [
+          "Arguing with the reviewer in public",
+          "Ignoring reviews entirely",
+          "Blaming a named staff member publicly"
+        ]
+      }
+    },
+    {
+      "id": "fs_m_006",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you keep quality consistent across shifts and staff?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Write and enforce the specification: recipes, portions, plating, timings. Consistency is a system, not a talent",
+          "Train to the spec and check it. A photograph of the correct plate at the station beats any amount of instruction",
+          "Taste and check the line during service, and stop what is not right before it leaves",
+          "Standardise the handover between shifts so the second shift is not rebuilding from scratch",
+          "Use guest feedback and your own line checks as the feedback loop",
+          "Hold the standard consistently. One exception during a rush becomes the new normal within a month"
+        ],
+        "strong_answer_signals": [
+          "Treats consistency as a system with specs",
+          "Checks the line during service rather than after",
+          "Understands that one exception becomes the standard"
+        ],
+        "avoid": [
+          "Relying on the team to remember the spec",
+          "Allowing standards to drop at peak",
+          "Only checking quality when there is a complaint"
+        ]
+      }
+    },
+    {
+      "id": "fs_m_007",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you handle scheduling, overtime and no shows?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Build the schedule from the forecast by day part, then check it against the actual sales curve afterwards",
+          "Publish early. Late schedules cause no shows more reliably than anything else",
+          "Have a real cover plan: an on call arrangement, a cross trained bench, and a group channel that actually works",
+          "Manage overtime deliberately. Regular overtime is usually a staffing gap wearing a disguise",
+          "Deal with repeat no shows through the proper process, consistently, since inconsistency destroys the rest of the team",
+          "Track the pattern. Repeated absence in one shift or under one supervisor is a signal, not a coincidence"
+        ],
+        "strong_answer_signals": [
+          "Publishes schedules early as a no show prevention",
+          "Treats regular overtime as a staffing gap",
+          "Looks for patterns behind absence"
+        ],
+        "avoid": [
+          "Calling people in with no notice as the standard plan",
+          "Applying attendance rules to some people and not others",
+          "Blaming the whole team for one persons absence"
+        ]
+      }
+    },
+    {
+      "id": "fs_m_008",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you handle a food safety incident or a critical violation?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Contain first: stop serving the affected product, isolate it, and check what else came from the same batch or preparation",
+          "Escalate immediately to the owner or the company, and notify the regulator where required. Late notification is treated far worse than the incident",
+          "Preserve evidence: samples, temperature logs, delivery records, cleaning records, staff illness records",
+          "Investigate the root cause rather than blaming a person. It is almost always a process, a schedule, or a broken piece of equipment",
+          "Correct, retrain, and verify. Then check again a week later to confirm it held",
+          "Communicate honestly with anyone affected. Concealment is what turns an incident into a closure"
+        ],
+        "strong_answer_signals": [
+          "Contains before investigating",
+          "Notifies rather than manages it quietly",
+          "Looks for the process cause rather than a person to blame"
+        ],
+        "avoid": [
+          "Handling a suspected outbreak internally without notifying",
+          "Discarding the evidence",
+          "Blaming a junior member of staff"
+        ]
+      }
+    },
+    {
+      "id": "fs_mo_001",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Why do you want to work in food service?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Give a real reason: the pace, the team, the immediate feedback of a good service, the craft of the food, the fact that the shift ends and you know how it went",
+          "Connect it to something you have done, in work or outside it",
+          "Say what you want to learn: stations, wine, management, a specific cuisine",
+          "Honest practical reasons such as hours or tips are respected when paired with genuine interest"
+        ],
+        "strong_answer_signals": [
+          "A concrete reason tied to real experience",
+          "Names something they want to learn",
+          "Honest about practical motivations"
+        ],
+        "avoid": [
+          "Only mentioning that you need a job",
+          "Claiming a passion for hospitality with nothing behind it",
+          "Nothing about guests or the team"
+        ]
+      }
+    },
+    {
+      "id": "fs_mo_002",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Why this restaurant?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Show you have been, or at least know the menu, the concept and the price point",
+          "Say something specific: a dish, the service style, the reputation, the chef, the sourcing",
+          "Connect it to your own experience and what you would be good at here",
+          "Mention practical fit honestly, alongside the real reason"
+        ],
+        "strong_answer_signals": [
+          "Evidence of knowing the menu or having visited",
+          "Something specific rather than generic praise",
+          "Connects the concept to their own strengths"
+        ],
+        "avoid": [
+          "An answer that would fit any restaurant",
+          "Getting the concept or the cuisine wrong",
+          "Only mentioning the staff meal or the tips"
+        ]
+      }
+    },
+    {
+      "id": "fs_mo_003",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle pressure and a fast pace?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be concrete rather than claiming you thrive on it. Say what you actually do: work the station clean, communicate timings, stay on your position, breathe",
+          "Say how you keep accuracy under pressure, since speed without accuracy is not useful",
+          "Mention the recovery: what you do after a hard service so the next one is not worse",
+          "Give a real example of a service that went badly and how you kept going"
+        ],
+        "strong_answer_signals": [
+          "Describes a specific method rather than a temperament claim",
+          "Protects accuracy under pressure",
+          "Has a recovery habit"
+        ],
+        "avoid": [
+          "Saying pressure never affects you",
+          "No example",
+          "Describing a rush where quality collapsed as a success"
+        ]
+      }
+    },
+    {
+      "id": "fs_mo_004",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What are your hours and availability?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be exact and honest. Nights, weekends, holidays and doubles are the job, and a vague answer now becomes a problem in week two",
+          "State any genuine constraint up front: study, childcare, transport, a second job",
+          "Say what you can flex on and what you cannot",
+          "Show you understand that peak periods are when the business makes its money"
+        ],
+        "strong_answer_signals": [
+          "Exact rather than vague",
+          "States constraints up front",
+          "Understands why peak coverage matters"
+        ],
+        "avoid": [
+          "Saying fully flexible when you are not",
+          "Revealing a constraint after being hired",
+          "Refusing weekends in a weekend business"
+        ]
+      }
+    },
+    {
+      "id": "fs_mo_005",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Where do you want to be in a couple of years?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be honest. This industry has genuine paths: shift lead, sous, kitchen manager, general manager, bar management, or a different craft entirely",
+          "If you are studying or passing through, say so and say what you will commit to while you are here",
+          "Name what you would need to learn for the step you want",
+          "Either way, show you intend to be good at this job while you are in it"
+        ],
+        "strong_answer_signals": [
+          "Honest rather than flattering",
+          "Names the step and what it needs",
+          "Commits to the current job regardless"
+        ],
+        "avoid": [
+          "Claiming ambitions you do not have",
+          "No thought about it at all",
+          "Making clear you are counting the days"
+        ]
+      }
+    },
+    {
+      "id": "fs_mo_006",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Do you have any questions for us?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Ask what tells you what the job is really like:",
+          "\"How many covers on a typical Friday, and how many people are on?\"",
+          "\"How are schedules set, and how far in advance are they published?\"",
+          "\"How does the tip structure work here?\"",
+          "\"What does training look like in the first two weeks?\"",
+          "\"What is the team like, and how long have most people been here?\"",
+          "How long people have been there answers more than any other question you can ask in this industry"
+        ],
+        "strong_answer_signals": [
+          "Asks how long the team has been there",
+          "Asks about schedule notice and tip structure",
+          "Asks about covers and staffing per shift"
+        ],
+        "avoid": [
+          "No questions at all",
+          "Asking only about the staff meal",
+          "Asking something the advert already answered"
+        ]
+      }
+    }
+  ]
+}

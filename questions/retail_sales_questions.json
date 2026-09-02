@@ -1,0 +1,1350 @@
+{
+  "metadata": {
+    "sector": "Retail Sales & Cashier",
+    "generated": "2026-09-02",
+    "total": 46,
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ],
+    "region": "North America",
+    "schema_version": "1.1",
+    "note": "Retail salespersons 3.9M and cashiers 3.1M are the second and sixth largest US occupations (BLS May 2025); with first-line retail supervisors 1.12M this bank covers roughly 8 million workers. Covers till and cash accountability, returns and price disputes, shrink including administrative error and internal theft, age restricted sales, planograms, peak trading, and the supervisor and keyholder track."
+  },
+  "questions": [
+    {
+      "id": "rs_b_001",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about yourself and your retail experience.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Store type and format: big box, specialty, grocery, fashion, electronics, convenience. The pace and the customer are different in each",
+          "Scale in numbers: store volume or footfall, team size, how many registers, whether you worked weekends and peak season",
+          "What you actually did: register, floor, fitting rooms, stock and replenishment, returns, opening or closing, keyholder duties",
+          "One number you owned or influenced: sales per hour, units per transaction, loyalty signups, shrink, customer satisfaction score",
+          "Close on availability, because scheduling flexibility is often the real decision"
+        ],
+        "strong_answer_signals": [
+          "Names the store format, which tells them whether the experience transfers",
+          "Gives a number rather than only duties",
+          "Raises availability without being asked"
+        ],
+        "avoid": [
+          "Listing tasks with no result attached",
+          "Being vague about weekend and holiday availability",
+          "Saying you are a people person with nothing behind it"
+        ]
+      }
+    },
+    {
+      "id": "rs_b_002",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you gave excellent customer service.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Pick a moment where you did more than the transaction: found an item at another store, solved a problem that was not your fault, remembered a returning customer",
+          "Situation: what the customer actually needed, including what they had not said out loud",
+          "Action: what you did, what you checked, who you involved, and how you followed through",
+          "Result: what the customer did next. A purchase, a return visit, a compliment to the manager, a review"
+        ],
+        "strong_answer_signals": [
+          "The customer outcome is specific rather than they were happy",
+          "Shows initiative inside the rules rather than breaking them",
+          "Mentions following up or closing the loop"
+        ],
+        "avoid": [
+          "A story where you simply were polite. Politeness is the baseline, not the answer",
+          "Giving away discounts you were not authorised to give",
+          "Making the story about how difficult the customer was"
+        ]
+      }
+    },
+    {
+      "id": "rs_b_003",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you dealt with an angry or upset customer.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Situation: what happened and why they were upset. Be fair to them, since most anger comes from a real problem",
+          "Action: let them finish, acknowledge the impact, then move to what you can do. Lower your voice rather than matching theirs",
+          "Say what you were authorised to offer and where you escalated to a supervisor",
+          "Result: how it ended, and whether they came back",
+          "One line on what you learned about preventing it earlier"
+        ],
+        "strong_answer_signals": [
+          "Listens first and does not argue about whether they should be upset",
+          "Knows the limit of their own authority and uses escalation properly",
+          "Keeps other customers in mind while handling one"
+        ],
+        "avoid": [
+          "Telling the customer they are wrong, even when they are",
+          "Walking away or hiding in the back",
+          "A story where a manager solved it and you only watched"
+        ]
+      }
+    },
+    {
+      "id": "rs_b_004",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a busy shift and how you handled it.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Set the pressure honestly: a sale weekend, holiday trading, short staffing, a delivery landing at peak",
+          "Action: how you triaged. Queue first, then the floor, then the stockroom. Ask for help early rather than late",
+          "Say how you kept the basics from slipping: greeting, tidiness, signage, till accuracy",
+          "Result with a number if you have one: queue cleared, sales figure, no complaints, till balanced"
+        ],
+        "strong_answer_signals": [
+          "Prioritises the customer facing queue over back of house work",
+          "Asks for help before drowning rather than after",
+          "Stays accurate under pressure rather than fast and sloppy"
+        ],
+        "avoid": [
+          "Claiming you never get stressed",
+          "Blaming colleagues or the schedule",
+          "Ignoring accuracy to move faster"
+        ]
+      }
+    },
+    {
+      "id": "rs_b_005",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you worked well with your team.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Pick something with a shared goal: a floor reset, a stock take, a sale launch, covering a colleague short notice",
+          "Action: what you personally did, including the unglamorous part nobody wanted",
+          "How you communicated during it: handover, radio, checking in when you finished your section",
+          "Result for the team and the customer, not just for you"
+        ],
+        "strong_answer_signals": [
+          "Takes on the part nobody wanted",
+          "Communicates rather than working in silence",
+          "Credits the team while being clear about their own contribution"
+        ],
+        "avoid": [
+          "A story where you did everything and the team did nothing",
+          "Vague teamwork language with no specific action",
+          "Criticising former colleagues"
+        ]
+      }
+    },
+    {
+      "id": "rs_b_006",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a mistake you made at work.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Choose something real and recoverable: a till error, a mispriced item, a missed delivery check, a wrong size ordered for a customer",
+          "Own it plainly and say how you noticed, or who told you",
+          "Action: reported it immediately, corrected it, told the customer if they were affected",
+          "Result and the habit you changed so it does not repeat",
+          "One sentence on why hiding it would have been worse"
+        ],
+        "strong_answer_signals": [
+          "Reports it themselves rather than hoping it goes unnoticed",
+          "Names the specific habit that changed",
+          "No defensiveness and no over apologising"
+        ],
+        "avoid": [
+          "Saying you cannot think of one",
+          "Choosing a fake weakness that is really a strength",
+          "A mistake involving cash that you did not report"
+        ]
+      }
+    },
+    {
+      "id": "rs_b_007",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you sold something a customer was unsure about.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Situation: what they came in for and what they were hesitating about",
+          "Action: ask questions before recommending. What is it for, who is it for, what have they tried, what is the budget",
+          "Match the product honestly, including saying when the cheaper option is right for them",
+          "Handle the objection you actually heard: price, fit, timing, or uncertainty",
+          "Result: the sale, the basket size, or the return visit. And say if they came back"
+        ],
+        "strong_answer_signals": [
+          "Asks questions before recommending anything",
+          "Willing to recommend the cheaper option when it fits",
+          "Names the objection and how it was answered"
+        ],
+        "avoid": [
+          "Pushing the highest priced item regardless of need",
+          "Talking about product features without connecting them to the customer",
+          "A story where the customer returned the item afterwards"
+        ]
+      }
+    },
+    {
+      "id": "rs_b_008",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you had to follow a policy a customer did not like.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Set the policy: returns window, receipt requirement, age restriction, price match limits, promotion terms",
+          "Action: explain the rule plainly and without hiding behind it. Say what you can do instead",
+          "Offer the alternative that exists: exchange, store credit, manager review, a different promotion",
+          "Escalate when the policy allows discretion above your level",
+          "Result and how you kept the relationship intact even with a no"
+        ],
+        "strong_answer_signals": [
+          "Explains rather than recites the policy",
+          "Offers what is possible instead of only what is not",
+          "Knows when a manager can make an exception"
+        ],
+        "avoid": [
+          "Breaking policy to avoid a difficult conversation",
+          "Blaming the company in front of the customer",
+          "Being rigid without offering any alternative"
+        ]
+      }
+    },
+    {
+      "id": "rs_b_009",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you noticed something wrong on the floor and acted.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Options that show ownership: a safety hazard, a mispriced shelf, an empty display on a promoted item, a security concern, expired stock",
+          "Action: what you did immediately and who you told",
+          "Show that you did not walk past it, since that is the whole point of the question",
+          "Result: the risk removed, the sale protected, the process changed"
+        ],
+        "strong_answer_signals": [
+          "Acted without being asked",
+          "Knew the correct person to escalate to",
+          "Treats the store as theirs rather than as someone else problem"
+        ],
+        "avoid": [
+          "Waiting for a manager to notice",
+          "A story where you reported it and never followed up",
+          "Handling a safety or security issue in a way that put you at risk"
+        ]
+      }
+    },
+    {
+      "id": "rs_b_010",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about feedback you received and what you did with it.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Pick real feedback: too slow at the till, not greeting customers, missing add on sales, untidy section, phone use on shift",
+          "Action: how you took it. Asked what good looked like, watched someone stronger, practised deliberately",
+          "Result: the measurable change, and how you know it stuck",
+          "Say whether you asked for more feedback afterwards"
+        ],
+        "strong_answer_signals": [
+          "Takes the feedback without defending",
+          "Asks what good looks like rather than guessing",
+          "Shows the change stuck rather than lasted a week"
+        ],
+        "avoid": [
+          "Feedback that was really a compliment",
+          "Disagreeing with the feedback in the retelling",
+          "No evidence that anything changed"
+        ]
+      }
+    },
+    {
+      "id": "rs_t_001",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Walk me through how you handle a return without a receipt.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start with the policy, since this is the most common friction point in retail: what the store allows without proof of purchase",
+          "Options that usually exist: lookup by loyalty account or card used, store credit at current selling price, exchange, manager override",
+          "Check the item condition and whether it is even a store product. Return fraud is real and this is where it happens",
+          "Explain the outcome kindly and offer the best available option rather than a flat refusal",
+          "Record it correctly so the return is traceable"
+        ],
+        "strong_answer_signals": [
+          "Knows lookup options before defaulting to refusal",
+          "Mentions return fraud awareness without treating the customer as a suspect",
+          "Understands when a manager override is appropriate"
+        ],
+        "avoid": [
+          "Refusing immediately without checking lookup options",
+          "Processing a refund to a different card or as cash when policy forbids it",
+          "Accusing the customer of anything"
+        ]
+      }
+    },
+    {
+      "id": "rs_t_002",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle cash and keep your till accurate?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Count in and count out, and never share a till login. Accountability depends on one person per drawer",
+          "Handle notes one at a time, state the amount received out loud, and leave the note on the ledge until change is given. That habit prevents most disputes",
+          "Check large notes for counterfeits per store procedure",
+          "Do drops to the safe when the drawer exceeds the limit rather than letting cash build up",
+          "If it does not balance, report it immediately with what you remember. Do not adjust anything to make it balance"
+        ],
+        "strong_answer_signals": [
+          "Says the amount received out loud, which is the professional habit",
+          "Reports a discrepancy rather than hiding it",
+          "Understands drops and drawer limits as loss prevention, not paperwork"
+        ],
+        "avoid": [
+          "Putting the note straight in the drawer before giving change",
+          "Sharing a till login with a colleague to be helpful",
+          "Making the drawer balance by adjusting the count"
+        ]
+      }
+    },
+    {
+      "id": "rs_t_003",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What point of sale systems have you used and what can you do on them?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Name the systems and be honest about depth. Every chain uses something different and they expect training",
+          "Say the transaction types you can handle: sales, returns, exchanges, price overrides, split tender, gift cards, layaway or hold, loyalty lookup",
+          "Say what you do when the system is down: manual procedure, card terminal offline mode, or pausing sales, per store policy",
+          "Mention accuracy habits: scanning rather than typing codes, checking the screen matches the basket, confirming the total with the customer"
+        ],
+        "strong_answer_signals": [
+          "Honest about which functions they have actually done",
+          "Has a plan for the system being down",
+          "Learns systems quickly and says how"
+        ],
+        "avoid": [
+          "Overstating experience on a system they only watched someone use",
+          "No answer for a register failure at peak",
+          "Blaming the system for errors"
+        ]
+      }
+    },
+    {
+      "id": "rs_t_004",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you help reduce shrink and theft?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know the three sources: external theft, internal theft, and administrative error. Most stores lose more to the last two than people expect",
+          "Floor habits that actually work: greeting everyone including the person who does not want to be greeted, keeping high value areas covered, tidy displays so gaps are visible",
+          "Follow procedure on fitting room counts, security tags, and high theft categories",
+          "Never confront or chase a shoplifter. Observe, record what you can, alert the right person. Safety first and it is company policy everywhere",
+          "Report internal concerns through the proper channel, since employee theft is the hardest and most important one"
+        ],
+        "strong_answer_signals": [
+          "Names administrative error as a shrink source, which most candidates miss",
+          "Knows not to confront or pursue",
+          "Understands greeting as a prevention tool"
+        ],
+        "avoid": [
+          "Saying you would chase or physically stop a thief",
+          "Ignoring internal theft as a category",
+          "Treating certain customers as suspects based on appearance"
+        ]
+      }
+    },
+    {
+      "id": "rs_t_005",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle stock, replenishment and stockroom organisation?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Priority order: sell through gaps on the floor first, then backstock, then the stockroom tidy. An empty shelf is a lost sale",
+          "Receiving properly: check the delivery against the manifest, report damages and shortages the same day, do not sign off blind",
+          "First in first out rotation, and date checks where the category needs it",
+          "Keep the stockroom findable. Time spent looking for stock is the hidden cost in every store",
+          "Cycle counts and accurate system counts, because wrong stock numbers cause both lost sales and over ordering"
+        ],
+        "strong_answer_signals": [
+          "Puts floor gaps above stockroom tidiness",
+          "Checks deliveries rather than signing blind",
+          "Connects stock accuracy to lost sales"
+        ],
+        "avoid": [
+          "Leaving a gap on a promoted line",
+          "Signing for a delivery without checking",
+          "Treating the stockroom as somewhere to hide from customers"
+        ]
+      }
+    },
+    {
+      "id": "rs_t_006",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you approach a customer on the shop floor?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Acknowledge everyone within a few seconds, even when busy. A nod and I will be right with you keeps people from leaving",
+          "Open with something better than can I help you, which invites no. Try what are you shopping for today, or comment on the item they are holding",
+          "Read the signal: some customers want space, and the right move is to say where you will be",
+          "Ask questions to understand the use case before recommending",
+          "Close naturally: offer to start a fitting room, hold it at the till, or check another size"
+        ],
+        "strong_answer_signals": [
+          "Acknowledges quickly even when serving someone else",
+          "Uses an open question rather than can I help",
+          "Reads when to give space"
+        ],
+        "avoid": [
+          "Ignoring customers while facing stock",
+          "Following a customer around the store",
+          "Launching into a pitch before understanding the need"
+        ]
+      }
+    },
+    {
+      "id": "rs_t_007",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What do you know about upselling and add on sales?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Frame it as completing the purchase rather than adding to the bill. Batteries, a case, a warranty, care products, the matching item",
+          "Recommend from the use case you already asked about, so it sounds like advice rather than a script",
+          "Time it at the natural moment: while the customer is deciding, or at the till when it is genuinely relevant",
+          "Accept the first no gracefully. Pushing after a no costs the relationship and sometimes the original sale",
+          "Know the metrics this affects: units per transaction, average basket, attachment rate"
+        ],
+        "strong_answer_signals": [
+          "Frames add on as service, not pressure",
+          "Accepts no the first time",
+          "Names the metric it moves"
+        ],
+        "avoid": [
+          "Reciting a scripted add on to every customer regardless of fit",
+          "Pushing an extended warranty a customer clearly does not want",
+          "Ignoring the customer signals to hit a target"
+        ]
+      }
+    },
+    {
+      "id": "rs_t_008",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle a price discrepancy or a price match request?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Verify first: the shelf label, the promotion dates, the item code. Most discrepancies are a label left up after a promotion ended",
+          "Know the store rule on honouring a displayed price and where your authority ends",
+          "For a price match, check the competitor terms the policy requires: same item, in stock, identifiable seller, within the window",
+          "Fix the cause as well as the transaction. Correct or remove the wrong label so the next customer is not affected",
+          "Be transparent about the outcome rather than vague"
+        ],
+        "strong_answer_signals": [
+          "Fixes the label as well as the transaction",
+          "Knows the limits of their own authority",
+          "Checks the competitor terms rather than guessing"
+        ],
+        "avoid": [
+          "Honouring any price a customer claims without verifying",
+          "Leaving the incorrect label in place",
+          "Arguing with the customer about what the sign said"
+        ]
+      }
+    },
+    {
+      "id": "rs_t_009",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What do you know about visual merchandising and store standards?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Follow the planogram or the layout guide, since the placement is usually tested and the data is better than instinct",
+          "Basics that always matter: full shelves, facings forward, correct signage, clear pricing, clean and lit displays",
+          "Sightlines and traffic flow: the entry zone, the promotional ends, the till queue, and the impulse zone",
+          "Keep the promoted lines full and prominent, since that is where the marketing spend went",
+          "Reset discipline: do it fully, do it on time, and check it from the customer entry point rather than from behind the display"
+        ],
+        "strong_answer_signals": [
+          "Knows the planogram exists and why it is followed",
+          "Checks displays from the customer viewpoint",
+          "Connects merchandising to what is being promoted"
+        ],
+        "avoid": [
+          "Rearranging displays by personal taste",
+          "Leaving a reset half finished at open",
+          "Ignoring signage and pricing accuracy"
+        ]
+      }
+    },
+    {
+      "id": "rs_t_010",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle opening and closing procedures?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Opening: alarm and key procedure, count the tills, check the floor is customer ready, check overnight deliveries, brief the team on the day priorities",
+          "Closing: last customer handled properly rather than rushed out, cash up and safe drop, secure the stock and high value areas, tidy for the morning",
+          "Security discipline: never open or close alone if policy forbids it, check the building before setting the alarm, and vary the routine where cash is involved",
+          "Handover notes so the next shift starts informed",
+          "Say that keyholder responsibility is trust, and that you treat the alarm codes and keys accordingly"
+        ],
+        "strong_answer_signals": [
+          "Treats the alarm and keys as a trust responsibility",
+          "Leaves a handover for the next shift",
+          "Does not rush the last customer out"
+        ],
+        "avoid": [
+          "Sharing alarm codes or keys",
+          "Closing alone against policy",
+          "Cashing up in view of the window"
+        ]
+      }
+    },
+    {
+      "id": "rs_t_011",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle age restricted or regulated sales?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know what is restricted where you work: alcohol, tobacco and vapes, lottery, solvents, knives, certain medicines, and the age for each",
+          "Ask for identification every time it is required, using the store challenge policy such as challenge 25. Consistency protects you and the store",
+          "Check the identification properly: valid type, date of birth, photograph, expiry, and signs of tampering",
+          "Refuse politely and firmly, and record the refusal where the store logs them",
+          "Know that the personal liability is yours as well as the company. Never sell because a queue is building or a customer is angry"
+        ],
+        "strong_answer_signals": [
+          "Applies the challenge policy consistently rather than by judgement of appearance",
+          "Knows how to actually check an identification document",
+          "Understands the personal legal liability"
+        ],
+        "avoid": [
+          "Selling because the queue is long or the customer is intimidating",
+          "Accepting a photograph of an identification document",
+          "Serving a customer who is buying for someone underage"
+        ]
+      }
+    },
+    {
+      "id": "rs_t_012",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What retail numbers do you understand and how do they connect?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Sales per hour and conversion rate: footfall in, transactions out. A busy store with low conversion is a service problem",
+          "Units per transaction and average transaction value, which is where add on selling shows up",
+          "Shrink as a percentage of sales, and the three sources behind it",
+          "Sell through and stock turn: how fast inventory moves, and what an overstocked slow line costs",
+          "Labour hours against sales, which is why scheduling and peak coverage matter so much",
+          "Say which of these you personally influenced and how"
+        ],
+        "strong_answer_signals": [
+          "Connects a metric to a behaviour on the floor",
+          "Knows conversion, not just sales total",
+          "Says which numbers they influenced personally"
+        ],
+        "avoid": [
+          "Naming metrics without understanding what moves them",
+          "Thinking sales total is the only measure",
+          "No awareness of labour cost against sales"
+        ]
+      }
+    },
+    {
+      "id": "rs_s_001",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "There is a queue of six customers and you are alone at the till. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Acknowledge the queue out loud so everyone knows they have been seen. That single sentence keeps most people patient",
+          "Call for backup immediately through the correct channel rather than trying to be a hero",
+          "Keep a steady accurate pace. Rushing causes till errors that make the queue longer",
+          "Keep transactions efficient: hold the conversation for when the queue clears, but do not make anyone feel processed",
+          "Afterwards, flag the pattern to a supervisor so cover is scheduled next time"
+        ],
+        "strong_answer_signals": [
+          "Acknowledges the queue verbally",
+          "Calls for help immediately rather than late",
+          "Stays accurate rather than panicking"
+        ],
+        "avoid": [
+          "Working faster by skipping steps like age checks or receipts",
+          "Ignoring the queue and hoping someone notices",
+          "Getting visibly flustered in front of customers"
+        ]
+      }
+    },
+    {
+      "id": "rs_s_002",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A customer wants to return an item that is clearly used and outside the policy. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Look at the item and check the history: purchase date, receipt, loyalty record, and whether it is a fault claim rather than a change of mind",
+          "A faulty product is a different conversation from a change of mind, and consumer law may apply regardless of store policy. Treat them separately",
+          "Explain what the policy allows and what you can offer instead",
+          "Escalate to a manager where discretion exists, and say why you are escalating",
+          "Stay calm if they escalate their tone, and keep the conversation away from the queue if you can"
+        ],
+        "strong_answer_signals": [
+          "Separates a fault claim from a change of mind",
+          "Knows escalation is available and uses it appropriately",
+          "Moves the conversation away from the queue"
+        ],
+        "avoid": [
+          "Refusing without checking whether it is a fault",
+          "Approving it to avoid conflict",
+          "Arguing in front of other customers"
+        ]
+      }
+    },
+    {
+      "id": "rs_s_003",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You see a colleague giving their friend an unauthorised discount. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Recognise it for what it is. Employee discount abuse is theft and it is one of the largest shrink sources in retail",
+          "Do not confront them on the floor in front of customers",
+          "Report it through the proper channel: supervisor, manager, or the confidential loss prevention line",
+          "Report facts only, what you saw, without speculating about intent",
+          "Say plainly that staying silent makes you part of it, and that most stores treat non reporting as a policy breach"
+        ],
+        "strong_answer_signals": [
+          "Knows the reporting channel exists",
+          "Reports facts rather than accusations",
+          "Understands that silence is itself a breach"
+        ],
+        "avoid": [
+          "Saying you would keep it to yourself because it is not your business",
+          "Confronting the colleague publicly",
+          "Warning the colleague so they can cover it up"
+        ]
+      }
+    },
+    {
+      "id": "rs_s_004",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A customer is being rude to you personally. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Stay professional and do not take it personally. Lower your voice and slow down rather than matching them",
+          "Focus on the problem: here is what I can do. Redirecting to the solution defuses most of it",
+          "Set a boundary calmly if it becomes abusive or personal, and involve a supervisor",
+          "You are entitled to be treated with respect. Every store has a process for abusive customers and you should use it",
+          "Afterwards, take a moment if you need it and tell your supervisor what happened"
+        ],
+        "strong_answer_signals": [
+          "Knows they are allowed to involve a supervisor for abuse",
+          "Redirects to what can be done",
+          "Does not absorb it silently"
+        ],
+        "avoid": [
+          "Responding in kind",
+          "Accepting abuse because the customer is always right",
+          "Walking off without telling anyone"
+        ]
+      }
+    },
+    {
+      "id": "rs_s_005",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Two customers need you at once and one of them was there first. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Acknowledge both. The second customer mainly needs to know they have been seen and how long it will be",
+          "Serve in order unless one is a quick answer that takes ten seconds, in which case say so out loud so the first customer understands",
+          "Judge urgency: a customer with a child in distress, an accessibility need, or a safety issue changes the order and you should say why",
+          "Call for support if the pattern repeats through the shift",
+          "Never let the visible queue drift while you give one customer a long consultation"
+        ],
+        "strong_answer_signals": [
+          "Acknowledges the waiting customer explicitly",
+          "Explains out loud when they change the order",
+          "Recognises accessibility and urgency exceptions"
+        ],
+        "avoid": [
+          "Serving whoever is loudest",
+          "Ignoring one customer entirely",
+          "Long consultations while a queue builds"
+        ]
+      }
+    },
+    {
+      "id": "rs_s_006",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A customer asks for an item you do not have in stock. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Check properly before saying no: the system count, the stockroom, recent deliveries, and whether it is in a different size or colour",
+          "Offer the alternatives that exist: another branch, order to store, home delivery, a comparable product, or a notification when it lands",
+          "Be honest about timing rather than optimistic. A missed promise costs more than the sale",
+          "Capture the demand: tell the supervisor if you are getting repeated requests for something",
+          "Follow through on anything you promised to check"
+        ],
+        "strong_answer_signals": [
+          "Actually checks rather than saying we do not have it",
+          "Offers a route to still get the product",
+          "Feeds repeated requests back to the buyer or manager"
+        ],
+        "avoid": [
+          "Saying no from memory without checking",
+          "Promising a delivery date you cannot confirm",
+          "Forgetting to call the customer back"
+        ]
+      }
+    },
+    {
+      "id": "rs_s_007",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You suspect someone is shoplifting. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Do not confront, chase, block, or touch. This is company policy everywhere and it is about your safety",
+          "Increase service presence: approach as a helpful colleague, offer assistance, stay visible. Most opportunistic theft stops there",
+          "Alert the right person discreetly: supervisor, security, or the store code word",
+          "Observe and remember details you can report: description, time, what was taken, direction of travel",
+          "Never accuse anyone, and never act on appearance rather than behaviour"
+        ],
+        "strong_answer_signals": [
+          "Refuses to confront or pursue",
+          "Uses service presence as the prevention tool",
+          "Judges on behaviour, never on appearance"
+        ],
+        "avoid": [
+          "Chasing someone out of the store",
+          "Accusing a customer",
+          "Profiling based on how someone looks"
+        ]
+      }
+    },
+    {
+      "id": "rs_s_008",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "The card system goes down during peak trading. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Tell the queue immediately and clearly. Uncertainty empties a store faster than a problem does",
+          "Follow the store procedure: offline mode if supported, cash only, or pausing transactions. Do not improvise a workaround with card details",
+          "Report it to the manager and to support at once rather than waiting to see if it fixes itself",
+          "Keep customers informed with updates and offer to hold baskets so people can come back",
+          "When it returns, work through the queue calmly and check that nothing double processed"
+        ],
+        "strong_answer_signals": [
+          "Communicates to the whole queue immediately",
+          "Follows procedure rather than improvising",
+          "Checks for double charges afterwards"
+        ],
+        "avoid": [
+          "Writing down card numbers to process later, which is a serious data breach",
+          "Letting customers wait with no information",
+          "Waiting to report the outage"
+        ]
+      }
+    },
+    {
+      "id": "rs_s_009",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A customer wants advice and you do not know the answer. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Say you do not know and that you will find out. Guessing is how customers end up with the wrong product and a return",
+          "Find out properly: the product information, a colleague who specialises, the manufacturer site, or the manager",
+          "Come back within the time you promised, even if the answer is still pending",
+          "Learn it so you are not in the same position tomorrow",
+          "Where the stakes are high, such as safety, compatibility or medical adjacent products, never improvise an answer"
+        ],
+        "strong_answer_signals": [
+          "Admits the gap rather than guessing",
+          "Comes back within the promised time",
+          "Learns it afterwards"
+        ],
+        "avoid": [
+          "Making up a plausible answer",
+          "Disappearing without returning",
+          "Guessing on a safety or compatibility question"
+        ]
+      }
+    },
+    {
+      "id": "rs_s_010",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You are asked to stay late or cover a shift at short notice. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be honest about what you can do. Say yes when you can and give a clear reason when you cannot",
+          "If you can only partly help, offer it: an hour, a different day, a swap with a colleague",
+          "Ask about the pattern if it becomes frequent, calmly and in the right setting rather than in the moment",
+          "Understand why retail runs this way: absence and footfall spikes are unavoidable and cover keeps the store trading",
+          "Be the person who helps when it matters, and be clear about the times you genuinely cannot"
+        ],
+        "strong_answer_signals": [
+          "Honest rather than over promising",
+          "Offers partial help rather than a flat no",
+          "Raises a recurring pattern in the right way"
+        ],
+        "avoid": [
+          "Saying yes and then not turning up",
+          "Refusing without explanation",
+          "Agreeing to hours that break your own commitments and then resenting it"
+        ]
+      }
+    },
+    {
+      "id": "rs_m_001",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you run a shift as a supervisor or keyholder?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start with a short brief: today target, the promotions, the priorities, who is on break when, and anything from the last shift",
+          "Deploy people to where the trade is rather than where they are comfortable. Reassess when the store fills or empties",
+          "Stay on the floor. A supervisor in the back office during peak is a lost hour",
+          "Keep the basics visible: queue times, floor standards, gaps on promoted lines, till accuracy",
+          "Close with a handover so the next shift is not starting blind"
+        ],
+        "strong_answer_signals": [
+          "Briefs the team rather than assuming they know",
+          "Redeploys people during the shift",
+          "Stays on the floor at peak"
+        ],
+        "avoid": [
+          "Managing from the office",
+          "No brief and no handover",
+          "Doing everything themselves instead of directing"
+        ]
+      }
+    },
+    {
+      "id": "rs_m_002",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you coach an underperforming team member?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be specific about the behaviour and the standard: not slow, but average transaction time against the target and what good looks like",
+          "Find the cause before prescribing: unclear expectations, missing training, a personal issue, or a motivation problem. They need different responses",
+          "Coach in the moment on the floor with a short observable change, not only in a formal review",
+          "Set a clear expectation with a review date, and follow up when you said you would",
+          "Escalate to a formal process only after real support, and follow the company procedure exactly"
+        ],
+        "strong_answer_signals": [
+          "Names the specific behaviour and the standard",
+          "Diagnoses cause before prescribing",
+          "Follows up on the date they set"
+        ],
+        "avoid": [
+          "Vague feedback like you need to try harder",
+          "Going straight to formal warnings",
+          "Criticising someone in front of customers or colleagues"
+        ]
+      }
+    },
+    {
+      "id": "rs_m_003",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you build a schedule that covers trade and works for people?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Schedule to the footfall and sales curve by day and hour rather than evenly. Most understaffing is a shape problem, not a hours problem",
+          "Protect the peaks: weekend afternoons, evenings, delivery days, and promotion launches",
+          "Balance experienced and new staff on every shift so training and cover are possible",
+          "Give predictability where you can. Unpredictable schedules are one of the biggest causes of retail turnover",
+          "Plan for absence with a realistic cover list rather than assuming a full team",
+          "Watch the labour hours against sales, since this is where a store makes or loses its margin"
+        ],
+        "strong_answer_signals": [
+          "Schedules to the trade curve, not evenly",
+          "Values predictability as a retention tool",
+          "Mixes experience levels on each shift"
+        ],
+        "avoid": [
+          "Building the rota around personal preference",
+          "Publishing rotas late",
+          "Cutting hours at peak to hit a labour target"
+        ]
+      }
+    },
+    {
+      "id": "rs_m_004",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you handle a customer complaint that has been escalated to you?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Take it away from the floor if you can, and let them explain fully before you respond",
+          "Back your colleague in front of the customer while still investigating properly. Undermining staff publicly destroys the team",
+          "Establish the facts, including the system record, before deciding",
+          "Decide with the authority you have, explain the reasoning, and be clear about what happens next",
+          "Follow up with the colleague afterwards: what happened, what to do next time, and support if the customer was abusive"
+        ],
+        "strong_answer_signals": [
+          "Does not undermine the colleague in public",
+          "Checks facts before deciding",
+          "Debriefs the colleague afterwards"
+        ],
+        "avoid": [
+          "Overruling staff in front of the customer to end the conflict",
+          "Deciding without hearing the colleague",
+          "Giving a refund without understanding what happened"
+        ]
+      }
+    },
+    {
+      "id": "rs_m_005",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you hit sales targets without damaging service?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Diagnose the gap first: is it footfall, conversion, basket size, or a stock availability problem. Each has a different fix",
+          "Availability is often the cheapest win. You cannot sell what is not on the shelf",
+          "Coach the behaviours that move conversion: acknowledgement, open questions, fitting room service, till attachment",
+          "Share the numbers with the team hourly or daily so it is a shared game rather than a private pressure",
+          "Protect service quality. Pressure selling produces returns, complaints and lost repeat custom",
+          "Say what you did that worked, with a number"
+        ],
+        "strong_answer_signals": [
+          "Diagnoses which lever is broken before pushing the team",
+          "Uses availability as the first check",
+          "Shares numbers with the team"
+        ],
+        "avoid": [
+          "Pushing pressure selling to hit a weekly number",
+          "Blaming the team for a stock or footfall problem",
+          "Chasing sales while standards collapse"
+        ]
+      }
+    },
+    {
+      "id": "rs_m_006",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you reduce shrink in a store you manage?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Measure and segment first: external theft, internal theft, and administrative or process error. Fixing the wrong one wastes the quarter",
+          "Process discipline is usually the biggest single win: receiving checks, markdown accuracy, waste recording, transfer paperwork, count accuracy",
+          "Internal controls without an atmosphere of suspicion: till accountability, refund and void oversight, discount reporting, clear consequences applied consistently",
+          "Floor coverage and service presence in the high risk categories",
+          "Involve the team. They usually know exactly where it is going, and they will tell a manager they trust",
+          "Give the number: shrink reduced from [X]% to [Y]%"
+        ],
+        "strong_answer_signals": [
+          "Segments shrink before acting",
+          "Names refund and void oversight as an internal control",
+          "Builds trust so the team reports"
+        ],
+        "avoid": [
+          "Treating shrink as only a shoplifting problem",
+          "Creating a suspicious atmosphere that drives good staff away",
+          "Ignoring administrative error"
+        ]
+      }
+    },
+    {
+      "id": "rs_m_007",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you keep a team motivated in a high turnover environment?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start with the basics people actually leave over: predictable hours, being treated with respect, a manager who is present, and breaks that actually happen",
+          "Recognise specifically and quickly. Retail feedback works best on the day, not in a monthly review",
+          "Give people ownership: a section, a display, a category, a new starter to train",
+          "Show a path. Even a small one, keyholder or department lead, changes how people see the job",
+          "Handle the poor performer, because nothing demotivates a good team faster than someone getting away with it",
+          "Give the number if you have it: turnover reduced, or tenure improved"
+        ],
+        "strong_answer_signals": [
+          "Names predictable hours and breaks as motivation basics",
+          "Gives ownership rather than only tasks",
+          "Deals with the poor performer"
+        ],
+        "avoid": [
+          "Relying on incentives and pizza while the basics are broken",
+          "Ignoring the person everyone knows is coasting",
+          "Treating turnover as inevitable"
+        ]
+      }
+    },
+    {
+      "id": "rs_m_008",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you handle a health and safety or security incident in store?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "People first: make the area safe, give first aid or call emergency services, and keep customers away from the hazard",
+          "Do not put yourself or staff at risk during a robbery or a violent incident. Comply, observe, and report. Property is replaceable",
+          "Secure the scene and preserve any evidence or footage",
+          "Report through the proper channels immediately and complete the incident record accurately the same day",
+          "Support the staff involved afterwards. A robbery or an assault affects people for weeks and this is where managers are judged",
+          "Review the cause and change the process: lighting, cash handling, lone working, spill procedure, display safety"
+        ],
+        "strong_answer_signals": [
+          "People before property, said explicitly",
+          "Records the incident accurately the same day",
+          "Supports staff afterwards"
+        ],
+        "avoid": [
+          "Resisting during a robbery",
+          "Delaying or softening an incident report",
+          "Sending a shaken colleague straight back on the till"
+        ]
+      }
+    },
+    {
+      "id": "rs_mo_001",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Why do you want to work in retail?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Give a real reason: you like the pace, the people, solving something for someone in a few minutes, the variety of a day",
+          "Connect it to something you have actually done, in work or outside it",
+          "Say what you want to learn or grow into, since retail employers care about who will stay",
+          "Be honest if it is partly the hours or the location. Practical reasons are respected when paired with genuine interest"
+        ],
+        "strong_answer_signals": [
+          "A concrete reason rather than a generic one",
+          "Links it to something they have actually done",
+          "Honest about practical motivations"
+        ],
+        "avoid": [
+          "I need a job as the whole answer",
+          "Claiming a lifelong passion for retail",
+          "Nothing about customers or the team"
+        ]
+      }
+    },
+    {
+      "id": "rs_mo_002",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Why do you want to work for this store specifically?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Show that you have actually been in the store. Mention the layout, the range, the service you received, the way the team worked",
+          "Say something specific about the brand: the products, the customer, the values they publish, the way they train",
+          "Connect it to you: why this range or this customer suits what you are good at",
+          "Mention practical fit honestly, such as location and availability, alongside the real reason"
+        ],
+        "strong_answer_signals": [
+          "Evidence of having visited the store",
+          "Something specific about the brand rather than generic praise",
+          "Connects the brand to their own strengths"
+        ],
+        "avoid": [
+          "Answers that would fit any retailer",
+          "Only mentioning the discount",
+          "Getting the product range wrong"
+        ]
+      }
+    },
+    {
+      "id": "rs_mo_003",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What does good customer service mean to you?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Define it concretely: being acknowledged quickly, being listened to, getting an honest answer, and leaving with the problem solved",
+          "Say that it includes telling someone the truth, including when the answer is no or when a cheaper product is right for them",
+          "Mention consistency. Good service on a quiet Tuesday and on a chaotic Saturday is the actual test",
+          "Give a short example from your own experience as a customer or as staff"
+        ],
+        "strong_answer_signals": [
+          "Includes honesty, not just friendliness",
+          "Mentions consistency under pressure",
+          "Backs it with a real example"
+        ],
+        "avoid": [
+          "The customer is always right as the whole philosophy",
+          "Only describing being polite",
+          "No example at all"
+        ]
+      }
+    },
+    {
+      "id": "rs_mo_004",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Where do you see yourself in a couple of years?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be honest and grounded. Retail employers know not everyone stays forever, and an unrealistic answer is worse than a modest one",
+          "If you want to progress in retail, say the step: keyholder, supervisor, department lead, assistant manager, and what you would need to learn",
+          "If you are studying or have other plans, say how this role fits alongside them and what you will commit to",
+          "Either way, show you intend to be good at this job while you are in it"
+        ],
+        "strong_answer_signals": [
+          "Honest rather than telling them what they want to hear",
+          "Names a specific next step if progression is the goal",
+          "Commits to doing this job well regardless"
+        ],
+        "avoid": [
+          "Claiming you want to be a store director when it is not true",
+          "Saying you have no idea",
+          "Making clear you will leave at the first opportunity"
+        ]
+      }
+    },
+    {
+      "id": "rs_mo_005",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle standing all day, weekends and holiday trading?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be straightforward. You know the job is physical, involves weekends, and gets hardest exactly when everyone else is off",
+          "Say how you manage it: footwear, using breaks properly, pacing, hydration, and sleep before a peak week",
+          "Be clear and honest about your genuine availability rather than agreeing to everything and failing later",
+          "Show you understand why peak matters: the store makes its year in those weeks"
+        ],
+        "strong_answer_signals": [
+          "Realistic about the physical demand",
+          "Honest availability rather than over promising",
+          "Understands why peak trading matters"
+        ],
+        "avoid": [
+          "Claiming no limits at all",
+          "Discovering a scheduling constraint after being hired",
+          "Complaining about weekend work in the interview"
+        ]
+      }
+    },
+    {
+      "id": "rs_mo_006",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Do you have any questions for us?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Ask what tells you what the job is actually like:",
+          "\"What does a typical shift look like, and how many people are usually on?\"",
+          "\"How are hours and rotas set, and how far ahead are they published?\"",
+          "\"What does training look like in the first few weeks?\"",
+          "\"What is the busiest period here, and what changes then?\"",
+          "\"Is there a route from this role to supervisor or department lead?\"",
+          "How far ahead rotas are published is the question that most affects your life and almost nobody asks it"
+        ],
+        "strong_answer_signals": [
+          "Asks about rota notice, which shows real understanding of the job",
+          "Asks about training and progression",
+          "Asks about staffing levels per shift"
+        ],
+        "avoid": [
+          "Having no questions at all",
+          "Asking only about pay and discount",
+          "Asking something already covered in the advert"
+        ]
+      }
+    }
+  ]
+}

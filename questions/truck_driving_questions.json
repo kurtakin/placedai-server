@@ -1,0 +1,1377 @@
+{
+  "metadata": {
+    "sector": "Truck Driving & Delivery",
+    "generated": "2026-09-02",
+    "total": 46,
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ],
+    "region": "North America",
+    "schema_version": "1.1",
+    "note": "Heavy and tractor-trailer truck drivers, 2.22M jobs with about 214,500 openings a year projected 2025-2035 (BLS Occupational Outlook Handbook). Covers pre-trip and air brake inspection, hours of service and electronic logging, load securement and weights, truck specific routing and bridge clearance, backing, roadside DOT inspections, adverse weather shutdown decisions, and the dispatch and fleet supervisor track."
+  },
+  "questions": [
+    {
+      "id": "td_b_001",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about yourself and your driving experience.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Licence first: class, endorsements, how long held, and any restrictions. This is the screening question inside the question",
+          "Equipment you have run: tractor trailer, day cab, flatbed, reefer, tanker, dry van, straight truck, doubles. Manual or automatic",
+          "Operation type: over the road, regional, local, dedicated, last mile delivery. The lifestyle differs completely",
+          "Numbers: years driving, miles per year, safe miles without a preventable accident, on time percentage if you know it",
+          "Say your record honestly. They will pull your motor vehicle record and your employment history anyway"
+        ],
+        "strong_answer_signals": [
+          "States licence class and endorsements immediately",
+          "Names the equipment and whether manual or automatic",
+          "Honest about the record before it is checked"
+        ],
+        "avoid": [
+          "Being vague about accidents or violations that will appear in the check",
+          "Not saying which operation type you actually want",
+          "Overstating experience on equipment you have run once"
+        ]
+      }
+    },
+    {
+      "id": "td_b_002",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you avoided an accident.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Set the situation: weather, traffic, a vehicle cutting in, a blind spot, a stopped queue over a rise",
+          "Action: what you saw early and what you did. Following distance, mirror discipline, speed reduction, escape route",
+          "Say the habit that made it possible rather than the reflex. Good drivers see it developing",
+          "Result: nothing happened, which is the whole point of the job",
+          "One line on what you changed afterwards"
+        ],
+        "strong_answer_signals": [
+          "Credits a habit rather than luck or reflexes",
+          "Describes seeing it develop early",
+          "Understands that a non event is the success"
+        ],
+        "avoid": [
+          "A story where hard braking saved you at the last second and that is presented as skill",
+          "Blaming the other driver as the point of the story",
+          "Any story that involves speeding to get out of trouble"
+        ]
+      }
+    },
+    {
+      "id": "td_b_003",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you were delayed and had to communicate it.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Set the cause: weather, breakdown, a shipper holding you, traffic, a closed road, a detention at the dock",
+          "Action: tell dispatch as soon as you know, not when you are already late. Give a realistic new time",
+          "Say what you did with the hours of service clock, because that is the constraint they care about",
+          "Keep the customer informed through the proper channel",
+          "Result: the delivery outcome and the relationship intact"
+        ],
+        "strong_answer_signals": [
+          "Notifies as soon as the delay is known",
+          "Manages the delay within hours of service rather than around it",
+          "Gives a realistic revised time"
+        ],
+        "avoid": [
+          "Driving over hours to make up the delay",
+          "Telling dispatch after the delivery window has passed",
+          "Guessing at a new time you cannot make"
+        ]
+      }
+    },
+    {
+      "id": "td_b_004",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a difficult customer or receiver.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Situations that come up: a receiver refusing a load, a long detention, a rude dock worker, a delivery site that is not accessible, paperwork disputes",
+          "Action: stay professional and calm. You represent the carrier at every dock",
+          "Document everything: arrival time, condition, what was said, photographs where relevant",
+          "Call dispatch rather than negotiating something outside your authority",
+          "Result: how it was resolved and what you recorded"
+        ],
+        "strong_answer_signals": [
+          "Stays professional at the dock",
+          "Documents and photographs",
+          "Calls dispatch rather than deciding alone"
+        ],
+        "avoid": [
+          "Arguing with a receiver",
+          "Accepting a refusal without documenting it",
+          "Signing a paperwork change you were not authorised to make"
+        ]
+      }
+    },
+    {
+      "id": "td_b_005",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a mistake you made on the road or at a dock.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Pick something real: a wrong turn on a restricted route, a backing scrape, a missed inspection item, a paperwork error, a late notification",
+          "Own it immediately. In this industry a hidden problem becomes a safety or a legal problem",
+          "Action: reported it, documented it, and dealt with the consequence",
+          "Result and the specific habit that changed",
+          "If it was a preventable incident, be straightforward about it since the record is checkable"
+        ],
+        "strong_answer_signals": [
+          "Reports rather than hides",
+          "Names a specific habit change",
+          "Honest about anything that is on the record"
+        ],
+        "avoid": [
+          "Saying you have never made a mistake in twenty years",
+          "Not reporting a minor contact incident",
+          "Blaming the dock or the dispatcher"
+        ]
+      }
+    },
+    {
+      "id": "td_b_006",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you refused to drive or delayed a departure for safety.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "The strongest version: an equipment defect, severe weather, or being too fatigued to drive safely",
+          "Action: what you found or felt, who you told, and what you did instead",
+          "Say plainly that an unsafe truck does not leave and a fatigued driver does not drive, regardless of the load",
+          "Result: the repair, the delay, or the shutdown, and how the company responded",
+          "This question is often the whole interview. Carriers are screening for whether you will shut down when you should"
+        ],
+        "strong_answer_signals": [
+          "Clear that safety outranks the delivery",
+          "Told dispatch rather than deciding silently",
+          "Has actually done it rather than only saying they would"
+        ],
+        "avoid": [
+          "Saying you would push through because the load was hot",
+          "Never having refused anything in a long career",
+          "Framing a shutdown as something that got you in trouble"
+        ]
+      }
+    },
+    {
+      "id": "td_b_007",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you worked well with dispatch.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Say what good communication looks like: early updates, honest estimated times, flagging problems before they are emergencies",
+          "Action: a specific case where you gave dispatch what they needed to solve something",
+          "Show you understand their side: they are balancing customers, hours and other drivers",
+          "Result: the load delivered, the reroute made, the customer kept",
+          "Say what you expect from them in return, professionally"
+        ],
+        "strong_answer_signals": [
+          "Understands the dispatcher constraints",
+          "Communicates early and honestly",
+          "Professional about expectations both ways"
+        ],
+        "avoid": [
+          "A story that is mostly about a bad dispatcher",
+          "Going silent when a problem develops",
+          "Agreeing to a plan you know is impossible on hours"
+        ]
+      }
+    },
+    {
+      "id": "td_b_008",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about handling time away from home.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Be honest about the lifestyle. Over the road means weeks out, and pretending otherwise causes a resignation at month three",
+          "Action: how you manage it. Routine, sleep, food, exercise, staying in contact, planning home time",
+          "Say what your family situation supports, since that is the real question behind it",
+          "Result: how long you sustained it and what made it work",
+          "Say what operation type you are actually looking for now"
+        ],
+        "strong_answer_signals": [
+          "Honest about what the lifestyle requires",
+          "Has a routine rather than enduring it",
+          "Clear about the operation type they want"
+        ],
+        "avoid": [
+          "Claiming you do not mind being away when you do",
+          "No plan for sleep or food on the road",
+          "Applying for over the road when you need to be home nightly"
+        ]
+      }
+    },
+    {
+      "id": "td_b_009",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about feedback you received from a safety manager or trainer.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Real feedback in this job: following distance, speed in conditions, backing, log accuracy, pre trip thoroughness, hard braking events on telematics",
+          "Action: how you took it and what you practised. Telematics means the data is not arguable",
+          "Result: the measurable change, such as fewer hard brake events or a clean audit",
+          "Say whether you asked for a ride along or coaching"
+        ],
+        "strong_answer_signals": [
+          "Accepts telematics data rather than disputing it",
+          "Practises a specific change",
+          "Measurable improvement"
+        ],
+        "avoid": [
+          "Arguing that the data was wrong",
+          "Treating coaching as being watched",
+          "No evidence of change"
+        ]
+      }
+    },
+    {
+      "id": "td_b_010",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about the hardest conditions you have driven in.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Set the conditions: ice, heavy snow, fog, high wind on an empty trailer, mountain grades, flooding, construction at night",
+          "Action: reduce speed well below the limit, increase following distance, use the lower gear on grades, and know when to stop",
+          "Say the decision point: at what stage you shut down. That is what they are listening for",
+          "Result: arrived safely, or shut down safely and communicated it",
+          "One line on what you now do earlier"
+        ],
+        "strong_answer_signals": [
+          "Has a clear shutdown threshold",
+          "Adjusts speed and following distance rather than trusting skill",
+          "Communicated the decision"
+        ],
+        "avoid": [
+          "Pride in driving through conditions others stopped for",
+          "No shutdown threshold at all",
+          "Using engine brakes carelessly on ice"
+        ]
+      }
+    },
+    {
+      "id": "td_t_001",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Walk me through your pre trip inspection.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Say it is a legal requirement and a daily habit, not a formality. Follow the same order every time so nothing is skipped",
+          "Cover the areas systematically: engine compartment fluids and belts, lights and reflectors, brakes including air lines and slack adjusters, tyres and wheels for tread depth, pressure, cuts and loose lugs, coupling and fifth wheel, suspension, mirrors and glass, emergency equipment",
+          "Air brake check specifically: applied and static leak tests, low pressure warning, and the pressure at which the tractor protection valve and parking brake activate",
+          "Record the defects found. A defect discovered is a successful inspection, not a failure",
+          "An out of service defect means the truck does not move until it is repaired",
+          "Post trip inspection matters too, since it gives the shop the night to fix it"
+        ],
+        "strong_answer_signals": [
+          "Describes a fixed order so nothing is skipped",
+          "Knows the air brake test sequence",
+          "Treats a found defect as success"
+        ],
+        "avoid": [
+          "Describing the inspection as a walk around glance",
+          "Driving with an out of service defect because the load is late",
+          "Signing an inspection report you did not carry out"
+        ]
+      }
+    },
+    {
+      "id": "td_t_002",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Explain hours of service and how you manage your clock.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know the rules you drive under and say which jurisdiction. Driving limit, on duty limit, required off duty break, and the weekly cycle with its reset",
+          "Plan the day around the clock before you leave: the drive time, the loading and unloading, the fuel stop, and where you will park",
+          "Park before you are out of hours, not when you are out. Finding parking late is one of the biggest causes of violations",
+          "Log accurately in the electronic logging device. Personal conveyance and yard move have specific definitions and misusing them is falsification",
+          "Detention at a shipper eats the clock. Notify dispatch early so the load can be replanned",
+          "Say plainly that you do not drive over hours and you do not edit logs to make a delivery"
+        ],
+        "strong_answer_signals": [
+          "Plans parking before running out of hours",
+          "Knows personal conveyance has a strict definition",
+          "Refuses to falsify logs"
+        ],
+        "avoid": [
+          "Treating the electronic log as something to work around",
+          "Running out of hours and then looking for parking",
+          "Letting dispatch talk you into a plan the clock cannot support"
+        ]
+      }
+    },
+    {
+      "id": "td_t_003",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you secure and check a load?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know that securement is the driver responsibility regardless of who loaded it. You sign for it and you are inspected on it",
+          "Check the basics: weight distribution across axles, tie down count and working load limits, edge protection, blocking and bracing, and that nothing can shift forward under braking",
+          "Verify the paperwork matches the freight: piece count, condition, seal number where sealed",
+          "Note damage on the bill of lading before you leave. A signature without exceptions makes it your damage",
+          "Recheck within the first stretch of the trip and after that at intervals, since straps loosen as a load settles",
+          "For temperature controlled freight, set and verify the reefer and record the readings"
+        ],
+        "strong_answer_signals": [
+          "Knows securement is the driver responsibility even when loaded by others",
+          "Notes damage on the bill before leaving",
+          "Rechecks after the load settles"
+        ],
+        "avoid": [
+          "Signing clean for a load you did not check",
+          "Assuming the shipper secured it correctly",
+          "Never rechecking straps after departure"
+        ]
+      }
+    },
+    {
+      "id": "td_t_004",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What do you know about weights, axles and permits?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know the legal gross limit and the axle limits you run under, and that being legal overall does not mean each axle is legal",
+          "Slide the tandems and the fifth wheel to distribute weight rather than hoping. Say that you scale a questionable load",
+          "Use a certified scale when there is any doubt, and get a reweigh rather than gambling on a scale house",
+          "Know when a permit is required: oversize, overweight, and route specific restrictions",
+          "Bridge formula and route restrictions exist for a reason. A permitted route is not optional",
+          "Refuse to run overweight. The fine is yours, the citation is on your record, and the liability follows you"
+        ],
+        "strong_answer_signals": [
+          "Knows axle weight can be illegal while gross is legal",
+          "Scales when in doubt",
+          "Refuses to run overweight"
+        ],
+        "avoid": [
+          "Guessing at the weight distribution",
+          "Running overweight because it is only slightly over",
+          "Ignoring a permitted route because it is longer"
+        ]
+      }
+    },
+    {
+      "id": "td_t_005",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you plan a route?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Use a truck specific route, not a car navigation app. Height, weight, hazardous material and residential restrictions are the reason",
+          "Check the fixed constraints: low bridges, weight restricted roads, tunnels, no truck routes, and construction",
+          "Plan fuel, scales, rest and parking in advance, and have an alternative for each",
+          "Plan the delivery window and the receiver requirements: appointment time, dock hours, lumper, and whether overnight parking is allowed on site",
+          "Check weather along the whole route, not just at the destination",
+          "Say that you verify the final approach to a delivery, since the last two miles are where the bridge strikes happen"
+        ],
+        "strong_answer_signals": [
+          "Uses truck specific routing and says why",
+          "Plans parking in advance with alternatives",
+          "Verifies the last two miles"
+        ],
+        "avoid": [
+          "Following a car navigation app",
+          "No parking plan",
+          "Assuming a bridge clearance without checking"
+        ]
+      }
+    },
+    {
+      "id": "td_t_006",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Walk me through backing into a tight dock.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Get out and look, every time, before and during. There is no dock so tight that this step is skipped",
+          "Set up the approach first. A good setup makes the back easy, and most bad backs are bad setups",
+          "Use your mirrors continuously and pull forward to reset rather than trying to save a bad angle",
+          "Use a spotter where one is available, with agreed signals, and stop immediately if you lose sight of them",
+          "Go slowly. Almost every backing incident happens at low speed and would have been avoided by stopping to look",
+          "Say that hitting something while backing is a preventable accident, which is exactly how the carrier will record it"
+        ],
+        "strong_answer_signals": [
+          "Gets out and looks as a rule, not a preference",
+          "Resets a bad angle instead of forcing it",
+          "Knows backing incidents are recorded as preventable"
+        ],
+        "avoid": [
+          "Relying on mirrors alone in a blind side back",
+          "Rushing a back because the dock is busy",
+          "Continuing when a spotter is out of sight"
+        ]
+      }
+    },
+    {
+      "id": "td_t_007",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What do you do when the truck breaks down on the road?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Get to a safe position first: off the travelled lane if possible, hazards on, and triangles or reflectors placed at the required distances",
+          "Wear your high visibility clothing and stay out of the traffic side of the vehicle",
+          "Call dispatch and roadside assistance with the exact location, the unit number, and the symptom",
+          "Secure the load and the vehicle, and stay with it unless it is unsafe to do so",
+          "Document everything: time, location, symptom, who you called, and any repair",
+          "Say that you never attempt a repair that is beyond your scope or that puts you in traffic"
+        ],
+        "strong_answer_signals": [
+          "Places warning devices correctly",
+          "Stays off the traffic side",
+          "Documents the whole event"
+        ],
+        "avoid": [
+          "Working on the traffic side of the vehicle",
+          "Attempting a repair you are not qualified for",
+          "Delaying the call to dispatch"
+        ]
+      }
+    },
+    {
+      "id": "td_t_008",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What do you know about DOT inspections and roadside stops?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know the inspection levels, particularly that a level one is a full driver and vehicle inspection and a level two is walk around",
+          "Have the paperwork ready and organised: licence, medical certificate, logs accessible from the electronic device, registration, permits, bills of lading, and hazardous material papers if applicable",
+          "Be polite and cooperative. Attitude changes outcomes more than anything else at a roadside stop",
+          "Know what puts a vehicle out of service: brakes, tyres, lights, coupling, and load securement are the common ones",
+          "Understand that violations follow both you and the carrier in the safety scoring system",
+          "Fix and document anything found, and tell the carrier immediately"
+        ],
+        "strong_answer_signals": [
+          "Paperwork ready and organised",
+          "Knows out of service criteria",
+          "Understands violations follow the carrier score as well"
+        ],
+        "avoid": [
+          "Arguing with an inspector",
+          "Disorganised paperwork at the window",
+          "Not reporting a roadside violation to the carrier"
+        ]
+      }
+    },
+    {
+      "id": "td_t_009",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle winter or adverse weather driving?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Reduce speed well below the posted limit and increase following distance far beyond the dry road habit",
+          "Watch for the conditions that catch people: black ice at dawn, bridges freezing first, the first rain lifting oil on the surface, wind on an empty trailer",
+          "Use gentle inputs. Smooth steering, smooth braking, no sudden lane changes. Avoid engine brakes on slippery surfaces",
+          "Carry the equipment: chains where required and the knowledge to fit them, warm clothing, food, water and a charged phone",
+          "Know your shutdown threshold and use it. No load is worth an ice rollover",
+          "Say that you would rather be late than in a ditch, and mean it"
+        ],
+        "strong_answer_signals": [
+          "Knows bridges and dawn ice specifically",
+          "Avoids engine braking on slippery surfaces",
+          "Has a shutdown threshold"
+        ],
+        "avoid": [
+          "Pride in driving through conditions others stopped for",
+          "Using cruise control in the wet or ice",
+          "No chains or no knowledge of how to fit them"
+        ]
+      }
+    },
+    {
+      "id": "td_t_010",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What do you know about hazardous materials transport?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be honest about whether you hold the endorsement and whether you have run placarded loads",
+          "Know the basics: placarding by class and quantity, shipping papers within reach, emergency response information carried, and segregation rules for incompatible materials",
+          "Route restrictions and tunnel restrictions apply and are not optional",
+          "In an incident: secure the scene, call emergency services with the shipping paper information, stay upwind, and do not attempt containment beyond your training",
+          "Security requirements: the load stays attended where required, and the background check applies to the endorsement",
+          "Say clearly if you do not hold the endorsement rather than implying you do"
+        ],
+        "strong_answer_signals": [
+          "Honest about endorsement status",
+          "Knows shipping papers must be reachable and emergency information carried",
+          "Would not attempt containment beyond training"
+        ],
+        "avoid": [
+          "Implying you can run hazardous loads without the endorsement",
+          "Ignoring tunnel or route restrictions",
+          "Attempting to contain a spill yourself"
+        ]
+      }
+    },
+    {
+      "id": "td_t_011",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you manage fuel efficiency and vehicle care?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Driving habits do most of it: steady speed, progressive acceleration, anticipating traffic to avoid braking, minimising idling, and using cruise appropriately on flat dry roads",
+          "Tyre pressure is the cheapest fuel saving there is and it is checked at every pre trip",
+          "Plan fuel stops on the network and the price, and avoid running the tank down to a forced stop",
+          "Report faults early. A small fault reported becomes a scheduled repair rather than a roadside breakdown",
+          "Keep the truck clean and presentable, since you are the company in front of every customer",
+          "Say your miles per gallon if you know it, since carriers track it"
+        ],
+        "strong_answer_signals": [
+          "Names anticipation and steady speed rather than only cruise control",
+          "Knows tyre pressure is the cheapest saving",
+          "Reports small faults early"
+        ],
+        "avoid": [
+          "Long idling as a habit",
+          "Ignoring a small fault until it becomes a breakdown",
+          "Hard acceleration and braking as a driving style"
+        ]
+      }
+    },
+    {
+      "id": "td_t_012",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What paperwork and technology do you deal with daily?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "The electronic logging device and how you handle an edit request, a malfunction, and an unassigned driving segment",
+          "Bills of lading, proof of delivery, seals, and the exceptions you note before signing",
+          "Fuel receipts and mileage records for tax reporting across jurisdictions",
+          "Inspection reports, both pre trip and post trip, and defect reporting",
+          "In cab systems: dispatch messaging, navigation, cameras and telematics. Say how you feel about cameras honestly, since most fleets have them now",
+          "Say that accurate paperwork is what protects you when something is disputed weeks later"
+        ],
+        "strong_answer_signals": [
+          "Knows what to do when the logging device malfunctions",
+          "Notes exceptions before signing",
+          "Comfortable with cameras and telematics"
+        ],
+        "avoid": [
+          "Sloppy or late paperwork",
+          "Signing a delivery receipt with no exceptions noted on damaged freight",
+          "Hostility about cameras, which most fleets now require"
+        ]
+      }
+    },
+    {
+      "id": "td_s_001",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Dispatch asks you to make a delivery you do not have hours for. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Say no plainly and give the numbers: this is my remaining drive time and this is what the trip needs",
+          "Offer the alternatives: deliver in the morning, a relay, a team driver, or a revised appointment with the receiver",
+          "Escalate above the dispatcher if the pressure continues, and put it in writing",
+          "Say clearly that hours of service is federal law, that the violation is yours as well as theirs, and that no load is worth it",
+          "A carrier that pressures you to run over hours is telling you what the job will be like"
+        ],
+        "strong_answer_signals": [
+          "Refuses without hesitation and gives the numbers",
+          "Offers workable alternatives",
+          "Willing to escalate and document"
+        ],
+        "avoid": [
+          "Agreeing to see how far you get",
+          "Using personal conveyance to cover the gap",
+          "Editing the log afterwards"
+        ]
+      }
+    },
+    {
+      "id": "td_s_002",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You arrive and the receiver says the load is damaged or short. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Do not argue. Stop and document: photographs, the seal condition, the count, and the exact statement from the receiver",
+          "Check whether the seal was intact on arrival, since that determines where the problem happened",
+          "Call dispatch before agreeing to anything. Do not accept a refusal or sign a claim without instruction",
+          "Note the exception on the delivery paperwork accurately and get the receiver signature on it",
+          "If the load is refused, get instructions on where to take it and record the times",
+          "Say that documentation at the moment is the only thing that settles a claim later"
+        ],
+        "strong_answer_signals": [
+          "Photographs and documents before discussing",
+          "Checks the seal condition",
+          "Calls dispatch before agreeing to anything"
+        ],
+        "avoid": [
+          "Signing whatever the receiver puts in front of you",
+          "Arguing about whose fault it is",
+          "Leaving without recorded exceptions"
+        ]
+      }
+    },
+    {
+      "id": "td_s_003",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You are getting tired but you still have hours available. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Hours available and fit to drive are two different things. The legal limit is a maximum, not a target",
+          "Recognise the signs: drifting, missing exits, heavy eyes, no memory of the last few miles. Those mean stop now",
+          "Pull over safely and take a real break or a sleeper period. Coffee and windows down are not countermeasures",
+          "Tell dispatch you are shutting down and give a revised time",
+          "Say that fatigue is treated as seriously as impairment in this industry, because it kills people the same way",
+          "Plan sleep properly rather than fixing fatigue at the roadside"
+        ],
+        "strong_answer_signals": [
+          "Separates legal hours from fitness to drive",
+          "Names real fatigue signs",
+          "Shuts down and notifies"
+        ],
+        "avoid": [
+          "Pushing on because the clock allows it",
+          "Treating coffee or energy drinks as a solution",
+          "Not telling dispatch you stopped"
+        ]
+      }
+    },
+    {
+      "id": "td_s_004",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You are held at a shipper for four hours. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Notify dispatch as soon as the delay looks real, not at the end. They can replan a load and they cannot recover lost hours",
+          "Record the arrival time, the check in, and the departure. Detention pay and the customer conversation both depend on that record",
+          "Log the time correctly. On duty not driving is not off duty, and misclassifying it is falsification",
+          "Ask politely for an update and stay professional with the dock staff",
+          "Recalculate the trip on the remaining hours and tell dispatch what is now possible",
+          "Say what you would do if the detention makes the delivery impossible within the window"
+        ],
+        "strong_answer_signals": [
+          "Notifies early rather than at departure",
+          "Records arrival and departure precisely",
+          "Logs the time correctly"
+        ],
+        "avoid": [
+          "Logging detention as off duty to preserve the clock",
+          "Waiting silently and then reporting a missed delivery",
+          "Arguing with dock staff"
+        ]
+      }
+    },
+    {
+      "id": "td_s_005",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You have a minor contact incident in a parking lot. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Stop immediately. Leaving is a hit and run regardless of how minor it looks",
+          "Check for injuries first, then secure the scene and put hazards on",
+          "Call the police where required and always call dispatch. Follow the company incident procedure exactly",
+          "Photograph everything: both vehicles, the position, the surroundings, and any relevant signage or markings",
+          "Exchange information, do not admit fault, and do not discuss liability",
+          "Complete the incident report the same day and comply with any post accident testing requirement"
+        ],
+        "strong_answer_signals": [
+          "Stops and reports even for very minor contact",
+          "Photographs the scene thoroughly",
+          "Knows about post accident testing requirements"
+        ],
+        "avoid": [
+          "Driving away because the damage looked minor",
+          "Admitting fault at the scene",
+          "Reporting it to the company the next day"
+        ]
+      }
+    },
+    {
+      "id": "td_s_006",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Your route has a low bridge you did not expect. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Stop before you commit. Never assume you will fit, and never trust another truck ahead of you",
+          "Know your actual height, since it changes with the trailer and the load",
+          "Find a legal turnaround rather than reversing on a live road. Call for police assistance if you are genuinely stuck",
+          "Call dispatch and use truck specific routing to plan the alternative",
+          "Report the routing error so it does not catch the next driver",
+          "Say plainly that a bridge strike is a career event and it is always preventable"
+        ],
+        "strong_answer_signals": [
+          "Stops rather than guessing",
+          "Knows their actual height for this load",
+          "Reports the routing error"
+        ],
+        "avoid": [
+          "Guessing at clearance",
+          "Following another truck under a bridge",
+          "Reversing along a live road to escape"
+        ]
+      }
+    },
+    {
+      "id": "td_s_007",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A four wheeler cuts you off and brakes hard. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "React with space, not with speed. Ease off, increase the gap, and let it go",
+          "Never brake hard in a way that could jackknife or cause the load to shift, and never swerve into a lane you have not checked",
+          "Do not retaliate. Aggressive responses from a truck are recorded, reported, and end careers",
+          "Say that the gap you keep is what gives you options, which is why following distance is the whole answer",
+          "Report dangerous driving through the proper channel rather than confronting it",
+          "If it is on camera, note the time so the safety team can review it"
+        ],
+        "strong_answer_signals": [
+          "Solves it with space rather than reaction",
+          "No retaliation of any kind",
+          "Understands the camera record"
+        ],
+        "avoid": [
+          "Flashing, horn use as retaliation, or closing the gap",
+          "Hard braking or swerving as the first response",
+          "Any story where you taught the other driver a lesson"
+        ]
+      }
+    },
+    {
+      "id": "td_s_008",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You cannot find legal parking and your clock is nearly out.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Plan so this does not happen. Start looking two hours out, not at the last twenty minutes",
+          "Use the parking tools and know the pattern: truck stops fill by early evening on major corridors",
+          "Take the earlier legal spot rather than gambling on a better one later. This is the single most common cause of the problem",
+          "Options if it happens: a shipper or receiver who allows overnight, a rest area, an approved lot, or a legal shoulder position as a genuine last resort with hazards and triangles",
+          "Tell dispatch. They may have an arrangement you do not know about",
+          "Never keep driving because you cannot find parking. Being out of hours in an unsafe spot is still better than being out of hours moving"
+        ],
+        "strong_answer_signals": [
+          "Starts looking two hours out",
+          "Takes the earlier spot rather than gambling",
+          "Refuses to drive on past the limit"
+        ],
+        "avoid": [
+          "Driving past the limit to find a better spot",
+          "Parking on a highway ramp as a first choice",
+          "Not telling dispatch"
+        ]
+      }
+    },
+    {
+      "id": "td_s_009",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You are asked to sign for a load you did not see loaded and sealed.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Note the exception. Shipper load and count, or said to contain, protects you when the count is disputed",
+          "Record the seal number and verify it matches the paperwork",
+          "Photograph the seal and the trailer doors before departure",
+          "If you can inspect it, do so. If you cannot, say so on the paperwork rather than signing clean",
+          "Call dispatch if the shipper refuses to let you note the exception",
+          "Say plainly that a clean signature makes it your load and your problem"
+        ],
+        "strong_answer_signals": [
+          "Notes shipper load and count rather than signing clean",
+          "Records and photographs the seal",
+          "Escalates if the shipper refuses the exception"
+        ],
+        "avoid": [
+          "Signing clean to avoid a delay",
+          "Not recording the seal number",
+          "Breaking a seal without authorisation"
+        ]
+      }
+    },
+    {
+      "id": "td_s_010",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You are offered a load that pays well but the timing is unrealistic.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Do the arithmetic out loud: distance, legal drive time, loading and unloading, and the delivery window. Then say what is actually possible",
+          "Offer the version that works: a later appointment, a relay, or a team",
+          "Never take a load planning to make it up on the road. That decision is made before you leave, and it is the wrong one",
+          "Say that a carrier who routinely dispatches impossible loads is a carrier with a safety problem",
+          "Document the conversation if there is pressure"
+        ],
+        "strong_answer_signals": [
+          "Does the arithmetic rather than accepting on feel",
+          "Offers a workable alternative",
+          "Recognises impossible dispatch as a safety signal"
+        ],
+        "avoid": [
+          "Taking it and planning to speed",
+          "Accepting and then requesting a log edit",
+          "Saying yes to avoid being seen as difficult"
+        ]
+      }
+    },
+    {
+      "id": "td_m_001",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you manage a group of drivers as a dispatcher or fleet supervisor?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Plan loads against real hours, not optimistic hours. A plan that requires a violation is not a plan",
+          "Know your drivers: home time commitments, equipment they run, the lanes they know, and their reliability",
+          "Communicate early and honestly. Drivers tolerate bad news and do not tolerate being kept in the dark",
+          "Balance the good loads. Perceived favouritism in load assignment is the fastest way to lose drivers",
+          "Support the driver at the dock and with the customer rather than leaving them to argue alone",
+          "Measure what matters: on time, safety events, detention, turnover, and revenue per truck"
+        ],
+        "strong_answer_signals": [
+          "Plans against real hours",
+          "Balances load quality across drivers",
+          "Backs the driver at the dock"
+        ],
+        "avoid": [
+          "Dispatching a load the clock cannot support",
+          "Giving the best loads to favourites",
+          "Leaving a driver to handle a difficult receiver alone"
+        ]
+      }
+    },
+    {
+      "id": "td_m_002",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you build a safety culture in a fleet?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Make it clear in practice, not just in policy, that a driver can shut down and will be supported. One overruled shutdown destroys the message permanently",
+          "Use the data: telematics, hard braking, following distance, speeding, and camera events, as coaching input rather than as punishment",
+          "Coach early on trends rather than waiting for an accident. Most crashes have a visible pattern behind them",
+          "Investigate every incident for the system cause: scheduling pressure, equipment, training, route, or fatigue",
+          "Recognise safe driving publicly and consistently, with milestones that mean something",
+          "Give the number: preventable accident rate, safety score, or violations per inspection"
+        ],
+        "strong_answer_signals": [
+          "Supports shutdowns in practice",
+          "Uses telematics for coaching rather than punishment",
+          "Investigates for the system cause"
+        ],
+        "avoid": [
+          "Rewarding drivers who deliver despite conditions",
+          "Using camera data only for discipline",
+          "Blaming the driver for a schedule that caused the fatigue"
+        ]
+      }
+    },
+    {
+      "id": "td_m_003",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you handle driver recruitment and turnover?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know your real turnover number and the reason behind it. In this industry it is often above half a year on year and it is the biggest cost in the business",
+          "The reasons are consistent: home time, pay predictability, equipment condition, dispatcher relationship, and being treated as a professional",
+          "Fix onboarding. Most departures happen in the first ninety days and most of those are about broken promises made at hiring",
+          "Be honest at recruitment about miles, home time and pay. Overpromising fills seats and empties them faster",
+          "Exit interviews and stay interviews, and act on what you hear",
+          "Give the number: turnover reduced, or average tenure improved"
+        ],
+        "strong_answer_signals": [
+          "Knows the first ninety days is where departures happen",
+          "Honest at recruitment rather than overpromising",
+          "Names the real reasons drivers leave"
+        ],
+        "avoid": [
+          "Treating turnover as an industry fact",
+          "Promising miles and home time you cannot deliver",
+          "Recruiting harder instead of fixing retention"
+        ]
+      }
+    },
+    {
+      "id": "td_m_004",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you handle a driver with repeated safety events?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Get the facts from the data rather than from impressions: what events, how often, in what conditions, and whether it is one pattern or several",
+          "Talk to the driver before deciding. Fatigue, a schedule problem, equipment, a health issue, or a personal crisis all look like carelessness from a report",
+          "Coach specifically with a ride along or a simulator session, and set a clear standard with a review date",
+          "Escalate through the documented process if it does not improve, consistently for everyone",
+          "Remove from driving duties where there is an immediate risk. That decision protects the public first",
+          "Look at whether the operation is creating the behaviour, since scheduling pressure shows up as speeding"
+        ],
+        "strong_answer_signals": [
+          "Talks to the driver before concluding",
+          "Checks whether the operation causes the behaviour",
+          "Acts immediately on genuine risk"
+        ],
+        "avoid": [
+          "Discipline without a conversation",
+          "Applying rules inconsistently across drivers",
+          "Ignoring a pattern until an accident happens"
+        ]
+      }
+    },
+    {
+      "id": "td_m_005",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you manage compliance and audit readiness?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Keep the driver qualification files complete and current: licence, medical certificate, motor vehicle record checks, employment verification, and testing records",
+          "Monitor hours of service compliance continuously rather than reviewing after a violation, and investigate every edit",
+          "Maintain vehicle files: inspections, maintenance, repairs, and annual inspections, with the records to prove it",
+          "Watch the safety scores by category and act on the ones that are trending, since that is what triggers an intervention",
+          "Run internal audits on the same criteria the regulator uses",
+          "Correct and document. An audit that finds a corrected and documented issue lands very differently from one that finds a hidden one"
+        ],
+        "strong_answer_signals": [
+          "Continuous monitoring rather than post violation review",
+          "Runs internal audits on regulator criteria",
+          "Corrects and documents rather than concealing"
+        ],
+        "avoid": [
+          "Discovering an expired medical certificate at an audit",
+          "Ignoring log edits",
+          "Preparing files only when an audit is announced"
+        ]
+      }
+    },
+    {
+      "id": "td_m_006",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you manage cost per mile?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know the components: fuel, driver pay, maintenance, insurance, equipment, and administration. Know which are fixed and which vary with the mile",
+          "Fuel is the biggest variable lever: driving habits, idle time, tyre pressure, speed limiting, and fuel network purchasing",
+          "Maintenance is cheaper planned than unplanned. A preventive programme beats roadside repairs on both cost and service",
+          "Deadhead and empty miles are pure loss. Backhaul planning is where the margin is",
+          "Detention and driver time cost money even when unpaid, because it consumes hours you cannot sell",
+          "Never cut maintenance or driver pay as the first lever. Both come back as turnover and accidents"
+        ],
+        "strong_answer_signals": [
+          "Knows deadhead is where margin is lost",
+          "Preventive maintenance framed as cost saving",
+          "Refuses to cut maintenance first"
+        ],
+        "avoid": [
+          "Cutting maintenance to hit a monthly number",
+          "Focusing on fuel while ignoring empty miles",
+          "Not knowing the current cost per mile"
+        ]
+      }
+    },
+    {
+      "id": "td_m_007",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you handle customer service and on time performance?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Measure on time properly, by appointment and by cause, and separate carrier caused from shipper and receiver caused",
+          "Detention is usually the biggest hidden cause. Measure it by facility and take the data to the customer",
+          "Communicate proactively. A customer told early about a delay is a very different conversation from one that discovers it",
+          "Balance service against safety honestly. Never promise a delivery that requires an hours violation to achieve",
+          "Review the problem lanes and facilities, and be willing to reprice or decline the business that cannot be run safely",
+          "Give a number: on time percentage, or detention hours reduced at a specific facility"
+        ],
+        "strong_answer_signals": [
+          "Separates carrier caused from facility caused delays",
+          "Takes detention data to the customer",
+          "Willing to decline unrunnable business"
+        ],
+        "avoid": [
+          "Promising service that requires a violation",
+          "Reporting on time without cause analysis",
+          "Absorbing detention silently"
+        ]
+      }
+    },
+    {
+      "id": "td_m_008",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you handle a serious accident involving one of your drivers?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "People first: emergency services, injuries, and the driver welfare. Everything else waits",
+          "Activate the accident response procedure: scene support, legal, insurance, and post accident testing within the required window",
+          "Preserve evidence: camera footage, telematics, logs, the vehicle, and the driver statement taken properly",
+          "Support the driver as a person. A serious accident affects people for a long time and this is where a fleet is judged",
+          "Investigate for the system cause rather than only the driver action: scheduling, equipment, training, route, fatigue",
+          "Communicate honestly with the customer and internally, and change what the investigation shows"
+        ],
+        "strong_answer_signals": [
+          "Driver welfare treated as a priority, not a liability question",
+          "Knows the post accident testing window",
+          "Investigates for the system cause"
+        ],
+        "avoid": [
+          "Treating the driver as the problem before the facts are in",
+          "Missing the post accident testing window",
+          "Sending a shaken driver straight back out"
+        ]
+      }
+    },
+    {
+      "id": "td_mo_001",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Why did you become a driver?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Give a real reason: independence, being paid to do something you are good at, the road, not being at a desk, a trade with a licence behind it",
+          "Say what you have learned to like and what you have learned to accept about it",
+          "Connect it to the operation type you want now",
+          "Practical reasons such as pay and stability are respected in this industry when paired with genuine commitment"
+        ],
+        "strong_answer_signals": [
+          "A concrete honest reason",
+          "Realistic about the parts that are hard",
+          "Connects to the operation type they are applying for"
+        ],
+        "avoid": [
+          "Only saying it pays well",
+          "Romanticising the job in a way that suggests inexperience",
+          "Nothing about safety or professionalism"
+        ]
+      }
+    },
+    {
+      "id": "td_mo_002",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Why this carrier?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Show you have looked: the lanes, the freight type, the equipment, the home time policy, the safety record",
+          "Say something specific about the operation that fits what you want and what you are good at",
+          "Mention pay structure honestly, since drivers compare and carriers expect it, but do not make it the only reason",
+          "Ask yourself out loud what you want from a carrier: consistent miles, home time, equipment, or dispatch that treats you as a professional"
+        ],
+        "strong_answer_signals": [
+          "Specific knowledge of the lanes and equipment",
+          "Names what they want from a carrier",
+          "Honest about pay without making it the only point"
+        ],
+        "avoid": [
+          "An answer that fits any carrier",
+          "Getting the operation type wrong",
+          "Only mentioning the sign on bonus"
+        ]
+      }
+    },
+    {
+      "id": "td_mo_003",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What does safety mean to you as a driver?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Define it in behaviour rather than in slogans: following distance, speed for the conditions, pre trip discipline, shutting down when tired, and never being rushed into a bad decision",
+          "Say that you are responsible for an eighty thousand pound vehicle around people who cannot see what you see",
+          "Give a real example where you chose safety over the schedule",
+          "Say what you expect from a carrier: that they support the decision when you make it"
+        ],
+        "strong_answer_signals": [
+          "Defines safety as specific behaviours",
+          "Has a real example of choosing safety over schedule",
+          "States what they expect from the carrier in return"
+        ],
+        "avoid": [
+          "Slogans with no behaviour behind them",
+          "No example",
+          "Suggesting safety is negotiable under pressure"
+        ]
+      }
+    },
+    {
+      "id": "td_mo_004",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What kind of schedule and home time are you looking for?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be exact and honest. Over the road, regional, dedicated and local are different lives and mismatches end in resignations",
+          "Say what you need rather than what you think they want to hear",
+          "State any hard constraint: a family commitment, a medical appointment schedule, a second responsibility",
+          "Ask what their actual pattern is rather than the advertised one"
+        ],
+        "strong_answer_signals": [
+          "Exact about what they need",
+          "Asks about the real pattern rather than the advertised one",
+          "States hard constraints up front"
+        ],
+        "avoid": [
+          "Saying you are flexible when you are not",
+          "Discovering the home time reality after starting",
+          "Applying for over the road when you need weekly home time"
+        ]
+      }
+    },
+    {
+      "id": "td_mo_005",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Where do you want to be in a few years?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Honest options in this industry: staying a driver and getting the best lanes, specialised freight, trainer, safety, dispatch, fleet management, or owner operator",
+          "If you want to stay driving, say so. It is a career, not a waiting room, and carriers value people who mean it",
+          "Name what you would need to learn for whatever step you want",
+          "Show commitment to doing this job well regardless"
+        ],
+        "strong_answer_signals": [
+          "Comfortable saying they want to keep driving",
+          "Names a step and what it requires",
+          "Realistic rather than flattering"
+        ],
+        "avoid": [
+          "Claiming ambitions you do not have",
+          "Suggesting you will leave for an owner operator setup in six months without saying so honestly",
+          "No thought about it"
+        ]
+      }
+    },
+    {
+      "id": "td_mo_006",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Do you have any questions for us?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Ask what determines whether this job works for you:",
+          "\"What are the actual average miles per week, not the advertised range?\"",
+          "\"What is the real home time pattern?\"",
+          "\"What is the age and condition of the equipment, and who maintains it?\"",
+          "\"How is detention paid, and what is the average at your main customers?\"",
+          "\"What happens when a driver shuts down for weather or fatigue?\"",
+          "The shutdown question is the most important one you can ask, and the answer tells you everything about the safety culture"
+        ],
+        "strong_answer_signals": [
+          "Asks what happens when a driver shuts down",
+          "Asks for actual miles rather than advertised",
+          "Asks about detention pay and equipment condition"
+        ],
+        "avoid": [
+          "No questions",
+          "Only asking about the pay rate",
+          "Asking something already in the job posting"
+        ]
+      }
+    }
+  ]
+}

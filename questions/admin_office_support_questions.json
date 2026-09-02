@@ -1,0 +1,1374 @@
+{
+  "metadata": {
+    "sector": "Administrative & Office Support",
+    "generated": "2026-09-02",
+    "total": 46,
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ],
+    "region": "North America",
+    "schema_version": "1.1",
+    "note": "General office clerks 2.5M (BLS May 2025, tenth largest US occupation), plus receptionists, executive assistants and bookkeeping clerks. Covers calendar and inbox management, records and retention, data entry controls, invoice and expense processing including bank change fraud, confidentiality and data protection breaches, minute taking, and the office manager track."
+  },
+  "questions": [
+    {
+      "id": "ao_b_001",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about yourself and your administrative experience.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Say the setting and the scope: front desk and reception, general office support, department coordination, executive support, or a specialist function such as billing or records",
+          "Who you supported and how many. Supporting three people is a different job from supporting forty",
+          "Volume in numbers: calls or visitors per day, invoices or records processed, meetings coordinated, inboxes managed",
+          "Systems, since this is where the screening happens: the office suite, the calendar and mail platform, the CRM or case system, the expense and travel tools, and your typing accuracy if it is relevant",
+          "One outcome: a process you cleaned up, a backlog cleared, an event delivered, an error rate reduced"
+        ],
+        "strong_answer_signals": [
+          "Says who they supported and how many",
+          "Names the actual systems rather than saying computer literate",
+          "Has one process improvement to point at"
+        ],
+        "avoid": [
+          "Describing the job as answering phones and filing",
+          "Vague about the software they can actually use",
+          "No numbers at all"
+        ]
+      }
+    },
+    {
+      "id": "ao_b_002",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you had to juggle competing requests.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Situation: who wanted what, and why they could not all be first",
+          "Action: how you decided. Deadline, consequence of delay, who is blocked, and who the request is for",
+          "Say that you asked rather than guessed when two requests genuinely conflicted, and how you asked without escalating the tension",
+          "Communicate the timeline back to everyone so nobody is waiting in silence",
+          "Result: everything delivered, or the one thing that moved with agreement"
+        ],
+        "strong_answer_signals": [
+          "Decides by consequence rather than by who asked loudest",
+          "Tells people when their request will be done",
+          "Escalates a genuine conflict rather than silently dropping something"
+        ],
+        "avoid": [
+          "Trying to do everything at once and finishing nothing",
+          "Prioritising the most senior person by default with no reasoning",
+          "Letting a request go silent"
+        ]
+      }
+    },
+    {
+      "id": "ao_b_003",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you caught an error before it caused a problem.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Options with real consequence: a wrong figure in a report, a double booked room, a payment to the wrong account, an incorrect address on a mailing, a wrong date in a calendar invite",
+          "How you caught it: a check you always do, cross referencing the source, or noticing something did not look right",
+          "Action: raised it immediately and plainly, then corrected it",
+          "Result: the consequence prevented, stated concretely",
+          "The habit or check that came from it"
+        ],
+        "strong_answer_signals": [
+          "Has a routine check rather than a lucky catch",
+          "Raises it immediately without defensiveness",
+          "States the consequence that was prevented"
+        ],
+        "avoid": [
+          "Fixing it quietly when someone should have been told",
+          "A story where the error was someone else fault and that is the point",
+          "No habit change afterwards"
+        ]
+      }
+    },
+    {
+      "id": "ao_b_004",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a difficult person you had to deal with.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Could be a visitor, a caller, a colleague, or a senior person under pressure. Describe the behaviour, not the character",
+          "Action: stay calm, listen fully, and separate the request from the tone",
+          "Say what you could do and what you could not, and offer a route rather than a refusal",
+          "Escalate where the person was abusive or the request was outside your authority",
+          "Result: the request handled and the relationship intact"
+        ],
+        "strong_answer_signals": [
+          "Separates the request from the tone",
+          "Knows when to escalate",
+          "Keeps the working relationship afterwards"
+        ],
+        "avoid": [
+          "A story that is mostly about how unreasonable they were",
+          "Matching their tone",
+          "Agreeing to something you were not authorised to do"
+        ]
+      }
+    },
+    {
+      "id": "ao_b_005",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a process you improved.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Pick something concrete: a filing system, a booking process, an onboarding checklist, a recurring report, an inbox that nobody owned",
+          "Say what was wrong, in time or errors rather than in feelings",
+          "Action: what you changed, who you consulted, and how you got people to actually use it",
+          "Result with a number: hours saved per week, errors removed, a backlog cleared",
+          "Say how you documented it so it survives you"
+        ],
+        "strong_answer_signals": [
+          "Quantifies the before and after",
+          "Got other people to adopt it",
+          "Documented it so it outlasts them"
+        ],
+        "avoid": [
+          "A change nobody else adopted",
+          "An improvement with no measurable effect",
+          "Changing a process without telling the people affected"
+        ]
+      }
+    },
+    {
+      "id": "ao_b_006",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you handled confidential information.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Say what kind: personnel records, payroll, medical information, client data, commercial terms, or an unannounced decision",
+          "The discipline: need to know only, locked screens, documents not left on the printer, careful with email recipients, no discussion outside the room",
+          "Action: a specific moment where you had to decline to share something, and how you did it politely",
+          "Result: trust maintained, and no breach",
+          "Say that being trusted with information is most of what makes an administrator valuable"
+        ],
+        "strong_answer_signals": [
+          "A concrete moment of declining to share",
+          "Names practical habits rather than stating a principle",
+          "Understands need to know"
+        ],
+        "avoid": [
+          "Telling an anecdote that itself reveals confidential detail",
+          "Sharing with a colleague because they seemed senior enough",
+          "Treating gossip as harmless"
+        ]
+      }
+    },
+    {
+      "id": "ao_b_007",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you worked to a tight deadline.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Set the deadline and why it was fixed: a board pack, a filing, a payroll cut off, an event, a tender submission",
+          "Action: what you cut, what you sequenced, who you asked for help, and what you confirmed rather than assumed",
+          "Say how you protected accuracy when speed was the pressure",
+          "Result: delivered on time and correct, or delivered with the one agreed compromise",
+          "Say what you did earlier the next time"
+        ],
+        "strong_answer_signals": [
+          "Protects accuracy under time pressure",
+          "Asks for help early",
+          "Changed something for the next cycle"
+        ],
+        "avoid": [
+          "Working late as the only strategy",
+          "Delivering on time but wrong",
+          "Not warning anyone that it was at risk"
+        ]
+      }
+    },
+    {
+      "id": "ao_b_008",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you supported someone senior.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Say what the support actually was: diary, travel, inbox, papers, briefings, gatekeeping, follow up on actions",
+          "Action: how you learned their preferences and anticipated rather than waited",
+          "Give an example of anticipating: the paper they would need, the conflict you spotted, the person you briefed in advance",
+          "Result: time protected, meetings that worked, nothing missed",
+          "Say how you handled a mistake or a change of plan without drama"
+        ],
+        "strong_answer_signals": [
+          "Anticipates rather than reacts",
+          "Learned preferences deliberately",
+          "Handles last minute changes calmly"
+        ],
+        "avoid": [
+          "Only describing tasks completed",
+          "A story where you needed instructions for everything",
+          "Speaking about the person in a way that breaches trust"
+        ]
+      }
+    },
+    {
+      "id": "ao_b_009",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about feedback you received and what you did with it.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Real feedback in this role: too slow to respond, too much detail in updates, missed a step in a process, tone in an email, not flagging problems early",
+          "Action: how you clarified what good looked like and what you changed",
+          "Result: the observable difference and how you know it held",
+          "Say whether you asked for more feedback afterwards"
+        ],
+        "strong_answer_signals": [
+          "Asks what good looks like rather than guessing",
+          "Names an observable change",
+          "Evidence it stuck"
+        ],
+        "avoid": [
+          "Feedback that was really praise",
+          "Explaining why the feedback was unfair",
+          "No change afterwards"
+        ]
+      }
+    },
+    {
+      "id": "ao_b_010",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you had to say no or push back.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Situations that come up: a request that breaks a policy, a diary that genuinely cannot fit, a payment without approval, a rush that would break something else",
+          "Action: say no to the request, not to the person, and offer the alternative that exists",
+          "Explain the reason briefly rather than hiding behind the rule",
+          "Escalate where the decision is not yours to make",
+          "Result: the outcome, and the relationship afterwards"
+        ],
+        "strong_answer_signals": [
+          "Offers an alternative alongside the no",
+          "Explains rather than recites",
+          "Escalates decisions that are not theirs"
+        ],
+        "avoid": [
+          "Saying yes to avoid the conversation and then failing",
+          "Refusing without offering anything",
+          "Approving something outside your authority"
+        ]
+      }
+    },
+    {
+      "id": "ao_t_001",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What is your level with spreadsheets and documents?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be specific rather than saying proficient. Name the functions you actually use: lookups, pivot tables, conditional formatting, filters, basic formulas, charts",
+          "Documents: templates, styles, mail merge, track changes, tables of contents, formatting a long document properly",
+          "Presentations: building from a template, consistent formatting, and preparing a deck to a deadline",
+          "Say how you check your own work: a total that must reconcile, a second pass, a colleague check on anything that leaves the building",
+          "Say what you can learn quickly and give an example of software you picked up on the job"
+        ],
+        "strong_answer_signals": [
+          "Names specific functions rather than claiming proficiency",
+          "Has a self checking routine",
+          "Gives evidence of learning a system quickly"
+        ],
+        "avoid": [
+          "Saying advanced without being able to name a function",
+          "Typing over formulas in a spreadsheet",
+          "No method for checking your own numbers"
+        ]
+      }
+    },
+    {
+      "id": "ao_t_002",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you manage a busy calendar or diary?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Understand the priorities before you book anything: what is immovable, what is preferred, and who can be moved",
+          "Practical discipline: buffer between meetings, travel time in the diary, no back to back where a decision is needed, protected focus blocks",
+          "Check time zones explicitly and confirm which one the invite is in. This is the most common scheduling error",
+          "Confirm attendance rather than assuming, and send the papers with the invite rather than after",
+          "Resolve conflicts by asking whose meeting can move, and say how you handle a clash between two senior people",
+          "Keep one source of truth. A diary maintained in two places is a diary you cannot trust"
+        ],
+        "strong_answer_signals": [
+          "Books buffer and travel time as standard",
+          "Confirms time zones explicitly",
+          "Has a method for resolving a clash between two senior people"
+        ],
+        "avoid": [
+          "Booking back to back all day",
+          "Assuming acceptance without confirming",
+          "Keeping a separate personal list alongside the shared calendar"
+        ]
+      }
+    },
+    {
+      "id": "ao_t_003",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle phone calls and visitors professionally?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Answer promptly with a consistent greeting: the organisation, your name, and an offer of help",
+          "Take a complete message: name, organisation, number, reason, urgency, and the time they called. An incomplete message wastes two people time",
+          "Transfer properly: tell the caller who they are going to, and brief the person you are transferring to rather than a cold transfer",
+          "Visitors: sign in, badge, host notified, and never leave a visitor unattended in a secure area",
+          "Handle the caller who will not say why they are calling, and the one who is upset, without becoming a barrier for legitimate business",
+          "Know the safeguarding and security basics: do not confirm whether someone works there to an unknown caller, and do not let someone tailgate through a door"
+        ],
+        "strong_answer_signals": [
+          "Takes a complete message every time",
+          "Briefs before transferring rather than cold transferring",
+          "Knows not to confirm personal details to unknown callers"
+        ],
+        "avoid": [
+          "Cold transferring a caller with no context",
+          "Confirming staff details to an unidentified caller",
+          "Letting a visitor walk through unescorted"
+        ]
+      }
+    },
+    {
+      "id": "ao_t_004",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you organise files, records and information?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "A structure someone else can navigate: consistent naming, dates in a sortable format, version control rather than final and final v2",
+          "Agree the convention with the team rather than inventing a personal one nobody else understands",
+          "Know the retention rules: what must be kept, for how long, and what must be securely destroyed",
+          "Access control: who should be able to see what, and reviewing that when people change roles",
+          "Backups and the single source of truth. Documents living only on a desktop are a risk",
+          "Say how you would handle a migration or a clean up of a folder nobody has owned for years"
+        ],
+        "strong_answer_signals": [
+          "Names a convention that others can follow",
+          "Knows retention and secure destruction rules",
+          "Thinks about access when people change roles"
+        ],
+        "avoid": [
+          "A filing system only you understand",
+          "Keeping everything forever because deleting feels risky",
+          "Documents stored only on a local machine"
+        ]
+      }
+    },
+    {
+      "id": "ao_t_005",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle data entry accuracy?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Work from the source document rather than from memory or a copy of a copy",
+          "Build in verification: a total that must match, a sample check, a second pass on anything financial or legal",
+          "Use the system controls: validation rules, dropdowns, required fields, and duplicate checks rather than trusting care alone",
+          "Batch similar work and avoid interruptions during it, since most entry errors happen at the point of interruption",
+          "Flag anomalies rather than entering something that looks wrong. A field that does not make sense is usually a real problem upstream",
+          "Say your error rate if you ever measured it"
+        ],
+        "strong_answer_signals": [
+          "Uses system validation rather than relying on care",
+          "Flags anomalies instead of entering them",
+          "Knows interruptions cause errors and manages for it"
+        ],
+        "avoid": [
+          "Relying on being careful as the only control",
+          "Entering data you know looks wrong",
+          "Correcting a source document to make it fit"
+        ]
+      }
+    },
+    {
+      "id": "ao_t_006",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle invoices, expenses or purchase orders?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know the flow: request, approval, purchase order, receipt of goods, invoice, three way match, payment. Say where you sat in it",
+          "Check before processing: correct supplier, correct amount, valid approval, purchase order match, tax treatment, duplicate check",
+          "Never process an invoice without the approval the policy requires, regardless of who is asking or how urgent it sounds",
+          "Chase approvals proactively so payment terms are met and the relationship with suppliers stays good",
+          "Expenses: policy limits, receipts, correct coding, and consistency regardless of who submitted it",
+          "Flag anything unusual: a changed bank account, a supplier you do not recognise, a round number invoice with no detail"
+        ],
+        "strong_answer_signals": [
+          "Knows the three way match",
+          "Refuses to process without approval",
+          "Flags a changed supplier bank account, which is the classic fraud"
+        ],
+        "avoid": [
+          "Processing because a senior person said it was urgent",
+          "Applying expense policy inconsistently",
+          "Ignoring a duplicate invoice"
+        ]
+      }
+    },
+    {
+      "id": "ao_t_007",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you write a clear professional email?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Subject line that says the actual point, including whether action is needed and by when",
+          "Answer or ask in the first two lines. Detail underneath for those who need it",
+          "One topic per email where you can. Threads that contain three subjects lose two of them",
+          "Be explicit about the ask: who does what by when, rather than hoping someone volunteers",
+          "Check the recipients before sending, especially on reply all and on anything sensitive",
+          "Tone: plain, warm and short. Read it once as if you were receiving it on a bad day"
+        ],
+        "strong_answer_signals": [
+          "Puts the ask in the first two lines",
+          "Names who does what by when",
+          "Checks recipients on sensitive mail"
+        ],
+        "avoid": [
+          "Burying the request in paragraph four",
+          "Reply all as a default",
+          "Long emails where a two line message would do"
+        ]
+      }
+    },
+    {
+      "id": "ao_t_008",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you arrange travel or an event?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Confirm the requirements first: dates, budget, preferences, accessibility needs, dietary requirements, and who approves the spend",
+          "Book the fixed points first and work outward. Then build the itinerary as a single document with times, addresses, confirmation numbers and contacts",
+          "Build in contingency: connection times, a plan for a cancelled flight, and a contact number that will be answered",
+          "For events: venue, catering, equipment, accessibility, attendee list, joining instructions, and a run sheet with timings and owners",
+          "Confirm everything in writing and reconfirm close to the date",
+          "Say what you do when something falls through on the day"
+        ],
+        "strong_answer_signals": [
+          "Produces one itinerary document with everything on it",
+          "Builds contingency deliberately",
+          "Reconfirms close to the date"
+        ],
+        "avoid": [
+          "Booking without checking approval or budget",
+          "No plan for a cancellation",
+          "Forgetting accessibility or dietary requirements"
+        ]
+      }
+    },
+    {
+      "id": "ao_t_009",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you take minutes or notes in a meeting?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know the purpose before you start: a formal record, an action list, or a summary. They need different levels of detail",
+          "Capture what matters: decisions, actions with an owner and a date, and the reasoning behind a significant decision",
+          "Do not transcribe. A verbatim record is unusable and nobody reads it",
+          "Check names, figures and anything you did not fully follow rather than guessing",
+          "Circulate quickly while it is fresh, and mark clearly where something is a draft",
+          "Follow up on the actions before the next meeting, since that is what makes minutes useful rather than ceremonial"
+        ],
+        "strong_answer_signals": [
+          "Captures decisions and actions rather than transcribing",
+          "Checks facts they did not follow",
+          "Follows up actions between meetings"
+        ],
+        "avoid": [
+          "Trying to write down everything said",
+          "Circulating minutes two weeks later",
+          "Guessing at a figure or a name"
+        ]
+      }
+    },
+    {
+      "id": "ao_t_010",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle privacy and data protection in an office?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know that personal data has rules regardless of the industry: collect what is needed, use it for the stated purpose, keep it accurate, and do not keep it forever",
+          "Practical habits: locked screens, clear desk, secure disposal, no personal data in an unencrypted attachment, careful with recipients",
+          "Do not send personal information to a personal email account, including your own",
+          "Know what to do about a suspected breach: report it immediately through the proper channel, since most regimes have a short notification deadline",
+          "Verify identity before releasing any personal information over the phone",
+          "Say plainly that convenience never justifies bypassing this"
+        ],
+        "strong_answer_signals": [
+          "Knows a breach must be reported quickly",
+          "Verifies identity before releasing information",
+          "Refuses to move personal data to a personal account"
+        ],
+        "avoid": [
+          "Emailing a personal data file to a home account to work on it",
+          "Delaying a breach report while you check whether it was serious",
+          "Confirming personal details to an unverified caller"
+        ]
+      }
+    },
+    {
+      "id": "ao_t_011",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you keep track of your own work?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Have one system rather than several: a task list, a diary, and a follow up method that you actually check",
+          "Capture everything at the moment it arrives so nothing lives only in your head",
+          "Separate what you are doing from what you are waiting on. The waiting list is what stops things disappearing",
+          "Review daily and weekly: what is due, what is at risk, what has gone quiet",
+          "Chase before the deadline rather than after it, since half of an administrator value is in the chasing",
+          "Say how someone else could pick up your work if you were away tomorrow"
+        ],
+        "strong_answer_signals": [
+          "Keeps a waiting on list, not just a to do list",
+          "Chases before the deadline",
+          "Work is handover ready"
+        ],
+        "avoid": [
+          "Keeping it all in your head",
+          "Multiple lists that contradict each other",
+          "Only chasing after something is late"
+        ]
+      }
+    },
+    {
+      "id": "ao_t_012",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What office systems have you used?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Name them by category rather than listing brands randomly: mail and calendar, document storage, finance and expenses, HR and records, CRM or case management, ticketing, travel booking",
+          "Say your depth honestly for each. Being trusted about your own level matters more here than breadth",
+          "Give an example of a system you learned quickly on the job and how you did it",
+          "Say what you do when a system cannot do what someone wants: a workaround, a request to the owner, or a manual process with a control",
+          "Mention any reporting you built or maintained"
+        ],
+        "strong_answer_signals": [
+          "Honest about depth per system",
+          "Evidence of learning a system quickly",
+          "Handles system limitations without inventing risky workarounds"
+        ],
+        "avoid": [
+          "Listing every system you have ever seen",
+          "Claiming expertise you cannot demonstrate",
+          "Building a personal spreadsheet workaround around an official system"
+        ]
+      }
+    },
+    {
+      "id": "ao_s_001",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Two managers give you urgent work at the same time. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Get the facts: what each one actually needs, by when, and what happens if it is late. Urgent and important are not the same",
+          "Judge by consequence rather than seniority. A filing deadline outranks a formatting request from a director",
+          "If they genuinely conflict, say so to both and ask them to agree the order. Do not choose silently and disappoint one of them",
+          "Give both a realistic time and stick to it",
+          "Deliver, then confirm. Never let someone assume their work is not being done"
+        ],
+        "strong_answer_signals": [
+          "Asks about consequence rather than assuming urgency",
+          "Takes a genuine conflict back to them rather than choosing silently",
+          "Confirms delivery"
+        ],
+        "avoid": [
+          "Always prioritising the most senior person automatically",
+          "Promising both immediately and delivering neither",
+          "Going quiet while you work"
+        ]
+      }
+    },
+    {
+      "id": "ao_s_002",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Someone asks you for information you are not sure they should have. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Pause. It is always acceptable to say you will check before sharing",
+          "Verify who they are and what authority they have, especially on the phone or by email",
+          "Consider what the information is: personal data, financial detail, commercial terms, an unannounced decision",
+          "Ask the owner of the information or your manager. Nobody is ever criticised for checking",
+          "Be alert to social engineering. Urgency and seniority claims are exactly how these requests are made",
+          "Never release personal data to an unverified caller, however plausible they sound"
+        ],
+        "strong_answer_signals": [
+          "Comfortable saying they will check first",
+          "Recognises urgency plus authority claims as a fraud pattern",
+          "Verifies identity before releasing anything"
+        ],
+        "avoid": [
+          "Sharing because the request sounded senior and urgent",
+          "Assuming an internal email address means it is legitimate",
+          "Feeling that checking would look unhelpful"
+        ]
+      }
+    },
+    {
+      "id": "ao_s_003",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You are asked to process a payment that does not look right. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Stop and check. A payment made in error is far harder to recover than a payment delayed by an hour",
+          "Look at the specifics: the approval, the supplier record, a changed bank account, an unusual amount, pressure to bypass the normal route",
+          "Verify a bank detail change by calling the supplier on a number you already hold, never on a number in the email",
+          "Escalate to your manager or finance with the facts, calmly and without accusing anyone",
+          "Do not proceed because someone senior is pressing. Invoice fraud almost always arrives with urgency and authority attached",
+          "Document what you checked and what you were told"
+        ],
+        "strong_answer_signals": [
+          "Refuses to proceed under pressure",
+          "Verifies bank changes on a known number",
+          "Documents the check"
+        ],
+        "avoid": [
+          "Processing it because a director asked directly",
+          "Calling the number in the suspicious email",
+          "Ignoring it because it is not your job to question"
+        ]
+      }
+    },
+    {
+      "id": "ao_s_004",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A visitor arrives without an appointment and insists on being seen. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Stay polite and hold the process. Sign in, name, organisation, and the reason for the visit",
+          "Check with the person they want rather than deciding for them, and be honest about availability",
+          "Offer the alternative: a meeting booked, a message taken, someone else who can help, or a wait if it is reasonable",
+          "Do not let them past reception into a secure area while it is being resolved",
+          "If they become aggressive, follow the security procedure and get support. Do not manage a threatening person alone",
+          "Record the incident if it was difficult"
+        ],
+        "strong_answer_signals": [
+          "Holds the process without becoming unhelpful",
+          "Checks rather than deciding for the colleague",
+          "Knows the security escalation and uses it"
+        ],
+        "avoid": [
+          "Letting someone through to avoid a scene",
+          "Deciding on the colleague behalf that they are unavailable",
+          "Managing an aggressive visitor alone"
+        ]
+      }
+    },
+    {
+      "id": "ao_s_005",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You realise you sent an email to the wrong person. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Act immediately. Recall it if the system allows, but assume it has been read",
+          "Assess what was in it: personal data, confidential business information, or an embarrassing but harmless message. The response differs",
+          "Tell your manager straight away if it contained personal or confidential data, since it may be a reportable breach with a deadline",
+          "Contact the recipient, explain, and ask them to delete it without forwarding",
+          "Document what happened and what you did",
+          "Then fix the cause: recipient checking, delayed send, or not using autocomplete on sensitive mail"
+        ],
+        "strong_answer_signals": [
+          "Assumes it was read rather than relying on recall",
+          "Reports promptly when personal data is involved",
+          "Changes the habit that caused it"
+        ],
+        "avoid": [
+          "Hoping nobody noticed",
+          "Deciding on your own that it was not serious enough to report",
+          "Relying on recall and doing nothing else"
+        ]
+      }
+    },
+    {
+      "id": "ao_s_006",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "The office system you rely on goes down. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Report it properly so it is being fixed, and find out the expected timeline rather than waiting",
+          "Tell the people who are affected before they discover it themselves",
+          "Switch to the fallback: a manual process, a phone call instead of the system, a temporary record to enter later",
+          "Keep a careful record of anything done manually so nothing is lost when the system returns",
+          "Reconcile once it is back, and check nothing was duplicated or missed",
+          "Say what you would suggest afterwards to reduce the impact next time"
+        ],
+        "strong_answer_signals": [
+          "Tells affected people before they find out",
+          "Keeps a manual record for reconciliation",
+          "Reconciles afterwards rather than assuming"
+        ],
+        "avoid": [
+          "Waiting quietly for it to come back",
+          "Manual work with no record",
+          "Not checking for duplicates afterwards"
+        ]
+      }
+    },
+    {
+      "id": "ao_s_007",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You are given a task you have never done before. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Clarify the outcome first: what does finished look like, by when, and who will use it",
+          "Check whether it exists already: a template, a previous version, a documented process, or someone who has done it",
+          "Attempt a draft and check it early rather than delivering something wrong at the deadline",
+          "Ask specific questions rather than broad ones. Precise questions get fast answers",
+          "Document it as you go so the next person does not start from nothing",
+          "Say honestly if it is beyond your current level rather than delivering something unusable"
+        ],
+        "strong_answer_signals": [
+          "Checks for an existing template or precedent",
+          "Checks a draft early",
+          "Documents it for next time"
+        ],
+        "avoid": [
+          "Guessing and delivering at the deadline",
+          "Asking someone to do it for you",
+          "Saying you cannot without attempting"
+        ]
+      }
+    },
+    {
+      "id": "ao_s_008",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You notice a colleague is falling behind and it is affecting your work. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Talk to them first, privately and without accusation. Ask whether they need help rather than telling them they are behind",
+          "Offer something concrete if you can, and be clear about what you cannot absorb",
+          "Be specific about the impact on your work: what is blocked and by when",
+          "Escalate to a manager if it continues or if it affects a deadline that matters, framing it around the work rather than the person",
+          "Keep it professional. Small offices remember how these situations were handled"
+        ],
+        "strong_answer_signals": [
+          "Speaks to them before escalating",
+          "Frames escalation around the work",
+          "Offers help while being clear about limits"
+        ],
+        "avoid": [
+          "Going straight to the manager",
+          "Silently absorbing it until you resent it",
+          "Discussing it with other colleagues first"
+        ]
+      }
+    },
+    {
+      "id": "ao_s_009",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You are asked to do something that breaks a policy. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Distinguish between a rule that can be waived with the right approval and one that cannot. Most policies have a proper exception route",
+          "Say what the policy is and offer the correct route, rather than a flat refusal",
+          "If it is a hard line such as a financial control, a data protection rule, or a safety requirement, decline calmly and explain why",
+          "Escalate to your manager, and put your position in writing if pressure continues",
+          "Never do it and hope it is fine because someone senior asked. The person processing it is the one on the record"
+        ],
+        "strong_answer_signals": [
+          "Knows the difference between a waivable rule and a hard control",
+          "Offers the correct exception route",
+          "Puts the position in writing under pressure"
+        ],
+        "avoid": [
+          "Doing it because of who asked",
+          "Refusing without offering the proper route",
+          "Complaining about it afterwards instead of raising it"
+        ]
+      }
+    },
+    {
+      "id": "ao_s_010",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Your workload has grown beyond what you can deliver. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Get the facts before the conversation: what you are carrying, how long each thing takes, and what has been added recently",
+          "Raise it early rather than at the point of failure. A manager can act on a warning and cannot act on a collapse",
+          "Come with options: what could be dropped, deferred, simplified, automated, or moved to someone else",
+          "Ask them to choose the priority rather than asking them to solve it",
+          "Follow up in writing so the agreement is recorded",
+          "Say what you would automate or streamline if given the time"
+        ],
+        "strong_answer_signals": [
+          "Raises it before failing rather than after",
+          "Brings options rather than only a problem",
+          "Asks the manager to set the priority"
+        ],
+        "avoid": [
+          "Absorbing it silently until something breaks",
+          "Presenting it as a complaint",
+          "Waiting for the manager to notice"
+        ]
+      }
+    },
+    {
+      "id": "ao_m_001",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you supervise an administrative team?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Make the work visible: who owns what, what the standards are, and where the queue is. Most office teams fail on ownership rather than effort",
+          "Set standards that are observable: response times, accuracy checks, what a completed task looks like",
+          "Balance the load deliberately and rotate the unpopular work rather than letting it land on the most agreeable person",
+          "Coach in the moment as well as in reviews, and be specific about the behaviour and the standard",
+          "Cover holidays and absence with cross training rather than heroics",
+          "Protect the team from being everyone dumping ground by agreeing what the function does and does not do"
+        ],
+        "strong_answer_signals": [
+          "Makes ownership explicit",
+          "Rotates the unpopular work",
+          "Defines what the team does not do"
+        ],
+        "avoid": [
+          "Vague standards and then frustration when they are missed",
+          "Letting one person carry the difficult work",
+          "Managing entirely through the annual review"
+        ]
+      }
+    },
+    {
+      "id": "ao_m_002",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you improve an office process?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Map what actually happens rather than what is supposed to happen. The gap is usually where the problem is",
+          "Measure it: volume, time taken, error rate, handoffs, and where it waits. Waiting is usually most of the elapsed time",
+          "Involve the people who do it. They already know where it breaks and will tell a manager who asks",
+          "Remove steps before automating them. Automating a bad process makes it faster and still bad",
+          "Pilot, then document, then train. An undocumented improvement decays within a quarter",
+          "Give the number: hours saved, errors removed, turnaround reduced"
+        ],
+        "strong_answer_signals": [
+          "Maps the real process, not the official one",
+          "Removes steps before automating",
+          "Documents so it survives"
+        ],
+        "avoid": [
+          "Automating a broken process",
+          "Redesigning without asking the people who do it",
+          "No measurement before or after"
+        ]
+      }
+    },
+    {
+      "id": "ao_m_003",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you handle a team member whose accuracy is poor?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Get the facts: what errors, how often, in which task, and whether it is one type or general",
+          "Diagnose the cause before correcting: unclear instructions, missing training, a badly designed process, workload, interruptions, or genuine carelessness",
+          "Fix the system first where you can: a checklist, a validation rule, a second check on high risk work",
+          "Then coach specifically, with a clear standard and a review date",
+          "Follow the formal process if it does not improve, with proper support documented first",
+          "Never make the error rate a public humiliation, since that produces hiding rather than accuracy"
+        ],
+        "strong_answer_signals": [
+          "Diagnoses cause before correcting",
+          "Fixes the process, not only the person",
+          "Follows up on the date they set"
+        ],
+        "avoid": [
+          "Going straight to a warning",
+          "Telling someone to be more careful with no system change",
+          "Discussing their errors in front of the team"
+        ]
+      }
+    },
+    {
+      "id": "ao_m_004",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you manage the office budget and supplier relationships?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know what you actually spend and on what. Office budgets leak through small recurring items nobody reviews",
+          "Review contracts before renewal rather than after. Automatic renewals are the most common avoidable cost",
+          "Get comparative quotes for anything material, and negotiate on terms as well as price",
+          "Manage suppliers on responsiveness and quality, not only cost. A cheap supplier who fails during an audit is expensive",
+          "Track against the budget monthly and explain variances with cause and action",
+          "Give a number: cost reduced, a contract renegotiated, a supplier consolidated"
+        ],
+        "strong_answer_signals": [
+          "Reviews before automatic renewal",
+          "Judges suppliers on responsiveness as well as price",
+          "Explains variance with cause and action"
+        ],
+        "avoid": [
+          "Only noticing spend at year end",
+          "Choosing purely on price",
+          "Letting contracts auto renew unexamined"
+        ]
+      }
+    },
+    {
+      "id": "ao_m_005",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you handle office moves, changes or new systems?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Plan backwards from the date with a checklist, owners and dependencies. Most of the failure is in the small forgotten items",
+          "Communicate early and repeatedly. People accept disruption they were warned about",
+          "Involve the affected teams in the details that matter to them, such as layout, storage, or workflow changes",
+          "Plan the transition itself: what happens to the work during the move, what the fallback is, and who is on call",
+          "Test before you commit: a pilot group, a dry run, or a phased rollout",
+          "Debrief afterwards and record what to do differently"
+        ],
+        "strong_answer_signals": [
+          "Plans backwards with owners and dependencies",
+          "Communicates before people find out",
+          "Runs a pilot or dry run"
+        ],
+        "avoid": [
+          "Announcing a change the week it happens",
+          "No plan for the work during the transition",
+          "Rolling out a new system with no training"
+        ]
+      }
+    },
+    {
+      "id": "ao_m_006",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you handle a compliance or audit requirement?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know what applies: data protection, health and safety, financial controls, records retention, sector specific rules",
+          "Build the evidence continuously rather than assembling it before an audit. Continuous readiness is far cheaper",
+          "Assign ownership for each requirement rather than leaving it as everyone responsibility",
+          "Run internal spot checks on the same criteria the auditor will use",
+          "When a gap is found, correct it, document the correction, and change the routine so it holds",
+          "Be honest in an audit. A disclosed and corrected gap is treated far better than a concealed one"
+        ],
+        "strong_answer_signals": [
+          "Continuous readiness rather than pre audit scramble",
+          "Named ownership per requirement",
+          "Honest disclosure of gaps"
+        ],
+        "avoid": [
+          "Preparing evidence only when an audit is announced",
+          "Compliance owned by nobody in particular",
+          "Presenting a gap as though it were covered"
+        ]
+      }
+    },
+    {
+      "id": "ao_m_007",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you handle health and safety in an office?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know the basics that actually apply: risk assessments, fire procedure and drills, first aiders, workstation assessments, accident reporting, and lone working",
+          "Do the workstation assessments properly. Musculoskeletal problems are the most common office injury and the most preventable",
+          "Keep the practical things working: clear escape routes, tested alarms, trip hazards removed, equipment maintained",
+          "Record every incident and near miss, and look for patterns rather than treating each as isolated",
+          "Include wellbeing and workload as a real risk rather than a slogan",
+          "Train new starters as part of onboarding rather than at the first drill"
+        ],
+        "strong_answer_signals": [
+          "Names workstation assessment as the highest volume issue",
+          "Records near misses and looks for patterns",
+          "Trains at onboarding"
+        ],
+        "avoid": [
+          "Treating safety as a poster on the wall",
+          "Only recording incidents that caused injury",
+          "Blocked fire exits tolerated because of storage"
+        ]
+      }
+    },
+    {
+      "id": "ao_m_008",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you decide what your team should stop doing?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "List what the team actually spends time on, with rough hours. The list itself is usually the argument",
+          "Ask what each output is used for and by whom. Recurring reports that nobody opens are the classic finding",
+          "Stop things deliberately and visibly rather than letting them fade, and tell the people affected",
+          "Automate or simplify what must continue but is low value",
+          "Protect the capacity you free up rather than letting it silently refill",
+          "Give an example of something you stopped and what happened afterwards"
+        ],
+        "strong_answer_signals": [
+          "Checks who actually uses each output",
+          "Stops things visibly rather than letting them lapse",
+          "Protects the freed capacity"
+        ],
+        "avoid": [
+          "Adding new work without removing any",
+          "Stopping something without telling the people who relied on it",
+          "Assuming everything currently done must continue"
+        ]
+      }
+    },
+    {
+      "id": "ao_mo_001",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Why do you want an administrative or office support role?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Give a real reason: you like making things run, you are good at detail and follow through, you enjoy being the person who knows how things work",
+          "Connect it to something you have actually done",
+          "Say what you want to develop: a system, a specialism, coordination, or eventually office or operations management",
+          "Practical reasons such as stability and hours are fine when paired with genuine interest"
+        ],
+        "strong_answer_signals": [
+          "A concrete reason tied to real experience",
+          "Names what they want to develop",
+          "Honest about practical motivations"
+        ],
+        "avoid": [
+          "Describing it as a job while you look for something better",
+          "Only saying you are organised",
+          "Nothing about the people you would be supporting"
+        ]
+      }
+    },
+    {
+      "id": "ao_mo_002",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Why this organisation?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Say something specific about what they do and who they serve, not generic praise",
+          "Connect it to your own experience: a sector you know, a type of work you have supported before, a size of organisation you work well in",
+          "Mention something about how they work that appeals: the pace, the values, the growth, the mission",
+          "Be honest about practical fit alongside the real reason"
+        ],
+        "strong_answer_signals": [
+          "Specific knowledge of the organisation",
+          "Connects the sector to their own experience",
+          "Honest about practical fit"
+        ],
+        "avoid": [
+          "An answer that fits any employer",
+          "Getting basic facts about them wrong",
+          "Only mentioning the location or the salary"
+        ]
+      }
+    },
+    {
+      "id": "ao_mo_003",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What makes you good at this kind of work?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Name two or three real strengths with evidence rather than a list of adjectives: follow through, accuracy, calm under pressure, discretion, anticipation",
+          "Give a short example for each rather than asserting it",
+          "Be honest about what you are still developing and what you do about it",
+          "Say something about how you work with people, since the technical part is only half the job"
+        ],
+        "strong_answer_signals": [
+          "Evidence rather than adjectives",
+          "Honest about a development area",
+          "Includes the people side"
+        ],
+        "avoid": [
+          "A long list of adjectives with nothing behind them",
+          "Claiming no weaknesses",
+          "Only describing technical skills"
+        ]
+      }
+    },
+    {
+      "id": "ao_mo_004",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you stay organised?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Describe the actual system: where tasks live, when you review, how you track what you are waiting on, how you handle interruptions",
+          "Say how you protect focus for accurate work and where you batch the interruptible work",
+          "Say what happens when the system fails, because it does. How you recover a bad week",
+          "Give a small concrete example rather than a philosophy"
+        ],
+        "strong_answer_signals": [
+          "Describes a real system rather than a temperament",
+          "Has a recovery method for a bad week",
+          "Includes a waiting on list"
+        ],
+        "avoid": [
+          "Saying you are just naturally organised",
+          "A system so complicated it becomes the work",
+          "Keeping everything in your head"
+        ]
+      }
+    },
+    {
+      "id": "ao_mo_005",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Where do you see yourself in a couple of years?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be honest and grounded. There are real paths here: senior administrator, executive assistant, office manager, operations, HR, finance support, project coordination",
+          "Name the step and what you would need to learn for it",
+          "If you are happy staying in this role and getting excellent at it, say that. It is a legitimate and welcome answer",
+          "Show you intend to be good at this job regardless"
+        ],
+        "strong_answer_signals": [
+          "Honest rather than flattering",
+          "Names a step and what it requires",
+          "Comfortable saying they want to master this role"
+        ],
+        "avoid": [
+          "Claiming ambitions you do not have",
+          "No thought about it",
+          "Making clear this is a stopgap"
+        ]
+      }
+    },
+    {
+      "id": "ao_mo_006",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Do you have any questions for us?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Ask what tells you what the job actually is:",
+          "\"Who would I be supporting, and how many people?\"",
+          "\"What does a typical day and a typical peak look like?\"",
+          "\"What systems would I be using day to day?\"",
+          "\"Is this a new role or a replacement, and what would success look like in six months?\"",
+          "\"Where does this team sit, and who sets the priorities when everyone needs something?\"",
+          "Who sets the priority when everyone needs something is the question that predicts your daily experience"
+        ],
+        "strong_answer_signals": [
+          "Asks who sets priorities when requests conflict",
+          "Asks how many people they would support",
+          "Asks what success looks like in six months"
+        ],
+        "avoid": [
+          "No questions",
+          "Only asking about hours and holiday",
+          "Asking something the advert already answered"
+        ]
+      }
+    }
+  ]
+}
