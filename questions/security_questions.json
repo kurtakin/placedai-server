@@ -1,0 +1,1396 @@
+{
+  "metadata": {
+    "sector": "Security & Protective Services",
+    "generated": "2026-09-02",
+    "total": 46,
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ],
+    "region": "North America",
+    "schema_version": "1.1",
+    "note": "Security guards 1.28M (BLS May 2025). Covers the limits of authority and why observe, record and call is the default, patrol discipline and never falsifying checkpoints, incident report writing that survives court, access control and tailgating, CCTV privacy and evidence handling, alarm and fire response, lone working, and the supervisor and site risk assessment track."
+  },
+  "questions": [
+    {
+      "id": "sg_b_001",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about yourself and your security experience.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Setting first, because the job is completely different in each: corporate reception, retail, hospital, school, construction site, event, warehouse, residential, night patrol",
+          "Licence and clearances: security licence or registration where required, first aid, background check, and whether they are current",
+          "Scale: site size, number of access points, cameras monitored, patrol route length, shift pattern, whether you worked alone",
+          "What you actually did: access control, patrol, CCTV monitoring, incident response, reporting, alarm response, visitor management, conflict de-escalation",
+          "One outcome: an incident handled well, a pattern you spotted, a procedure you improved, an accident free record",
+          "Say whether you have worked unsupervised overnight, since most of this work is exactly that"
+        ],
+        "strong_answer_signals": [
+          "Names the setting, which decides whether experience transfers",
+          "Licence status stated without being asked",
+          "Comfortable working alone overnight"
+        ],
+        "avoid": [
+          "Being vague about licence or clearance status",
+          "Describing the job as watching a screen",
+          "No mention of reporting or documentation"
+        ]
+      }
+    },
+    {
+      "id": "sg_b_002",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about an incident you handled.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Situation: what happened. A theft, a trespass, a medical emergency, a fire alarm, an aggressive person, a dispute, an unauthorised access attempt",
+          "Action: assess the risk first, then respond within your authority and the site instructions",
+          "Say who you called and when. Calling early is the correct answer in almost every case",
+          "Observe and record: description, time, location, what was said, what you did",
+          "Result: the outcome and the report you filed",
+          "Say what changed afterwards, such as a procedure, a lock, a light, or a patrol timing"
+        ],
+        "strong_answer_signals": [
+          "Assesses risk before acting",
+          "Calls for support early",
+          "Files a complete report"
+        ],
+        "avoid": [
+          "Physical intervention as the first response",
+          "Handling a serious incident alone to prove capability",
+          "A story with no report at the end"
+        ]
+      }
+    },
+    {
+      "id": "sg_b_003",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you de-escalated a confrontation.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Situation: an angry customer, an intoxicated person, a refused entry, a trespass, a dispute between two people",
+          "Action: calm voice, open posture, keep your distance, and give them space and time. Never crowd someone who is agitated",
+          "Explain rather than command where you can. Most escalation comes from tone, not content",
+          "Offer a face saving way out. People escalate when they feel cornered or humiliated",
+          "Know when to stop talking and call for support. Talking longer is not always the safer option",
+          "Result: it ended without force, and what you recorded"
+        ],
+        "strong_answer_signals": [
+          "Names distance and posture, not just tone",
+          "Gives a face saving exit",
+          "Knows when talking stops working"
+        ],
+        "avoid": [
+          "Escalating by asserting authority",
+          "Cornering someone physically",
+          "A story where force was the resolution"
+        ]
+      }
+    },
+    {
+      "id": "sg_b_004",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you worked a long or quiet shift.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Be honest: much of this work is long and uneventful, and staying alert through it is the actual skill",
+          "Action: how you stay effective. Varying patrol timings and routes, active observation rather than passive watching, staying off your phone, using the shift for checks that need doing",
+          "Say how you manage fatigue on nights: sleep routine, breaks, movement",
+          "Result: the site secure and the checks completed and logged",
+          "Say what you did during a quiet shift that turned out to matter"
+        ],
+        "strong_answer_signals": [
+          "Varies patrol timing and route deliberately",
+          "Active observation rather than passive watching",
+          "Honest about managing fatigue"
+        ],
+        "avoid": [
+          "Phone use on shift",
+          "Predictable patrol timing",
+          "Treating a quiet shift as time off"
+        ]
+      }
+    },
+    {
+      "id": "sg_b_005",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you had to refuse someone entry.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Situation: no identification, not on the list, an expired pass, intoxication, a banned individual, or wrong site",
+          "Action: be polite, firm and consistent. Explain the rule rather than hiding behind it, and offer the route if one exists",
+          "Do not negotiate on a rule you do not have authority to waive. Check with the right person instead of guessing",
+          "Watch for tailgating behind you while you are dealing with the person in front",
+          "Result: entry refused, the person handled without escalation, and the incident logged",
+          "Say that consistency is what protects you here. Making exceptions creates the next argument"
+        ],
+        "strong_answer_signals": [
+          "Consistent regardless of who is asking",
+          "Watches for tailgating during a distraction",
+          "Logs the refusal"
+        ],
+        "avoid": [
+          "Letting someone in because they were senior or persistent",
+          "Refusing rudely and creating a confrontation",
+          "Not recording the refusal"
+        ]
+      }
+    },
+    {
+      "id": "sg_b_006",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a mistake you made on duty.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Real examples: missing a check, a gap in the log, letting someone tailgate, a delayed report, an alarm handled incorrectly, missing something on camera",
+          "Own it and report it immediately. In security a hidden gap is what an investigation finds later",
+          "Action: what you did to correct it and who you told",
+          "Result and the specific habit that changed",
+          "Say why an accurate record matters more than a clean one"
+        ],
+        "strong_answer_signals": [
+          "Reports rather than covering the gap",
+          "Names the habit change",
+          "Understands an accurate log beats a clean log"
+        ],
+        "avoid": [
+          "Saying you have never made one",
+          "Filling in a log afterwards to look complete",
+          "Blaming the equipment or the shift before"
+        ]
+      }
+    },
+    {
+      "id": "sg_b_007",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you spotted something before it became a problem.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Options: a propped door, a broken lock or light, an unfamiliar vehicle returning, a person watching a building, a fire exit blocked, a pattern on camera",
+          "Action: what you noticed and why it stood out. Say the baseline, because noticing means knowing what normal looks like",
+          "Report it and record it, and follow up on whether it was fixed",
+          "Result: the incident prevented, or the vulnerability closed",
+          "Say that most prevention is boring and repetitive, which is why it works"
+        ],
+        "strong_answer_signals": [
+          "Knows the baseline for the site, which is what makes anomalies visible",
+          "Follows up on whether it was fixed",
+          "Values prevention over response"
+        ],
+        "avoid": [
+          "Only describing responses to incidents, never prevention",
+          "Reporting once and never checking",
+          "Waiting for something to happen"
+        ]
+      }
+    },
+    {
+      "id": "sg_b_008",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about working with police or emergency services.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Say what your role is: secure the scene, preserve evidence, control access, brief the responders, and stay out of the way of their job",
+          "Action: give a clear factual brief. What happened, when, where, who is involved, what you have done, and what access they need",
+          "Have the information ready: camera footage times, keys, floor plans, contact numbers",
+          "Do not investigate. Your job ends where theirs begins",
+          "Result: the handover and the report",
+          "Say how you recorded the details before memory faded"
+        ],
+        "strong_answer_signals": [
+          "Briefs clearly and factually",
+          "Preserves the scene and evidence",
+          "Does not investigate"
+        ],
+        "avoid": [
+          "Trying to solve the crime yourself",
+          "Contaminating a scene",
+          "A vague handover with no times or detail"
+        ]
+      }
+    },
+    {
+      "id": "sg_b_009",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about feedback you received.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Real feedback here: incomplete reports, predictable patrol timing, tone with the public, phone use, missed checks, sloppy access control",
+          "Action: how you asked what the standard was and what you changed",
+          "Result: the audit passed, the complaint stopped, the log complete",
+          "Say whether the feedback came from a client or a supervisor, since client perception is a large part of this job"
+        ],
+        "strong_answer_signals": [
+          "Takes it without defending",
+          "Change is observable in the records",
+          "Understands client perception matters"
+        ],
+        "avoid": [
+          "Feedback that was really praise",
+          "Disagreeing with the standard",
+          "No evidence of change"
+        ]
+      }
+    },
+    {
+      "id": "sg_b_010",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you dealt with a member of the public who needed help.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Security is customer facing far more often than it is confrontational. Say that, because many candidates miss it",
+          "Situations: directions, a lost person, a medical issue, a distressed person, a lost child, someone locked out",
+          "Action: be approachable and helpful, and know the site well enough to actually help",
+          "For a medical or a vulnerable person: follow the procedure, call for the right help, and stay with them",
+          "Result: the person helped and the incident recorded where required",
+          "Say that being visible and approachable is itself a deterrent"
+        ],
+        "strong_answer_signals": [
+          "Recognises the customer service half of the job",
+          "Knows the site well enough to help",
+          "Visible presence framed as deterrence"
+        ],
+        "avoid": [
+          "Treating the public as a nuisance",
+          "Only describing enforcement",
+          "Leaving a distressed person to find someone else"
+        ]
+      }
+    },
+    {
+      "id": "sg_t_001",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What are the limits of your authority?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be clear and confident about this, because it is the most important technical question in the interview",
+          "You are not a police officer. You observe, report, deter, and control access on private property",
+          "Detention powers are limited and vary by jurisdiction. Know what your licence and your site instructions actually permit, and never exceed them",
+          "Use of force, where permitted at all, is a last resort, must be reasonable and proportionate, and is only for defence or prevention of harm",
+          "You cannot search a person without consent in most contexts, and you cannot detain on suspicion alone",
+          "When in doubt, observe, record and call the police. That is almost always the correct answer",
+          "Say that exceeding your authority exposes you personally to criminal and civil liability"
+        ],
+        "strong_answer_signals": [
+          "Clear that they are not police",
+          "Knows detention and search limits vary and are narrow",
+          "Defaults to observe, record, call"
+        ],
+        "avoid": [
+          "Claiming powers you do not have",
+          "Describing a search or detention casually",
+          "Any answer where force is an early option"
+        ]
+      }
+    },
+    {
+      "id": "sg_t_002",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you conduct a patrol?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Vary the timing and the route. A predictable patrol is a timetable for anyone watching",
+          "Use all your senses, not just sight. Sound and smell find things cameras never will, such as a gas leak, a fire, or someone in a stairwell",
+          "Know what normal looks like for the site, so an anomaly stands out",
+          "Check the specifics: doors and windows secure, fire exits clear and unlocked from inside, lighting working, alarms set, plant rooms, roof access, perimeter, vehicles",
+          "Use the patrol system or checkpoints honestly. Logging a checkpoint you did not visit is a serious integrity failure",
+          "Record what you found, including nothing to report, since the record is the proof of service"
+        ],
+        "strong_answer_signals": [
+          "Varies timing and route",
+          "Knows the site baseline",
+          "Never logs a checkpoint they did not visit"
+        ],
+        "avoid": [
+          "The same route at the same time every night",
+          "Logging checkpoints from the office",
+          "Only checking what the system prompts"
+        ]
+      }
+    },
+    {
+      "id": "sg_t_003",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you write an incident report?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Facts only, in chronological order, in plain language. No opinion, no speculation about motive, no conclusions",
+          "Cover the basics: who, what, when, where, how you became aware, what you did, who you notified, what the outcome was",
+          "Be specific: exact times, exact locations, descriptions with detail, and direct quotes where you can remember them",
+          "Write it as soon as possible while memory is accurate, and never alter a report afterwards. Add a supplementary note instead",
+          "Assume it will be read in court or by a regulator, because it might be",
+          "Attach the evidence: camera times, photographs where appropriate, names of witnesses"
+        ],
+        "strong_answer_signals": [
+          "Facts only, no speculation",
+          "Written immediately, never altered afterwards",
+          "Assumes it will be read in court"
+        ],
+        "avoid": [
+          "Writing what you think happened",
+          "Vague times and descriptions",
+          "Amending an earlier report rather than adding a supplement"
+        ]
+      }
+    },
+    {
+      "id": "sg_t_004",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle access control and visitor management?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Verify before granting: identification, the expected list, the host, and the purpose",
+          "Issue and record passes properly, and make sure they are returned. Unreturned passes are a live vulnerability",
+          "Escort where the policy requires it, and never let a visitor into a restricted area unescorted",
+          "Watch for tailgating, which is the most common way sites are breached. Challenge it politely every time",
+          "Deliveries and contractors: verify the company, the job, and the authorisation. Social engineering usually arrives in a uniform",
+          "Never share codes, never lend a pass, and never prop a door",
+          "Say that consistency is the control. An exception once becomes the expectation"
+        ],
+        "strong_answer_signals": [
+          "Names tailgating as the main breach route",
+          "Sceptical of uniforms and urgency",
+          "Consistency framed as the control"
+        ],
+        "avoid": [
+          "Letting someone in because they looked official",
+          "Propping a door for a contractor",
+          "Not tracking pass returns"
+        ]
+      }
+    },
+    {
+      "id": "sg_t_005",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What do you know about CCTV monitoring?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know the purpose and the legal frame: cameras must be used for the stated purpose, and there are privacy rules about where they can point and who can view footage",
+          "Active monitoring is different from watching. Scan systematically, follow up anything unusual, and know your camera coverage and blind spots",
+          "Log what you observe with camera number and time, so footage can be retrieved later",
+          "Retrieval and evidence handling: know the procedure, maintain the chain of custody, and never share footage informally",
+          "Never use cameras to watch individuals for personal reasons, and never point them at areas where people expect privacy",
+          "Report faults immediately. A camera that has been down for a week is a gap nobody knows about"
+        ],
+        "strong_answer_signals": [
+          "Knows privacy rules and stated purpose",
+          "Logs camera number and time for later retrieval",
+          "Reports faults rather than working around them"
+        ],
+        "avoid": [
+          "Sharing footage informally",
+          "Using cameras to watch a specific person without cause",
+          "Not knowing the blind spots on your own site"
+        ]
+      }
+    },
+    {
+      "id": "sg_t_006",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you respond to an alarm activation?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Treat every activation as genuine until proven otherwise. Complacency about false alarms is how real ones get missed",
+          "Follow the response procedure: identify the zone, approach with caution, observe before entering, and call for support before you commit",
+          "Do not enter alone where the procedure says otherwise, and never confront a suspected intruder alone",
+          "Check the cause: a genuine intrusion, a fault, an environmental trigger, or a staff error",
+          "Reset and record properly, including the cause where you can establish it",
+          "Report repeat false alarms so the fault is fixed, since repeated false alarms erode the response"
+        ],
+        "strong_answer_signals": [
+          "Treats every alarm as genuine",
+          "Observes before entering and calls support",
+          "Reports repeat false alarms as a fault to fix"
+        ],
+        "avoid": [
+          "Assuming it is another false alarm",
+          "Entering a zone alone against procedure",
+          "Resetting without recording the cause"
+        ]
+      }
+    },
+    {
+      "id": "sg_t_007",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What do you know about fire safety and emergency evacuation?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know your role in the plan: raise the alarm, call the fire service, direct people, sweep assigned areas if that is your role, and go to the assembly point",
+          "Life safety before property, always. Nothing on the site is worth staying for",
+          "Know the escape routes, the assembly points, the fire panel, and where the extinguishers and hoses are",
+          "Only tackle a fire if it is small, you are trained, you have a clear escape route, and it is your role to do so",
+          "Keep fire exits and routes clear on every patrol. A blocked exit is one of the most common and most dangerous findings",
+          "Account for people at the assembly point and brief the fire service on arrival",
+          "Know the arrangements for anyone needing assistance to evacuate"
+        ],
+        "strong_answer_signals": [
+          "Life safety before property",
+          "Knows the personal evacuation arrangements for people needing help",
+          "Checks exits on every patrol"
+        ],
+        "avoid": [
+          "Going back into a building for property",
+          "Tackling a fire beyond training or without an escape route",
+          "Not knowing the assembly point"
+        ]
+      }
+    },
+    {
+      "id": "sg_t_008",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle a medical emergency?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Call emergency services first or delegate the call clearly to a named person. Never assume someone else has called",
+          "Scene safety before anything else. You cannot help if you become a second casualty",
+          "Give first aid within your training only, and say what your training level is honestly",
+          "Send someone to meet and direct the ambulance, and clear access for them",
+          "Keep the person calm and stay with them, and keep others back for their dignity",
+          "Record it: time of collapse, time of call, what was done, who attended",
+          "Follow up on the automated defibrillator location and readiness, since knowing where it is beforehand is the whole point"
+        ],
+        "strong_answer_signals": [
+          "Delegates the call to a named person",
+          "Scene safety first",
+          "Knows the defibrillator location in advance"
+        ],
+        "avoid": [
+          "Acting beyond your first aid training",
+          "Assuming someone else called",
+          "Leaving the casualty to manage the scene"
+        ]
+      }
+    },
+    {
+      "id": "sg_t_009",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle theft or suspected theft?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Observe and report. Do not chase, do not confront, and do not touch, unless site policy and your training specifically permit it and it is safe",
+          "In retail, the legal test for any approach is usually strict and continuous observation. If you did not see the whole sequence, you do not have it",
+          "Record what you can: description, clothing, direction, time, camera number, vehicle and plate",
+          "Alert the right people discreetly: the manager, the control room, or the police",
+          "Preserve evidence and secure the footage before it is overwritten",
+          "Never accuse anyone, and never act on appearance rather than behaviour",
+          "Say that your safety and the company liability both point the same way here"
+        ],
+        "strong_answer_signals": [
+          "Refuses to chase or confront",
+          "Knows continuous observation is required before any approach",
+          "Secures footage before it is overwritten"
+        ],
+        "avoid": [
+          "Chasing someone off site",
+          "Accusing a customer",
+          "Profiling based on appearance"
+        ]
+      }
+    },
+    {
+      "id": "sg_t_010",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What do you know about health and safety on a site?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Security staff usually see more of the site than anyone else, so you are the most likely person to spot a hazard",
+          "Common findings: blocked fire exits, trailing cables, spills, faulty lighting, damaged flooring, unsecured ladders, propped doors, expired extinguishers",
+          "Report and where possible make safe immediately with signage or a barrier",
+          "Know the site specific risks: traffic and vehicle movements, plant, chemicals, height, confined spaces",
+          "Follow the permit to work system where the site has one, and know who is allowed where",
+          "Wear the required protective equipment on industrial and construction sites, and enforce it consistently",
+          "Record hazards and follow up. A hazard reported three times and never fixed needs escalating"
+        ],
+        "strong_answer_signals": [
+          "Sees themselves as the eyes of the site",
+          "Makes safe immediately, then reports",
+          "Escalates a hazard that keeps being ignored"
+        ],
+        "avoid": [
+          "Walking past a hazard because it is not your department",
+          "Not wearing required protective equipment yourself",
+          "Reporting once and dropping it"
+        ]
+      }
+    },
+    {
+      "id": "sg_t_011",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle confidentiality and data?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Everything you see on a site is confidential: people, documents, footage, access records, incidents",
+          "Do not discuss incidents outside the professional circle, including with family or on social media. Posting about a site is a dismissal offence in most companies",
+          "Camera footage and access logs are personal data with legal protection. Handle, share and retain them only through the proper process",
+          "Never take photographs of a site or an incident on a personal device unless the procedure requires it",
+          "Verify identity before releasing any information, including to someone claiming to be from the client",
+          "Say that discretion is most of what a client is paying for"
+        ],
+        "strong_answer_signals": [
+          "Knows footage and access logs are protected personal data",
+          "No social media, no personal device photographs",
+          "Verifies identity before releasing information"
+        ],
+        "avoid": [
+          "Discussing an incident outside work",
+          "Posting anything about the site online",
+          "Sharing footage informally with a manager who asked"
+        ]
+      }
+    },
+    {
+      "id": "sg_t_012",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you hand over to the next shift?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "A proper handover is the difference between a site with continuity and one with a gap every twelve hours",
+          "Cover what the next person actually needs: incidents, ongoing situations, faults, people to watch for, contractors on site, keys and equipment, alarm status",
+          "Do it in writing as well as verbally, since verbal handovers are forgotten and disputed",
+          "Check the equipment together: radios, keys, torches, and the log",
+          "Do not leave until the relief has arrived and been briefed, unless the procedure allows otherwise",
+          "Read the previous handover at the start of your own shift rather than assuming nothing happened"
+        ],
+        "strong_answer_signals": [
+          "Written as well as verbal",
+          "Checks equipment and keys together",
+          "Reads the previous handover before starting"
+        ],
+        "avoid": [
+          "A verbal handover only",
+          "Leaving before the relief is briefed",
+          "Starting a shift without reading what happened"
+        ]
+      }
+    },
+    {
+      "id": "sg_s_001",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You find someone in the building who should not be there. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Assess before approaching: how many people, are they agitated, do they appear armed, where are your exits, do you have a radio",
+          "Do not approach alone if there is any doubt. Call for support or the police first and observe from a safe position",
+          "If you do approach: identify yourself, keep your distance, stay between them and your exit, and use a calm non confrontational opening",
+          "Most cases are innocent: a contractor, a lost visitor, an employee working late. Start there rather than with an accusation",
+          "If they are not authorised, ask them to leave and escort them off if it is safe. Do not detain",
+          "Record everything and check the footage",
+          "Report how they got in, since that is the real issue"
+        ],
+        "strong_answer_signals": [
+          "Assesses before approaching",
+          "Starts from an innocent explanation",
+          "Reports the access failure, not just the person"
+        ],
+        "avoid": [
+          "Approaching an unknown person alone in an isolated area",
+          "Detaining someone without authority",
+          "Only reporting the person and not how they got in"
+        ]
+      }
+    },
+    {
+      "id": "sg_s_002",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "An employee asks you to let them into a restricted area without a pass.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Politely decline and follow the procedure. Being known to them does not authorise access",
+          "Verify through the proper route: a supervisor, the control room, or the access list",
+          "Explain the rule plainly. Most people accept a rule applied to everyone",
+          "Log the request and the outcome",
+          "Report a pattern. Someone repeatedly asking for an exception is either a process problem or a red flag",
+          "Say that the moment you make one exception, every future refusal becomes an argument"
+        ],
+        "strong_answer_signals": [
+          "Verifies through the proper route",
+          "Logs the request",
+          "Recognises a repeated pattern as a signal"
+        ],
+        "avoid": [
+          "Letting a familiar face through",
+          "Making an exception for a senior person",
+          "Not logging the request"
+        ]
+      }
+    },
+    {
+      "id": "sg_s_003",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Someone becomes aggressive towards you. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Your safety comes first. No site, no property, and no rule is worth an injury",
+          "Create distance and keep a clear exit behind you. Never let yourself be backed into a corner",
+          "Stay calm, keep your hands visible and open, and lower your voice rather than raising it",
+          "Call for support early rather than when it has already escalated",
+          "Disengage if it continues. Walking away and calling the police is a professional response, not a failure",
+          "Never use force except as a last resort to protect yourself or someone else, and only within your training and the law",
+          "Record it fully afterwards and report it, including near misses"
+        ],
+        "strong_answer_signals": [
+          "Safety and exit route as the first consideration",
+          "Calls support early",
+          "Disengagement framed as professional"
+        ],
+        "avoid": [
+          "Standing your ground to avoid backing down",
+          "Using force to assert authority",
+          "Not reporting because nothing actually happened"
+        ]
+      }
+    },
+    {
+      "id": "sg_s_004",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You suspect an employee of theft. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Do not confront, accuse, or investigate. Internal theft is a management and sometimes a police matter",
+          "Record what you actually observed, factually, with times and camera references",
+          "Report through the proper channel, which may be a manager, a loss prevention team, or a confidential line",
+          "Preserve the evidence and secure the footage before it is overwritten",
+          "Keep it confidential. Discussing a suspicion with colleagues can destroy a case and damage an innocent person",
+          "Say plainly that suspicion is not proof and that your job is accurate observation"
+        ],
+        "strong_answer_signals": [
+          "Does not investigate or confront",
+          "Secures footage immediately",
+          "Keeps the suspicion confidential"
+        ],
+        "avoid": [
+          "Confronting the employee",
+          "Discussing it with other staff",
+          "Waiting to be sure before reporting"
+        ]
+      }
+    },
+    {
+      "id": "sg_s_005",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A client asks you to do something outside your remit or against procedure.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Understand what they actually need, since there is often a legitimate way to achieve it",
+          "Explain what you can do and what you cannot, and why. Reference the assignment instructions rather than making it personal",
+          "Decline anything unsafe, unlawful, or outside your licence, calmly and without argument",
+          "Escalate to your supervisor or account manager rather than deciding alone. That is exactly what they are there for",
+          "Record the request and the outcome",
+          "Say that doing it to keep the client happy exposes you personally, and that your company would rather have the call"
+        ],
+        "strong_answer_signals": [
+          "Escalates rather than deciding alone",
+          "Records the request",
+          "Understands personal liability"
+        ],
+        "avoid": [
+          "Doing it because the client pays the contract",
+          "Refusing rudely without escalating",
+          "Not recording the request"
+        ]
+      }
+    },
+    {
+      "id": "sg_s_006",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You are alone on site and something serious happens.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Call for external help first: police, fire, or ambulance as appropriate. Do not try to manage a serious incident alone",
+          "Then notify your control room or supervisor",
+          "Secure yourself first. You cannot help anyone if you are hurt",
+          "Do what you safely can: control access, direct people, preserve the scene, meet the emergency services",
+          "Record continuously as you go, since detail is lost quickly under stress",
+          "Say that your lone working procedure should include check in times and a plan if you do not check in, and ask whether the site has one"
+        ],
+        "strong_answer_signals": [
+          "Calls external help before internal",
+          "Secures self before acting",
+          "Asks about lone working check in arrangements"
+        ],
+        "avoid": [
+          "Trying to handle a serious incident alone",
+          "Notifying the supervisor before emergency services",
+          "No record because it was too busy"
+        ]
+      }
+    },
+    {
+      "id": "sg_s_007",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You notice a colleague not following procedure.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Say something directly and privately first. Most of it is habit or shortcut rather than intent",
+          "Be specific: skipped patrol checks, logging checkpoints from the desk, propping doors, phone use, sleeping on shift, letting people in without checks",
+          "Escalate if it continues or if it is serious. Falsified logs and sleeping on duty are integrity issues, not minor ones",
+          "Understand the stakes: a colleague cutting corners creates a gap the whole site relies on being covered",
+          "Say plainly that covering for it makes you part of it, and that in a licensed industry it can affect your own registration"
+        ],
+        "strong_answer_signals": [
+          "Addresses it directly first",
+          "Treats falsified logs as an integrity issue",
+          "Understands their own licence is at risk"
+        ],
+        "avoid": [
+          "Saying nothing to avoid conflict",
+          "Covering a falsified log",
+          "Reporting it to everyone except a supervisor"
+        ]
+      }
+    },
+    {
+      "id": "sg_s_008",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "There is a bomb threat or a suspicious package.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Do not touch, move, or open anything. Do not use a radio or a mobile phone near a suspicious item where the procedure says otherwise",
+          "For a threat call: stay calm, keep the caller talking, note exact wording, listen for background sounds, and complete the threat checklist if the site has one",
+          "Notify the police and the site management immediately",
+          "Follow the decision on evacuation. Note that evacuating towards an unknown item can be more dangerous than staying, which is why the plan and the police decide, not you",
+          "Cordon and control access, and keep people away",
+          "Record everything precisely, including exact times and exact words"
+        ],
+        "strong_answer_signals": [
+          "Never touches or moves the item",
+          "Knows evacuation is a plan and police decision",
+          "Records exact wording of a threat call"
+        ],
+        "avoid": [
+          "Moving or examining a package",
+          "Deciding to evacuate independently",
+          "Paraphrasing a threat call from memory"
+        ]
+      }
+    },
+    {
+      "id": "sg_s_009",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A camera or an access system is not working.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Report it immediately. A known gap can be covered, an unknown gap cannot",
+          "Compensate in the meantime: additional patrols of the affected area, a physical presence at the affected door, or manual logging",
+          "Record the fault, the time it started, and the mitigation you put in place. That record matters if something happens during the outage",
+          "Chase the repair rather than assuming it is in hand, and escalate if it drags",
+          "Check the whole system rather than assuming one fault is isolated",
+          "Say that an outage nobody compensated for is how sites get breached"
+        ],
+        "strong_answer_signals": [
+          "Compensates with presence or patrols",
+          "Records the outage and the mitigation",
+          "Chases the repair rather than assuming"
+        ],
+        "avoid": [
+          "Waiting for someone else to notice",
+          "Not adjusting patrols during the outage",
+          "No record of the outage period"
+        ]
+      }
+    },
+    {
+      "id": "sg_s_010",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You are offered something by a contractor or a member of the public.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Decline politely. Gifts, favours and cash create an obligation and that is exactly the point of them",
+          "Report it, including small offers. A pattern of small favours is how access gets compromised",
+          "Follow the company gifts and hospitality policy, and record it where required",
+          "Be alert to grooming: repeated friendliness from someone who wants a door left open, a delivery unchecked, or a camera angle noted",
+          "Say plainly that your integrity is the product the client is buying",
+          "Never accept anything from someone whose access you control"
+        ],
+        "strong_answer_signals": [
+          "Declines and reports even small offers",
+          "Recognises grooming patterns",
+          "Understands integrity is the product"
+        ],
+        "avoid": [
+          "Accepting a small gift as harmless",
+          "Not reporting because you declined anyway",
+          "Building a friendship with someone whose access you control"
+        ]
+      }
+    },
+    {
+      "id": "sg_m_001",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you supervise a security team?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Set clear assignment instructions and make sure every officer has read and understood them, including relief and temporary staff",
+          "Brief at shift change and check the handover actually happened",
+          "Visit the site on all shifts, including nights. A supervisor who has never seen the night shift does not know the site",
+          "Audit the records: patrol logs, incident reports, access logs. Look for the patterns that suggest checks are not being done",
+          "Coach on the things that matter: report quality, de-escalation, consistency at access control",
+          "Deal with integrity issues immediately and consistently. In this industry there is no small integrity issue"
+        ],
+        "strong_answer_signals": [
+          "Sees every shift including nights",
+          "Audits records for patterns",
+          "Zero tolerance on integrity, applied consistently"
+        ],
+        "avoid": [
+          "Supervising from reports alone",
+          "Never visiting the night shift",
+          "Inconsistent handling of falsified logs"
+        ]
+      }
+    },
+    {
+      "id": "sg_m_002",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you carry out a site risk assessment?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start from what you are protecting: people first, then assets, then information, then reputation and continuity",
+          "Identify the threats specific to this site: theft, violence, trespass, protest, vandalism, insider risk, and local crime patterns",
+          "Walk the site at different times, including at night and at shift change, since the vulnerabilities differ",
+          "Assess the layers: perimeter, building envelope, access control, internal zoning, detection, response, and procedure",
+          "Rate by likelihood and impact, and be honest about where the real gaps are rather than where the easy fixes are",
+          "Recommend proportionate measures with cost, and say what you would do first with no budget at all",
+          "Review it after any incident and on a schedule"
+        ],
+        "strong_answer_signals": [
+          "People before assets, stated explicitly",
+          "Walks the site at different times",
+          "Says what to do first with no budget"
+        ],
+        "avoid": [
+          "A generic assessment not specific to the site",
+          "Assessing only during the day",
+          "Recommendations with no prioritisation"
+        ]
+      }
+    },
+    {
+      "id": "sg_m_003",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you handle an officer who falsified a patrol log?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Treat it as a serious integrity matter from the start. This is not a performance issue",
+          "Establish the facts properly: the system data, the camera footage, and the officer account, before concluding",
+          "Follow the disciplinary process exactly and fairly. A rushed process fails and the officer stays",
+          "Understand the consequence: a client relying on patrols that did not happen has been sold something they did not get, and it may be a contractual and licensing issue",
+          "Report to the client where the contract requires it, and be honest about it. Concealing it is worse than the original failure",
+          "Look at the system too: was the route achievable in the time, and was there pressure that made falsifying attractive"
+        ],
+        "strong_answer_signals": [
+          "Treats it as integrity, not performance",
+          "Honest with the client rather than concealing",
+          "Checks whether the route was achievable"
+        ],
+        "avoid": [
+          "Handling it informally to avoid losing a person",
+          "Concealing it from the client",
+          "Concluding before checking the data"
+        ]
+      }
+    },
+    {
+      "id": "sg_m_004",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you manage client relationships on a security contract?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Understand what the client actually values, which is often visible presence and responsiveness rather than the number of patrols",
+          "Report proactively: incidents, trends, near misses, hazards found, and recommendations. A monthly report nobody reads is not communication",
+          "Be honest when something went wrong, quickly. Clients forgive incidents and do not forgive being told late",
+          "Turn incident data into advice: patterns, vulnerabilities, and what to fix",
+          "Manage scope honestly. Absorbing extra duties silently degrades the core service and then both fail",
+          "Review the assignment instructions with the client regularly, since sites change and instructions do not"
+        ],
+        "strong_answer_signals": [
+          "Reports trends, not just incidents",
+          "Honest and fast when something goes wrong",
+          "Manages scope creep explicitly"
+        ],
+        "avoid": [
+          "Only contacting the client at renewal",
+          "Hiding a service failure",
+          "Absorbing extra duties without a conversation"
+        ]
+      }
+    },
+    {
+      "id": "sg_m_005",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you handle recruitment and turnover in security?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Screen properly: licence verification, background checks, employment history with gaps explained, and references actually taken",
+          "Never put someone on site before checks are complete, whatever the staffing pressure. This is the single biggest risk in the industry",
+          "Onboard to the site, not just to the company. Assignment instructions, a walk through, and a shadow shift",
+          "Understand why people leave: lone working with no support, unpredictable shifts, no equipment, no progression, and being treated as disposable",
+          "Give a path: supervisor, control room, CCTV, mobile patrol, corporate sites",
+          "Give the number: turnover, or average tenure, or vacancy fill time"
+        ],
+        "strong_answer_signals": [
+          "Never deploys before checks are complete",
+          "Onboards to the site, not just the company",
+          "Names lone working support as a retention issue"
+        ],
+        "avoid": [
+          "Putting someone on site pending checks",
+          "Induction that is paperwork only",
+          "Treating turnover as unavoidable"
+        ]
+      }
+    },
+    {
+      "id": "sg_m_006",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you handle a serious incident as a manager?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "People first: casualties, emergency services, and the safety of your officers and the public",
+          "Take control of the scene and the information. One person communicating prevents chaos and contradiction",
+          "Preserve evidence: footage secured before it is overwritten, statements taken while memory is fresh, the scene protected",
+          "Notify the client, your company, and the insurer per procedure, and be factual rather than defensive",
+          "Support the officers involved. Violence and serious incidents affect people for a long time and this is where a company is judged",
+          "Debrief and investigate for the system cause: procedure, staffing, equipment, training, or lighting",
+          "Follow through on the changes and tell the client what changed"
+        ],
+        "strong_answer_signals": [
+          "Secures footage before it is overwritten",
+          "Supports the officers involved",
+          "Investigates the system cause"
+        ],
+        "avoid": [
+          "Managing the message before the people",
+          "Sending a shaken officer straight back out",
+          "An investigation that ends at individual blame"
+        ]
+      }
+    },
+    {
+      "id": "sg_m_007",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you manage scheduling and lone working?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Schedule to the risk profile of the site and the hours, not evenly. Nights and shift changes need more, not less",
+          "Manage fatigue deliberately: limit consecutive nights, watch excessive overtime, and build in rest between shifts",
+          "Lone working procedure with check in and check out, a defined escalation if a check is missed, and equipment that actually works",
+          "Publish rotas in advance. Unpredictable shifts are the biggest cause of turnover in this industry",
+          "Have a real cover plan rather than relying on the same three people to fill every gap",
+          "Check the welfare arrangements: breaks, facilities, and a way to reach someone at three in the morning"
+        ],
+        "strong_answer_signals": [
+          "Schedules to risk, not evenly",
+          "Fatigue managed as a safety issue",
+          "Lone working escalation if a check is missed"
+        ],
+        "avoid": [
+          "Excessive overtime as a normal staffing model",
+          "Lone working with no check in procedure",
+          "Rotas published days before"
+        ]
+      }
+    },
+    {
+      "id": "sg_m_008",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you improve security without a big budget?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start with procedure and behaviour, which cost nothing: consistent access control, varied patrols, proper reporting, and door discipline",
+          "Fix the basics that are usually broken: lighting, sightlines, overgrown landscaping, unlocked doors, and unreturned passes",
+          "Use data: incident locations and times tell you where to put presence, rather than spreading evenly",
+          "Deterrence is cheap: visible presence, signage, and a site that looks well maintained. Neglect invites attempts",
+          "Train the client staff too, since tailgating and propped doors are usually staff behaviour rather than a system failure",
+          "Prioritise honestly and say what the residual risk is after the cheap fixes, so the client can decide"
+        ],
+        "strong_answer_signals": [
+          "Names procedure and behaviour as the free levers",
+          "Uses incident data to place presence",
+          "States the residual risk honestly"
+        ],
+        "avoid": [
+          "Recommending technology as the first answer",
+          "Spreading presence evenly regardless of the data",
+          "Implying cheap fixes remove the risk entirely"
+        ]
+      }
+    },
+    {
+      "id": "sg_mo_001",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Why do you want to work in security?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Give an honest reason: you are calm under pressure, you like responsibility, you prefer working independently, you want a role where being reliable matters",
+          "Connect it to something you have actually done, in work, service, or life",
+          "Say what you are good at: observation, staying calm, dealing with people, thoroughness in records",
+          "Practical reasons such as shift patterns and stability are respected when paired with genuine interest"
+        ],
+        "strong_answer_signals": [
+          "An honest reason with evidence behind it",
+          "Names calmness and observation rather than authority",
+          "Comfortable with practical motivations"
+        ],
+        "avoid": [
+          "Wanting authority or confrontation",
+          "Describing it as a stepping stone to police without saying you value this role",
+          "Only saying you need a job"
+        ]
+      }
+    },
+    {
+      "id": "sg_mo_002",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you stay alert on a long quiet shift?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be honest that most shifts are uneventful and that alertness is the actual discipline",
+          "Say what you do: vary the patrol timing, active scanning rather than passive watching, move regularly, use the shift for checks that need doing",
+          "Manage sleep properly on a night rotation rather than fixing tiredness on shift",
+          "Stay off your phone. Say it plainly, since it is the single most common failure",
+          "Say what you would do if you genuinely could not stay awake, which is report it rather than hide it"
+        ],
+        "strong_answer_signals": [
+          "Honest that vigilance is the discipline",
+          "Names phone use as the failure",
+          "Would report being unfit to continue"
+        ],
+        "avoid": [
+          "Claiming you never get tired",
+          "Phone or entertainment as a way to pass the time",
+          "No sleep management on nights"
+        ]
+      }
+    },
+    {
+      "id": "sg_mo_003",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What does good security look like to you?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Prevention rather than response. A quiet site with nothing to report is the product, not a boring shift",
+          "Visible, approachable presence that deters without intimidating",
+          "Consistency: the same standard at three in the morning as at three in the afternoon",
+          "Accurate records, because the report is often the only evidence anything happened at all",
+          "Knowing your limits and calling for help early rather than proving something"
+        ],
+        "strong_answer_signals": [
+          "Values prevention over incident response",
+          "Consistency at unsociable hours",
+          "Understands records as the evidence of service"
+        ],
+        "avoid": [
+          "Describing the job as catching people",
+          "Equating good security with confrontation",
+          "No mention of records or consistency"
+        ]
+      }
+    },
+    {
+      "id": "sg_mo_004",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you feel about nights, weekends and lone working?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be exact and honest. This industry runs on nights, weekends and holidays, and a vague answer becomes a rota problem quickly",
+          "Say whether you have worked nights before and how you managed it",
+          "State any genuine constraint: transport at night, caring responsibilities, a second job",
+          "Say how you feel about being alone on a site, since some people genuinely do not suit it and that is worth knowing now"
+        ],
+        "strong_answer_signals": [
+          "Exact about availability",
+          "Honest about suitability for lone working",
+          "States constraints up front"
+        ],
+        "avoid": [
+          "Saying fully flexible when you are not",
+          "Discovering a transport problem after starting",
+          "Not having thought about lone working at all"
+        ]
+      }
+    },
+    {
+      "id": "sg_mo_005",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Where do you see yourself in a couple of years?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Honest options: supervisor, control room, CCTV operator, mobile patrol, corporate or specialist sites, close protection, or security management",
+          "If you intend to apply to the police or the fire service, say so honestly rather than being caught out",
+          "If you want to stay and be excellent at this, say that. Experienced reliable officers are genuinely valued",
+          "Name what you would need: a qualification, a licence endorsement, or specific site experience"
+        ],
+        "strong_answer_signals": [
+          "Honest about other career intentions",
+          "Names a step and what it requires",
+          "Comfortable saying they want to stay in the role"
+        ],
+        "avoid": [
+          "Hiding an intention to leave for another service",
+          "No thought about progression",
+          "Claiming ambitions you do not have"
+        ]
+      }
+    },
+    {
+      "id": "sg_mo_006",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Do you have any questions for us?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Ask what tells you what the job actually is:",
+          "\"What site would I be on, and is it single officer or a team?\"",
+          "\"What are the assignment instructions, and when were they last reviewed?\"",
+          "\"What is the lone working procedure and the check in arrangement?\"",
+          "\"What support is available at night if something happens?\"",
+          "\"What equipment is provided, and what condition is it in?\"",
+          "The lone working and support question is the most important one you can ask, and the answer tells you how the company treats its officers"
+        ],
+        "strong_answer_signals": [
+          "Asks about lone working support",
+          "Asks when the assignment instructions were last reviewed",
+          "Asks about equipment condition"
+        ],
+        "avoid": [
+          "No questions",
+          "Only asking about pay and hours",
+          "Asking something already in the job description"
+        ]
+      }
+    }
+  ]
+}

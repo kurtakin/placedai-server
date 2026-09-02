@@ -2,8 +2,8 @@
   "metadata": {
     "description": "Master index for the Interview Aid App question bank",
     "generated": "2026-09-02",
-    "grand_total": 1860,
-    "total_files": 57,
+    "grand_total": 2044,
+    "total_files": 61,
     "schema_version": "1.1"
   },
   "files": [
@@ -105,6 +105,23 @@
         "manager",
         "mid",
         "senior"
+      ]
+    },
+    {
+      "file": "cleaning_facilities_questions.json",
+      "sector": "Cleaning & Facilities",
+      "total": 46,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid"
       ]
     },
     {
@@ -827,6 +844,40 @@
       ]
     },
     {
+      "file": "security_questions.json",
+      "sector": "Security & Protective Services",
+      "total": 46,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid"
+      ]
+    },
+    {
+      "file": "social_work_questions.json",
+      "sector": "Social Work & Community Services",
+      "total": 46,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid"
+      ]
+    },
+    {
       "file": "software_engineering_questions.json",
       "sector": "Software Engineering",
       "total": 40,
@@ -878,6 +929,23 @@
         "manager",
         "mid",
         "senior"
+      ]
+    },
+    {
+      "file": "teaching_assistant_questions.json",
+      "sector": "Teaching Assistant & Paraprofessional",
+      "total": 46,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid"
       ]
     },
     {

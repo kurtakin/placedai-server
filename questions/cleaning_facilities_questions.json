@@ -1,0 +1,1379 @@
+{
+  "metadata": {
+    "sector": "Cleaning & Facilities",
+    "generated": "2026-09-02",
+    "total": 46,
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ],
+    "region": "North America",
+    "schema_version": "1.1",
+    "note": "Janitors and cleaners 2.21M (BLS May 2025), one of the largest US occupations and previously uncovered. Covers chemical safety and never mixing products, restroom sanitation sequence and colour coding, floor care by surface type, waste including sharps and clinical streams, infection control and dwell time, lone working and building security, and the cleaning supervisor and contract manager track."
+  },
+  "questions": [
+    {
+      "id": "jc_b_001",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about yourself and your cleaning or custodial experience.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Setting first, because the standards are completely different: office, school, hospital or clinic, food production, retail, hotel, industrial plant",
+          "Scale in numbers: square footage covered, number of floors or buildings, team size, shift pattern, how many rooms or classrooms per night",
+          "What you actually did: general cleaning, floor care including stripping and waxing, carpet extraction, restroom sanitation, waste and recycling, window cleaning, minor maintenance, setup for events",
+          "Certifications and training: chemical safety, bloodborne pathogen training, floor equipment, lift or ladder training, infection control if healthcare",
+          "One outcome: an inspection score, a building you brought back from a bad state, a route you reorganised, an accident free record",
+          "Availability, since most of this work is early morning, evening or overnight"
+        ],
+        "strong_answer_signals": [
+          "Names the setting, which tells them whether the standards transfer",
+          "Gives square footage or room counts rather than only duties",
+          "Mentions chemical and equipment training without being asked"
+        ],
+        "avoid": [
+          "Describing it only as cleaning, with no standards or equipment named",
+          "Being vague about shift availability when the work is overnight",
+          "No mention of safety training at all"
+        ]
+      }
+    },
+    {
+      "id": "jc_b_002",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you worked without supervision.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Most of this job is alone or in a small crew at night. That is the real question being asked",
+          "Action: how you managed the route, kept to the standard, and paced the shift without anyone checking",
+          "Say how you handled finishing early and finishing late, since both are tests of the same thing",
+          "Result: the building ready at open, the checklist complete, the inspection passed",
+          "Say what you did when nobody would have known if you skipped something"
+        ],
+        "strong_answer_signals": [
+          "Comfortable and productive working alone",
+          "Holds the standard when nobody is watching",
+          "Manages pace rather than rushing the end of the shift"
+        ],
+        "avoid": [
+          "Needing constant direction",
+          "A story where the standard slipped because it was late",
+          "Suggesting some areas do not need doing if nobody checks"
+        ]
+      }
+    },
+    {
+      "id": "jc_b_003",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a difficult cleaning job you handled.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Options with real difficulty: a flood or leak, a biohazard clean up, a badly neglected area, a post construction clean, a heavy grease kitchen, an infestation aftermath",
+          "Action: assess first, get the right protective equipment and chemicals, and know when the job needs a specialist rather than you",
+          "Say the method and the order you worked in, since sequence matters in a heavy clean",
+          "Result: the state you left it in, the time taken, and any lasting fix such as a repair reported",
+          "Say what you reported so the cause was fixed rather than just the mess"
+        ],
+        "strong_answer_signals": [
+          "Assesses and gets the right equipment before starting",
+          "Knows when to call a specialist",
+          "Reports the cause, not just the symptom"
+        ],
+        "avoid": [
+          "Starting a hazardous clean with no protective equipment",
+          "Mixing chemicals to make something stronger",
+          "Cleaning up a recurring problem repeatedly without ever reporting it"
+        ]
+      }
+    },
+    {
+      "id": "jc_b_004",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you dealt with a complaint about cleanliness.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Situation: who complained and what about. Often the complaint is about a recurring area rather than one bad night",
+          "Action: look at it yourself rather than defending, fix it immediately if you can, and be honest if it was missed",
+          "Find out why: time pressure, an area not on the route, a broken machine, a supply shortage, or a genuine miss",
+          "Tell the supervisor so the route or the schedule is corrected rather than the same complaint returning",
+          "Result: the area fixed and the complaint not repeated"
+        ],
+        "strong_answer_signals": [
+          "Looks at it before defending",
+          "Finds the cause rather than just cleaning it again",
+          "Honest when it was genuinely missed"
+        ],
+        "avoid": [
+          "Arguing that it was clean when you left",
+          "Blaming the previous shift",
+          "Fixing the same complaint every week without reporting it"
+        ]
+      }
+    },
+    {
+      "id": "jc_b_005",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you found something you had to report.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Options: a water leak, an electrical fault, a broken lock or window, a fire door propped open, a sharps or biohazard find, evidence of a break in, someone in the building who should not be there",
+          "Action: what you did immediately to make it safe, and who you told",
+          "Say why you did not just deal with it yourself when it was outside your scope",
+          "Result: the risk removed, the repair made, the incident recorded",
+          "Custodians are often the only person in a building at night. Say that you take that responsibility seriously"
+        ],
+        "strong_answer_signals": [
+          "Makes it safe first, then reports",
+          "Knows what is outside their scope",
+          "Understands they are often the only person in the building"
+        ],
+        "avoid": [
+          "Ignoring a fault because it is not your job",
+          "Handling an electrical or structural problem yourself",
+          "Waiting until the next day to report a security issue"
+        ]
+      }
+    },
+    {
+      "id": "jc_b_006",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about working as part of a cleaning team.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Say how the work was split: by area, by task, or by floor, and how handovers worked",
+          "Action: what you did when a colleague was absent or fell behind, and how you communicated across a shift",
+          "Say how you kept the shared equipment and store room in a state the next person could use",
+          "Result: the building covered, the standard held, and the shift finished together",
+          "Small crews at night depend on each other. Show that you are the person people want on the shift"
+        ],
+        "strong_answer_signals": [
+          "Covers for a colleague without being asked",
+          "Leaves equipment and stores usable for the next person",
+          "Communicates across shifts"
+        ],
+        "avoid": [
+          "Leaving the store room or machines in a poor state",
+          "Finishing your area and sitting down while others work",
+          "A story that is mostly about a colleague not pulling their weight"
+        ]
+      }
+    },
+    {
+      "id": "jc_b_007",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you had to work around people using the building.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Settings where this matters: a school during the day, an office with staff working late, a hospital ward, a retail floor with customers",
+          "Action: minimise disruption. Signage for wet floors, quiet equipment where possible, working around people politely, timing the loud jobs",
+          "Say how you interact: greet people, answer politely, and know what you can and cannot discuss about the building",
+          "Safety first: never leave a wet floor unsigned or a cable across a walkway",
+          "Result: the work done with no complaints and no incidents"
+        ],
+        "strong_answer_signals": [
+          "Signs and protects the area every time",
+          "Times disruptive work deliberately",
+          "Professional and pleasant with occupants"
+        ],
+        "avoid": [
+          "Mopping a busy corridor with no signage",
+          "Running loud equipment during a class or a meeting",
+          "Treating occupants as an obstacle"
+        ]
+      }
+    },
+    {
+      "id": "jc_b_008",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a mistake you made at work.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Real examples: using the wrong chemical on a surface, damaging a floor finish, breaking something while moving it, missing an area, setting an alarm off",
+          "Own it and report it immediately. A damaged surface reported is a repair, and one hidden is a bigger bill",
+          "Action: what you did to limit the damage and who you told",
+          "Result and the habit that changed, such as reading the label or checking the surface first",
+          "If it involved a chemical or a safety issue, say plainly why hiding it was never an option"
+        ],
+        "strong_answer_signals": [
+          "Reports immediately rather than hoping",
+          "Names the specific habit change",
+          "Treats chemical and safety mistakes as a separate category"
+        ],
+        "avoid": [
+          "Saying you have never made one",
+          "Hiding damage to a floor or a surface",
+          "Blaming the label or the supervisor"
+        ]
+      }
+    },
+    {
+      "id": "jc_b_009",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about feedback you received from a supervisor.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Real feedback here: missed areas, restroom detail, streaking on glass or floors, time management on the route, chemical use, not signing the checklist",
+          "Action: how you asked what the standard was and what you practised",
+          "Result: the inspection score, the complaint that stopped, the route completed on time",
+          "Say whether you asked for a walk through with the supervisor, since that is the fastest way to learn a standard"
+        ],
+        "strong_answer_signals": [
+          "Asks for a walk through to see the standard",
+          "Practises the specific thing",
+          "Evidence the change held"
+        ],
+        "avoid": [
+          "Feedback that was really praise",
+          "Disagreeing with the standard",
+          "No evidence anything changed"
+        ]
+      }
+    },
+    {
+      "id": "jc_b_010",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you had to finish a large job in a short window.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Situations: a school between terms, an office move, an event turnaround, a deep clean before an inspection",
+          "Action: plan the sequence, gather the equipment and supplies first, and work the areas in an order that avoids redoing work",
+          "Say how you asked for help or extra hours early rather than at the end",
+          "Say what you protected: the visible areas and the health critical areas such as restrooms and food areas",
+          "Result: finished on time, with the numbers if you have them"
+        ],
+        "strong_answer_signals": [
+          "Plans the sequence so nothing gets redone",
+          "Asks for help early",
+          "Protects restrooms and food areas as the priority"
+        ],
+        "avoid": [
+          "Working faster by skipping the restrooms",
+          "Not asking for help until the deadline passed",
+          "No plan, just working harder"
+        ]
+      }
+    },
+    {
+      "id": "jc_t_001",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What do you know about cleaning chemicals and safety?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Read the label and follow the dilution. Stronger is not better, it damages surfaces and it is a health risk",
+          "Never mix chemicals. Bleach with ammonia or with acid produces toxic gas, and this is the answer they are listening for",
+          "Know where the safety data sheets are and that you are entitled to read them",
+          "Use the right protective equipment: gloves, eye protection, and ventilation for anything strong",
+          "Store correctly: labelled containers, never in a drink bottle, chemicals away from food, and locked where the public or children can reach",
+          "Dwell time matters. A disinfectant that is wiped off immediately has not disinfected anything"
+        ],
+        "strong_answer_signals": [
+          "Says never mix chemicals and names why",
+          "Knows dwell time is required for disinfection",
+          "Knows where the safety data sheets are"
+        ],
+        "avoid": [
+          "Mixing products to make something stronger",
+          "Decanting a chemical into an unlabelled bottle",
+          "Treating a disinfectant as a wipe and go product"
+        ]
+      }
+    },
+    {
+      "id": "jc_t_002",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you clean and sanitise a restroom properly?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Restrooms decide how a building is judged. Say that up front, because it is true",
+          "Work top down and clean to dirty: mirrors and dispensers, then sinks and counters, then fixtures, then floors last",
+          "Use separate cloths or a colour coded system so a toilet cloth never touches a sink. Cross contamination is the whole risk here",
+          "Apply the disinfectant and leave the dwell time before wiping",
+          "Restock everything: soap, paper, sanitiser, and check the hand dryers",
+          "Finish with the detail people notice: door handles, light switches, the underside of fixtures, the floor edges and corners",
+          "Sign the check sheet honestly and record anything broken"
+        ],
+        "strong_answer_signals": [
+          "Top down and clean to dirty",
+          "Colour coded cloths to prevent cross contamination",
+          "Details: handles, switches, floor edges"
+        ],
+        "avoid": [
+          "Using the same cloth on toilets and sinks",
+          "Signing a check sheet for work not done",
+          "Leaving dispensers empty"
+        ]
+      }
+    },
+    {
+      "id": "jc_t_003",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What do you know about floor care?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Match the method to the floor type: vinyl, sealed concrete, terrazzo, ceramic, wood, laminate, and carpet all need different products",
+          "Daily care is dust mopping or vacuuming first, then damp mopping. Mopping over grit grinds the finish off a floor",
+          "Change the mop water when it is dirty. A dirty bucket spreads soil rather than removing it",
+          "Periodic work: scrubbing, stripping and refinishing, burnishing, and carpet extraction. Say which you have done and on what equipment",
+          "Never put water on a wood floor or a strong alkaline product on a surface that cannot take it",
+          "Safety: wet floor signs, work in sections so there is always a dry route, and never leave a stripped floor unattended"
+        ],
+        "strong_answer_signals": [
+          "Knows dust mopping comes before wet mopping and why",
+          "Matches product to floor type",
+          "Works in sections so there is a dry route"
+        ],
+        "avoid": [
+          "Wet mopping without sweeping first",
+          "Using the same product on every floor type",
+          "Blocking a whole corridor with a wet floor"
+        ]
+      }
+    },
+    {
+      "id": "jc_t_004",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle waste and recycling?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Separate correctly at source: general, recycling, organic, confidential paper, and hazardous or clinical where the site has it",
+          "Never mix clinical or hazardous waste into general waste. That is a regulatory issue, not a housekeeping preference",
+          "Handle sharps only with the correct container and never by hand. In healthcare and in public buildings this is a real risk",
+          "Bag properly, do not overfill, and never press a bag down with your hand or foot",
+          "Keep the bin store clean and the routes clear, since that is where pests start",
+          "Report contamination in the recycling stream rather than sending it all to landfill silently"
+        ],
+        "strong_answer_signals": [
+          "Never handles sharps by hand",
+          "Knows clinical and hazardous waste is regulated",
+          "Never compresses a bag by hand"
+        ],
+        "avoid": [
+          "Pressing down a bag that could contain glass or a needle",
+          "Mixing clinical waste into general",
+          "Overfilling bags to save trips"
+        ]
+      }
+    },
+    {
+      "id": "jc_t_005",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What equipment can you operate?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Name what you have actually run: vacuum types, auto scrubber, floor buffer or burnisher, carpet extractor, pressure washer, wet vacuum, powered sweeper",
+          "Say whether you have training or certification for anything requiring it, such as a lift or a ride on machine",
+          "Daily care: check before use, empty and clean after use, change pads and filters, and report faults rather than working around them",
+          "Never use a machine you have not been trained on. A floor buffer in untrained hands causes injuries",
+          "Battery and cord safety: cords across walkways, wet areas, and charging in a ventilated space",
+          "Say what you do when a machine fails mid shift"
+        ],
+        "strong_answer_signals": [
+          "Honest about training on each machine",
+          "Cleans and checks equipment as routine",
+          "Refuses to run untrained equipment"
+        ],
+        "avoid": [
+          "Claiming experience on a machine you have watched",
+          "Running a machine with a damaged cord",
+          "Leaving equipment dirty for the next shift"
+        ]
+      }
+    },
+    {
+      "id": "jc_t_006",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you work to a cleaning schedule or specification?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know the difference between daily, weekly, monthly and periodic tasks. A specification exists so nothing is quietly dropped",
+          "Work a route in a consistent order so nothing is missed and the time is predictable",
+          "Record what was done honestly, since the signed record is what the client sees",
+          "Flag when the schedule does not fit reality: an area that needs more, a task nobody has time for, a room that is always locked",
+          "Adjust for the building: exam weeks, flu season, winter salt and mud, an event, a construction area",
+          "Say how long your route takes and how you know"
+        ],
+        "strong_answer_signals": [
+          "Follows a consistent route order",
+          "Signs records honestly",
+          "Flags when the spec does not match reality"
+        ],
+        "avoid": [
+          "Signing off tasks not done",
+          "Dropping periodic work quietly because nobody notices for months",
+          "Never raising an area that consistently cannot be covered"
+        ]
+      }
+    },
+    {
+      "id": "jc_t_007",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What do you know about infection control?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Understand what you are actually doing: cleaning removes soil, disinfecting kills organisms, and you must clean before you disinfect",
+          "High touch points are the priority: door handles, light switches, handrails, lift buttons, taps, shared keyboards and phones, desks",
+          "Dwell time and correct dilution, since both are what make a disinfectant work",
+          "Colour coded equipment by area so nothing moves from a restroom to a kitchen",
+          "Hand hygiene and gloves used correctly. Gloves are not a substitute for washing hands and they get changed between areas",
+          "In healthcare or during an outbreak, follow the enhanced protocol exactly and never improvise"
+        ],
+        "strong_answer_signals": [
+          "Clean before disinfect, stated correctly",
+          "Names high touch points as the priority",
+          "Colour coding between areas"
+        ],
+        "avoid": [
+          "Spraying and wiping immediately",
+          "Using the same cloth from a restroom in a kitchen",
+          "Treating gloves as a replacement for hand washing"
+        ]
+      }
+    },
+    {
+      "id": "jc_t_008",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What health and safety rules apply to your work?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Wet floors: signs out before you start, work in sections, remove signs when dry so people do not learn to ignore them",
+          "Manual handling: lift with your legs, get help for heavy items, use a trolley, and never carry more than you can see over",
+          "Ladders and heights: use the right equipment, never a chair, and follow the site rule on working alone at height",
+          "Chemical safety, protective equipment, and knowing the emergency eyewash location",
+          "Electrical safety: check cords, keep them out of walkways, and never use damaged equipment",
+          "Report every injury and near miss, however small. The record is what changes the process",
+          "Lone working procedure: check in, check out, and a plan if you do not"
+        ],
+        "strong_answer_signals": [
+          "Removes signs when dry, which shows real understanding",
+          "Reports near misses, not just injuries",
+          "Knows the lone working procedure"
+        ],
+        "avoid": [
+          "Standing on a chair or a desk to reach",
+          "Leaving wet floor signs out permanently",
+          "Not reporting a minor injury"
+        ]
+      }
+    },
+    {
+      "id": "jc_t_009",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you manage supplies and stock?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know your usage so you order before you run out rather than after. Running out of paper or soap is the complaint that reaches management fastest",
+          "Store correctly: chemicals secured and labelled, paper goods dry, nothing blocking an exit or a sprinkler head",
+          "Use the correct dilution rather than pouring generously. Over dilution is one of the biggest cost lines in this work",
+          "Rotate stock and keep the store room organised so anyone can find things",
+          "Report waste and theft, and keep the store locked where policy requires it",
+          "Say what you did that reduced cost or waste"
+        ],
+        "strong_answer_signals": [
+          "Orders on usage rather than when empty",
+          "Correct dilution framed as a cost control",
+          "Keeps the store room usable for others"
+        ],
+        "avoid": [
+          "Free pouring chemicals",
+          "Blocking exits or sprinkler heads with stock",
+          "Leaving a chemical store unlocked in a public building"
+        ]
+      }
+    },
+    {
+      "id": "jc_t_010",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What minor maintenance can you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Say honestly what you are comfortable and permitted to do: changing light tubes where allowed, unblocking a sink, replacing a dispenser, tightening a fitting, minor painting, salting a path",
+          "Know the line clearly: electrical work, gas, structural, roof work, and anything requiring a licence goes to a qualified person",
+          "Report faults with enough detail that the trade arrives with the right part",
+          "Do the preventive things that stop bigger problems: clearing gutters and drains where safe, checking for leaks, keeping vents clear",
+          "Log everything so the building has a history",
+          "Say that doing an unqualified repair is a liability, not helpfulness"
+        ],
+        "strong_answer_signals": [
+          "Clear about the line between minor and licensed work",
+          "Reports faults with useful detail",
+          "Does preventive checks"
+        ],
+        "avoid": [
+          "Attempting electrical or gas work",
+          "Reporting a fault as something is broken with no detail",
+          "Repeatedly patching a problem instead of reporting it"
+        ]
+      }
+    },
+    {
+      "id": "jc_t_011",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle building security as part of your job?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "You are often the only person in the building. Locking up properly is part of the work, not an afterthought",
+          "Follow the procedure: check the building before setting the alarm, secure doors and windows, do not prop fire doors, and do not share codes or keys",
+          "Challenge politely or report anyone in the building who should not be there. Never confront someone who could be dangerous",
+          "Know the emergency procedure: alarm activation, fire, medical emergency, and who to call",
+          "Protect what you see. Offices, records and personal belongings are confidential even when they are left out",
+          "Report anything unusual: a forced door, an unfamiliar vehicle, an alarm that failed to set"
+        ],
+        "strong_answer_signals": [
+          "Treats keys and codes as a trust responsibility",
+          "Reports rather than confronting",
+          "Understands confidentiality of what they see"
+        ],
+        "avoid": [
+          "Sharing alarm codes or keys",
+          "Propping a fire door for convenience",
+          "Confronting an intruder alone"
+        ]
+      }
+    },
+    {
+      "id": "jc_t_012",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How is your work measured?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Inspection scores or audits against the specification, which is the most common measure",
+          "Complaints received, and more importantly repeat complaints about the same area",
+          "Route completion within the shift, and whether periodic tasks are actually being done",
+          "Supply cost per square foot or per month, which is where dilution discipline shows up",
+          "Safety record: incidents, near misses, and days without an accident",
+          "Say which of these you personally influenced and by how much"
+        ],
+        "strong_answer_signals": [
+          "Knows inspections are scored against a specification",
+          "Distinguishes a complaint from a repeat complaint",
+          "Connects dilution discipline to cost"
+        ],
+        "avoid": [
+          "Thinking the job is unmeasurable",
+          "No awareness of the inspection process",
+          "Never having seen the specification for their own area"
+        ]
+      }
+    },
+    {
+      "id": "jc_s_001",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You find a spill of an unknown substance. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Do not touch it or clean it until you know what it is. That is the whole answer",
+          "Secure the area first: signs, a barrier, and keep people away",
+          "Try to identify it: a nearby container, a label, or ask someone who works in that area",
+          "For a chemical spill, follow the spill procedure and the safety data sheet, and use the spill kit if you are trained on it",
+          "For blood or body fluid, use the biohazard procedure, full protective equipment, and the correct disinfectant and disposal",
+          "Report it and record it, and never dispose of an unknown chemical down a drain"
+        ],
+        "strong_answer_signals": [
+          "Secures the area before doing anything else",
+          "Identifies before cleaning",
+          "Knows the biohazard and chemical spill procedures are different"
+        ],
+        "avoid": [
+          "Mopping up something unidentified",
+          "Pouring an unknown chemical down a drain",
+          "Cleaning blood with no protective equipment"
+        ]
+      }
+    },
+    {
+      "id": "jc_s_002",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Someone asks you to let them into a locked room. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Politely decline unless you have been authorised. Being helpful is not worth the risk here",
+          "Verify: who they are, whether they are on the authorised list, and whether you can confirm it with a supervisor or security",
+          "Explain the procedure rather than treating them as a suspect. Most requests are genuine and people understand a rule applied consistently",
+          "Offer the route: contact their manager, security, or come back when someone with authority can confirm",
+          "Report it if the request was persistent or if something felt wrong",
+          "Say that access rules exist to protect you as much as the building"
+        ],
+        "strong_answer_signals": [
+          "Declines politely without authorisation",
+          "Offers a route rather than a flat refusal",
+          "Reports a persistent or odd request"
+        ],
+        "avoid": [
+          "Letting someone in because they seemed senior or in a hurry",
+          "Deciding on your own who looks legitimate",
+          "Not reporting a suspicious request"
+        ]
+      }
+    },
+    {
+      "id": "jc_s_003",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You cannot finish your route in the time available. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Prioritise properly: health critical first, which is restrooms, food areas, and high touch points. Then visible and high traffic areas. Then the rest",
+          "Tell the supervisor during the shift, not after. They can move someone or adjust the plan",
+          "Record honestly what was not done rather than signing it off",
+          "Say if the route is consistently too big, with the timings to back it up",
+          "Never skip the restrooms to make the route fit. That is the area everyone judges the building by"
+        ],
+        "strong_answer_signals": [
+          "Health critical areas first",
+          "Tells the supervisor during the shift",
+          "Records honestly what was missed"
+        ],
+        "avoid": [
+          "Signing off the whole route regardless",
+          "Skipping restrooms to save time",
+          "Complaining about the workload without providing timings"
+        ]
+      }
+    },
+    {
+      "id": "jc_s_004",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A staff member is rude to you about the cleaning. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Stay professional. Listen to what the actual complaint is under the tone",
+          "If they are right, say so simply and fix it. If it was not your area or your shift, say that without blaming a colleague by name",
+          "Do not argue and do not accept abuse. Tell your supervisor if it becomes personal or repeated",
+          "Report the substance of the complaint so it gets fixed properly",
+          "Say plainly that you are entitled to be treated respectfully and that there is a process for it"
+        ],
+        "strong_answer_signals": [
+          "Separates the complaint from the tone",
+          "Fixes it if they are right",
+          "Reports abuse rather than absorbing it"
+        ],
+        "avoid": [
+          "Arguing back",
+          "Naming a colleague as the person who failed",
+          "Accepting abuse because of the job title"
+        ]
+      }
+    },
+    {
+      "id": "jc_s_005",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You find a wallet or a phone while cleaning. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Do not open it, do not use it, and do not take it home for safekeeping",
+          "Follow the lost property procedure exactly: hand it to security or the supervisor and record it with the time and the location found",
+          "Get a receipt or make sure it is logged, since that record protects you",
+          "For cash or valuables, get a second person present when you hand it over where the policy allows",
+          "Say plainly that this is a trust question and that the record is what protects everyone"
+        ],
+        "strong_answer_signals": [
+          "Logs it with time and location",
+          "Wants a second person or a record for valuables",
+          "Never opens or keeps it"
+        ],
+        "avoid": [
+          "Putting it in your locker to hand in later",
+          "Opening a wallet to find out whose it is",
+          "Handing it to a colleague informally with no record"
+        ]
+      }
+    },
+    {
+      "id": "jc_s_006",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You are asked to use a chemical you have not been trained on. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Ask for the safety data sheet and the training before using it. You are entitled to both",
+          "Check the label for dilution, protective equipment, ventilation, and surface compatibility",
+          "Say that you will not use a product you do not understand, calmly and without making it a confrontation",
+          "Ask your supervisor to show you or to assign someone trained",
+          "Report if you are pressured to use something unsafely",
+          "Say that chemical injuries and damaged surfaces are both permanent and both avoidable"
+        ],
+        "strong_answer_signals": [
+          "Asks for the safety data sheet",
+          "Declines calmly rather than refusing aggressively",
+          "Reports pressure to use something unsafely"
+        ],
+        "avoid": [
+          "Using it and hoping",
+          "Guessing at dilution",
+          "Trying it on a surface to see what happens"
+        ]
+      }
+    },
+    {
+      "id": "jc_s_007",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You notice a colleague not following procedure. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Say something directly and quietly first. Most of it is habit rather than defiance",
+          "Be specific: mixing chemicals, skipping protective equipment, not signing records, propping fire doors, using the wrong cloth in a restroom",
+          "Escalate to a supervisor if it continues or if it is a safety or infection control issue",
+          "Frame it as protecting the building and the team rather than reporting someone",
+          "Say that anything involving chemicals, biohazard or fire safety goes up immediately, not after a second chance"
+        ],
+        "strong_answer_signals": [
+          "Addresses it directly first",
+          "Escalates safety issues immediately",
+          "Frames it around the risk, not the person"
+        ],
+        "avoid": [
+          "Saying nothing because it is awkward",
+          "Reporting it to everyone except the supervisor",
+          "Giving a second chance on a chemical or fire safety breach"
+        ]
+      }
+    },
+    {
+      "id": "jc_s_008",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "There is a burst pipe or flood in the building overnight. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Safety first: if water is near electrics, do not enter. Isolate power only if you are trained and it is safe",
+          "Stop the source if you know where the stop valve is and it is safe to reach",
+          "Call the emergency contact and the supervisor immediately. This is not a job to handle alone and then mention in the morning",
+          "Contain and protect: barriers, wet vacuum, move what you safely can, protect equipment and records",
+          "Sign the area and keep people out",
+          "Document with photographs, since insurance and the repair both depend on it"
+        ],
+        "strong_answer_signals": [
+          "Recognises the electrical risk first",
+          "Calls immediately rather than handling it alone",
+          "Photographs for the insurance record"
+        ],
+        "avoid": [
+          "Wading into standing water near electrics",
+          "Cleaning it up and reporting it the next day",
+          "Not photographing the damage"
+        ]
+      }
+    },
+    {
+      "id": "jc_s_009",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A parent, student or member of the public asks you a question about the building. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be helpful and polite. In a school or a public building you are part of the impression the place makes",
+          "Answer what you know: directions, opening times, where to find the office",
+          "Do not answer what you do not know or what is not yours to share: staff whereabouts, student information, security arrangements, or anything confidential",
+          "Direct them to the office or the right person rather than guessing",
+          "In a school, follow the safeguarding rules on interacting with children and report any concern through the proper route",
+          "Report anything that felt wrong rather than deciding it was probably nothing"
+        ],
+        "strong_answer_signals": [
+          "Helpful within their scope",
+          "Does not share information that is not theirs to share",
+          "Knows the safeguarding route in a school"
+        ],
+        "avoid": [
+          "Guessing at an answer",
+          "Discussing staff or student matters",
+          "Deciding on your own that a concern was probably nothing"
+        ]
+      }
+    },
+    {
+      "id": "jc_s_010",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "An inspection or audit is happening tomorrow. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "The honest answer is that a building ready for inspection is a building cleaned properly all year. Say that first",
+          "Check the specification and walk your area looking at it as an inspector would, from the entrance rather than from your usual position",
+          "Focus on what is actually scored: restrooms, high touch points, floor edges and corners, glass, dispensers stocked, records complete",
+          "Fix the things you have been meaning to report, and report the ones you cannot fix",
+          "Make sure the records and check sheets are complete and honest",
+          "Say what you would do afterwards with any finding: correct it and change the routine so it holds"
+        ],
+        "strong_answer_signals": [
+          "Says continuous readiness is the real answer",
+          "Looks at the area from the visitor viewpoint",
+          "Corrects the routine after a finding, not just the fault"
+        ],
+        "avoid": [
+          "A frantic clean the night before as the whole plan",
+          "Backfilling check sheets to look complete",
+          "Fixing the finding without changing the routine"
+        ]
+      }
+    },
+    {
+      "id": "jc_m_001",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you supervise a cleaning team?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Make the standard visible: a written specification, a walk through, and photographs of what good looks like. Most failures are unclear expectations",
+          "Build routes that actually fit the time. A route nobody can finish teaches the team to sign off work they did not do",
+          "Be present on the floor, including on the night shift. A supervisor who never sees the overnight work does not know the building",
+          "Inspect regularly and consistently, and give feedback the same night rather than in a monthly meeting",
+          "Cover absence with a plan rather than by overloading whoever turned up",
+          "Recognise good work specifically. This is a job where people are noticed only when something is wrong"
+        ],
+        "strong_answer_signals": [
+          "Routes that fit the time available",
+          "Sees the night shift",
+          "Recognises good work, not only failures"
+        ],
+        "avoid": [
+          "Managing entirely from inspection reports",
+          "Routes that cannot be completed",
+          "Only speaking to the team when there is a complaint"
+        ]
+      }
+    },
+    {
+      "id": "jc_m_002",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you handle a client or building manager complaint?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Go and look at it yourself before responding. Never defend an area you have not seen",
+          "Acknowledge it plainly and give a time for the fix rather than an explanation first",
+          "Find the cause: the route, the schedule, a machine, a supply issue, training, or a genuine performance problem",
+          "Fix the underlying cause and tell the client what changed. A complaint that returns is far more damaging than the first one",
+          "Track repeat complaints by area, since the pattern is the real information",
+          "Support the cleaner privately while still fixing the problem"
+        ],
+        "strong_answer_signals": [
+          "Looks before responding",
+          "Fixes the cause and reports the change",
+          "Tracks repeat complaints by area"
+        ],
+        "avoid": [
+          "Defending the team before checking",
+          "Blaming the cleaner to the client",
+          "Fixing the same complaint repeatedly without changing anything"
+        ]
+      }
+    },
+    {
+      "id": "jc_m_003",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you plan staffing and routes for a building?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start from the specification and the actual areas: square footage, floor types, room counts, and the frequency each task needs",
+          "Use realistic production rates rather than guesses, and time a route before committing to it",
+          "Build in the periodic work rather than assuming it happens in spare time. It never does",
+          "Schedule around the building: when it is occupied, when the loud work can happen, when access is possible",
+          "Plan for absence with a cover arrangement rather than assuming full attendance",
+          "Review after a month against reality and adjust rather than blaming the team for the plan"
+        ],
+        "strong_answer_signals": [
+          "Times a route before committing",
+          "Schedules periodic work explicitly",
+          "Reviews the plan against reality"
+        ],
+        "avoid": [
+          "Building a route from a spreadsheet and never walking it",
+          "Assuming periodic work fits in spare time",
+          "Blaming the team when the plan was wrong"
+        ]
+      }
+    },
+    {
+      "id": "jc_m_004",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you control supply and equipment costs?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Dilution control is the biggest single lever. Dispensing systems and training beat telling people to use less",
+          "Track usage per building and per month so an anomaly is visible rather than absorbed",
+          "Standardise products rather than carrying twenty. Fewer products means better training and better pricing",
+          "Maintain equipment properly. A machine that fails costs more in labour than the maintenance would have",
+          "Review contracts and get comparative pricing rather than renewing by habit",
+          "Never cut consumables that occupants see, such as paper and soap. That saving costs the contract"
+        ],
+        "strong_answer_signals": [
+          "Dilution systems rather than instructions",
+          "Tracks usage per building",
+          "Refuses to cut visible consumables"
+        ],
+        "avoid": [
+          "Cutting paper and soap to hit a budget",
+          "Carrying dozens of products",
+          "Deferring machine maintenance"
+        ]
+      }
+    },
+    {
+      "id": "jc_m_005",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you handle a team member whose work is below standard?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Check the standard is actually clear before treating it as performance. Show, do not just tell",
+          "Diagnose: training, equipment, an unrealistic route, a health issue, or genuine effort. They need different responses",
+          "Walk the area with them and agree what good looks like, then set a review date and keep it",
+          "Document fairly and follow the process if it does not improve, consistently for everyone",
+          "Act on it. A team notices immediately when someone is carried and it damages everyone else",
+          "Say what you did that turned someone around, since that is the answer they want"
+        ],
+        "strong_answer_signals": [
+          "Checks the standard is clear first",
+          "Walks the area with them",
+          "Acts rather than tolerating"
+        ],
+        "avoid": [
+          "Warnings without a walk through",
+          "Applying standards inconsistently",
+          "Letting it continue because staff are hard to replace"
+        ]
+      }
+    },
+    {
+      "id": "jc_m_006",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you manage health and safety for a cleaning team?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Training first and recorded: chemicals, manual handling, equipment, working at height, lone working",
+          "Safety data sheets accessible where the chemicals are, not in an office nobody visits",
+          "Protective equipment provided, correct, and actually available rather than requested",
+          "Investigate every incident and near miss for the cause. Slips, manual handling and chemical exposure are the big three",
+          "Lone working procedure with check in and check out, because most of this work happens when the building is empty",
+          "Make it clear that a task can be stopped for safety and that nobody is penalised for it"
+        ],
+        "strong_answer_signals": [
+          "Names slips, manual handling and chemicals as the big three",
+          "Lone working procedure taken seriously",
+          "Supports stopping a task for safety"
+        ],
+        "avoid": [
+          "Training that is not recorded",
+          "Protective equipment that has to be requested",
+          "Only investigating incidents that caused injury"
+        ]
+      }
+    },
+    {
+      "id": "jc_m_007",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you keep staff in a high turnover job?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start with what people actually leave over: unrealistic routes, being spoken to badly, unpredictable hours, and equipment that does not work",
+          "Train properly at the start. Most early leavers were never shown the standard",
+          "Give predictable shifts and publish rotas early",
+          "Provide the tools. Nothing demoralises a cleaner faster than a broken machine and a mop that does not clean",
+          "Recognise people by name and in front of the client where you can. This work is invisible until it fails",
+          "Create a path: trainer, team lead, supervisor, floor care specialist",
+          "Give the number: turnover or average tenure"
+        ],
+        "strong_answer_signals": [
+          "Names routes and equipment as retention issues",
+          "Fixes onboarding",
+          "Makes the work visible to the client"
+        ],
+        "avoid": [
+          "Treating turnover as unavoidable",
+          "Relying on pay alone",
+          "Ignoring broken equipment as a morale issue"
+        ]
+      }
+    },
+    {
+      "id": "jc_m_008",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you win or keep a cleaning contract?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know the building and price it honestly. A contract won by underpricing fails on quality within three months",
+          "Show the specification, the frequencies, and the staffing that delivers it, so the client can see what they are buying",
+          "Be reachable and responsive. Most contracts are lost on communication, not on cleaning",
+          "Report proactively: audit scores, completed periodic work, issues found in the building",
+          "Handle problems visibly. A client who sees a problem fixed quickly trusts you more than one who never sees a problem",
+          "Add value the client notices: reporting maintenance faults, flagging security issues, adjusting for their busy periods"
+        ],
+        "strong_answer_signals": [
+          "Prices honestly rather than to win",
+          "Reports proactively rather than when asked",
+          "Understands contracts are lost on communication"
+        ],
+        "avoid": [
+          "Underpricing to win and cutting hours later",
+          "Only contacting the client when invoicing",
+          "Hiding a service failure rather than reporting it"
+        ]
+      }
+    },
+    {
+      "id": "jc_mo_001",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Why do you want this job?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Give an honest reason: you like finishing a shift and seeing the result, you prefer working independently, the hours suit you, you take pride in a building looking right",
+          "Connect it to something you have actually done",
+          "Say what you are good at: thoroughness, reliability, working alone, physical stamina",
+          "Practical reasons such as hours and location are respected here when paired with genuine commitment"
+        ],
+        "strong_answer_signals": [
+          "An honest reason rather than a rehearsed one",
+          "Names what they are actually good at",
+          "Comfortable with the practical motivations"
+        ],
+        "avoid": [
+          "Only saying you need a job",
+          "Suggesting the work is beneath you",
+          "Nothing about standards or pride in the work"
+        ]
+      }
+    },
+    {
+      "id": "jc_mo_002",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you feel about working nights or early mornings?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be exact and honest. Most of this work happens when the building is empty and a vague answer becomes a problem in week two",
+          "Say how you manage it: sleep routine, transport, and whether you have done it before",
+          "State any genuine constraint up front: transport at night, caring responsibilities, a second job",
+          "Say what you like about it if you do, such as working without interruption"
+        ],
+        "strong_answer_signals": [
+          "Exact about availability",
+          "Has actually done the shift pattern or knows what it takes",
+          "States constraints up front"
+        ],
+        "avoid": [
+          "Saying you are flexible when you are not",
+          "Discovering a transport problem after starting",
+          "Complaining about the hours in the interview"
+        ]
+      }
+    },
+    {
+      "id": "jc_mo_003",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What does a good job look like to you?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Describe it concretely: restrooms you would use yourself, floors with no streaks or edges missed, dispensers full, bins empty, nothing sticky, nothing missed in the corners",
+          "Say that the test is walking back in from the entrance and looking at it as someone arriving would",
+          "Mention the invisible part: high touch points, and the areas nobody checks",
+          "Say that consistency is the real standard. A good night and a bad night is not a standard"
+        ],
+        "strong_answer_signals": [
+          "Describes it concretely rather than saying clean",
+          "Checks from the visitor viewpoint",
+          "Values consistency over one good night"
+        ],
+        "avoid": [
+          "Saying you just clean everything",
+          "No mention of restrooms or detail areas",
+          "Defining good as whatever passes"
+        ]
+      }
+    },
+    {
+      "id": "jc_mo_004",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle the physical demands?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be straightforward. This is physical work: standing, walking, lifting, bending, repetitive movement, for a full shift",
+          "Say how you manage it: technique on lifting, using equipment rather than carrying, pacing the route, footwear, breaks",
+          "Say that reporting a strain early is better than working through it, since back injuries end careers in this trade",
+          "Be honest about anything you cannot do, since discovering it later helps nobody"
+        ],
+        "strong_answer_signals": [
+          "Realistic about the physical demand",
+          "Uses equipment rather than carrying",
+          "Reports strain early"
+        ],
+        "avoid": [
+          "Claiming you can lift anything",
+          "Working through an injury as a point of pride",
+          "Hiding a physical limitation until it becomes a problem"
+        ]
+      }
+    },
+    {
+      "id": "jc_mo_005",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Where do you see yourself in a couple of years?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Honest options here: staying and being excellent at it, floor care specialist, team lead, supervisor, contract manager, or moving into building maintenance",
+          "If you want to stay in the role, say so. It is a legitimate answer and employers value people who mean it",
+          "Name what you would need to learn for whatever step you want, such as floor machine training or a supervisor course",
+          "Show you intend to do this job well regardless"
+        ],
+        "strong_answer_signals": [
+          "Comfortable saying they want to stay and be good at it",
+          "Names a specific step and what it needs",
+          "Committed to the current role either way"
+        ],
+        "avoid": [
+          "Claiming ambitions you do not have",
+          "Making clear this is temporary until something better",
+          "No thought about it"
+        ]
+      }
+    },
+    {
+      "id": "jc_mo_006",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Do you have any questions for us?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Ask what tells you what the job actually is:",
+          "\"What area or route would I cover, and how long is it expected to take?\"",
+          "\"How many people are on a shift and is there a supervisor on site?\"",
+          "\"What equipment and products are provided, and what condition are they in?\"",
+          "\"Is there training on the machines and the chemicals?\"",
+          "\"How is the work inspected, and how often?\"",
+          "The route size against the shift length is the question that decides whether the job is doable"
+        ],
+        "strong_answer_signals": [
+          "Asks about route size against shift length",
+          "Asks about equipment condition and training",
+          "Asks how the work is inspected"
+        ],
+        "avoid": [
+          "No questions",
+          "Only asking about pay",
+          "Asking something already covered"
+        ]
+      }
+    }
+  ]
+}

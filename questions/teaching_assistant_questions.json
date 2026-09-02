@@ -1,0 +1,1392 @@
+{
+  "metadata": {
+    "sector": "Teaching Assistant & Paraprofessional",
+    "generated": "2026-09-02",
+    "total": 46,
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ],
+    "region": "North America",
+    "schema_version": "1.1",
+    "note": "Teaching assistants except postsecondary 1.42M (BLS May 2025). Distinct from the Teaching bank, which covers lead teachers. Covers safeguarding and disclosure handling, supporting without creating dependence, individual education plans and legally required provision, behaviour plans and de-escalation, small group intervention delivery, confidentiality and parent boundaries, and the deployment and inclusion leadership track."
+  },
+  "questions": [
+    {
+      "id": "ta_b_001",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about yourself and your experience working with students.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Setting and age range first: elementary, middle, high school, or early years. Then general classroom, special education, or one to one support",
+          "Say the support type: whole class support, small group instruction, one to one for a specific student, behaviour support, or personal care",
+          "Numbers: class sizes, how many students you supported, how many teachers you worked with, hours per week",
+          "Training and clearances: background check, first aid, any behaviour or crisis intervention training, paraprofessional certification or assessment where the district requires it",
+          "One outcome: a student who progressed, a behaviour plan that worked, a routine you helped establish",
+          "Say why you want to support rather than lead a classroom, since that is a genuine question"
+        ],
+        "strong_answer_signals": [
+          "Names the age range and the support type",
+          "Clearances and training stated without being asked",
+          "Has a specific student outcome to point at"
+        ],
+        "avoid": [
+          "Describing the role as helping out in a classroom",
+          "Being vague about background checks or certification",
+          "Framing it as a step towards being a teacher without saying you value this role"
+        ]
+      }
+    },
+    {
+      "id": "ta_b_002",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you helped a student who was struggling.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Situation: what the student was struggling with. Be specific about the barrier: reading fluency, a maths concept, focus, anxiety, language, or a physical need",
+          "Action: how you broke it down. Smaller steps, a different explanation, a visual, a manipulative, extra practice, or simply time and patience",
+          "Say how you kept it dignified. Support that singles a student out publicly does more harm than good",
+          "Say how you communicated with the teacher about what worked",
+          "Result: the specific progress, and how the student felt about it",
+          "Anonymise the student properly"
+        ],
+        "strong_answer_signals": [
+          "Names the actual barrier rather than saying they were behind",
+          "Protects the student dignity",
+          "Feeds back to the teacher"
+        ],
+        "avoid": [
+          "Doing the work for the student",
+          "Identifying a student in a recognisable way",
+          "A story where you supported without the teacher knowing what you did"
+        ]
+      }
+    },
+    {
+      "id": "ta_b_003",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a challenging behaviour you handled.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Describe the behaviour, not the child. Refusal, disruption, leaving the room, aggression, shutting down, or distress",
+          "Action: stay calm and low key, reduce the audience, use the agreed strategy from the plan rather than improvising",
+          "Look for the function behind it: escape from a hard task, attention, sensory need, hunger, tiredness, or something happening at home",
+          "Follow the behaviour plan and the school policy exactly, especially on any physical intervention",
+          "Result: the student regulated, the lesson continued, and what you told the teacher afterwards",
+          "Say what you changed to prevent the next one"
+        ],
+        "strong_answer_signals": [
+          "Looks for the function behind the behaviour",
+          "Follows the plan rather than improvising",
+          "Reduces the audience rather than escalating"
+        ],
+        "avoid": [
+          "Any physical handling outside trained policy",
+          "Describing a child as a problem",
+          "Winning a confrontation in front of the class"
+        ]
+      }
+    },
+    {
+      "id": "ta_b_004",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about working with a teacher.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Say what a good working relationship looks like: knowing the lesson plan in advance, agreeing your role, and a quick check in before and after",
+          "Action: how you learned their style and expectations, and how you asked without interrupting a lesson",
+          "Give an example of anticipating: preparing a resource, spotting a student about to struggle, adjusting a task without being asked",
+          "Result: the lesson ran better and the teacher relied on you",
+          "Say how you handled a disagreement about approach, privately and professionally"
+        ],
+        "strong_answer_signals": [
+          "Agrees the role in advance rather than guessing",
+          "Anticipates rather than waits",
+          "Raises disagreements privately"
+        ],
+        "avoid": [
+          "Contradicting a teacher in front of students",
+          "Waiting to be told what to do every lesson",
+          "A story that is mostly about a difficult teacher"
+        ]
+      }
+    },
+    {
+      "id": "ta_b_005",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you supported a student with additional needs.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Say the need in general terms and the support: autism, ADHD, dyslexia, speech and language, physical disability, hearing or vision, social and emotional needs",
+          "Action: follow the individual plan and the targets in it, and use the strategies agreed rather than your own invention",
+          "Say how you promoted independence rather than dependence, since that is the professional line in this work",
+          "Say how you handled personal care or medical needs if relevant, with dignity and to the agreed protocol",
+          "Result: the specific progress against a target",
+          "Say how you recorded and reported it"
+        ],
+        "strong_answer_signals": [
+          "Follows the individual plan and its targets",
+          "Promotes independence, not dependence",
+          "Records progress against targets"
+        ],
+        "avoid": [
+          "Creating your own approach outside the plan",
+          "Doing everything for the student",
+          "Discussing a student needs where others can hear"
+        ]
+      }
+    },
+    {
+      "id": "ta_b_006",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you had to be flexible.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "This job changes hour to hour: a cover class, a different student, a trip, a lesson that goes differently, a staff absence",
+          "Action: how you adapted without losing the students. Ask what is needed, take the task, and keep the routine steady for the children",
+          "Say how you handle being moved to an unfamiliar class or age group",
+          "Result: the day covered and the students settled",
+          "Say what you do when you are given no notice and no information"
+        ],
+        "strong_answer_signals": [
+          "Adapts without complaint and asks what is needed",
+          "Keeps routine steady for the students",
+          "Handles unfamiliar classes"
+        ],
+        "avoid": [
+          "Rigidity about your assigned student or class",
+          "Complaining about being moved",
+          "Leaving students unsettled during a change"
+        ]
+      }
+    },
+    {
+      "id": "ta_b_007",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you had a concern about a student.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "This is a safeguarding question. Treat it as the most serious one in the interview",
+          "Say the type of concern in general terms: a disclosure, an injury, neglect signs, a change in behaviour, something a child said",
+          "Action: listen without leading or promising confidentiality, reassure, write it down in the child words as soon as possible",
+          "Report immediately to the designated safeguarding lead. It is not your job to investigate or to decide whether it is serious enough",
+          "Result: the referral made and the record kept",
+          "Say plainly that you never promise a child you will keep a secret"
+        ],
+        "strong_answer_signals": [
+          "Reports to the safeguarding lead immediately",
+          "Never promises confidentiality to a child",
+          "Records in the child own words"
+        ],
+        "avoid": [
+          "Deciding it was probably nothing",
+          "Investigating it yourself",
+          "Promising a child you will not tell anyone"
+        ]
+      }
+    },
+    {
+      "id": "ta_b_008",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you received feedback.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Real feedback here: prompting too much, stepping in too quickly, being too quiet, not following the behaviour plan consistently, missing a recording deadline",
+          "Action: how you asked what good looked like and what you changed",
+          "Result: the observable difference for the student",
+          "Say whether you asked the teacher to watch and give you more feedback afterwards"
+        ],
+        "strong_answer_signals": [
+          "Asks what good looks like",
+          "Change measured by student outcome",
+          "Invites more feedback"
+        ],
+        "avoid": [
+          "Feedback that was really praise",
+          "Explaining why the feedback was unfair",
+          "No change afterwards"
+        ]
+      }
+    },
+    {
+      "id": "ta_b_009",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you worked with a parent or carer.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Be clear about the boundary first: what a teaching assistant can share is usually limited and routed through the teacher",
+          "Situation: a handover at the door, a question about the day, a concern raised informally",
+          "Action: be warm and factual about the routine, and direct anything about progress, behaviour or concerns to the teacher",
+          "Never discuss another child, and never share your own opinion about a diagnosis or a family situation",
+          "Result: the parent felt heard and the right person handled it",
+          "Say that you report anything a parent tells you that raises a concern"
+        ],
+        "strong_answer_signals": [
+          "Knows the boundary on what to share",
+          "Directs to the teacher rather than answering",
+          "Reports concerns raised informally"
+        ],
+        "avoid": [
+          "Discussing progress or behaviour without the teacher",
+          "Mentioning another child",
+          "Offering an opinion on a diagnosis"
+        ]
+      }
+    },
+    {
+      "id": "ta_b_010",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you helped a whole class, not just one student.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Examples: managing a group activity, supervising a transition, preparing resources, running a small group intervention, covering while the teacher dealt with an incident",
+          "Action: what you actually did and how you kept the learning going rather than just supervising",
+          "Say how you used the teacher plan rather than improvising",
+          "Result: the lesson continued, the group finished the task, the transition was calm",
+          "Say what you learned about managing more than one student at once"
+        ],
+        "strong_answer_signals": [
+          "Keeps learning going rather than only supervising",
+          "Works from the teacher plan",
+          "Handles transitions, which are where most classrooms lose time"
+        ],
+        "avoid": [
+          "Only ever describing one to one work",
+          "Improvising a lesson with no reference to the plan",
+          "Treating whole class moments as crowd control"
+        ]
+      }
+    },
+    {
+      "id": "ta_t_001",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What do you understand about safeguarding and child protection?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Say the core principle: safeguarding is everyone responsibility and the child comes first, always",
+          "Know the signs across categories: physical, emotional, neglect, sexual abuse, and online harm",
+          "If a child discloses: listen, do not lead or ask probing questions, do not promise confidentiality, reassure them they did the right thing, record in their words, report immediately",
+          "Know who the designated safeguarding lead is in any school you work in, on day one",
+          "Report low level concerns too. A pattern is built from small observations",
+          "Professional conduct: never be alone with a child in a way that breaches policy, never share personal contact details, no social media contact",
+          "Say that you would report a concern about a colleague through the same route"
+        ],
+        "strong_answer_signals": [
+          "Reports without deciding whether it is serious enough",
+          "Never promises confidentiality",
+          "Would report a concern about a colleague"
+        ],
+        "avoid": [
+          "Investigating a disclosure",
+          "Asking a child leading questions",
+          "Not knowing who the safeguarding lead is"
+        ]
+      }
+    },
+    {
+      "id": "ta_t_002",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you support learning without doing the work for the student?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Name the risk directly: over prompting creates dependence and hides what a student can actually do",
+          "Use a ladder of support: wait time first, then a prompt to think, then a question, then a hint, then a model. Give the least support that works",
+          "Wait longer than feels comfortable. Most adults intervene within three seconds and the student never gets there",
+          "Let the student struggle productively. Difficulty is where learning happens and rescuing removes it",
+          "Fade support deliberately over time and record what level of prompting was needed",
+          "Report honestly what the student did independently, since the teacher assessment depends on it"
+        ],
+        "strong_answer_signals": [
+          "Names dependence as the risk",
+          "Uses least support that works and fades it",
+          "Reports honestly what was independent"
+        ],
+        "avoid": [
+          "Giving the answer to keep the student moving",
+          "Sitting so close the student never attempts alone",
+          "Reporting work as independent when it was heavily prompted"
+        ]
+      }
+    },
+    {
+      "id": "ta_t_003",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What behaviour management strategies do you use?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Prevention first: clear routines, knowing the triggers, preparing the student for change, and catching the good behaviour before the bad",
+          "Follow the school policy and the individual plan consistently. Inconsistency between adults is what breaks behaviour systems",
+          "Use low key responses first: proximity, a look, a quiet reminder, a redirection. Escalating early escalates the student",
+          "Give take up time after an instruction rather than standing over a student waiting",
+          "De-escalation: calm voice, reduce the audience, give choices, allow a way to comply without losing face",
+          "Know the policy on physical intervention and that it is a last resort requiring training",
+          "Restore afterwards: reconnect with the student rather than leaving the incident hanging"
+        ],
+        "strong_answer_signals": [
+          "Prevention and routines before response",
+          "Low key responses first",
+          "Restores the relationship afterwards"
+        ],
+        "avoid": [
+          "Public confrontation",
+          "Any physical handling without training and policy",
+          "Applying a different standard from the teacher"
+        ]
+      }
+    },
+    {
+      "id": "ta_t_004",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What do you know about individual education plans and targets?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know what the plan is: the student needs, the agreed targets, the strategies, and the provision that must be delivered",
+          "Read it before working with the student rather than learning by trial and error",
+          "Deliver the strategies as written. Consistency across adults is most of what makes a plan work",
+          "Record against the targets: what was done, what the student achieved, and how much support was needed",
+          "Feed observations back. You often see things in the moment that a teacher or specialist cannot",
+          "Attend or contribute to reviews where you are included, since your evidence is the most detailed available",
+          "Know that a plan may be legally binding provision, not a suggestion"
+        ],
+        "strong_answer_signals": [
+          "Reads the plan before working with the student",
+          "Records against targets with the support level",
+          "Understands the provision may be legally required"
+        ],
+        "avoid": [
+          "Working from what you think is best instead of the plan",
+          "Not recording anything",
+          "Treating targets as background information"
+        ]
+      }
+    },
+    {
+      "id": "ta_t_005",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you support a student with a specific learning difficulty?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Say what you know about the profile: dyslexia, dyscalculia, dyspraxia, ADHD, autism, speech and language needs",
+          "Match the support to the barrier rather than the label. Two students with the same diagnosis need different things",
+          "Practical strategies: chunking, visual supports, overlays or fonts, pre teaching vocabulary, task boards, timers, movement breaks, reduced writing demand",
+          "Use the technology where available: text to speech, speech to text, recording, and word prediction",
+          "Protect self esteem. Support that marks a student out publicly costs more than it gains",
+          "Say that you follow the specialist advice from the school rather than internet strategies"
+        ],
+        "strong_answer_signals": [
+          "Supports the barrier rather than the label",
+          "Names practical strategies",
+          "Follows specialist advice"
+        ],
+        "avoid": [
+          "Treating a diagnosis as a fixed recipe",
+          "Making the support visible in a way that embarrasses the student",
+          "Using strategies you found online instead of the plan"
+        ]
+      }
+    },
+    {
+      "id": "ta_t_006",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you record and report on student progress?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Record what was actually done and what the student produced, with the level of support needed",
+          "Be specific and factual. Completed six of ten questions with verbal prompts is useful, tried hard is not",
+          "Record behaviour incidents factually and without interpretation. Describe what happened, not why you think it happened",
+          "Keep records securely. This is personal data about children and it has the same protection as any other",
+          "Feed back to the teacher the same day where it matters, not at the end of the week",
+          "Say how your notes help the teacher plan the next lesson"
+        ],
+        "strong_answer_signals": [
+          "Records support level, not just completion",
+          "Factual rather than interpretive",
+          "Same day feedback on what matters"
+        ],
+        "avoid": [
+          "Vague notes like worked well today",
+          "Interpreting motive in a behaviour record",
+          "Leaving student records where others can see them"
+        ]
+      }
+    },
+    {
+      "id": "ta_t_007",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you run a small group intervention?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know the programme and follow it as designed. Interventions work because they are delivered as intended",
+          "Prepare before the session: resources ready, the space set up, and knowing where each student left off",
+          "Keep the pace and the routine consistent. Students in intervention groups usually need predictability most",
+          "Manage the group so one student does not absorb all the time",
+          "Assess as you go and record it, since the point of an intervention is measurable progress",
+          "Feed back to the teacher and flag when a student is not responding, so the provision can change",
+          "Return the student to class in a way that does not draw attention"
+        ],
+        "strong_answer_signals": [
+          "Delivers the programme as designed",
+          "Records measurable progress",
+          "Flags when it is not working"
+        ],
+        "avoid": [
+          "Improvising the intervention content",
+          "Running it without recording outcomes",
+          "Letting a group become a chat"
+        ]
+      }
+    },
+    {
+      "id": "ta_t_008",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What do you know about health, safety and personal care in a school?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know the basics: fire procedure, first aid arrangements, medical plans, allergies and epipen location, and the risk assessments for your activities",
+          "Follow medical protocols exactly. Never give medication outside the agreed procedure",
+          "Personal care: follow the agreed care plan, protect dignity and privacy, follow the policy on who is present, and record it",
+          "Supervision: know your ratios on trips and in the playground, and never let supervision lapse because you are talking to a colleague",
+          "Report accidents and near misses through the school system",
+          "Say that you check for allergies and medical needs before any food related activity"
+        ],
+        "strong_answer_signals": [
+          "Knows medical protocols are followed exactly",
+          "Protects dignity in personal care and records it",
+          "Checks allergies before food activities"
+        ],
+        "avoid": [
+          "Giving medication informally",
+          "Personal care outside the agreed plan or without a record",
+          "Supervision lapses during playground duty"
+        ]
+      }
+    },
+    {
+      "id": "ta_t_009",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you support learning in a specific subject?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be honest about your subject confidence. Employers would rather know than discover it during a lesson",
+          "Prepare: read the lesson plan, and check you understand the content and the method the teacher uses before the lesson",
+          "Use the school method, not the one you were taught. Different subtraction methods confuse students badly",
+          "Ask the teacher when you are unsure rather than guessing in front of the student",
+          "For reading: hear the student read, support decoding, check comprehension, and record fluency",
+          "For maths: use concrete materials before abstract, and check understanding rather than answers"
+        ],
+        "strong_answer_signals": [
+          "Honest about subject confidence",
+          "Uses the school method",
+          "Asks rather than guessing in front of a student"
+        ],
+        "avoid": [
+          "Teaching a different method from the teacher",
+          "Guessing at content in front of the class",
+          "Not reading the lesson plan"
+        ]
+      }
+    },
+    {
+      "id": "ta_t_010",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you promote independence in the students you support?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "This is the professional test of the role. A student who cannot function without their assistant has been failed, not helped",
+          "Fade prompting deliberately and record the level. The plan should move towards less support, not more",
+          "Teach the strategy rather than the answer: how to find it, how to check it, how to ask for help appropriately",
+          "Encourage peer support so the adult is not the only route",
+          "Step back physically. Sitting beside a student all lesson creates dependence and it also marks them out",
+          "Celebrate independent work specifically so the student notices the progress too"
+        ],
+        "strong_answer_signals": [
+          "Frames dependence as a failure of support",
+          "Fades prompting with a record",
+          "Uses peer support to reduce adult reliance"
+        ],
+        "avoid": [
+          "Being permanently attached to one student",
+          "Measuring success by how much you helped",
+          "Doing the task so the work looks finished"
+        ]
+      }
+    },
+    {
+      "id": "ta_t_011",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle confidentiality in a school?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Everything about a child stays within the professional circle: the teacher, the relevant staff, and the safeguarding lead",
+          "Do not discuss students in corridors, staff rooms where others can hear, or at the school gate",
+          "Never discuss one child with another child parent, however casual the question",
+          "No social media contact with students or families, and no photographs on personal devices",
+          "Records and plans stay secure and are not taken home unless the policy allows",
+          "The exception is safeguarding. A concern is shared upward regardless of who asked you to keep it quiet"
+        ],
+        "strong_answer_signals": [
+          "Knows safeguarding overrides confidentiality",
+          "No social media or personal device photographs",
+          "Careful about corridor and gate conversations"
+        ],
+        "avoid": [
+          "Discussing a child with another parent",
+          "Taking photographs on a personal phone",
+          "Keeping a safeguarding concern quiet because a parent asked"
+        ]
+      }
+    },
+    {
+      "id": "ta_t_012",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What makes a classroom routine work?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Consistency between adults. Students test the boundary with whoever is least consistent, and that is usually the person who has not been briefed",
+          "Clear routines for the moments that break down: entry, transitions, getting equipment, tidying, lining up, and leaving",
+          "Prepare the environment: resources ready, seating as planned, visual timetable visible where used",
+          "Know the signals the teacher uses and use the same ones",
+          "Anticipate the friction points and be positioned where they happen rather than at the front",
+          "Transitions are where most learning time is lost. Say that, because it shows you have actually watched a classroom"
+        ],
+        "strong_answer_signals": [
+          "Names consistency between adults as the key",
+          "Knows transitions lose the most time",
+          "Positions themselves at the friction points"
+        ],
+        "avoid": [
+          "Using your own signals and rules",
+          "Standing at the front rather than where support is needed",
+          "Only supporting during the main task, not transitions"
+        ]
+      }
+    },
+    {
+      "id": "ta_s_001",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A student refuses to do the work. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Stay calm and do not make it a public battle. A refusal in front of an audience becomes about pride",
+          "Find the reason quietly: too hard, too much writing, does not understand, tired, upset about something else, or avoidance of failure",
+          "Reduce the barrier rather than the expectation where you can: chunk it, scribe part, start it together, change the format",
+          "Offer a limited choice so the student keeps some control: this question or that one, now or in two minutes",
+          "Follow the plan or the school policy if refusal is a known pattern",
+          "Tell the teacher, because a pattern of refusal is information about the work as much as the student"
+        ],
+        "strong_answer_signals": [
+          "Looks for the reason before responding",
+          "Reduces the barrier rather than lowering expectations",
+          "Offers a limited choice"
+        ],
+        "avoid": [
+          "A public standoff",
+          "Doing the work to get it finished",
+          "Not telling the teacher about a pattern"
+        ]
+      }
+    },
+    {
+      "id": "ta_s_002",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A student tells you something that worries you. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Listen. Do not interrupt, do not lead, and do not ask probing questions",
+          "Never promise to keep it secret. Say that you may need to tell someone whose job it is to help",
+          "Reassure them that telling you was the right thing to do",
+          "Record it as soon as possible in their own words, with the date, time and context",
+          "Report to the designated safeguarding lead immediately. Not at the end of the day, and not after you have decided how serious it is",
+          "Do not investigate, do not tell other staff who do not need to know, and do not discuss it with the family"
+        ],
+        "strong_answer_signals": [
+          "Reports immediately without filtering",
+          "Never promises secrecy",
+          "Records in the child own words"
+        ],
+        "avoid": [
+          "Waiting until the end of the day",
+          "Asking questions to find out more",
+          "Deciding it is probably nothing"
+        ]
+      }
+    },
+    {
+      "id": "ta_s_003",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A student becomes physically aggressive. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Safety first: protect the other students, move them away rather than moving the student where possible",
+          "Stay calm and low key. A raised voice escalates it",
+          "Use the de-escalation strategies in the plan: space, quiet, choices, a known calming activity",
+          "Only use physical intervention if you are trained and the policy permits it, and only as a last resort to prevent harm",
+          "Get help. Send for the trained staff or the lead rather than managing alone",
+          "Afterwards: record it factually, follow the reporting procedure, and take part in the review of what triggered it",
+          "Reconnect with the student later. The relationship matters more than the incident"
+        ],
+        "strong_answer_signals": [
+          "Moves the audience rather than the student",
+          "Only trained physical intervention, as a last resort",
+          "Reconnects afterwards"
+        ],
+        "avoid": [
+          "Untrained restraint",
+          "Raising your voice or squaring up",
+          "Handling it alone rather than getting help"
+        ]
+      }
+    },
+    {
+      "id": "ta_s_004",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You disagree with how a teacher is handling a student. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Never contradict them in front of students. That undermines both of you and the students notice immediately",
+          "Raise it privately and at a good moment, framed around the student rather than the teacher judgement",
+          "Bring what you have observed, since your view from beside the student is genuinely different from theirs at the front",
+          "Ask rather than tell: I noticed X, would it help if I tried Y",
+          "Accept the teacher decision. They hold the responsibility for the class",
+          "Escalate only if it is a safeguarding or a safety issue, and then through the proper route without delay"
+        ],
+        "strong_answer_signals": [
+          "Raises it privately and frames it around the student",
+          "Offers observations rather than judgements",
+          "Escalates safeguarding immediately"
+        ],
+        "avoid": [
+          "Contradicting a teacher in the room",
+          "Going straight to the head without speaking to the teacher",
+          "Staying silent about a safeguarding concern to keep the peace"
+        ]
+      }
+    },
+    {
+      "id": "ta_s_005",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You are asked to cover a class alone. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Check what the school policy allows. In many places a teaching assistant covering a class has specific limits",
+          "Ask for the plan and the register, and confirm who to call if something happens",
+          "Keep the routine steady. Students respond to the routine more than to the adult",
+          "Deliver the work set rather than improvising a lesson, and keep the students working",
+          "Manage behaviour with the school system, and get support early rather than late",
+          "Report back to the teacher on what was covered and anything that happened"
+        ],
+        "strong_answer_signals": [
+          "Checks the policy limits",
+          "Asks for the plan and the escalation contact",
+          "Keeps routine and delivers the set work"
+        ],
+        "avoid": [
+          "Improvising a lesson with no plan",
+          "Not knowing who to call",
+          "Letting the routine collapse"
+        ]
+      }
+    },
+    {
+      "id": "ta_s_006",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Two students are arguing and it is escalating. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Intervene early and calmly, before it becomes physical. Presence alone often stops it",
+          "Separate them and give each some space rather than demanding an immediate explanation",
+          "Hear each side separately once they are calm. Trying to resolve it while both are angry does not work",
+          "Focus on the behaviour and what needs to happen next rather than on who started it",
+          "Follow the school system for consequences, and involve the teacher or the lead",
+          "Restore the relationship where you can, since these students still have to work together tomorrow"
+        ],
+        "strong_answer_signals": [
+          "Intervenes early with presence",
+          "Separates before questioning",
+          "Restores rather than only punishing"
+        ],
+        "avoid": [
+          "Trying to establish blame in the middle of it",
+          "Letting it run to see if they sort it out",
+          "Physically pulling students apart when untrained"
+        ]
+      }
+    },
+    {
+      "id": "ta_s_007",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "The student you support is absent. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Ask the teacher what would help most rather than waiting to be told",
+          "Options that are genuinely useful: support another student or group, prepare resources, catch up on recording, run an intervention, prepare for the student return",
+          "Use the time to read the plans and the notes you never get to during a normal week",
+          "Say that you never treat it as a day off, since that is exactly what this question is testing",
+          "Prepare something for the student return so they can catch up"
+        ],
+        "strong_answer_signals": [
+          "Asks the teacher rather than waiting",
+          "Uses the time productively",
+          "Prepares for the student return"
+        ],
+        "avoid": [
+          "Treating it as free time",
+          "Waiting to be given a job",
+          "Sitting in the staff room"
+        ]
+      }
+    },
+    {
+      "id": "ta_s_008",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A parent stops you and asks how their child is doing. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be warm and give the general, factual, day level answer: they had a good morning, they enjoyed the science activity",
+          "Do not give assessment information, behaviour judgements, comparisons with other children, or anything about a diagnosis",
+          "Direct anything substantive to the teacher, and offer to pass on that they would like a conversation",
+          "Never discuss another child",
+          "Report the conversation to the teacher, especially if the parent raised a concern",
+          "Say that this boundary protects the parent as much as the school, since they should get the full picture from the teacher"
+        ],
+        "strong_answer_signals": [
+          "Warm but stays within the boundary",
+          "Passes the request to the teacher",
+          "Reports concerns raised informally"
+        ],
+        "avoid": [
+          "Giving progress or behaviour details",
+          "Comparing their child to others",
+          "Not telling the teacher a concern was raised"
+        ]
+      }
+    },
+    {
+      "id": "ta_s_009",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You notice a student is being excluded or bullied.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Do not ignore it and do not wait to be certain. Low level exclusion is where bullying starts",
+          "Intervene in the moment in a way that does not spotlight the student: change a grouping, join the activity, redirect the group",
+          "Talk to the student privately and gently. Ask open questions rather than telling them what is happening",
+          "Report it to the teacher and follow the school anti bullying policy. Passing it on is required, not optional",
+          "Record what you observed factually with dates, since a pattern is what gets acted on",
+          "Follow up. Checking again next week is what tells you whether anything changed"
+        ],
+        "strong_answer_signals": [
+          "Acts on low level exclusion rather than waiting for proof",
+          "Intervenes without spotlighting",
+          "Records with dates so a pattern is visible"
+        ],
+        "avoid": [
+          "Waiting to be sure before reporting",
+          "Confronting the group publicly",
+          "Reporting once and never following up"
+        ]
+      }
+    },
+    {
+      "id": "ta_s_010",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You are given more students to support than you can manage.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Say what is possible with the numbers you have, and ask the teacher to set the priority",
+          "Focus where the support is required rather than where it is easiest. A student with a legally required provision comes first",
+          "Use grouping so you are supporting several students at once rather than one at a time",
+          "Raise it properly if it is a persistent pattern, with specifics about the students and the provision that is not being delivered",
+          "Record accurately what was delivered. If required provision is not happening, that record is what changes it",
+          "Never quietly absorb it, because the students who lose out are the ones who cannot speak up"
+        ],
+        "strong_answer_signals": [
+          "Asks the teacher to set the priority",
+          "Protects legally required provision first",
+          "Records what was not delivered"
+        ],
+        "avoid": [
+          "Spreading thinly so nobody gets real support",
+          "Silently absorbing an impossible allocation",
+          "Prioritising the easiest students"
+        ]
+      }
+    },
+    {
+      "id": "ta_m_001",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you deploy and lead a team of teaching assistants?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Deploy by need and by provision rather than by habit. The most experienced assistant should usually be with the highest need, not the easiest class",
+          "Make sure every assistant knows the plan for their students and has read it",
+          "Build in briefing time with teachers. Assistants deployed with no briefing are the single biggest waste in a school",
+          "Timetable the interventions properly rather than fitting them in around gaps",
+          "Observe and coach, and give feedback that is specific and about the student outcome",
+          "Track the impact: are the students they support making progress, and can you show it"
+        ],
+        "strong_answer_signals": [
+          "Deploys by need rather than habit",
+          "Protects briefing time with teachers",
+          "Tracks student outcomes, not activity"
+        ],
+        "avoid": [
+          "Deploying by who gets on with whom",
+          "No briefing time built into the timetable",
+          "Measuring assistants by how busy they look"
+        ]
+      }
+    },
+    {
+      "id": "ta_m_002",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you evidence the impact of support staff?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start from the student outcomes: progress against targets, independence levels, attendance, behaviour incidents, reading or maths measures",
+          "Record support levels so a reduction in prompting is visible as progress",
+          "Use intervention entry and exit data rather than impressions",
+          "Compare against what would be expected without the support where you reasonably can",
+          "Be honest about what is not working. An intervention with no impact should be stopped rather than continued",
+          "Present it in the language a leadership team and an inspection use"
+        ],
+        "strong_answer_signals": [
+          "Measures independence, not just attainment",
+          "Uses entry and exit data",
+          "Stops interventions that show no impact"
+        ],
+        "avoid": [
+          "Evidencing activity rather than outcomes",
+          "Continuing an intervention because it has always run",
+          "No baseline to compare against"
+        ]
+      }
+    },
+    {
+      "id": "ta_m_003",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you handle a support staff member who is not following a plan?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Check the plan is clear and that they have actually been given it and trained on it. Very often they have not",
+          "Observe rather than relying on report, and give specific feedback about what you saw",
+          "Diagnose the cause: unclear expectations, disagreement with the approach, workload, confidence, or a relationship with the student",
+          "Model it or arrange for them to watch someone doing it well",
+          "Set a clear expectation with a review date and keep it",
+          "Follow the formal process if it does not improve, but only after real support",
+          "Act quickly where the issue affects a student safety or a legal provision"
+        ],
+        "strong_answer_signals": [
+          "Checks they were actually trained on the plan",
+          "Observes rather than relying on report",
+          "Acts fast where provision is legally required"
+        ],
+        "avoid": [
+          "Assuming non compliance is defiance",
+          "Feedback with no modelling or support",
+          "Letting a provision breach continue while a process runs"
+        ]
+      }
+    },
+    {
+      "id": "ta_m_004",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you support inclusion across a school?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Quality first teaching comes before intervention. Most inclusion is won in the classroom, not in a separate room",
+          "Support teachers to adapt: modelling, resources, planning support, and training on the most common needs",
+          "Watch for support that segregates. A student permanently outside the classroom with an adult is not included",
+          "Involve students and families in the plan rather than designing it around them",
+          "Track who is being withdrawn, how often, and whether it is working",
+          "Build the culture: language, expectations, and staff confidence with additional needs"
+        ],
+        "strong_answer_signals": [
+          "Quality first teaching before intervention",
+          "Watches for support that segregates",
+          "Tracks withdrawal patterns"
+        ],
+        "avoid": [
+          "Solving inclusion by allocating more adults",
+          "Withdrawing students without reviewing the impact",
+          "Designing provision without the family"
+        ]
+      }
+    },
+    {
+      "id": "ta_m_005",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you manage safeguarding as a leader?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Everyone trained, at induction and refreshed, including temporary and volunteer staff",
+          "Make the reporting route unmissable: who the lead is, how to report, and that reporting is always right",
+          "Record and monitor patterns rather than treating each concern as isolated. The pattern is usually the case",
+          "Act on low level concerns about adults too, since that is where most serious cases were missed",
+          "Never let a concern wait for more evidence, and never allow a culture where reporting feels disloyal",
+          "Audit yourself: check the records, check the follow ups, check that referrals were actually made"
+        ],
+        "strong_answer_signals": [
+          "Trains temporary staff and volunteers too",
+          "Monitors patterns rather than isolated incidents",
+          "Acts on low level concerns about adults"
+        ],
+        "avoid": [
+          "A reporting route only permanent staff know",
+          "Waiting for more evidence before referring",
+          "Treating a concern about a colleague differently"
+        ]
+      }
+    },
+    {
+      "id": "ta_m_006",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you handle a difficult conversation with a family?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Prepare: know the facts, the history, and what you can actually offer before the meeting",
+          "Start from the shared goal, which is always the child",
+          "Be honest and specific rather than softening until the message disappears. Families usually already know",
+          "Listen properly. A parent who feels blamed stops hearing anything else",
+          "Bring options and next steps rather than only a problem, and agree who does what by when",
+          "Record it and follow up in writing so there is no ambiguity",
+          "Involve the right people: the teacher, the special needs coordinator, or external services"
+        ],
+        "strong_answer_signals": [
+          "Honest without softening the message away",
+          "Brings options and agreed next steps",
+          "Follows up in writing"
+        ],
+        "avoid": [
+          "Softening until the message is lost",
+          "Blaming the family",
+          "No written record of what was agreed"
+        ]
+      }
+    },
+    {
+      "id": "ta_m_007",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you develop support staff?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Find out what they actually need rather than sending everyone on the same course",
+          "The highest value training is usually specific: a particular need, a behaviour approach, an intervention programme, or subject knowledge",
+          "Use the people you have: peer observation, modelling, and pairing a new assistant with a strong one",
+          "Give real responsibility: leading an intervention, mentoring, contributing to reviews",
+          "Include support staff in meetings and training that affect the students they work with. Excluding them is common and it shows",
+          "Recognise the work publicly. Support staff are the most likely to feel invisible in a school"
+        ],
+        "strong_answer_signals": [
+          "Targets training rather than blanket courses",
+          "Includes support staff in relevant meetings",
+          "Gives real responsibility"
+        ],
+        "avoid": [
+          "Training days that are the same for everyone",
+          "Excluding assistants from planning about their own students",
+          "Development that never leads to responsibility"
+        ]
+      }
+    },
+    {
+      "id": "ta_m_008",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you allocate a limited support budget?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start from statutory and legally required provision. That is not optional and it is funded first",
+          "Then highest need and greatest impact, evidenced rather than assumed",
+          "Consider whether an adult is the right answer. Sometimes technology, a resource, or teacher training delivers more per pound",
+          "Avoid spreading so thin that nothing works. Partial provision often achieves nothing at all",
+          "Be transparent with staff and families about how decisions are made, since the perception of fairness matters",
+          "Review the impact and be willing to move resource away from something that is not working"
+        ],
+        "strong_answer_signals": [
+          "Statutory provision first",
+          "Considers non staffing solutions",
+          "Refuses to spread so thin that nothing works"
+        ],
+        "avoid": [
+          "Allocating by who asks loudest",
+          "Assuming an adult is always the answer",
+          "Never reviewing whether the allocation worked"
+        ]
+      }
+    },
+    {
+      "id": "ta_mo_001",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Why do you want to work with children?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Give a real reason: seeing something click, the progress you can watch happen, the relationships, the variety of a school day",
+          "Connect it to something you have actually done, in work, volunteering, or family life",
+          "Say what age group you work best with and why",
+          "Be honest about practical reasons such as school hours, since employers know and respect it when paired with genuine interest"
+        ],
+        "strong_answer_signals": [
+          "A concrete reason tied to real experience",
+          "Knows which age group suits them",
+          "Honest about practical motivations"
+        ],
+        "avoid": [
+          "Saying you love children as the whole answer",
+          "Only mentioning the holidays and the hours",
+          "Nothing about learning or progress"
+        ]
+      }
+    },
+    {
+      "id": "ta_mo_002",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Why this school?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Show you have looked: the intake, the values, the inspection report, the specialist provision, the way they describe themselves",
+          "Say something specific that fits what you are good at, such as their approach to inclusion or a particular provision",
+          "Connect it to your experience with a similar community or need",
+          "Be honest about practical fit alongside the real reason"
+        ],
+        "strong_answer_signals": [
+          "Specific knowledge of the school",
+          "Connects their strengths to the school context",
+          "Honest about practical fit"
+        ],
+        "avoid": [
+          "An answer that fits any school",
+          "Getting the school phase or intake wrong",
+          "Only mentioning the location"
+        ]
+      }
+    },
+    {
+      "id": "ta_mo_003",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What makes a good teaching assistant?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Name the real qualities with evidence: patience, consistency, knowing when to step back, discretion, reliability, and noticing what others miss",
+          "Say that the hardest skill is not helping too much",
+          "Mention the professional side: following plans, recording accurately, and safeguarding",
+          "Say something about the relationship with the teacher, since half the job is that partnership"
+        ],
+        "strong_answer_signals": [
+          "Names not helping too much as the hard skill",
+          "Includes the professional and recording side",
+          "Values the teacher partnership"
+        ],
+        "avoid": [
+          "A list of adjectives",
+          "Only describing kindness",
+          "Nothing about safeguarding or plans"
+        ]
+      }
+    },
+    {
+      "id": "ta_mo_004",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Do you want to become a teacher?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Answer honestly. Both answers are fine and dishonesty is what causes a problem later",
+          "If yes: say so, say what you want to learn from this role, and commit to the time you will give",
+          "If no: say why this role suits you and that you value it as a career in its own right. Many of the best assistants never want to teach",
+          "Either way, make clear you intend to do this job properly rather than treating it as a waiting room"
+        ],
+        "strong_answer_signals": [
+          "Honest either way",
+          "Values the assistant role in its own right",
+          "Commits to doing the job properly regardless"
+        ],
+        "avoid": [
+          "Saying no when you mean yes",
+          "Treating the role as a stepping stone out loud",
+          "Being vague to avoid the question"
+        ]
+      }
+    },
+    {
+      "id": "ta_mo_005",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle the emotional side of this work?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be honest. Working with children who have difficult circumstances is emotionally demanding and pretending otherwise is not credible",
+          "Say what you do: talking to the right people, using supervision or debriefs where they exist, keeping boundaries, and switching off",
+          "Say that boundaries protect the child too. Over involvement is not the same as care",
+          "Know when to ask for support, and say that you would",
+          "Mention the positive side honestly, since the progress is what sustains people in this work"
+        ],
+        "strong_answer_signals": [
+          "Honest about the emotional demand",
+          "Has real coping habits, not just resilience claims",
+          "Understands boundaries protect the child too"
+        ],
+        "avoid": [
+          "Claiming it never affects you",
+          "Over involvement described as commitment",
+          "No support strategy at all"
+        ]
+      }
+    },
+    {
+      "id": "ta_mo_006",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Do you have any questions for us?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Ask what tells you what the role really is:",
+          "\"Which students would I be supporting, and would it be one to one or across a class?\"",
+          "\"How is time built in for briefing with the class teacher?\"",
+          "\"What training is provided, particularly for specific needs?\"",
+          "\"How are interventions timetabled and recorded?\"",
+          "\"Who is the designated safeguarding lead?\"",
+          "Asking about teacher briefing time is the question that shows you have actually done this job"
+        ],
+        "strong_answer_signals": [
+          "Asks about briefing time with the teacher",
+          "Asks about training for specific needs",
+          "Asks who the safeguarding lead is"
+        ],
+        "avoid": [
+          "No questions",
+          "Only asking about hours and holidays",
+          "Asking something in the job description"
+        ]
+      }
+    }
+  ]
+}

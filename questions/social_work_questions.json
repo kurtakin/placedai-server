@@ -1,0 +1,1414 @@
+{
+  "metadata": {
+    "sector": "Social Work & Community Services",
+    "generated": "2026-09-02",
+    "total": 46,
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ],
+    "region": "North America",
+    "schema_version": "1.1",
+    "note": "Social workers 775,930 (BLS May 2025), plus community and social service assistants. Covers assessment and analysis, structured risk assessment, mandatory reporting where the threshold is suspicion rather than proof, disclosure handling, suicide risk, capacity and consent, disguised compliance, court preparation, boundaries and vicarious trauma, and the supervision and safeguarding leadership track."
+  },
+  "questions": [
+    {
+      "id": "sw_b_001",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about yourself and your social work background.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Field of practice first: child protection, family services, adult and ageing services, mental health, substance use, medical or hospital social work, school social work, housing and homelessness, criminal justice",
+          "Licence and status: the licence you hold, supervision hours completed or in progress, and your degree",
+          "Caseload in numbers: how many cases, the acuity, the setting, statutory or voluntary, and the population you served",
+          "Say your practice framework honestly: strengths based, trauma informed, systems, motivational interviewing, or whatever you actually use rather than a list",
+          "One outcome: a case where the trajectory changed, a service you built, an outcome measure you moved",
+          "Say why this field, since burnout is real and employers screen for people who chose it deliberately"
+        ],
+        "strong_answer_signals": [
+          "Names the field and the caseload size",
+          "States licence and supervision status",
+          "A practice framework they can actually explain"
+        ],
+        "avoid": [
+          "Listing every theory without a practice example",
+          "Vague about licence or supervision status",
+          "No caseload numbers, which tells them nothing about capacity"
+        ]
+      }
+    },
+    {
+      "id": "sw_b_002",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a difficult case you handled.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Anonymise properly. No identifying detail, and say that you are anonymising",
+          "Situation: what made it difficult. Complexity, risk, non engagement, competing needs, limited resources, or a system that was failing the person",
+          "Action: your assessment, the risk you identified, what you did and in what order, and who you brought in",
+          "Say the decision point and your reasoning, including what you ruled out",
+          "Say when you consulted or escalated, since knowing when to seek supervision is competence rather than weakness",
+          "Result: the outcome honestly, including where it was partial",
+          "What you would do differently, since reflective practice is expected"
+        ],
+        "strong_answer_signals": [
+          "Anonymises properly",
+          "Names the decision point and the reasoning",
+          "Honest about a partial or poor outcome"
+        ],
+        "avoid": [
+          "Identifying a client in recognisable detail",
+          "A case where everything worked perfectly",
+          "Never having consulted anyone"
+        ]
+      }
+    },
+    {
+      "id": "sw_b_003",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you worked with a client who did not want your help.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Say the context: mandated involvement, a statutory visit, a family who experienced services as punitive before, or someone who has been let down repeatedly",
+          "Action: be honest about your role and your authority from the first conversation. Pretending to be a friend rather than a statutory worker destroys trust when it surfaces",
+          "Find what they actually want, since there is almost always something they want help with",
+          "Use engagement skills deliberately: listening, validating, transparency, small reliable commitments kept",
+          "Hold the risk while building the relationship. Engagement does not replace assessment",
+          "Result: what changed, even if it was small",
+          "Say what you did when engagement genuinely failed"
+        ],
+        "strong_answer_signals": [
+          "Transparent about role and authority from the start",
+          "Finds what the client wants",
+          "Holds risk while engaging"
+        ],
+        "avoid": [
+          "Pretending the involvement is voluntary when it is not",
+          "Treating non engagement as the client fault",
+          "Dropping the risk assessment because rapport improved"
+        ]
+      }
+    },
+    {
+      "id": "sw_b_004",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you advocated for a client.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Situation: a service refused, a benefit denied, a hospital discharge that was unsafe, a school exclusion, a housing decision, a care package cut",
+          "Action: know the entitlement and the process, gather the evidence, and put it in writing",
+          "Escalate through the proper route: a review, a complaint, an appeal, an advocate, or a legal referral",
+          "Be persistent and professional. Advocacy fails more often through giving up than through being refused",
+          "Support the client to advocate for themselves where they can, since that outlasts your involvement",
+          "Result: what the client got, and what it took"
+        ],
+        "strong_answer_signals": [
+          "Knows the entitlement and the appeal route",
+          "Puts it in writing",
+          "Builds the client own capacity to advocate"
+        ],
+        "avoid": [
+          "Advocacy as arguing rather than evidence",
+          "Giving up at the first refusal",
+          "Doing it entirely for the client with no capacity built"
+        ]
+      }
+    },
+    {
+      "id": "sw_b_005",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you had to make a difficult decision about risk.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Set the risk clearly: harm to a child, self neglect, suicide risk, domestic abuse, exploitation, capacity concerns",
+          "Action: gather information from multiple sources rather than one account, and say which sources",
+          "Weigh it: likelihood, severity, imminence, protective factors, and the person own wishes where capacity allows",
+          "Say what you did and why, including the least restrictive option that managed the risk",
+          "Consult and escalate. Serious risk decisions are not made alone and should not be",
+          "Document the reasoning, not just the decision. The reasoning is what defends a decision later",
+          "Result honestly, including if it went badly"
+        ],
+        "strong_answer_signals": [
+          "Uses multiple information sources",
+          "Least restrictive option that manages the risk",
+          "Documents the reasoning, not just the outcome"
+        ],
+        "avoid": [
+          "A high risk decision made alone",
+          "Only using the client account",
+          "Documenting the decision without the reasoning"
+        ]
+      }
+    },
+    {
+      "id": "sw_b_006",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about working with other agencies.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Name the partners: health, education, police, housing, courts, probation, voluntary sector, substance services",
+          "Action: how you shared information appropriately, chaired or contributed to a meeting, and kept the plan coordinated",
+          "Say how you handled disagreement between agencies about risk or plan, since that is common and it is where children and adults fall through gaps",
+          "Escalate professionally rather than letting a disagreement sit unresolved",
+          "Result: the coordinated plan and the outcome",
+          "Say what you did about an agency that did not do what it agreed"
+        ],
+        "strong_answer_signals": [
+          "Handles inter agency disagreement rather than avoiding it",
+          "Escalates when an agency does not deliver",
+          "Understands gaps between agencies are where harm happens"
+        ],
+        "avoid": [
+          "Blaming other agencies as the point of the story",
+          "Letting a disagreement about risk go unresolved",
+          "Sharing information without a lawful basis"
+        ]
+      }
+    },
+    {
+      "id": "sw_b_007",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you managed a heavy caseload.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Be honest about the number, since caseloads in this field are often above safe levels and pretending otherwise is not credible",
+          "Action: prioritise by risk continuously rather than by who contacts you most",
+          "Protect the non negotiables: statutory visits, court deadlines, safeguarding actions, and required recording",
+          "Escalate in writing when the caseload becomes unsafe, with the specific risk named. Silent absorption is how serious case reviews begin",
+          "Use the tools: duty systems, group supervision, co-working, and closing cases that should be closed",
+          "Result: what you delivered and what you formally flagged as at risk"
+        ],
+        "strong_answer_signals": [
+          "Prioritises by risk continuously",
+          "Escalates an unsafe caseload in writing",
+          "Closes cases that should be closed"
+        ],
+        "avoid": [
+          "Absorbing an unsafe caseload silently",
+          "Letting statutory visits or recording slip",
+          "Prioritising by who complains most"
+        ]
+      }
+    },
+    {
+      "id": "sw_b_008",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a case that affected you personally.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Be honest. Claiming this work never affects you signals either inexperience or poor self awareness",
+          "Say what it was in general terms and what it touched",
+          "Action: what you did with it. Supervision, a debrief, peer support, professional boundaries, and time away",
+          "Say how you kept practising safely while processing it, since the client still needed a competent worker",
+          "Result: how you recovered and what you learned about your own limits",
+          "Say what you would do if you recognised the same signs again"
+        ],
+        "strong_answer_signals": [
+          "Honest about impact",
+          "Uses supervision as the primary route",
+          "Recognises the signs early"
+        ],
+        "avoid": [
+          "Claiming immunity to emotional impact",
+          "Over identification described as commitment",
+          "No support strategy at all"
+        ]
+      }
+    },
+    {
+      "id": "sw_b_009",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about feedback or supervision that changed your practice.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Real examples: being too rescuing, insufficient challenge, over optimism about a family, recording behind, missing a risk indicator, boundary drift",
+          "Action: how you took it. Supervision in this profession is meant to be challenging and reflective, not just case management",
+          "Result: the practice change and the case where it showed",
+          "Say what you now bring to supervision, since a worker who brings their uncertainty is safer than one who brings only updates"
+        ],
+        "strong_answer_signals": [
+          "Uses supervision reflectively rather than as case admin",
+          "Names a real practice weakness",
+          "Brings uncertainty to supervision"
+        ],
+        "avoid": [
+          "Feedback that was really praise",
+          "Treating supervision as a management check",
+          "No practice change afterwards"
+        ]
+      }
+    },
+    {
+      "id": "sw_b_010",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you had to hold a boundary with a client.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Common situations: contact outside working hours, a request for money or a personal favour, social media, a gift, over dependence, a client wanting friendship",
+          "Action: be clear and kind about the boundary and explain why it protects them",
+          "Redirect to what you can offer and to the services that meet the need",
+          "Record it and discuss it in supervision. Boundary issues are a supervision topic, not a private one",
+          "Result: the relationship held and the work continued",
+          "Say plainly that boundaries are for the client benefit, not the worker convenience"
+        ],
+        "strong_answer_signals": [
+          "Frames boundaries as protecting the client",
+          "Takes boundary issues to supervision",
+          "Kind and clear rather than rigid"
+        ],
+        "avoid": [
+          "Giving a client a personal phone number",
+          "Handling boundary drift privately",
+          "Treating boundaries as coldness"
+        ]
+      }
+    },
+    {
+      "id": "sw_t_001",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you carry out an assessment?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start with the purpose and the framework your setting uses, and be explicit about it",
+          "Gather from multiple sources: the person, the family, records, other professionals, and direct observation. A single source assessment is a weak one",
+          "See and speak to the person alone where it is appropriate and safe, particularly children and adults at risk",
+          "Cover the whole picture: needs, strengths, risks, protective factors, history, culture, and what the person wants",
+          "Analyse rather than describe. The analysis is what distinguishes a professional assessment from a chronology",
+          "Be explicit about what you do not know and how you will find out",
+          "Produce a plan with actions, owners, timescales, and a review date"
+        ],
+        "strong_answer_signals": [
+          "Analysis rather than description",
+          "Multiple sources including direct observation",
+          "Explicit about the unknowns"
+        ],
+        "avoid": [
+          "A chronology with no analysis",
+          "Relying on one account",
+          "Never seeing the person alone"
+        ]
+      }
+    },
+    {
+      "id": "sw_t_002",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you assess and manage risk?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Use the structured tool your setting uses, but say that a tool supports judgement rather than replacing it",
+          "Assess the dimensions: likelihood, severity, imminence, frequency, and who is at risk from whom",
+          "Identify protective factors honestly rather than only risks. A risk assessment with no strengths is not balanced",
+          "Distinguish static from dynamic factors, since only the dynamic ones can be worked on",
+          "Plan proportionately and use the least restrictive option that manages the risk",
+          "Review at defined points and after any significant change. A risk assessment from six months ago is a document, not an assessment",
+          "Record the reasoning so a decision can be defended and understood by whoever picks the case up"
+        ],
+        "strong_answer_signals": [
+          "Tool supports judgement rather than replacing it",
+          "Includes protective factors",
+          "Reviews after any significant change"
+        ],
+        "avoid": [
+          "Treating a score as the decision",
+          "Risk assessment with no strengths",
+          "Never revisiting an assessment"
+        ]
+      }
+    },
+    {
+      "id": "sw_t_003",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What are your mandatory reporting duties?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Say plainly that you are a mandated reporter and that the duty is personal and legal",
+          "The threshold is reasonable suspicion or belief, not proof. Say that clearly, because it is the most misunderstood part",
+          "Report to the correct authority within the required timeframe, and follow up in writing",
+          "You do not investigate first and you do not wait to be certain. Investigation is the statutory agency role",
+          "Tell your supervisor, but a supervisor cannot overrule your personal duty to report",
+          "Record what you observed, what you reported, when, and to whom",
+          "Know the specific triggers in your jurisdiction and setting, including for adults at risk"
+        ],
+        "strong_answer_signals": [
+          "Threshold is suspicion, not proof",
+          "Knows a supervisor cannot overrule the personal duty",
+          "Reports within the timeframe and confirms in writing"
+        ],
+        "avoid": [
+          "Waiting to gather more evidence before reporting",
+          "Accepting a supervisor decision not to report",
+          "Investigating before reporting"
+        ]
+      }
+    },
+    {
+      "id": "sw_t_004",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle confidentiality and information sharing?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be clear at the start with the client about the limits of confidentiality, before anything is disclosed rather than after",
+          "The limits are the same everywhere: risk of harm to the client, risk to others, and legal requirements including court orders",
+          "Share on a need to know basis with a lawful basis, and record what you shared, with whom, and why",
+          "Consent where possible, and know when you can share without consent because of risk",
+          "Under sharing is as dangerous as over sharing. Serious case reviews repeatedly find agencies each holding one piece",
+          "Store records securely and never discuss cases where you can be overheard",
+          "Say that you would rather justify a share made for safety than explain a silence"
+        ],
+        "strong_answer_signals": [
+          "Explains limits before disclosure, not after",
+          "Knows under sharing is as dangerous as over sharing",
+          "Records what was shared and why"
+        ],
+        "avoid": [
+          "Promising absolute confidentiality",
+          "Withholding information from a partner agency because of consent when risk applies",
+          "Sharing casually without recording"
+        ]
+      }
+    },
+    {
+      "id": "sw_t_005",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you document and record?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Record contemporaneously or as close as possible. Memory degrades and a late record is worth less",
+          "Separate fact from opinion explicitly, and label professional judgement as such",
+          "Record what was seen and heard, in the person own words where it matters, rather than a summary of your interpretation",
+          "Record decisions with the reasoning, including the options you did not take",
+          "Write as though the client will read it, because they may have a right to",
+          "Never alter a record retrospectively. Add a dated addendum",
+          "Say that in this profession the record is the evidence of the work and often the only protection when a case is reviewed"
+        ],
+        "strong_answer_signals": [
+          "Separates fact from opinion",
+          "Records reasoning, not just decisions",
+          "Writes assuming the client may read it"
+        ],
+        "avoid": [
+          "Recording days later from memory",
+          "Opinion presented as fact",
+          "Amending an earlier entry"
+        ]
+      }
+    },
+    {
+      "id": "sw_t_006",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What practice models or interventions do you use?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Name two or three you actually use and can explain, rather than listing everything you have heard of",
+          "Common ones worth being able to explain: strengths based practice, trauma informed care, motivational interviewing, systemic and family work, solution focused, crisis intervention, task centred practice",
+          "Say how you choose. The model follows the person and the situation, not the other way round",
+          "Be specific about what it looks like in a session rather than defining the theory",
+          "Say how you evaluate whether it is working and what you do when it is not",
+          "Be honest about the fit with your setting, since a twelve session model does not fit a duty team"
+        ],
+        "strong_answer_signals": [
+          "Two or three used properly rather than a long list",
+          "Describes what it looks like in practice",
+          "Evaluates whether it is working"
+        ],
+        "avoid": [
+          "Listing theories with no practice detail",
+          "Applying one model to everyone",
+          "No way of knowing whether it worked"
+        ]
+      }
+    },
+    {
+      "id": "sw_t_007",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you work with people from different cultures and backgrounds?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start from curiosity rather than assumption. Ask about what matters to this person and this family rather than applying a group generalisation",
+          "Know your own position and how it may be experienced: your agency, your authority, your background, and the history the community may have with services",
+          "Use interpreters properly: professional interpreters, not family members and never children, and speak to the person rather than the interpreter",
+          "Distinguish cultural practice from harm clearly. Culture is never a reason to leave someone at risk, and this must be said plainly",
+          "Address structural factors: poverty, discrimination, immigration status, and access barriers are often the real presenting issue",
+          "Be willing to be corrected and to ask when you do not know"
+        ],
+        "strong_answer_signals": [
+          "Curiosity rather than group assumptions",
+          "Never uses children as interpreters",
+          "Clear that culture never justifies harm"
+        ],
+        "avoid": [
+          "Assuming cultural knowledge from a label",
+          "Using a family member to interpret a safeguarding conversation",
+          "Avoiding a risk conversation for fear of appearing culturally insensitive"
+        ]
+      }
+    },
+    {
+      "id": "sw_t_008",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What do you know about capacity and consent?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start from the presumption of capacity. Capacity is decision specific and time specific, not a global status",
+          "The functional test: can the person understand the information, retain it, weigh it, and communicate a decision",
+          "Take all practicable steps to support the decision first: timing, communication method, simpler information, a supporter present",
+          "An unwise decision is not the same as a lack of capacity. Say this explicitly, because it is where most errors happen",
+          "Where capacity is lacking, act in the person best interests, least restrictively, and involve those who know them",
+          "Record the assessment, the steps taken to support, and the reasoning",
+          "Know when to involve legal processes and advocacy"
+        ],
+        "strong_answer_signals": [
+          "Presumption of capacity, decision specific",
+          "An unwise decision is not incapacity",
+          "Supports the decision before assessing"
+        ],
+        "avoid": [
+          "Treating capacity as a global label",
+          "Concluding incapacity because the decision seems unwise",
+          "No record of the supporting steps taken"
+        ]
+      }
+    },
+    {
+      "id": "sw_t_009",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you prepare for court or a formal hearing?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know your evidence: the chronology, the assessments, the decisions and the reasoning, and be able to find any of it quickly",
+          "Write the statement in plain language, separate fact from opinion, and be explicit about the basis for professional judgement",
+          "Be prepared to defend your reasoning rather than your conclusion. The reasoning is what is tested",
+          "Be honest about what you did not do and why. Concealing a gap is far worse than acknowledging one",
+          "Stay professional under challenge. Cross examination is not personal, however it feels",
+          "Do not go beyond your expertise or speculate outside your role",
+          "Prepare with your legal advisor and your supervisor rather than alone"
+        ],
+        "strong_answer_signals": [
+          "Defends reasoning rather than conclusion",
+          "Honest about gaps",
+          "Stays within their expertise"
+        ],
+        "avoid": [
+          "Becoming defensive under challenge",
+          "Concealing a gap in the work",
+          "Offering opinions beyond your professional role"
+        ]
+      }
+    },
+    {
+      "id": "sw_t_010",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you plan for case closure or transition?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Plan the ending from the beginning. Endings that arrive suddenly damage the work that came before",
+          "Close on outcomes rather than on time elapsed or caseload pressure, and be honest when pressure is the real reason",
+          "Prepare the person: what changes, what remains, who to contact, and what to do if things deteriorate",
+          "Make the handover properly where the case transfers: a written summary, a joint visit where possible, and a warm introduction",
+          "Leave the safety net visible: the re-referral route and the crisis contacts",
+          "Record the closure summary so whoever picks it up in a year has the picture",
+          "Recognise the ending emotionally. For some clients you were the most consistent relationship they had"
+        ],
+        "strong_answer_signals": [
+          "Plans the ending from the start",
+          "Warm handover rather than a file transfer",
+          "Recognises the emotional weight of an ending"
+        ],
+        "avoid": [
+          "Closing for caseload reasons and calling it an outcome",
+          "A transfer with no summary or introduction",
+          "An ending the client learns about in a letter"
+        ]
+      }
+    },
+    {
+      "id": "sw_t_011",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What do you know about the legal framework you work in?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Name the statutes and duties relevant to your field, and be honest about the depth of your knowledge",
+          "Know the thresholds: what triggers a statutory duty, what requires a referral, and what requires a court application",
+          "Know the timescales, since statutory work is time bound and missing a timescale has consequences",
+          "Know the rights side too: the person right to information, to advocacy, to challenge, and to complain",
+          "Say that you check rather than assume, and that you use legal advice and your supervisor for anything uncertain",
+          "Say that the law sets the floor and good practice sits above it"
+        ],
+        "strong_answer_signals": [
+          "Honest about the depth of their legal knowledge",
+          "Knows thresholds and timescales",
+          "Knows the client rights side, not just the duties"
+        ],
+        "avoid": [
+          "Claiming legal expertise you do not have",
+          "Not knowing the statutory timescales in your own field",
+          "Treating legal compliance as the whole of good practice"
+        ]
+      }
+    },
+    {
+      "id": "sw_t_012",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you evaluate whether your work is making a difference?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Agree the outcome with the person at the start, in their words, so success is not defined only by the agency",
+          "Use the outcome measures your service uses, but pair them with the person own view",
+          "Look for the observable: school attendance, hospital admissions, housing stability, contact with services, safety indicators, the person own goals",
+          "Review at planned points rather than only at closure, and change the plan when it is not working",
+          "Be honest when the work is not helping. Continuing an ineffective intervention is a decision, not a neutral state",
+          "Use case audit and supervision to check your own judgement, since we all see what we expect to see"
+        ],
+        "strong_answer_signals": [
+          "Agrees the outcome with the person at the start",
+          "Changes the plan when it is not working",
+          "Uses audit to check their own judgement"
+        ],
+        "avoid": [
+          "Measuring activity rather than outcomes",
+          "Continuing an intervention that is not working",
+          "Defining success only in agency terms"
+        ]
+      }
+    },
+    {
+      "id": "sw_s_001",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A child discloses abuse to you. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Listen. Do not interrupt, do not lead, and do not ask investigative questions. Open prompts only, such as tell me more about that",
+          "Never promise confidentiality. Tell them you will have to share it with someone whose job is to keep them safe",
+          "Reassure them that telling you was the right thing and that it is not their fault",
+          "Record as soon as possible in their own words, with date, time, context, and your questions as well as their answers",
+          "Report immediately to the statutory authority and your safeguarding lead. Do not wait for the end of the day and do not decide whether it is serious enough",
+          "Consider immediate safety before the child returns to any environment",
+          "Do not tell the alleged perpetrator or discuss it with the family before the statutory agency advises"
+        ],
+        "strong_answer_signals": [
+          "Never promises confidentiality",
+          "Records their own words including your prompts",
+          "Considers immediate safety before the child goes home"
+        ],
+        "avoid": [
+          "Asking investigative questions",
+          "Telling the family before the authority advises",
+          "Deciding whether it meets a threshold yourself"
+        ]
+      }
+    },
+    {
+      "id": "sw_s_002",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A client tells you they are thinking of ending their life.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Stay calm and stay with them. Do not leave someone alone while you decide what to do",
+          "Ask directly and without euphemism. Asking about suicide does not plant the idea and avoiding it does not help",
+          "Explore the specifics: thoughts, plan, means, intent, timescale, previous attempts, and what has stopped them so far",
+          "Identify protective factors and reasons for living without minimising the distress",
+          "Act on the risk level: immediate danger means emergency services now. Otherwise a same day mental health referral, a safety plan, and means restriction where possible",
+          "Involve family or supports with consent where appropriate, and without consent where the risk requires it",
+          "Document fully, hand over clearly, and follow up rather than assuming the referral closed the risk"
+        ],
+        "strong_answer_signals": [
+          "Asks directly about suicide",
+          "Explores plan, means and intent",
+          "Follows up rather than assuming the referral was enough"
+        ],
+        "avoid": [
+          "Avoiding the word suicide",
+          "Leaving the person alone to make a call",
+          "Treating a referral as the end of your responsibility"
+        ]
+      }
+    },
+    {
+      "id": "sw_s_003",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You disagree with a decision made about a case.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be clear whose decision it is and what your role in it is",
+          "Raise it properly: in supervision, in writing, with the reasoning and the evidence rather than the feeling",
+          "Use the escalation route your organisation has. Most have a formal process for professional disagreement, and inter agency escalation policies exist for exactly this",
+          "Do not let a disagreement about risk sit unresolved. Children and adults are harmed in the gap between agencies who each thought the other was acting",
+          "Record your view and the escalation, since that record matters if the case is reviewed",
+          "Accept a decision made properly, and keep working the case, while continuing to monitor and re-escalate if the risk changes"
+        ],
+        "strong_answer_signals": [
+          "Uses the formal escalation route",
+          "Records the disagreement and the escalation",
+          "Re-escalates if risk changes"
+        ],
+        "avoid": [
+          "Letting a risk disagreement drop",
+          "Escalating by complaining rather than through the process",
+          "Refusing to work the case after being overruled"
+        ]
+      }
+    },
+    {
+      "id": "sw_s_004",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You feel unsafe during a home visit.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Trust the feeling and leave. No assessment is worth an injury and there is no professional credit for staying",
+          "Prevention first: check the case history for risk flags, tell someone where you are and when you will be back, agree a check in, park facing out, and sit nearest the exit",
+          "During the visit: stay aware of exits, do not go into a room you cannot leave, and keep your phone accessible",
+          "Leave calmly with a plain reason rather than a confrontation. You can return with a colleague or the police",
+          "Report and record it so the risk flag is on the file for the next worker",
+          "Do a joint visit or a different setting next time, and say that lone visiting policy exists for a reason"
+        ],
+        "strong_answer_signals": [
+          "Leaves rather than pushing through",
+          "Prevention steps described concretely",
+          "Records the risk for the next worker"
+        ],
+        "avoid": [
+          "Staying to complete the visit",
+          "Not recording the incident",
+          "Visiting a known risk address alone again"
+        ]
+      }
+    },
+    {
+      "id": "sw_s_005",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A family is complying superficially but nothing is changing.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Name it honestly. Disguised compliance is one of the most consistent findings in serious case reviews",
+          "Look for evidence of change rather than agreement: what is actually different for the child or the adult",
+          "Use unannounced visits, see the person alone, and speak to the professionals who see them daily",
+          "Check your own optimism. Workers become invested in a family they like and the child gets lost in that",
+          "Bring it to supervision and to the multi agency meeting rather than carrying the doubt alone",
+          "Escalate if the risk is not reducing. Time drifting is itself a harm to a child",
+          "Be explicit with the family about what change looks like and by when"
+        ],
+        "strong_answer_signals": [
+          "Names disguised compliance",
+          "Checks their own optimism",
+          "Treats drift as a harm in itself"
+        ],
+        "avoid": [
+          "Accepting engagement as evidence of change",
+          "Only seeing the family by appointment",
+          "Letting a case drift because the relationship is good"
+        ]
+      }
+    },
+    {
+      "id": "sw_s_006",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A client asks you for something outside your role.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Common requests: money, a lift, contact outside hours, help with something personal, or a friendship",
+          "Be kind and clear. Explain what you can and cannot do and why the boundary exists",
+          "Meet the underlying need through the proper route: a hardship fund, a service, transport support, an advocate",
+          "Never give money or a personal contact detail. Say that plainly, because it is where boundary drift starts",
+          "Record it and bring it to supervision. Repeated requests are information about unmet need",
+          "Say that boundaries protect the client, since a worker who becomes a friend cannot do the statutory part of the job"
+        ],
+        "strong_answer_signals": [
+          "Meets the underlying need through the proper route",
+          "Never gives money or personal contact details",
+          "Takes it to supervision"
+        ],
+        "avoid": [
+          "Small personal favours to build rapport",
+          "Handling it privately",
+          "A flat refusal with no alternative"
+        ]
+      }
+    },
+    {
+      "id": "sw_s_007",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "The service the client needs does not exist or has a long waiting list.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be honest with the client about the wait rather than implying something is coming soon",
+          "Do what can be done now: an interim plan, a safety plan, a lower threshold service, a voluntary sector option, peer support, or a group",
+          "Advocate and escalate: a priority referral with evidence, a complaint, or a formal record of unmet need",
+          "Record the unmet need explicitly. Aggregated unmet need is what changes commissioning, and if nobody records it nothing changes",
+          "Keep reviewing rather than closing because nothing is available",
+          "Say that managing the gap honestly is part of the job, not a failure of it"
+        ],
+        "strong_answer_signals": [
+          "Honest with the client about the wait",
+          "Records unmet need so it aggregates",
+          "Keeps an interim plan rather than waiting"
+        ],
+        "avoid": [
+          "Implying a service is coming when it is not",
+          "Closing a case because nothing is available",
+          "Not recording the unmet need"
+        ]
+      }
+    },
+    {
+      "id": "sw_s_008",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You realise you made an error on a case.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Address the immediate risk first. Is anyone unsafe because of it, and what needs to happen now",
+          "Report it immediately to your supervisor. In this field a concealed error becomes a much larger problem",
+          "Be honest with the person affected where appropriate, and follow the duty of candour where your setting has one",
+          "Record it factually and never alter an earlier record. Add a dated addendum",
+          "Participate honestly in any review and look for the system cause: caseload, supervision, process, or training",
+          "Change your practice and say what you changed",
+          "Say that a culture where errors are hidden is how serious harm happens"
+        ],
+        "strong_answer_signals": [
+          "Risk first, then report immediately",
+          "Never alters an earlier record",
+          "Looks for the system cause"
+        ],
+        "avoid": [
+          "Deciding it was minor enough not to report",
+          "Amending the record",
+          "Blaming caseload without changing anything"
+        ]
+      }
+    },
+    {
+      "id": "sw_s_009",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A colleague is practising in a way that concerns you.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Distinguish a difference in approach from unsafe or unethical practice. They are handled very differently",
+          "For a difference in approach: talk to them directly and professionally, and bring it to supervision or a peer forum",
+          "For unsafe practice, boundary breaches, or dishonesty: report through the proper route immediately. Your duty is to the client, not to the colleague",
+          "Record what you observed factually, without speculation",
+          "Do not investigate it yourself and do not discuss it around the team",
+          "Say plainly that professional codes require you to act on concerns about a colleague, and that silence is itself a breach"
+        ],
+        "strong_answer_signals": [
+          "Distinguishes approach from unsafe practice",
+          "Knows the professional duty to report",
+          "Does not investigate or discuss around the team"
+        ],
+        "avoid": [
+          "Loyalty to a colleague over client safety",
+          "Discussing it with other colleagues first",
+          "Waiting to be sure before raising it"
+        ]
+      }
+    },
+    {
+      "id": "sw_s_010",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Your caseload has become unsafe.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Quantify it before the conversation: number of cases, acuity, statutory deadlines at risk, and visits not happening",
+          "Raise it formally and in writing with your supervisor, naming the specific risks rather than describing pressure",
+          "Ask for a decision on prioritisation rather than asking them to solve it. Make clear what will not happen if nothing changes",
+          "Keep working the highest risk cases and keep recording",
+          "Escalate further if nothing changes, using the organisation route",
+          "Understand why this matters: unsafe caseloads appear in almost every serious case review, and a written record protects both the client and you",
+          "Look after yourself, because deteriorating judgement under exhaustion is itself a risk to clients"
+        ],
+        "strong_answer_signals": [
+          "Quantifies before raising",
+          "Puts it in writing and names what will not happen",
+          "Understands the record protects the client too"
+        ],
+        "avoid": [
+          "Absorbing it silently",
+          "Raising it as a complaint rather than a risk",
+          "Continuing until something goes wrong"
+        ]
+      }
+    },
+    {
+      "id": "sw_m_001",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you supervise social workers?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Supervision has three functions and all three are required: management, development, and support. A supervision that is only case tracking is not supervision",
+          "Protect the reflective space. It is the first thing cut under pressure and the most important thing to keep",
+          "Bring challenge as well as support: check the analysis, test the optimism, look for the child or adult in the record",
+          "Manage caseloads actively and escalate when they become unsafe rather than passing the pressure down",
+          "Watch for the signs of stress and vicarious trauma, and act on them",
+          "Record supervision properly, including decisions and the reasoning",
+          "Audit practice regularly rather than relying on what is reported to you"
+        ],
+        "strong_answer_signals": [
+          "Names all three functions of supervision",
+          "Protects reflective space under pressure",
+          "Escalates unsafe caseloads upward"
+        ],
+        "avoid": [
+          "Supervision as case management only",
+          "Passing caseload pressure down without escalating",
+          "Relying on self report rather than auditing files"
+        ]
+      }
+    },
+    {
+      "id": "sw_m_002",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you manage risk across a team?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know where the risk is: a live picture of the highest risk cases, not a monthly report",
+          "Set clear thresholds and escalation routes so decisions are consistent across workers",
+          "Use group supervision and case discussion so risky cases get more than one mind on them",
+          "Audit files, especially the ones nobody is worried about. The case that has gone quiet is often the concerning one",
+          "Watch for drift: cases open a long time with no change, missed visits, and repeated non engagement",
+          "Support workers to escalate rather than penalising them for it",
+          "Learn from incidents and near misses systemically rather than individually"
+        ],
+        "strong_answer_signals": [
+          "Audits the quiet cases, not just the noisy ones",
+          "Watches for drift explicitly",
+          "Rewards escalation rather than penalising it"
+        ],
+        "avoid": [
+          "Relying on workers to raise risk without a system",
+          "Only reviewing cases that have already gone wrong",
+          "Treating an incident as an individual failure"
+        ]
+      }
+    },
+    {
+      "id": "sw_m_003",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you handle a practice failure or a serious incident?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Immediate safety first: what needs to happen now for the person and anyone else at risk",
+          "Secure the record and the chronology before memories and files move",
+          "Be honest and prompt with the family where the duty of candour applies",
+          "Notify and report through the required routes, including regulators, without delay",
+          "Investigate for the system cause: caseload, supervision, information sharing, thresholds, training, and handover. Individual blame rarely explains it",
+          "Support the worker while still being honest about practice. Both are possible and both are required",
+          "Implement and then verify the changes, since the second review always finds the recommendations from the first were never embedded"
+        ],
+        "strong_answer_signals": [
+          "Honest and prompt with the family",
+          "Investigates the system cause",
+          "Verifies that changes were actually embedded"
+        ],
+        "avoid": [
+          "Blaming an individual worker to close the matter",
+          "Delaying regulatory notification",
+          "Recommendations that are never checked"
+        ]
+      }
+    },
+    {
+      "id": "sw_m_004",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you manage caseloads and workforce capacity?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Use a weighting system rather than raw case counts. Ten complex cases and thirty stable ones are not comparable",
+          "Know your safe caseload range and be able to defend it with evidence",
+          "Escalate honestly when demand exceeds capacity, with the specific risks named. Managing it silently is how failure builds",
+          "Manage the front door: thresholds, screening, and diversion to the right service reduce inappropriate demand",
+          "Close cases that should close, since drift consumes capacity that active risk needs",
+          "Plan for absence and vacancy rather than reacting, and use agency staff deliberately with a plan to exit",
+          "Watch retention as a capacity issue. Turnover costs more capacity than any inefficiency"
+        ],
+        "strong_answer_signals": [
+          "Weights cases rather than counting",
+          "Escalates capacity gaps with named risks",
+          "Treats retention as a capacity issue"
+        ],
+        "avoid": [
+          "Raw case counts as the only measure",
+          "Absorbing demand silently",
+          "Relying on agency staff as a permanent model"
+        ]
+      }
+    },
+    {
+      "id": "sw_m_005",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you retain social workers?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know the real reasons people leave: unsafe caseloads, poor supervision, lack of support after a difficult case, no development, and feeling blamed",
+          "Fix supervision first. It is the single strongest predictor of retention in this profession",
+          "Protect caseloads and be visibly willing to escalate on behalf of the team",
+          "Support after serious incidents properly rather than expecting people to carry on",
+          "Give development: specialisms, practice educator roles, training, and a path that is not only management",
+          "Deal with a poor performer, since good staff leave over the person who is carried",
+          "Give the number: turnover, vacancy rate, or average tenure"
+        ],
+        "strong_answer_signals": [
+          "Fixes supervision as the primary lever",
+          "Visibly escalates on behalf of the team",
+          "Supports properly after serious incidents"
+        ],
+        "avoid": [
+          "Treating turnover as inherent to the sector",
+          "Wellbeing initiatives while caseloads stay unsafe",
+          "Ignoring the carried performer"
+        ]
+      }
+    },
+    {
+      "id": "sw_m_006",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you work with partner agencies as a manager?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Build the relationships before you need them. Escalating to someone you have never spoken to rarely works",
+          "Be clear about thresholds and expectations in both directions, and revisit them when they drift",
+          "Use the formal escalation route for professional disagreement rather than letting it fester at practitioner level",
+          "Share information properly and expect the same. Under sharing between agencies is the most repeated finding in reviews",
+          "Attend and contribute to the multi agency arrangements rather than sending apologies",
+          "Address a partner who is not delivering directly and at the right level, with evidence",
+          "Look at the system: where do cases fall between agencies, and what would close that gap"
+        ],
+        "strong_answer_signals": [
+          "Builds relationships before needing them",
+          "Uses formal escalation rather than letting it sit",
+          "Looks for the systemic gap between agencies"
+        ],
+        "avoid": [
+          "Only contacting partners when there is a problem",
+          "Allowing practitioner level disagreements to stall",
+          "Treating information sharing as optional"
+        ]
+      }
+    },
+    {
+      "id": "sw_m_007",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you improve practice quality across a team?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Audit real files against clear standards, and include the analysis rather than only compliance items",
+          "Feed audit findings back to individuals and to the team, and follow up rather than filing the report",
+          "Use practice observation, not just record review. The record tells you what was written, not what was done",
+          "Make learning routine: case discussion, learning from reviews, and practice weeks",
+          "Set a small number of clear practice priorities rather than twenty standards nobody remembers",
+          "Model it yourself. A manager who has not seen a family in three years loses credibility quickly",
+          "Include feedback from people who use the service, since that is the measure that matters most"
+        ],
+        "strong_answer_signals": [
+          "Audits analysis, not just compliance",
+          "Observes practice, not only records",
+          "Includes service user feedback"
+        ],
+        "avoid": [
+          "Audit reports that are filed and forgotten",
+          "Twenty priorities at once",
+          "Never observing practice directly"
+        ]
+      }
+    },
+    {
+      "id": "sw_m_008",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you support staff wellbeing in a high stress field?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start with the causes rather than the symptoms: caseload, supervision quality, exposure to trauma, and organisational blame culture",
+          "Provide reflective supervision and access to specialist support after serious incidents",
+          "Normalise the impact. Vicarious trauma is a normal response to abnormal exposure, not a personal weakness",
+          "Watch for the signs: cynicism, avoidance, absence, emotional numbing, and over involvement",
+          "Protect boundaries: hours, out of hours contact, and recovery time after a critical incident",
+          "Build a culture where saying I am struggling is safe, and demonstrate it as a manager",
+          "Say that this is a retention and a safety issue, not a benefit. Exhausted workers make unsafe decisions"
+        ],
+        "strong_answer_signals": [
+          "Addresses causes rather than offering wellbeing extras",
+          "Names vicarious trauma as normal",
+          "Frames it as client safety, not staff perk"
+        ],
+        "avoid": [
+          "Wellbeing initiatives while caseloads remain unsafe",
+          "Treating stress responses as individual weakness",
+          "A culture where struggling is not safe to say"
+        ]
+      }
+    },
+    {
+      "id": "sw_mo_001",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Why did you become a social worker?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Give an honest reason. A personal motivation is fine and common, but say what you have done with it professionally",
+          "Connect it to the field you are applying for rather than a general desire to help",
+          "Say what keeps you in it, since that is the more revealing question",
+          "Show you understand the reality: the caseloads, the constraints, the outcomes you cannot control, and that you chose it anyway"
+        ],
+        "strong_answer_signals": [
+          "Honest, including a personal motivation handled professionally",
+          "Connected to this specific field",
+          "Realistic about the constraints"
+        ],
+        "avoid": [
+          "A general desire to help people",
+          "An unresolved personal reason presented as a strength",
+          "Naivety about caseloads and constraints"
+        ]
+      }
+    },
+    {
+      "id": "sw_mo_002",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Why this organisation or this team?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be specific: the population, the practice model, the reputation, the inspection findings, or a service they run",
+          "Connect it to your experience and to how you want to practise",
+          "Say what you want to learn there, since employers want people who will develop rather than only deliver",
+          "Ask yourself honestly what you need from an employer: supervision, caseload, training, or stability, and say it"
+        ],
+        "strong_answer_signals": [
+          "Specific knowledge of the service",
+          "Names what they want to learn",
+          "Honest about what they need from an employer"
+        ],
+        "avoid": [
+          "An answer that fits any social work employer",
+          "Getting the service or the population wrong",
+          "Only mentioning salary or location"
+        ]
+      }
+    },
+    {
+      "id": "sw_mo_003",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you look after yourself in this work?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be specific rather than saying you have good work life balance. Name what you actually do",
+          "Professional supports: supervision, peer support, debriefs, and asking for help early",
+          "Personal supports: boundaries on hours and devices, exercise, relationships, and time genuinely away",
+          "Say how you recognise your own warning signs, since that self awareness is what employers screen for",
+          "Say what you would do if you recognised them, and that you would say so rather than push through"
+        ],
+        "strong_answer_signals": [
+          "Names specific practices, not general resilience",
+          "Knows their own warning signs",
+          "Would speak up rather than push through"
+        ],
+        "avoid": [
+          "Claiming the work does not affect you",
+          "Generic answers about balance",
+          "No support strategy beyond determination"
+        ]
+      }
+    },
+    {
+      "id": "sw_mo_004",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle outcomes you cannot control?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be honest. Sometimes you do everything right and the outcome is still bad, and this profession requires living with that",
+          "Focus on what you control: the quality of the assessment, the decisions, the advocacy, the record, and the relationship",
+          "Use supervision to test whether an outcome reflects your practice or the circumstances, since workers usually blame themselves either way",
+          "Learn genuinely from cases that went badly without collapsing into blame",
+          "Say what sustains you: the cases that did change, and the knowledge that the work matters even when it does not succeed"
+        ],
+        "strong_answer_signals": [
+          "Distinguishes practice quality from outcome",
+          "Uses supervision to test their own judgement",
+          "Learns without self blame"
+        ],
+        "avoid": [
+          "Taking every poor outcome as personal failure",
+          "Detaching so far that nothing lands",
+          "No mechanism for processing it"
+        ]
+      }
+    },
+    {
+      "id": "sw_mo_005",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Where do you see your practice going?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Honest options: specialising, practice educator, advanced practitioner, team manager, policy, therapeutic training, or independent practice",
+          "If you want to stay in direct practice, say so. Experienced practitioners who stay are valuable and increasingly rare",
+          "Name what you would need: a qualification, a specialism, or post qualifying training",
+          "Show commitment to this role rather than describing it as a stepping stone"
+        ],
+        "strong_answer_signals": [
+          "Comfortable saying they want to stay in direct practice",
+          "Names a specific development route",
+          "Committed to the role regardless"
+        ],
+        "avoid": [
+          "Management as the assumed only progression",
+          "No thought about development",
+          "Describing the role as temporary"
+        ]
+      }
+    },
+    {
+      "id": "sw_mo_006",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Do you have any questions for us?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Ask what determines whether you can practise safely and well here:",
+          "\"What is the average caseload, and how is complexity weighted?\"",
+          "\"What does supervision look like, how often, and is it reflective or case management?\"",
+          "\"What is the turnover in this team, and why do people leave?\"",
+          "\"What support is there after a serious incident?\"",
+          "\"What are the biggest pressures on the team right now?\"",
+          "Caseload and supervision are the two questions that predict everything else in this profession"
+        ],
+        "strong_answer_signals": [
+          "Asks about caseload with complexity weighting",
+          "Asks whether supervision is reflective",
+          "Asks about turnover and why people leave"
+        ],
+        "avoid": [
+          "No questions",
+          "Only asking about pay and hours",
+          "Not asking about caseload, which is the central issue in the field"
+        ]
+      }
+    }
+  ]
+}
