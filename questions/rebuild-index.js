@@ -35,6 +35,34 @@ for (const file of files) {
     }
   }
 
+  // Ayni soru metni bir dosyada iki kez olmamali. Accounting bankasi 40 satir
+  // tasiyordu ve kirkinin metni de birebir ayniydi; indeks 40 soru sayiyordu,
+  // Practice modu ayni soruyu kirk kez servis ediyordu ve kimse fark etmemisti.
+  // Uretim hatasi sessizce yayina cikti. Bir daha cikamaz.
+  const textSeen = new Map();
+  for (const q of qs) {
+    const key = String(q.text).trim().toLowerCase();
+    if (textSeen.has(key)) {
+      throw new Error(
+        `${file}: ayni soru metni iki kez var (${textSeen.get(key)} ve ${q.id})\n  "${String(q.text).slice(0, 70)}"`
+      );
+    }
+    textSeen.set(key, q.id);
+  }
+
+  // Cerceve de tekrar etmemeli. Ayni cevap cercevesinin bir dosyada birden
+  // fazla kez gecmesi neredeyse her zaman kopyala yapistir uretim hatasidir.
+  const fwSeen = new Map();
+  for (const q of qs) {
+    const key = JSON.stringify(q.answer_framework);
+    if (fwSeen.has(key)) {
+      throw new Error(
+        `${file}: ayni answer_framework iki kez var (${fwSeen.get(key)} ve ${q.id})`
+      );
+    }
+    fwSeen.set(key, q.id);
+  }
+
   const categories = [...new Set(qs.map((q) => q.category))].sort();
   const seniority  = [...new Set(qs.flatMap((q) => q.seniority))].sort();
 

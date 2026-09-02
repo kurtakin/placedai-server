@@ -2,7 +2,7 @@
   "metadata": {
     "description": "Master index for the Interview Aid App question bank",
     "generated": "2026-09-02",
-    "grand_total": 2044,
+    "grand_total": 2050,
     "total_files": 61,
     "schema_version": "1.1"
   },
@@ -10,14 +10,18 @@
     {
       "file": "accounting_questions.json",
       "sector": "Accounting & Bookkeeping",
-      "total": 40,
+      "total": 46,
       "categories": [
-        "behavioral"
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
       ],
       "seniority_levels": [
         "entry",
-        "mid",
-        "senior"
+        "manager",
+        "mid"
       ]
     },
     {

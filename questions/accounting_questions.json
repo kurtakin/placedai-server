@@ -1,1173 +1,1387 @@
 {
   "metadata": {
     "sector": "Accounting & Bookkeeping",
-    "generated": "2026-08-30",
-    "total": 40,
-    "schema_version": "1.1",
+    "generated": "2026-09-02",
+    "total": 46,
     "categories": [
-      "behavioral"
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
     ],
     "region": "North America",
-    "note": "Written for US and Canadian public accounting, corporate accounting, and bookkeeping roles. GAAP, ASC 606, revenue recognition, reconciliation, closing, audit support, tax prep, AP/AR, payroll."
+    "schema_version": "1.1",
+    "note": "Yeniden yazildi. Onceki surumde 40 satir vardi ve kirkinin da soru metni ve cevap cercevesi birebir ayniydi; Practice modu ayni soruyu kirk kez servis ediyordu. Bu surum standart dagilimda 46 benzersiz soru: kapanis sirasi ve cut off, mutabakat ve plug yasagi, tahakkuk, gelir tanima, borclar ve uc yonlu eslesme, alacaklar, sabit kiymet, uc tablo baglantisi, dolayli vergi, bordro, ic kontroller, ve donem kaydirma talebi gibi etik durumlar."
   },
   "questions": [
     {
-      "id": "acct_001",
-      "text": "Tell me about yourself and your accounting background.",
+      "id": "acct_b_001",
       "category": "behavioral",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "Tell me about yourself and your accounting background.",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Setting first: public accounting, corporate or industry, non profit, government, or bookkeeping for small business. The work differs a lot",
+          "Scope: full cycle, a specific area such as accounts payable, receivable, payroll, fixed assets, or revenue, and whether you own the close",
+          "Scale in numbers: revenue of the entity, transaction volume, entities or locations consolidated, team size",
+          "Systems: the ERP or accounting platform, the consolidation tool, reporting, and your spreadsheet depth",
+          "Credentials and status: qualified, part qualified, exam progress, or experience qualified. Say it plainly",
+          "One outcome: a close shortened, an error rate reduced, a reconciliation backlog cleared, an audit passed cleanly"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Names the setting and the scope owned",
+          "Gives entity size and transaction volume",
+          "States credential status honestly"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Listing duties with no scale or outcome",
+          "Being vague about qualification progress",
+          "Confusing bookkeeping scope with full cycle accounting"
         ]
       }
     },
     {
-      "id": "acct_002",
-      "text": "Tell me about yourself and your accounting background.",
+      "id": "acct_b_002",
       "category": "behavioral",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "Tell me about a time you found an error or a discrepancy.",
       "answer_framework": {
-        "structure": "Framework",
+        "structure": "STAR",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Situation: what it was. A reconciliation that would not clear, a duplicate payment, a misposted accrual, a wrong tax code, an unexplained variance",
+          "How you found it: a control you always run, a reconciliation, a variance review, or a number that did not look right",
+          "Action: quantified it, traced it to the source, and told the right person before fixing anything material",
+          "Say whether it affected reported numbers, since that changes who needs to know and how fast",
+          "Result: corrected, with the size of the error and the period affected",
+          "The control you added so it cannot recur silently"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Quantifies the error and the periods affected",
+          "Escalates before fixing anything material",
+          "Adds a control rather than only correcting"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Fixing a material error quietly",
+          "Adjusting an account to make it balance",
+          "No control change afterwards"
         ]
       }
     },
     {
-      "id": "acct_003",
-      "text": "Tell me about yourself and your accounting background.",
+      "id": "acct_b_003",
       "category": "behavioral",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "Tell me about a difficult month end close.",
       "answer_framework": {
-        "structure": "Framework",
+        "structure": "STAR",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Set the pressure: a system migration, a resignation, an acquisition, an audit overlapping, or a late supplier accrual",
+          "Action: how you triaged. Protect the items that are material and the ones with a hard deadline",
+          "Say how you communicated the risk to the controller early rather than at the deadline",
+          "Say what you did about the items that could not be resolved: a documented estimate, a reasoned accrual, a note for the file",
+          "Result: closed on time or with an agreed delay, and what was true about the numbers",
+          "What you changed in the next close"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Triages by materiality and deadline",
+          "Flags risk early rather than at cut off",
+          "Documents estimates rather than guessing silently"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Closing on time with numbers you could not support",
+          "Not telling anyone until the deadline passed",
+          "A plug entry to force the balance"
         ]
       }
     },
     {
-      "id": "acct_004",
-      "text": "Tell me about yourself and your accounting background.",
+      "id": "acct_b_004",
       "category": "behavioral",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "Tell me about a time you had to explain something financial to a non finance colleague.",
       "answer_framework": {
-        "structure": "Framework",
+        "structure": "STAR",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Situation: who and what. A budget holder, a sales lead, an operations manager, or an owner",
+          "Action: start from what they care about, use their language, and drop the accounting vocabulary",
+          "Give the concrete comparison: cash versus profit, accrual timing, why the spend they approved is not in this month",
+          "Check understanding rather than assuming, and offer a one page version they can keep",
+          "Result: the decision they made or the behaviour that changed"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Starts from their concern, not from the ledger",
+          "Explains accrual timing in plain words",
+          "Checks understanding"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Using accounting terminology as the explanation",
+          "Being condescending about their question",
+          "Explaining and never checking it landed"
         ]
       }
     },
     {
-      "id": "acct_005",
-      "text": "Tell me about yourself and your accounting background.",
+      "id": "acct_b_005",
       "category": "behavioral",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "Tell me about a time you improved an accounting process.",
       "answer_framework": {
-        "structure": "Framework",
+        "structure": "STAR",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Pick something measurable: a reconciliation automated, a close step removed, an approval routed properly, a report rebuilt, a manual journal eliminated",
+          "Say what was wrong in hours or in errors rather than in frustration",
+          "Action: what you changed, who you consulted, and how you kept the control intact while removing the work",
+          "Result with a number: days off the close, hours per month saved, error rate down",
+          "Say how you documented it so it survives you"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Quantifies before and after",
+          "Keeps the control while removing the work",
+          "Documents so it outlasts them"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Removing a control to save time",
+          "An improvement nobody else adopted",
+          "No measurement either side"
         ]
       }
     },
     {
-      "id": "acct_006",
-      "text": "Tell me about yourself and your accounting background.",
+      "id": "acct_b_006",
       "category": "behavioral",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "Tell me about a time you worked to a hard deadline.",
       "answer_framework": {
-        "structure": "Framework",
+        "structure": "STAR",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Real deadlines here: statutory filing, tax submission, payroll, audit deliverable, board pack, covenant reporting",
+          "Action: work backwards from the date, identify the dependency you do not control, and chase it early",
+          "Say what you protected: accuracy on the material items and anything externally filed",
+          "Say when you asked for help rather than absorbing it",
+          "Result: filed on time and correct, or the extension you arranged properly rather than missing it"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Works backwards and chases dependencies early",
+          "Protects accuracy on filed numbers",
+          "Arranges an extension rather than missing a deadline"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Filing something you knew was wrong to hit a date",
+          "Discovering a dependency at the deadline",
+          "Working late as the only strategy"
         ]
       }
     },
     {
-      "id": "acct_007",
-      "text": "Tell me about yourself and your accounting background.",
+      "id": "acct_b_007",
       "category": "behavioral",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "Tell me about a time you disagreed with a manager about a number.",
       "answer_framework": {
-        "structure": "Framework",
+        "structure": "STAR",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Set the disagreement: a provision level, a revenue cut off, an accrual, a capitalisation decision, an expense classification",
+          "Action: check your own position first and be sure of the standard or the policy before you push",
+          "Present it privately with the evidence: the guidance, the contract, the supporting documentation",
+          "Distinguish a judgement call within an acceptable range from something that is simply wrong",
+          "Escalate through the proper route if it is a misstatement, and put your position in writing",
+          "Result: the outcome, and the professional relationship afterwards"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Checks their own position before pushing",
+          "Separates judgement range from misstatement",
+          "Escalates in writing when required"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Backing down on a misstatement to keep the peace",
+          "Escalating a judgement call as if it were fraud",
+          "Arguing without the standard in front of you"
         ]
       }
     },
     {
-      "id": "acct_008",
-      "text": "Tell me about yourself and your accounting background.",
+      "id": "acct_b_008",
       "category": "behavioral",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "Tell me about a mistake you made.",
       "answer_framework": {
-        "structure": "Framework",
+        "structure": "STAR",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Choose something real: a misposting, a duplicate payment, a wrong tax treatment, a missed accrual, a reconciliation signed off with an unexplained difference",
+          "Own it and say how it was found, including if someone else found it",
+          "Action: quantified the impact, reported it immediately, corrected it properly rather than quietly",
+          "Result and the control that changed",
+          "Say plainly that in this profession a hidden error becomes a much larger problem"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Reports rather than quietly correcting",
+          "Quantifies the impact",
+          "Names the control that changed"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Saying you have never made one",
+          "Correcting a material error without telling anyone",
+          "Blaming the system or a colleague"
         ]
       }
     },
     {
-      "id": "acct_009",
-      "text": "Tell me about yourself and your accounting background.",
+      "id": "acct_b_009",
       "category": "behavioral",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "Tell me about supporting an audit.",
       "answer_framework": {
-        "structure": "Framework",
+        "structure": "STAR",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Say your role: preparing schedules, responding to requests, being the contact, or owning an area",
+          "Action: prepare in advance rather than at fieldwork. The audit file should be assembled through the year",
+          "Respond completely and on time, and say when you do not know rather than guessing",
+          "Handle a challenge or an adjustment professionally: understand it, check it, and agree or push back with evidence",
+          "Result: the audit outcome, any adjustments, and what you changed for the next year",
+          "Say that a clean audit is built in the close, not in the audit"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Prepares through the year rather than at fieldwork",
+          "Says when they do not know",
+          "Understands a clean audit starts in the close"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Assembling the audit file during fieldwork",
+          "Guessing at an answer to an auditor",
+          "Taking a proposed adjustment personally"
         ]
       }
     },
     {
-      "id": "acct_010",
-      "text": "Tell me about yourself and your accounting background.",
+      "id": "acct_b_010",
       "category": "behavioral",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "Tell me about feedback you received.",
       "answer_framework": {
-        "structure": "Framework",
+        "structure": "STAR",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Real feedback here: too slow on the close, too much detail in reporting, not flagging issues early, reconciliations left open, weak commentary on variances",
+          "Action: how you clarified the standard and what you practised",
+          "Result: the observable change, ideally in a number such as close days or open items",
+          "Say whether you asked for a review of your work afterwards"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Asks what good looks like",
+          "Change visible in a number",
+          "Invites review afterwards"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Feedback that was really praise",
+          "Explaining why it was unfair",
+          "No evidence of change"
         ]
       }
     },
     {
-      "id": "acct_011",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_t_001",
+      "category": "technical",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "Walk me through the month end close.",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Give the sequence rather than a list: cut off, sub ledger closes, accruals and prepayments, payroll, fixed assets and depreciation, intercompany, reconciliations, review, reporting",
+          "Cut off discipline first. Most close errors are timing errors: goods received not invoiced, revenue recognised in the wrong period, unrecorded liabilities",
+          "Reconcile every balance sheet account and clear the differences rather than carrying them forward. An unexplained reconciling item is a future problem",
+          "Review before you report: variance analysis against budget and prior period, and challenge anything that moved without a reason",
+          "Say your close timetable in days and what the bottleneck is",
+          "Document as you go so the file supports the number"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Names cut off as the main error source",
+          "Clears reconciling items rather than carrying them",
+          "Gives close days and the bottleneck"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Describing the close as a checklist with no analysis",
+          "Carrying unexplained reconciling items forward",
+          "No variance review before reporting"
         ]
       }
     },
     {
-      "id": "acct_012",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_t_002",
+      "category": "technical",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "How do you reconcile an account?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Reconcile the balance to an independent source, not to your own ledger. That is what makes it a control",
+          "Bank: statement to ledger, with outstanding items listed and aged. Old outstanding items are a warning sign",
+          "Balance sheet accounts: support every balance with a schedule of what makes it up, not just a number that agrees",
+          "Investigate differences rather than posting a balancing entry. A plug hides the problem and it compounds",
+          "Age the reconciling items and clear the old ones. An item over ninety days usually means nobody understands it",
+          "Get reconciliations reviewed by someone other than the preparer, since self review is not a control"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Reconciles to an independent source",
+          "Supports the balance with a schedule, not just agreement",
+          "Preparer and reviewer separated"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Posting a plug to make it agree",
+          "Signing off a reconciliation with an unexplained difference",
+          "Reviewing your own reconciliation"
         ]
       }
     },
     {
-      "id": "acct_013",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_t_003",
+      "category": "technical",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "Explain accruals and prepayments.",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "State the principle: expenses and revenues belong in the period they relate to, not the period the cash moves",
+          "An accrual recognises a cost incurred but not yet invoiced. A prepayment defers a cost paid in advance to the period it covers",
+          "Give the entries plainly: an accrual debits expense and credits a liability, a prepayment debits an asset and credits the expense or cash",
+          "Reverse or release them correctly next period, and check that the reversal actually happened. Unreleased accruals are a common source of error",
+          "Say how you estimate an accrual where the invoice has not arrived: purchase orders, goods received, contracts, run rate, and prior periods",
+          "Materiality decides how much effort each one deserves"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Explains the matching principle before the entry",
+          "Checks that reversals actually happened",
+          "Uses goods received and contracts to estimate"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Reciting the double entry with no principle behind it",
+          "Accruals that are never reviewed or released",
+          "Estimating from nothing when support exists"
         ]
       }
     },
     {
-      "id": "acct_014",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_t_004",
+      "category": "technical",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "How do you handle revenue recognition?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Start from the contract and the performance obligations, not the invoice. Invoicing and revenue are different events",
+          "Recognise revenue when control transfers: at a point in time, or over time for a service delivered across a period",
+          "Multiple element arrangements need the price allocated across obligations. Say that you would check the contract rather than assume",
+          "Watch the classic risks: deferred revenue, upfront fees, discounts and rebates, variable consideration, and anything invoiced in advance",
+          "Deferred revenue is a liability and reconciling it monthly is what keeps it honest",
+          "Say that you would take advice for a genuinely complex contract rather than deciding alone"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Separates invoicing from recognition",
+          "Reconciles deferred revenue monthly",
+          "Would seek advice on a complex contract"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Recognising revenue when the invoice is raised",
+          "Ignoring deferred revenue between year ends",
+          "Guessing at a complex contract treatment"
         ]
       }
     },
     {
-      "id": "acct_015",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_t_005",
+      "category": "technical",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "How do you run accounts payable properly?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "The three way match: purchase order, goods received note, invoice. It is the core control and it prevents most payment errors",
+          "Approval within a documented authority limit before payment. No approval, no payment, regardless of who is asking",
+          "Duplicate checks: same supplier, same amount, same reference. Duplicate payments are common and recoverable only if noticed",
+          "Supplier statement reconciliations to catch missing invoices and unrecorded liabilities",
+          "Separate the person who sets up a supplier from the person who pays. That segregation is the main fraud control",
+          "Treat any change of supplier bank details as a fraud risk and verify on a number you already hold"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Names three way match and segregation of duties",
+          "Runs supplier statement reconciliations",
+          "Verifies bank detail changes independently"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Paying on an invoice alone with no match or approval",
+          "The same person creating suppliers and paying them",
+          "Acting on a bank change request in an email"
         ]
       }
     },
     {
-      "id": "acct_016",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_t_006",
+      "category": "technical",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "How do you manage accounts receivable and collections?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Invoice accurately and promptly. Most late payment starts with a wrong or late invoice, not with an unwilling customer",
+          "Age the ledger and work it by value and risk rather than chasing everything equally",
+          "Have a defined escalation ladder: reminder, statement, call, account hold, formal demand, and only then external recovery",
+          "Talk to the customer early. A disputed invoice sitting silently for sixty days is a process failure on both sides",
+          "Keep the bad debt provision honest and based on evidence rather than optimism",
+          "Report days sales outstanding and the aged profile, and know what is driving movement"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Starts from invoice accuracy",
+          "Works the ledger by value and risk",
+          "Keeps the provision evidence based"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Chasing every balance equally",
+          "Leaving disputes unresolved in the ledger",
+          "A provision set by feel rather than evidence"
         ]
       }
     },
     {
-      "id": "acct_017",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_t_007",
+      "category": "technical",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "What do you know about fixed assets and depreciation?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Capitalise what meets the policy: the threshold, the useful life, and costs directly attributable to bringing the asset into use",
+          "Distinguish capital from repair. Repairs and maintenance go to the profit and loss, improvements that extend life or capacity are capitalised",
+          "Depreciate over useful life from the date the asset is available for use, using the method the policy specifies",
+          "Maintain a fixed asset register that reconciles to the ledger, and verify it physically from time to time",
+          "Handle disposals properly: remove cost and accumulated depreciation, and take the gain or loss",
+          "Review for impairment when something indicates the asset is not worth its carrying value"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Distinguishes capital from repair with a reason",
+          "Register reconciles to the ledger",
+          "Handles disposals completely"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Capitalising repairs to protect profit",
+          "A register that has never been verified physically",
+          "Depreciating from purchase rather than availability for use"
         ]
       }
     },
     {
-      "id": "acct_018",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_t_008",
+      "category": "technical",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "Explain the link between the three financial statements.",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Profit and loss shows performance over a period, balance sheet shows position at a date, cash flow explains the movement in cash",
+          "Net income flows to retained earnings on the balance sheet and starts the cash flow statement",
+          "Cash flow adds back non cash items such as depreciation, then adjusts for working capital movements, then investing and financing",
+          "Depreciation appears in all three: an expense in the profit and loss, accumulated on the balance sheet, added back in cash flow",
+          "Say the point out loud: profit is not cash, and the gap is working capital, capital expenditure and financing",
+          "The balance sheet must balance, and knowing why it does not is the fastest diagnostic you have"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Explains why profit is not cash",
+          "Traces depreciation through all three",
+          "Uses the balance check as a diagnostic"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Reciting the statements without linking them",
+          "Confusing profit with cash generation",
+          "Not knowing where net income lands on the balance sheet"
         ]
       }
     },
     {
-      "id": "acct_019",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_t_009",
+      "category": "technical",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "What do you know about sales tax, VAT or GST?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Be honest about which regime you have worked in, since the rules differ by jurisdiction and nobody expects you to know all of them",
+          "The principle: tax collected on sales, tax recoverable on purchases where the rules allow, and the difference remitted",
+          "Registration thresholds and where the obligation arises, particularly with sales across state or provincial lines",
+          "Correct treatment of exempt, zero rated and out of scope items, since these are where errors concentrate",
+          "File and pay on time. Penalties for late filing are usually automatic and avoidable",
+          "Reconcile the tax account to the return every period rather than at year end",
+          "Say that you check the current rules or take advice rather than relying on memory"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Honest about which regime they know",
+          "Reconciles the tax account to the return each period",
+          "Checks current rules rather than relying on memory"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Claiming knowledge of every jurisdiction",
+          "Only reconciling tax at year end",
+          "Guessing at the treatment of an unusual item"
         ]
       }
     },
     {
-      "id": "acct_020",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_t_010",
+      "category": "technical",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "How do you handle payroll accounting?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Know the components: gross pay, employer and employee taxes, pension or retirement contributions, benefits, deductions, and net pay",
+          "The control is reconciliation: payroll report to the journal, the journal to the ledger, and the liability accounts to what is actually owed",
+          "Pay and file on time. Payroll tax deadlines carry penalties and, in some jurisdictions, personal liability",
+          "Accrue for what is earned but unpaid: bonuses, commissions, and holiday or vacation liability",
+          "Treat payroll data as confidential. Restricted access is a control as well as a privacy obligation",
+          "Segregate the person who changes employee records from the person who runs the payment run"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Reconciles payroll to journal to ledger",
+          "Accrues holiday and bonus liabilities",
+          "Segregates record changes from payment"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Posting a payroll journal without reconciling it",
+          "Ignoring holiday pay liability",
+          "Payroll data accessible to anyone in finance"
         ]
       }
     },
     {
-      "id": "acct_021",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_t_011",
+      "category": "technical",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "What internal controls matter most?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Segregation of duties above everything: the person who authorises, the person who records, and the person who holds the asset should not be one person",
+          "Authorisation limits that are documented, current, and actually enforced in the system",
+          "Reconciliations prepared and independently reviewed, with evidence of the review",
+          "System access reviewed when people change role, since permissions accumulate silently",
+          "In a small team where full segregation is impossible, say so honestly and describe the compensating controls: owner review, bank statement review, exception reporting",
+          "Document the control and keep the evidence. An undocumented control cannot be tested or relied on"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Names segregation of duties first",
+          "Realistic about small teams and compensating controls",
+          "Knows a control needs evidence to exist"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Claiming perfect segregation in a three person team",
+          "Controls that exist in description but not in the system",
+          "Reviews with no evidence they happened"
         ]
       }
     },
     {
-      "id": "acct_022",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_t_012",
+      "category": "technical",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "What accounting systems have you used?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Name them and be honest about depth: the ERP or ledger, the consolidation tool, the reporting layer, the payables automation, the expense system",
+          "Say what you can actually do in them: journals, reconciliations, reporting, period close, chart of accounts maintenance, user access",
+          "Spreadsheet depth matters and is tested: lookups, pivot tables, and how you check a model you built",
+          "Say how you learned a system quickly, with an example, since most employers assume you will learn theirs",
+          "Talk about controls in the system: approval workflows, locked periods, audit trails, and restricted access",
+          "Say what you do when the system cannot do something rather than building an unofficial spreadsheet nobody reviews"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Honest about depth in each system",
+          "Knows the system controls, not just the screens",
+          "Wary of unreviewed spreadsheet workarounds"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Listing every system ever seen",
+          "Claiming expertise you cannot demonstrate",
+          "A shadow spreadsheet running a real process"
         ]
       }
     },
     {
-      "id": "acct_023",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_s_001",
+      "category": "situational",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "You are asked to post an entry you do not agree with.",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Understand the request first. Ask what the entry is for and what supports it, since there may be a reason you do not have",
+          "Check the treatment against the standard or the policy before you push back",
+          "Distinguish a judgement within an acceptable range from something that is simply wrong. Only the second is non negotiable",
+          "For a judgement: state your view, note the alternative, and let the person with the authority decide",
+          "For a misstatement: decline, explain, escalate to the controller or above, and put your position in writing",
+          "Never post something you believe is wrong on a verbal instruction. Your name is on the entry"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Checks the standard before pushing back",
+          "Separates judgement from misstatement",
+          "Puts the position in writing"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Posting it because a senior person asked",
+          "Refusing without checking the standard",
+          "Escalating a routine judgement as if it were fraud"
         ]
       }
     },
     {
-      "id": "acct_024",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_s_002",
+      "category": "situational",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "You find a variance you cannot explain.",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Do not report it as unexplained and move on. An unexplained variance is a finding, not a footnote",
+          "Break it down: which account, which period, which entity, and which entries make it up. Most variances resolve when decomposed",
+          "Check the usual causes: a timing difference, a reclassification, a missing accrual, a duplicate, a manual journal, a rate or volume change",
+          "Talk to the budget holder or the operational team. They often know immediately what happened",
+          "If it remains unexplained, quantify it, say what you have ruled out, and escalate with a plan rather than a shrug",
+          "Never post an entry to make it disappear"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Decomposes rather than reporting it unexplained",
+          "Asks the operational team",
+          "Escalates with what has been ruled out"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Posting an adjustment to remove it",
+          "Reporting it as unexplained with no analysis",
+          "Waiting for someone else to ask about it"
         ]
       }
     },
     {
-      "id": "acct_025",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_s_003",
+      "category": "situational",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "A manager asks you to move an expense into next period.",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Ask why. Sometimes there is a legitimate cut off argument and you should hear it before assuming intent",
+          "Check the facts: when was the service delivered or the good received. The date of the invoice does not decide the period",
+          "If it belongs in this period, say so plainly and explain the cut off principle",
+          "Do not do it. Deliberately moving a cost to flatter a period is misstatement, and the fact that it reverses next month does not make it acceptable",
+          "Escalate to the controller or the audit contact if the pressure continues, and record your position",
+          "Say that you would rather have the difficult conversation than sign a wrong number"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Checks the delivery date rather than the invoice date",
+          "Refuses without moralising",
+          "Escalates and records the position"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Doing it because it reverses next month anyway",
+          "Agreeing under pressure from a senior person",
+          "Refusing without explaining the principle"
         ]
       }
     },
     {
-      "id": "acct_026",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_s_004",
+      "category": "situational",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "The close deadline is tomorrow and a reconciliation will not clear.",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Quantify it first. Materiality decides how hard you push and whether it can wait",
+          "Timebox the investigation and work the most likely causes rather than starting from scratch",
+          "Tell the controller now with the number and your plan, rather than at the deadline",
+          "If it is immaterial and you cannot resolve it, document what you know, what you ruled out, and get the treatment agreed rather than deciding alone",
+          "Never post a plug and never sign a reconciliation as clear when it is not",
+          "Put it on the list to resolve in the next period rather than letting it age quietly"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Quantifies before deciding how hard to chase",
+          "Tells the controller early with a plan",
+          "Documents rather than plugging"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Posting a plug to close on time",
+          "Signing the reconciliation as clear",
+          "Telling the controller after the deadline"
         ]
       }
     },
     {
-      "id": "acct_027",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_s_005",
+      "category": "situational",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "You spot a payment that looks fraudulent.",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Stop. Do not process it and do not warn anyone who might be involved",
+          "Look at the specifics: a changed bank account, an unknown supplier, an unusual approval route, a round number with no detail, urgency and seniority combined",
+          "Verify a bank change by calling the supplier on a number you already hold, never on a number in the email",
+          "Escalate through the proper route: your manager, the controller, or the fraud or whistleblowing channel if the concern involves someone senior",
+          "Document what you saw and what you did, factually and without accusation",
+          "Say that stopping a legitimate payment for an hour costs almost nothing, and releasing a fraudulent one costs everything"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Stops before escalating",
+          "Verifies bank changes on a known number",
+          "Uses the confidential route when someone senior is involved"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Processing it because it was approved",
+          "Calling the number in the suspicious email",
+          "Discussing the suspicion with the team"
         ]
       }
     },
     {
-      "id": "acct_028",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_s_006",
+      "category": "situational",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "An auditor challenges a treatment you applied.",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Listen properly and understand the challenge before defending. They may be right, and they may know something you do not",
+          "Go back to the support: the standard, the contract, the policy, and the working papers",
+          "If you were wrong, say so, quantify it, and correct it. That is a normal part of an audit",
+          "If you were right, present the evidence calmly and let the technical position stand on its own",
+          "Escalate to the controller for anything material or where you disagree after checking",
+          "Take the learning into the next period regardless of who was right"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Understands the challenge before defending",
+          "Concedes when wrong and quantifies it",
+          "Argues from the standard rather than from position"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Getting defensive with an auditor",
+          "Conceding a correct treatment to avoid friction",
+          "Handling a material disagreement alone"
         ]
       }
     },
     {
-      "id": "acct_029",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_s_007",
+      "category": "situational",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "You inherit a set of books that are behind and messy.",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Assess before fixing: how far behind, which accounts are unreconciled, what is filed and what is late, and what deadlines are imminent",
+          "Prioritise by consequence: statutory and tax deadlines first, then cash and payroll, then the reconstruction work",
+          "Establish a clean starting point rather than trying to fix everything historically. Agree with the owner or the controller where the line is drawn",
+          "Reconcile the balance sheet first. The profit and loss cannot be trusted until the balance sheet is supported",
+          "Communicate honestly about how long it will take and what you found. Under promising here is worse than over promising",
+          "Put the controls and the routine in place as you go, so it does not return to the same state"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Statutory and tax deadlines first",
+          "Reconciles the balance sheet before trusting the profit and loss",
+          "Agrees where the historical line is drawn"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Starting at the oldest transaction and working forward",
+          "Promising a fast clean up before assessing",
+          "Fixing the numbers without fixing the routine"
         ]
       }
     },
     {
-      "id": "acct_030",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_s_008",
+      "category": "situational",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "A budget holder disputes the numbers in your report.",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Take it seriously and check before defending. Sometimes the report is wrong, and finding that yourself is better than being shown",
+          "Reconcile their view to yours: what is in the account, what they expected, and where the difference comes from",
+          "Common causes: accruals they do not know about, a recharge, a timing difference, a coding error, or a commitment they think is a cost",
+          "Explain the treatment plainly rather than asserting that the ledger is correct",
+          "Fix a genuine error quickly and tell everyone who received the wrong number",
+          "Improve the reporting if the same dispute keeps recurring, since that is a communication failure not an arithmetic one"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Checks before defending",
+          "Reconciles their view to the ledger",
+          "Fixes recurring disputes in the report design"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Insisting the ledger is right without checking",
+          "Correcting an error without telling the other recipients",
+          "The same dispute every month with no change"
         ]
       }
     },
     {
-      "id": "acct_031",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_s_009",
+      "category": "situational",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "You are asked to work outside your competence.",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Be honest early. Saying you have not done this before is far cheaper than discovering it in an audit",
+          "Say what you can do and what you would need: guidance, training, a review, or specialist advice",
+          "Do the work with a review rather than either refusing or guessing. That is how people learn a new area safely",
+          "For anything with a filing or a statutory consequence, get it checked before it goes out",
+          "Document your assumptions so a reviewer can see your reasoning",
+          "Say plainly that professional ethics require you not to hold yourself out as competent in something you are not"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Honest early rather than after the fact",
+          "Asks for review rather than refusing outright",
+          "Documents assumptions for the reviewer"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Guessing on something with a statutory consequence",
+          "Refusing to attempt anything new",
+          "Discovering the gap during an audit"
         ]
       }
     },
     {
-      "id": "acct_032",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_s_010",
+      "category": "situational",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
+      "text": "Cash is tight and you have to decide what gets paid.",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "This is the owner or the controller decision, not yours alone. Your job is to make it a decision rather than an accident",
+          "Prepare the picture: cash position, committed receipts with realistic timing, and the payment run by priority",
+          "Priority order that most businesses accept: payroll and payroll taxes, statutory obligations, critical suppliers who stop the business, then everything else",
+          "Talk to suppliers before missing a payment. An agreed delay preserves the relationship, a silent one destroys it",
+          "Look for the levers: collections, a facility, a deposit, invoice timing",
+          "Document the decision and revisit the forecast weekly rather than monthly"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Presents it as a decision for the right person",
+          "Payroll and statutory obligations first",
+          "Talks to suppliers before missing a payment"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Deciding the payment run alone",
+          "Missing payroll taxes to pay a supplier",
+          "Silence with suppliers"
         ]
       }
     },
     {
-      "id": "acct_033",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_m_001",
+      "category": "manager",
       "seniority": [
-        "entry",
         "mid",
-        "senior"
+        "manager"
       ],
+      "text": "How do you run and shorten a close?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Map the current close by day and by owner, and find where it actually waits. The bottleneck is usually one dependency, not general slowness",
+          "Move work earlier: pre close reconciliations, accruals estimated from purchase orders, and hard cut off dates agreed with operations",
+          "Standardise: a close checklist with owners and times, standard journals, and consistent templates",
+          "Automate the repetitive: bank feeds, recurring journals, reconciliation matching, and consolidation",
+          "Apply materiality deliberately rather than treating every account with equal effort",
+          "Review the close each month and remove one step, and give the number: days from [X] to [Y]"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Finds the actual bottleneck rather than pushing generally",
+          "Moves work before the period end",
+          "Applies materiality to effort"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Shortening the close by cutting reviews",
+          "Every account treated with equal effort",
+          "A checklist nobody owns"
         ]
       }
     },
     {
-      "id": "acct_034",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_m_002",
+      "category": "manager",
       "seniority": [
-        "entry",
         "mid",
-        "senior"
+        "manager"
       ],
+      "text": "How do you build the control environment in a small finance team?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Start from the risks that actually matter here: payments, payroll, revenue, and access, rather than a generic control list",
+          "Segregate what you can. Where you cannot, use compensating controls: owner review of the bank statement, dual authorisation, exception reports, and surprise checks",
+          "Document the controls and keep the evidence. A control without evidence cannot be relied on by an auditor or by you",
+          "Use the system rather than people: approval workflows, locked periods, restricted access, and audit trails",
+          "Review access when anyone changes role, since permissions accumulate and nobody notices",
+          "Test your own controls occasionally rather than assuming they operate"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Starts from real risks, not a generic list",
+          "Compensating controls where segregation is impossible",
+          "Tests controls rather than assuming"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Claiming full segregation in a small team",
+          "Controls documented but never evidenced",
+          "Access reviewed only at audit"
         ]
       }
     },
     {
-      "id": "acct_035",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_m_003",
+      "category": "manager",
       "seniority": [
-        "entry",
         "mid",
-        "senior"
+        "manager"
       ],
+      "text": "How do you manage a finance team?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Make ownership explicit: who owns which reconciliation, which schedule, which deadline",
+          "Review work rather than assuming it. Review is a control, and it is also how people learn",
+          "Set standards that are observable: reconciliations complete by day three, no unexplained items over ninety days, commentary on every material variance",
+          "Develop people deliberately: rotate areas, support exams, and give someone the close to run under supervision",
+          "Manage the workload peaks around close, audit and filing rather than pretending they are normal weeks",
+          "Deal with a performance problem quickly, since in finance one weak area becomes an audit finding"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Explicit ownership per reconciliation",
+          "Treats review as a control and a teaching tool",
+          "Plans around the known peaks"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Assuming work was done because it was assigned",
+          "Vague standards then frustration",
+          "Letting a weak area continue until the audit finds it"
         ]
       }
     },
     {
-      "id": "acct_036",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_m_004",
+      "category": "manager",
       "seniority": [
-        "entry",
         "mid",
-        "senior"
+        "manager"
       ],
+      "text": "How do you produce management reporting people actually use?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Start from the decisions the reader makes. A report that supports no decision should be stopped",
+          "Lead with the answer: what happened, why, and what it means for the full year. Detail underneath",
+          "Explain variances by cause rather than listing them, and separate timing from permanent",
+          "Keep it consistent month to month so trends are visible and the reader does not relearn the format",
+          "Add commentary in plain language. The numbers rarely speak for themselves to a non finance reader",
+          "Ask the recipients what they do not use and remove it. Most packs grow and never shrink"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Starts from the decision the reader makes",
+          "Separates timing from permanent variance",
+          "Removes what nobody uses"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "A pack that grows every month",
+          "Variance lists with no cause",
+          "Numbers with no commentary"
         ]
       }
     },
     {
-      "id": "acct_037",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_m_005",
+      "category": "manager",
       "seniority": [
-        "entry",
         "mid",
-        "senior"
+        "manager"
       ],
+      "text": "How do you manage cash flow forecasting?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Build it from receipts and payments with real timing, not from the profit and loss with adjustments",
+          "Use the direct method for the short term: known receivables with realistic collection dates, the payment run, payroll, tax, and financing",
+          "Roll it weekly for the near term and monthly beyond, and compare forecast to actual so the forecast improves",
+          "Model the downside: a large customer paying late, a lost customer, a delayed facility",
+          "Identify the levers in advance: collections, supplier terms, capital deferral, and financing headroom",
+          "Communicate early. A cash issue seen six weeks out has options, one seen next week does not"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Direct method with real timing",
+          "Compares forecast to actual and improves",
+          "Identifies levers before they are needed"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Forecasting cash from profit",
+          "No downside scenario",
+          "Raising a cash issue when it is already urgent"
         ]
       }
     },
     {
-      "id": "acct_038",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_m_006",
+      "category": "manager",
       "seniority": [
-        "entry",
         "mid",
-        "senior"
+        "manager"
       ],
+      "text": "How do you handle a system migration or an implementation?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Plan the data first: the chart of accounts, opening balances, open items, and history. Data is where these projects fail",
+          "Reconcile the opening balances in the new system to the old one and keep the evidence. That reconciliation is the audit trail",
+          "Run parallel for at least one period where you can, and reconcile the outputs rather than assuming",
+          "Rebuild the controls in the new system deliberately: approvals, access, locked periods. They do not migrate themselves",
+          "Train the team and write the new procedures rather than expecting people to work it out",
+          "Plan the close during the migration, since that is the period most likely to go wrong",
+          "Have a rollback position and know when you would use it"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Reconciles opening balances and keeps the evidence",
+          "Rebuilds controls deliberately",
+          "Plans for the close during the migration"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Migrating balances without reconciling them",
+          "Assuming controls carry over",
+          "No parallel period and no rollback"
         ]
       }
     },
     {
-      "id": "acct_039",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_m_007",
+      "category": "manager",
       "seniority": [
-        "entry",
         "mid",
-        "senior"
+        "manager"
       ],
+      "text": "How do you prepare for an audit?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Prepare through the year rather than at fieldwork. The audit file should be assembled as the close happens",
+          "Agree the timetable, the request list, and the key judgements with the auditor early, so nothing is a surprise",
+          "Prepare the areas with judgement first: provisions, revenue recognition, impairment, going concern. Those take the most discussion",
+          "Assign a single coordinator so requests are tracked and answered once",
+          "Be transparent about known issues. Auditors find them anyway and disclosure changes the tone completely",
+          "Debrief afterwards: adjustments, control findings, and what to change in the close so next year is cleaner"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "File assembled through the year",
+          "Judgement areas prepared first",
+          "Discloses known issues rather than waiting"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Assembling everything during fieldwork",
+          "Hoping an issue is not found",
+          "No debrief or process change afterwards"
         ]
       }
     },
     {
-      "id": "acct_040",
-      "text": "Tell me about yourself and your accounting background.",
-      "category": "behavioral",
+      "id": "acct_m_008",
+      "category": "manager",
       "seniority": [
-        "entry",
         "mid",
-        "senior"
+        "manager"
       ],
+      "text": "How do you handle an ethical issue in finance?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Open with role and setting",
-          "Name certifications and tools",
-          "Give one concrete strength with evidence",
-          "Close by tying background to role"
+          "Establish the facts before acting, and write down what you know and when you knew it",
+          "Distinguish an error from a deliberate act, since the response is different even though both need correcting",
+          "Follow the escalation route: your manager, the controller, the finance director, the audit committee, and the whistleblowing channel if the chain is compromised",
+          "Do not participate. Signing, posting or filing something you know is wrong makes you part of it regardless of who instructed you",
+          "Get the position in writing and keep your own record",
+          "Take external advice from your professional body if you are personally exposed",
+          "Say plainly that professional ethics outrank an employer instruction, and that the alternative is your qualification and your career"
         ],
         "strong_answer_signals": [
-          "Names specific accounting standards",
-          "Mentions specific ERP or close tools",
-          "Measurable contribution"
+          "Establishes facts before acting",
+          "Knows the escalation route including outside the chain",
+          "Understands personal professional exposure"
         ],
         "avoid": [
-          "Only listing duties without outcomes",
-          "Confusing bookkeeping with accounting",
-          "Personal details"
+          "Participating and rationalising it as following instructions",
+          "Escalating only within a compromised chain",
+          "No written record"
+        ]
+      }
+    },
+    {
+      "id": "acct_mo_001",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Why accounting?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Give a real reason: you like order and evidence, you want to understand how a business actually works, the qualification is portable, the work is objective",
+          "Connect it to something you have actually done",
+          "Say what part you enjoy most and be specific: the close, the analysis, the systems, the advisory side",
+          "Practical reasons such as stability and progression are respected here when paired with genuine interest"
+        ],
+        "strong_answer_signals": [
+          "A concrete reason tied to real experience",
+          "Names the part of the work they enjoy",
+          "Honest about practical motivations"
+        ],
+        "avoid": [
+          "Saying you are good with numbers as the whole answer",
+          "Nothing about the business behind the numbers",
+          "An answer that could apply to any office job"
+        ]
+      }
+    },
+    {
+      "id": "acct_mo_002",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Why this company?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be specific: the sector, the size, the stage, the complexity, or something about how they operate",
+          "Connect it to your experience: a sector you know, a system they use, a transition they are going through",
+          "Say what you want to learn there, since a finance team wants people who will grow into more",
+          "Be honest about practical fit alongside the real reason"
+        ],
+        "strong_answer_signals": [
+          "Specific knowledge of the company",
+          "Connects their experience to the context",
+          "Names what they want to learn"
+        ],
+        "avoid": [
+          "An answer that fits any employer",
+          "Getting the sector or the size wrong",
+          "Only mentioning salary or location"
+        ]
+      }
+    },
+    {
+      "id": "acct_mo_003",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What is your qualification status and plan?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be exact: qualified, part qualified with exams remaining, studying, or experience qualified. Vagueness here is always noticed",
+          "Say the body and where you are, including any exam you have failed and retaken. Honesty about that is respected",
+          "Say what support you need: study leave, exam fees, or a mentor, and ask about it rather than discovering later",
+          "If you are experience qualified without letters, say what you have done that demonstrates the equivalent",
+          "Say what you want to be able to do in two years, not just what you want to have passed"
+        ],
+        "strong_answer_signals": [
+          "Exact about status and remaining exams",
+          "Honest about a failed exam",
+          "Asks about study support up front"
+        ],
+        "avoid": [
+          "Being vague to seem further along",
+          "Hiding a failed attempt that will surface",
+          "No plan beyond passing exams"
+        ]
+      }
+    },
+    {
+      "id": "acct_mo_004",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you keep your technical knowledge current?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Name the sources you actually use: professional body updates, standard setter releases, firm technical bulletins, your auditor, and continuing education",
+          "Say how you handle something new: read the standard itself rather than a summary, and take advice for anything material",
+          "Give a specific example of a change you had to apply and what you did",
+          "Say that you check rather than rely on memory, since the rules move and memory does not update",
+          "Mention systems and tooling as part of staying current, since that is where the profession is actually changing fastest"
+        ],
+        "strong_answer_signals": [
+          "Names real sources rather than saying they read",
+          "Reads the standard rather than a summary",
+          "Includes systems as part of staying current"
+        ],
+        "avoid": [
+          "Saying you keep up with no example",
+          "Relying on memory for a treatment",
+          "Ignoring the systems side entirely"
+        ]
+      }
+    },
+    {
+      "id": "acct_mo_005",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle the pressure of close and deadlines?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be concrete rather than claiming you thrive on it. Say what you actually do: plan backwards, front load work, and protect the review step",
+          "Say how you keep accuracy under time pressure, since speed without accuracy is worthless in this profession",
+          "Say how you handle the peaks sustainably, because close and audit come round every month and every year",
+          "Give a real example of a period that went badly and what you changed"
+        ],
+        "strong_answer_signals": [
+          "Describes a method rather than a temperament",
+          "Protects the review step under pressure",
+          "Has changed something after a bad period"
+        ],
+        "avoid": [
+          "Claiming pressure never affects you",
+          "Cutting review to hit a deadline",
+          "No example"
+        ]
+      }
+    },
+    {
+      "id": "acct_mo_006",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Do you have any questions for us?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Ask what tells you what the role actually is:",
+          "\"What does the close look like, how many days and what is the bottleneck?\"",
+          "\"What is the split between routine processing and analysis?\"",
+          "\"What is the system landscape, and is anything being changed?\"",
+          "\"Who reviews my work, and how does the team handle a disagreement about a treatment?\"",
+          "\"What does support for study and progression look like?\"",
+          "The processing versus analysis split is the question that most affects whether you will enjoy the job"
+        ],
+        "strong_answer_signals": [
+          "Asks about the processing versus analysis split",
+          "Asks who reviews their work",
+          "Asks about the close and its bottleneck"
+        ],
+        "avoid": [
+          "No questions",
+          "Only asking about salary and hours",
+          "Asking something already in the job description"
         ]
       }
     }
