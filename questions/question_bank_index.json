@@ -2,7 +2,7 @@
   "metadata": {
     "description": "Master index for the Interview Aid App question bank",
     "generated": "2026-09-02",
-    "grand_total": 1579,
+    "grand_total": 1600,
     "total_files": 51,
     "schema_version": "1.1"
   },
@@ -145,7 +145,7 @@
     {
       "file": "customer_service_questions.json",
       "sector": "Customer Service & Support",
-      "total": 25,
+      "total": 46,
       "categories": [
         "behavioral",
         "manager",
