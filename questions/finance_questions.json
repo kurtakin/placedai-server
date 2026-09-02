@@ -3,13 +3,23 @@
     "sector": "Finance",
     "generated": "2026-04-14",
     "total": 46,
-    "categories": ["behavioral", "technical", "situational", "motivation", "manager"]
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ]
   },
   "questions": [
     {
       "id": "fin_b_001",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you identified a financial discrepancy and resolved it.",
       "answer_framework": {
         "structure": "STAR",
@@ -23,7 +33,7 @@
           "Specific dollar amounts and timelines demonstrating ownership of large balances",
           "Evidence of cross-functional collaboration or persistence in digging through layers of data",
           "Implementation of a preventive control or process change that reduced recurrence risk",
-          "Clear ownership: 'I discovered' not 'we found' — shows personal contribution"
+          "Clear ownership: 'I discovered' not 'we found', shows personal contribution"
         ],
         "avoid": [
           "Vague discrepancies ('money wasn't adding up') without specifics",
@@ -36,7 +46,10 @@
     {
       "id": "fin_b_002",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time when you had to present complex financial data to non-financial stakeholders.",
       "answer_framework": {
         "structure": "STAR",
@@ -63,14 +76,18 @@
     {
       "id": "fin_b_003",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you worked under tight month-end or quarter-end close pressure.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
           "Describe the stakes and timeline pressure: days to close, concurrent priorities, complexity of your close scope",
           "Show planning and organization: how you prioritized tasks, built a close calendar, or identified risks ahead of time",
-          "Demonstrate resilience: manage stress, maintain quality, ask for help when needed — not just working longer hours",
+          "Demonstrate resilience: manage stress, maintain quality, ask for help when needed, not just working longer hours",
           "Highlight the outcome: closed on time, quality was high, team morale survived, or you improved close timing for next period"
         ],
         "strong_answer_signals": [
@@ -82,7 +99,7 @@
         "avoid": [
           "Burnout narrative: 'I just worked 16 hours a day' without showing smart prioritization",
           "Implying corners were cut: 'We got it done fast' sounds like speed over accuracy",
-          "Lack of ownership: 'My manager coordinated everything' — they want to see your agency",
+          "Lack of ownership: 'My manager coordinated everything', they want to see your agency",
           "No reflection on lessons learned or sustainable processes for next close"
         ]
       }
@@ -90,7 +107,11 @@
     {
       "id": "fin_b_004",
       "category": "behavioral",
-      "seniority": ["mid", "senior", "manager"],
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "Describe a situation where your financial analysis directly influenced a major business decision.",
       "answer_framework": {
         "structure": "STAR",
@@ -117,7 +138,10 @@
     {
       "id": "fin_b_005",
       "category": "behavioral",
-      "seniority": ["entry", "mid"],
+      "seniority": [
+        "entry",
+        "mid"
+      ],
       "text": "Tell me about a time you had to work with incomplete or unreliable financial data.",
       "answer_framework": {
         "structure": "STAR",
@@ -134,7 +158,7 @@
           "Risk prevention: 'Caught this before external audit' or 'Prevented a $2M balance sheet error'"
         ],
         "avoid": [
-          "Giving up: 'The data was bad so I just used what we had' — they want to see you solve it",
+          "Giving up: 'The data was bad so I just used what we had', they want to see you solve it",
           "Blame-shifting: 'IT gave us corrupted data' without explaining your recovery steps",
           "No validation: 'I assumed it was correct and built my analysis on it'",
           "Lack of escalation: If it was unsolvable, did you flag it to your manager or the CFO?"
@@ -144,7 +168,10 @@
     {
       "id": "fin_b_006",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you identified and implemented an improvement to a financial reporting process.",
       "answer_framework": {
         "structure": "STAR",
@@ -171,7 +198,11 @@
     {
       "id": "fin_b_007",
       "category": "behavioral",
-      "seniority": ["mid", "senior", "manager"],
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "Tell me about a time you had to manage a budget that came under significant pressure.",
       "answer_framework": {
         "structure": "STAR",
@@ -188,7 +219,7 @@
           "Resilience: 'Delivered on original strategic goals despite budget constraints' or 'Team morale stayed high'"
         ],
         "avoid": [
-          "Passive acceptance: 'We just cut 10% across the board' — that's not managing, that's dividing equally",
+          "Passive acceptance: 'We just cut 10% across the board', that's not managing, that's dividing equally",
           "Short-term only: Cut spend for one quarter without explaining sustainability",
           "No stakeholder buy-in: 'I made cuts and they complained' vs. building alignment on priorities",
           "Vague outcome: Left unclear whether you actually came in on budget or just slowed the bleed"
@@ -198,7 +229,10 @@
     {
       "id": "fin_b_008",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe a situation where you disagreed with a financial projection or assumption and what you did about it.",
       "answer_framework": {
         "structure": "STAR",
@@ -225,7 +259,10 @@
     {
       "id": "fin_b_009",
       "category": "behavioral",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "Tell me about a time you had to deliver bad financial news to leadership.",
       "answer_framework": {
         "structure": "STAR",
@@ -252,7 +289,11 @@
     {
       "id": "fin_b_010",
       "category": "behavioral",
-      "seniority": ["mid", "senior", "manager"],
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "Describe a cross-functional project you supported or led that had a major financial component.",
       "answer_framework": {
         "structure": "STAR",
@@ -269,7 +310,7 @@
           "Real outcome: 'Delivered 3 weeks early under budget' or 'Exceeded ROI targets by 12%'"
         ],
         "avoid": [
-          "Finance as bystander: 'I just reported numbers' — they want to see your contribution to success",
+          "Finance as bystander: 'I just reported numbers', they want to see your contribution to success",
           "Vague project description: 'Worked on a company initiative' without clarity on what it was",
           "Solo hero narrative: 'I made the project succeed' instead of collaborative credit",
           "No financial outcome: Left unclear whether the project was financially sound or how you contributed to that"
@@ -279,7 +320,10 @@
     {
       "id": "fin_t_001",
       "category": "technical",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Walk me through how you build a 3-statement financial model from scratch.",
       "answer_framework": {
         "structure": "Framework",
@@ -291,14 +335,14 @@
         ],
         "strong_answer_signals": [
           "Mentions input assumptions: 'I start with historical averages or guidance for revenue growth, margin, CapEx intensity, working capital'",
-          "Shows awareness of mechanics: 'Working capital changes are important because cash N/I—deferred revenue can really swing cash flow'",
+          "Shows awareness of mechanics: 'Working capital changes are important because cash N/I, deferred revenue can really swing cash flow'",
           "Links the three statements explicitly: 'The change in cash from the P&L flows to operating activities; any debt issuance shows in financing'",
           "Discusses order of build: 'I build IS first because it flows to BS and CF; that prevents errors'"
         ],
         "avoid": [
           "Building in wrong order: 'I start with cash flow' (usually done last)",
           "Not linking between statements: Describing each in isolation without showing the connections",
-          "Oversimplifying: 'I just put revenue and subtract expenses' — ignore working capital, capex, and debt mechanics",
+          "Oversimplifying: 'I just put revenue and subtract expenses', ignore working capital, capex, and debt mechanics",
           "Excel jargon without substance: 'I use vlookup and pivot tables' without explaining the financial logic"
         ]
       }
@@ -306,7 +350,10 @@
     {
       "id": "fin_t_002",
       "category": "technical",
-      "seniority": ["entry", "mid"],
+      "seniority": [
+        "entry",
+        "mid"
+      ],
       "text": "How do you approach building a budget vs. actual variance analysis?",
       "answer_framework": {
         "structure": "Framework",
@@ -318,13 +365,13 @@
         ],
         "strong_answer_signals": [
           "Specific approach: 'I always separate volume and rate variance because they require different actions'",
-          "Shows sophistication: 'I flag timing issues separately—a big Q4 spend isn't a problem if it was planned'",
+          "Shows sophistication: 'I flag timing issues separately, a big Q4 spend isn't a problem if it was planned'",
           "Mentions drill-down: 'I talk to the cost center owner to understand each variance > 10%'",
           "Connects to action: 'If the variance is recurring, we reforecast; if it's one-time, we don't overreact'"
         ],
         "avoid": [
           "Only reporting absolute dollars: No percentage context makes it hard to prioritize",
-          "No investigation: 'Budget was $100K, actual was $120K, variance is $20K' — stop there and dig deeper",
+          "No investigation: 'Budget was $100K, actual was $120K, variance is $20K', stop there and dig deeper",
           "Treating all variances as failures: 'We came in over, so we failed' (ignore that volume or external factors may have driven it)",
           "No forward-looking view: Left unclear how you'd forecast the rest of the year based on the variance"
         ]
@@ -333,7 +380,11 @@
     {
       "id": "fin_t_003",
       "category": "technical",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Explain how you assess a company's financial health using ratio analysis.",
       "answer_framework": {
         "structure": "Framework",
@@ -345,23 +396,26 @@
         ],
         "strong_answer_signals": [
           "Comparative lens: 'I compare ratios to peers and the company's 3-year trend to spot red flags'",
-          "Context-aware: 'Gross margin compression could mean pricing pressure or input cost inflation—context matters'",
+          "Context-aware: 'Gross margin compression could mean pricing pressure or input cost inflation, context matters'",
           "Integrated view: 'High profitability + high leverage + low cash conversion is a warning sign'",
           "Specific thresholds: 'I watch for current ratio <1.0 or interest coverage <2x as signs of stress'"
         ],
         "avoid": [
           "One-metric focus: Looking at just debt-to-equity and ignoring operating margin trends",
-          "No peer context: 'ROE of 12% is bad' — bad for whom? Utilities have lower ROE than tech",
+          "No peer context: 'ROE of 12% is bad', bad for whom? Utilities have lower ROE than tech",
           "Mechanical calculation: 'Current ratio = current assets / current liabilities' without explaining what it means",
-          "No follow-up: Left unclear what you'd do if ratios flagged risk — would you dig deeper or escalate?"
+          "No follow-up: Left unclear what you'd do if ratios flagged risk, would you dig deeper or escalate?"
         ]
       }
     },
     {
       "id": "fin_t_004",
       "category": "technical",
-      "seniority": ["mid", "senior"],
-      "text": "Walk me through a DCF valuation — key steps and assumptions.",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Walk me through a DCF valuation: key steps and assumptions.",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
@@ -373,7 +427,7 @@
         "strong_answer_signals": [
           "Specific assumptions: 'I use 10% revenue growth tapering to 3% by year 5' and 'WACC of 8% based on 60/40 equity/debt structure'",
           "Shows risk awareness: 'Terminal value is 75% of the output, so I always stress-test the perpetuity growth rate'",
-          "Realistic exit: 'I use a 15x exit multiple if exiting to a strategic buyer in year 5' — not just perpetuity",
+          "Realistic exit: 'I use a 15x exit multiple if exiting to a strategic buyer in year 5', not just perpetuity",
           "Sensitivity: 'I model valuation across WACC and perpetuity growth ranges to show the range of outcomes'"
         ],
         "avoid": [
@@ -387,7 +441,10 @@
     {
       "id": "fin_t_005",
       "category": "technical",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "How do you approach a 13-week cash flow forecast?",
       "answer_framework": {
         "structure": "Framework",
@@ -414,8 +471,11 @@
     {
       "id": "fin_t_006",
       "category": "technical",
-      "seniority": ["mid", "senior"],
-      "text": "Explain the difference between EBITDA and free cash flow — when does each metric matter most?",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Explain the difference between EBITDA and free cash flow, when does each metric matter most?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
@@ -433,7 +493,7 @@
         "avoid": [
           "Confusing EBITDA with operating CF: They're not the same (working capital changes matter)",
           "Ignoring the 'why': 'EBITDA and FCF are different' without explaining which is more relevant for which decision",
-          "Assuming EBITDA = FCF: 'If EBITDA is positive, cash is positive' — wrong if CapEx is high",
+          "Assuming EBITDA = FCF: 'If EBITDA is positive, cash is positive', wrong if CapEx is high",
           "No context on maintenance vs. growth CapEx: Lumping all CapEx together when the mix matters for long-term sustainability"
         ]
       }
@@ -441,7 +501,10 @@
     {
       "id": "fin_t_007",
       "category": "technical",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "How do you build a sensitivity or scenario analysis in a financial model?",
       "answer_framework": {
         "structure": "Framework",
@@ -468,7 +531,10 @@
     {
       "id": "fin_t_008",
       "category": "technical",
-      "seniority": ["entry", "mid"],
+      "seniority": [
+        "entry",
+        "mid"
+      ],
       "text": "Walk me through how you close the books at month-end.",
       "answer_framework": {
         "structure": "Framework",
@@ -495,7 +561,10 @@
     {
       "id": "fin_t_009",
       "category": "technical",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "How do you approach revenue recognition under ASC 606?",
       "answer_framework": {
         "structure": "Framework",
@@ -512,17 +581,20 @@
           "Audit-ready: 'We maintain a revenue schedule showing each contract's terms, performance obligations, and recognition policy'"
         ],
         "avoid": [
-          "Oversimplifying: 'We recognize when we invoice' — that's not ASC 606",
+          "Oversimplifying: 'We recognize when we invoice', that's not ASC 606",
           "Ignoring complexity: 'Most revenue is straightforward' when contracts have bundled services, refunds, or contingencies",
           "No controls: 'We handle ASC 606 issue-by-issue' vs. having a systematic approach and documented policy",
-          "Not tracking changes: 'If ASC 606 interpretations change, we'll deal with it then' — best practice is to monitor standards bodies"
+          "Not tracking changes: 'If ASC 606 interpretations change, we'll deal with it then', best practice is to monitor standards bodies"
         ]
       }
     },
     {
       "id": "fin_t_010",
       "category": "technical",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "What is your approach to working capital management and optimization?",
       "answer_framework": {
         "structure": "Framework",
@@ -549,8 +621,11 @@
     {
       "id": "fin_t_011",
       "category": "technical",
-      "seniority": ["senior", "manager"],
-      "text": "How do you assess capital allocation decisions — build vs. buy vs. partner?",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "How do you assess capital allocation decisions, build vs. buy vs. partner?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
@@ -576,7 +651,10 @@
     {
       "id": "fin_t_012",
       "category": "technical",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "How do you model out the financial impact of a potential acquisition?",
       "answer_framework": {
         "structure": "Framework",
@@ -603,7 +681,10 @@
     {
       "id": "fin_s_001",
       "category": "situational",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "A department submits a budget request 40% over approved spend. How do you handle it?",
       "answer_framework": {
         "structure": "Framework",
@@ -630,7 +711,10 @@
     {
       "id": "fin_s_002",
       "category": "situational",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Your model shows a product line is unprofitable, but the sales team pushes back hard. What do you do?",
       "answer_framework": {
         "structure": "Framework",
@@ -648,7 +732,7 @@
         ],
         "avoid": [
           "Defending your model without review: 'My model is right, they're just being defensive'",
-          "Dismissing their perspective: 'Sales is always optimistic; ignore them' — they may have data or insight you're missing",
+          "Dismissing their perspective: 'Sales is always optimistic; ignore them', they may have data or insight you're missing",
           "Vague resolution: 'We disagreed and moved on' without clarity on profitability path",
           "Creating political tension: Taking the disagreement to the CFO as 'sales is lying' vs. 'we need to align on cost allocation'"
         ]
@@ -657,7 +741,11 @@
     {
       "id": "fin_s_003",
       "category": "situational",
-      "seniority": ["mid", "senior", "manager"],
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "It's day 3 of close and a material error is found in revenue recognition. What are your steps?",
       "answer_framework": {
         "structure": "Framework",
@@ -670,7 +758,7 @@
         "strong_answer_signals": [
           "Specific error: 'We booked $5M in revenue for a multi-year contract as if it were one-time'",
           "Quick escalation: 'I flagged it to the controller within 30 minutes'",
-          "Proactive investigation: 'I reviewed 15 similar contracts to scope the full impact — $12M was affected'",
+          "Proactive investigation: 'I reviewed 15 similar contracts to scope the full impact, $12M was affected'",
           "Resolution detail: 'We corrected current period revenue and created a prior-period adjustment; auditors reviewed and approved the treatment'"
         ],
         "avoid": [
@@ -684,7 +772,10 @@
     {
       "id": "fin_s_004",
       "category": "situational",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "A key assumption in your annual forecast proves wrong by July. How do you handle the reforecast?",
       "answer_framework": {
         "structure": "Framework",
@@ -711,7 +802,10 @@
     {
       "id": "fin_s_005",
       "category": "situational",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "You are asked to find $2M in cost savings without reducing headcount. How do you approach it?",
       "answer_framework": {
         "structure": "Framework",
@@ -728,7 +822,7 @@
           "Implemented quickly: 'We realized $2M in the first 90 days; ongoing savings were tracked for the remainder of the year'"
         ],
         "avoid": [
-          "Cutting across the board: '10% cut everywhere' — hits low-value and high-value spending equally",
+          "Cutting across the board: '10% cut everywhere', hits low-value and high-value spending equally",
           "One-time savings: Deferring expenses that will come back (e.g., maintenance, training), masking the problem",
           "No validation: 'Here are $2M in suggested savings' without confirming with vendors or process owners",
           "Ignoring impact: Cutting so deeply that service or product quality suffers"
@@ -738,7 +832,10 @@
     {
       "id": "fin_s_006",
       "category": "situational",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "A potential acquisition target has been presented. What are your first steps in financial due diligence?",
       "answer_framework": {
         "structure": "Framework",
@@ -765,7 +862,10 @@
     {
       "id": "fin_s_007",
       "category": "situational",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Your CFO asks for a board-ready financial summary in 4 hours. How do you prioritize?",
       "answer_framework": {
         "structure": "Framework",
@@ -785,14 +885,17 @@
           "Starting from scratch: Building a full analysis from raw data in 4 hours",
           "Over-polishing: Spending 2 hours on fonts and colors when content should take priority",
           "Vague output: 'Here's a lot of numbers' without highlighting the key takeaways",
-          "No validation: Delivering data you didn't verify — mistakes in a 4-hour rush are likely"
+          "No validation: Delivering data you didn't verify, mistakes in a 4-hour rush are likely"
         ]
       }
     },
     {
       "id": "fin_s_008",
       "category": "situational",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "Two business units are in conflict over cost allocations. How do you mediate?",
       "answer_framework": {
         "structure": "Framework",
@@ -819,7 +922,10 @@
     {
       "id": "fin_s_009",
       "category": "situational",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Finance systems are down the morning of a critical investor reporting deadline. What do you do?",
       "answer_framework": {
         "structure": "Framework",
@@ -836,7 +942,7 @@
           "Systemic improvement: 'This led us to implement automated daily data exports and a disaster recovery plan'"
         ],
         "avoid": [
-          "Panic: 'The system is down so we can't deliver' — that's not an acceptable answer to your CFO",
+          "Panic: 'The system is down so we can't deliver', that's not an acceptable answer to your CFO",
           "Doing it manually without verification: Transcribing numbers from memory or old reports and hoping they're right",
           "Not escalating: Quietly working around the issue so no one notices (management should know about critical system failures)",
           "No follow-up: Fixing the immediate problem but not addressing the root cause or preventive controls"
@@ -846,7 +952,10 @@
     {
       "id": "fin_s_010",
       "category": "situational",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "A new regulation changes how you must recognize a significant revenue stream. How do you manage the transition?",
       "answer_framework": {
         "structure": "Framework",
@@ -873,7 +982,10 @@
     {
       "id": "fin_m_001",
       "category": "motivation",
-      "seniority": ["entry", "mid"],
+      "seniority": [
+        "entry",
+        "mid"
+      ],
       "text": "Why do you want to work in FP&A as opposed to other finance roles?",
       "answer_framework": {
         "structure": "Framework",
@@ -900,7 +1012,10 @@
     {
       "id": "fin_m_002",
       "category": "motivation",
-      "seniority": ["entry", "mid"],
+      "seniority": [
+        "entry",
+        "mid"
+      ],
       "text": "What excites you about financial modeling and analysis?",
       "answer_framework": {
         "structure": "Framework",
@@ -919,7 +1034,7 @@
         "avoid": [
           "Tool obsession: 'I love Excel and VBA' (tools are means, not the end)",
           "Vague benefits: 'Models help the business' without explaining what about it excites you",
-          "False certainty: 'Models predict the future accurately' — they're approximations",
+          "False certainty: 'Models predict the future accurately', they're approximations",
           "No learning mindset: 'I know how to model everything' vs. 'I love learning new modeling approaches'"
         ]
       }
@@ -927,7 +1042,11 @@
     {
       "id": "fin_m_003",
       "category": "motivation",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Where do you see your finance career in five years?",
       "answer_framework": {
         "structure": "Framework",
@@ -954,7 +1073,10 @@
     {
       "id": "fin_m_004",
       "category": "motivation",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "What drew you to corporate finance over investment banking, or vice versa?",
       "answer_framework": {
         "structure": "Framework",
@@ -971,9 +1093,9 @@
           "Realistic about change: 'I keep an open mind; IB skills transfer, so if I want to move later, I can'"
         ],
         "avoid": [
-          "Dismissing the other path: 'IB is just transactional' or 'Corporate is boring' — both are legitimate",
+          "Dismissing the other path: 'IB is just transactional' or 'Corporate is boring', both are legitimate",
           "No real consideration: 'I chose corporate without really thinking about IB'",
-          "Regret narrative: 'I chose corporate but now I wish I'd gone IB' — shows uncertainty about your path",
+          "Regret narrative: 'I chose corporate but now I wish I'd gone IB', shows uncertainty about your path",
           "External pressure: 'My parents wanted me in corporate' (own your choice)"
         ]
       }
@@ -981,7 +1103,10 @@
     {
       "id": "fin_m_005",
       "category": "motivation",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "What has been your most challenging financial project and why did it energize you?",
       "answer_framework": {
         "structure": "Framework",
@@ -999,17 +1124,21 @@
         ],
         "avoid": [
           "Trivial challenge: 'Building a budget was challenging' (budgets are standard)",
-          "Victim narrative: 'It was hard because everyone else was incompetent' — reflect on what you'd do differently",
+          "Victim narrative: 'It was hard because everyone else was incompetent', reflect on what you'd do differently",
           "No outcome: 'It was a challenging project' without explaining how it turned out or what you learned",
-          "Misplaced energy: 'I loved it because I worked 80 hours' — that's burnout, not energization"
+          "Misplaced energy: 'I loved it because I worked 80 hours', that's burnout, not energization"
         ]
       }
     },
     {
       "id": "fin_m_006",
       "category": "motivation",
-      "seniority": ["mid", "senior", "manager"],
-      "text": "Why do you want to work for a company at this stage — startup, scale-up, or enterprise?",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Why do you want to work for a company at this stage, startup, scale-up, or enterprise?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
@@ -1027,7 +1156,7 @@
         "avoid": [
           "Generic stage preference: 'I like startups because they're dynamic' (true, but needs to connect to you)",
           "Stage hopping narrative: 'I was at a startup, then scaleup, now enterprise' without showing intentionality",
-          "Regret about prior stage: 'Startups were too chaotic' — that's valuable learning, but own it maturely",
+          "Regret about prior stage: 'Startups were too chaotic', that's valuable learning, but own it maturely",
           "Misalignment with this company: 'I prefer startups' when interviewing at a Fortune 500"
         ]
       }
@@ -1035,7 +1164,9 @@
     {
       "id": "fin_mg_001",
       "category": "manager",
-      "seniority": ["manager"],
+      "seniority": [
+        "manager"
+      ],
       "text": "How do you ensure accuracy and quality control across your team's financial reporting?",
       "answer_framework": {
         "structure": "Framework",
@@ -1052,7 +1183,7 @@
           "Continuous improvement: 'When we find an error, we add a control to prevent it; we revisit controls quarterly to see if they're working'"
         ],
         "avoid": [
-          "Blame culture: 'People make mistakes, so I police everything heavily' — that's demotivating and doesn't scale",
+          "Blame culture: 'People make mistakes, so I police everything heavily', that's demotivating and doesn't scale",
           "No clear standards: 'High quality' without defining what that means to the team",
           "All-reviewing: Reviewing every piece of work rather than building team competence and systematic controls",
           "Reactive controls: Only adding controls after errors occur rather than building them proactively"
@@ -1062,7 +1193,10 @@
     {
       "id": "fin_mg_002",
       "category": "manager",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "Describe how you have developed and mentored junior analysts.",
       "answer_framework": {
         "structure": "Framework",
@@ -1081,7 +1215,7 @@
         "avoid": [
           "Transactional mentoring: 'I assigned them tasks and reviewed their work' without development focus",
           "No challenge: 'I give them simple work to build confidence' (they need stretch, not just comfort)",
-          "Feedback aversion: 'I only give feedback if something goes wrong' — regular positive and developmental feedback is motivating",
+          "Feedback aversion: 'I only give feedback if something goes wrong', regular positive and developmental feedback is motivating",
           "Unconscious bias: Only mentoring people who remind you of yourself or show immediate promise"
         ]
       }
@@ -1089,7 +1223,9 @@
     {
       "id": "fin_mg_003",
       "category": "manager",
-      "seniority": ["manager"],
+      "seniority": [
+        "manager"
+      ],
       "text": "How do you prioritize competing deadlines during close periods as a finance leader?",
       "answer_framework": {
         "structure": "Framework",
@@ -1106,7 +1242,7 @@
           "Measurable success: 'We've consistently closed in 7 days and hit all external deadlines while maintaining team morale'"
         ],
         "avoid": [
-          "Firefighting approach: 'Things are always chaotic during close; we just power through' — that's a sign of bad planning",
+          "Firefighting approach: 'Things are always chaotic during close; we just power through', that's a sign of bad planning",
           "No delegation: Trying to own everything yourself rather than trusting the team",
           "Overcommitting: Promising all tasks in the original timeline when that's not realistic",
           "No team visibility: Not communicating with the team about what's critical so they don't know what to prioritize"
@@ -1116,7 +1252,9 @@
     {
       "id": "fin_mg_004",
       "category": "manager",
-      "seniority": ["manager"],
+      "seniority": [
+        "manager"
+      ],
       "text": "How do you build a culture of financial integrity and accountability in your team?",
       "answer_framework": {
         "structure": "Framework",
@@ -1143,7 +1281,9 @@
     {
       "id": "fin_mg_005",
       "category": "manager",
-      "seniority": ["manager"],
+      "seniority": [
+        "manager"
+      ],
       "text": "How do you keep your finance team aligned with business strategy?",
       "answer_framework": {
         "structure": "Framework",
@@ -1170,7 +1310,9 @@
     {
       "id": "fin_mg_006",
       "category": "manager",
-      "seniority": ["manager"],
+      "seniority": [
+        "manager"
+      ],
       "text": "How do you manage a high-performing finance professional who is underperforming during a critical period?",
       "answer_framework": {
         "structure": "Framework",
@@ -1188,7 +1330,7 @@
         ],
         "avoid": [
           "Avoidance: Hoping they improve on their own; ignoring the problem",
-          "Public criticism: 'I called them out in a team meeting' — that damages trust and doesn't solve the issue",
+          "Public criticism: 'I called them out in a team meeting', that damages trust and doesn't solve the issue",
           "Immediate consequences: 'They're underperforming, so I reassigned them' without understanding the root cause",
           "One-way conversation: 'I told them what to do' without listening to their perspective"
         ]
@@ -1197,7 +1339,10 @@
     {
       "id": "fin_mg_007",
       "category": "manager",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "How do you evaluate whether to hire, outsource, or automate a finance function?",
       "answer_framework": {
         "structure": "Framework",
@@ -1224,7 +1369,9 @@
     {
       "id": "fin_mg_008",
       "category": "manager",
-      "seniority": ["manager"],
+      "seniority": [
+        "manager"
+      ],
       "text": "How have you led a finance team through a major systems implementation or ERP migration?",
       "answer_framework": {
         "structure": "Framework",
@@ -1242,7 +1389,7 @@
         ],
         "avoid": [
           "Big bang approach: 'We turned off the old system and turned on the new one' with no parallel run",
-          "No team involvement: 'IT led the project; finance just complied' — your team needs to drive requirements",
+          "No team involvement: 'IT led the project; finance just complied', your team needs to drive requirements",
           "Training after go-live: Telling team members how to use the system once it's live and in crisis mode",
           "No contingency: No rollback plan or parallel close process; betting everything on the new system working perfectly"
         ]

@@ -1,0 +1,740 @@
+{
+  "metadata": {
+    "sector": "Customer Service & Support",
+    "generated": "2026-08-30",
+    "total": 25,
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ]
+  },
+  "questions": [
+    {
+      "id": "cs_001",
+      "text": "Tell me about a time you turned an angry customer into a loyal one.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Acknowledged the issue fully",
+          "Took ownership and accountability",
+          "Resolved beyond expectations",
+          "Followed up to ensure satisfaction"
+        ],
+        "strong_answer_signals": [
+          "Customer retained",
+          "NPS increased",
+          "Relationship restored"
+        ],
+        "avoid": [
+          "Defensive stance",
+          "Scripted response",
+          "No follow-up"
+        ]
+      }
+    },
+    {
+      "id": "cs_002",
+      "text": "How do you handle a customer complaint about a company policy?",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Listen and acknowledge frustration",
+          "Explain policy with empathy",
+          "Find alternatives within policy",
+          "Escalate if needed"
+        ],
+        "strong_answer_signals": [
+          "Empathy shown",
+          "Policy explained clearly",
+          "Alternative found"
+        ],
+        "avoid": [
+          "Policy cited dismissively",
+          "No alternatives",
+          "Blame on policy"
+        ]
+      }
+    },
+    {
+      "id": "cs_003",
+      "text": "Describe your experience with Zendesk, Freshdesk, or Intercom.",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Ticket management and routing",
+          "SLA tracking",
+          "Reporting and analytics",
+          "Workflow automation"
+        ],
+        "strong_answer_signals": [
+          "Efficiency improved",
+          "SLA met consistently",
+          "Automation built"
+        ],
+        "avoid": [
+          "Basic usage only",
+          "No reporting",
+          "Tickets falling through"
+        ]
+      }
+    },
+    {
+      "id": "cs_004",
+      "text": "How do you measure customer service performance?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "NPS, CSAT, CES metrics",
+          "First response time, resolution time",
+          "Ticket volume and category",
+          "Agent performance"
+        ],
+        "strong_answer_signals": [
+          "Metrics reviewed regularly",
+          "Actionable insights",
+          "Improvement demonstrated"
+        ],
+        "avoid": [
+          "Vanity metrics only",
+          "No trend analysis",
+          "No action on data"
+        ]
+      }
+    },
+    {
+      "id": "cs_005",
+      "text": "Tell me about a time you had to deliver bad news to a customer.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Delivered news clearly and promptly",
+          "Explained reason honestly",
+          "Offered compensation or alternative",
+          "Maintained relationship"
+        ],
+        "strong_answer_signals": [
+          "Honest and empathetic",
+          "Compensation appropriate",
+          "Trust maintained"
+        ],
+        "avoid": [
+          "Delayed communication",
+          "No explanation",
+          "Under or over compensation"
+        ]
+      }
+    },
+    {
+      "id": "cs_006",
+      "text": "How do you handle a customer request that is outside your authority?",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Acknowledge the request",
+          "Escalate to appropriate level",
+          "Follow up with customer",
+          "Document for process improvement"
+        ],
+        "strong_answer_signals": [
+          "Escalation smooth",
+          "Customer informed",
+          "Process improved"
+        ],
+        "avoid": [
+          "Saying no without escalation",
+          "Not following up",
+          "No documentation"
+        ]
+      }
+    },
+    {
+      "id": "cs_007",
+      "text": "Describe training and developing a support team.",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Product knowledge training",
+          "Soft skills development",
+          "QA and coaching",
+          "Career pathing"
+        ],
+        "strong_answer_signals": [
+          "CSAT improved",
+          "Team retention high",
+          "Skills gap closed"
+        ],
+        "avoid": [
+          "One-time training only",
+          "No coaching",
+          "High turnover"
+        ]
+      }
+    },
+    {
+      "id": "cs_008",
+      "text": "How do you manage SLA commitments and meet them consistently?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "SLA tracking dashboard",
+          "SLA risk monitoring",
+          "Escalation process",
+          "Backlog management"
+        ],
+        "strong_answer_signals": [
+          "SLA met >95%",
+          "SLA breach root cause",
+          "Process improved"
+        ],
+        "avoid": [
+          "SLA misses",
+          "No tracking",
+          "Backlog ignored"
+        ]
+      }
+    },
+    {
+      "id": "cs_009",
+      "text": "Tell me about reducing ticket volume through self-service.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Ticket analysis by category",
+          "FAQ and knowledge base",
+          "Self-service portal",
+          "Measured deflection"
+        ],
+        "strong_answer_signals": [
+          "Volume reduced >20%",
+          "Customer effort reduced",
+          "CSAT maintained"
+        ],
+        "avoid": [
+          "Ticket analysis not done",
+          "KB not kept current",
+          "Self-service not measured"
+        ]
+      }
+    },
+    {
+      "id": "cs_010",
+      "text": "How do you handle a customer demanding to speak with a manager?",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Understand why they want escalation",
+          "Attempt to resolve first",
+          "Warm transfer with context",
+          "Manager follows up if needed"
+        ],
+        "strong_answer_signals": [
+          "Issue resolved before escalation",
+          "Smooth handoff",
+          "Customer satisfied"
+        ],
+        "avoid": [
+          "Dismissive of escalation request",
+          "Handoff without context",
+          "Customer repeated story"
+        ]
+      }
+    },
+    {
+      "id": "cs_011",
+      "text": "Describe your approach to quality assurance in customer service.",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Call/ticket review process",
+          "Scorecard and calibration",
+          "Feedback and coaching",
+          "Quality metrics tracked"
+        ],
+        "strong_answer_signals": [
+          "Quality improved",
+          "Calibration consistent",
+          "Coaching effective"
+        ],
+        "avoid": [
+          "No QA process",
+          "No calibration",
+          "Feedback not acted on"
+        ]
+      }
+    },
+    {
+      "id": "cs_012",
+      "text": "How do you handle a customer who is wrong or making unreasonable demands?",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Stay calm and professional",
+          "Acknowledge their perspective",
+          "Explain reality clearly",
+          "Offer reasonable alternatives"
+        ],
+        "strong_answer_signals": [
+          "Empathy maintained",
+          "Boundary set clearly",
+          "Relationship preserved"
+        ],
+        "avoid": [
+          "Arguing with customer",
+          "Saying you are wrong",
+          "Giving in to unreasonable"
+        ]
+      }
+    },
+    {
+      "id": "cs_013",
+      "text": "Tell me about a time you went above and beyond for a customer.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identified customer need",
+          "Proactively exceeded expectations",
+          "Coordinated across teams",
+          "Customer advocacy created"
+        ],
+        "strong_answer_signals": [
+          "Customer loyalty increased",
+          "Customer shared positive experience",
+          "Internal process improved"
+        ],
+        "avoid": [
+          "One-time only",
+          "Not measurable",
+          "Customer not retained"
+        ]
+      }
+    },
+    {
+      "id": "cs_014",
+      "text": "How do you build a knowledge base that support agents actually use?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Content by ticket analysis",
+          "Searchable and scannable",
+          "Regular updates",
+          "Usage tracked and improved"
+        ],
+        "strong_answer_signals": [
+          "KB adoption >80%",
+          "Resolution time reduced",
+          "Consistency improved"
+        ],
+        "avoid": [
+          "KB built and ignored",
+          "Not searchable",
+          "Not updated"
+        ]
+      }
+    },
+    {
+      "id": "cs_015",
+      "text": "Describe handling a high-volume support situation.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Prioritized critical issues",
+          "Communicated wait times",
+          "Routed appropriately",
+          "Worked through backlog"
+        ],
+        "strong_answer_signals": [
+          "Critical issues resolved first",
+          "SLA maintained for priority",
+          "No issues fell through"
+        ],
+        "avoid": [
+          "No prioritization",
+          "SLA missed",
+          "Communication lacking"
+        ]
+      }
+    },
+    {
+      "id": "cs_016",
+      "text": "How do you prevent customer churn through proactive support?",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Health score monitoring",
+          "Early warning indicators",
+          "Proactive outreach",
+          "Success program"
+        ],
+        "strong_answer_signals": [
+          "Churn reduced",
+          "NPS improved",
+          "Expansion increased"
+        ],
+        "avoid": [
+          "Reactive only",
+          "No health monitoring",
+          "No success program"
+        ]
+      }
+    },
+    {
+      "id": "cs_017",
+      "text": "Tell me about implementing a new support tool or process.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Needs assessment",
+          "Change management",
+          "Training and adoption",
+          "Measured impact"
+        ],
+        "strong_answer_signals": [
+          "Adoption >90%",
+          "Efficiency improved",
+          "CSAT improved"
+        ],
+        "avoid": [
+          "Low adoption",
+          "No training",
+          "No impact measured"
+        ]
+      }
+    },
+    {
+      "id": "cs_018",
+      "text": "How do you balance customer satisfaction with company interests?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Clear compensation guidelines",
+          "Empowerment within limits",
+          "Escalation for exceptions",
+          "Win-win mindset"
+        ],
+        "strong_answer_signals": [
+          "CSAT high",
+          "Cost of service managed",
+          "Guidelines clear"
+        ],
+        "avoid": [
+          "Always saying yes",
+          "Always saying no",
+          "No guidelines"
+        ]
+      }
+    },
+    {
+      "id": "cs_019",
+      "text": "Describe your experience with omnichannel support.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Channel integration",
+          "Context preservation",
+          "Routing and prioritization",
+          "SLA by channel"
+        ],
+        "strong_answer_signals": [
+          "Context maintained across channels",
+          "FCR improved",
+          "Customer effort low"
+        ],
+        "avoid": [
+          "Channels siloed",
+          "Context lost",
+          "No integration"
+        ]
+      }
+    },
+    {
+      "id": "cs_020",
+      "text": "How do you keep support agents motivated during stressful times?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Team recognition",
+          "Workload balancing",
+          "Support and coaching",
+          "Breaks and wellness"
+        ],
+        "strong_answer_signals": [
+          "Retention maintained",
+          "CSAT sustained",
+          "Team morale healthy"
+        ],
+        "avoid": [
+          "No recognition",
+          "Burnout ignored",
+          "Team turnover"
+        ]
+      }
+    },
+    {
+      "id": "cs_021",
+      "text": "Tell me about analyzing support data to improve the product.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Ticket trend analysis",
+          "Root cause identification",
+          "Product team collaboration",
+          "Issue prevention"
+        ],
+        "strong_answer_signals": [
+          "Bug identified and fixed",
+          "UX improved",
+          "Tickets reduced"
+        ],
+        "avoid": [
+          "No data analysis",
+          "Product team not engaged",
+          "Same issues recurring"
+        ]
+      }
+    },
+    {
+      "id": "cs_022",
+      "text": "How do you handle a customer who was wronged by your company?",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Acknowledge company error",
+          "Take full responsibility",
+          "Remedy appropriately",
+          "Prevent recurrence"
+        ],
+        "strong_answer_signals": [
+          "Customer retained",
+          "Trust rebuilt",
+          "Process improved"
+        ],
+        "avoid": [
+          "Defending company",
+          "Inadequate remedy",
+          "No prevention"
+        ]
+      }
+    },
+    {
+      "id": "cs_023",
+      "text": "Describe hiring for customer service roles.",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Behavior-based interviewing",
+          "Empathy assessment",
+          "Product knowledge test",
+          "Team fit evaluation"
+        ],
+        "strong_answer_signals": [
+          "Good hires retained",
+          "CSAT per agent tracked",
+          "Team culture maintained"
+        ],
+        "avoid": [
+          "Hire for experience only",
+          "No empathy assessment",
+          "High turnover"
+        ]
+      }
+    },
+    {
+      "id": "cs_024",
+      "text": "How do you use customer feedback to drive improvements?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Feedback collection",
+          "Analysis and themes",
+          "Prioritization",
+          "Implementation and communication"
+        ],
+        "strong_answer_signals": [
+          "Improvements made",
+          "Customer seen changes",
+          "NPS improved"
+        ],
+        "avoid": [
+          "Feedback not analyzed",
+          "No action taken",
+          "No communication"
+        ]
+      }
+    },
+    {
+      "id": "cs_025",
+      "text": "Why customer service? What keeps you engaged?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Helping people motivation",
+          "Problem solving",
+          "Making an impact",
+          "Growth path"
+        ],
+        "strong_answer_signals": [
+          "Genuine empathy",
+          "Stories of impact",
+          "Career growth clear"
+        ],
+        "avoid": [
+          "Just a job",
+          "No impact stories",
+          "Want out of CS"
+        ]
+      }
+    }
+  ]
+}

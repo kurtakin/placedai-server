@@ -1,0 +1,586 @@
+{
+  "metadata": {
+    "sector": "Technical Writing",
+    "generated": "2026-08-30",
+    "total": 20,
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ]
+  },
+  "questions": [
+    {
+      "id": "tw_001",
+      "text": "Tell me about a time you had to document a complex technical product for the first time. How did you approach it?",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Assessed audience technical level and documentation scope",
+          "Created outline and gathered subject matter expert input",
+          "Iterated draft based on feedback from engineers and product teams",
+          "Delivered clear, maintainable documentation"
+        ],
+        "strong_answer_signals": [
+          "User-focused audience analysis",
+          "Clear documentation workflow",
+          "Subject matter expert engagement"
+        ],
+        "avoid": [
+          "Wrote without audience analysis",
+          "Documented only for technical experts",
+          "No iteration on feedback"
+        ]
+      }
+    },
+    {
+      "id": "tw_002",
+      "text": "Describe your experience with API documentation and how you ensure developers can integrate with it.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Use OpenAPI/Swagger specs for consistency",
+          "Provide quickstart guides and code samples",
+          "Document endpoints, parameters, error codes, and auth",
+          "Keep docs versioned alongside API releases"
+        ],
+        "strong_answer_signals": [
+          "Developer-friendly examples",
+          "Consistent versioning",
+          "Clear error handling docs"
+        ],
+        "avoid": [
+          "Only reference internal wikis",
+          "Outdated code samples",
+          "Missing auth details"
+        ]
+      }
+    },
+    {
+      "id": "tw_003",
+      "text": "How do you decide what information goes into a user guide versus a knowledge base article?",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Assess whether the task is task-based (guide) or problem-based (KB)",
+          "Consider user maturity and context of use",
+          "Use single-sourcing principles to reduce redundancy",
+          "Maintain clear ownership and update cadence"
+        ],
+        "strong_answer_signals": [
+          "Clear task vs problem distinction",
+          "Maintainable documentation strategy",
+          "Defined ownership"
+        ],
+        "avoid": [
+          "Duplicate content across formats",
+          "No ownership model",
+          "Mixing task and problem content"
+        ]
+      }
+    },
+    {
+      "id": "tw_004",
+      "text": "Tell me about a time you had to simplify a very technical concept for a non-technical audience.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identified the knowledge gap and audience level",
+          "Used analogies, diagrams, and step-by-step breakdowns",
+          "Validated understanding through user testing or feedback",
+          "Delivered documentation that reduced support tickets"
+        ],
+        "strong_answer_signals": [
+          "Effective simplification techniques",
+          "Measurable reduction in support volume",
+          "Audience validation"
+        ],
+        "avoid": [
+          "Dumbed down without clarity",
+          "Ignored audience feedback",
+          "No measurement of impact"
+        ]
+      }
+    },
+    {
+      "id": "tw_005",
+      "text": "How do you manage documentation updates when the product changes rapidly?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Implement doc-as-code with version control",
+          "Set up automated build and deploy for docs",
+          "Create review workflows tied to product release cycles",
+          "Use changelogs and release notes for traceability"
+        ],
+        "strong_answer_signals": [
+          "Automate where possible",
+          "Tied to product release cadence",
+          "Clear review workflows"
+        ],
+        "avoid": [
+          "Manual-only updates",
+          "Docs lagging behind product",
+          "No version control"
+        ]
+      }
+    },
+    {
+      "id": "tw_006",
+      "text": "Describe your experience with information architecture for large documentation sets.",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Define taxonomy and metadata schema",
+          "Use progressive disclosure for complexity levels",
+          "Create searchable cross-references and backlinks",
+          "Measure findability with analytics and user feedback"
+        ],
+        "strong_answer_signals": [
+          "Clear taxonomy",
+          "User testing validated",
+          "Analytics-driven improvements"
+        ],
+        "avoid": [
+          "Flat structure without hierarchy",
+          "No metadata strategy",
+          "Ignoring user feedback"
+        ]
+      }
+    },
+    {
+      "id": "tw_007",
+      "text": "How do you ensure accessibility (508/WCAG) compliance in technical documentation?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Use semantic HTML and ARIA labels",
+          "Provide alt text for images and diagrams",
+          "Ensure keyboard navigation works",
+          "Test with screen readers and color contrast checkers"
+        ],
+        "strong_answer_signals": [
+          "Compliance standards met",
+          "Automated accessibility testing",
+          "Screen reader tested"
+        ],
+        "avoid": [
+          "Only visual inspection",
+          "No accessibility testing",
+          "Missing alt text"
+        ]
+      }
+    },
+    {
+      "id": "tw_008",
+      "text": "Tell me about a time you had to coordinate documentation across multiple teams (engineering, product, QA).",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Established shared documentation standards and templates",
+          "Scheduled regular syncs with each team",
+          "Defined ownership boundaries and review processes",
+          "Delivered integrated docs with consistent voice and format"
+        ],
+        "strong_answer_signals": [
+          "Cross-team collaboration",
+          "Defined ownership boundaries",
+          "Shared standards"
+        ],
+        "avoid": [
+          "Siloed documentation",
+          "No shared standards",
+          "Vague ownership"
+        ]
+      }
+    },
+    {
+      "id": "tw_009",
+      "text": "How do you handle localization and translation for technical documentation?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Use translation-friendly formats (XML, JSON, Markdown)",
+          "Implement translation memory and glossaries",
+          "Keep cultural nuances and idioms in mind",
+          "Build in context screenshots and localized screenshots"
+        ],
+        "strong_answer_signals": [
+          "Localization strategy clear",
+          "Glossary management",
+          "Context-aware translation"
+        ],
+        "avoid": [
+          "Hardcoded strings in docs",
+          "No context for translators",
+          "No terminology control"
+        ]
+      }
+    },
+    {
+      "id": "tw_010",
+      "text": "Describe your experience with Markdown, structured authoring (DITA), or XML for documentation.",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Choose format based on publishing and reuse requirements",
+          "DITA for modular, reusable content",
+          "Markdown for simplicity and developer adoption",
+          "XML for complex publishing and metadata"
+        ],
+        "strong_answer_signals": [
+          "Format choice justified by use case",
+          "Toolchain integration",
+          "Reuse strategy"
+        ],
+        "avoid": [
+          "No format strategy",
+          "Format chosen without considering publishing needs",
+          "Single format for everything"
+        ]
+      }
+    },
+    {
+      "id": "tw_011",
+      "text": "How do you measure the effectiveness of technical documentation?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Track page views, time on page, and search terms",
+          "Monitor support ticket deflection rates",
+          "Gather user satisfaction surveys and feedback",
+          "Analyze search fail rates and fix top queries"
+        ],
+        "strong_answer_signals": [
+          "Data-driven improvements",
+          "Clear metrics tied to business outcomes",
+          "User satisfaction tracked"
+        ],
+        "avoid": [
+          "Vanity metrics only",
+          "No user feedback",
+          "No correlation to support volume"
+        ]
+      }
+    },
+    {
+      "id": "tw_012",
+      "text": "Tell me about a time you wrote release notes that helped users understand a major update.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Structured release notes by impact and category",
+          "Linked to detailed docs for deeper information",
+          "Used clear headings and visual hierarchy",
+          "Gathered user feedback to improve future releases"
+        ],
+        "strong_answer_signals": [
+          "Clear communication of changes",
+          "User feedback incorporated",
+          "Well-structured hierarchy"
+        ],
+        "avoid": [
+          "Only listing features",
+          "No user-friendly organization",
+          "Missing impact categorization"
+        ]
+      }
+    },
+    {
+      "id": "tw_013",
+      "text": "How do you write effective error messages and inline help?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Describe what happened, why, and what the user can do",
+          "Use plain language, not error codes alone",
+          "Provide links to relevant documentation",
+          "Test with real users to validate clarity"
+        ],
+        "strong_answer_signals": [
+          "Actionable error guidance",
+          "User-tested clarity",
+          "Plain language"
+        ],
+        "avoid": [
+          "Technical jargon only",
+          "No actionable steps",
+          "Cryptic error codes"
+        ]
+      }
+    },
+    {
+      "id": "tw_014",
+      "text": "How do you stay current with documentation tools and best practices?",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Follow documentation and developer experience blogs",
+          "Attend conferences like Write the Docs",
+          "Experiment with new tools in sandbox environments",
+          "Contribute to and learn from documentation communities"
+        ],
+        "strong_answer_signals": [
+          "Active community involvement",
+          "Tool experimentation",
+          "Continuous learning"
+        ],
+        "avoid": [
+          "Only using inherited tools",
+          "No community involvement",
+          "Stagnant skill set"
+        ]
+      }
+    },
+    {
+      "id": "tw_015",
+      "text": "Tell me about a time you had to convince engineers to allocate time for documentation.",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Showed metrics on support cost reduction",
+          "Demonstrated how docs improve developer experience",
+          "Created lightweight documentation workflows",
+          "Linked documentation to product quality goals"
+        ],
+        "strong_answer_signals": [
+          "Data-driven business case",
+          "Lightweight workflows",
+          "Cross-functional buy-in"
+        ],
+        "avoid": [
+          "Treating docs as optional",
+          "Ignoring engineering constraints",
+          "Top-down mandate without buy-in"
+        ]
+      }
+    },
+    {
+      "id": "tw_016",
+      "text": "Describe your approach to creating style guides and terminology standards.",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Audit existing content for terminology consistency",
+          "Collaborate with product and engineering on approved terms",
+          "Document grammar, tone, and formatting standards",
+          "Review and update style guide annually or per major release"
+        ],
+        "strong_answer_signals": [
+          "Comprehensive terminology audit",
+          "Regular review cadence",
+          "Cross-team collaboration"
+        ],
+        "avoid": [
+          "No documented standards",
+          "Inconsistent terminology",
+          "Style guide created and forgotten"
+        ]
+      }
+    },
+    {
+      "id": "tw_017",
+      "text": "How do you handle documentation when there are tight deadlines and limited time?",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Prioritize critical user workflows and common tasks",
+          "Use templates and reusable components",
+          "Focus on high-impact areas first",
+          "Iterate and improve after launch"
+        ],
+        "strong_answer_signals": [
+          "Smart prioritization",
+          "Templates and reuse",
+          "Iterative improvement"
+        ],
+        "avoid": [
+          "Trying to document everything",
+          "Skipping critical documentation",
+          "No prioritization framework"
+        ]
+      }
+    },
+    {
+      "id": "tw_018",
+      "text": "Tell me about your experience with GitHub or similar version control for documentation.",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Use pull requests for reviews and collaboration",
+          "Branch per feature or update",
+          "Automate builds from documentation repositories",
+          "Track changes through commit history and blame"
+        ],
+        "strong_answer_signals": [
+          "Git workflow for docs",
+          "Automated publishing",
+          "Clear change tracking"
+        ],
+        "avoid": [
+          "Manual file sharing",
+          "No version control",
+          "Direct commits to main branch"
+        ]
+      }
+    },
+    {
+      "id": "tw_019",
+      "text": "Why technical writing? What keeps you motivated in this field?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Enabling users and developers to succeed through clear communication",
+          "Bridge between complex systems and human understanding",
+          "Growing field of developer experience and documentation",
+          "Opportunity to improve products through better communication"
+        ],
+        "strong_answer_signals": [
+          "Clear personal motivation",
+          "Connects to role responsibilities",
+          "Long-term career vision"
+        ],
+        "avoid": [
+          "Generic answers about writing",
+          "Not connecting to technical context",
+          "No career growth path"
+        ]
+      }
+    },
+    {
+      "id": "tw_020",
+      "text": "Describe your experience with API documentation tools like Swagger, Redoc, or ReadMe.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Generated API reference docs from OpenAPI specs",
+          "Created interactive consoles for testing endpoints",
+          "Maintained tutorial and how-to guides alongside reference",
+          "Integrated documentation with CI/CD pipelines"
+        ],
+        "strong_answer_signals": [
+          "Interactive API consoles",
+          "CI/CD documentation integration",
+          "OpenAPI-driven workflow"
+        ],
+        "avoid": [
+          "Static reference docs only",
+          "No testing capabilities",
+          "Manual updates only"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,599 @@
+{
+  "metadata": {
+    "categories": [
+      "behavioral",
+      "situational",
+      "technical"
+    ],
+    "total": 20,
+    "sector": "Video Film Production",
+    "generated": "2026-08-30",
+    "schema_version": "1.1"
+  },
+  "questions": [
+    {
+      "id": "vp_001",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Developed detailed production schedule",
+          "Created comprehensive shot lists",
+          "Coordinated pre-production resources",
+          "Managed script development timeline"
+        ],
+        "avoid": [
+          "Overly theoretical approach",
+          "Ignoring practical constraints",
+          "Poor communication"
+        ],
+        "strong_answer_signals": [
+          "Proven planning skills",
+          "Budget awareness",
+          "Team coordination"
+        ]
+      },
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about your experience with pre-production planning for a complex film project. How did you approach script development and storyboarding?"
+    },
+    {
+      "id": "vp_002",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Assessed creative priorities vs budget",
+          "Negotiated with stakeholders",
+          "Found creative solutions within constraints",
+          "Documented decisions clearly"
+        ],
+        "avoid": [
+          "Rejects creative ideas outright",
+          "Ignores budget considerations",
+          "Makes unilateral decisions"
+        ],
+        "strong_answer_signals": [
+          "Budget sensitivity",
+          "Creative problem solving",
+          "Stakeholder management"
+        ]
+      },
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "How do you handle conflicts between creative vision and budget constraints during production?"
+    },
+    {
+      "id": "vp_003",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Research and planned lighting design",
+          "Coordinated with cinematographer",
+          "Executed lighting setup efficiently",
+          "Measured results against creative goals"
+        ],
+        "avoid": [
+          "Ignores safety protocols",
+          "Poor planning",
+          "Single technical approach"
+        ],
+        "strong_answer_signals": [
+          "Technical expertise",
+          "Creative execution",
+          "Quality focus"
+        ]
+      },
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Describe a time when you successfully implemented innovative lighting techniques to achieve a specific visual style. What was your process?"
+    },
+    {
+      "id": "vp_004",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Analyzed script requirements",
+          "Considered budget constraints",
+          "Tested equipment capabilities",
+          "Selected optimal gear for scene needs"
+        ],
+        "avoid": [
+          "Ignores script requirements",
+          "Expensive gear obsession",
+          "Equipment focus over creative needs"
+        ],
+        "strong_answer_signals": [
+          "Technical knowledge",
+          "Practical assessment",
+          "Cost awareness"
+        ]
+      },
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "How do you evaluate and select the best camera equipment and cinematography approach for different shooting scenarios?"
+    },
+    {
+      "id": "vp_005",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identified root cause quickly",
+          "Organized emergency solutions",
+          "Coordinated team response",
+          "Maintained shooting schedule"
+        ],
+        "avoid": [
+          "Panics and delays",
+          "Takes no responsibility",
+          "Poor communication"
+        ],
+        "strong_answer_signals": [
+          "Quick thinking",
+          "Leadership under pressure",
+          "Problem solving"
+        ]
+      },
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about a time you managed a major equipment failure during shooting. How did you recover?"
+    },
+    {
+      "id": "vp_006",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Assessed location acoustics",
+          "Selected appropriate microphones",
+          "Set up recording equipment",
+          "Monitored audio quality during production"
+        ],
+        "avoid": [
+          "Ignores location challenges",
+          "Poor equipment setup",
+          "Lacks quality checks"
+        ],
+        "strong_answer_signals": [
+          "Technical expertise",
+          "Quality focus",
+          "Attention to detail"
+        ]
+      },
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "How do you ensure audio quality for on-location productions, and what is your recording process?"
+    },
+    {
+      "id": "vp_007",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Analyzed target delivery format",
+          "Developed color correction plan",
+          "Executed grading workflow",
+          "Ensured consistency across all media"
+        ],
+        "avoid": [
+          "Ignores format requirements",
+          "Poor technical execution",
+          "Lacks attention to detail"
+        ],
+        "strong_answer_signals": [
+          "Technical mastery",
+          "Creative eye",
+          "Quality assurance"
+        ]
+      },
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Describe your experience with color grading for different formats (theater, broadcast, streaming). How do you approach this process?"
+    },
+    {
+      "id": "vp_008",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Organized project bins and timelines",
+          "Managed rough cut and fine cut stages",
+          "Coordinated with color and audio teams",
+          "Delivered to required specifications"
+        ],
+        "avoid": [
+          "Unstructured project organization",
+          "Misses deadlines",
+          "Ignores team handoff needs"
+        ],
+        "strong_answer_signals": [
+          "Software proficiency",
+          "Workflow efficiency",
+          "Team collaboration"
+        ]
+      },
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Describe your editing software workflow in Premiere Pro, DaVinci Resolve, or Final Cut Pro for a large-scale project. How do you organize rough cuts, mid-term and final delivery?"
+    },
+    {
+      "id": "vp_009",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Planned VFX requirements early",
+          "Coordinated with VFX team",
+          "Managed expectations and deadlines",
+          "Ensured technical integration"
+        ],
+        "avoid": [
+          "Leaves VFX for last minute",
+          "Poor communication",
+          "Ignores technical requirements"
+        ],
+        "strong_answer_signals": [
+          "Technical coordination",
+          "Team leadership",
+          "Quality focus"
+        ]
+      },
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about your experience with VFX coordination. How do you ensure seamless integration of VFX basics into the final project?"
+    },
+    {
+      "id": "vp_010",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Developed comprehensive presentation materials",
+          "Prepared portfolio examples",
+          "Rehearsed delivery",
+          "Engaged client effectively"
+        ],
+        "avoid": [
+          "Poor preparation",
+          "Lack of portfolio",
+          "Poor communication skills"
+        ],
+        "strong_answer_signals": [
+          "Professional presentation",
+          "Client focus",
+          "Confidence"
+        ]
+      },
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "How do you prepare for client presentations and pitch meetings to ensure clear communication of your creative vision?"
+    },
+    {
+      "id": "vp_011",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Created detailed budget breakdown",
+          "Monitored expenses regularly",
+          "Negotiated vendor contracts",
+          "Controlled costs without sacrificing quality"
+        ],
+        "avoid": [
+          "Poor budget tracking",
+          "Cost-cutting at wrong areas",
+          "Lack of planning"
+        ],
+        "strong_answer_signals": [
+          "Budget expertise",
+          "Financial acumen",
+          "Strategic thinking"
+        ]
+      },
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Describe your experience with budget management during pre-production. How do you ensure costs stay within limits?"
+    },
+    {
+      "id": "vp_012",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Understood character requirements",
+          "Provided clear direction",
+          "Coached talent effectively",
+          "Ensured performance meets vision"
+        ],
+        "avoid": [
+          "Dictatorial approach",
+          "Poor feedback skills",
+          "No coaching experience"
+        ],
+        "strong_answer_signals": [
+          "Leadership skills",
+          "Communication ability",
+          "Patience and empathy"
+        ]
+      },
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "How do you handle talent direction and performance coaching on set?"
+    },
+    {
+      "id": "vp_013",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Prioritized key scenes",
+          "Streamlined processes",
+          "Maximized crew efficiency",
+          "Maintained creative quality"
+        ],
+        "avoid": [
+          "Cuts corners excessively",
+          "Poor decision making",
+          "Lacks delegation"
+        ],
+        "strong_answer_signals": [
+          "Leadership under pressure",
+          "Time management",
+          "Team motivation"
+        ]
+      },
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Tell me about a time you directed under tight schedule constraints. How did you manage production management challenges?"
+    },
+    {
+      "id": "vp_014",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Studied format requirements",
+          "Tested technical compliance",
+          "Documented specifications",
+          "Ensured quality standards"
+        ],
+        "avoid": [
+          "Ignores technical specs",
+          "Poor testing",
+          "Lacks documentation"
+        ],
+        "strong_answer_signals": [
+          "Technical knowledge",
+          "Attention to detail",
+          "Quality assurance"
+        ]
+      },
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "How do you ensure compliance with streaming and broadcast specifications for deliverables?"
+    },
+    {
+      "id": "vp_015",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Analyzed project type requirements",
+          "Adapted production approach",
+          "Managed different expectations",
+          "Maintained quality standards"
+        ],
+        "avoid": [
+          "Same approach for all projects",
+          "Ignores project differences",
+          "Poor assessment"
+        ],
+        "strong_answer_signals": [
+          "Adaptability",
+          "Versatility",
+          "Project understanding"
+        ]
+      },
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "How does the production approach differ between a music video, commercial and documentary? Tell me about your experience with each."
+    },
+    {
+      "id": "vp_016",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Reviewed deliverables thoroughly",
+          "Gained client feedback",
+          "Made necessary revisions",
+          "Ensured final product exceeds expectations"
+        ],
+        "avoid": [
+          "Poor quality control",
+          "Ignores feedback",
+          "Delays responses"
+        ],
+        "strong_answer_signals": [
+          "Quality focus",
+          "Client service",
+          "Attention to detail"
+        ]
+      },
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "How do you evaluate production deliverables and ensure final client satisfaction?"
+    },
+    {
+      "id": "vp_017",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Developed communication protocols",
+          "Coordinated daily operations",
+          "Managed scheduling conflicts",
+          "Ensured efficient workflow"
+        ],
+        "avoid": [
+          "Poor communication",
+          "Unstructured approach",
+          "Lack of coordination"
+        ],
+        "strong_answer_signals": [
+          "Organizational skills",
+          "Leadership ability",
+          "Problem solving"
+        ]
+      },
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about your experience with production management for large crews. How do you handle coordination?"
+    },
+    {
+      "id": "vp_018",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Analyzed genre requirements",
+          "Considered target demographics",
+          "Developed appropriate dialogue",
+          "Ensured story structure"
+        ],
+        "avoid": [
+          "Ignores genre specifics",
+          "Poor audience analysis",
+          "Weak dialogue"
+        ],
+        "strong_answer_signals": [
+          "Writing ability",
+          "Audience understanding",
+          "Storytelling skills"
+        ]
+      },
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "How do you approach scriptwriting for different genres and target audiences?"
+    },
+    {
+      "id": "vp_019",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Studied visual audio requirements",
+          "Coordinated with sound team",
+          "Integrated sound elements",
+          "Ensured cohesive experience"
+        ],
+        "avoid": [
+          "Ignores audio-visual relationship",
+          "Poor coordination",
+          "Lacks artistic judgment"
+        ],
+        "strong_answer_signals": [
+          "Technical expertise",
+          "Team coordination",
+          "Artistic sensibility"
+        ]
+      },
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Describe your experience with sound design integration and audio post-production. How do you ensure audio-visual harmony?"
+    },
+    {
+      "id": "vp_020",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Researched cultural differences",
+          "Adapted presentation approach",
+          "Considered local market needs",
+          "Engaged effectively with diverse audiences"
+        ],
+        "avoid": [
+          "Ignores cultural differences",
+          "One-size-fits-all approach",
+          "Poor cross-cultural understanding"
+        ],
+        "strong_answer_signals": [
+          "Cultural awareness",
+          "Adaptability",
+          "Communication skills"
+        ]
+      },
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "How do you prepare for and manage client presentations across different cultures and international markets?"
+    }
+  ]
+}

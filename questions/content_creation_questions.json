@@ -1,0 +1,636 @@
+{
+  "questions": [
+    {
+      "answer_framework": {
+        "key_points": [
+          "Identified shared pain points across audiences",
+          "Segmented messaging while maintaining core narrative",
+          "Used channel-specific formats to deliver unified message",
+          "Measured engagement per segment to validate approach"
+        ],
+        "structure": "STAR",
+        "avoid": [
+          "Vague descriptions without specific tactics",
+          "Ignoring one audience segment entirely",
+          "No mention of measurement or validation"
+        ],
+        "strong_answer_signals": [
+          "Mentions specific segmentation strategy",
+          "Shows ability to balance brand consistency with audience specificity",
+          "Includes measurable outcomes from the approach"
+        ]
+      },
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "id": "cc_001",
+      "text": "Describe a time when you had to create content that appealed to multiple audiences with conflicting interests. How did you approach it?",
+      "category": "behavioral"
+    },
+    {
+      "answer_framework": {
+        "framework_name": "Content Calendar Development Process",
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Demonstrates systematic planning methodology",
+          "Includes cross-functional coordination elements",
+          "Addresses content repurposing strategy"
+        ],
+        "avoid": [
+          "Describing only the tools used without explaining process",
+          "Missing quality control checkpoints",
+          "No mention of stakeholder alignment"
+        ],
+        "key_points": [
+          "Audience research and buyer persona development",
+          "Content pillar identification and topic ideation",
+          "Format distribution across channels and formats",
+          "Timeline mapping with key milestones and dependencies",
+          "Workflow automation and team assignment"
+        ]
+      },
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "id": "cc_002",
+      "text": "Walk me through your process for developing a content calendar from scratch for a new product launch.",
+      "category": "technical"
+    },
+    {
+      "answer_framework": {
+        "key_points": [
+          "Authentic passion for storytelling and audience connection",
+          "Personal strategies for overcoming creative blocks",
+          "Continuous learning mindset and curiosity about trends",
+          "Balancing intrinsic motivation with business objectives"
+        ],
+        "structure": "STAR",
+        "avoid": [
+          "Focusing only on extrinsic rewards (salary, fame)",
+          "Dismissing creative blocks as not affecting them",
+          "No evidence of growth mindset"
+        ],
+        "strong_answer_signals": [
+          "Shows genuine enthusiasm without being rehearsed",
+          "Demonstrates self-awareness about creative process",
+          "Mentions specific learning resources or communities"
+        ]
+      },
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "id": "cc_003",
+      "text": "What draws you to content creation as a career, and how do you stay motivated during creative blocks?",
+      "category": "motivation"
+    },
+    {
+      "answer_framework": {
+        "framework_name": "Competitive Content Positioning",
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Shows strategic thinking about market positioning",
+          "Balances ambition with realistic execution plans",
+          "Includes competitive intelligence gathering"
+        ],
+        "avoid": [
+          "Copying competitor strategies without differentiation",
+          "Trying to out-produce established players immediately",
+          "Ignoring the importance of community building"
+        ],
+        "key_points": [
+          "Competitor content audit and gap identification",
+          "Unique value proposition articulation for content",
+          "Niche audience segments to target first",
+          "Content differentiation through format innovation or depth",
+          "Long-term authority building versus quick wins strategy"
+        ]
+      },
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "id": "cc_004",
+      "text": "You are assigned to create content for a brand entering a market with an established competitor dominating the space. How do you position the content strategy?",
+      "category": "situational"
+    },
+    {
+      "answer_framework": {
+        "framework_name": "Headline Testing Methodology",
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Demonstrates statistical thinking",
+          "Knows when to trust results versus continue testing",
+          "Connects testing to business outcomes"
+        ],
+        "avoid": [
+          "Making decisions on small sample sizes",
+          "Testing too many variables simultaneously",
+          "Ignoring mobile versus desktop performance differences"
+        ],
+        "key_points": [
+          "Hypothesis formation based on audience data",
+          "Test variables: emotional triggers, length, power words, numbers",
+          "Sample size determination and statistical significance",
+          "Click-through rate as primary, engagement as secondary metric",
+          "Iterative testing cadence and documentation"
+        ]
+      },
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "id": "cc_005",
+      "text": "How do you approach A/B testing headlines for maximum engagement? What metrics do you prioritize?",
+      "category": "technical"
+    },
+    {
+      "answer_framework": {
+        "key_points": [
+          "Identified platform-specific voice requirements",
+          "Created voice guidelines that allowed flexibility",
+          "Maintained core brand personality across adaptations",
+          "Measured resonance to validate approach"
+        ],
+        "structure": "STAR",
+        "avoid": [
+          "Treating all platforms the same",
+          "Losing brand identity in adaptation",
+          "No measurement of voice effectiveness"
+        ],
+        "strong_answer_signals": [
+          "Shows nuanced understanding of platform cultures",
+          "Balances consistency with platform authenticity",
+          "Includes specific examples of voice adaptations"
+        ]
+      },
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "id": "cc_006",
+      "text": "Tell me about a campaign where you had to adapt brand voice across different social platforms.",
+      "category": "behavioral"
+    },
+    {
+      "answer_framework": {
+        "framework_name": "Content ROI Measurement Framework",
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Understands limitations of vanity metrics",
+          "Connects content performance to business revenue",
+          "Shows ability to communicate value to executives"
+        ],
+        "avoid": [
+          "Focusing only on traffic and social shares",
+          "Claiming all revenue as content-generated without attribution",
+          "No mention of costs in ROI calculation"
+        ],
+        "key_points": [
+          "Attribution model selection (first touch, last touch, multi-touch)",
+          "Leading indicators: traffic, engagement, lead quality",
+          "Lagging indicators: conversions, revenue, customer acquisition cost",
+          "Content efficiency ratio calculation",
+          "Reporting cadence and stakeholder communication"
+        ]
+      },
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "id": "cc_007",
+      "text": "How do you measure ROI for content marketing initiatives? What KPIs do you track?",
+      "category": "technical"
+    },
+    {
+      "answer_framework": {
+        "key_points": [
+          "Hook strategy: question, stat, bold claim, or story setup",
+          "Understanding of platform-specific attention spans",
+          "Clear value proposition delivery in opening moments",
+          "Visual storytelling alongside dialogue",
+          "Call-to-action timing and placement"
+        ],
+        "structure": "STAR",
+        "avoid": [
+          "Rambling introductions without clear hooks",
+          "No consideration for platform differences",
+          "Treating video as a text article with moving images"
+        ],
+        "strong_answer_signals": [
+          "Demonstrates knowledge of video retention metrics",
+          "Shows awareness of platform algorithm preferences",
+          "Includes specific hook techniques used successfully"
+        ]
+      },
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "id": "cc_008",
+      "text": "What is your experience with video script writing? How do you keep viewers engaged in the first 30 seconds?",
+      "category": "technical"
+    },
+    {
+      "answer_framework": {
+        "key_points": [
+          "Active listening to understand stakeholder concerns",
+          "Presenting data and evidence to support content decisions",
+          "Finding compromise between preferences and best practices",
+          "Educating stakeholders on audience-centered approach",
+          "Documenting decisions and rationales"
+        ],
+        "structure": "STAR",
+        "avoid": [
+          "Immediately dismissing stakeholder input",
+          "Blindly following without advocating for best practices",
+          "Being defensive or argumentative"
+        ],
+        "strong_answer_signals": [
+          "Diplomatic communication skills",
+          "Data-driven decision making without being dismissive",
+          "Ability to build consensus"
+        ]
+      },
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "id": "cc_009",
+      "text": "How do you handle feedback from stakeholders who want to change your content direction based on personal preferences rather than data?",
+      "category": "situational"
+    },
+    {
+      "answer_framework": {
+        "framework_name": "Multilingual Content Strategy",
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Understands cultural nuances beyond language",
+          "Knows when to localize versus translate",
+          "Includes quality assurance processes"
+        ],
+        "avoid": [
+          "Treating translation as the only step",
+          "Ignoring regional variations within language groups",
+          "Not involving local market expertise"
+        ],
+        "key_points": [
+          "Cultural adaptation beyond literal translation",
+          "Local market research and sensitivity review",
+          "Content structure that allows for localization",
+          "In-market reviewer involvement",
+          "Metrics comparison across regions"
+        ]
+      },
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "id": "cc_010",
+      "text": "Describe your experience with multilingual content strategies. How do you approach localization versus translation?",
+      "category": "technical"
+    },
+    {
+      "answer_framework": {
+        "framework_name": "Content Governance Framework",
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Shows experience with cross-functional coordination",
+          "Balances control with creative freedom",
+          "Understands organizational change management"
+        ],
+        "avoid": [
+          "Creating frameworks too rigid for practical use",
+          "Ignoring existing organizational processes",
+          "No enforcement or accountability mechanisms"
+        ],
+        "key_points": [
+          "Stakeholder identification and roles/responsibilities definition",
+          "Content approval workflows and escalation paths",
+          "Brand voice and style guide maintenance",
+          "Content auditing and archival processes",
+          "Training and adoption programs"
+        ]
+      },
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "id": "cc_011",
+      "text": "How do you build and maintain a content governance framework for a large organization?",
+      "category": "technical"
+    },
+    {
+      "answer_framework": {
+        "key_points": [
+          "Data analysis process and pattern recognition",
+          "Pivot decision and rationale",
+          "Strategy adjustment implementation",
+          "Results validation and learning"
+        ],
+        "structure": "STAR",
+        "avoid": [
+          "Vague correlation without causation claims",
+          "No willingness to change direction",
+          "Ignoring data that contradicted assumptions"
+        ],
+        "strong_answer_signals": [
+          "Demonstrates comfort with data-driven decision making",
+          "Shows intellectual curiosity and willingness to adapt",
+          "Includes specific measurable outcomes"
+        ]
+      },
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "id": "cc_012",
+      "text": "Tell me about a time when content analytics revealed an unexpected insight that changed your strategy.",
+      "category": "behavioral"
+    },
+    {
+      "answer_framework": {
+        "framework_name": "CMS Selection Criteria",
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Knows multiple CMS platforms and their strengths",
+          "Bases selection on client/business needs not personal preference",
+          "Understands technical limitations and requirements"
+        ],
+        "avoid": [
+          "Recommending only the most expensive or newest platform",
+          "Ignoring the team that will actually use it",
+          "No consideration for migration complexity"
+        ],
+        "key_points": [
+          "Scalability and performance requirements",
+          "Editor experience and learning curve",
+          "Integration capabilities with existing tools",
+          "SEO and content optimization features",
+          "Budget and total cost of ownership"
+        ]
+      },
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "id": "cc_013",
+      "text": "What CMS platforms have you worked with, and how do you select the right platform for a project's needs?",
+      "category": "technical"
+    },
+    {
+      "answer_framework": {
+        "framework_name": "Thought Leadership Content Approach",
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Shows understanding of authentic voice",
+          "Balances expertise with humility",
+          "Knows how to build trust through value first"
+        ],
+        "avoid": [
+          "Promoting company or self constantly",
+          "Speaking in generalities without substance",
+          "Ignoring the importance of consistent presence"
+        ],
+        "key_points": [
+          "Original insights backed by data or experience",
+          "Vulnerability and authentic storytelling",
+          "Addressing audience challenges without selling",
+          "Consistent voice and perspective development",
+          "Engagement with community and other thought leaders"
+        ]
+      },
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "id": "cc_014",
+      "text": "How do you approach thought leadership content to establish credibility without coming across as preachy or self-promotional?",
+      "category": "technical"
+    },
+    {
+      "answer_framework": {
+        "framework_name": "Content Repurposing Strategy",
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Systematic approach to content asset management",
+          "Creative transformation beyond just copy-pasting",
+          "Shows understanding of each platform's requirements"
+        ],
+        "avoid": [
+          "Simply copying content to multiple platforms",
+          "No tracking of repurposed content performance",
+          "Ignoring freshness and update requirements"
+        ],
+        "key_points": [
+          "Content audit and asset inventory",
+          "Format transformation by audience and platform",
+          "Internal linking and cross-promotion",
+          "Performance tracking per repurposed piece",
+          "Efficiency systems and templates for rapid repurposing"
+        ]
+      },
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "id": "cc_015",
+      "text": "Describe your approach to content repurposing. How do you maximize value from existing content?",
+      "category": "technical"
+    },
+    {
+      "answer_framework": {
+        "key_points": [
+          "Understanding of creator economy trends and models",
+          "Integration of creator partnerships in content strategy",
+          "Authenticity and trust dynamics with audiences",
+          "Monetization and collaboration models",
+          "Long-term implications for brand content teams"
+        ],
+        "structure": "STAR",
+        "avoid": [
+          "Dismissive attitude toward creator economy",
+          "No understanding of creator-brand collaboration models",
+          "Focusing only on owned content ignoring partnerships"
+        ],
+        "strong_answer_signals": [
+          "Shows awareness of industry shifts",
+          "Connects creator trends to business strategy",
+          "Forward-thinking but realistic"
+        ]
+      },
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "id": "cc_016",
+      "text": "How do you see the creator economy affecting content marketing strategies?",
+      "category": "motivation"
+    },
+    {
+      "answer_framework": {
+        "framework_name": "High-Volume Low-Budget Content Strategy",
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Resourcefulness and creative problem-solving",
+          "Shows strategic prioritization skills",
+          "Knows when to say no to low-value requests"
+        ],
+        "avoid": [
+          "Trying to do everything equally",
+          "Cutting quality to meet quantity",
+          "Not documenting wins to advocate for resources"
+        ],
+        "key_points": [
+          "Content audit to identify existing assets",
+          "High-impact, low-effort content identification",
+          "Strategic outsourcing versus in-house production",
+          "Automation and efficiency tools",
+          "Measurement to prove value before requesting more budget"
+        ]
+      },
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "id": "cc_017",
+      "text": "You're given a limited budget but expected to produce high-volume content. How do you prioritize?",
+      "category": "situational"
+    },
+    {
+      "answer_framework": {
+        "framework_name": "Editorial Meeting Structure",
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Shows meeting facilitation skills",
+          "Balances input gathering with productive output",
+          "Respects stakeholder time while gathering insights"
+        ],
+        "avoid": [
+          "Unstructured brainstorming without outcomes",
+          "One-sided presentations without collaboration",
+          "No follow-up accountability systems"
+        ],
+        "key_points": [
+          "Pre-meeting preparation and agenda distribution",
+          "Clear meeting objectives and time management",
+          "Data-driven performance review section",
+          "Collaboration and idea generation format",
+          "Clear action items and owner assignments"
+        ]
+      },
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "id": "cc_018",
+      "text": "How do you structure an effective editorial planning meeting with cross-functional stakeholders?",
+      "category": "technical"
+    },
+    {
+      "answer_framework": {
+        "framework_name": "Conversion Copywriting Framework",
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Knows the difference between engagement and conversion copy",
+          "Shows metrics from past conversion-focused work",
+          "Understands psychology of decision-making"
+        ],
+        "avoid": [
+          "Focusing only on creativity without conversion intent",
+          "No mention of testing or optimization",
+          "Ignoring mobile experience and readability"
+        ],
+        "key_points": [
+          "Understanding of customer journey stages",
+          "Headline and subheadline optimization for scanners",
+          "Benefit-focused copy with supporting evidence",
+          "Clear CTA language and placement",
+          "A/B testing and optimization mindset"
+        ]
+      },
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "id": "cc_019",
+      "text": "What is your experience with copywriting for conversion-focused content like landing pages and email sequences?",
+      "category": "technical"
+    },
+    {
+      "answer_framework": {
+        "key_points": [
+          "Research and data preparation phase",
+          "Business outcome-focused narrative",
+          "Competitive and industry benchmarking",
+          "Clear ROI projection with assumptions",
+          "Anticipating objections and preparing responses"
+        ],
+        "structure": "STAR",
+        "avoid": [
+          "Using only engagement metrics to make the case",
+          "No preparation for tough questions",
+          "Being defensive about budget requests"
+        ],
+        "strong_answer_signals": [
+          "Speaks the language of business not just content",
+          "Shows executive presence and communication skills",
+          "Wins buy-in through persuasion not authority"
+        ]
+      },
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "id": "cc_020",
+      "text": "Tell me about a time you had to present a content strategy to executives. How did you make a compelling case for investment?",
+      "category": "behavioral"
+    }
+  ],
+  "metadata": {
+    "total": 20,
+    "generated": "2026-08-30",
+    "sectors_covered": [
+      "SEO content strategy",
+      "copywriting for ads/emails/landing pages",
+      "brand voice development",
+      "content calendars",
+      "content marketing ROI",
+      "social media content",
+      "video scripts",
+      "thought leadership",
+      "content analytics",
+      "editorial planning",
+      "content repurposing",
+      "creator economy",
+      "multilingual content",
+      "content governance",
+      "CMS platforms",
+      "A/B testing headlines"
+    ],
+    "schema_version": "1.1",
+    "sector": "Content Creation",
+    "categories": [
+      "behavioral",
+      "motivation",
+      "situational",
+      "technical"
+    ]
+  }
+}

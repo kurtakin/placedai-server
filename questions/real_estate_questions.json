@@ -1,0 +1,541 @@
+{
+  "metadata": {
+    "sector": "Real Estate & Property Management",
+    "generated": "2026-08-30",
+    "total": 20,
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ]
+  },
+  "questions": [
+    {
+      "id": "re_001",
+      "text": "Tell me about closing a challenging deal.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Objections handled",
+          "Creative solutions",
+          "Documentation managed",
+          "Deal closed"
+        ],
+        "strong_answer_signals": [
+          "Creative negotiation",
+          "Result achieved"
+        ],
+        "avoid": [
+          "Gave up easily",
+          "No creativity"
+        ]
+      }
+    },
+    {
+      "id": "re_002",
+      "text": "How do you price a property competitively?",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Market analysis",
+          "Comparable sales",
+          "Condition assessment",
+          "Pricing strategy"
+        ],
+        "strong_answer_signals": [
+          "Accurate pricing",
+          "Quick sale"
+        ],
+        "avoid": [
+          "Overpriced",
+          "No research"
+        ]
+      }
+    },
+    {
+      "id": "re_003",
+      "text": "Describe your approach to lead generation.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Prospecting methods",
+          "Network building",
+          "Online marketing",
+          "Follow-up process"
+        ],
+        "strong_answer_signals": [
+          "Consistent leads",
+          "Conversion high"
+        ],
+        "avoid": [
+          "One method only",
+          "No follow-up"
+        ]
+      }
+    },
+    {
+      "id": "re_004",
+      "text": "How do you handle a difficult tenant?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Issues identified",
+          "Communication used",
+          "Resolutions offered",
+          "Documentation"
+        ],
+        "strong_answer_signals": [
+          "Resolved issue",
+          "Relationship maintained"
+        ],
+        "avoid": [
+          "Eviction immediate",
+          "No communication"
+        ]
+      }
+    },
+    {
+      "id": "re_005",
+      "text": "Why real estate? What drives your success?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Independent success",
+          "Asset management",
+          "Relationship building",
+          "Market knowledge"
+        ],
+        "strong_answer_signals": [
+          "Specific market story",
+          "Long-term focus"
+        ],
+        "avoid": [
+          "Commission only",
+          "No market interest"
+        ]
+      }
+    },
+    {
+      "id": "re_006",
+      "text": "How do you handle multiple offers on a property?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Offers evaluated",
+          "Best and final",
+          "Negotiation",
+          "Client advised"
+        ],
+        "strong_answer_signals": [
+          "Client best interest",
+          "Quick decision"
+        ],
+        "avoid": [
+          "Rushed decision",
+          "No evaluation"
+        ]
+      }
+    },
+    {
+      "id": "re_007",
+      "text": "Tell me about a time you had to overcome market challenges.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Market downturn",
+          "Creative marketing",
+          "Client needs met",
+          "Results achieved"
+        ],
+        "strong_answer_signals": [
+          "Adapted strategy",
+          "Client retained"
+        ],
+        "avoid": [
+          "Blamed market",
+          "No adaptation"
+        ]
+      }
+    },
+    {
+      "id": "re_008",
+      "text": "How do you manage property maintenance and tenant relations?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Preventive maintenance",
+          "Emergency response",
+          "Tenant satisfaction",
+          "Vendor management"
+        ],
+        "strong_answer_signals": [
+          "Low vacancy",
+          "Positive reviews"
+        ],
+        "avoid": [
+          "Reactive only",
+          "No prevention"
+        ]
+      }
+    },
+    {
+      "id": "re_009",
+      "text": "How do you handle a bidding war?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Market assessment",
+          "Negotiation strategy",
+          "Client preparation",
+          "Timing"
+        ],
+        "strong_answer_signals": [
+          "Sale maximised",
+          "Client satisfied"
+        ],
+        "avoid": [
+          "Left money on table",
+          "No preparation"
+        ]
+      }
+    },
+    {
+      "id": "re_010",
+      "text": "Describe your experience with commercial real estate.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Property types",
+          "Lease structuring",
+          "Tenant placement",
+          "Market analysis"
+        ],
+        "strong_answer_signals": [
+          "Successful leaseups",
+          "Tenant satisfaction"
+        ],
+        "avoid": [
+          "Residential only",
+          "No commercial"
+        ]
+      }
+    },
+    {
+      "id": "re_011",
+      "text": "How do you approach a buyer agent relationship?",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Trust building",
+          "Communication",
+          "MLS usage",
+          "Transaction management"
+        ],
+        "strong_answer_signals": [
+          "Ongoing referrals",
+          "Smooth transactions"
+        ],
+        "avoid": [
+          "Competitive only",
+          "No communication"
+        ]
+      }
+    },
+    {
+      "id": "re_012",
+      "text": "How do you handle a title or inspection issue?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Problem identified",
+          "Solutions presented",
+          "Client advised",
+          "Deal protected"
+        ],
+        "strong_answer_signals": [
+          "Issue resolved",
+          "Deal closed"
+        ],
+        "avoid": [
+          "Panic",
+          "No options"
+        ]
+      }
+    },
+    {
+      "id": "re_013",
+      "text": "Tell me about building your real estate business.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Early days",
+          "Growth strategies",
+          "Brand building",
+          "Business systems"
+        ],
+        "strong_answer_signals": [
+          "Sustainable growth",
+          "Efficient systems"
+        ],
+        "avoid": [
+          "Luck only",
+          "No systems"
+        ]
+      }
+    },
+    {
+      "id": "re_014",
+      "text": "How do you handle commission disputes?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Escalate appropriately",
+          "Multiple perspectives heard",
+          "Fair resolution",
+          "Documentation"
+        ],
+        "strong_answer_signals": [
+          "Relationship preserved",
+          "Fair outcome"
+        ],
+        "avoid": [
+          "Confrontational",
+          "No documentation"
+        ]
+      }
+    },
+    {
+      "id": "re_015",
+      "text": "How do you approach luxury property marketing?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "High-end photography",
+          "Targeted marketing",
+          "Exclusive networks",
+          "Discreet presentation"
+        ],
+        "strong_answer_signals": [
+          "Qualified buyers",
+          "Brand enhanced"
+        ],
+        "avoid": [
+          "Mass marketing only",
+          "No photography"
+        ]
+      }
+    },
+    {
+      "id": "re_016",
+      "text": "What is your approach to time on market?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Pricing first",
+          "Marketing intensity",
+          "Market timing",
+          "Open house strategy"
+        ],
+        "strong_answer_signals": [
+          "Quick sale",
+          "Proper price"
+        ],
+        "avoid": [
+          "Empty promises",
+          "Overpricing"
+        ]
+      }
+    },
+    {
+      "id": "re_017",
+      "text": "How do you handle a short sale or distressed property?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Investor analysis",
+          "Negotiation",
+          "Approval process",
+          "Creative offer"
+        ],
+        "strong_answer_signals": [
+          "Successful sale",
+          "Client protected"
+        ],
+        "avoid": [
+          "No negotiations",
+          "Unrealistic pricing"
+        ]
+      }
+    },
+    {
+      "id": "re_018",
+      "text": "How do you approach virtual tours and digital marketing?",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "3D tours used",
+          "Social media",
+          "SEO",
+          "Online listings"
+        ],
+        "strong_answer_signals": [
+          "Increased exposure",
+          "More inquiries"
+        ],
+        "avoid": [
+          "Outdated marketing",
+          "No digital"
+        ]
+      }
+    },
+    {
+      "id": "re_019",
+      "text": "Describe your experience with real estate finance.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Loan types",
+          "Rate shopping",
+          "Qualification process",
+          "Closing coordination"
+        ],
+        "strong_answer_signals": [
+          "Smooth closings",
+          "Client educated"
+        ],
+        "avoid": [
+          "No finance knowledge",
+          "Poor coordination"
+        ]
+      }
+    },
+    {
+      "id": "re_020",
+      "text": "How do you handle market downturn or correction?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Market reality",
+          "Strategic adjustments",
+          "Client communication",
+          "Opportunistic positioning"
+        ],
+        "strong_answer_signals": [
+          "Client protected",
+          "Positioned for recovery"
+        ],
+        "avoid": [
+          "Denial",
+          "Panic selling"
+        ]
+      }
+    }
+  ]
+}

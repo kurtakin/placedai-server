@@ -118,7 +118,7 @@ const JD_ANALYSIS_SYSTEM = `You are an expert interview preparation coach. Analy
 CRITICAL: Return ONLY a raw JSON object. Start with { and end with }. No markdown, no explanation, no code fences.
 {
   "job_title": "extracted or inferred job title",
-  "sector": "one of: Supply Chain & Logistics, Finance, Operations & Manufacturing, Technology, Data Analyst, Logistics & Transportation, Inventory Planner, Inventory Analyst, Inventory Control Analyst, Universal Behavioral",
+  "sector": "one of: Supply Chain & Logistics, Finance, Operations & Manufacturing, General & Operations Management, Nursing (Registered Nurse), Healthcare Support, Accounting & Bookkeeping, Technology, Data Analyst, Logistics & Transportation, Inventory Planner, Inventory Analyst, Inventory Control Analyst, Universal Behavioral",
   "seniority": "one of: entry, mid, senior, manager",
   "key_skills": ["skill 1", "skill 2", "skill 3", "skill 4", "skill 5"],
   "focus_areas": ["theme 1", "theme 2", "theme 3"],

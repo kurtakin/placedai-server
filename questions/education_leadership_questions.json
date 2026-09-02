@@ -1,0 +1,683 @@
+{
+  "metadata": {
+    "sector": "Education Leadership",
+    "generated": "2026-08-30",
+    "total": 25,
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ]
+  },
+  "questions": [
+    {
+      "id": "ed_001",
+      "text": "Tell me about improving student outcomes in your school.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Data review",
+          "Interventions designed",
+          "Stakeholder buy-in",
+          "Results measured"
+        ],
+        "strong_answer_signals": [
+          "Academic growth",
+          "Stakeholder engagement"
+        ],
+        "avoid": [
+          "No data",
+          "No stakeholder input"
+        ]
+      }
+    },
+    {
+      "id": "ed_002",
+      "text": "How do you manage a teaching team?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Professional development",
+          "Performance management",
+          "Team building",
+          "Resource allocation"
+        ],
+        "strong_answer_signals": [
+          "Team performance improved",
+          "Teacher satisfaction"
+        ],
+        "avoid": [
+          "Micromanagement",
+          "No development"
+        ]
+      }
+    },
+    {
+      "id": "ed_003",
+      "text": "Describe your approach to curriculum development.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Standards aligned",
+          "Stakeholder input",
+          "Pilot tested",
+          "Feedback incorporated"
+        ],
+        "strong_answer_signals": [
+          "Relevant and rigorous",
+          "Student-centered"
+        ],
+        "avoid": [
+          "Outdated curriculum",
+          "No input"
+        ]
+      }
+    },
+    {
+      "id": "ed_004",
+      "text": "How do you handle a parent who disagrees with your decision?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Listened actively",
+          "Explained rationale",
+          "Found common ground",
+          "Documented"
+        ],
+        "strong_answer_signals": [
+          "Relationship maintained",
+          "Parent satisfied"
+        ],
+        "avoid": [
+          "Defensive stance",
+          "No documentation"
+        ]
+      }
+    },
+    {
+      "id": "ed_005",
+      "text": "Why education leadership? What drives you?",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Student impact desire",
+          "Leadership passion",
+          "Community improvement",
+          "Mission-driven"
+        ],
+        "strong_answer_signals": [
+          "Specific motivation",
+          "Long-term commitment"
+        ],
+        "avoid": [
+          "Job only",
+          "No mission"
+        ]
+      }
+    },
+    {
+      "id": "ed_006",
+      "text": "How do you approach assessment and data-driven instruction?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Assessment designed",
+          "Data analyzed",
+          "Instructional adjustments",
+          "Progress monitored"
+        ],
+        "strong_answer_signals": [
+          "Student growth",
+          "Targeted instruction"
+        ],
+        "avoid": [
+          "High-stakes testing only",
+          "No differentiation"
+        ]
+      }
+    },
+    {
+      "id": "ed_007",
+      "text": "Tell me about managing school budget and resources.",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Budget analyzed",
+          "Priorities set",
+          "Cost-saving measures",
+          "Transparency maintained"
+        ],
+        "strong_answer_signals": [
+          "Sustainable budget",
+          "Stakeholder trust"
+        ],
+        "avoid": [
+          "Arbitrary cuts",
+          "No communication"
+        ]
+      }
+    },
+    {
+      "id": "ed_008",
+      "text": "How do you handle teacher evaluation and feedback?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Clear standards",
+          "Observations conducted",
+          "Feedback delivered",
+          "Support provided"
+        ],
+        "strong_answer_signals": [
+          "Teacher improvement",
+          "Fair process"
+        ],
+        "avoid": [
+          "Arbitrary ratings",
+          "No support"
+        ]
+      }
+    },
+    {
+      "id": "ed_009",
+      "text": "Describe your experience with district-wide initiatives.",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Change management",
+          "Communication plan",
+          "Training provided",
+          "Progress tracked"
+        ],
+        "strong_answer_signals": [
+          "Successful rollout",
+          "Buy-in achieved"
+        ],
+        "avoid": [
+          "Top-down only",
+          "Poor communication"
+        ]
+      }
+    },
+    {
+      "id": "ed_010",
+      "text": "How do you ensure equity and inclusion in your school?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Equity lens applied",
+          "Data disaggregated",
+          "Interventions designed",
+          "Accountability maintained"
+        ],
+        "strong_answer_signals": [
+          "Gap reduction",
+          "Inclusive culture"
+        ],
+        "avoid": [
+          "Assumed equity",
+          "No data"
+        ]
+      }
+    },
+    {
+      "id": "ed_011",
+      "text": "Tell me about implementing a new technology in education.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Need identified",
+          "Solution evaluated",
+          "Implementation planned",
+          "Training provided"
+        ],
+        "strong_answer_signals": [
+          "Adoption achieved",
+          "Impact shown"
+        ],
+        "avoid": [
+          "Tech for tech sake",
+          "No training"
+        ]
+      }
+    },
+    {
+      "id": "ed_012",
+      "text": "How do you handle a student discipline issue?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Fair process followed",
+          "Documentation",
+          "Restorative options",
+          "Prevention focus"
+        ],
+        "strong_answer_signals": [
+          "Safe environment",
+          "Due process"
+        ],
+        "avoid": [
+          "Zero tolerance",
+          "No prevention"
+        ]
+      }
+    },
+    {
+      "id": "ed_013",
+      "text": "How do you approach school accreditation?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Standards researched",
+          "Gaps identified",
+          "Improvement plan",
+          "Report submitted"
+        ],
+        "strong_answer_signals": [
+          "Successful accreditation",
+          "Continuous improvement"
+        ],
+        "avoid": [
+          "Minimum compliance",
+          "No improvement"
+        ]
+      }
+    },
+    {
+      "id": "ed_014",
+      "text": "Describe your experience with special education.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "IEP process",
+          "Collaboration",
+          "Services provided",
+          "Outcome tracking"
+        ],
+        "strong_answer_signals": [
+          "Student success",
+          "Parent satisfaction"
+        ],
+        "avoid": [
+          "Bureaucracy focus",
+          "No outcomes"
+        ]
+      }
+    },
+    {
+      "id": "ed_015",
+      "text": "How do you manage school safety and security?",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Threat assessment",
+          "Protocols established",
+          "Staff trained",
+          "Community engaged"
+        ],
+        "strong_answer_signals": [
+          "Safe environment",
+          "Crisis readiness"
+        ],
+        "avoid": [
+          "Reactive only",
+          "No planning"
+        ]
+      }
+    },
+    {
+      "id": "ed_016",
+      "text": "Tell me about a time you had to make a difficult decision for the school.",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Stakes understood",
+          "Stakeholders consulted",
+          "Decision made",
+          "Communicated"
+        ],
+        "strong_answer_signals": [
+          "Better outcome",
+          "Trust maintained"
+        ],
+        "avoid": [
+          "No consultation",
+          "Poor communication"
+        ]
+      }
+    },
+    {
+      "id": "ed_017",
+      "text": "How do you approach parent and community engagement?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Communication channels",
+          "Events planned",
+          "Feedback collected",
+          "Volunteer programs"
+        ],
+        "strong_answer_signals": [
+          "Engaged community",
+          "Positive relationships"
+        ],
+        "avoid": [
+          "One-way communication",
+          "No invitations"
+        ]
+      }
+    },
+    {
+      "id": "ed_018",
+      "text": "How do you handle teacher shortage and staffing?",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Recruitment strategy",
+          "Retention efforts",
+          "Substitute pool",
+          "Professional development"
+        ],
+        "strong_answer_signals": [
+          "Staffing stable",
+          "Teacher satisfaction"
+        ],
+        "avoid": [
+          "Understaffed",
+          "High turnover"
+        ]
+      }
+    },
+    {
+      "id": "ed_019",
+      "text": "Describe your experience with educational research.",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Research question",
+          "Methodology used",
+          "Data analyzed",
+          "Findings applied"
+        ],
+        "strong_answer_signals": [
+          "Practice improved",
+          "Evidence-based"
+        ],
+        "avoid": [
+          "Opinion only",
+          "No data"
+        ]
+      }
+    },
+    {
+      "id": "ed_020",
+      "text": "How do you approach college and career readiness?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Guidance programs",
+          "Career exposures",
+          "Application support",
+          "Post-secondary tracking"
+        ],
+        "strong_answer_signals": [
+          "Student preparedness",
+          "College enrollment"
+        ],
+        "avoid": [
+          "Generic advising",
+          "No tracking"
+        ]
+      }
+    },
+    {
+      "id": "ed_021",
+      "text": "Tell me about developing teacher leadership.",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Leadership opportunities",
+          "Mentor assigned",
+          "Growth observed",
+          "Contribution measured"
+        ],
+        "strong_answer_signals": [
+          "Empowered teachers",
+          "School improved"
+        ],
+        "avoid": [
+          "No development",
+          "High turnover"
+        ]
+      }
+    },
+    {
+      "id": "ed_022",
+      "text": "How do you manage multi-school or multi-campus responsibilities?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Systematic management",
+          "Communication protocols",
+          "Data systems",
+          "Delegation"
+        ],
+        "strong_answer_signals": [
+          "Consistent standards",
+          "Effective oversight"
+        ],
+        "avoid": [
+          "Inconsistent",
+          "No systems"
+        ]
+      }
+    },
+    {
+      "id": "ed_023",
+      "text": "How do you handle curriculum alignment and standards?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Standards mapped",
+          "Pacing guides",
+          "Assessment alignment",
+          "Vertical articulation"
+        ],
+        "strong_answer_signals": [
+          "Aligned curriculum",
+          "Clear progression"
+        ],
+        "avoid": [
+          "Fragmented curriculum",
+          "No alignment"
+        ]
+      }
+    },
+    {
+      "id": "ed_024",
+      "text": "How do you approach professional learning communities (PLCs)?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Meetings structured",
+          "Data driven",
+          "Action plans",
+          "Follow-up"
+        ],
+        "strong_answer_signals": [
+          "Collaborative culture",
+          "Student learning improved"
+        ],
+        "avoid": [
+          "Status meetings only",
+          "No action"
+        ]
+      }
+    },
+    {
+      "id": "ed_025",
+      "text": "What changes have you seen in education leadership recently?",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Technology integration",
+          "Personalized learning",
+          "Equity focus",
+          "Data utilization"
+        ],
+        "strong_answer_signals": [
+          "Adaptability shown",
+          "Specific changes"
+        ],
+        "avoid": [
+          "Resistance to change",
+          "No observation"
+        ]
+      }
+    }
+  ]
+}

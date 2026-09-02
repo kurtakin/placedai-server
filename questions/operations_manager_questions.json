@@ -1,0 +1,1337 @@
+{
+  "metadata": {
+    "sector": "General & Operations Management",
+    "generated": "2026-08-30",
+    "total": 46,
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ],
+    "region": "North America",
+    "note": "Highest-volume occupation by annual openings in the US. Budget and P&L, labour planning, bottlenecks, OSHA and provincial OHS duties, managing managers, hiring and performance."
+  },
+  "questions": [
+    {
+      "id": "gom_b_001",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Tell me about yourself and your management background.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with scope, because scope is what separates candidates: how many direct and indirect reports, what budget or P&L, how many sites or shifts",
+          "Name the function you actually run: operations, service delivery, distribution, retail, plant, branch, or a multi department site",
+          "Give one quantified result: cost per unit, throughput, retention, safety incident rate, on time delivery, or margin improvement",
+          "Close by connecting your scope to the scope of this role and why the step makes sense"
+        ],
+        "strong_answer_signals": [
+          "States span of control and budget authority without being asked",
+          "Distinguishes managing people from managing managers, since this role often includes supervisors",
+          "One number that a general manager would care about, not a list of duties"
+        ],
+        "avoid": [
+          "A chronological career walk from first job onward",
+          "Describing responsibilities with no outcome attached",
+          "Inflating scope, which unravels in the second interview"
+        ]
+      }
+    },
+    {
+      "id": "gom_b_002",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Tell me about a time you turned around an underperforming team or site.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Quantify the starting state: the metric, the gap to target, and how long it had been that way",
+          "Describe the diagnosis before the fix: what you looked at, who you talked to, and what the real root cause was rather than the assumed one",
+          "Separate the people moves from the process moves, and be honest that both were usually needed",
+          "Give the result with a number and a timeframe, plus how you kept it from sliding back"
+        ],
+        "strong_answer_signals": [
+          "Spent real time diagnosing rather than arriving with a plan",
+          "Names a structural fix such as a changed process, metric, or staffing model, not only motivation",
+          "Acknowledges a hard people decision handled properly"
+        ],
+        "avoid": [
+          "Crediting the turnaround entirely to raising expectations",
+          "A story with no baseline number",
+          "Taking full credit for a team effort"
+        ]
+      }
+    },
+    {
+      "id": "gom_b_003",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Describe a time you had to let someone go or manage someone out.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Establish that you tried first: clear expectations, direct feedback with dates and specifics, a documented improvement plan with support",
+          "Show the process discipline: documentation throughout, HR involved early, consistent treatment compared with others in the same situation",
+          "Describe the conversation itself: brief, direct, private, respectful, no debate, with the logistics handled and dignity preserved",
+          "Close with the team aftermath, which is the part most candidates miss: how you communicated, covered the work, and rebuilt morale"
+        ],
+        "strong_answer_signals": [
+          "Involves HR early rather than as a formality at the end",
+          "Says the decision should never be a surprise to the person",
+          "Thinks about the remaining team, since a badly handled exit costs more than the exit"
+        ],
+        "avoid": [
+          "Describing it as easy or satisfying",
+          "Skipping documentation or the improvement attempt",
+          "Blaming HR or a policy for the decision"
+        ]
+      }
+    },
+    {
+      "id": "gom_b_004",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Tell me about a time you had to deliver bad news to your team or to leadership.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Set the news: a missed target, a budget cut, a layoff, a lost account, a failed project",
+          "Describe the choice to go early and direct rather than waiting for certainty or letting it leak",
+          "Show the structure: what happened, what it means for them specifically, what is decided and what is not yet, what happens next and when they will hear more",
+          "Close with how you handled the reaction and followed through on the next update"
+        ],
+        "strong_answer_signals": [
+          "Delivered it personally rather than by email",
+          "Separated what is known from what is not, instead of over reassuring",
+          "Committed to a next update date and kept it"
+        ],
+        "avoid": [
+          "Softening the message until it is unclear",
+          "Blaming senior leadership while delivering their decision",
+          "No follow through after the announcement"
+        ]
+      }
+    },
+    {
+      "id": "gom_b_005",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Tell me about a time you disagreed with your own leadership.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Pick a real business disagreement: a target, a resource cut, a launch date, a policy that would harm service or safety",
+          "Show you made the case privately, with data and an alternative, rather than resisting publicly",
+          "Describe the outcome honestly, including the case where you lost and then executed the decision fully",
+          "Close with disagree and commit: the team never heard you undermine it"
+        ],
+        "strong_answer_signals": [
+          "Brought an alternative rather than only an objection",
+          "Executed loyally after losing, which is exactly what is being tested",
+          "Knew when to escalate a genuine safety, legal or ethical issue rather than committing"
+        ],
+        "avoid": [
+          "A story where you were always right",
+          "Complying silently with no attempt to influence",
+          "Venting to the team about the decision"
+        ]
+      }
+    },
+    {
+      "id": "gom_b_006",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Describe a time you improved a process that saved money or time.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Baseline it: the cost, the cycle time, the error rate, or the labour hours before you touched it",
+          "Name the method: process mapping, time study, root cause analysis, Lean or Six Sigma tools, or simply following the work end to end",
+          "Describe the change and the adoption problem, since the hard part is getting people to work the new way",
+          "Quantify the result and say how the saving was verified, ideally by finance rather than by you"
+        ],
+        "strong_answer_signals": [
+          "The saving was validated by someone other than the person claiming it",
+          "Addresses sustainment: audits, a standard work document, a metric on a dashboard",
+          "Involves the people doing the work in designing the change"
+        ],
+        "avoid": [
+          "Suspiciously round or enormous savings numbers",
+          "A change that was announced rather than implemented",
+          "No mention of resistance, which every real change meets"
+        ]
+      }
+    },
+    {
+      "id": "gom_b_007",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "Tell me about a time you had to do more with fewer resources.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "State the constraint precisely: a headcount freeze, a budget cut of a given percent, a lost shift, or a volume spike with flat staffing",
+          "Show that you chose rather than spread the pain evenly: what you protected, what you reduced, and what you stopped doing entirely",
+          "Describe how you took that decision to your team and to your customers or stakeholders honestly",
+          "Give the outcome, including what it cost, since a fully painless answer is not credible"
+        ],
+        "strong_answer_signals": [
+          "Explicitly stopped something, which is the mark of a real prioritiser",
+          "Protected the constraint or the customer facing capability deliberately",
+          "Honest about the tradeoff rather than claiming no impact"
+        ],
+        "avoid": [
+          "Working everyone harder as the strategy",
+          "Claiming there was no downside",
+          "Cutting across the board equally, which signals no judgement"
+        ]
+      }
+    },
+    {
+      "id": "gom_b_008",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Tell me about a conflict between two of your people or between two departments.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Describe the surface conflict and the structural cause underneath: unclear ownership, conflicting metrics, a handoff with no standard, or a resource fight",
+          "Show you heard both sides separately before bringing them together",
+          "Fix the structure, not just the feelings: define the handoff, align the metrics, name the decision owner",
+          "Close with the outcome and how the relationship worked afterwards"
+        ],
+        "strong_answer_signals": [
+          "Finds a conflicting incentive, which is the usual real cause of interdepartmental conflict",
+          "Changes something durable rather than mediating a truce",
+          "Escalates to a peer leader appropriately rather than fighting on behalf of the team"
+        ],
+        "avoid": [
+          "Picking a winner and moving on",
+          "Treating a structural problem as a personality problem",
+          "Letting it run because they are both good performers"
+        ]
+      }
+    },
+    {
+      "id": "gom_b_009",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "Describe a decision you made with incomplete information.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Set the clock: why waiting was itself a decision with a cost",
+          "Name what you knew, what you did not, and the fastest thing you did to reduce the uncertainty cheaply",
+          "State the decision rule: reversible decisions get made fast, irreversible ones get more evidence and a wider consultation",
+          "Give the outcome honestly, including what you would do differently"
+        ],
+        "strong_answer_signals": [
+          "Distinguishes reversible from irreversible decisions",
+          "Set a review date to correct course rather than treating the call as final",
+          "Communicated the uncertainty to the team rather than projecting false certainty"
+        ],
+        "avoid": [
+          "Only telling stories that worked out",
+          "Analysis paralysis framed as diligence",
+          "Deciding with no attempt to reduce the unknowns"
+        ]
+      }
+    },
+    {
+      "id": "gom_b_010",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Tell me about someone you developed or promoted.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Say what you saw in them and how you tested it before betting on them",
+          "Describe the development plan concretely: stretch assignments, exposure to leadership, a project to own, coaching cadence, training",
+          "Include the discomfort: what they were bad at, how you gave that feedback, and how they responded",
+          "Close with where they are now, since a promoted person still in the organisation is the strongest possible evidence"
+        ],
+        "strong_answer_signals": [
+          "Development through real work rather than through courses",
+          "Gave hard feedback and the person stayed and grew",
+          "Willing to lose good people to other teams, which is what real developers of talent do"
+        ],
+        "avoid": [
+          "Taking credit for someone who was already excellent",
+          "A plan that was only training with no stretch",
+          "Hoarding talent to protect your own numbers"
+        ]
+      }
+    },
+    {
+      "id": "gom_mo_001",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Why do you want this role, and why here?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Name something specific about the company: their growth stage, a new site or product line, a market position, a recent change you can speak to",
+          "Connect the scope of this role to your trajectory: the step up in span, budget, complexity, or the industry shift you want",
+          "Say what you bring to their specific problem, which requires you to have inferred what that problem is from the posting and your research",
+          "Close with the fit question turned around: what would success look like in the first year"
+        ],
+        "strong_answer_signals": [
+          "Shows research beyond the careers page",
+          "Frames it as a two way fit rather than as wanting the job",
+          "Names the problem the role exists to solve"
+        ],
+        "avoid": [
+          "Reasons that apply to any company",
+          "Compensation or title as the leading reason",
+          "Being unable to say what the company actually does"
+        ]
+      }
+    },
+    {
+      "id": "gom_mo_002",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "What is your management style?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Reject the single style answer: say you set direction and standards consistently and vary the level of support by the person and the situation",
+          "Give the operating rhythm that makes it real: one to ones on a fixed cadence, a weekly metric review, clear ownership, no surprises in either direction",
+          "State how you handle underperformance and how you handle high performers differently",
+          "Give a short example of adapting your approach to two different people"
+        ],
+        "strong_answer_signals": [
+          "Describes a cadence, which proves the style is a practice and not a personality claim",
+          "Situational rather than a label",
+          "Explicit about feedback frequency and directness"
+        ],
+        "avoid": [
+          "I am hands off and let people do their jobs, with nothing else",
+          "Claiming to be everyone's friend",
+          "A label with no mechanism behind it"
+        ]
+      }
+    },
+    {
+      "id": "gom_mo_003",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Why are you leaving your current role?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Answer forward: scope, growth, industry, ownership, or a business situation you want to be in",
+          "If the real reason is negative such as a reorganisation, a lost promotion, or a company decline, state it factually once and move on",
+          "Never name individuals or litigate a grievance",
+          "Bridge immediately into why this role is the right next step"
+        ],
+        "strong_answer_signals": [
+          "Neutral and brief about the current employer",
+          "A reason this employer can actually satisfy",
+          "Consistent with what your resume shows"
+        ],
+        "avoid": [
+          "Criticising your current manager or company",
+          "A vague answer such as looking for a new challenge",
+          "A reason that would be equally true here in a year"
+        ]
+      }
+    },
+    {
+      "id": "gom_mo_004",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "What questions do you have for us?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Ask about the mandate: what are the top three priorities for this role in the first year, and what does success look like at six months",
+          "Ask about the reality: why is the role open, what has been tried already, and what is the biggest obstacle the last person hit",
+          "Ask about scope and authority: what decisions can I make alone, what needs approval, and what is the budget and headcount authority",
+          "Ask about the team and the metrics: how is this function measured, what is the current performance, and what does the team look like today"
+        ],
+        "strong_answer_signals": [
+          "Asks why the role is open, which is the single most informative question",
+          "Asks about decision authority, which experienced managers always want to know",
+          "Asks about current performance rather than only about culture"
+        ],
+        "avoid": [
+          "No questions at all",
+          "Only asking about benefits and remote policy in a first interview",
+          "Questions already answered in the job posting"
+        ]
+      }
+    },
+    {
+      "id": "gom_t_001",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Walk me through how you build and manage an operating budget.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start from drivers, not last year plus a percentage: volume forecast, labour hours per unit, fixed versus variable cost, and known step changes such as a lease, a hire, or a rate increase",
+          "Separate the buckets: labour, which is usually the largest line, materials or cost of goods, facilities and utilities, maintenance, and capital requests handled separately",
+          "Describe the monthly discipline: variance review against plan, explaining favourable and unfavourable variances, and distinguishing timing differences from real overruns",
+          "Show the reforecast habit: when volume moves, you flex the variable costs rather than defending an obsolete plan"
+        ],
+        "strong_answer_signals": [
+          "Builds from operational drivers, which is what separates a manager from a spreadsheet owner",
+          "Explains variance by cause rather than reporting the number",
+          "Knows which costs are actually controllable at their level"
+        ],
+        "avoid": [
+          "Last year plus inflation as the method",
+          "Treating the budget as finance's document",
+          "No mention of reviewing actuals against plan"
+        ]
+      }
+    },
+    {
+      "id": "gom_t_002",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "What metrics do you run your operation on?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Organise by category rather than listing: productivity such as units per labour hour, quality such as error or defect or rework rate, service such as on time delivery or turnaround, cost such as cost per unit, and people such as turnover, absenteeism and safety incidents",
+          "Name the one or two that you actually manage to daily and explain why those are the constraint",
+          "Describe the cadence: a daily huddle on a few leading indicators, a weekly operating review, a monthly business review with finance",
+          "Make the leading versus lagging distinction explicit, with an example: absenteeism today predicts next week's service level"
+        ],
+        "strong_answer_signals": [
+          "Distinguishes leading from lagging indicators with a concrete pair",
+          "Admits which metrics they deliberately ignore, showing focus",
+          "Ties each metric to a decision someone actually makes"
+        ],
+        "avoid": [
+          "Listing twenty metrics with no hierarchy",
+          "Only financial lagging metrics",
+          "Metrics with no target or no owner"
+        ]
+      }
+    },
+    {
+      "id": "gom_t_003",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "How do you forecast and schedule labour?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Forecast demand first: historical volume by day and hour, seasonality, promotions or campaigns, and known events, then convert to required hours using a labour standard",
+          "Adjust for reality: shrinkage from holidays, training, absenteeism and turnover, and required coverage minimums regardless of volume",
+          "Schedule to the curve rather than to a flat shift pattern, and use part time, flexible start times or a float pool to match peaks",
+          "Manage in week: daily review of actual versus forecast volume, and flex overtime or send home only within your agreements and local labour law"
+        ],
+        "strong_answer_signals": [
+          "Includes shrinkage, which most candidates forget and which is where schedules fail",
+          "Knows the local rules that bind the schedule: overtime thresholds, break and rest requirements, predictive scheduling laws in some jurisdictions, union agreements",
+          "Measures forecast accuracy and improves it rather than only reacting"
+        ],
+        "avoid": [
+          "Scheduling the same pattern every week regardless of demand",
+          "Overtime as the standard flex mechanism",
+          "Ignoring union or legal constraints"
+        ]
+      }
+    },
+    {
+      "id": "gom_t_004",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "How do you identify and fix a bottleneck?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Find it with data and observation: where work queues up, where cycle time exceeds takt, where people wait, and where overtime concentrates",
+          "Do not optimise around it: improving a non constraint step adds inventory and cost without adding throughput",
+          "Work the sequence: get the most from the constraint as it is, subordinate the rest of the process to it, then add capacity if still needed, then check where the constraint moved",
+          "Verify with the output metric rather than with local efficiency: did total throughput actually rise"
+        ],
+        "strong_answer_signals": [
+          "Understands that a local efficiency gain at a non constraint is not a gain at all",
+          "Exhausts free improvements at the constraint before spending on capacity",
+          "Re checks where the bottleneck moved after the fix"
+        ],
+        "avoid": [
+          "Adding headcount as the first answer",
+          "Measuring success by utilisation of every station",
+          "Fixing what is easiest to fix rather than what constrains"
+        ]
+      }
+    },
+    {
+      "id": "gom_t_005",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "How do you manage safety and compliance in your operation?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Lead with the principle that safety metrics are lagging, so you manage leading indicators: near miss reporting, hazard observations, audit findings closed, training currency",
+          "Name the concrete programme: documented job hazard analyses, toolbox talks, PPE compliance, lockout and tagout where relevant, incident investigation with a root cause not a blame finding",
+          "Cover the regulatory frame for North America: OSHA in the United States and the provincial occupational health and safety authority plus WorkSafe boards in Canada, recordkeeping obligations, and the worker's right to refuse unsafe work",
+          "Describe the culture test: whether people report near misses freely, which only happens if reporting is never punished"
+        ],
+        "strong_answer_signals": [
+          "Treats a rising near miss count as a good sign of reporting culture",
+          "Knows the right to refuse unsafe work exists and how to handle it correctly",
+          "Investigates for system cause rather than for who was careless"
+        ],
+        "avoid": [
+          "Safety as a poster and a monthly meeting",
+          "Celebrating a zero incident record in a way that discourages reporting",
+          "Not knowing which regulator covers the site"
+        ]
+      }
+    },
+    {
+      "id": "gom_t_006",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "How do you evaluate a capital request or a make versus buy decision?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Frame the business case: the problem, the options including doing nothing, and the assumptions each option rests on",
+          "Run the numbers: total cost of ownership rather than purchase price, payback period, net present value or internal rate of return where finance requires it, and the effect on operating cost per unit",
+          "Weigh the non financial factors explicitly: capacity headroom, quality and service risk, flexibility, dependence on a single vendor, and the people and training cost of the change",
+          "Close with a post implementation review, because the discipline of checking whether the promised savings appeared is what earns you the next approval"
+        ],
+        "strong_answer_signals": [
+          "Includes the do nothing baseline as a real option",
+          "Total cost of ownership including maintenance, training and downtime",
+          "Commits to a post implementation review"
+        ],
+        "avoid": [
+          "Comparing purchase prices only",
+          "Ignoring the change management and training cost",
+          "Optimistic assumptions with no sensitivity check"
+        ]
+      }
+    },
+    {
+      "id": "gom_t_007",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "How do you manage vendors and hold them to their commitments?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start at selection: clear requirements, more than one qualified source where possible, and reference checks on service rather than only on price",
+          "Put the expectations in the agreement: service level definitions, measurement method, escalation path, remedies, and a term with a real exit",
+          "Manage it actively: a scorecard covering on time delivery, quality and defect rate, responsiveness and invoice accuracy, plus a regular business review with the vendor",
+          "Escalate on evidence, and be willing to move volume, since leverage only exists when a second source is qualified"
+        ],
+        "strong_answer_signals": [
+          "Measures the vendor with a scorecard rather than by impression",
+          "Keeps a qualified alternative, which is where negotiating power comes from",
+          "Treats the relationship as a partnership while still holding the line"
+        ],
+        "avoid": [
+          "Choosing on price alone",
+          "Discovering a problem only when it reaches the customer",
+          "Threatening to leave with no qualified alternative"
+        ]
+      }
+    },
+    {
+      "id": "gom_t_008",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "How do you set goals and manage performance for your team?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Cascade from the business: each person's goals should trace to a unit or company objective, so they can see why the goal exists",
+          "Make goals measurable and few: a small number of outcome goals with a target and a date, rather than a long list of activities",
+          "Run a cadence: regular one to ones with a documented record, quarterly progress checks, and no surprises at the annual review",
+          "Differentiate: high performers get stretch and exposure, solid performers get clarity and recognition, and underperformance gets a documented plan with support and a deadline"
+        ],
+        "strong_answer_signals": [
+          "No surprises at review time, which requires the ongoing cadence",
+          "Documents one to ones, which is what makes later decisions defensible",
+          "Treats the three performance groups differently rather than uniformly"
+        ],
+        "avoid": [
+          "Annual reviews as the only feedback moment",
+          "Goals that are activity lists with no outcome",
+          "Avoiding the underperformance conversation"
+        ]
+      }
+    },
+    {
+      "id": "gom_s_001",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "You are going to miss your quarterly target. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Escalate early with a number and a cause, since the worst version of this is leadership finding out at quarter end",
+          "Bring the analysis: how much of the gap is volume, price, cost, or execution, and how much is recoverable in the time remaining",
+          "Bring options with tradeoffs rather than only a problem: what could close part of the gap, what it would cost, and what you recommend",
+          "Separate the recovery plan from the structural fix, and set the checkpoint dates for both"
+        ],
+        "strong_answer_signals": [
+          "Raises it as soon as the trend is clear rather than hoping for a recovery",
+          "Quantifies the gap and decomposes it",
+          "Arrives with recommendations, not just the news"
+        ],
+        "avoid": [
+          "Waiting to see if it recovers",
+          "Presenting the miss with no analysis or options",
+          "Blaming other departments or the market with no controllable actions"
+        ]
+      }
+    },
+    {
+      "id": "gom_s_002",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Your best performer tells you they are leaving. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "First understand the real driver: manager relationship, growth, pay, workload, or a life change, and ask genuinely rather than reflexively countering",
+          "Be careful with counteroffers: they often only delay the exit and can create pay inequity, so treat one as an exception with a clear reason, not a default",
+          "Protect the operation regardless: knowledge transfer, documentation, introductions to key relationships, and a coverage plan starting now",
+          "Learn from it: if the driver was fixable, fix it for the people still there, because one resignation usually signals others"
+        ],
+        "strong_answer_signals": [
+          "Listens before reacting, and treats the resignation as information about the team",
+          "Handles the exit professionally so the person stays a potential returner and a referrer",
+          "Starts knowledge transfer immediately rather than in the last week"
+        ],
+        "avoid": [
+          "Taking it personally or disengaging from the person",
+          "Automatically countering with money",
+          "Doing nothing about the underlying cause"
+        ]
+      }
+    },
+    {
+      "id": "gom_s_003",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "You inherit a team with low morale and a poor reputation. What are your first ninety days?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "First thirty days listen and measure: one to ones with everyone, talk to internal customers and peers, and establish the actual baseline on the key metrics",
+          "Deliver something visible early: fix one thing the team has complained about for a long time, which buys credibility for the harder changes",
+          "By sixty days set direction: a small number of priorities, clear ownership, a working cadence, and honest communication about what will and will not change",
+          "By ninety days address performance and structure: the people decisions you now have evidence for, and a plan you can show leadership with dates"
+        ],
+        "strong_answer_signals": [
+          "Listens before restructuring, which is what a credible operator does",
+          "Names an early visible win as a deliberate tactic",
+          "Does not delay people decisions past the point where the team notices"
+        ],
+        "avoid": [
+          "Reorganising in week one",
+          "Criticising the predecessor",
+          "Ninety days of listening with no decisions"
+        ]
+      }
+    },
+    {
+      "id": "gom_s_004",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "A major customer or stakeholder escalates a complaint directly to your boss. How do you handle it?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Own it immediately without defensiveness: acknowledge to your boss that it reached them before it reached you and say what you are doing in the next hours",
+          "Contact the customer yourself, listen fully, and separate the immediate fix from the root cause",
+          "Fix the immediate problem first and communicate a timeline you can actually meet, then follow up with the systemic correction",
+          "Close the loop with your boss and the customer, and change whatever allowed the escalation to bypass you"
+        ],
+        "strong_answer_signals": [
+          "Fixes the escalation path so it does not happen again",
+          "Never defends the process to a customer who is already unhappy",
+          "Distinguishes service recovery from root cause correction"
+        ],
+        "avoid": [
+          "Explaining why the customer is wrong",
+          "Delegating the first contact",
+          "Fixing the instance and never asking why it escalated"
+        ]
+      }
+    },
+    {
+      "id": "gom_t_009",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "How do you handle inventory or working capital in your operation?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Name the tension plainly: inventory protects service and consumes cash, so the job is to hold the least stock that still meets the service target",
+          "Segment before setting policy: ABC by value and XYZ by demand variability, then set different service levels and review frequencies per segment",
+          "Set the parameters with method: reorder point from average demand over lead time plus safety stock sized to demand and lead time variability, not to a gut feel",
+          "Measure and act: inventory turns, days on hand, excess and obsolete provision, fill rate, and a standing process to clear dead stock rather than carrying it forever"
+        ],
+        "strong_answer_signals": [
+          "Sets service level by segment rather than a single number for everything",
+          "Connects inventory decisions to cash and to the balance sheet, not only to stockouts",
+          "Has a disposal process for obsolete stock, which most operations avoid"
+        ],
+        "avoid": [
+          "One safety stock rule applied to every item",
+          "Measuring only stockouts, which drives overstocking",
+          "Never writing anything off"
+        ]
+      }
+    },
+    {
+      "id": "gom_t_010",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "How do you improve quality without slowing throughput?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Find where defects are created rather than where they are found, and measure the cost of poor quality: rework, scrap, returns, warranty, and the labour to inspect",
+          "Move from inspection to prevention: standard work, error proofing, checklists at the risky step, and training verified by competency rather than by attendance",
+          "Use root cause tools honestly: five whys or a fishbone on the vital few defect types rather than a broad quality campaign",
+          "Show the throughput link: rework consumes capacity, so quality improvement usually increases throughput rather than costing it"
+        ],
+        "strong_answer_signals": [
+          "Argues that quality and throughput are not a tradeoff because rework eats capacity",
+          "Quantifies cost of poor quality, which is how quality work gets funded",
+          "Focuses on a small number of defect types by Pareto"
+        ],
+        "avoid": [
+          "Adding inspectors as the solution",
+          "A general quality push with no defect data",
+          "Blaming operators for defects designed into the process"
+        ]
+      }
+    },
+    {
+      "id": "gom_t_011",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "How do you use data and reporting to run the business?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Insist on a single source of truth and an agreed definition for each metric, because most reporting arguments are definition arguments",
+          "Build the reporting to the decision: a daily operational view with a few leading indicators, a weekly review, and a monthly financial and trend view",
+          "Look at distribution not just averages: an average handle time or cycle time hides the tail where the customer pain and the cost live",
+          "Close the loop: every recurring report should have an owner and a standing action, otherwise it stops being read"
+        ],
+        "strong_answer_signals": [
+          "Pushes past averages to variability and the tail",
+          "Kills reports nobody acts on",
+          "Fixes metric definitions before arguing about the numbers"
+        ],
+        "avoid": [
+          "Dashboards with no decision attached",
+          "Reacting to single day movements as if they were trends",
+          "Accepting numbers without knowing how they are calculated"
+        ]
+      }
+    },
+    {
+      "id": "gom_t_012",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "How do you plan capacity for growth?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start from a demand forecast with a range rather than a point, and be explicit about the assumptions behind the high and low case",
+          "Convert demand to capacity requirements across all constraints, not just headcount: space, equipment, systems, supervision ratio, and training pipeline",
+          "Identify the step changes and their lead times, since a lease, a machine or a hire have very different lead times and that determines when you must decide",
+          "Plan the sequence and the trigger points: what you add at what volume level, and what you would do if growth arrives early or does not arrive at all"
+        ],
+        "strong_answer_signals": [
+          "Plans by trigger points rather than by dates, so the plan survives a forecast miss",
+          "Includes supervision and training capacity, which is the constraint most plans miss",
+          "Has a downside plan, not only a growth plan"
+        ],
+        "avoid": [
+          "Scaling headcount linearly with volume",
+          "Ignoring lead times on space and equipment",
+          "A single point forecast presented as fact"
+        ]
+      }
+    },
+    {
+      "id": "gom_s_005",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "You are asked to cut fifteen percent of your operating cost. How do you approach it?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Understand the ask first: is it permanent or temporary, cash or accrual, and what is the real deadline, because those change the answer entirely",
+          "Build the option set with impact stated: what can go with no customer impact, what degrades service and by how much, and what is irreversible",
+          "Sequence from least damaging: discretionary spend, vendor renegotiation, process waste and overtime, span of control and layers, then headcount as the last lever",
+          "Present the recommendation with the consequences named honestly, and a plan to communicate to the team once decided"
+        ],
+        "strong_answer_signals": [
+          "Asks whether the cut is permanent before choosing levers",
+          "States the service consequence of each option rather than promising no impact",
+          "Treats layoffs as a last and irreversible lever, given rehire and training cost"
+        ],
+        "avoid": [
+          "An across the board percentage cut with no analysis",
+          "Cutting training, maintenance or safety first because they are easy",
+          "Promising the cut with no service impact"
+        ]
+      }
+    },
+    {
+      "id": "gom_s_006",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "A supervisor who reports to you is not managing their team well. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Get evidence beyond hearsay: their team's metrics, turnover and absenteeism, skip level conversations, and your own observation of how they run a shift or a meeting",
+          "Diagnose the gap: many new supervisors were promoted for technical skill and have never been taught to give feedback, delegate, or handle conflict",
+          "Coach with specifics: model a conversation, sit in on a one to one, give them a framework, and set a measurable expectation with a date",
+          "Escalate to a formal plan if the gap is behaviour rather than skill, or if the team is being harmed, and act decisively at that point"
+        ],
+        "strong_answer_signals": [
+          "Uses skip levels to see the truth without undermining the supervisor",
+          "Distinguishes a training gap from a behaviour problem",
+          "Willing to act quickly when a bad manager is driving turnover"
+        ],
+        "avoid": [
+          "Going around them and managing their team directly",
+          "Tolerating it because they are technically strong",
+          "Acting on complaints without verifying"
+        ]
+      }
+    },
+    {
+      "id": "gom_s_007",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "An employee reports harassment by a colleague. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Take it seriously immediately, document what was reported in their words, and do not promise confidentiality you cannot keep",
+          "Involve HR without delay, because as a manager you have a duty to report and you are not the investigator",
+          "Protect the reporter from retaliation and consider interim measures such as separating schedules while the investigation runs",
+          "Stay in your lane afterwards: support the process, do not speculate with the team, and follow through on whatever the outcome requires"
+        ],
+        "strong_answer_signals": [
+          "Knows that a manager's knowledge is legally the employer's knowledge, so reporting is mandatory",
+          "Names retaliation protection explicitly",
+          "Does not attempt to investigate or mediate it personally"
+        ],
+        "avoid": [
+          "Handling it informally to keep it quiet",
+          "Promising complete confidentiality",
+          "Judging the credibility of the complaint before an investigation"
+        ]
+      }
+    },
+    {
+      "id": "gom_s_008",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "Two departments you depend on are blaming each other and your results are suffering. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Take the argument out of opinion: bring the data on where the handoff actually fails and how often",
+          "Look for the conflicting incentive, since two teams optimising different metrics will fight regardless of goodwill",
+          "Convene the peers with a specific proposal: a defined handoff standard, a shared metric, and a named decision owner for the grey area",
+          "Escalate jointly if it needs a common boss to align the incentives, and go together rather than complaining separately"
+        ],
+        "strong_answer_signals": [
+          "Escalates with the peer rather than about the peer",
+          "Diagnoses conflicting metrics as the structural cause",
+          "Proposes a shared measure rather than a truce"
+        ],
+        "avoid": [
+          "Escalating to leadership as a first move",
+          "Building a workaround that hides the problem",
+          "Treating it as a personality clash"
+        ]
+      }
+    },
+    {
+      "id": "gom_s_009",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "There is a serious incident on your site: an injury, an outage, or a major failure. Walk me through your response.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "People and safety first: secure the area, get medical help, account for everyone, and stop work if the hazard is still live",
+          "Preserve the scene and the evidence, and notify per the requirement: leadership, the regulator where reportable, and the customer if service is affected",
+          "Stabilise the operation with a contingency plan and communicate honestly with staff and customers about status and expected recovery",
+          "Investigate for root cause rather than for fault, implement corrective actions with owners and dates, and verify they held"
+        ],
+        "strong_answer_signals": [
+          "Knows what is reportable and to whom, with the clock that applies",
+          "Preserves evidence before restarting, which is routinely lost",
+          "Runs a blameless investigation, which is the only kind that surfaces the truth"
+        ],
+        "avoid": [
+          "Restarting operations before securing the cause",
+          "Communicating late or minimising to customers",
+          "An investigation that ends with disciplining the nearest person"
+        ]
+      }
+    },
+    {
+      "id": "gom_s_010",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "You are told to implement a decision from above that you believe is wrong. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Make the case once, properly: privately, with data, with an alternative, and with the specific consequence you are worried about",
+          "Ask for the reasoning, since you often lack context that the decision maker has",
+          "If the decision stands and it is not a safety, legal or ethical issue, commit fully: your team must not be able to tell you disagreed",
+          "Draw the line clearly for the exception: an unsafe, illegal or unethical instruction gets escalated, documented, and refused, not implemented"
+        ],
+        "strong_answer_signals": [
+          "Disagree and commit stated explicitly, with the team shielded from the disagreement",
+          "Knows the exact category where commitment stops",
+          "Asks for context rather than assuming leadership is uninformed"
+        ],
+        "avoid": [
+          "Implementing it half heartedly to prove it wrong",
+          "Telling the team you disagree with it",
+          "Treating an ordinary business disagreement as a matter of principle"
+        ]
+      }
+    },
+    {
+      "id": "gom_m_001",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "How do you manage managers rather than individual contributors?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Shift from output to system: you now manage through their decisions, their hiring, and their team's health rather than through their personal tasks",
+          "Give clear outcomes and boundaries, then let them choose the method, and resist solving their problems for them in one to ones",
+          "Use skip levels and their team metrics to see reality without undermining them, and make it clear to everyone why you do skip levels",
+          "Develop them deliberately: coaching on people decisions, exposure to leadership, and honest feedback on their leadership behaviour rather than only on results"
+        ],
+        "strong_answer_signals": [
+          "Explicitly stops doing the work and manages the system instead",
+          "Uses skip levels transparently rather than covertly",
+          "Coaches on how they made a decision, not just whether the outcome was right"
+        ],
+        "avoid": [
+          "Continuing to manage their direct reports personally",
+          "Only reviewing numbers with no attention to team health",
+          "Giving them the answer every time they bring a problem"
+        ]
+      }
+    },
+    {
+      "id": "gom_m_002",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "How do you build and structure a team?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start from the work: what outcomes the unit owns, then what roles those require, rather than from the org chart you inherited",
+          "Set span of control deliberately: wider spans for experienced self directed teams, narrower where coaching, safety or high turnover demands more supervision",
+          "Define ownership so every outcome has exactly one owner, and name the handoffs between roles explicitly",
+          "Build the pipeline: hire for the gap the current team has rather than for a copy of your best person, and plan a successor for every critical role"
+        ],
+        "strong_answer_signals": [
+          "Derives structure from the work rather than from headcount availability",
+          "Justifies span of control with a reason",
+          "Hires complementary rather than similar people"
+        ],
+        "avoid": [
+          "Adding layers to create promotions",
+          "Structure with shared ownership and therefore no ownership",
+          "No succession thinking for critical roles"
+        ]
+      }
+    },
+    {
+      "id": "gom_m_003",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "How do you set strategy for your area and translate it into execution?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Anchor to the level above: your area's strategy has to serve the company's objectives, so start by being able to state those",
+          "Choose, and be able to say what you are not doing, since a strategy that includes everything is a wish list",
+          "Translate into a small number of measurable objectives with owners, milestones and a review cadence",
+          "Build the feedback loop: a quarterly review where you kill or change initiatives based on evidence rather than defending the original plan"
+        ],
+        "strong_answer_signals": [
+          "Can name explicit tradeoffs and what was deprioritised",
+          "Connects every initiative to a company objective",
+          "Kills initiatives that are not working"
+        ],
+        "avoid": [
+          "A list of twelve priorities",
+          "Strategy that is a set of aspirations with no owner or measure",
+          "Never revisiting the plan mid year"
+        ]
+      }
+    },
+    {
+      "id": "gom_m_004",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "How do you lead a team through a major change such as a reorganisation or a system implementation?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Explain the why before the what, and be honest about what is uncertain rather than filling silence with reassurance",
+          "Identify who is affected and how, and address the individual question everyone actually has: what happens to me",
+          "Plan the mechanics properly: training, a realistic timeline, a period where productivity will drop, extra support during the dip, and a way to raise problems",
+          "Use the informal leaders as champions, communicate more often than feels necessary, and measure adoption rather than assuming it"
+        ],
+        "strong_answer_signals": [
+          "Plans for the productivity dip instead of denying it",
+          "Answers the personal impact question directly",
+          "Measures adoption rather than declaring completion at go live"
+        ],
+        "avoid": [
+          "One announcement and an expectation of compliance",
+          "Overpromising that nothing will change for anyone",
+          "Treating resistance as disloyalty rather than as information"
+        ]
+      }
+    },
+    {
+      "id": "gom_m_005",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "How do you hire? Walk me through your process.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Define first: the outcomes the role must deliver in the first year, the few must have competencies, and what you are willing to train",
+          "Use a structured process: the same core questions for every candidate, behavioural questions with a scoring guide, and a work sample or scenario relevant to the actual job",
+          "Involve the right panel with assigned areas so interviewers are not all asking the same thing, and debrief on evidence rather than on impressions",
+          "Check references properly with specific questions, and be aware of the legal boundaries on what can be asked in your jurisdiction"
+        ],
+        "strong_answer_signals": [
+          "Structured and scored, which is the practice with the best predictive validity",
+          "Uses a work sample rather than relying on conversation",
+          "Guards against culture fit language being used as a proxy for similarity"
+        ],
+        "avoid": [
+          "Hiring on gut feel or on a good conversation",
+          "Every interviewer covering the same ground",
+          "Questions that stray into protected personal territory"
+        ]
+      }
+    },
+    {
+      "id": "gom_m_006",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "How do you handle a high performer with a bad attitude?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Name the real cost: the behaviour damages the people around them, and tolerating it tells the whole team that results excuse conduct",
+          "Be specific and behavioural in the feedback: describe the observed behaviour and its effect, rather than characterising the person",
+          "Make it a performance expectation, not a preference: how they achieve results is part of the job, and say that explicitly",
+          "Hold the line with the same process as any performance issue, and be prepared to lose them, which is usually cheaper than the turnover they cause"
+        ],
+        "strong_answer_signals": [
+          "Willing to exit a top producer over conduct",
+          "Frames behaviour as half the job rather than as a soft issue",
+          "Measures the collateral damage: turnover and engagement around that person"
+        ],
+        "avoid": [
+          "Tolerating it because the numbers are good",
+          "Vague feedback about attitude with no described behaviour",
+          "Working around them by isolating them from the team"
+        ]
+      }
+    },
+    {
+      "id": "gom_m_007",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "How do you build a culture of accountability?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start with clarity, since most accountability failures are actually clarity failures: one owner, an agreed outcome, and a date",
+          "Make it visible: commitments and status where the team can see them, and a routine where progress is reviewed rather than assumed",
+          "Respond consistently: follow up on every missed commitment with a conversation, and treat the first miss as a learning moment rather than a punishment",
+          "Model it yourself: name your own misses out loud, because a team's accountability never exceeds its manager's"
+        ],
+        "strong_answer_signals": [
+          "Diagnoses unclear ownership before assuming a motivation problem",
+          "Consistency named as the mechanism, since selective enforcement destroys it",
+          "Holds themselves publicly to the same standard"
+        ],
+        "avoid": [
+          "Accountability meaning consequences and blame",
+          "Enforcing selectively based on who the person is",
+          "Announcing a culture of accountability as an initiative"
+        ]
+      }
+    },
+    {
+      "id": "gom_m_008",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "How do you report to and influence senior leadership?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Lead with the answer: the conclusion and the ask first, then the supporting detail, because executive time is the scarce resource",
+          "No surprises: bad news travels to them from you, early, with your assessment and your recommendation attached",
+          "Speak their language: translate operational detail into cost, revenue, risk and customer impact rather than presenting internal metrics raw",
+          "Ask for decisions clearly: state what you need from them, by when, and what happens if the decision slips"
+        ],
+        "strong_answer_signals": [
+          "Answer first structure, which is what senior audiences expect",
+          "Brings a recommendation rather than a menu of options with no view",
+          "Converts operational metrics into business impact"
+        ],
+        "avoid": [
+          "Building up to the point with lengthy context",
+          "Presenting problems with no recommendation",
+          "Hiding bad news until it is unavoidable"
+        ]
+      }
+    },
+    {
+      "id": "gom_mo_005",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "What is your greatest weakness as a manager?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Pick a real and common managerial weakness: holding onto work too long, avoiding a difficult conversation until it grows, over indexing on detail, or impatience with slower decision processes",
+          "Give evidence that you know it is real, including a moment it cost you something",
+          "Describe the mechanism you built to manage it, not just the awareness: a delegation checklist, a rule to have the hard conversation within a week, a peer who calls it out",
+          "Say honestly where you are with it now, since claiming it is fully solved is not believable"
+        ],
+        "strong_answer_signals": [
+          "A weakness with a real cost attached",
+          "A specific compensating mechanism rather than working on it",
+          "Ongoing rather than resolved"
+        ],
+        "avoid": [
+          "Strengths disguised as weaknesses such as perfectionism or caring too much",
+          "A weakness that is disqualifying for the role",
+          "No mechanism, only awareness"
+        ]
+      }
+    },
+    {
+      "id": "gom_mo_006",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Where do you want to be in five years?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Commit credibly to this role first: what you want to accomplish here and over what horizon",
+          "Then describe direction rather than a title: broader scope, multi site, a general management path, a functional depth, or P&L ownership",
+          "Tie it to the employer: the path you describe should be one that exists inside their organisation",
+          "Show self awareness about what you still need to learn to get there"
+        ],
+        "strong_answer_signals": [
+          "A path that keeps them at this company",
+          "Direction and capability rather than a title and a date",
+          "Names a real development gap"
+        ],
+        "avoid": [
+          "A plan that obviously uses this job as a stepping stone elsewhere",
+          "Wanting the interviewer's job, delivered as a joke",
+          "No ambition at all"
+        ]
+      }
+    }
+  ]
+}

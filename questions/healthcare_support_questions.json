@@ -1,0 +1,1306 @@
+{
+  "metadata": {
+    "sector": "Healthcare Support (CNA, MA, PCT)",
+    "generated": "2026-08-30",
+    "total": 46,
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ],
+    "region": "North America",
+    "note": "Fastest-growing occupational group. Vitals and escalation thresholds, infection control and PPE order, safe transfers, phlebotomy and specimen labelling, scope of practice, HIPAA and provincial privacy law, mandated reporting, dementia care."
+  },
+  "questions": [
+    {
+      "id": "hcs_b_001",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about yourself and your healthcare experience.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with the credential and the setting: CNA, MA, patient care technician, phlebotomy or EKG certified, and whether your experience is hospital, clinic, long term care or home health",
+          "Name the patient population and the daily volume: how many patients you room per day in a clinic, or how many residents you cover on a shift",
+          "List the skills that save the employer training time: vitals, blood draws, EKG, injections where in scope, ADLs, transfers and lifts, EMR documentation, scheduling and prior authorisations",
+          "Close with one thing you are known for and why you want this setting"
+        ],
+        "strong_answer_signals": [
+          "Names the certification and whether it is current, since it is a hiring requirement not a nice to have",
+          "Gives volume numbers, which show real pace tolerance",
+          "Names the EMR, because reduced onboarding time is a genuine hiring factor"
+        ],
+        "avoid": [
+          "Being vague about scope, which raises a safety concern",
+          "Personal life details",
+          "Claiming skills you are not certified or trained for"
+        ]
+      }
+    },
+    {
+      "id": "hcs_b_002",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you dealt with a difficult or upset patient.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identify the real driver: pain, fear, a long wait, confusion, loss of independence, or a bad experience earlier in the visit",
+          "Describe the de-escalation concretely: lowered your voice, got to eye level, listened without interrupting, acknowledged the frustration, explained what would happen next and when",
+          "Show what you did within your scope and when you brought in the nurse or the provider",
+          "Close with the outcome and what you now do earlier to prevent it"
+        ],
+        "strong_answer_signals": [
+          "Knows the scope line and escalates clinical questions rather than answering them",
+          "Sets a realistic expectation about waiting rather than promising a time you cannot control",
+          "Stays calm and does not take it personally"
+        ],
+        "avoid": [
+          "Arguing with the patient or matching their tone",
+          "Answering a clinical question outside your scope to satisfy them",
+          "Describing the patient in judgemental terms"
+        ]
+      }
+    },
+    {
+      "id": "hcs_b_003",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Describe a time you noticed something wrong with a patient and reported it.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "State what you observed objectively: a vital sign outside the parameters, a change in colour or breathing, new confusion, a skin change, a refusal to eat, a fall",
+          "Describe how quickly and to whom you reported: the nurse, the charge nurse or the provider, without delay",
+          "Emphasise that you reported the observation rather than an interpretation, since assessment is outside your scope",
+          "Close with what happened and that your report changed something"
+        ],
+        "strong_answer_signals": [
+          "Reports rather than diagnoses, which is exactly right for the role",
+          "Knows the vital sign parameters that require immediate escalation",
+          "Reports promptly rather than at the end of the shift or at handoff"
+        ],
+        "avoid": [
+          "Waiting to see if it got worse",
+          "Interpreting or diagnosing outside scope",
+          "Telling a coworker instead of the nurse"
+        ]
+      }
+    },
+    {
+      "id": "hcs_b_004",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you worked as part of a care team.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Set the team: which nurses, providers, therapists, or front desk staff, and what the shared goal was",
+          "Describe your specific contribution and how you communicated it, since support roles are judged on reliability and communication",
+          "Include the moment you helped a teammate or asked for help, because both directions matter",
+          "Close with the patient outcome"
+        ],
+        "strong_answer_signals": [
+          "Speaks up in the team rather than waiting to be directed",
+          "Asks for help with lifts and transfers rather than risking injury",
+          "Frames the role as part of patient care, not as a task list"
+        ],
+        "avoid": [
+          "Describing yourself as just following instructions",
+          "A story with no communication in it",
+          "Criticising nurses or providers"
+        ]
+      }
+    },
+    {
+      "id": "hcs_b_005",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a mistake you made at work.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Choose a genuine and non catastrophic error: a documentation mistake, a mislabelled specimen caught before it left, a missed task, a scheduling error",
+          "Say what you did immediately: told the nurse or supervisor right away and made sure the patient was safe",
+          "Show the correction and the report, including any incident report required",
+          "Name the habit you built afterwards and give an example of it working"
+        ],
+        "strong_answer_signals": [
+          "Reported it immediately rather than hoping nobody noticed",
+          "Patient safety first, then disclosure",
+          "A concrete new habit such as labelling at the bedside every time"
+        ],
+        "avoid": [
+          "Saying you have never made a mistake",
+          "Hiding an error or fixing it quietly",
+          "Blaming the workload"
+        ]
+      }
+    },
+    {
+      "id": "hcs_b_006",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you handled a heavy workload or a short staffed shift.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Set the load with numbers: how many patients or rooms, how many staff short, what else was happening",
+          "State your prioritisation: safety and time critical tasks first, such as toileting rounds, vitals due, specimen timing, and patients at risk",
+          "Show communication: you told the nurse what you could and could not get to rather than silently falling behind",
+          "Close with the result and what you would ask for earlier next time"
+        ],
+        "strong_answer_signals": [
+          "Communicates capacity early instead of absorbing it",
+          "Prioritises by risk rather than by order of request",
+          "Asks for help without treating it as failure"
+        ],
+        "avoid": [
+          "Skipping breaks as the strategy",
+          "Cutting corners on hand hygiene or safety to keep up",
+          "Complaining without any action taken"
+        ]
+      }
+    },
+    {
+      "id": "hcs_b_007",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Describe a time you protected a patient's privacy or dignity.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Give a concrete moment: closing the curtain and door for personal care, draping during a procedure, lowering your voice at the desk, moving a conversation out of a shared room",
+          "Connect it to HIPAA in the United States or PIPEDA and provincial health privacy law in Canada, and to the practical rule of minimum necessary access",
+          "Include the electronic side: never looking up a record you are not caring for, never sharing logins, logging out of the workstation",
+          "Close with why dignity matters to the patient experience and not only to compliance"
+        ],
+        "strong_answer_signals": [
+          "Knows that accessing a record out of curiosity is a terminable offence",
+          "Thinks about hallway and elevator conversations, which is where most breaches happen",
+          "Treats dignity and privacy as the same duty"
+        ],
+        "avoid": [
+          "Treating privacy as a form to sign",
+          "Any story involving discussing patients outside work or on social media",
+          "Sharing credentials to save time"
+        ]
+      }
+    },
+    {
+      "id": "hcs_b_008",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you disagreed with a coworker or supervisor.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Pick something professional: a task priority, a shortcut you were uncomfortable with, or a handoff that kept failing",
+          "Show you raised it directly and privately, with the reason rather than the complaint",
+          "If it involved patient safety, say plainly that you escalated to the nurse or supervisor and did not let it go",
+          "Close with the resolution and the working relationship afterwards"
+        ],
+        "strong_answer_signals": [
+          "Escalates safety issues even when it is socially uncomfortable",
+          "Direct and private rather than public or passive",
+          "Focuses on the issue rather than the person"
+        ],
+        "avoid": [
+          "A story where you went along with an unsafe shortcut",
+          "Venting to other staff instead of addressing it",
+          "Claiming you never disagree with anyone"
+        ]
+      }
+    },
+    {
+      "id": "hcs_b_009",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a patient interaction you are proud of.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Choose something small and real, since this role is built from small moments: sitting with someone who was frightened, remembering a preference, helping someone eat with dignity",
+          "Describe what you noticed that others might have missed",
+          "Say what you did and why it mattered to that specific person",
+          "Close with what it taught you about the work"
+        ],
+        "strong_answer_signals": [
+          "Notices the person, not just the task",
+          "Genuine rather than performed",
+          "Shows the emotional intelligence the role actually needs"
+        ],
+        "avoid": [
+          "A dramatic clinical rescue outside your scope",
+          "Identifying details about the patient",
+          "A generic answer about caring for people"
+        ]
+      }
+    },
+    {
+      "id": "hcs_b_010",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you had to learn something new quickly.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Name the specific thing: a new EMR, a new documentation flow, a new device, a new unit or specialty, a new lift or transfer technique",
+          "Describe how you learned it: shadowing, asking for a checklist, practising, watching, asking to be observed until competent",
+          "Emphasise that you asked rather than guessed, since guessing is a patient safety risk in this role",
+          "Close with the point where you became the person who could show someone else"
+        ],
+        "strong_answer_signals": [
+          "Asks to be observed before doing a task alone",
+          "Takes notes and builds a reference rather than relying on memory",
+          "Goes from learner to teacher, which signals reliability"
+        ],
+        "avoid": [
+          "Figuring it out alone on a live patient",
+          "Being reluctant to ask questions",
+          "No evidence the learning stuck"
+        ]
+      }
+    },
+    {
+      "id": "hcs_t_001",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What are normal adult vital sign ranges, and when do you escalate?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Give the ranges: temperature about 36.5 to 37.5 Celsius or 97.8 to 99.5 Fahrenheit, heart rate 60 to 100, respirations 12 to 20, blood pressure around 120 over 80, oxygen saturation 95 percent or above",
+          "State the escalation triggers you would report immediately: systolic under 90 or a big drop from the patient's baseline, heart rate over 120 or under 50, respirations over 24 or under 10, saturation under 90, temperature over 38.5, or any new confusion",
+          "Emphasise trend and baseline: a reading is judged against that patient's normal and against the last set, not only against the textbook range",
+          "Say that you report the numbers to the nurse and document them, without interpreting them"
+        ],
+        "strong_answer_signals": [
+          "Gives actual numbers rather than saying you would check if it looks abnormal",
+          "Knows respiratory rate and mental status change are early warnings",
+          "Retakes manually when an automatic reading looks wrong, rather than charting a bad number"
+        ],
+        "avoid": [
+          "Not knowing the ranges, which is disqualifying for the role",
+          "Charting an implausible reading without rechecking",
+          "Interpreting the values as a diagnosis"
+        ]
+      }
+    },
+    {
+      "id": "hcs_t_002",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Walk me through infection control in your daily work.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Hand hygiene is the foundation: before and after every patient contact, before a clean task, after body fluid exposure, after touching the environment, and after removing gloves",
+          "Standard precautions with every patient regardless of diagnosis, plus the transmission based precautions: contact, droplet, and airborne with a fitted N95 and a negative pressure room",
+          "Name PPE order correctly: donning is gown, mask, goggles, gloves, and doffing is gloves, goggles, gown, mask, with hand hygiene between steps",
+          "Include equipment and environment: cleaning shared equipment between patients, correct sharps and biohazard disposal, and knowing where the isolation supplies are"
+        ],
+        "strong_answer_signals": [
+          "Knows gloves do not replace hand hygiene",
+          "Gets the donning and doffing order right, since doffing is where contamination happens",
+          "Names which precaution goes with which situation"
+        ],
+        "avoid": [
+          "Hand washing as the entire answer",
+          "Wearing the same gloves between patients or tasks",
+          "Not knowing what airborne precautions require"
+        ]
+      }
+    },
+    {
+      "id": "hcs_t_003",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you safely transfer or reposition a patient?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Assess first: the patient's weight bearing status, cognition, cooperation, lines and drains, pain, and the mobility order or therapy recommendation",
+          "Use equipment rather than muscle: gait belt, sit to stand device, mechanical lift, slide sheet, and get a second person whenever the policy or the patient requires it",
+          "Body mechanics: bed at the right height, brakes locked, feet apart, bend at the knees, keep the load close, never twist, and count out loud so everyone moves together",
+          "Explain to the patient what will happen and reposition at least every two hours for pressure injury prevention, documenting as required"
+        ],
+        "strong_answer_signals": [
+          "Uses a lift rather than proving strength, which is the correct and injury preventing answer",
+          "Checks weight bearing status before moving anyone",
+          "Never lets a patient grab around the neck during a transfer"
+        ],
+        "avoid": [
+          "Lifting alone to save time",
+          "Not checking lines, drains or the mobility order",
+          "Pulling under the arms, which risks injury"
+        ]
+      }
+    },
+    {
+      "id": "hcs_t_004",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Talk me through rooming a patient and taking a history in a clinic.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Identify with two identifiers, introduce yourself and your role, and confirm the reason for the visit in the patient's own words",
+          "Collect the objective data: vitals, height and weight, pain score, and the visit specific screening the clinic requires",
+          "Reconcile medications and allergies carefully, asking about over the counter drugs, supplements and anything stopped recently, and document exactly",
+          "Prepare the room and the provider: set up what the visit needs, note anything urgent for the provider, and tell the patient what happens next and roughly how long"
+        ],
+        "strong_answer_signals": [
+          "Two identifiers every time, without prompting",
+          "Takes medication reconciliation seriously rather than as a formality",
+          "Flags urgent findings to the provider before they walk in"
+        ],
+        "avoid": [
+          "Using the room number as the identifier",
+          "Copying forward the previous visit's medication list without asking",
+          "Documenting a symptom as a diagnosis"
+        ]
+      }
+    },
+    {
+      "id": "hcs_t_005",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you perform a blood draw and handle specimens correctly?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Verify the order and the patient with two identifiers, confirm any fasting or timing requirement, and check for allergies to latex or adhesive",
+          "Prepare properly: hand hygiene and gloves, tourniquet no longer than about a minute, site selection favouring the median cubital vein, and antiseptic prep allowed to dry",
+          "Follow the order of draw to prevent additive carryover, invert tubes gently as required, and label at the bedside in front of the patient, never in the hallway or in advance",
+          "Post procedure: apply pressure, check the site, dispose of the needle in the sharps container immediately without recapping, and transport per the specimen requirements including any time or temperature limits"
+        ],
+        "strong_answer_signals": [
+          "Labels at the bedside, which is the single biggest specimen error prevention step",
+          "Knows the order of draw exists and why it matters",
+          "Never recaps a needle"
+        ],
+        "avoid": [
+          "Pre labelling tubes before the draw",
+          "Leaving a tourniquet on too long, which alters results",
+          "More than two attempts before asking someone else"
+        ]
+      }
+    },
+    {
+      "id": "hcs_t_006",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What do you document, and what makes documentation good?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Document what you did and what you observed, objectively, at the time you did it, and use late entry when charting after the fact",
+          "Stay in scope: record observations and measurements, patient statements in quotes, care provided, intake and output, and refusals, but do not record assessments or conclusions",
+          "Be timely and accurate, since if it is not documented it is treated as not done, and never chart in advance or for someone else",
+          "Know what does not belong: opinions, labels, blame, and references to incident reports"
+        ],
+        "strong_answer_signals": [
+          "Quotes the patient rather than paraphrasing into a conclusion",
+          "Charts after doing, never before",
+          "Understands the legal weight of the record"
+        ],
+        "avoid": [
+          "Subjective labels such as uncooperative or difficult",
+          "Charting a task as complete before performing it",
+          "Using someone else's login"
+        ]
+      }
+    },
+    {
+      "id": "hcs_t_007",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What would you do if you found a patient on the floor?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Do not move them: call for the nurse immediately and stay with the patient",
+          "Check responsiveness and look for obvious injury, bleeding or a possible head strike while waiting, and keep them still and reassured",
+          "Assist as directed once the nurse has assessed, using proper equipment and enough people for the lift",
+          "Report exactly what you found in factual terms, and take part in completing the incident documentation"
+        ],
+        "strong_answer_signals": [
+          "Never lifts before the nurse assesses, which is the whole answer",
+          "Stays with the patient and calls rather than leaving to find help",
+          "Reports factually: found on the floor beside the bed, not fell out of bed"
+        ],
+        "avoid": [
+          "Helping them up quickly to be kind",
+          "Leaving the patient alone to get someone",
+          "Guessing at what happened in the report"
+        ]
+      }
+    },
+    {
+      "id": "hcs_t_008",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What are your scope of practice limits?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "State the principle: scope is set by your certification and by your state or provincial regulator and the employer policy, and the narrowest of those governs",
+          "Give clear examples of what is outside a CNA or MA scope in most jurisdictions: interpreting results, giving clinical advice, performing assessments, triaging by phone, and administering medications where certification does not permit it",
+          "Show the correct response when asked to exceed it: say you are not able to do that and bring the nurse or provider, without apology",
+          "Note that scope varies by state and province, so you confirm at each employer rather than assuming it carries over"
+        ],
+        "strong_answer_signals": [
+          "Knows scope varies by jurisdiction and employer, not just by certification",
+          "Comfortable saying no to a nurse or provider on a scope question",
+          "Distinguishes reporting a finding from assessing a patient"
+        ],
+        "avoid": [
+          "Doing a task outside scope because a nurse asked",
+          "Giving clinical advice to a patient or a caller",
+          "Being unsure what your scope is"
+        ]
+      }
+    },
+    {
+      "id": "hcs_t_009",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you assist with activities of daily living while preserving independence?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start from the principle: assist only as much as needed, since doing everything for someone accelerates decline",
+          "Bathing, dressing, grooming, toileting, feeding and mobility, each done with privacy, the patient's own preferences and routine, and enough time",
+          "Watch and report during care, because ADL time is when you see skin changes, weakness, appetite changes and confusion first",
+          "Respect refusal and dignity: offer choices, explain before you touch, and report refusals rather than forcing"
+        ],
+        "strong_answer_signals": [
+          "Names the assist only as needed principle explicitly",
+          "Treats ADL time as an observation opportunity",
+          "Honours preferences and choice rather than efficiency"
+        ],
+        "avoid": [
+          "Doing everything to save time",
+          "Rushing personal care",
+          "Forcing care on a resistant patient rather than reporting it"
+        ]
+      }
+    },
+    {
+      "id": "hcs_t_010",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle a patient with dementia who is agitated or resistant to care?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Look for the trigger first: pain, needing the toilet, hunger, overstimulation, fear, or an unfamiliar face and approach",
+          "Adjust your approach: approach from the front, make eye contact, speak slowly with short simple sentences, one instruction at a time, and never argue with or correct their reality",
+          "Use redirection and validation, offer a limited choice, and come back in ten minutes rather than forcing the task now",
+          "Report changes, because sudden agitation in someone previously calm can be delirium from infection, pain or medication, and that is a nurse escalation"
+        ],
+        "strong_answer_signals": [
+          "Knows sudden change suggests delirium and reports it rather than treating it as the dementia",
+          "Uses come back later as a legitimate strategy",
+          "Never argues with the patient's version of reality"
+        ],
+        "avoid": [
+          "Correcting or reasoning with the patient",
+          "Forcing care to stay on schedule",
+          "Treating agitation as behaviour rather than communication"
+        ]
+      }
+    },
+    {
+      "id": "hcs_t_011",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you measure and record intake and output accurately?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Count everything on both sides: oral fluids, ice chips at about half their volume, tube feeds and IV fluids for intake, and urine, emesis, stool, drains and wound output for output",
+          "Measure rather than estimate: use a graduated container, know the standard volumes of the cups and containers on your unit, and weigh incontinence pads where the policy requires it",
+          "Record at the time, in the correct units, and communicate the running total at handoff",
+          "Report the significant findings: low urine output, a large negative or positive balance, or a sudden change, since these can be early signs of a problem"
+        ],
+        "strong_answer_signals": [
+          "Knows the container volumes on the unit rather than guessing",
+          "Reports low urine output as a trigger, since it is an early organ dysfunction sign",
+          "Records immediately rather than reconstructing at shift end"
+        ],
+        "avoid": [
+          "Estimating from memory at the end of the shift",
+          "Forgetting ice chips, tube flushes or drain output",
+          "Recording totals without reporting an abnormal trend"
+        ]
+      }
+    },
+    {
+      "id": "hcs_t_012",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What would you do in an emergency such as a patient becoming unresponsive?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Check responsiveness, call for help immediately using the emergency call system or code button, and do not leave the patient",
+          "Check for breathing and a pulse within your training, start CPR if indicated and you are current in BLS, and send someone for the crash cart and AED",
+          "Know the codes at your facility and where the emergency equipment is on every unit you work, including as a float",
+          "Afterwards: assist the team as directed, support other patients and family, and take part in the debrief"
+        ],
+        "strong_answer_signals": [
+          "Calls for help before anything else",
+          "BLS certification current and knows the compression standard",
+          "Knows the location of the AED and crash cart on the unit"
+        ],
+        "avoid": [
+          "Leaving the patient to find someone",
+          "Waiting for a nurse before calling the code",
+          "Not knowing where the emergency equipment is"
+        ]
+      }
+    },
+    {
+      "id": "hcs_s_001",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A patient asks you what their test result means. What do you say?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Do not interpret, even if you can see the result and even if it looks normal, because interpretation is outside scope and a normal looking value can still matter clinically",
+          "Say it warmly rather than bluntly: that is a question for the nurse or the provider, and I will let them know you are waiting for it",
+          "Then actually do it: tell the nurse or provider promptly rather than leaving it to the next visit",
+          "Close the loop with the patient so they are not left waiting without information"
+        ],
+        "strong_answer_signals": [
+          "Declines without making the patient feel dismissed",
+          "Follows through by informing the clinician",
+          "Understands that even good news is not theirs to deliver"
+        ],
+        "avoid": [
+          "Saying it looks fine to reassure them",
+          "Reading the number out loud",
+          "Promising the provider will call without checking"
+        ]
+      }
+    },
+    {
+      "id": "hcs_s_002",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You are asked to do something you were not trained for. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Say so immediately and without apology: I have not been trained or checked off on that, so I am not able to do it safely",
+          "Offer what you can do instead, and offer to learn it properly with supervision",
+          "Escalate if the pressure continues, because the person asking may not know your scope or your competency record",
+          "Frame it correctly: this protects the patient, your certification, and the employer"
+        ],
+        "strong_answer_signals": [
+          "Refuses clearly rather than attempting it to be helpful",
+          "Volunteers to be trained, which shows willingness rather than avoidance",
+          "Understands that a nurse asking does not authorise it"
+        ],
+        "avoid": [
+          "Trying it because someone senior asked",
+          "Refusing without offering an alternative or a path to learn",
+          "Staying silent and hoping it goes away"
+        ]
+      }
+    },
+    {
+      "id": "hcs_s_003",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A family member asks you for an update on the patient. How do you handle it?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Confirm nothing about the patient until you know they are authorised, since even acknowledging the patient is here is a disclosure",
+          "Direct clinical questions to the nurse or provider, and bring them rather than sending the family away",
+          "You may share what is within your role and permitted, such as comfort and care information, only when the patient has agreed and the facility process allows",
+          "Be warm about it: they are worried, and how you decline matters as much as declining"
+        ],
+        "strong_answer_signals": [
+          "Knows acknowledging admission is itself protected information",
+          "Brings the nurse rather than deflecting",
+          "Keeps the tone kind rather than bureaucratic"
+        ],
+        "avoid": [
+          "Sharing because the person is clearly family",
+          "Discussing the patient in a hallway or elevator",
+          "A rigid refusal with no help offered"
+        ]
+      }
+    },
+    {
+      "id": "hcs_s_004",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A patient refuses care that they need. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Respect the refusal in the moment: a patient may refuse, and forcing care is not an option",
+          "Explore gently: ask why, since it is often pain, cold, embarrassment, timing, fatigue or wanting a different caregiver, all of which you can address",
+          "Try again later or offer a choice, since a return in ten minutes succeeds more often than persuasion now",
+          "Report the refusal to the nurse and document it, because a pattern of refusals is clinically meaningful"
+        ],
+        "strong_answer_signals": [
+          "Finds the fixable cause rather than treating refusal as stubbornness",
+          "Uses timing and choice as the tool",
+          "Reports every refusal rather than only the significant ones"
+        ],
+        "avoid": [
+          "Forcing or coercing the patient",
+          "Giving up and not reporting it",
+          "Documenting the patient as non compliant"
+        ]
+      }
+    },
+    {
+      "id": "hcs_s_005",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You see a coworker skip hand hygiene or break isolation precautions. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Speak up in the moment, politely and without an audience if possible, because the risk is immediate",
+          "Use a neutral phrasing that makes it easy to correct: I think we still need a gown for this room",
+          "If it recurs or they refuse, report it to the nurse or supervisor, since it is a patient safety issue rather than a personal one",
+          "Model it yourself consistently, since a person who cuts corners themselves has no standing to raise it"
+        ],
+        "strong_answer_signals": [
+          "Speaks up at the time rather than reporting later",
+          "Uses non confrontational language, which is what actually works",
+          "Escalates a repeated pattern"
+        ],
+        "avoid": [
+          "Saying nothing because they are senior",
+          "Confronting them in front of a patient",
+          "Complaining to peers instead of addressing it"
+        ]
+      }
+    },
+    {
+      "id": "hcs_s_006",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Two patients need you at the same time. How do you decide?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Sort by risk, not by who asked first: anything involving breathing, bleeding, chest pain, a fall or unresponsiveness comes first and gets the nurse immediately",
+          "Then time critical and safety needs such as toileting for a fall risk patient, before comfort requests",
+          "Acknowledge the waiting patient rather than ignoring them: tell them you will be back and roughly when, and mean it",
+          "Ask for help when both are genuinely urgent instead of choosing alone"
+        ],
+        "strong_answer_signals": [
+          "Acknowledges the second patient, which is what prevents complaints and falls",
+          "Names toileting as a high priority because it drives falls",
+          "Asks for help rather than trying to cover both"
+        ],
+        "avoid": [
+          "First come first served regardless of need",
+          "Leaving a patient with no communication",
+          "Never asking for help"
+        ]
+      }
+    },
+    {
+      "id": "hcs_s_007",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You suspect a patient is being abused or neglected. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know that you are very likely a mandated reporter, so this is a duty and not a choice, and the standard is reasonable suspicion rather than proof",
+          "Report immediately to the nurse, supervisor and the facility's designated process, and document your objective observations in factual language",
+          "Do not investigate, confront the suspected person, or interview the patient beyond listening to what they volunteer",
+          "Ensure the patient's immediate safety and continue to provide normal care"
+        ],
+        "strong_answer_signals": [
+          "Knows the reporting standard is suspicion, not certainty",
+          "Documents observations objectively without conclusions",
+          "Does not attempt to investigate"
+        ],
+        "avoid": [
+          "Waiting for more evidence",
+          "Confronting the family or the coworker",
+          "Assuming someone else will report it"
+        ]
+      }
+    },
+    {
+      "id": "hcs_s_008",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "The clinic is running an hour behind and the waiting room is angry. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Communicate proactively rather than waiting to be asked: go out, acknowledge the wait, and give an honest estimate",
+          "Offer what is in your control: a realistic option to reschedule, somewhere more comfortable to wait, water, and starting the intake work you can do now",
+          "Never blame the provider or another patient, and never promise a time you cannot control",
+          "Tell the team what you are hearing, since a systemic delay pattern needs a scheduling fix rather than daily apology"
+        ],
+        "strong_answer_signals": [
+          "Proactive communication, which is the single biggest satisfaction lever in a delay",
+          "Uses the wait to complete rooming or intake work",
+          "Feeds the pattern back for a scheduling fix"
+        ],
+        "avoid": [
+          "Hiding from the waiting room",
+          "Blaming the provider in front of patients",
+          "Giving a time estimate you cannot support"
+        ]
+      }
+    },
+    {
+      "id": "hcs_s_009",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You realise partway through the shift that you documented something on the wrong patient. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Report it immediately to the nurse, because the wrong chart may now drive a clinical decision and that is the real risk",
+          "Correct it through the proper amendment process in the record, never by deleting or overwriting",
+          "Verify the correct patient's record is accurate and complete",
+          "Complete any required incident documentation and think about what caused it, usually charting away from the bedside or having two charts open"
+        ],
+        "strong_answer_signals": [
+          "Escalates because of the clinical risk, not just the paperwork",
+          "Knows records are amended, never erased",
+          "Identifies the workflow cause such as multiple open charts"
+        ],
+        "avoid": [
+          "Quietly deleting the entry",
+          "Waiting until the end of the shift to mention it",
+          "Fixing it and not reporting"
+        ]
+      }
+    },
+    {
+      "id": "hcs_s_010",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A patient becomes verbally aggressive toward you. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Keep yourself safe first: stay calm, keep your distance and an exit path, do not corner yourself or the patient, and do not respond in kind",
+          "De-escalate: lower your voice, use short simple sentences, acknowledge the feeling, and give them some control with a choice",
+          "Get help early: call the nurse, and use security when there is any threat of physical harm, since waiting to see is how staff get hurt",
+          "Report and document it, because workplace violence is under reported and a pattern needs to be visible for the patient's plan to change"
+        ],
+        "strong_answer_signals": [
+          "Positions themselves near the exit, which shows real training",
+          "Calls for help before it escalates physically",
+          "Reports every incident rather than accepting abuse as part of the job"
+        ],
+        "avoid": [
+          "Arguing back or matching their volume",
+          "Staying alone in the room to prove you can handle it",
+          "Not reporting because nothing happened"
+        ]
+      }
+    },
+    {
+      "id": "hcs_m_001",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "As a lead or senior aide, how do you make daily assignments?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Balance by workload not headcount: total care patients, isolation rooms, two person transfers, feeders and high fall risk patients spread across the team",
+          "Match skill and experience to need, and keep new staff with a preceptor rather than in the hardest assignment",
+          "Group geographically to cut walking time, and hold a little capacity for admissions and call bells",
+          "Explain the assignment to the team, because perceived fairness matters as much as actual fairness"
+        ],
+        "strong_answer_signals": [
+          "Uses care burden rather than patient count",
+          "Protects new staff deliberately",
+          "Explains the reasoning, which is what prevents resentment"
+        ],
+        "avoid": [
+          "Rotating by room number",
+          "Loading the strongest worker every day because they cope",
+          "Never revisiting the assignment mid shift"
+        ]
+      }
+    },
+    {
+      "id": "hcs_m_002",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you onboard and train a new aide or assistant?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start with orientation to the physical and procedural basics: emergency equipment, codes, supply locations, the EMR, and who to escalate to",
+          "Use a competency checklist rather than shadowing alone: watch them do each task, sign off when they are safe, and be honest when they are not ready",
+          "Ramp the assignment deliberately over the first weeks rather than giving a full load on day three",
+          "Check in daily at first, ask what they are unsure about rather than whether they have questions, and make it safe to say I do not know"
+        ],
+        "strong_answer_signals": [
+          "Observed competency rather than assumed competency",
+          "Gradual assignment ramp, which is the biggest driver of new hire retention",
+          "Asks specific questions rather than a general are you okay"
+        ],
+        "avoid": [
+          "Throwing them in because that is how everyone learns",
+          "Signing a checklist without observing",
+          "No follow up after the first week"
+        ]
+      }
+    },
+    {
+      "id": "hcs_m_003",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you handle a team member who is not pulling their weight?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Check the facts first rather than acting on team complaints, since perception and reality often differ",
+          "Talk to them privately with specific examples and dates, and ask before telling, because there is often something going on",
+          "Set a clear expectation with a date, offer the support that fits the cause, and follow up when you said you would",
+          "Escalate to the supervisor with your documentation if it does not change or if patient care is affected"
+        ],
+        "strong_answer_signals": [
+          "Verifies before confronting",
+          "Distinguishes a capability problem from a personal crisis from a conduct problem",
+          "Documents from the first conversation"
+        ],
+        "avoid": [
+          "Complaining to the manager without speaking to the person",
+          "Covering their work indefinitely",
+          "Addressing it publicly in front of the team"
+        ]
+      }
+    },
+    {
+      "id": "hcs_m_004",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How would you reduce call light response times or improve patient satisfaction on your unit?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Attack the cause rather than the response time: most call lights are for toileting, pain, position and reach items, so proactive hourly rounding on those four reduces the volume",
+          "Set a no pass zone expectation so any staff member answers any light they walk past",
+          "Make the data visible: response times by shift, and share it with the team weekly rather than managing it privately",
+          "Close the loop with patients: tell them when you will return and come back when you said, since broken promises drive complaints more than waits do"
+        ],
+        "strong_answer_signals": [
+          "Reduces demand rather than only speeding response",
+          "Names the four common needs, which shows real floor experience",
+          "Shares data with the team"
+        ],
+        "avoid": [
+          "Telling staff to move faster",
+          "Ignoring why the lights are being pressed",
+          "Treating satisfaction scores as unrelated to workflow"
+        ]
+      }
+    },
+    {
+      "id": "hcs_m_005",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you keep a team motivated in a high turnover, physically demanding role?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start with the basics that actually drive turnover: fair assignments, reliable breaks, adequate equipment, and a schedule people can plan a life around",
+          "Recognise specifically and often, naming the behaviour rather than giving generic praise, and pass patient compliments on by name",
+          "Give a path: cross training, certification support, a route toward LPN or RN for those who want it, and say plainly that you will help them leave the role upward",
+          "Protect them: back them on scope, take workplace violence reports seriously, and act on at least one thing the team raises"
+        ],
+        "strong_answer_signals": [
+          "Names breaks and equipment, which are the concrete things that get ignored",
+          "Supports people to advance out of the role rather than holding them",
+          "Closes the loop on staff feedback"
+        ],
+        "avoid": [
+          "Recognition events as the strategy",
+          "Accepting missed breaks as normal",
+          "Blaming the labour market for turnover"
+        ]
+      }
+    },
+    {
+      "id": "hcs_m_006",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you handle a conflict between two staff members on your team?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Address it quickly, since unresolved conflict in a care team shows up in missed handoffs and patient harm",
+          "Hear each separately first and look for the structural cause: an unfair assignment pattern, an unclear task boundary, or a handoff that keeps failing",
+          "Bring them together with ground rules focused on behaviour and impact, and end with specific commitments and a follow up date",
+          "Take it to the supervisor and the formal policy if it involves bullying, harassment or anything that makes the workplace unsafe"
+        ],
+        "strong_answer_signals": [
+          "Links team conflict to patient safety",
+          "Looks for the fairness or workload cause underneath",
+          "Draws a clear line at bullying rather than mediating it"
+        ],
+        "avoid": [
+          "Telling them to sort it out themselves",
+          "Permanently scheduling them apart as the fix",
+          "Taking a side before hearing both"
+        ]
+      }
+    },
+    {
+      "id": "hcs_m_007",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you manage supplies, equipment and cost on your unit?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know what actually runs out and when: set par levels for the high use items rather than ordering by feeling, and assign an owner for the daily check",
+          "Prevent the two common waste sources: overstocking in rooms which leads to discard, and hoarding by individuals which causes false shortages elsewhere",
+          "Keep equipment available and working: a tracking method for pumps, lifts and vital sign machines, and a fast route to report broken equipment rather than leaving it in a corner",
+          "Connect it to care: a missing lift or a broken machine is a safety and time problem before it is a cost problem"
+        ],
+        "strong_answer_signals": [
+          "Par levels and a named owner rather than ad hoc ordering",
+          "Names hoarding, which is the real cause of most unit shortages",
+          "Frames equipment availability as a safety issue"
+        ],
+        "avoid": [
+          "Rationing supplies in a way that affects care",
+          "No system beyond noticing when something runs out",
+          "Leaving broken equipment unreported"
+        ]
+      }
+    },
+    {
+      "id": "hcs_m_008",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "You are short staffed for the shift. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Work the coverage options in order: per diem and float pool, offering the extra shift, then escalating to the nurse manager or house supervisor with a clear picture",
+          "Rebalance the work rather than just splitting it: pair up for transfers, batch the rounds, move non urgent tasks, and pull the lead into an assignment",
+          "Tell the team explicitly what is protected and what will slip tonight, so nobody has to guess",
+          "Document the staffing and report the pattern, since a repeated shortage is a scheduling problem not a tonight problem"
+        ],
+        "strong_answer_signals": [
+          "Names a concrete escalation ladder",
+          "Explicitly deprioritises something rather than promising everything",
+          "Separates tonight's fix from the recurring cause"
+        ],
+        "avoid": [
+          "Everyone just works harder",
+          "Cutting corners on turning, toileting or hand hygiene to keep up",
+          "Never reporting the pattern upward"
+        ]
+      }
+    },
+    {
+      "id": "hcs_mo_001",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Why do you want to work in healthcare?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Give one specific reason rather than a general desire to help, and keep it under a minute",
+          "Show you know what the work actually is: it is physical, it involves bodily care, it is emotionally heavy, and you are choosing it with open eyes",
+          "Connect to this setting specifically: hospital pace, clinic continuity, long term care relationships, or home health independence",
+          "If this is a step toward nursing or another credential, say so honestly and say what you want from this role itself"
+        ],
+        "strong_answer_signals": [
+          "Demonstrates a realistic view of the physical and emotional demands",
+          "Specific to the setting rather than to healthcare in general",
+          "Honest about longer term plans"
+        ],
+        "avoid": [
+          "I just love helping people, with nothing behind it",
+          "A view of the job that ignores the hard parts",
+          "Hiding that you are heading to nursing school"
+        ]
+      }
+    },
+    {
+      "id": "hcs_mo_002",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Why do you want to work here specifically?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Name something specific about the employer: the patient population, the unit or specialty, a training or tuition programme, the reputation for how they treat support staff",
+          "Connect it to what you want: the experience you would gain, the ratio or workload, the schedule that fits your life",
+          "Say what you bring that fits their need, especially certifications and EMR experience that reduce their onboarding time",
+          "Close with a question that shows you thought about the fit"
+        ],
+        "strong_answer_signals": [
+          "Something that could only be said about this employer",
+          "Mentions tuition or certification support if offered, which signals intent to stay",
+          "Two directional rather than only what you want"
+        ],
+        "avoid": [
+          "Close to home and good pay as the leading reasons",
+          "Reasons that apply to any employer",
+          "No knowledge of what the facility does"
+        ]
+      }
+    },
+    {
+      "id": "hcs_mo_003",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle the physical and emotional demands of this work?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Physical: proper body mechanics, using lifts and asking for a second person every time rather than saving time, plus your own fitness and footwear, since career length depends on this",
+          "Emotional: name what is genuinely hard such as loss, decline and abuse from patients, rather than claiming it does not affect you",
+          "Give your actual supports: talking with coworkers, a debrief after a death, employee assistance, exercise, and boundaries between work and home",
+          "Show you know burnout is a real risk in this role and that you manage it deliberately"
+        ],
+        "strong_answer_signals": [
+          "Uses equipment and help consistently, which prevents the back injuries that end these careers",
+          "Names a real support system rather than saying you are tough",
+          "Aware of burnout without being defeated by it"
+        ],
+        "avoid": [
+          "Claiming nothing bothers you",
+          "Lifting alone to be efficient",
+          "No coping strategy at all"
+        ]
+      }
+    },
+    {
+      "id": "hcs_mo_004",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Where do you see yourself in a few years?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Commit to doing this role well first and say what you want to master in it",
+          "Be honest about further education if that is your plan, and frame the timeline as compatible with the role rather than hiding it",
+          "Name growth that keeps you useful here: additional certifications, becoming a preceptor, a lead aide role, or cross training to another area",
+          "Tie it to what the employer gains"
+        ],
+        "strong_answer_signals": [
+          "Honest about nursing school plans, which employers often support",
+          "Growth within the organisation rather than only out of it",
+          "A concrete certification or role named"
+        ],
+        "avoid": [
+          "Hiding education plans that will surface later",
+          "No goals at all",
+          "A plan that has nothing to do with this employer"
+        ]
+      }
+    },
+    {
+      "id": "hcs_mo_005",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Why are you leaving your current job?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Answer forward: a setting you want, more hours or a schedule that works, growth, or experience you cannot get where you are",
+          "If the reason is genuinely difficult such as unsafe ratios or an unsupportive manager, state it factually and once, without a list",
+          "Never name individuals or describe a conflict in detail",
+          "Move straight into why this role fits"
+        ],
+        "strong_answer_signals": [
+          "Neutral and brief about the previous employer",
+          "A reason this employer can satisfy",
+          "Consistent with the dates on the resume"
+        ],
+        "avoid": [
+          "Criticising coworkers or managers",
+          "A long grievance story",
+          "Being vague in a way that invites suspicion"
+        ]
+      }
+    },
+    {
+      "id": "hcs_mo_006",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What questions do you have for us?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Ask about the workload honestly: what is the typical patient or resident assignment per aide on days and on nights",
+          "Ask about support and training: how long is orientation, who precepts, and what happens if I am unsure about something",
+          "Ask about the team and growth: turnover here, whether there is tuition or certification support, and whether there is a lead or preceptor path",
+          "Close with what makes someone successful in the first six months and what the next steps are"
+        ],
+        "strong_answer_signals": [
+          "Asks the assignment ratio question, which is the most important one in this role",
+          "Asks about orientation length, showing they take competence seriously",
+          "Asks about next steps at the end"
+        ],
+        "avoid": [
+          "No questions",
+          "Leading with pay, breaks and time off in a first interview",
+          "Questions already answered in the posting"
+        ]
+      }
+    }
+  ]
+}

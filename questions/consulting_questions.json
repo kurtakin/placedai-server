@@ -1,0 +1,724 @@
+{
+  "metadata": {
+    "sector": "Management Consulting",
+    "generated": "2026-08-30",
+    "total": 25,
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ]
+  },
+  "questions": [
+    {
+      "id": "mc_001",
+      "text": "Walk me through a case where you identified a major cost reduction opportunity.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Diagnostic framework applied",
+          "Root cause identified",
+          "Business case built",
+          "Implementation led"
+        ],
+        "strong_answer_signals": [
+          "10-30% sustainable savings",
+          "Implementation successful",
+          "Client able to sustain"
+        ],
+        "avoid": [
+          "Surface-level analysis",
+          "Savings not realized",
+          "Recommendation not implemented"
+        ]
+      }
+    },
+    {
+      "id": "mc_002",
+      "text": "How would you structure a market entry analysis for a new geography?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Market size and growth (TAM/SAM/SOM)",
+          "Competitive landscape",
+          "Regulatory and operational risks",
+          "Financial viability"
+        ],
+        "strong_answer_signals": [
+          "MECE framework applied",
+          "Data sources identified",
+          "Go/no-go recommendation"
+        ],
+        "avoid": [
+          "No framework",
+          "Data gaps ignored",
+          "No recommendation"
+        ]
+      }
+    },
+    {
+      "id": "mc_003",
+      "text": "Tell me about a time the client pushed back on your recommendation.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Understood client concerns",
+          "Provided additional data",
+          "Adapted recommendation",
+          "Maintained relationship"
+        ],
+        "strong_answer_signals": [
+          "Objection addressed with evidence",
+          "Pivot where appropriate",
+          "Trust maintained"
+        ],
+        "avoid": [
+          "Defensive stance",
+          "Ignoring client input",
+          "Recommendation forced"
+        ]
+      }
+    },
+    {
+      "id": "mc_004",
+      "text": "How do you prioritize findings in a diagnostic?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Impact vs effort matrix",
+          "Strategic alignment",
+          "Quick wins vs big bets",
+          "Stakeholder agreement"
+        ],
+        "strong_answer_signals": [
+          "Priorities justified",
+          "Client aligned on focus",
+          "Roadmap developed"
+        ],
+        "avoid": [
+          "Everything prioritized equally",
+          "No stakeholder input",
+          "No roadmap"
+        ]
+      }
+    },
+    {
+      "id": "mc_005",
+      "text": "Describe a digital transformation project from strategy to implementation.",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Digital strategy defined",
+          "Technology selection",
+          "Change management",
+          "Value realized"
+        ],
+        "strong_answer_signals": [
+          "EBIT impact quantified",
+          "Adoption >80%",
+          "Capability built"
+        ],
+        "avoid": [
+          "Tech-first approach",
+          "Low adoption",
+          "Value not measured"
+        ]
+      }
+    },
+    {
+      "id": "mc_006",
+      "text": "How do you structure an executive presentation?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "One-pager upfront",
+          "Problem-statement-solution flow",
+          "Data visualization",
+          "Decision or action requested"
+        ],
+        "strong_answer_signals": [
+          "Executive time respected",
+          "No death by PowerPoint",
+          "Decisions made"
+        ],
+        "avoid": [
+          "Too many slides",
+          "No clear ask",
+          "Data dump"
+        ]
+      }
+    },
+    {
+      "id": "mc_007",
+      "text": "Walk me through how you use MECE in problem solving.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Mutually exclusive categories",
+          "Collectively exhaustive coverage",
+          "Hypothesis tree",
+          "Issue tree structure"
+        ],
+        "strong_answer_signals": [
+          "Framework applied to case",
+          "Gaps identified",
+          "Priorities set"
+        ],
+        "avoid": [
+          "Overlapping categories",
+          "Gaps in coverage",
+          "Framework not actually used"
+        ]
+      }
+    },
+    {
+      "id": "mc_008",
+      "text": "Tell me about working with difficult stakeholders on the client side.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Understood stakeholder map",
+          "Built relationship",
+          "Managed up effectively",
+          "Delivered results despite friction"
+        ],
+        "strong_answer_signals": [
+          "Sponsor advocate turned",
+          "Results delivered",
+          "Relationship sustained"
+        ],
+        "avoid": [
+          "Conflict escalated",
+          "No relationship building",
+          "Results impacted"
+        ]
+      }
+    },
+    {
+      "id": "mc_009",
+      "text": "How do you estimate the ROI of a consulting engagement?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Baseline measurement",
+          "Attribution methodology",
+          "Net benefit calculation",
+          "Payback period"
+        ],
+        "strong_answer_signals": [
+          "Conservative assumptions",
+          "Client validated",
+          "Follow-up tracked"
+        ],
+        "avoid": [
+          "Gross benefit claimed",
+          "No baseline",
+          "Not followed up"
+        ]
+      }
+    },
+    {
+      "id": "mc_010",
+      "text": "Describe your experience with operating model design.",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Value chain analysis",
+          "Organizational structure",
+          "Governance and decision rights",
+          "KPI framework"
+        ],
+        "strong_answer_signals": [
+          "Organizational efficiency improved",
+          "Accountability clear",
+          "Process redesigned"
+        ],
+        "avoid": [
+          "Structure only",
+          "No governance",
+          "No KPI link"
+        ]
+      }
+    },
+    {
+      "id": "mc_011",
+      "text": "How do you handle scope expansion mid-engagement?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Assess impact on timeline/budget",
+          "Get client sign-off",
+          "Adjust resources",
+          "Manage expectations"
+        ],
+        "strong_answer_signals": [
+          "Scope managed formally",
+          "Original objectives protected",
+          "Client satisfied"
+        ],
+        "avoid": [
+          "Scope creep",
+          "No sign-off",
+          "Margin erosion"
+        ]
+      }
+    },
+    {
+      "id": "mc_012",
+      "text": "Tell me about a merger integration you supported.",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Day 1 readiness",
+          "Synergy capture plan",
+          "Cultural integration",
+          "100-day plan executed"
+        ],
+        "strong_answer_signals": [
+          "Synergies realized",
+          "Culture issues addressed",
+          "Retention managed"
+        ],
+        "avoid": [
+          "Synergies overstated",
+          "Culture ignored",
+          "Key talent lost"
+        ]
+      }
+    },
+    {
+      "id": "mc_013",
+      "text": "How do you build credibility with a skeptical client team?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Listened to concerns",
+          "Delivered quick wins",
+          "Brought data not opinions",
+          "Built relationships"
+        ],
+        "strong_answer_signals": [
+          "Skeptics turned advocates",
+          "Quick wins delivered",
+          "Trust established"
+        ],
+        "avoid": [
+          "Ignoring concerns",
+          "Dismissive attitude",
+          "No quick wins"
+        ]
+      }
+    },
+    {
+      "id": "mc_014",
+      "text": "Describe your approach to organizational cost restructuring.",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Cost baseline and drivers",
+          "Benchmark vs peers",
+          "Right-sizing model",
+          "Implementation with care"
+        ],
+        "strong_answer_signals": [
+          "Sustainable savings",
+          "Core talent retained",
+          "Operations maintained"
+        ],
+        "avoid": [
+          "Across-the-board cuts",
+          "Core capabilities damaged",
+          "Turnover spike"
+        ]
+      }
+    },
+    {
+      "id": "mc_015",
+      "text": "How do you know when to recommend stopping a project?",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Value vs cost analysis",
+          "Strategic fit assessment",
+          "Client recommendation",
+          "Professional judgment"
+        ],
+        "strong_answer_signals": [
+          "Honest assessment",
+          "Client protected",
+          "Reputation maintained"
+        ],
+        "avoid": [
+          "Continuing for revenue",
+          "No honest assessment",
+          "Client not told"
+        ]
+      }
+    },
+    {
+      "id": "mc_016",
+      "text": "Tell me about developing a growth strategy for a mature business.",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Market opportunity sized",
+          "Competitive advantage identified",
+          "Growth levers prioritized",
+          "Investment case built"
+        ],
+        "strong_answer_signals": [
+          "Realistic growth projected",
+          "Competitive dynamics addressed",
+          "Investment validated"
+        ],
+        "avoid": [
+          "Generic growth levers",
+          "Competition ignored",
+          "Unrealistic projections"
+        ]
+      }
+    },
+    {
+      "id": "mc_017",
+      "text": "How do you stay current with industry trends and frameworks?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Industry publications",
+          "Peer networks and conferences",
+          "Internal knowledge management",
+          "Continuous learning"
+        ],
+        "strong_answer_signals": [
+          "Specific sources named",
+          "Knowledge shared with team",
+          "Frameworks applied"
+        ],
+        "avoid": [
+          "No specific sources",
+          "Knowledge not shared",
+          "Frameworks outdated"
+        ]
+      }
+    },
+    {
+      "id": "mc_018",
+      "text": "Describe your experience with supply chain optimization.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "End-to-end mapping",
+          "Inventory optimization",
+          "Supplier strategy",
+          "Technology enablement"
+        ],
+        "strong_answer_signals": [
+          "Working capital reduced",
+          "Service levels improved",
+          "Cost savings quantified"
+        ],
+        "avoid": [
+          "Siloed analysis",
+          "Service level ignored",
+          "No implementation"
+        ]
+      }
+    },
+    {
+      "id": "mc_019",
+      "text": "How do you handle a project where the client keeps changing requirements?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Change control process",
+          "Impact assessment",
+          "Timeline and budget adjustment",
+          "Document decisions"
+        ],
+        "strong_answer_signals": [
+          "Process applied",
+          "Boundaries set",
+          "Original scope protected"
+        ],
+        "avoid": [
+          "No process",
+          "Absorbing changes",
+          "Timeline missed"
+        ]
+      }
+    },
+    {
+      "id": "mc_020",
+      "text": "Tell me about a time you had to deliver bad news to a client.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Prepared with data",
+          "Delivered directly",
+          "Proposed alternatives",
+          "Maintained trust"
+        ],
+        "strong_answer_signals": [
+          "Early warning",
+          "Alternative solutions",
+          "Relationship maintained"
+        ],
+        "avoid": [
+          "Delaying bad news",
+          "No alternatives",
+          "Trust damaged"
+        ]
+      }
+    },
+    {
+      "id": "mc_021",
+      "text": "How do you measure engagement success beyond deliverables?",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Client NPS survey",
+          "Repeat engagement rate",
+          "Referrals generated",
+          "Capability transfer"
+        ],
+        "strong_answer_signals": [
+          "NPS >8",
+          "Repeat business",
+          "Referrals tracked"
+        ],
+        "avoid": [
+          "Only deliverable metrics",
+          "No client feedback",
+          "No follow-up"
+        ]
+      }
+    },
+    {
+      "id": "mc_022",
+      "text": "Describe pricing strategy work you have done.",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Value-based vs cost-plus",
+          "Competitive pricing analysis",
+          "Segmentation pricing",
+          "Price elasticity testing"
+        ],
+        "strong_answer_signals": [
+          "EBIT margin improved",
+          "Price increase achieved without volume loss",
+          "Value proposition clear"
+        ],
+        "avoid": [
+          "Cost-plus only",
+          "Competition ignored",
+          "No segmentation"
+        ]
+      }
+    },
+    {
+      "id": "mc_023",
+      "text": "How do you develop junior consultants on your team?",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Coaching and feedback",
+          "Stretch assignments",
+          "Modeling expert behavior",
+          "Career development"
+        ],
+        "strong_answer_signals": [
+          "Team retention high",
+          "Promotion rate healthy",
+          "Skills improved"
+        ],
+        "avoid": [
+          "No development time",
+          "No feedback",
+          "Utilization only"
+        ]
+      }
+    },
+    {
+      "id": "mc_024",
+      "text": "Tell me about a time you had to say no to a client request.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Explained constraints clearly",
+          "Offered alternatives",
+          "Maintained relationship",
+          "Protected scope/budget"
+        ],
+        "strong_answer_signals": [
+          "Boundaries set professionally",
+          "Alternative provided",
+          "Trust maintained"
+        ],
+        "avoid": [
+          "Just saying no",
+          "No explanation",
+          "Relationship damaged"
+        ]
+      }
+    },
+    {
+      "id": "mc_025",
+      "text": "Why consulting? What keeps you engaged?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Variety and impact",
+          "Continuous learning",
+          "Client relationships",
+          "Career trajectory"
+        ],
+        "strong_answer_signals": [
+          "Specific engagement impact",
+          "Learning orientation",
+          "Clear growth path"
+        ],
+        "avoid": [
+          "Just money",
+          "No impact story",
+          "Consulting as transit"
+        ]
+      }
+    }
+  ]
+}

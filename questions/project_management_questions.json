@@ -1,0 +1,738 @@
+{
+  "metadata": {
+    "sector": "Project & Program Management",
+    "generated": "2026-08-30",
+    "total": 25,
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ]
+  },
+  "questions": [
+    {
+      "id": "pm_001",
+      "text": "Tell me about a project you managed with conflicting stakeholder priorities. How did you navigate the conflicts?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identified conflicts early through stakeholder mapping",
+          "Established clear communication channels",
+          "Prioritized based on business value and constraints",
+          "Delivered with measurable results"
+        ],
+        "strong_answer_signals": [
+          "Used RACI matrix or stakeholder register",
+          "Quantified trade-off decisions",
+          "Maintained positive relationships"
+        ],
+        "avoid": [
+          "Vague conflict resolution",
+          "Avoiding difficult conversations",
+          "Not documenting decisions"
+        ]
+      }
+    },
+    {
+      "id": "pm_002",
+      "text": "Describe a project delivered late. Root cause and handling?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Root cause analysis",
+          "Transparent communication with stakeholders",
+          "Recovery plan with adjusted scope/timeline",
+          "Lessons learned implemented"
+        ],
+        "strong_answer_signals": [
+          "Owned the delay without blame",
+          "Specific recovery actions",
+          "Process improvement after"
+        ],
+        "avoid": [
+          "Blaming team or vendors",
+          "No recovery plan",
+          "Not learning from it"
+        ]
+      }
+    },
+    {
+      "id": "pm_003",
+      "text": "How do you handle scope creep?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Formal change control process with CCB",
+          "Impact assessment on timeline/budget/quality",
+          "Stakeholder sign-off on changes",
+          "Documentation and communication"
+        ],
+        "strong_answer_signals": [
+          "Change log maintained",
+          "Trade-offs clearly presented",
+          "Saying no when appropriate"
+        ],
+        "avoid": [
+          "Accepting all changes",
+          "No formal process",
+          "Not tracking impact"
+        ]
+      }
+    },
+    {
+      "id": "pm_004",
+      "text": "Tell me about managing a cross-functional team without direct authority.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Built influence through credibility",
+          "Clear shared goals and accountability",
+          "Regular communication cadence",
+          "Escalation path for blockers"
+        ],
+        "strong_answer_signals": [
+          "Influence without authority demonstrated",
+          "Team members advocated for project",
+          "Conflict resolved collaboratively"
+        ],
+        "avoid": [
+          "Relying on escalation only",
+          "Not building relationships",
+          "Micromanaging"
+        ]
+      }
+    },
+    {
+      "id": "pm_005",
+      "text": "How do you estimate effort and create realistic timelines?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Work breakdown structure (WBS)",
+          "Historical data and expert judgment",
+          "Three-point estimating (PERT)",
+          "Buffer for risk and unknowns"
+        ],
+        "strong_answer_signals": [
+          "Multiple estimation techniques",
+          "Risk-based buffers",
+          "Track record of accuracy"
+        ],
+        "avoid": [
+          "Single-point estimates",
+          "No historical data",
+          "Optimistic bias"
+        ]
+      }
+    },
+    {
+      "id": "pm_006",
+      "text": "Describe your experience with Agile/Scrum vs Waterfall. When do you use each?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Agile for uncertain/iterative work",
+          "Waterfall for fixed scope/regulatory",
+          "Hybrid approaches",
+          "Team and org maturity considered"
+        ],
+        "strong_answer_signals": [
+          "Context-specific methodology choice",
+          "Experience with both",
+          "Scaling frameworks (SAFe, LeSS)"
+        ],
+        "avoid": [
+          "Dogmatic about one method",
+          "No hybrid experience",
+          "Ignoring organizational context"
+        ]
+      }
+    },
+    {
+      "id": "pm_007",
+      "text": "How do you track and report project health to executives?",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "RAG status with leading indicators",
+          "Earned value (CPI/SPI) or burn charts",
+          "Risk and issue heat maps",
+          "Decision-focused executive summaries"
+        ],
+        "strong_answer_signals": [
+          "Leading not lagging indicators",
+          "Actionable recommendations",
+          "Right level of detail for audience"
+        ],
+        "avoid": [
+          "Only RAG without context",
+          "Too much detail",
+          "No decisions requested"
+        ]
+      }
+    },
+    {
+      "id": "pm_008",
+      "text": "Tell me about a program you managed with multiple interdependent projects.",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Program governance structure",
+          "Dependency mapping and critical path",
+          "Resource allocation across projects",
+          "Benefits realization tracking"
+        ],
+        "strong_answer_signals": [
+          "Interdependency management",
+          "Portfolio-level thinking",
+          "Benefits measured post-delivery"
+        ],
+        "avoid": [
+          "Treating as separate projects",
+          "No dependency tracking",
+          "No benefits measurement"
+        ]
+      }
+    },
+    {
+      "id": "pm_009",
+      "text": "How do you handle a key resource being pulled from your project?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Assessed impact on critical path",
+          "Negotiated with resource manager",
+          "Reprioritized or found alternatives",
+          "Updated stakeholders on impact"
+        ],
+        "strong_answer_signals": [
+          "Proactive not reactive",
+          "Creative alternatives found",
+          "Stakeholder alignment maintained"
+        ],
+        "avoid": [
+          "Accepting delay without fight",
+          "No backup plan",
+          "Blaming resource manager"
+        ]
+      }
+    },
+    {
+      "id": "pm_010",
+      "text": "How do you ensure quality without slowing delivery?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Definition of Done with quality gates",
+          "Automated testing in pipeline",
+          "Shift-left testing approach",
+          "Continuous integration standards"
+        ],
+        "strong_answer_signals": [
+          "Quality built-in not inspected",
+          "Automation investment",
+          "Quality metrics tracked"
+        ],
+        "avoid": [
+          "Testing only at end",
+          "No DoD",
+          "Sacrificing quality for speed"
+        ]
+      }
+    },
+    {
+      "id": "pm_011",
+      "text": "How do you manage remote or distributed project teams?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Over-communication and documentation",
+          "Time zone overlap for collaboration",
+          "Async-first culture",
+          "Tools: Jira, Confluence, Slack, Miro"
+        ],
+        "strong_answer_signals": [
+          "Async workflows designed",
+          "Inclusion across time zones",
+          "Team cohesion maintained"
+        ],
+        "avoid": [
+          "Meetings for everything",
+          "Ignoring time zones",
+          "No documentation culture"
+        ]
+      }
+    },
+    {
+      "id": "pm_012",
+      "text": "How do you identify and mitigate project risks?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Risk register with probability/impact",
+          "Regular risk reviews",
+          "Mitigation strategies with owners",
+          "Contingency plans for high risks"
+        ],
+        "strong_answer_signals": [
+          "Proactive risk identification",
+          "Owner assigned to each risk",
+          "Risks actually mitigated"
+        ],
+        "avoid": [
+          "Risk register created and forgotten",
+          "No mitigation actions",
+          "Only identifying not managing"
+        ]
+      }
+    },
+    {
+      "id": "pm_013",
+      "text": "Tell me about a project where you had to kill or pause it.",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Data-driven decision criteria",
+          "Stakeholder alignment on decision",
+          "Wind-down plan with knowledge capture",
+          "Lessons learned shared"
+        ],
+        "strong_answer_signals": [
+          "Objective criteria used",
+          "Difficult conversation handled well",
+          "Resources redeployed effectively"
+        ],
+        "avoid": [
+          "Emotional decision",
+          "No wind-down plan",
+          "Not communicating why"
+        ]
+      }
+    },
+    {
+      "id": "pm_014",
+      "text": "How do you handle vendor management in projects?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Clear SOWs and SLAs",
+          "Regular vendor performance reviews",
+          "Contract change management",
+          "Relationship building with key vendors"
+        ],
+        "strong_answer_signals": [
+          "Vendor scorecards used",
+          "Performance issues addressed early",
+          "Strategic vendor partnerships"
+        ],
+        "avoid": [
+          "No formal SOW",
+          "Ignoring vendor issues",
+          "Adversarial relationship"
+        ]
+      }
+    },
+    {
+      "id": "pm_015",
+      "text": "How do you run effective project retrospectives?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Psychological safety first",
+          "Data-driven discussion (metrics)",
+          "Action items with owners and dates",
+          "Follow-up on previous actions"
+        ],
+        "strong_answer_signals": [
+          "Actions actually completed",
+          "Blame-free culture",
+          "Continuous improvement shown"
+        ],
+        "avoid": [
+          "Venting without actions",
+          "Same issues recurring",
+          "No follow-through"
+        ]
+      }
+    },
+    {
+      "id": "pm_016",
+      "text": "Describe your experience with Jira, MS Project, or similar tools.",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Advanced Jira: workflows, boards, automation",
+          "MS Project: resource leveling, critical path",
+          "Dashboard and reporting setup",
+          "Integration with other tools"
+        ],
+        "strong_answer_signals": [
+          "Tool expertise beyond basics",
+          "Custom workflows created",
+          "Reporting automated"
+        ],
+        "avoid": [
+          "Only basic ticket tracking",
+          "No reporting setup",
+          "Tool-driven not process-driven"
+        ]
+      }
+    },
+    {
+      "id": "pm_017",
+      "text": "How do you manage project budgets and financial tracking?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Bottom-up budget with contingency",
+          "Monthly forecast vs actual",
+          "Earned value management",
+          "Capex vs opex tracking"
+        ],
+        "strong_answer_signals": [
+          "Forecast accuracy >90%",
+          "Early variance detection",
+          "Finance partnership"
+        ],
+        "avoid": [
+          "Only tracking spend",
+          "No contingency",
+          "Surprises at quarter-end"
+        ]
+      }
+    },
+    {
+      "id": "pm_018",
+      "text": "How do you onboard new team members mid-project?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Structured onboarding plan",
+          "Buddy system",
+          "Knowledge transfer sessions",
+          "Gradual responsibility increase"
+        ],
+        "strong_answer_signals": [
+          "Ramp time measured",
+          "Documentation updated",
+          "Buddy feedback positive"
+        ],
+        "avoid": [
+          "Sink or swim",
+          "No knowledge transfer",
+          "Overloading immediately"
+        ]
+      }
+    },
+    {
+      "id": "pm_019",
+      "text": "How do you handle competing priorities across multiple projects?",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Portfolio prioritization framework",
+          "Resource capacity planning",
+          "Executive alignment on priorities",
+          "Transparent trade-off communication"
+        ],
+        "strong_answer_signals": [
+          "Objective prioritization criteria",
+          "Capacity planning proactive",
+          "Stakeholder buy-in on decisions"
+        ],
+        "avoid": [
+          "Everything is priority 1",
+          "No capacity visibility",
+          "Reactive firefighting"
+        ]
+      }
+    },
+    {
+      "id": "pm_020",
+      "text": "What metrics do you use to measure project success?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "On-time, on-budget, on-scope",
+          "Quality: defect rate, rework",
+          "Stakeholder satisfaction (NPS)",
+          "Business outcomes: ROI, adoption"
+        ],
+        "strong_answer_signals": [
+          "Leading and lagging metrics",
+          "Business outcomes measured",
+          "Post-implementation review"
+        ],
+        "avoid": [
+          "Only iron triangle",
+          "No post-project measurement",
+          "Vanity metrics"
+        ]
+      }
+    },
+    {
+      "id": "pm_021",
+      "text": "How do you manage stakeholder expectations?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Stakeholder analysis and mapping",
+          "Communication plan by audience",
+          "Regular cadence and no surprises",
+          "Expectation setting early and often"
+        ],
+        "strong_answer_signals": [
+          "Proactive communication",
+          "Bad news early",
+          "Stakeholder satisfaction high"
+        ],
+        "avoid": [
+          "Over-promising",
+          "Surprising stakeholders",
+          "One-size-fits-all communication"
+        ]
+      }
+    },
+    {
+      "id": "pm_022",
+      "text": "How do you handle a project with unclear or changing requirements?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Discovery phase to clarify",
+          "Iterative delivery with feedback",
+          "Product owner partnership",
+          "Flexible architecture decisions"
+        ],
+        "strong_answer_signals": [
+          "Embraced uncertainty",
+          "Frequent delivery cycles",
+          "Requirements evolved collaboratively"
+        ],
+        "avoid": [
+          "Freezing requirements prematurely",
+          "Building without clarity",
+          "Blaming product owner"
+        ]
+      }
+    },
+    {
+      "id": "pm_023",
+      "text": "Describe a time you influenced without authority to get a project approved.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Built business case with data",
+          "Identified decision-makers and influencers",
+          "Addressed concerns proactively",
+          "Secured sponsorship and funding"
+        ],
+        "strong_answer_signals": [
+          "Data-driven business case",
+          "Coalition built",
+          "Executive sponsor secured"
+        ],
+        "avoid": [
+          "No business case",
+          "Bypassing process",
+          "Not addressing objections"
+        ]
+      }
+    },
+    {
+      "id": "pm_024",
+      "text": "How do you ensure knowledge transfer at project close?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Lessons learned workshop",
+          "Documentation handover checklist",
+          "Operations team transition",
+          "Archive in knowledge base"
+        ],
+        "strong_answer_signals": [
+          "Ops team ready day 1",
+          "Lessons actually applied",
+          "Knowledge base updated"
+        ],
+        "avoid": [
+          "No handover",
+          "Documentation only",
+          "Lessons not shared"
+        ]
+      }
+    },
+    {
+      "id": "pm_025",
+      "text": "Why project management? What keeps you motivated?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Origin story",
+          "Impact: delivering value through others",
+          "Variety and problem-solving",
+          "Growth: PMO, program, portfolio, or PM track"
+        ],
+        "strong_answer_signals": [
+          "Specific motivation",
+          "People and outcomes focus",
+          "Clear career vision"
+        ],
+        "avoid": [
+          "Just organized",
+          "Power/control motivation",
+          "No long-term view"
+        ]
+      }
+    }
+  ]
+}

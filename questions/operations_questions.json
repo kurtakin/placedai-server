@@ -3,27 +3,37 @@
     "sector": "Operations & Manufacturing",
     "generated": "2026-04-14",
     "total": 46,
-    "categories": ["behavioral", "technical", "situational", "motivation", "manager"]
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ]
   },
   "questions": [
     {
       "id": "ops_b_001",
       "category": "behavioral",
-      "seniority": ["mid", "senior", "manager"],
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "Tell me about a time you led a process improvement initiative that reduced waste or cost.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Identify the specific waste stream or cost driver you targeted — describe the baseline (quantify: cost per unit, cycle time, scrap rate)",
-          "Explain the improvement methodology used — name it (lean, Six Sigma, kaizen, value stream mapping) and describe the specific tools you applied",
-          "Walk through the implementation — who did you engage, what resistance did you face, how did you drive adoption across shifts or functions",
-          "Deliver the results with hard numbers — % cost reduction, cycle time saved, scrap eliminated, payback period, and how it scaled"
+          "Identify the specific waste stream or cost driver you targeted, describe the baseline (quantify: cost per unit, cycle time, scrap rate)",
+          "Explain the improvement methodology used, name it (lean, Six Sigma, kaizen, value stream mapping) and describe the specific tools you applied",
+          "Walk through the implementation: who did you engage, what resistance did you face, how did you drive adoption across shifts or functions",
+          "Deliver the results with hard numbers, % cost reduction, cycle time saved, scrap eliminated, payback period, and how it scaled"
         ],
         "strong_answer_signals": [
           "Quantified before/after metrics (15-30% typical improvement range)",
           "Named a specific lean tool or methodology applied",
-          "Described change management — how you got buy-in from skeptical teams",
-          "Explained sustained impact — how you locked in the gains and prevented backsliding"
+          "Described change management: how you got buy-in from skeptical teams",
+          "Explained sustained impact: how you locked in the gains and prevented backsliding"
         ],
         "avoid": [
           "Vague improvements without numbers or timelines",
@@ -36,21 +46,25 @@
     {
       "id": "ops_b_002",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you managed a production disruption and kept operations running.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Describe the disruption clearly — equipment failure, supply shortage, staffing loss, quality issue — and its immediate impact on orders and schedule",
-          "Explain your immediate triage — what you assessed first (safety, priority orders, available resources) and who you escalated to",
-          "Detail the workaround or mitigation — redirected capacity, manual processes, rework strategy, customer communication, temporary solutions",
-          "Show how you prevented recurrence — root cause (if time permitted), feedback loop, or prevention plan you put in place"
+          "Describe the disruption clearly: equipment failure, supply shortage, staffing loss, quality issue, and its immediate impact on orders and schedule",
+          "Explain your immediate triage: what you assessed first (safety, priority orders, available resources) and who you escalated to",
+          "Detail the workaround or mitigation, redirected capacity, manual processes, rework strategy, customer communication, temporary solutions",
+          "Show how you prevented recurrence, root cause (if time permitted), feedback loop, or prevention plan you put in place"
         ],
         "strong_answer_signals": [
           "Kept orders shipping or minimized order delay (specific hours/days)",
-          "Demonstrated calm prioritization — safety first, then critical customers, then backlog",
+          "Demonstrated calm prioritization: safety first, then critical customers, then backlog",
           "Named the decision-makers you engaged (supervisor, plant manager, supply chain)",
-          "Explained preventive action — not just firefighting but system improvement afterward"
+          "Explained preventive action: not just firefighting but system improvement afterward"
         ],
         "avoid": [
           "Making the disruption sound like it was no big deal or not actually that urgent",
@@ -63,21 +77,24 @@
     {
       "id": "ops_b_003",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you used data to identify and fix an operational inefficiency.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Describe the data you collected — production reports, cycle time logs, downtime records, quality data, labor tracking — and why you looked at it",
-          "Explain the pattern or anomaly you found — specific metric that stood out, comparison to target or peer performance, root cause hypothesis",
-          "Detail how you tested the hypothesis — validation step, experiment, or deeper analysis to confirm the true driver",
-          "Quantify the fix — the change you made based on data insight, the result in measurable terms (time, cost, quality), and proof it was data-driven"
+          "Describe the data you collected: production reports, cycle time logs, downtime records, quality data, labor tracking, and why you looked at it",
+          "Explain the pattern or anomaly you found, specific metric that stood out, comparison to target or peer performance, root cause hypothesis",
+          "Detail how you tested the hypothesis, validation step, experiment, or deeper analysis to confirm the true driver",
+          "Quantify the fix: the change you made based on data insight, the result in measurable terms (time, cost, quality), and proof it was data-driven"
         ],
         "strong_answer_signals": [
           "Named the specific data source and metric (e.g., SAP downtime logs showed 22% unplanned stops on Line 2)",
-          "Showed analytical thinking — comparison, trend, or outlier detection",
+          "Showed analytical thinking: comparison, trend, or outlier detection",
           "Described how you validated the root cause before jumping to a fix",
-          "Quantified impact and proved the correlation — before/after numbers tied to the change"
+          "Quantified impact and proved the correlation, before/after numbers tied to the change"
         ],
         "avoid": [
           "Describing a gut feeling that happened to be right rather than a true data-driven discovery",
@@ -90,20 +107,24 @@
     {
       "id": "ops_b_004",
       "category": "behavioral",
-      "seniority": ["mid", "senior", "manager"],
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "Describe a situation where you implemented a new process and faced significant resistance from the team.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Set up the change — what new process, why it was needed (business case: cost, quality, safety, customer demand), who had to adopt it",
-          "Describe the resistance — specific concerns voiced (job security, 'we've always done it this way,' fear of failure, disruption), from whom (frontline, supervisors, unions)",
-          "Explain your engagement strategy — how you listened, involved skeptics in design or pilot, addressed specific concerns, communicated benefits",
-          "Show sustained adoption — training deployed, quick wins celebrated, metrics shared, how you maintained momentum past the honeymoon period"
+          "Set up the change: what new process, why it was needed (business case: cost, quality, safety, customer demand), who had to adopt it",
+          "Describe the resistance: specific concerns voiced (job security, 'we've always done it this way,' fear of failure, disruption), from whom (frontline, supervisors, unions)",
+          "Explain your engagement strategy: how you listened, involved skeptics in design or pilot, addressed specific concerns, communicated benefits",
+          "Show sustained adoption: training deployed, quick wins celebrated, metrics shared, how you maintained momentum past the honeymoon period"
         ],
         "strong_answer_signals": [
-          "Described specific resistance — not generic but actual objections from the team",
+          "Described specific resistance: not generic but actual objections from the team",
           "Showed empathy and understanding of why people resisted",
-          "Involved skeptics in the solution — increased buy-in through participation",
+          "Involved skeptics in the solution, increased buy-in through participation",
           "Delivered results that proved the change was worth the effort"
         ],
         "avoid": [
@@ -117,20 +138,24 @@
     {
       "id": "ops_b_005",
       "category": "behavioral",
-      "seniority": ["mid", "senior", "manager"],
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "Tell me about a time you improved safety performance in an operations environment.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Identify the safety opportunity — incident trend, near-miss report, hazard observation, safety audit finding, or leading indicator showing risk",
-          "Describe your investigation — root cause analysis (human factors, equipment, process design, training gaps, culture), not just the incident itself",
-          "Explain the intervention — control you implemented (engineering, administrative, PPE, training, behavior change) and how you reinforced it",
-          "Quantify the outcome — safety metrics improved (incident rate, near-miss trend, near-miss reporting increased, days without injury, audit score)"
+          "Identify the safety opportunity: incident trend, near-miss report, hazard observation, safety audit finding, or leading indicator showing risk",
+          "Describe your investigation: root cause analysis (human factors, equipment, process design, training gaps, culture), not just the incident itself",
+          "Explain the intervention: control you implemented (engineering, administrative, PPE, training, behavior change) and how you reinforced it",
+          "Quantify the outcome: safety metrics improved (incident rate, near-miss trend, near-miss reporting increased, days without injury, audit score)"
         ],
         "strong_answer_signals": [
           "Focused on root cause, not just treating the symptom",
           "Showed understanding of hierarchy of controls (engineering > administrative > PPE)",
-          "Demonstrated culture change — increased reporting, ownership from team, sustained behavior",
+          "Demonstrated culture change: increased reporting, ownership from team, sustained behavior",
           "Provided specific metrics and trended performance post-intervention"
         ],
         "avoid": [
@@ -144,20 +169,23 @@
     {
       "id": "ops_b_006",
       "category": "behavioral",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "Describe a time you managed a significant cost reduction project in operations.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Define the scope and target — which cost area (materials, labor, overhead, waste, energy, logistics), the baseline spend, the target reduction % and timeline",
-          "Describe your approach — methodology used (benchmarking, supply chain, process redesign, automation, outsourcing analysis), cross-functional team involvement",
-          "Walk through tough trade-off decisions — what you preserved (quality, safety, customer service, capacity) and what you challenged (headcount, capital, complexity)",
-          "Deliver quantified savings — annual run-rate savings achieved, one-time investment needed, payback period, and how you tracked to avoid false accounting"
+          "Define the scope and target: which cost area (materials, labor, overhead, waste, energy, logistics), the baseline spend, the target reduction % and timeline",
+          "Describe your approach: methodology used (benchmarking, supply chain, process redesign, automation, outsourcing analysis), cross-functional team involvement",
+          "Walk through tough trade-off decisions, what you preserved (quality, safety, customer service, capacity) and what you challenged (headcount, capital, complexity)",
+          "Deliver quantified savings: annual run-rate savings achieved, one-time investment needed, payback period, and how you tracked to avoid false accounting"
         ],
         "strong_answer_signals": [
           "Named the specific cost driver and baseline (e.g., 'direct material spend was $8.2M')",
-          "Showed trade-off thinking — acknowledged what couldn't be cut and why",
-          "Demonstrated cross-functional leadership — engaged procurement, quality, finance, operations",
+          "Showed trade-off thinking: acknowledged what couldn't be cut and why",
+          "Demonstrated cross-functional leadership, engaged procurement, quality, finance, operations",
           "Provided auditable savings with clear methodology (not soft savings) and proof of realization"
         ],
         "avoid": [
@@ -171,25 +199,29 @@
     {
       "id": "ops_b_007",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you had to balance production speed with quality standards under pressure.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Set the scenario — production schedule pressure (tight deadline, customer demand spike, capacity constraint) and quality risk (defect rate, rework, customer impact)",
-          "Describe your decision framework — how you defined 'acceptable' quality (spec, customer expectation, risk tolerance, regulatory requirements)",
-          "Explain your action — what you prioritized, what controls you implemented to maintain quality without killing schedule (inspection point, process tweak, resource reallocation, partial shipment)",
-          "Show the outcome — on-time and in-spec, any defects caught and addressed, customer satisfaction maintained, lessons learned for next time"
+          "Set the scenario: production schedule pressure (tight deadline, customer demand spike, capacity constraint) and quality risk (defect rate, rework, customer impact)",
+          "Describe your decision framework: how you defined 'acceptable' quality (spec, customer expectation, risk tolerance, regulatory requirements)",
+          "Explain your action: what you prioritized, what controls you implemented to maintain quality without killing schedule (inspection point, process tweak, resource reallocation, partial shipment)",
+          "Show the outcome: on-time and in-spec, any defects caught and addressed, customer satisfaction maintained, lessons learned for next time"
         ],
         "strong_answer_signals": [
           "Did not compromise safety or regulatory compliance even under pressure",
-          "Named quality metrics and defect rates — showed quality rigor",
+          "Named quality metrics and defect rates, showed quality rigor",
           "Described a smart control (inspection, process adjustment, sampling plan) rather than luck",
           "Explained how you prevented recurrence of the speed-vs-quality bind"
         ],
         "avoid": [
           "Describing a decision that shipped defects to customers to make timeline",
-          "Framing it as a false choice — imply quality and speed are always at odds",
+          "Framing it as a false choice: imply quality and speed are always at odds",
           "Admitting to cutting corners without any mitigation or control",
           "Focusing only on hitting the deadline without discussing quality outcome"
         ]
@@ -198,15 +230,19 @@
     {
       "id": "ops_b_008",
       "category": "behavioral",
-      "seniority": ["mid", "senior", "manager"],
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "Describe a cross-functional project you led to improve operational performance.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Define the project — the operational goal (reduce lead time, improve quality, lower cost, increase capacity), which functions were involved (engineering, quality, supply chain, finance), duration",
-          "Describe your leadership — how you aligned different priorities (e.g., engineering wanted perfection, operations wanted speed), built team commitment, handled conflict",
-          "Explain the solution — the cross-functional insight or innovation that emerged from collaboration that wouldn't have from ops alone",
-          "Quantify the impact — results achieved, how they were measured, adoption across the organization, and ongoing value"
+          "Define the project: the operational goal (reduce lead time, improve quality, lower cost, increase capacity), which functions were involved (engineering, quality, supply chain, finance), duration",
+          "Describe your leadership: how you aligned different priorities (e.g., engineering wanted perfection, operations wanted speed), built team commitment, handled conflict",
+          "Explain the solution: the cross-functional insight or innovation that emerged from collaboration that wouldn't have from ops alone",
+          "Quantify the impact: results achieved, how they were measured, adoption across the organization, and ongoing value"
         ],
         "strong_answer_signals": [
           "Showed understanding of multiple functions' perspectives and constraints",
@@ -225,19 +261,23 @@
     {
       "id": "ops_b_009",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you identified a bottleneck in your production process and eliminated it.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Describe how you spotted the bottleneck — what metric, observation, or report made it visible (line balance chart, capacity analysis, floor observation, data)",
-          "Explain the analysis — how you confirmed it was truly the constraint (not upstream or downstream), quantified its impact (lead time, throughput, WIP)",
-          "Detail the fix — what you changed (process design, equipment, batch size, sequencing, staffing, setup time) and why it broke the bottleneck",
-          "Show the ripple effect — how removing the bottleneck improved overall performance, and what new constraint emerged (if any)"
+          "Describe how you spotted the bottleneck, what metric, observation, or report made it visible (line balance chart, capacity analysis, floor observation, data)",
+          "Explain the analysis: how you confirmed it was truly the constraint (not upstream or downstream), quantified its impact (lead time, throughput, WIP)",
+          "Detail the fix: what you changed (process design, equipment, batch size, sequencing, staffing, setup time) and why it broke the bottleneck",
+          "Show the ripple effect: how removing the bottleneck improved overall performance, and what new constraint emerged (if any)"
         ],
         "strong_answer_signals": [
-          "Used a systematic method to identify the true bottleneck — not just where the queue was longest",
-          "Quantified the constraint's impact — cycle time, throughput per hour, WIP reduction",
+          "Used a systematic method to identify the true bottleneck, not just where the queue was longest",
+          "Quantified the constraint's impact, cycle time, throughput per hour, WIP reduction",
           "Described a root cause fix, not a band-aid (e.g., eliminated setup time, not just worked longer hours)",
           "Explained the after-state and any follow-on bottleneck management"
         ],
@@ -252,21 +292,25 @@
     {
       "id": "ops_b_010",
       "category": "behavioral",
-      "seniority": ["mid", "senior", "manager"],
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "Describe a time you successfully introduced a lean or continuous improvement methodology.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Describe the baseline — what organization or team you worked with, what improvement culture existed before, what triggered the need for a new methodology",
-          "Explain the methodology chosen — why lean, Six Sigma, kaizen, or another system was the right fit for your situation and what you wanted to achieve",
-          "Walk through implementation — how you trained people, kicked off projects, assigned roles (black belts, project leads), removed barriers",
-          "Quantify sustained adoption — number of projects completed, annualized savings, how you embedded it in daily management (daily huddles, metrics, reviews)"
+          "Describe the baseline: what organization or team you worked with, what improvement culture existed before, what triggered the need for a new methodology",
+          "Explain the methodology chosen: why lean, Six Sigma, kaizen, or another system was the right fit for your situation and what you wanted to achieve",
+          "Walk through implementation: how you trained people, kicked off projects, assigned roles (black belts, project leads), removed barriers",
+          "Quantify sustained adoption: number of projects completed, annualized savings, how you embedded it in daily management (daily huddles, metrics, reviews)"
         ],
         "strong_answer_signals": [
           "Named the specific methodology and tools introduced (e.g., 5S, DMAIC, A3 thinking, gemba walks)",
-          "Showed evidence of cultural adoption — not just awareness but daily use",
+          "Showed evidence of cultural adoption, not just awareness but daily use",
           "Described how you trained people and made the methodology accessible",
-          "Provided evidence of sustained improvement portfolio — ongoing projects, metrics, management routines"
+          "Provided evidence of sustained improvement portfolio, ongoing projects, metrics, management routines"
         ],
         "avoid": [
           "Describing a consulting-led initiative where you were an observer, not the driver",
@@ -279,25 +323,29 @@
     {
       "id": "ops_t_001",
       "category": "technical",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Walk me through how you would conduct a root cause analysis on a recurring production failure.",
       "answer_framework": {
         "structure": "Methodology",
         "key_points": [
-          "Define the failure precisely — what exactly is going wrong, when, how often, what's the impact (defects, downtime, safety). Distinguish symptom from failure.",
-          "Collect data — gather failure history (date, time, conditions, operator, equipment state, environment), defect samples, maintenance logs, operator feedback",
-          "Use a structured tool — describe 5-Why, fishbone, or fault tree to trace from failure backward through process and system factors; explore human, machine, material, method, environment",
-          "Test and validate root cause — don't stop at the first plausible cause; test if removing it stops the failure; explain why it's the root, not a contributing factor"
+          "Define the failure precisely: what exactly is going wrong, when, how often, what's the impact (defects, downtime, safety). Distinguish symptom from failure.",
+          "Collect data: gather failure history (date, time, conditions, operator, equipment state, environment), defect samples, maintenance logs, operator feedback",
+          "Use a structured tool: describe 5-Why, fishbone, or fault tree to trace from failure backward through process and system factors; explore human, machine, material, method, environment",
+          "Test and validate root cause: don't stop at the first plausible cause; test if removing it stops the failure; explain why it's the root, not a contributing factor"
         ],
         "strong_answer_signals": [
           "Distinguished between symptom and root cause in the explanation",
           "Named a structured problem-solving tool (5-Why, fishbone diagram, fault tree, Pareto analysis)",
           "Described data collection and pattern identification, not just expert opinion",
-          "Explained validation step — how you'd confirm the root cause before acting"
+          "Explained validation step: how you'd confirm the root cause before acting"
         ],
         "avoid": [
           "Jumping to the first plausible cause without systematic exploration",
-          "Confusing correlation with causation — e.g., 'it happens on the afternoon shift' is not a root cause",
+          "Confusing correlation with causation, e.g., 'it happens on the afternoon shift' is not a root cause",
           "Stopping at 'human error' without exploring why the process allowed the error",
           "Describing a fix before confirming the true root cause"
         ]
@@ -306,26 +354,29 @@
     {
       "id": "ops_t_002",
       "category": "technical",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "How do you apply lean principles to identify and eliminate the 8 wastes in a process?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Name the 8 wastes and give an example from operations — Transportation, Inventory, Motion, Waiting, Overprocessing, Overproduction, Defects, (Non-utilized talent). Show you can identify each in a real process.",
-          "Describe your observation method — gemba walk, value stream map, process timing study; explain how you distinguish value-added from waste",
-          "Explain the lean hierarchy — focus on high-impact wastes first (inventory, waiting, defects typically drive cost and lead time), then attack them with appropriate tools",
-          "Provide a concrete example — walk through one waste you've eliminated (describe before state, waste measurement, improvement action, after state and time/cost saved)"
+          "Name the 8 wastes and give an example from operations. Transportation, Inventory, Motion, Waiting, Overprocessing, Overproduction, Defects, (Non-utilized talent). Show you can identify each in a real process.",
+          "Describe your observation method: gemba walk, value stream map, process timing study; explain how you distinguish value-added from waste",
+          "Explain the lean hierarchy: focus on high-impact wastes first (inventory, waiting, defects typically drive cost and lead time), then attack them with appropriate tools",
+          "Provide a concrete example: walk through one waste you've eliminated (describe before state, waste measurement, improvement action, after state and time/cost saved)"
         ],
         "strong_answer_signals": [
           "Named all 8 wastes without prompting and gave operational examples",
-          "Described gemba walk or value stream mapping — hands-on observation, not assumption",
-          "Showed prioritization thinking — not all wastes are equally important",
+          "Described gemba walk or value stream mapping, hands-on observation, not assumption",
+          "Showed prioritization thinking: not all wastes are equally important",
           "Provided quantified example of waste reduction in a real situation"
         ],
         "avoid": [
           "Only naming 3-4 wastes or being vague about definitions",
           "Describing elimination without understanding what the waste was costing",
-          "Treating all 8 wastes equally — not showing prioritization",
+          "Treating all 8 wastes equally: not showing prioritization",
           "Generic answers without operational grounding (manufacturing, logistics, service)"
         ]
       }
@@ -333,26 +384,29 @@
     {
       "id": "ops_t_003",
       "category": "technical",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Explain your approach to capacity planning for a production facility.",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Start with demand forecasting — how you gather forecast from sales/operations planning, build in seasonality and growth assumptions, translate to monthly and weekly production requirement",
-          "Define available capacity — name the constraints (machines, labor shifts, raw materials, floor space); calculate effective capacity (accounting for changeovers, maintenance, scrap); show capacity by product or line",
-          "Build the supply-demand balance — compare demand to capacity by time period (monthly, quarterly); identify gaps and bottlenecks; quantify shortfall or surplus",
-          "Develop contingency plans — describe options to close gaps (add shifts, outsource, increase efficiency, defer orders, invest in equipment); explain trade-offs and timeline for each"
+          "Start with demand forecasting: how you gather forecast from sales/operations planning, build in seasonality and growth assumptions, translate to monthly and weekly production requirement",
+          "Define available capacity: name the constraints (machines, labor shifts, raw materials, floor space); calculate effective capacity (accounting for changeovers, maintenance, scrap); show capacity by product or line",
+          "Build the supply-demand balance: compare demand to capacity by time period (monthly, quarterly); identify gaps and bottlenecks; quantify shortfall or surplus",
+          "Develop contingency plans: describe options to close gaps (add shifts, outsource, increase efficiency, defer orders, invest in equipment); explain trade-offs and timeline for each"
         ],
         "strong_answer_signals": [
-          "Explained the forecast-to-capacity translation — not just 'how many units' but 'how many machine-hours, labor hours'",
+          "Explained the forecast-to-capacity translation, not just 'how many units' but 'how many machine-hours, labor hours'",
           "Named the real constraints in your facility (machine availability, skilled labor, raw material, logistics)",
-          "Showed quantification — capacity by bottleneck, not a vague 'we can make 5000 units'",
-          "Described proactive planning cycle — not just reacting to urgent orders"
+          "Showed quantification: capacity by bottleneck, not a vague 'we can make 5000 units'",
+          "Described proactive planning cycle, not just reacting to urgent orders"
         ],
         "avoid": [
           "Assuming capacity is just the rated nameplate capacity without accounting for losses",
-          "Describing only a reactive approach — 'we look at orders and do what we can'",
-          "Forgetting the human element — labor availability, cross-training, skill constraints",
+          "Describing only a reactive approach, 'we look at orders and do what we can'",
+          "Forgetting the human element: labor availability, cross-training, skill constraints",
           "Omitting supply chain constraints (raw material lead time, supplier capacity)"
         ]
       }
@@ -360,26 +414,30 @@
     {
       "id": "ops_t_004",
       "category": "technical",
-      "seniority": ["mid", "senior", "manager"],
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "How would you set up a KPI dashboard for an operations team?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Define strategic and tactical KPIs — safety (injury rate), quality (defect rate, first-pass yield), delivery (on-time %, lead time), cost (COGS, labor productivity), and one operational leading indicator",
-          "Explain the hierarchy — show how frontline metrics roll up to facility and business metrics; explain lag (results) vs. lead (predictors) indicators",
-          "Describe the dashboard design — real-time or daily update cadence, visual format (traffic lights, trend, target vs. actual), who sees what level of detail (operator, supervisor, manager, director)",
-          "Detail the review rhythm — daily team huddle, weekly supervisor meeting, monthly management review; explain how metrics drive decisions and action (not just reporting)"
+          "Define strategic and tactical KPIs, safety (injury rate), quality (defect rate, first-pass yield), delivery (on-time %, lead time), cost (COGS, labor productivity), and one operational leading indicator",
+          "Explain the hierarchy: show how frontline metrics roll up to facility and business metrics; explain lag (results) vs. lead (predictors) indicators",
+          "Describe the dashboard design: real-time or daily update cadence, visual format (traffic lights, trend, target vs. actual), who sees what level of detail (operator, supervisor, manager, director)",
+          "Detail the review rhythm: daily team huddle, weekly supervisor meeting, monthly management review; explain how metrics drive decisions and action (not just reporting)"
         ],
         "strong_answer_signals": [
-          "Included both results and leading indicators — not just lagging safety/quality metrics",
-          "Explained the causal link — how frontline metrics drive facility and business outcomes",
-          "Showed alignment with strategy — metrics support the company's improvement priorities",
-          "Described active use of dashboard — metrics are tied to daily decisions and accountability, not decoration"
+          "Included both results and leading indicators, not just lagging safety/quality metrics",
+          "Explained the causal link: how frontline metrics drive facility and business outcomes",
+          "Showed alignment with strategy: metrics support the company's improvement priorities",
+          "Described active use of dashboard, metrics are tied to daily decisions and accountability, not decoration"
         ],
         "avoid": [
-          "Creating a dashboard that's too detailed or too many metrics — shows lack of focus",
+          "Creating a dashboard that's too detailed or too many metrics, shows lack of focus",
           "Only reporting results without any leading or predictive indicators",
-          "Building a dashboard that's updated monthly — too slow for operations management",
+          "Building a dashboard that's updated monthly, too slow for operations management",
           "Treating the dashboard as a reporting tool only, not a management tool"
         ]
       }
@@ -387,25 +445,28 @@
     {
       "id": "ops_t_005",
       "category": "technical",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Walk me through how you would plan and run a Kaizen event.",
       "answer_framework": {
         "structure": "Process",
         "key_points": [
-          "Pre-event preparation — define the scope (process or area), set a specific goal (reduce lead time, improve safety, increase capacity), select cross-functional team (operators, supervisors, support), communicate timeline (typically 3-5 days)",
-          "Day 1-2: Observe and analyze — gemba walk to understand current state, collect time/motion data, identify waste and constraints, create value stream map or process map, build team consensus on the problem",
-          "Day 3-4: Design and implement — brainstorm solutions using lean tools (5S, batch reduction, line balance, setup time reduction), test quickly on the floor, resolve issues in real time, train team on new process",
-          "Day 5: Sustain and standardize — document the new process, create visual controls, assign responsibility for monitoring, schedule follow-up kaizen in 30 days to check for backsliding"
+          "Pre-event preparation: define the scope (process or area), set a specific goal (reduce lead time, improve safety, increase capacity), select cross-functional team (operators, supervisors, support), communicate timeline (typically 3-5 days)",
+          "Day 1-2: Observe and analyze: gemba walk to understand current state, collect time/motion data, identify waste and constraints, create value stream map or process map, build team consensus on the problem",
+          "Day 3-4: Design and implement: brainstorm solutions using lean tools (5S, batch reduction, line balance, setup time reduction), test quickly on the floor, resolve issues in real time, train team on new process",
+          "Day 5: Sustain and standardize: document the new process, create visual controls, assign responsibility for monitoring, schedule follow-up kaizen in 30 days to check for backsliding"
         ],
         "strong_answer_signals": [
-          "Described full cycle — not just the event but pre and post activities",
-          "Emphasized real-time testing and adjusting — kaizen is 'learning by doing'",
-          "Showed focus on sustainability — new process was documented, standardized, monitored",
-          "Explained how operator input drives improvement — not imposed from management"
+          "Described full cycle: not just the event but pre and post activities",
+          "Emphasized real-time testing and adjusting, kaizen is 'learning by doing'",
+          "Showed focus on sustainability: new process was documented, standardized, monitored",
+          "Explained how operator input drives improvement, not imposed from management"
         ],
         "avoid": [
           "Describing a one-off improvement event without sustainability plan",
-          "Running kaizen at a desk — not involving operators and not touching the process",
+          "Running kaizen at a desk: not involving operators and not touching the process",
           "Setting vague goals like 'improve efficiency' instead of specific metrics",
           "Treating the 5-day event as the finish line rather than start of sustainability phase"
         ]
@@ -414,24 +475,27 @@
     {
       "id": "ops_t_006",
       "category": "technical",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "How do you measure and improve OEE (Overall Equipment Effectiveness)?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Define OEE formula and components — OEE = Availability × Performance × Quality. Explain: Availability (% uptime minus planned downtime), Performance (actual rate vs. rated speed), Quality (good parts / total parts)",
-          "Describe measurement — how you capture data for each component (downtime logs, speed counters, defect counts); explain whether you use manual or automated collection; validate accuracy",
-          "Explain improvement priorities — use Pareto to identify which loss (downtime, speed loss, defects) is the biggest driver; address highest-impact losses first",
-          "Provide an example improvement — describe one OEE loss you've tackled (e.g., reduced setup time, eliminated chronic equipment failure, improved first-pass yield) with before/after OEE impact"
+          "Define OEE formula and components. OEE = Availability × Performance × Quality. Explain: Availability (% uptime minus planned downtime), Performance (actual rate vs. rated speed), Quality (good parts / total parts)",
+          "Describe measurement: how you capture data for each component (downtime logs, speed counters, defect counts); explain whether you use manual or automated collection; validate accuracy",
+          "Explain improvement priorities: use Pareto to identify which loss (downtime, speed loss, defects) is the biggest driver; address highest-impact losses first",
+          "Provide an example improvement: describe one OEE loss you've tackled (e.g., reduced setup time, eliminated chronic equipment failure, improved first-pass yield) with before/after OEE impact"
         ],
         "strong_answer_signals": [
           "Demonstrated understanding of OEE components and the math",
-          "Described realistic OEE benchmarks — typical range is 60-85% depending on industry, explained targets for continuous improvement",
+          "Described realistic OEE benchmarks, typical range is 60-85% depending on industry, explained targets for continuous improvement",
           "Named specific types of losses (mechanical breakdown, slow cycles, defect rework) not just 'downtime'",
-          "Explained how OEE improvement actions flow from analysis — not random fixes"
+          "Explained how OEE improvement actions flow from analysis, not random fixes"
         ],
         "avoid": [
-          "Confusing OEE with overall efficiency or asset utilization — these are different metrics",
+          "Confusing OEE with overall efficiency or asset utilization, these are different metrics",
           "Claiming to improve OEE without addressing the actual underlying losses",
           "Describing theoretical improvements without proof of measurement and tracking",
           "Focusing only on one component (e.g., only uptime) and ignoring performance and quality"
@@ -441,25 +505,28 @@
     {
       "id": "ops_t_007",
       "category": "technical",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Explain the DMAIC methodology and when you would use it.",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Define DMAIC — Define (problem, scope, goal), Measure (establish baseline, collect data), Analyze (identify root cause, process factors), Improve (design and test solution), Control (sustain gains, prevent backsliding)",
-          "Explain when to use it — for complex, data-driven problems with quantifiable metrics; when root cause is not obvious; when you need statistical rigor and validation; typical projects run 2-4 months",
-          "Contrast with kaizen — DMAIC is methodical and analytical (longer timeline); kaizen is fast and pragmatic (week-long). DMAIC for deep unknowns, kaizen for known waste elimination.",
-          "Provide example — walk through one problem you tackled with DMAIC (define the metric/goal, what data you measured, how you tested root cause, the solution tested, control measures in place)"
+          "Define DMAIC. Define (problem, scope, goal), Measure (establish baseline, collect data), Analyze (identify root cause, process factors), Improve (design and test solution), Control (sustain gains, prevent backsliding)",
+          "Explain when to use it: for complex, data-driven problems with quantifiable metrics; when root cause is not obvious; when you need statistical rigor and validation; typical projects run 2-4 months",
+          "Contrast with kaizen. DMAIC is methodical and analytical (longer timeline); kaizen is fast and pragmatic (week-long). DMAIC for deep unknowns, kaizen for known waste elimination.",
+          "Provide example: walk through one problem you tackled with DMAIC (define the metric/goal, what data you measured, how you tested root cause, the solution tested, control measures in place)"
         ],
         "strong_answer_signals": [
           "Showed clear understanding of each phase and typical tools (process maps, cause-effect, hypothesis testing, design of experiments, control plans)",
-          "Explained the rigor — DMAIC relies on data and statistical validation, not hunches",
-          "Named realistic project timeline — 2-4 months with structured team, not weeks",
+          "Explained the rigor. DMAIC relies on data and statistical validation, not hunches",
+          "Named realistic project timeline, 2-4 months with structured team, not weeks",
           "Provided example showing how DMAIC's discipline solved a problem that quick fixes missed"
         ],
         "avoid": [
-          "Confusing DMAIC with general problem-solving — it's a specific, rigorous methodology",
-          "Using DMAIC for every problem — it's overkill for obvious waste elimination",
+          "Confusing DMAIC with general problem-solving, it's a specific, rigorous methodology",
+          "Using DMAIC for every problem: it's overkill for obvious waste elimination",
           "Describing DMAIC without data collection and statistical testing",
           "Claiming Six Sigma belt certification without real project experience"
         ]
@@ -468,21 +535,25 @@
     {
       "id": "ops_t_008",
       "category": "technical",
-      "seniority": ["mid", "senior", "manager"],
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "How do you handle production scheduling when demand suddenly exceeds capacity?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Assess demand surge — is it real or forecast error? What's the duration (temporary spike vs. permanent shift)? Which products and customers? What's the magnitude (% over normal capacity)?",
-          "Identify capacity options quickly — work with operations to model (add shifts, weekend work, reduce setup, increase line speed, defer lower-priority orders, subcontract, extend lead time with customer)",
-          "Evaluate trade-offs — quantify cost of each option (overtime labor, quality risk, customer impact, supply chain strain); assess which customers/products to prioritize (margin, strategic value, delivery commitment)",
-          "Communicate and commit — update sales on realistic delivery dates; explain constraints to leadership; coordinate with supply chain and quality; lock in the plan and execute"
+          "Assess demand surge: is it real or forecast error? What's the duration (temporary spike vs. permanent shift)? Which products and customers? What's the magnitude (% over normal capacity)?",
+          "Identify capacity options quickly, work with operations to model (add shifts, weekend work, reduce setup, increase line speed, defer lower-priority orders, subcontract, extend lead time with customer)",
+          "Evaluate trade-offs: quantify cost of each option (overtime labor, quality risk, customer impact, supply chain strain); assess which customers/products to prioritize (margin, strategic value, delivery commitment)",
+          "Communicate and commit: update sales on realistic delivery dates; explain constraints to leadership; coordinate with supply chain and quality; lock in the plan and execute"
         ],
         "strong_answer_signals": [
-          "Distinguished between temporary surge and demand step-change — different solutions",
-          "Showed understanding of the math — how much actual capacity can be added realistically, not wishful thinking",
-          "Explained trade-offs explicitly — extra shifts cost money, subcontracting risks quality, extended lead times cost sales",
-          "Described stakeholder alignment — not just operations deciding in a vacuum"
+          "Distinguished between temporary surge and demand step-change, different solutions",
+          "Showed understanding of the math: how much actual capacity can be added realistically, not wishful thinking",
+          "Explained trade-offs explicitly: extra shifts cost money, subcontracting risks quality, extended lead times cost sales",
+          "Described stakeholder alignment: not just operations deciding in a vacuum"
         ],
         "avoid": [
           "Promising unrealistic delivery dates to save the sale without understanding true capacity",
@@ -495,25 +566,28 @@
     {
       "id": "ops_t_009",
       "category": "technical",
-      "seniority": ["mid", "senior"],
-      "text": "Walk me through value stream mapping — what it is and how you've used it.",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Walk me through value stream mapping, what it is and how you've used it.",
       "answer_framework": {
         "structure": "Process",
         "key_points": [
-          "Define value stream mapping — visual map of all process steps (value-added, non-value-added, waste) from raw material to customer; includes timing, inventory, delays, information flow",
-          "Describe current-state mapping — walk through a real process step-by-step with operators, time each step, mark inventory queues, note process info, identify handoff delays and rework loops",
-          "Show waste identification — use the map to see where time is spent (setup, delays, inspection rework), where inventory sits (batch delays, buffer stock), where information is delayed (batch reporting, manual handoff)",
-          "Explain future-state design — redesign the map to reduce lead time (batch reduction, pull system, continuous flow, parallel processing); quantify time reduction goal; implement in phases"
+          "Define value stream mapping: visual map of all process steps (value-added, non-value-added, waste) from raw material to customer; includes timing, inventory, delays, information flow",
+          "Describe current-state mapping: walk through a real process step-by-step with operators, time each step, mark inventory queues, note process info, identify handoff delays and rework loops",
+          "Show waste identification: use the map to see where time is spent (setup, delays, inspection rework), where inventory sits (batch delays, buffer stock), where information is delayed (batch reporting, manual handoff)",
+          "Explain future-state design: redesign the map to reduce lead time (batch reduction, pull system, continuous flow, parallel processing); quantify time reduction goal; implement in phases"
         ],
         "strong_answer_signals": [
-          "Described hands-on mapping with operators — not a desk exercise",
+          "Described hands-on mapping with operators, not a desk exercise",
           "Named specific improvements made based on the map (e.g., 'we saw a 3-day batch queue, so we implemented daily batches and cut lead time from 14 days to 7')",
           "Showed before/after maps or at least explained the key changes made",
           "Provided lead time reduction numbers that flowed from specific value stream improvements"
         ],
         "avoid": [
-          "Describing value stream mapping as just 'documenting the process' — it's a tool for finding and eliminating waste",
-          "Mapping in a meeting room without going to gemba — you'll miss the real constraints",
+          "Describing value stream mapping as just 'documenting the process', it's a tool for finding and eliminating waste",
+          "Mapping in a meeting room without going to gemba, you'll miss the real constraints",
           "Creating a beautiful future-state map that's never implemented",
           "Claiming massive improvement without showing the specific changes that drove it"
         ]
@@ -522,80 +596,90 @@
     {
       "id": "ops_t_010",
       "category": "technical",
-      "seniority": ["mid", "senior", "manager"],
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "How do you approach supplier quality management and performance tracking?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Define quality expectations — establish clear specs and acceptance criteria; communicate through POs, drawings, process FMEA; include inspections required (100%, AQL sampling) and defect escalation thresholds",
-          "Implement measurement system — incoming inspection (defect rate, lot acceptance data), in-process feedback (rework root causes, on-time delivery), scorecard metrics (quality, delivery, cost, responsiveness)",
-          "Manage supplier performance — review scorecard quarterly with supplier; share data showing trends; recognize top performers; escalate chronic issues with improvement plans; conduct supplier audits (onsite, quality system, process capability)",
-          "Drive improvement partnerships — when quality issues arise, work with supplier on root cause (not just rejection); help them build capability if needed; consider longer-term contracts for preferred suppliers"
+          "Define quality expectations: establish clear specs and acceptance criteria; communicate through POs, drawings, process FMEA; include inspections required (100%, AQL sampling) and defect escalation thresholds",
+          "Implement measurement system: incoming inspection (defect rate, lot acceptance data), in-process feedback (rework root causes, on-time delivery), scorecard metrics (quality, delivery, cost, responsiveness)",
+          "Manage supplier performance: review scorecard quarterly with supplier; share data showing trends; recognize top performers; escalate chronic issues with improvement plans; conduct supplier audits (onsite, quality system, process capability)",
+          "Drive improvement partnerships: when quality issues arise, work with supplier on root cause (not just rejection); help them build capability if needed; consider longer-term contracts for preferred suppliers"
         ],
         "strong_answer_signals": [
-          "Described a clear, multi-metric scorecard — not just quality but also delivery and cost",
-          "Showed data sharing with suppliers — improvement happens when suppliers see the impact of their quality on your operations",
-          "Explained escalation and audit protocols — how you manage underperformers",
-          "Described collaborative improvement approach — treating supplier as partner, not just vendor"
+          "Described a clear, multi-metric scorecard, not just quality but also delivery and cost",
+          "Showed data sharing with suppliers, improvement happens when suppliers see the impact of their quality on your operations",
+          "Explained escalation and audit protocols, how you manage underperformers",
+          "Described collaborative improvement approach, treating supplier as partner, not just vendor"
         ],
         "avoid": [
           "Only tracking defect rate without understanding supplier's capability or constraints",
           "Punitive approaches (penalties, rejections) without helping suppliers improve",
-          "Lack of clear specs or acceptance criteria — setting suppliers up for failure",
-          "One-way reporting — scorecard that supplier never sees or discusses"
+          "Lack of clear specs or acceptance criteria, setting suppliers up for failure",
+          "One-way reporting: scorecard that supplier never sees or discusses"
         ]
       }
     },
     {
       "id": "ops_t_011",
       "category": "technical",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Explain how you would calculate and improve takt time to meet customer demand.",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Define takt time — available production time per shift / customer demand per shift; e.g., 480 min per shift / 120 units per day = 4 minutes per unit; this is the pace the process must work at to meet demand",
-          "Calculate current cycle time — measure actual time required per unit (including setup, changeover, inspection); compare to takt time; if cycle time > takt, you have a bottleneck or capacity gap",
-          "Identify gap and constraints — use line balance analysis or process analysis to find where cycle time exceeds takt; quantify the gap (e.g., 'we need 4 min/unit but take 6 min at Assembly Step 3')",
-          "Improve to takt — target improvements (reduce setup, parallelize work, reduce defects/rework, increase speed, resource reallocation); implement changes; track to ensure new cycle time hits takt"
+          "Define takt time: available production time per shift / customer demand per shift; e.g., 480 min per shift / 120 units per day = 4 minutes per unit; this is the pace the process must work at to meet demand",
+          "Calculate current cycle time: measure actual time required per unit (including setup, changeover, inspection); compare to takt time; if cycle time > takt, you have a bottleneck or capacity gap",
+          "Identify gap and constraints: use line balance analysis or process analysis to find where cycle time exceeds takt; quantify the gap (e.g., 'we need 4 min/unit but take 6 min at Assembly Step 3')",
+          "Improve to takt: target improvements (reduce setup, parallelize work, reduce defects/rework, increase speed, resource reallocation); implement changes; track to ensure new cycle time hits takt"
         ],
         "strong_answer_signals": [
           "Showed the calculation and explained what it means operationally",
-          "Described takt as the constraint setter — this is the pace that matters, not average time",
+          "Described takt as the constraint setter, this is the pace that matters, not average time",
           "Identified specific bottleneck(s) preventing takt achievement",
           "Explained improvement actions tied directly to closing the takt gap"
         ],
         "avoid": [
-          "Confusing takt time with cycle time — takt is the requirement, cycle time is the current reality",
+          "Confusing takt time with cycle time, takt is the requirement, cycle time is the current reality",
           "Calculating takt without distinguishing different product types or demand variation",
           "Describing general 'efficiency improvements' without linking them to specific takt gap closure",
-          "Ignoring changeover/setup in takt calculation — this often kills takt achievement"
+          "Ignoring changeover/setup in takt calculation, this often kills takt achievement"
         ]
       }
     },
     {
       "id": "ops_t_012",
       "category": "technical",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "How do you approach make-vs-buy decisions in a manufacturing environment?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Define the decision scope — which component or process is in question; what's the current cost structure (labor, material, overhead); what's the volume and forecast stability",
-          "Quantify total cost of ownership — if make: direct labor, materials, overhead allocation, equipment investment, scrap/rework, working capital; if buy: supplier price, quality costs (defects, inspection), supply chain risk, lead time impact on inventory",
-          "Assess strategic factors — is this core capability (keep) or commodity (buy)? Supply risk (single supplier, lead time, geopolitics)? Quality capability (can supplier match)? Capacity constraints (would making tie up other production)?",
-          "Model scenarios — build a decision model with base case and sensitivity (volume changes, cost inflation, exchange rates); set decision criteria (payback period, NPV, risk tolerance)"
+          "Define the decision scope: which component or process is in question; what's the current cost structure (labor, material, overhead); what's the volume and forecast stability",
+          "Quantify total cost of ownership: if make: direct labor, materials, overhead allocation, equipment investment, scrap/rework, working capital; if buy: supplier price, quality costs (defects, inspection), supply chain risk, lead time impact on inventory",
+          "Assess strategic factors: is this core capability (keep) or commodity (buy)? Supply risk (single supplier, lead time, geopolitics)? Quality capability (can supplier match)? Capacity constraints (would making tie up other production)?",
+          "Model scenarios: build a decision model with base case and sensitivity (volume changes, cost inflation, exchange rates); set decision criteria (payback period, NPV, risk tolerance)"
         ],
         "strong_answer_signals": [
           "Used total cost of ownership, not just purchase price comparison",
-          "Assessed risk factors explicitly — supply chain, capability, single supplier dependency",
-          "Explained strategic context — which capabilities to protect internally vs. outsource",
-          "Described decision criteria and sensitivities — how robust is the decision to assumptions"
+          "Assessed risk factors explicitly: supply chain, capability, single supplier dependency",
+          "Explained strategic context: which capabilities to protect internally vs. outsource",
+          "Described decision criteria and sensitivities, how robust is the decision to assumptions"
         ],
         "avoid": [
           "Choosing based on purchase price alone, ignoring quality, lead time, and risk",
           "Outsourcing core capabilities that give competitive advantage",
-          "Ignoring supply chain risk — single-source dependency, long lead times, geopolitical exposure",
+          "Ignoring supply chain risk: single-source dependency, long lead times, geopolitical exposure",
           "Failing to account for transition costs (tooling, engineering, supplier development) in the financial analysis"
         ]
       }
@@ -603,26 +687,30 @@
     {
       "id": "ops_s_001",
       "category": "situational",
-      "seniority": ["mid", "senior", "manager"],
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "A critical piece of production equipment fails mid-shift with 6 hours of orders to fulfill. What do you do?",
       "answer_framework": {
         "structure": "Decision Framework",
         "key_points": [
-          "Immediate triage — is equipment safe to remain on floor? Stop production immediately (safety first). Alert maintenance and engineering. Estimate repair time (2-4 hours, beyond shift?). Assess order priority and impact (which customers, delivery commitments at risk).",
-          "Parallel response — activate backup equipment if available (parallel line, lease equipment, subcontract). Call maintenance to field repair. Brief production and planning on delay risk. Notify customer service of potential shipment delay.",
-          "Decision on workaround — can you route orders to another line? Can you defer lower-priority orders? Can you run an emergency subcontract batch? What's the cost/timeline of each option?",
-          "Execute and communicate — implement workaround or accept delay; keep leadership and customers updated on status; prevent this failure in the future (maintenance plan, backup capacity investment)"
+          "Immediate triage: is equipment safe to remain on floor? Stop production immediately (safety first). Alert maintenance and engineering. Estimate repair time (2-4 hours, beyond shift?). Assess order priority and impact (which customers, delivery commitments at risk).",
+          "Parallel response: activate backup equipment if available (parallel line, lease equipment, subcontract). Call maintenance to field repair. Brief production and planning on delay risk. Notify customer service of potential shipment delay.",
+          "Decision on workaround: can you route orders to another line? Can you defer lower-priority orders? Can you run an emergency subcontract batch? What's the cost/timeline of each option?",
+          "Execute and communicate: implement workaround or accept delay; keep leadership and customers updated on status; prevent this failure in the future (maintenance plan, backup capacity investment)"
         ],
         "strong_answer_signals": [
-          "Safety first — stopped production, didn't create a secondary risk trying to keep running",
-          "Rapid assessment — not just 'call maintenance and wait', but parallel problem-solving for alternatives",
-          "Customer focus — communicated impact and options quickly rather than surprising them",
-          "Root cause follow-up — described how you'd prevent recurrence (equipment age, maintenance plan, backup investment)"
+          "Safety first: stopped production, didn't create a secondary risk trying to keep running",
+          "Rapid assessment: not just 'call maintenance and wait', but parallel problem-solving for alternatives",
+          "Customer focus: communicated impact and options quickly rather than surprising them",
+          "Root cause follow-up: described how you'd prevent recurrence (equipment age, maintenance plan, backup investment)"
         ],
         "avoid": [
           "Trying to keep the broken equipment running to meet shipments (safety and quality risk)",
           "Panicking or saying 'we'll just miss the deadline' without exploring options",
-          "Failing to notify customers and leadership quickly — let them help solve the problem",
+          "Failing to notify customers and leadership quickly, let them help solve the problem",
           "Describing only the short-term crisis response without prevention plan"
         ]
       }
@@ -630,21 +718,25 @@
     {
       "id": "ops_s_002",
       "category": "situational",
-      "seniority": ["mid", "senior", "manager"],
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "A customer escalates a major quality complaint about a shipment that is already in transit. How do you respond?",
       "answer_framework": {
         "structure": "Decision Framework",
         "key_points": [
-          "Acknowledge and investigate fast — confirm the customer's concern (defect type, quantity, impact). Get a defect sample if possible (photos, hold the shipment). Don't make promises yet.",
-          "Root cause hypothesis — does this indicate a systemic issue in our process or a one-off? Check shipment records (batch/lot, production date, test results). Any defects caught in inspection that were shipped anyway?",
-          "Decision tree — if systemic issue: hold similar inventory and shipments pending investigation; if one-off: allow shipment with a plan for resolution. Determine: rework, return and replace, credit, or accept?",
-          "Customer solution and prevention — propose concrete action (accelerated replacement, credit on future orders, etc.). Commit to root cause investigation and corrective action within X days. Follow up on the prevention plan."
+          "Acknowledge and investigate fast: confirm the customer's concern (defect type, quantity, impact). Get a defect sample if possible (photos, hold the shipment). Don't make promises yet.",
+          "Root cause hypothesis: does this indicate a systemic issue in our process or a one-off? Check shipment records (batch/lot, production date, test results). Any defects caught in inspection that were shipped anyway?",
+          "Decision tree: if systemic issue: hold similar inventory and shipments pending investigation; if one-off: allow shipment with a plan for resolution. Determine: rework, return and replace, credit, or accept?",
+          "Customer solution and prevention: propose concrete action (accelerated replacement, credit on future orders, etc.). Commit to root cause investigation and corrective action within X days. Follow up on the prevention plan."
         ],
         "strong_answer_signals": [
-          "Moved fast to understand scope — is this isolated or systemic?",
-          "Took ownership without defensiveness — didn't blame the customer or shipping",
+          "Moved fast to understand scope: is this isolated or systemic?",
+          "Took ownership without defensiveness, didn't blame the customer or shipping",
           "Proposed a concrete customer remedy quickly (not bureaucratic back-and-forth)",
-          "Committed to root cause and prevention — not just fixing this customer's problem but preventing recurrence"
+          "Committed to root cause and prevention, not just fixing this customer's problem but preventing recurrence"
         ],
         "avoid": [
           "Being defensive or implying the customer is wrong without investigating",
@@ -657,102 +749,115 @@
     {
       "id": "ops_s_003",
       "category": "situational",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "You are asked to cut operational costs by 15% without reducing output or headcount. How do you approach it?",
       "answer_framework": {
         "structure": "Decision Framework",
         "key_points": [
-          "Scope the cost base — identify cost categories: materials, labor, overhead (utilities, maintenance, rent), logistics, quality (rework, scrap). Quantify each; prioritize opportunities (material is often 50-60% of COGS, so start there).",
-          "Attack material costs — renegotiate with suppliers (volume leverage, multi-source competition); reduce specifications where possible (value engineering); waste reduction (scrap, yield improvement). Target 5-10% savings.",
-          "Improve conversion costs without reducing headcount — reduce scrap/rework (quality improvement frees capacity), reduce changeover/setup (batch optimization, less downtime), increase productivity (balanced line, process improvement). Often yields 5-8% savings.",
-          "Overhead and indirect costs — renegotiate utilities, reduce maintenance emergency spending (preventive maintenance), optimize logistics routing, consolidate suppliers. Usually 2-3% savings here."
+          "Scope the cost base: identify cost categories: materials, labor, overhead (utilities, maintenance, rent), logistics, quality (rework, scrap). Quantify each; prioritize opportunities (material is often 50-60% of COGS, so start there).",
+          "Attack material costs: renegotiate with suppliers (volume leverage, multi-source competition); reduce specifications where possible (value engineering); waste reduction (scrap, yield improvement). Target 5-10% savings.",
+          "Improve conversion costs without reducing headcount, reduce scrap/rework (quality improvement frees capacity), reduce changeover/setup (batch optimization, less downtime), increase productivity (balanced line, process improvement). Often yields 5-8% savings.",
+          "Overhead and indirect costs: renegotiate utilities, reduce maintenance emergency spending (preventive maintenance), optimize logistics routing, consolidate suppliers. Usually 2-3% savings here."
         ],
         "strong_answer_signals": [
-          "Approached systematically, not randomly cutting — prioritized by magnitude and leverage",
+          "Approached systematically, not randomly cutting, prioritized by magnitude and leverage",
           "Focused on true efficiency gains, not hidden cost transfers (e.g., not cutting quality inspection and shifting quality risk to customer)",
-          "Explained constraints — why you couldn't reduce headcount (contract, skill dependency, volume stability needed)",
-          "Provided realistic timeline — 15% in one quarter is aggressive; more realistic over two quarters with phasing"
+          "Explained constraints: why you couldn't reduce headcount (contract, skill dependency, volume stability needed)",
+          "Provided realistic timeline, 15% in one quarter is aggressive; more realistic over two quarters with phasing"
         ],
         "avoid": [
-          "Proposing headcount cuts when told not to — credibility killer",
+          "Proposing headcount cuts when told not to, credibility killer",
           "Suggesting cost reductions that are really risk transfers (cut inspection, reduce maintenance, short-term solutions)",
           "Overestimating supplier leverage or negotiation savings without evidence",
-          "Ignoring the ripple effects — cost cuts that reduce customer service or quality"
+          "Ignoring the ripple effects: cost cuts that reduce customer service or quality"
         ]
       }
     },
     {
       "id": "ops_s_004",
       "category": "situational",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "A new process you implemented is creating unexpected bottlenecks downstream. How do you respond?",
       "answer_framework": {
         "structure": "Decision Framework",
         "key_points": [
-          "Diagnose the bottleneck — map where and why the downstream backup is forming. Is the new process faster upstream, creating WIP? Is quality different (more rework, inspection issues)? Is the output format incompatible with downstream?",
-          "Determine the root cause quickly — was this a known risk that should have been mitigated in design? A truly unexpected interaction? Insufficient testing or pilot scope?",
-          "Implement immediate relief — if the new process is producing too much volume for downstream, slow it down temporarily (reduce batch frequency, extend cycle time) or reroute work to alternative paths.",
-          "Build a permanent solution — fix the new process (adjust parameters), improve downstream capacity (run longer hours, parallel equipment, improve their efficiency), or find a middle ground (balanced batch size or sequencing)."
+          "Diagnose the bottleneck: map where and why the downstream backup is forming. Is the new process faster upstream, creating WIP? Is quality different (more rework, inspection issues)? Is the output format incompatible with downstream?",
+          "Determine the root cause quickly: was this a known risk that should have been mitigated in design? A truly unexpected interaction? Insufficient testing or pilot scope?",
+          "Implement immediate relief: if the new process is producing too much volume for downstream, slow it down temporarily (reduce batch frequency, extend cycle time) or reroute work to alternative paths.",
+          "Build a permanent solution: fix the new process (adjust parameters), improve downstream capacity (run longer hours, parallel equipment, improve their efficiency), or find a middle ground (balanced batch size or sequencing)."
         ],
         "strong_answer_signals": [
-          "Took ownership of the unintended consequence — didn't blame downstream for not being ready",
+          "Took ownership of the unintended consequence, didn't blame downstream for not being ready",
           "Diagnosed the actual problem, not just the symptom (high WIP inventory upstream)",
-          "Implemented a quick fix while developing the real solution — kept operations moving",
-          "Learned from the miss — explained how you'd prevent similar surprises with the next improvement"
+          "Implemented a quick fix while developing the real solution, kept operations moving",
+          "Learned from the miss: explained how you'd prevent similar surprises with the next improvement"
         ],
         "avoid": [
           "Defending the new process as correct and expecting downstream to adapt quickly",
           "Rolling back the improvement because of downstream issues instead of solving the integration",
           "Focusing only on the bottleneck symptom without understanding the root interaction",
-          "Failing to involve downstream teams in the solution — they know their constraints best"
+          "Failing to involve downstream teams in the solution, they know their constraints best"
         ]
       }
     },
     {
       "id": "ops_s_005",
       "category": "situational",
-      "seniority": ["mid", "senior", "manager"],
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "Your team is consistently missing daily production targets. What is your diagnostic approach?",
       "answer_framework": {
         "structure": "Decision Framework",
         "key_points": [
-          "Quantify the gap — by how much are you missing? Is it consistent or variable? Which shifts, which products, which lines are underperforming? Trends (getting worse, steady, improving)?",
-          "Segment the problem — separate capacity loss (downtime, changeovers), speed loss (running slower than rated), and quality loss (rework, scrap). Use OEE or Pareto to identify the biggest driver.",
-          "Investigate root causes — for downtime: maintenance issues, changeover delays, start-of-shift delays? For speed: operator skill, material flow, equipment parameter settings? For quality: incoming defects, process drift, operator variation?",
-          "Test hypotheses — select the top two or three suspected causes; collect focused data to confirm (e.g., 'changeovers are eating 90 min/day' or 'afternoon shift runs 8% slower'). Prioritize by impact."
+          "Quantify the gap: by how much are you missing? Is it consistent or variable? Which shifts, which products, which lines are underperforming? Trends (getting worse, steady, improving)?",
+          "Segment the problem: separate capacity loss (downtime, changeovers), speed loss (running slower than rated), and quality loss (rework, scrap). Use OEE or Pareto to identify the biggest driver.",
+          "Investigate root causes: for downtime: maintenance issues, changeover delays, start-of-shift delays? For speed: operator skill, material flow, equipment parameter settings? For quality: incoming defects, process drift, operator variation?",
+          "Test hypotheses: select the top two or three suspected causes; collect focused data to confirm (e.g., 'changeovers are eating 90 min/day' or 'afternoon shift runs 8% slower'). Prioritize by impact."
         ],
         "strong_answer_signals": [
-          "Separated the problem into OEE components — didn't lump everything as 'low productivity'",
-          "Collected data to prioritize — didn't guess which issue mattered most",
-          "Involved the team in diagnosis — supervisors and operators usually know the constraints best",
-          "Developed targeted action plan — fix the #1 driver, then reassess"
+          "Separated the problem into OEE components, didn't lump everything as 'low productivity'",
+          "Collected data to prioritize: didn't guess which issue mattered most",
+          "Involved the team in diagnosis: supervisors and operators usually know the constraints best",
+          "Developed targeted action plan: fix the #1 driver, then reassess"
         ],
         "avoid": [
           "Blaming the team for being lazy or uncommitted without investigating constraints",
           "Assuming the target itself was unrealistic without first confirming it's based on real capacity",
           "Proposing generic 'work harder' solutions instead of removing actual constraints",
-          "Failing to engage the team in root cause discussion — missed insight and buy-in"
+          "Failing to engage the team in root cause discussion, missed insight and buy-in"
         ]
       }
     },
     {
       "id": "ops_s_006",
       "category": "situational",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "You are tasked with expanding production capacity by 30% with minimal capital expenditure. What is your plan?",
       "answer_framework": {
         "structure": "Decision Framework",
         "key_points": [
-          "Assess current capacity utilization — map OEE by line; find hidden capacity (low-hanging fruit: reduce downtime, improve changeovers, balance lines). Often 10-15% lurking here without new equipment.",
-          "Optimize what you have — reduce changeover time (quick changeover methodology), reduce scrap/rework (quality improvement frees capacity), reduce maintenance downtime (preventive plan), re-balance lines (parallel equipment allocation).",
-          "Add low-capital options — add shifts (labor cost, premium hours), cross-train operators (flexibility in scheduling), small equipment investments (conveyors, fixtures vs. large machines), reduce batch sizes (lower WIP, higher throughput).",
-          "Use supply chain leverage — outsource overflow capacity to contract manufacturers or partner facilities; negotiate longer lead times to level demand; delay or reduce features to simplify products."
+          "Assess current capacity utilization, map OEE by line; find hidden capacity (low-hanging fruit: reduce downtime, improve changeovers, balance lines). Often 10-15% lurking here without new equipment.",
+          "Optimize what you have: reduce changeover time (quick changeover methodology), reduce scrap/rework (quality improvement frees capacity), reduce maintenance downtime (preventive plan), re-balance lines (parallel equipment allocation).",
+          "Add low-capital options: add shifts (labor cost, premium hours), cross-train operators (flexibility in scheduling), small equipment investments (conveyors, fixtures vs. large machines), reduce batch sizes (lower WIP, higher throughput).",
+          "Use supply chain leverage: outsource overflow capacity to contract manufacturers or partner facilities; negotiate longer lead times to level demand; delay or reduce features to simplify products."
         ],
         "strong_answer_signals": [
           "Showed that 30% is achievable without building a new facility or buying major equipment",
-          "Described a realistic mix — some from efficiency, some from labor, some from outsourcing",
-          "Explained trade-offs — premium labor cost of extra shifts, outsourcing risk, lead time impact",
-          "Provided a phased approach — achieve 10% quickly, next 10% in quarter 2, final 10% with specific investment"
+          "Described a realistic mix: some from efficiency, some from labor, some from outsourcing",
+          "Explained trade-offs: premium labor cost of extra shifts, outsourcing risk, lead time impact",
+          "Provided a phased approach: achieve 10% quickly, next 10% in quarter 2, final 10% with specific investment"
         ],
         "avoid": [
           "Assuming you need new equipment without exhausting efficiency options first",
@@ -765,21 +870,24 @@
     {
       "id": "ops_s_007",
       "category": "situational",
-      "seniority": ["entry", "mid"],
+      "seniority": [
+        "entry",
+        "mid"
+      ],
       "text": "A key operator calls in sick on the busiest day of the month and no backup is available. What do you do?",
       "answer_framework": {
         "structure": "Decision Framework",
         "key_points": [
-          "Assess immediate impact — which position is this operator in? Can work be redistributed? Is there a retired operator or neighbor department who can help? What's the consequence if you're short-staffed (quality, safety, schedule)?",
-          "Activate contingencies in priority order — call in an off-shift operator for overtime; ask another department to loan someone temporarily; reduce batch size or defer non-critical orders to free up capacity; reduce/delay changeovers.",
-          "Safety and quality first — don't put an untrained person in a safety-critical role or high-precision work without supervision. If you can't cover safely, be honest with the customer about a delay.",
-          "Plan to prevent recurrence — develop a cross-training plan so critical positions have a backup; build a casual or part-time pool for surge absences; improve process documentation so someone can jump in faster."
+          "Assess immediate impact: which position is this operator in? Can work be redistributed? Is there a retired operator or neighbor department who can help? What's the consequence if you're short-staffed (quality, safety, schedule)?",
+          "Activate contingencies in priority order, call in an off-shift operator for overtime; ask another department to loan someone temporarily; reduce batch size or defer non-critical orders to free up capacity; reduce/delay changeovers.",
+          "Safety and quality first: don't put an untrained person in a safety-critical role or high-precision work without supervision. If you can't cover safely, be honest with the customer about a delay.",
+          "Plan to prevent recurrence: develop a cross-training plan so critical positions have a backup; build a casual or part-time pool for surge absences; improve process documentation so someone can jump in faster."
         ],
         "strong_answer_signals": [
-          "Showed quick problem-solving — multiple options considered in order of feasibility",
-          "Prioritized safety — wouldn't compromise safety just to meet a schedule",
-          "Involved your team — asked for volunteers, coordinated with other areas, communicated the plan",
-          "Recognized the systemic issue — explained how you'd reduce future single-point-of-failure risk"
+          "Showed quick problem-solving: multiple options considered in order of feasibility",
+          "Prioritized safety: wouldn't compromise safety just to meet a schedule",
+          "Involved your team: asked for volunteers, coordinated with other areas, communicated the plan",
+          "Recognized the systemic issue: explained how you'd reduce future single-point-of-failure risk"
         ],
         "avoid": [
           "Expecting an untrained person to perform safely without supervision",
@@ -792,51 +900,58 @@
     {
       "id": "ops_s_008",
       "category": "situational",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "You are asked to implement a new ERP or MES system while keeping production running. How do you manage the transition?",
       "answer_framework": {
         "structure": "Decision Framework",
         "key_points": [
-          "Phased rollout strategy — don't do a big-bang cutover; implement department by department or process by process; pilot with a low-risk area first (e.g., a secondary line or non-critical product).",
-          "Dual-running period — run old and new systems in parallel during transition; this is extra work but prevents catastrophic data loss or process breakdown if something goes wrong.",
-          "Training and change management — train people on the new system BEFORE go-live, using real data and scenarios; assign power users to each area; expect a 10-20% productivity dip during the learning curve.",
-          "Contingency planning — keep the old system accessible for a weeks in case of system failures; have IT on call 24/7 at first; be prepared to manually process orders if the system fails during critical periods."
+          "Phased rollout strategy: don't do a big-bang cutover; implement department by department or process by process; pilot with a low-risk area first (e.g., a secondary line or non-critical product).",
+          "Dual-running period: run old and new systems in parallel during transition; this is extra work but prevents catastrophic data loss or process breakdown if something goes wrong.",
+          "Training and change management: train people on the new system BEFORE go-live, using real data and scenarios; assign power users to each area; expect a 10-20% productivity dip during the learning curve.",
+          "Contingency planning: keep the old system accessible for a weeks in case of system failures; have IT on call 24/7 at first; be prepared to manually process orders if the system fails during critical periods."
         ],
         "strong_answer_signals": [
-          "Described phased rollout — not a risky big-bang implementation",
-          "Accounted for the learning curve — acknowledged temporary productivity dip, didn't pretend system would be faster immediately",
-          "Prepared for failure scenarios — backup plans, manual workarounds, IT support",
-          "Involved operations in design — system didn't get designed by IT in isolation without understanding production constraints"
+          "Described phased rollout: not a risky big-bang implementation",
+          "Accounted for the learning curve: acknowledged temporary productivity dip, didn't pretend system would be faster immediately",
+          "Prepared for failure scenarios: backup plans, manual workarounds, IT support",
+          "Involved operations in design: system didn't get designed by IT in isolation without understanding production constraints"
         ],
         "avoid": [
           "Big-bang cutover that shuts down the old system overnight",
           "Inadequate training or user input during system design",
           "Expecting the system to immediately improve efficiency without a transition period",
-          "Treating IT implementation as separate from operations — needs to be integrated"
+          "Treating IT implementation as separate from operations, needs to be integrated"
         ]
       }
     },
     {
       "id": "ops_s_009",
       "category": "situational",
-      "seniority": ["mid", "senior", "manager"],
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "Safety audit reveals three non-conformances in your area. How do you respond and prevent recurrence?",
       "answer_framework": {
         "structure": "Decision Framework",
         "key_points": [
-          "Assess severity and immediate risk — which non-conformances are critical (immediate hazard) vs. administrative (documentation)? Stop any unsafe work immediately; implement interim controls if needed (tape off hazard, lock equipment, assign spotter).",
-          "Root cause for each — don't assume 'operator didn't follow procedure'. Investigate: Is the procedure unclear? Is the hazard not obvious? Do we lack proper equipment (guards, PPE)? Is there a resource or time pressure that bypassed safety?",
-          "Corrective action plan — for each non-conformance, define the permanent fix with timeline; assign responsibility; document it; communicate plan to the auditor/leadership.",
-          "Prevention and culture — share findings with team in a non-punitive way; include them in designing controls; audit your own compliance weekly; reinforce that safety is a value, not a burden."
+          "Assess severity and immediate risk, which non-conformances are critical (immediate hazard) vs. administrative (documentation)? Stop any unsafe work immediately; implement interim controls if needed (tape off hazard, lock equipment, assign spotter).",
+          "Root cause for each: don't assume 'operator didn't follow procedure'. Investigate: Is the procedure unclear? Is the hazard not obvious? Do we lack proper equipment (guards, PPE)? Is there a resource or time pressure that bypassed safety?",
+          "Corrective action plan: for each non-conformance, define the permanent fix with timeline; assign responsibility; document it; communicate plan to the auditor/leadership.",
+          "Prevention and culture: share findings with team in a non-punitive way; include them in designing controls; audit your own compliance weekly; reinforce that safety is a value, not a burden."
         ],
         "strong_answer_signals": [
-          "Took the audit seriously — immediate response, not delayed or dismissive",
+          "Took the audit seriously: immediate response, not delayed or dismissive",
           "Investigated root cause, not just blamed operators",
           "Developed permanent fixes, not quick cosmetic compliance",
-          "Involved the team — they help identify controls that actually work in reality"
+          "Involved the team: they help identify controls that actually work in reality"
         ],
         "avoid": [
-          "Defensive response — blaming the auditor or saying the items weren't serious",
+          "Defensive response: blaming the auditor or saying the items weren't serious",
           "Treating safety fixes as a cost burden rather than risk mitigation",
           "Imposing controls without understanding why people cut corners (time pressure, unclear procedure, uncomfortable PPE)",
           "One-time corrective action without building sustained compliance culture"
@@ -846,102 +961,116 @@
     {
       "id": "ops_s_010",
       "category": "situational",
-      "seniority": ["mid", "senior", "manager"],
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "A major customer changes their product specification with two weeks' lead time. How do you manage the operational impact?",
       "answer_framework": {
         "structure": "Decision Framework",
         "key_points": [
-          "Understand the scope — what changed (dimensions, material, performance, packaging)? How much inventory do you have of the old spec? How many units are in the pipeline? What's the customer's hard deadline?",
-          "Assess impact on operations — can you rework existing inventory? Do you need to source new materials? Does your equipment need adjustment or new tooling? How much engineering and testing is needed?",
-          "Develop delivery options for the customer — can you deliver a mix (old spec partial shipment now, new spec completed later)? Can you accelerate development (compressed timeline, premium labor)? What's the realistic delivery date?",
-          "Execute and manage risk — if you commit to a date, clearly communicate what that requires (premium cost, reduced quality checks); have a backup plan if materials don't arrive on time or testing fails."
+          "Understand the scope: what changed (dimensions, material, performance, packaging)? How much inventory do you have of the old spec? How many units are in the pipeline? What's the customer's hard deadline?",
+          "Assess impact on operations: can you rework existing inventory? Do you need to source new materials? Does your equipment need adjustment or new tooling? How much engineering and testing is needed?",
+          "Develop delivery options for the customer, can you deliver a mix (old spec partial shipment now, new spec completed later)? Can you accelerate development (compressed timeline, premium labor)? What's the realistic delivery date?",
+          "Execute and manage risk: if you commit to a date, clearly communicate what that requires (premium cost, reduced quality checks); have a backup plan if materials don't arrive on time or testing fails."
         ],
         "strong_answer_signals": [
-          "Quickly assessed feasibility — didn't just say 'we'll try' without understanding the real effort",
-          "Communicated realistic timeline — two weeks may not be achievable; set honest expectations",
-          "Offered options to the customer — partial shipment, phased rollout, cost adjustment",
-          "Had a backup plan — if the spec change hits an unexpected snag"
+          "Quickly assessed feasibility: didn't just say 'we'll try' without understanding the real effort",
+          "Communicated realistic timeline: two weeks may not be achievable; set honest expectations",
+          "Offered options to the customer: partial shipment, phased rollout, cost adjustment",
+          "Had a backup plan: if the spec change hits an unexpected snag"
         ],
         "avoid": [
           "Committing to an unrealistic date just to keep the customer happy",
           "Cutting corners on quality or testing to meet a deadline",
-          "Failing to assess material supply — blame supplier instead of having a contingency",
-          "Not looping in the customer early if you can't make the date — surprise delays damage trust"
+          "Failing to assess material supply, blame supplier instead of having a contingency",
+          "Not looping in the customer early if you can't make the date, surprise delays damage trust"
         ]
       }
     },
     {
       "id": "ops_m_001",
       "category": "motivation",
-      "seniority": ["entry", "mid"],
+      "seniority": [
+        "entry",
+        "mid"
+      ],
       "text": "What excites you most about operations management as a career?",
       "answer_framework": {
         "structure": "Motivation/Values",
         "key_points": [
-          "Lead with a concrete example — 'I love the tangibility of operations work — building a process that runs smoothly, helping a team hit a challenging target, seeing the product move through the facility I helped improve.'",
-          "Show appreciation for the teamwork — 'I'm energized by leading diverse teams (mechanics, operators, engineers) toward a shared goal, and seeing people take pride in their work.'",
-          "Connect to business impact — 'What excites me is the direct connection to company success — operations excellence directly translates to customer satisfaction and profitability.'",
-          "Mention continuous learning — 'There's always a new challenge or improvement opportunity; the methodology is evolving (lean, digital, data analytics); I'm never bored.'"
+          "Lead with a concrete example, 'I love the tangibility of operations work, building a process that runs smoothly, helping a team hit a challenging target, seeing the product move through the facility I helped improve.'",
+          "Show appreciation for the teamwork, 'I'm energized by leading diverse teams (mechanics, operators, engineers) toward a shared goal, and seeing people take pride in their work.'",
+          "Connect to business impact, 'What excites me is the direct connection to company success, operations excellence directly translates to customer satisfaction and profitability.'",
+          "Mention continuous learning, 'There's always a new challenge or improvement opportunity; the methodology is evolving (lean, digital, data analytics); I'm never bored.'"
         ],
         "strong_answer_signals": [
-          "Authenticity — answer reflects genuine passion, not generic corporate speak",
-          "Specific examples — referenced a real situation or type of work that energized you",
-          "Balance between team and impact — not just 'I like being busy' but the deeper motivation",
-          "Growth mindset — sees operations as an evolving field with new challenges"
+          "Authenticity: answer reflects genuine passion, not generic corporate speak",
+          "Specific examples: referenced a real situation or type of work that energized you",
+          "Balance between team and impact: not just 'I like being busy' but the deeper motivation",
+          "Growth mindset: sees operations as an evolving field with new challenges"
         ],
         "avoid": [
-          "Purely financial motivation — 'high pay' or 'career progression' without mention of the work itself",
-          "Vague answers — 'it's important' or 'I'm good at it' without showing real passion",
-          "Negative comparisons to other functions — 'better than IT or finance' sounds like sour grapes",
-          "Answers that don't match the operations role — e.g., 'I love being alone and analyzing data' doesn't fit operations teamwork"
+          "Purely financial motivation, 'high pay' or 'career progression' without mention of the work itself",
+          "Vague answers, 'it's important' or 'I'm good at it' without showing real passion",
+          "Negative comparisons to other functions, 'better than IT or finance' sounds like sour grapes",
+          "Answers that don't match the operations role, e.g., 'I love being alone and analyzing data' doesn't fit operations teamwork"
         ]
       }
     },
     {
       "id": "ops_m_002",
       "category": "motivation",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Why do you prefer operations over other business functions?",
       "answer_framework": {
         "structure": "Motivation/Values",
         "key_points": [
-          "Emphasize the action orientation — 'I prefer operations because I get to move from problem to solution in days or weeks, not months of strategic planning or design cycles.'",
-          "Highlight the tangible impact — 'You can see the result of your work immediately — a faster process, a solved quality issue, a safer floor — not abstract strategy or spreadsheet analysis.'",
-          "Appreciate the diversity — 'Operations touches every part of the business — supply chain, quality, finance, engineering, people — so I'm constantly learning and collaborating.'",
-          "Value the people element — 'Leading operations teams is more rewarding than other functions because you're developing frontline leaders and creating an environment where people do their best work every day.'"
+          "Emphasize the action orientation, 'I prefer operations because I get to move from problem to solution in days or weeks, not months of strategic planning or design cycles.'",
+          "Highlight the tangible impact, 'You can see the result of your work immediately, a faster process, a solved quality issue, a safer floor, not abstract strategy or spreadsheet analysis.'",
+          "Appreciate the diversity, 'Operations touches every part of the business, supply chain, quality, finance, engineering, people, so I'm constantly learning and collaborating.'",
+          "Value the people element, 'Leading operations teams is more rewarding than other functions because you're developing frontline leaders and creating an environment where people do their best work every day.'"
         ],
         "strong_answer_signals": [
           "Showed genuine understanding of what operations uniquely offers vs. other functions",
-          "Avoided disparaging other functions — positioned as personal preference, not superiority",
+          "Avoided disparaging other functions, positioned as personal preference, not superiority",
           "Grounded in operational values (action, tangibility, teamwork, impact)",
-          "Demonstrated cultural fit — values align with operations mindset"
+          "Demonstrated cultural fit: values align with operations mindset"
         ],
         "avoid": [
-          "Dismissive of other functions — 'accounting is boring' or 'strategy is too abstract'",
-          "Generic answer that doesn't differentiate operations — could apply to any function",
-          "Reactive framing — 'I ended up here' rather than 'I chose this'",
-          "Overemphasizing firefighting — 'I like solving crises' suggests reactive not strategic"
+          "Dismissive of other functions, 'accounting is boring' or 'strategy is too abstract'",
+          "Generic answer that doesn't differentiate operations, could apply to any function",
+          "Reactive framing, 'I ended up here' rather than 'I chose this'",
+          "Overemphasizing firefighting, 'I like solving crises' suggests reactive not strategic"
         ]
       }
     },
     {
       "id": "ops_m_003",
       "category": "motivation",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "What is the most satisfying operational problem you have ever solved and why?",
       "answer_framework": {
         "structure": "Motivation/Values",
         "key_points": [
-          "Choose a problem with scale and impact — not a trivial fix, but something that took real effort, involved multiple people, and changed the business or team",
-          "Explain the difficulty and the breakthrough moment — what made it hard to solve (multiple root causes, cross-functional blockers, no obvious solution), and what insight or persistence cracked it",
-          "Show the human element — explain how the solution improved people's work life (less rework, safer, faster shift, reduced stress) not just metrics",
-          "Articulate why it was satisfying — what does it say about you (persistence, collaboration, creativity, data-driven thinking, systems thinking)?"
+          "Choose a problem with scale and impact, not a trivial fix, but something that took real effort, involved multiple people, and changed the business or team",
+          "Explain the difficulty and the breakthrough moment, what made it hard to solve (multiple root causes, cross-functional blockers, no obvious solution), and what insight or persistence cracked it",
+          "Show the human element: explain how the solution improved people's work life (less rework, safer, faster shift, reduced stress) not just metrics",
+          "Articulate why it was satisfying: what does it say about you (persistence, collaboration, creativity, data-driven thinking, systems thinking)?"
         ],
         "strong_answer_signals": [
-          "Chose a meaty problem — not a one-person quick fix",
-          "Described the problem-solving journey — not just the happy ending",
-          "Showed both technical rigor and human empathy — not just 'optimization' but 'people worked better'",
-          "Authentic satisfaction — you genuinely cared about solving it, not just checking a box"
+          "Chose a meaty problem: not a one-person quick fix",
+          "Described the problem-solving journey, not just the happy ending",
+          "Showed both technical rigor and human empathy, not just 'optimization' but 'people worked better'",
+          "Authentic satisfaction: you genuinely cared about solving it, not just checking a box"
         ],
         "avoid": [
           "Choosing a trivial problem and overselling it as transformative",
@@ -954,107 +1083,120 @@
     {
       "id": "ops_m_004",
       "category": "motivation",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Where do you see yourself in the operations field in five years?",
       "answer_framework": {
         "structure": "Career Vision",
         "key_points": [
-          "Set a specific, credible target — 'Operations Manager or Director at a larger facility' or 'Leading operations for a multi-site division' or 'Specializing in lean transformation or supply chain optimization'",
-          "Show growth in capability — 'I want to develop expertise in advanced analytics and digital operations tools, and mentor the next generation of operations leaders.'",
-          "Demonstrate ambition without arrogance — 'I see myself taking on bigger scope and complexity, but I'm committed to staying grounded in the gemba, not becoming a desk manager.'",
-          "Tie to personal values — 'I want to be known for building high-performing, engaged teams and for delivering results ethically and sustainably.'"
+          "Set a specific, credible target, 'Operations Manager or Director at a larger facility' or 'Leading operations for a multi-site division' or 'Specializing in lean transformation or supply chain optimization'",
+          "Show growth in capability, 'I want to develop expertise in advanced analytics and digital operations tools, and mentor the next generation of operations leaders.'",
+          "Demonstrate ambition without arrogance, 'I see myself taking on bigger scope and complexity, but I'm committed to staying grounded in the gemba, not becoming a desk manager.'",
+          "Tie to personal values, 'I want to be known for building high-performing, engaged teams and for delivering results ethically and sustainably.'"
         ],
         "strong_answer_signals": [
-          "Clear trajectory — reflects growth in responsibility or expertise, realistic progression from current role",
-          "Continuous learning — mentions new skills or methodologies to develop",
-          "Values alignment — shows what kind of leader/teammate you want to be",
-          "Flexibility — focused on growth and opportunity rather than one specific title"
+          "Clear trajectory: reflects growth in responsibility or expertise, realistic progression from current role",
+          "Continuous learning: mentions new skills or methodologies to develop",
+          "Values alignment: shows what kind of leader/teammate you want to be",
+          "Flexibility: focused on growth and opportunity rather than one specific title"
         ],
         "avoid": [
-          "Vague answer — 'I'll be doing well' or 'maybe in leadership'",
-          "Overly ambitious — 'VP in five years' without credible foundation",
-          "Misalignment with the company — 'I want to work in tech or consulting' if you're interviewing at a manufacturer",
-          "Lack of operational substance — 'make more money' or 'have prestige' without growth in capability"
+          "Vague answer, 'I'll be doing well' or 'maybe in leadership'",
+          "Overly ambitious, 'VP in five years' without credible foundation",
+          "Misalignment with the company, 'I want to work in tech or consulting' if you're interviewing at a manufacturer",
+          "Lack of operational substance, 'make more money' or 'have prestige' without growth in capability"
         ]
       }
     },
     {
       "id": "ops_m_005",
       "category": "motivation",
-      "seniority": ["mid", "senior", "manager"],
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "What does good operational leadership look like to you?",
       "answer_framework": {
         "structure": "Leadership Philosophy",
         "key_points": [
-          "Lead with example — 'Good operational leaders are on the floor regularly (gemba walks), not just in meetings. They model the behaviors and safety they expect from the team.'",
-          "Develop people — 'Great leaders develop the next generation of supervisors and problem-solvers. They don't hoard decisions; they ask questions and build capabilities in their teams.'",
-          "Drive results with integrity — 'Results matter, but not at any cost. Good leaders balance pushing for excellence with respecting people and doing things the right way.'",
-          "Adaptability and learning — 'The best leaders stay curious, admit what they don't know, and continuously improve alongside their team. They're not defensive about change.'"
+          "Lead with example, 'Good operational leaders are on the floor regularly (gemba walks), not just in meetings. They model the behaviors and safety they expect from the team.'",
+          "Develop people, 'Great leaders develop the next generation of supervisors and problem-solvers. They don't hoard decisions; they ask questions and build capabilities in their teams.'",
+          "Drive results with integrity, 'Results matter, but not at any cost. Good leaders balance pushing for excellence with respecting people and doing things the right way.'",
+          "Adaptability and learning, 'The best leaders stay curious, admit what they don't know, and continuously improve alongside their team. They're not defensive about change.'"
         ],
         "strong_answer_signals": [
-          "Grounded in operations reality — mentions gemba, metrics, process discipline",
-          "People-focused — sees leadership as developing others, not just hitting targets",
-          "Values integrity — doesn't sacrifice quality, safety, or people for short-term gains",
-          "Demonstrates self-awareness — acknowledges challenges in leadership, not overly confident"
+          "Grounded in operations reality: mentions gemba, metrics, process discipline",
+          "People-focused: sees leadership as developing others, not just hitting targets",
+          "Values integrity: doesn't sacrifice quality, safety, or people for short-term gains",
+          "Demonstrates self-awareness: acknowledges challenges in leadership, not overly confident"
         ],
         "avoid": [
-          "Top-down command-and-control philosophy — 'my team does what I say'",
-          "Results-at-any-cost mentality — 'we make the numbers no matter what'",
-          "Lack of people focus — 'leadership is about systems and processes, not people'",
-          "Pretending leadership is easy — unrealistic confidence or lack of nuance"
+          "Top-down command-and-control philosophy, 'my team does what I say'",
+          "Results-at-any-cost mentality, 'we make the numbers no matter what'",
+          "Lack of people focus, 'leadership is about systems and processes, not people'",
+          "Pretending leadership is easy: unrealistic confidence or lack of nuance"
         ]
       }
     },
     {
       "id": "ops_m_006",
       "category": "motivation",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "What type of manufacturing or operations environment brings out your best work and why?",
       "answer_framework": {
         "structure": "Work Environment Preference",
         "key_points": [
-          "Describe the environment specifics — 'High-volume, continuous flow operations where process discipline and small improvements compound into massive results' or 'Project-based or batch manufacturing where problem-solving and cross-functional collaboration are constant.'",
-          "Explain your motivation in that context — 'In high-volume ops, I thrive on the metrics-driven culture and the satisfaction of precision; in project-based, I love the variety and innovation challenges.'",
-          "Show awareness of what you're not looking for — 'I'm less energized by extremely low-volume, custom environments where each job is a one-off; I want repeatable processes I can improve.'",
-          "Tie to culture and team — 'I do best in an environment where continuous improvement is valued, where gemba walks are real, and where operations is strategic — not just a cost center.'"
+          "Describe the environment specifics, 'High-volume, continuous flow operations where process discipline and small improvements compound into massive results' or 'Project-based or batch manufacturing where problem-solving and cross-functional collaboration are constant.'",
+          "Explain your motivation in that context, 'In high-volume ops, I thrive on the metrics-driven culture and the satisfaction of precision; in project-based, I love the variety and innovation challenges.'",
+          "Show awareness of what you're not looking for, 'I'm less energized by extremely low-volume, custom environments where each job is a one-off; I want repeatable processes I can improve.'",
+          "Tie to culture and team, 'I do best in an environment where continuous improvement is valued, where gemba walks are real, and where operations is strategic, not just a cost center.'"
         ],
         "strong_answer_signals": [
-          "Specific and credible preference — not generic 'any challenging environment'",
-          "Self-awareness — understands what energizes you and what doesn't",
-          "Demonstrates industry knowledge — references process types and improvement culture",
-          "Honest fit assessment — helps interviewer see if the role matches your strengths"
+          "Specific and credible preference: not generic 'any challenging environment'",
+          "Self-awareness: understands what energizes you and what doesn't",
+          "Demonstrates industry knowledge: references process types and improvement culture",
+          "Honest fit assessment: helps interviewer see if the role matches your strengths"
         ],
         "avoid": [
-          "Saying any environment works — suggests you're not thoughtful about fit",
-          "Dismissing environments you're not attracted to — come across as inflexible",
-          "Preferences grounded only in compensation or status — not about the work itself",
-          "Overstating adaptability — saying you're great at everything when you're actually better at some things"
+          "Saying any environment works: suggests you're not thoughtful about fit",
+          "Dismissing environments you're not attracted to, come across as inflexible",
+          "Preferences grounded only in compensation or status, not about the work itself",
+          "Overstating adaptability: saying you're great at everything when you're actually better at some things"
         ]
       }
     },
     {
       "id": "ops_mg_001",
       "category": "manager",
-      "seniority": ["manager"],
+      "seniority": [
+        "manager"
+      ],
       "text": "How do you build and maintain accountability on a production floor?",
       "answer_framework": {
         "structure": "Leadership Framework",
         "key_points": [
-          "Clarify expectations first — each person knows their target (production rate, quality, safety, housekeeping), why it matters (customer, business, safety), and how it's measured; communicate daily if needed (huddles, visual controls).",
-          "Create transparency — everyone sees the metrics (production vs. target, defects, safety) daily; no surprises at the end of the week; tie individual and team accountability to the same metrics.",
-          "Follow a consistent process — address misses in real-time (not festering until month-end review); understand the reason (constraint, skill gap, distraction) before assuming accountability failure; coach first, discipline second.",
-          "Recognize and reward — celebrate when teams hit targets; recognize individuals who drive improvement; make accountability feel fair (apply standards consistently across shifts and roles)."
+          "Clarify expectations first: each person knows their target (production rate, quality, safety, housekeeping), why it matters (customer, business, safety), and how it's measured; communicate daily if needed (huddles, visual controls).",
+          "Create transparency: everyone sees the metrics (production vs. target, defects, safety) daily; no surprises at the end of the week; tie individual and team accountability to the same metrics.",
+          "Follow a consistent process: address misses in real-time (not festering until month-end review); understand the reason (constraint, skill gap, distraction) before assuming accountability failure; coach first, discipline second.",
+          "Recognize and reward: celebrate when teams hit targets; recognize individuals who drive improvement; make accountability feel fair (apply standards consistently across shifts and roles)."
         ],
         "strong_answer_signals": [
-          "Described clear, visible metrics and frequent feedback — not vague expectations",
-          "Showed fairness and consistency — not arbitrary or influenced by favorites",
-          "Explained a coaching approach first — not jumping to punishment",
-          "Addressed both individual and team accountability — balance of personal ownership and teamwork"
+          "Described clear, visible metrics and frequent feedback, not vague expectations",
+          "Showed fairness and consistency: not arbitrary or influenced by favorites",
+          "Explained a coaching approach first, not jumping to punishment",
+          "Addressed both individual and team accountability, balance of personal ownership and teamwork"
         ],
         "avoid": [
-          "Authoritarian or punitive approach — 'if you miss targets, you're written up'",
-          "Lack of clarity — people don't know what they're accountable for",
-          "Inconsistent application — some people held accountable, others not",
+          "Authoritarian or punitive approach, 'if you miss targets, you're written up'",
+          "Lack of clarity: people don't know what they're accountable for",
+          "Inconsistent application: some people held accountable, others not",
           "Failing to distinguish between accountability failures (person capable but doesn't care) and capability failures (person wants to succeed but can't)"
         ]
       }
@@ -1062,53 +1204,58 @@
     {
       "id": "ops_mg_002",
       "category": "manager",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "How do you manage shift handovers to ensure continuity, safety, and clear communication?",
       "answer_framework": {
         "structure": "Process/Leadership",
         "key_points": [
-          "Structure the handover — define a protocol: incoming shift arrives 15 min early; outgoing supervisor briefs on production status (targets, orders, issues), safety (near-misses, hazards), quality (defects, customer issues), maintenance (equipment status, work orders); document in a handover log.",
-          "Emphasize safety and critical info — what worked well this shift, what didn't, what needs attention next shift (material shortages, equipment issues, quality holds), any safety observations or near-misses.",
-          "Engage the team — not just supervisor-to-supervisor; have key operators from both shifts present to ask questions and confirm understanding; clarify priorities and decisions.",
-          "Follow up — supervisor of the new shift confirms understanding, asks clarifying questions, takes action on critical items within first hour; document handover outcomes (issues addressed, investigations started)."
+          "Structure the handover: define a protocol: incoming shift arrives 15 min early; outgoing supervisor briefs on production status (targets, orders, issues), safety (near-misses, hazards), quality (defects, customer issues), maintenance (equipment status, work orders); document in a handover log.",
+          "Emphasize safety and critical info, what worked well this shift, what didn't, what needs attention next shift (material shortages, equipment issues, quality holds), any safety observations or near-misses.",
+          "Engage the team: not just supervisor-to-supervisor; have key operators from both shifts present to ask questions and confirm understanding; clarify priorities and decisions.",
+          "Follow up: supervisor of the new shift confirms understanding, asks clarifying questions, takes action on critical items within first hour; document handover outcomes (issues addressed, investigations started)."
         ],
         "strong_answer_signals": [
-          "Described a structured, consistent process — not ad-hoc or informal",
+          "Described a structured, consistent process, not ad-hoc or informal",
           "Emphasized safety and critical operational information clearly",
           "Showed engagement of the full team, not just supervisors",
-          "Included accountability — things that need action are tracked and followed up"
+          "Included accountability: things that need action are tracked and followed up"
         ],
         "avoid": [
-          "Vague or informal handover — 'they just talk it over'",
+          "Vague or informal handover, 'they just talk it over'",
           "Focusing only on production without safety or quality context",
-          "Information being lost in translation — operator misses a critical constraint or decision",
-          "No documentation or accountability — no record of what was communicated or what was missed"
+          "Information being lost in translation, operator misses a critical constraint or decision",
+          "No documentation or accountability, no record of what was communicated or what was missed"
         ]
       }
     },
     {
       "id": "ops_mg_003",
       "category": "manager",
-      "seniority": ["manager"],
+      "seniority": [
+        "manager"
+      ],
       "text": "Describe your approach to developing frontline supervisors and team leads.",
       "answer_framework": {
         "structure": "Leadership Development",
         "key_points": [
-          "Assess and select — identify high-potential operators who have initiative, respect of peers, and aspiration to lead; don't automatically promote the longest-tenured person.",
-          "Provide structured training — formal training on leadership fundamentals (communication, problem-solving, decision-making, people management) plus operations-specific training (OEE, lean, safety management); mentorship from an experienced supervisor.",
-          "Assign progression responsibilities — gradually increase scope: leading a small project, mentoring a new operator, running a shift meeting, leading a kaizen event; give real responsibility with support, not just classroom training.",
-          "Provide ongoing coaching and feedback — regular one-on-ones, 360 feedback, modeling desired behaviors; recognize growth; provide honest feedback on what they're doing well and where they need development."
+          "Assess and select: identify high-potential operators who have initiative, respect of peers, and aspiration to lead; don't automatically promote the longest-tenured person.",
+          "Provide structured training: formal training on leadership fundamentals (communication, problem-solving, decision-making, people management) plus operations-specific training (OEE, lean, safety management); mentorship from an experienced supervisor.",
+          "Assign progression responsibilities, gradually increase scope: leading a small project, mentoring a new operator, running a shift meeting, leading a kaizen event; give real responsibility with support, not just classroom training.",
+          "Provide ongoing coaching and feedback, regular one-on-ones, 360 feedback, modeling desired behaviors; recognize growth; provide honest feedback on what they're doing well and where they need development."
         ],
         "strong_answer_signals": [
-          "Described a deliberate selection process — not just luck or tenure",
-          "Explained both formal and experiential learning — classroom plus real responsibility",
-          "Showed ongoing mentorship and coaching — not one-and-done training",
-          "Connected to succession planning — developing bench strength for the organization"
+          "Described a deliberate selection process, not just luck or tenure",
+          "Explained both formal and experiential learning, classroom plus real responsibility",
+          "Showed ongoing mentorship and coaching, not one-and-done training",
+          "Connected to succession planning: developing bench strength for the organization"
         ],
         "avoid": [
           "Promoting purely based on seniority or technical skill without leadership potential",
           "One-time training without ongoing support or accountability",
-          "Throwing new supervisors in without mentorship — expecting them to figure it out",
+          "Throwing new supervisors in without mentorship, expecting them to figure it out",
           "Failing to remove people from leadership who aren't suited, which damages team morale"
         ]
       }
@@ -1116,135 +1263,149 @@
     {
       "id": "ops_mg_004",
       "category": "manager",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "How do you create and sustain a culture of continuous improvement in your operations team?",
       "answer_framework": {
         "structure": "Culture/Leadership",
         "key_points": [
-          "Make it visible and normal — visual management (improvement boards, project status, metrics), daily huddles focused on metrics and issues, regular kaizen events; improvement should feel like part of the job, not a special program.",
-          "Provide tools and training — teach the team lean tools (5S, value stream mapping, takt time, root cause analysis); invest in basic training; empower operators to see the connection between their work and customer/business value.",
-          "Recognize and reward improvements — celebrate team and individual wins; share financial or operational benefits of improvements (even small ones); make it clear that improvement is valued at appraisal and compensation discussions.",
-          "Lead by example — model continuous improvement mindset; don't dismiss ideas; ask 'why?' and 'how can we make this better?'; show vulnerability (admit mistakes, learn from them); prioritize improvement time, don't deprioritize for short-term firefighting."
+          "Make it visible and normal: visual management (improvement boards, project status, metrics), daily huddles focused on metrics and issues, regular kaizen events; improvement should feel like part of the job, not a special program.",
+          "Provide tools and training: teach the team lean tools (5S, value stream mapping, takt time, root cause analysis); invest in basic training; empower operators to see the connection between their work and customer/business value.",
+          "Recognize and reward improvements, celebrate team and individual wins; share financial or operational benefits of improvements (even small ones); make it clear that improvement is valued at appraisal and compensation discussions.",
+          "Lead by example: model continuous improvement mindset; don't dismiss ideas; ask 'why?' and 'how can we make this better?'; show vulnerability (admit mistakes, learn from them); prioritize improvement time, don't deprioritize for short-term firefighting."
         ],
         "strong_answer_signals": [
-          "Described multiple mechanisms for embedding improvement — visuals, training, recognition, leadership modeling",
-          "Showed balance — improvement alongside production targets, not sacrificing one for the other",
+          "Described multiple mechanisms for embedding improvement, visuals, training, recognition, leadership modeling",
+          "Showed balance: improvement alongside production targets, not sacrificing one for the other",
           "Emphasized that continuous improvement is cultural, not just programmatic",
-          "Explained how you sustain momentum over time — easy to start a program, hard to keep it going"
+          "Explained how you sustain momentum over time, easy to start a program, hard to keep it going"
         ],
         "avoid": [
-          "Treating improvement as a separate initiative or program — 'we do kaizen week in Q2'",
-          "Lack of leadership modeling — expecting the team to improve while leaders are passive",
-          "Insufficient training or support — expecting teams to improve without tools",
-          "Recognition that's only public or infrequent — continuous improvement culture needs visible, frequent reinforcement"
+          "Treating improvement as a separate initiative or program, 'we do kaizen week in Q2'",
+          "Lack of leadership modeling: expecting the team to improve while leaders are passive",
+          "Insufficient training or support: expecting teams to improve without tools",
+          "Recognition that's only public or infrequent, continuous improvement culture needs visible, frequent reinforcement"
         ]
       }
     },
     {
       "id": "ops_mg_005",
       "category": "manager",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "How do you manage underperforming operators while maintaining team morale?",
       "answer_framework": {
         "structure": "People Management",
         "key_points": [
-          "Diagnose the root cause first — is the operator capable but unmotivated (accountability issue), or incapable and struggling (training/fit issue)? Have the conversation to understand before assuming.",
-          "Provide clear expectations and support — if it's capability, provide targeted training, mentorship, and measurable improvement timeline; if it's motivation, have a direct conversation about performance expectations and consequences.",
-          "Set fair milestones — give specific, achievable targets to improve over 30-60 days; check in regularly; adjust support if progress is being made; be honest if improvement isn't happening.",
-          "Protect team morale — if performance doesn't improve, address it (transfer, discipline, separation) rather than allowing the team to carry the load or build resentment; the majority shouldn't suffer because of one person's non-performance."
+          "Diagnose the root cause first: is the operator capable but unmotivated (accountability issue), or incapable and struggling (training/fit issue)? Have the conversation to understand before assuming.",
+          "Provide clear expectations and support, if it's capability, provide targeted training, mentorship, and measurable improvement timeline; if it's motivation, have a direct conversation about performance expectations and consequences.",
+          "Set fair milestones: give specific, achievable targets to improve over 30-60 days; check in regularly; adjust support if progress is being made; be honest if improvement isn't happening.",
+          "Protect team morale: if performance doesn't improve, address it (transfer, discipline, separation) rather than allowing the team to carry the load or build resentment; the majority shouldn't suffer because of one person's non-performance."
         ],
         "strong_answer_signals": [
-          "Showed empathy and coaching approach first — not jumping to discipline",
-          "Distinguished capability from motivation issues — different interventions",
-          "Fair and transparent process — person knows the expectations and timeline",
-          "Protected team — recognized that poor performance affects everyone's morale"
+          "Showed empathy and coaching approach first, not jumping to discipline",
+          "Distinguished capability from motivation issues, different interventions",
+          "Fair and transparent process: person knows the expectations and timeline",
+          "Protected team: recognized that poor performance affects everyone's morale"
         ],
         "avoid": [
-          "Unfair or inconsistent treatment — some people tolerated, others not",
-          "Avoiding the tough conversation — allowing poor performance to linger",
-          "Discipline without understanding the cause — feels arbitrary to the operator and team",
-          "Letting poor performance erode team morale or safety — can't just hope it improves"
+          "Unfair or inconsistent treatment: some people tolerated, others not",
+          "Avoiding the tough conversation: allowing poor performance to linger",
+          "Discipline without understanding the cause, feels arbitrary to the operator and team",
+          "Letting poor performance erode team morale or safety, can't just hope it improves"
         ]
       }
     },
     {
       "id": "ops_mg_006",
       "category": "manager",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "How do you balance short-term production targets with longer-term improvement initiatives?",
       "answer_framework": {
         "structure": "Strategic/Tactical Balance",
         "key_points": [
-          "Build improvement into daily work — improvements don't have to be separate from production; use operational improvements that reduce cycle time or increase capacity as a way to hit short-term targets AND set up for long-term success.",
-          "Protect improvement time — allocate a percentage of capacity to improvement work (often 10-15% can be freed up by eliminating waste); don't let 100% of time be consumed by firefighting; establish a routine (e.g., Friday afternoons for kaizen projects).",
-          "Align short and long-term metrics — improvements that reduce costs, defects, or lead time help short-term targets AND build capability for the future; show how they're connected.",
-          "Get leadership buy-in on the trade-off — explain why month 1 might show slightly lower output (investment in improvement) to set up for higher, more sustainable output in months 2-3 and beyond; get agreement on this timeline."
+          "Build improvement into daily work, improvements don't have to be separate from production; use operational improvements that reduce cycle time or increase capacity as a way to hit short-term targets AND set up for long-term success.",
+          "Protect improvement time: allocate a percentage of capacity to improvement work (often 10-15% can be freed up by eliminating waste); don't let 100% of time be consumed by firefighting; establish a routine (e.g., Friday afternoons for kaizen projects).",
+          "Align short and long-term metrics, improvements that reduce costs, defects, or lead time help short-term targets AND build capability for the future; show how they're connected.",
+          "Get leadership buy-in on the trade-off, explain why month 1 might show slightly lower output (investment in improvement) to set up for higher, more sustainable output in months 2-3 and beyond; get agreement on this timeline."
         ],
         "strong_answer_signals": [
-          "Showed strategic thinking — improvements that advance both short-term and long-term goals",
-          "Protected improvement time and resources — not a nice-to-have when there's slack",
-          "Demonstrated clear communication with leadership — no surprises on trade-offs",
-          "Used data to show ROI of improvements — not hoping they're worth it"
+          "Showed strategic thinking: improvements that advance both short-term and long-term goals",
+          "Protected improvement time and resources, not a nice-to-have when there's slack",
+          "Demonstrated clear communication with leadership, no surprises on trade-offs",
+          "Used data to show ROI of improvements, not hoping they're worth it"
         ],
         "avoid": [
-          "False choice — acting like you can't do both short-term targets and improvement",
-          "Sacrificing improvement for short-term results — mortgaging the future",
-          "Allowing firefighting to consume all time — no time to fix root causes",
-          "Not explaining the trade-offs to leadership — creates perception of underperformance"
+          "False choice: acting like you can't do both short-term targets and improvement",
+          "Sacrificing improvement for short-term results, mortgaging the future",
+          "Allowing firefighting to consume all time, no time to fix root causes",
+          "Not explaining the trade-offs to leadership, creates perception of underperformance"
         ]
       }
     },
     {
       "id": "ops_mg_007",
       "category": "manager",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "How do you ensure health and safety is embedded in daily operations, not just compliance?",
       "answer_framework": {
         "structure": "Safety Culture",
         "key_points": [
-          "Leadership walk and talk — safety is on the agenda at every meeting; leaders do gemba walks with safety focus (not just production); near-misses and safety observations are discussed, not hidden.",
-          "Clear expectations and accountability — safety rules are non-negotiable; safety performance is part of everyone's appraisal; consequences are consistent and fair (as serious for leadership as for frontline).",
-          "Involve the team — operators are the experts on hazards; create a reporting system (no fear of blame) for near-misses and observations; involve them in hazard assessments and control design (they'll adopt controls they helped design).",
-          "Measure and act on leading indicators — injury rates are lagging; track near-misses, hazard observations, safety audits, behavior observations; act on trends quickly, not waiting for an injury to happen."
+          "Leadership walk and talk: safety is on the agenda at every meeting; leaders do gemba walks with safety focus (not just production); near-misses and safety observations are discussed, not hidden.",
+          "Clear expectations and accountability, safety rules are non-negotiable; safety performance is part of everyone's appraisal; consequences are consistent and fair (as serious for leadership as for frontline).",
+          "Involve the team: operators are the experts on hazards; create a reporting system (no fear of blame) for near-misses and observations; involve them in hazard assessments and control design (they'll adopt controls they helped design).",
+          "Measure and act on leading indicators, injury rates are lagging; track near-misses, hazard observations, safety audits, behavior observations; act on trends quickly, not waiting for an injury to happen."
         ],
         "strong_answer_signals": [
-          "Demonstrated that safety is strategic — embedded in business metrics and leadership accountability",
-          "Showed psychological safety — people report near-misses without fear of blame",
-          "Described leading indicators — not just body count",
-          "Explained how you balance safety with production — don't frame as competing priorities, but safety enables sustainable operations"
+          "Demonstrated that safety is strategic, embedded in business metrics and leadership accountability",
+          "Showed psychological safety: people report near-misses without fear of blame",
+          "Described leading indicators: not just body count",
+          "Explained how you balance safety with production, don't frame as competing priorities, but safety enables sustainable operations"
         ],
         "avoid": [
-          "Safety as compliance checkbox — 'we do audits and training and that covers it'",
-          "Blame-focused approach — 'these accidents are because people are careless'",
-          "Lack of leadership modeling — 'safety is important' but leaders cut corners",
-          "Reactive focus — only addressing safety after an incident"
+          "Safety as compliance checkbox, 'we do audits and training and that covers it'",
+          "Blame-focused approach, 'these accidents are because people are careless'",
+          "Lack of leadership modeling, 'safety is important' but leaders cut corners",
+          "Reactive focus: only addressing safety after an incident"
         ]
       }
     },
     {
       "id": "ops_mg_008",
       "category": "manager",
-      "seniority": ["manager"],
+      "seniority": [
+        "manager"
+      ],
       "text": "How do you communicate operational performance to senior leadership and the board?",
       "answer_framework": {
         "structure": "Communication/Leadership",
         "key_points": [
-          "Understand the audience — CEO/board cares about: business impact (cost, quality, safety, customer satisfaction, cash flow), strategic progress (capacity, capability, positioning), and risks (supply chain, capability gaps, compliance). Don't bury them in operational details.",
-          "Frame with business context — translate operational metrics to business language: 'OEE improvement on Line 2 freed $2M of annual capacity, supporting the new product launch without capital investment.' Not just 'OEE is 78%, up from 72%'.",
-          "Use a balanced scorecard — show strategic metrics (safety, quality, delivery, cost, innovation), not just one dimension; explain the interconnections; show trends, not just current snapshot.",
-          "Be honest about challenges and plans — don't hide problems; explain what's driving them and what you're doing to address them; build credibility by delivering on plans."
+          "Understand the audience. CEO/board cares about: business impact (cost, quality, safety, customer satisfaction, cash flow), strategic progress (capacity, capability, positioning), and risks (supply chain, capability gaps, compliance). Don't bury them in operational details.",
+          "Frame with business context: translate operational metrics to business language: 'OEE improvement on Line 2 freed $2M of annual capacity, supporting the new product launch without capital investment.' Not just 'OEE is 78%, up from 72%'.",
+          "Use a balanced scorecard: show strategic metrics (safety, quality, delivery, cost, innovation), not just one dimension; explain the interconnections; show trends, not just current snapshot.",
+          "Be honest about challenges and plans, don't hide problems; explain what's driving them and what you're doing to address them; build credibility by delivering on plans."
         ],
         "strong_answer_signals": [
-          "Translated operations metrics to business impact — CFO understands the bottom-line benefit",
-          "Provided context and strategy — not just numbers in a table",
-          "Showed honest assessment — acknowledged challenges, explained plans",
-          "Demonstrated accountability — clear on what you own and what's being addressed"
+          "Translated operations metrics to business impact. CFO understands the bottom-line benefit",
+          "Provided context and strategy: not just numbers in a table",
+          "Showed honest assessment: acknowledged challenges, explained plans",
+          "Demonstrated accountability: clear on what you own and what's being addressed"
         ],
         "avoid": [
-          "Too many operational details — board doesn't need to know about OEE components",
-          "Vague metrics without business context — 'productivity is up'",
-          "Hiding problems until they explode — credibility killer",
-          "Lengthy or unclear communications — respect board time, be concise"
+          "Too many operational details: board doesn't need to know about OEE components",
+          "Vague metrics without business context, 'productivity is up'",
+          "Hiding problems until they explode, credibility killer",
+          "Lengthy or unclear communications, respect board time, be concise"
         ]
       }
     }

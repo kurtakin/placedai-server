@@ -1,0 +1,770 @@
+{
+  "metadata": {
+    "sector": "UX/UI Design",
+    "generated": "2026-08-30",
+    "total": 30,
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ]
+  },
+  "questions": [
+    {
+      "id": "ux_001",
+      "text": "Tell me about a redesign you led. What was the approach?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Research conducted",
+          "Pain points identified",
+          "Design validated",
+          "Metrics improved"
+        ],
+        "strong_answer_signals": [
+          "Data-driven redesign",
+          "User tested"
+        ],
+        "avoid": [
+          "Design by opinion",
+          "No testing"
+        ]
+      }
+    },
+    {
+      "id": "ux_002",
+      "text": "How do you conduct usability testing?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Task design",
+          "Participant recruiting",
+          "Moderation",
+          "Observations recorded"
+        ],
+        "strong_answer_signals": [
+          "Actionable insights",
+          "Real user participants"
+        ],
+        "avoid": [
+          "Testing with teammates",
+          "No observations"
+        ]
+      }
+    },
+    {
+      "id": "ux_003",
+      "text": "How do you handle engineering saying they cannot implement your design?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Explained design intent",
+          "Explored alternatives",
+          "Simplified solution"
+        ],
+        "strong_answer_signals": [
+          "Collaboration maintained"
+        ],
+        "avoid": [
+          "Insisted on original",
+          "Complained"
+        ]
+      }
+    },
+    {
+      "id": "ux_004",
+      "text": "Describe your design thinking process for a new product.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Empathize",
+          "Define",
+          "Ideate",
+          "Prototype",
+          "Test"
+        ],
+        "strong_answer_signals": [
+          "User-centered approach"
+        ],
+        "avoid": [
+          "Skipped research",
+          "No testing"
+        ]
+      }
+    },
+    {
+      "id": "ux_005",
+      "text": "How do you establish a design system?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Component library",
+          "Tokens",
+          "Accessibility",
+          "Documentation",
+          "Governance"
+        ],
+        "strong_answer_signals": [
+          "Design system adopted"
+        ],
+        "avoid": [
+          "Inconsistent UI",
+          "No documentation"
+        ]
+      }
+    },
+    {
+      "id": "ux_006",
+      "text": "Tell me about a time you received harsh feedback on your design.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Listened",
+          "Understood concern",
+          "Revised",
+          "Outcome improved"
+        ],
+        "strong_answer_signals": [
+          "Opened to feedback",
+          "Improved design"
+        ],
+        "avoid": [
+          "Defensive",
+          "Ignored feedback"
+        ]
+      }
+    },
+    {
+      "id": "ux_007",
+      "text": "How do you measure the impact of a design change?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Metrics before and after",
+          "A/B test",
+          "User feedback",
+          "Business impact"
+        ],
+        "strong_answer_signals": [
+          "Measurable improvement"
+        ],
+        "avoid": [
+          "No measurement",
+          "Only opinion"
+        ]
+      }
+    },
+    {
+      "id": "ux_008",
+      "text": "How do you prioritize features in a design?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "User impact",
+          "Business value",
+          "Effort",
+          "Stakeholder input"
+        ],
+        "strong_answer_signals": [
+          "Clear prioritization"
+        ],
+        "avoid": [
+          "All features",
+          "Stakeholder demands only"
+        ]
+      }
+    },
+    {
+      "id": "ux_009",
+      "text": "How do you ensure accessibility (WCAG) in your designs?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Contrast ratios",
+          "Keyboard navigation",
+          "Screen reader",
+          "Semantic markup"
+        ],
+        "strong_answer_signals": [
+          "WCAG compliance",
+          "Audit done"
+        ],
+        "avoid": [
+          "Visual only",
+          "No accessibility"
+        ]
+      }
+    },
+    {
+      "id": "ux_010",
+      "text": "Tell me about a time you had to design for multiple user personas.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Personas defined",
+          "Flows adapted",
+          "Testing varied",
+          "Consistent patterns"
+        ],
+        "strong_answer_signals": [
+          "All personas served"
+        ],
+        "avoid": [
+          "Designed for one user"
+        ]
+      }
+    },
+    {
+      "id": "ux_011",
+      "text": "How do you create and validate user personas?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Research data",
+          "Behavioral patterns",
+          "Goals and pain points",
+          "Validation"
+        ],
+        "strong_answer_signals": [
+          "Research-backed personas"
+        ],
+        "avoid": [
+          "Made up personas",
+          "No data"
+        ]
+      }
+    },
+    {
+      "id": "ux_012",
+      "text": "How do you handle competing design directions from stakeholders?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Explored all directions",
+          "User testing",
+          "Data presentation",
+          "Decision made"
+        ],
+        "strong_answer_signals": [
+          "Chose based on evidence"
+        ],
+        "avoid": [
+          "Voted by stakeholder",
+          "No testing"
+        ]
+      }
+    },
+    {
+      "id": "ux_013",
+      "text": "Describe your experience with prototyping tools.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Tools used",
+          "Fidelity levels",
+          "Handoff process",
+          "Collaboration"
+        ],
+        "strong_answer_signals": [
+          "Interactive prototypes"
+        ],
+        "avoid": [
+          "Only wireframes",
+          "No handoff"
+        ]
+      }
+    },
+    {
+      "id": "ux_014",
+      "text": "Tell me about a time you had to simplify a complex interface.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identified complexity",
+          "Flow simplified",
+          "Progressive disclosure",
+          "Testing confirmed"
+        ],
+        "strong_answer_signals": [
+          "Simpler and usable"
+        ],
+        "avoid": [
+          "Removed features",
+          "No testing"
+        ]
+      }
+    },
+    {
+      "id": "ux_015",
+      "text": "Why UX design? What keeps you passionate?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "User empathy",
+          "Problem solving",
+          "Impact on lives",
+          "Craftsmanship"
+        ],
+        "strong_answer_signals": [
+          "Specific user impact story"
+        ],
+        "avoid": [
+          "Only about visuals",
+          "No user focus"
+        ]
+      }
+    },
+    {
+      "id": "ux_016",
+      "text": "How do you conduct competitive UX analysis?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Heuristic evaluation",
+          "Benchmarking",
+          "Gap analysis",
+          "Recommendations"
+        ],
+        "strong_answer_signals": [
+          "Actionable findings"
+        ],
+        "avoid": [
+          "Only screenshots",
+          "No analysis"
+        ]
+      }
+    },
+    {
+      "id": "ux_017",
+      "text": "How do you collaborate with researchers?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Findings synthesized",
+          "Design decisions informed",
+          "Continuous feedback"
+        ],
+        "strong_answer_signals": [
+          "Research-driven design"
+        ],
+        "avoid": [
+          "Ignored research"
+        ]
+      }
+    },
+    {
+      "id": "ux_018",
+      "text": "Tell me about a time your design did not work as expected.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Hypothesis tested",
+          "Data showed failure",
+          "Root cause found",
+          "Redesigned"
+        ],
+        "strong_answer_signals": [
+          "Iteration based on data"
+        ],
+        "avoid": [
+          "Blamed users",
+          "No iteration"
+        ]
+      }
+    },
+    {
+      "id": "ux_019",
+      "text": "How do you design for different screen sizes and devices?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Responsive patterns",
+          "Breakpoints",
+          "Touch targets",
+          "Platform conventions"
+        ],
+        "strong_answer_signals": [
+          "Consistent across devices"
+        ],
+        "avoid": [
+          "Desktop only",
+          "No touch targets"
+        ]
+      }
+    },
+    {
+      "id": "ux_020",
+      "text": "How do you handle design handoff to engineering?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Specs and assets",
+          "Design tokens",
+          "Developer questions addressed",
+          "DesignQA"
+        ],
+        "strong_answer_signals": [
+          "Clean handoff"
+        ],
+        "avoid": [
+          "Vague specs",
+          "No developer input"
+        ]
+      }
+    },
+    {
+      "id": "ux_021",
+      "text": "How do you facilitate design workshops?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Agenda set",
+          "Stakeholder included",
+          "Timeboxed",
+          "Action items recorded"
+        ],
+        "strong_answer_signals": [
+          "Productive sessions"
+        ],
+        "avoid": [
+          "No structure",
+          "Unfocused"
+        ]
+      }
+    },
+    {
+      "id": "ux_022",
+      "text": "How do you design for internationalization and localization?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Text expansion",
+          "RTL support",
+          "Cultural sensitivity",
+          "Locale data"
+        ],
+        "strong_answer_signals": [
+          "Multi-language ready"
+        ],
+        "avoid": [
+          "English-only",
+          "No localization"
+        ]
+      }
+    },
+    {
+      "id": "ux_023",
+      "text": "Tell me about influencing product strategy with design.",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "User insight discovered",
+          "Presented to leadership",
+          "Strategy changed",
+          "Outcome measured"
+        ],
+        "strong_answer_signals": [
+          "Design shaped strategy"
+        ],
+        "avoid": [
+          "Design ignored",
+          "No data"
+        ]
+      }
+    },
+    {
+      "id": "ux_024",
+      "text": "How do you design for error states and empty states?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Validation messages",
+          "Helpful guidance",
+          "Empty state illustrations",
+          "Recovery actions"
+        ],
+        "strong_answer_signals": [
+          "User never stuck"
+        ],
+        "avoid": [
+          "No error handling",
+          "Blank screens"
+        ]
+      }
+    },
+    {
+      "id": "ux_025",
+      "text": "How do you balance speed and quality in design delivery?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "MVP approach",
+          "Iterative design",
+          "Core flows first",
+          "Polish later"
+        ],
+        "strong_answer_signals": [
+          "Quality maintained"
+        ],
+        "avoid": [
+          "Rushed design",
+          "Over-polishing early"
+        ]
+      }
+    },
+    {
+      "id": "ux_026",
+      "text": "How do you handle design critiques?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Presented intent",
+          "Received feedback",
+          "Revised",
+          "Improved design"
+        ],
+        "strong_answer_signals": [
+          "Open to critique",
+          "Design improved"
+        ],
+        "avoid": [
+          "Defensive",
+          "Dismissed feedback"
+        ]
+      }
+    },
+    {
+      "id": "ux_027",
+      "text": "Tell me about building a brand visual identity.",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Brand strategy",
+          "Visual language",
+          "Design system",
+          "Consistent application"
+        ],
+        "strong_answer_signals": [
+          "Cohesive brand identity"
+        ],
+        "avoid": [
+          "No strategy",
+          "Inconsistent visuals"
+        ]
+      }
+    },
+    {
+      "id": "ux_028",
+      "text": "How do you measure design ROI?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Conversion impact",
+          "Task completion",
+          "Time on task",
+          "Support tickets reduced"
+        ],
+        "strong_answer_signals": [
+          "Measurable impact"
+        ],
+        "avoid": [
+          "No ROI measurement"
+        ]
+      }
+    },
+    {
+      "id": "ux_029",
+      "text": "How do you design for emotional engagement?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Brand personality",
+          "Micro-interactions",
+          "Delight moments",
+          "Feedback"
+        ],
+        "strong_answer_signals": [
+          "Positive emotional response"
+        ],
+        "avoid": [
+          "No personality",
+          "Mechanical interaction"
+        ]
+      }
+    },
+    {
+      "id": "ux_030",
+      "text": "What is your approach to inclusive and accessible design?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Diverse user testing",
+          "Assistive technology support",
+          "Contrast and sizing",
+          "Cognitive load"
+        ],
+        "strong_answer_signals": [
+          "Inclusive by default"
+        ],
+        "avoid": [
+          "Average user only",
+          "No accessibility"
+        ]
+      }
+    }
+  ]
+}

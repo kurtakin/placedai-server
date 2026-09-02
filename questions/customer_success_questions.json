@@ -1,0 +1,608 @@
+{
+  "questions": [
+    {
+      "category": "behavioral",
+      "id": "csuc_001",
+      "text": "Tell me about a time you turned a dissatisfied customer into a loyal advocate.",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Quantified the impact on retention or NPS",
+          "Showed genuine customer empathy",
+          "Built long-term relationship beyond the immediate fix"
+        ],
+        "avoid": [
+          "Blaming the customer for the issue",
+          "Leaving the relationship to react only when escalation occurred",
+          "Failing to track outcomes after resolution"
+        ],
+        "key_points": [
+          "Identify the root cause of dissatisfaction quickly",
+          "Demonstrate empathy and ownership of the resolution",
+          "Implement a sustainable solution with measurable impact",
+          "Follow up proactively to confirm ongoing satisfaction",
+          "Convert positive experience into referral or case study"
+        ],
+        "structure": "STAR"
+      }
+    },
+    {
+      "category": "technical",
+      "id": "csuc_002",
+      "text": "Describe a technical SaaS integration you have managed end-to-end.",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Used APIs, webhooks, or iPaaS tools fluently",
+          "Mapped dependencies and integration points clearly",
+          "Measured adoption or time-to-value post integration"
+        ],
+        "avoid": [
+          "Skipping discovery and jumping to execution",
+          "Ignoring data security or compliance considerations",
+          "No metrics for success after launch"
+        ],
+        "key_points": [
+          "Discovery and stakeholder alignment up front",
+          "Detailed implementation plan with milestones",
+          "Risk mitigation and rollback strategy",
+          "Cross-functional coordination across teams",
+          "Post-launch validation and optimization"
+        ],
+        "structure": "Framework"
+      }
+    },
+    {
+      "category": "motivation",
+      "id": "csuc_003",
+      "text": "Why do you want to work in customer success rather than sales or support?",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Articulated difference between CS and adjacent roles",
+          "Referenced specific company mission or product",
+          "Showed long-term career vision"
+        ],
+        "avoid": [
+          "Framing CS as a backup to sales roles",
+          "Vague or generic passion for helping people",
+          "No research on the company or industry"
+        ],
+        "key_points": [
+          "Genuine interest in long-term customer outcomes",
+          "Alignment between personal strengths and CS competencies",
+          "Understanding of how CS drives recurring revenue",
+          "Awareness of CS career growth paths",
+          "Specific attraction to the company or product"
+        ],
+        "structure": "Framework"
+      }
+    },
+    {
+      "category": "situational",
+      "id": "csuc_004",
+      "text": "How would you handle a customer threatening to churn during renewal?",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Demonstrated urgency without panic",
+          "Quantified save probability or risk factors",
+          "Used win-win negotiation framing"
+        ],
+        "avoid": [
+          "Immediately offering large discounts",
+          "Blaming product or engineering teams",
+          "Failing to loop in executive stakeholders"
+        ],
+        "key_points": [
+          "Diagnose the underlying pain and unmet expectations",
+          "Engage executive sponsor and align internally",
+          "Co-build a recovery plan with clear success criteria",
+          "Negotiate renewal terms that restore value",
+          "Monitor health signals aggressively going forward"
+        ],
+        "structure": "Framework"
+      }
+    },
+    {
+      "category": "behavioral",
+      "id": "csuc_005",
+      "text": "Walk me through your process of running a Quarterly Business Review (QBR).",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Tailored agenda to executive stakeholder priorities",
+          "Highlighted expansion opportunities proactively",
+          "Built a story arc showing progress and next milestones"
+        ],
+        "avoid": [
+          "Treating QBR as a status update only",
+          "Failing to bring cross-functional team perspectives",
+          "No clear next steps or accountability"
+        ],
+        "key_points": [
+          "Pre-work: align with AE and pull usage data",
+          "Structured agenda tied to customer objectives",
+          "Review of ROI, adoption, and roadmap items",
+          "Forward-looking success plan with commitments",
+          "Documented action items and follow-up cadence"
+        ],
+        "structure": "Framework"
+      }
+    },
+    {
+      "category": "technical",
+      "id": "csuc_006",
+      "text": "Explain how you would build a customer health score from scratch.",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Used data-driven weighting methods",
+          "Tied health score to retention and expansion metrics",
+          "Created differentiated playbooks per segment"
+        ],
+        "avoid": [
+          "Using arbitrary weights without validation",
+          "No ongoing calibration of the model",
+          "Treating all signals as equal"
+        ],
+        "key_points": [
+          "Define inputs: product usage, support tickets, NPS, CSAT",
+          "Weight each signal by predictive importance",
+          "Set thresholds and segment into green/yellow/red",
+          "Build automated triggers and playbooks",
+          "Continuously refine based on churn and expansion data"
+        ],
+        "structure": "Framework"
+      }
+    },
+    {
+      "category": "behavioral",
+      "id": "csuc_007",
+      "text": "Tell me about a churn you failed to prevent and what you learned.",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Took ownership without excessive self-criticism",
+          "Translated lesson into measurable process change",
+          "Demonstrated emotional intelligence and growth"
+        ],
+        "avoid": [
+          "Blaming the customer entirely",
+          "No clear learning or follow-up action",
+          "Vague account of what actually happened"
+        ],
+        "key_points": [
+          "Specific context of the account and risk signals",
+          "Decisions made and missed signals identified",
+          "Outcome and stakeholder reaction",
+          "Lessons applied to subsequent accounts",
+          "Process or playbook improvements implemented"
+        ],
+        "structure": "STAR"
+      }
+    },
+    {
+      "category": "situational",
+      "id": "csuc_008",
+      "text": "How would you identify expansion revenue opportunities inside an existing account?",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Used account playbooks or whitespace analysis",
+          "Aligned expansion to customer goals",
+          "Built cross-functional coalition"
+        ],
+        "avoid": [
+          "Pushing features the customer does not need",
+          "Ignoring current adoption gaps before selling more",
+          "No clear link to customer value"
+        ],
+        "key_points": [
+          "Map current usage against contracted entitlements",
+          "Identify power users and unmet use cases",
+          "Engage economic buyer with business case",
+          "Partner with AE on co-selling motion",
+          "Track adoption and ROI to validate expansion"
+        ],
+        "structure": "Framework"
+      }
+    },
+    {
+      "category": "behavioral",
+      "id": "csuc_009",
+      "text": "Describe your approach to training customers on a complex product.",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Used blended learning approaches",
+          "Measured training impact on product adoption",
+          "Tailored content to personas"
+        ],
+        "avoid": [
+          "One-size-fits-all training delivery",
+          "Skipping needs analysis",
+          "No measurement of training success"
+        ],
+        "key_points": [
+          "Assessed learner roles, skill levels, and goals",
+          "Designed role-based training paths and materials",
+          "Delivered via scalable channels (in-app, live, async)",
+          "Measured proficiency through assessments or adoption",
+          "Iterated based on feedback and outcomes"
+        ],
+        "structure": "STAR"
+      }
+    },
+    {
+      "category": "technical",
+      "id": "csuc_010",
+      "text": "How do you track product adoption across a portfolio of accounts?",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Mentioned specific tools (Pendo, Mixpanel, Gainsight)",
+          "Connected adoption data to retention forecasts",
+          "Differentiated metrics per customer segment"
+        ],
+        "avoid": [
+          "Relying solely on login metrics",
+          "No clear link between adoption and retention",
+          "Treating all accounts identically"
+        ],
+        "key_points": [
+          "Define KPIs tied to customer outcomes",
+          "Use product analytics and engagement telemetry",
+          "Build dashboards with cohort and segment views",
+          "Set adoption milestones per persona or use case",
+          "Trigger CSM action when adoption dips"
+        ],
+        "structure": "Framework"
+      }
+    },
+    {
+      "category": "situational",
+      "id": "csuc_011",
+      "text": "Share an example of escalating an issue and how you handled it internally.",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Demonstrated judgment on when to escalate",
+          "Coordinated across departments effectively",
+          "Set clear expectations with the customer"
+        ],
+        "avoid": [
+          "Escalating prematurely without triage",
+          "Failing to communicate progress to the customer",
+          "No follow-up after resolution"
+        ],
+        "key_points": [
+          "Identified trigger that warranted escalation",
+          "Crafted clear internal narrative with customer impact",
+          "Engaged right cross-functional stakeholders",
+          "Drove timely resolution and communication",
+          "Closed the loop with customer and internal teams"
+        ],
+        "structure": "STAR"
+      }
+    },
+    {
+      "category": "behavioral",
+      "id": "csuc_012",
+      "text": "How do you close the loop between customer feedback and the product team?",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Used structured feedback taxonomies",
+          "Closed the loop visibly with customers",
+          "Influenced product roadmap decisions"
+        ],
+        "avoid": [
+          "Treating feedback as one-off complaints",
+          "No system for prioritization",
+          "Failing to inform the customer of outcomes"
+        ],
+        "key_points": [
+          "Aggregate feedback across multiple channels",
+          "Tag and prioritize by theme and impact",
+          "Translate customer voice into product insights",
+          "Partner with PMs on roadmap influence",
+          "Communicate outcomes back to customers"
+        ],
+        "structure": "Framework"
+      }
+    },
+    {
+      "category": "situational",
+      "id": "csuc_013",
+      "text": "What is your approach to building a customer advocacy program?",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Tiered advocate engagement model",
+          "Cross-functional coordination for content creation",
+          "Quantified advocacy influence on revenue"
+        ],
+        "avoid": [
+          "Treating advocacy as marketing-only",
+          "No recognition or reciprocity for advocates",
+          "Failing to measure outcomes"
+        ],
+        "key_points": [
+          "Identify advocates through NPS and engagement data",
+          "Recruit via personalized outreach",
+          "Enable advocates with case studies, referrals, reviews",
+          "Recognize and reward participation",
+          "Measure program impact on pipeline and brand"
+        ],
+        "structure": "Framework"
+      }
+    },
+    {
+      "category": "behavioral",
+      "id": "csuc_014",
+      "text": "Describe how you prepare for a high-stakes renewal negotiation.",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Used data-driven value framing",
+          "Identified decision criteria in advance",
+          "Maintained long-term partnership lens"
+        ],
+        "avoid": [
+          "Negotiating reactively at the deadline",
+          "Blaming internal teams for renewal risk",
+          "Conceding on price without justification"
+        ],
+        "key_points": [
+          "Pre-renewal stakeholder mapping and risk assessment",
+          "Building internal alignment with sales and product",
+          "Quantifying value delivered and ROI",
+          "Anticipating objections and preparing responses",
+          "Negotiating terms that protect margin and customer success"
+        ],
+        "structure": "STAR"
+      }
+    },
+    {
+      "category": "technical",
+      "id": "csuc_015",
+      "text": "How would you segment a customer base for tailored success motions?",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Used tiered segmentation frameworks",
+          "Tied segmentation to resourcing economics",
+          "Differentiated KPIs by segment"
+        ],
+        "avoid": [
+          "One-size-fits-all CSM coverage",
+          "No economic logic behind segmentation",
+          "Ignoring self-serve or product-led segments"
+        ],
+        "key_points": [
+          "Define segmentation dimensions (ARR, industry, maturity)",
+          "Map each segment to motion: high-touch, low-touch, digital",
+          "Align resourcing and playbooks per segment",
+          "Set differentiated CSAT/NPS targets per segment",
+          "Measure segment-level NRR and GRR"
+        ],
+        "structure": "Framework"
+      }
+    },
+    {
+      "category": "behavioral",
+      "id": "csuc_016",
+      "text": "Walk me through managing a strategic enterprise account.",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Navigated complex procurement processes",
+          "Aligned multiple stakeholders to common goals",
+          "Built multi-year strategic roadmap"
+        ],
+        "avoid": [
+          "Focusing only on the primary contact",
+          "No executive engagement",
+          "Missing change management for the customer org"
+        ],
+        "key_points": [
+          "Mapped enterprise stakeholders and decision makers",
+          "Built joint success plan with executive sponsor",
+          "Coordinated internal pod across CSM, SE, PM",
+          "Drove executive business reviews and steering committees",
+          "Managed risk and expansion through the account lifecycle"
+        ],
+        "structure": "STAR"
+      }
+    },
+    {
+      "category": "technical",
+      "id": "csuc_017",
+      "text": "Explain the SaaS metrics you track as a CS leader.",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Connected metrics to forecasting",
+          "Differentiated gross vs net retention",
+          "Used cohort-based insights for strategy"
+        ],
+        "avoid": [
+          "Tracking only vanity metrics",
+          "No cohort or segmentation analysis",
+          "Failing to tie metrics to action"
+        ],
+        "key_points": [
+          "NRR and GRR as primary health indicators",
+          "Logo retention and churn rate breakdowns",
+          "Expansion ARR and contraction",
+          "Customer concentration and cohort analysis",
+          "Leading indicators: adoption, NPS, support volume"
+        ],
+        "structure": "Framework"
+      }
+    },
+    {
+      "category": "behavioral",
+      "id": "csuc_018",
+      "text": "How do you map the customer journey and use it operationally?",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Used journey mapping workshops or tools",
+          "Tied journey stages to specific plays",
+          "Tracked conversion and friction quantitatively"
+        ],
+        "avoid": [
+          "Static journey maps that never update",
+          "No clear operational owners",
+          "Confusing journey map with process diagram"
+        ],
+        "key_points": [
+          "Define stages with entry/exit criteria",
+          "Identify moments of truth and friction",
+          "Map personas to actions and content",
+          "Align internal teams to journey stages",
+          "Continuously measure and optimize each stage"
+        ],
+        "structure": "Framework"
+      }
+    },
+    {
+      "category": "situational",
+      "id": "csuc_019",
+      "text": "Tell me about a time you built a customer success plan from scratch.",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Co-created the plan with the customer",
+          "Tied plan to measurable business outcomes",
+          "Used the plan to drive expansion"
+        ],
+        "avoid": [
+          "Generic templates with no customization",
+          "No executive alignment",
+          "Failing to revisit and adapt the plan"
+        ],
+        "key_points": [
+          "Discovery of customer goals and KPIs",
+          "Definition of milestones and success criteria",
+          "Alignment with executive sponsor",
+          "Cross-functional execution and tracking",
+          "Quarterly review and adaptation of the plan"
+        ],
+        "structure": "STAR"
+      }
+    },
+    {
+      "category": "behavioral",
+      "id": "csuc_020",
+      "text": "How do you build executive-level relationships with customer stakeholders?",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Demonstrated executive presence",
+          "Brought industry or peer insights",
+          "Built personal trust beyond transactional"
+        ],
+        "avoid": [
+          "Only engaging on tickets or renewals",
+          "No preparation on executive context",
+          "Treating executives as sales targets only"
+        ],
+        "key_points": [
+          "Research executive priorities and business context",
+          "Engage at strategic level beyond product issues",
+          "Co-develop business cases and benchmarks",
+          "Bring insights from peer customers and market",
+          "Establish trusted advisor cadence"
+        ],
+        "structure": "Framework"
+      }
+    }
+  ],
+  "metadata": {
+    "generated": "2026-08-30",
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "motivation",
+      "situational",
+      "technical"
+    ],
+    "total": 20,
+    "sector": "Customer Success"
+  }
+}

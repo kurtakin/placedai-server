@@ -1,0 +1,412 @@
+{
+  "questions": [
+    {
+      "id": "qa_001",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "avoid": [
+          "Ignored until after release",
+          "Did not communicate",
+          "Did not test thoroughly"
+        ],
+        "strong_answer_signals": [
+          "Quick identification",
+          "Clear communication",
+          "Efficient resolution"
+        ],
+        "key_points": [
+          "Identified bug through thorough testing or user feedback",
+          "Communicated issue and impact immediately",
+          "Implemented fix with minimal impact",
+          "Ensured QA testing and regression before release"
+        ]
+      },
+      "text": "Tell me about a time you found a critical bug shortly before a major release. How did you handle it?",
+      "category": "behavioral"
+    },
+    {
+      "id": "qa_002",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "avoid": [
+          "Incomplete testing",
+          "Unclear test cases",
+          "Only testing positive cases"
+        ],
+        "strong_answer_signals": [
+          "Complete coverage with systematic techniques",
+          "Clear and maintainable test cases",
+          "Focus on high-risk areas"
+        ],
+        "key_points": [
+          "Identify all inputs and edge cases",
+          "Use boundary value analysis and equivalence partitioning",
+          "Create clear scenarios with expected results",
+          "Consider positive and negative test cases"
+        ]
+      },
+      "text": "Describe your approach to writing comprehensive test cases for a complex application.",
+      "category": "technical"
+    },
+    {
+      "id": "qa_003",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "avoid": [
+          "Fix randomly",
+          "Ignore impact",
+          "Not prioritizing"
+        ],
+        "strong_answer_signals": [
+          "Risk-based prioritization",
+          "User impact consideration",
+          "Resource optimization"
+        ],
+        "key_points": [
+          "Assess severity and impact on users",
+          "Consider frequency and accessibility of bug",
+          "Evaluate development timelines and resources",
+          "Balance technical debt with immediate needs"
+        ]
+      },
+      "text": "How do you prioritize which bugs to fix first?",
+      "category": "behavioral"
+    },
+    {
+      "id": "qa_004",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Discovered vulnerability through security testing",
+          "Reported immediately to development team",
+          "Implemented fix or workaround",
+          "Ensured vulnerability was resolved and documented"
+        ]
+      },
+      "text": "Tell me about a time when your testing revealed a security vulnerability. How did you handle it?",
+      "category": "behavioral"
+    },
+    {
+      "id": "qa_005",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Use modular test design with reusable components",
+          "Implement version control for test scripts",
+          "Create clear test data management strategies",
+          "Document test environment and dependencies"
+        ]
+      },
+      "text": "How do you ensure your test automation is maintainable and scalable?",
+      "category": "manager"
+    },
+    {
+      "id": "qa_006",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Integrate testing into CI/CD pipelines",
+          "Use tools like Jenkins, GitLab CI, or Azure DevOps",
+          "Configure automated test reporting",
+          "Set up environment provisioning and teardown"
+        ]
+      },
+      "text": "Describe your experience with continuous integration and test automation pipelines.",
+      "category": "technical"
+    },
+    {
+      "id": "qa_007",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identify root causes of flakiness",
+          "Isolate and reproduce flaky tests",
+          "Implement retry mechanisms or stabilize test conditions",
+          "Document and monitor for regression"
+        ]
+      },
+      "text": "How do you handle flaky tests in your test suite?",
+      "category": "behavioral"
+    },
+    {
+      "id": "qa_008",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Assessed current testing practices",
+          "Provided clear examples and documentation",
+          "Offered hands-on training sessions",
+          "Created checklists and templates for future use"
+        ]
+      },
+      "text": "Tell me about a time you had to educate developers about testing best practices.",
+      "category": "behavioral"
+    },
+    {
+      "id": "qa_009",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Track defect detection and prevention rates",
+          "Measure test coverage across critical areas",
+          "Monitor mean time to detect and resolve issues",
+          "Calculate return on testing investment"
+        ]
+      },
+      "text": "How do you measure the effectiveness of your testing efforts?",
+      "category": "technical"
+    },
+    {
+      "id": "qa_010",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Define performance requirements and SLAs",
+          "Design load tests that simulate real user scenarios",
+          "Use tools like JMeter, Gatling, or k6",
+          "Analyze results and identify bottlenecks"
+        ]
+      },
+      "text": "Describe your approach to performance testing and load testing.",
+      "category": "technical"
+    },
+    {
+      "id": "qa_011",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Identify sensitive data types and PII",
+          "Use data masking and anonymization techniques",
+          "Implement role-based access controls",
+          "Document and audit data usage"
+        ]
+      },
+      "text": "How do you handle test data privacy and compliance?",
+      "category": "behavioral"
+    },
+    {
+      "id": "qa_012",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Isolate the integration point where issue occurred",
+          "Use debugging tools and logging to trace data flow",
+          "Collaborate with teams to understand system interactions",
+          "Implement fix and verify end-to-end functionality"
+        ]
+      },
+      "text": "Tell me about a time you had to debug a complex integration issue. How did you approach it?",
+      "category": "behavioral"
+    },
+    {
+      "id": "qa_013",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Read industry blogs, books, and research papers",
+          "Attend conferences and training sessions",
+          "Participate in testing communities and forums",
+          "Apply new techniques to real projects"
+        ]
+      },
+      "text": "How do you stay current with testing methodologies and tools?",
+      "category": "behavioral"
+    },
+    {
+      "id": "qa_014",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Test on different devices, OS versions, and network conditions",
+          "Use automated testing frameworks like Appium or Espresso",
+          "Implement accessibility testing for mobile apps",
+          "Test offline functionality and battery usage"
+        ]
+      },
+      "text": "Describe your experience with mobile app testing.",
+      "category": "technical"
+    },
+    {
+      "id": "qa_015",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Analyze root causes of test failures",
+          "Communicate findings clearly to stakeholders",
+          "Implement corrective actions or workarounds",
+          "Prevent recurrence through process improvements"
+        ]
+      },
+      "text": "How do you handle test results that don't meet expectations?",
+      "category": "behavioral"
+    },
+    {
+      "id": "qa_016",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Collect and present metrics showing ROI of testing",
+          "Share success stories and lessons learned",
+          "Demonstrate cost savings from defect prevention",
+          "Build business case for testing investments"
+        ]
+      },
+      "text": "Tell me about a time you had to convince stakeholders of the value of testing.",
+      "category": "manager"
+    },
+    {
+      "id": "qa_017",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Identify target browsers and versions based on user analytics",
+          "Use tools like BrowserStack or Sauce Labs for cross-browser testing",
+          "Create test scripts that work across different browser engines",
+          "Test responsive design and accessibility features"
+        ]
+      },
+      "text": "How do you approach cross-browser testing for web applications?",
+      "category": "technical"
+    },
+    {
+      "id": "qa_018",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Test API endpoints, request/response validation, and error handling",
+          "Use tools like Postman, Swagger, or RestAssured",
+          "Implement contract testing for API contracts",
+          "Document and version API specifications"
+        ]
+      },
+      "text": "Describe your experience with API testing and automation.",
+      "category": "technical"
+    },
+    {
+      "id": "qa_019",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Test individual services in isolation",
+          "Use contract testing for service integration",
+          "Implement circuit breakers and fault tolerance testing",
+          "Monitor inter-service communication and dependencies"
+        ]
+      },
+      "text": "How do you handle testing in a microservices architecture?",
+      "category": "technical"
+    },
+    {
+      "id": "qa_020",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Research the technology and its testing requirements",
+          "Identify testing gaps and create a comprehensive strategy",
+          "Train team members on new testing approaches",
+          "Iterate and improve testing based on experience"
+        ]
+      },
+      "text": "Tell me about a time you had to implement a testing strategy for a new technology stack.",
+      "category": "behavioral"
+    }
+  ],
+  "metadata": {
+    "categories": [
+      "behavioral",
+      "manager",
+      "technical"
+    ],
+    "generated": "2026-08-30",
+    "schema_version": "1.1",
+    "total": 20,
+    "sector": "QA / Testing"
+  }
+}

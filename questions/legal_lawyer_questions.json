@@ -1,0 +1,934 @@
+{
+  "metadata": {
+    "sector": "Legal (Lawyer)",
+    "generated": "2026-08-30",
+    "total": 33,
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ]
+  },
+  "questions": [
+    {
+      "id": "law_001",
+      "text": "Tell me about a time you had to argue a case you initially disagreed with. How did you approach it?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Understood client's position thoroughly despite disagreement",
+          "Maintained professional integrity while advocating zealously",
+          "Research-backed arguments even on unfavorable positions",
+          "Managed client expectations about likely outcomes"
+        ],
+        "strong_answer_signals": [
+          "Balances zealous advocacy with ethical obligations",
+          "Professional detachment from personal views",
+          "Client trust maintained under tension"
+        ],
+        "avoid": [
+          "Refusing the case outright",
+          "Not fully committing to the client's position",
+          "Compromising on facts or ethics"
+        ]
+      }
+    },
+    {
+      "id": "law_002",
+      "text": "Describe a time you had to manage a heavy deadline while juggling multiple cases. How did you prioritize?",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Assessed each matter by urgency and consequence (e.g., statute of limitations)",
+          "Delegated or restructured tasks where possible",
+          "Communicated delays or risks to clients and co-counsel",
+          "Delivered all critical work without compromising quality"
+        ],
+        "strong_answer_signals": [
+          "Clear prioritization framework",
+          "Proactive communication"
+        ],
+        "avoid": [
+          "Missing critical deadlines",
+          "No system for tracking",
+          "Not escalating risks"
+        ]
+      }
+    },
+    {
+      "id": "law_003",
+      "text": "How would you handle discovering a factual error in a brief you already submitted to the court?",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Assess whether error is material to the outcome",
+          "File a motion or errata notice immediately",
+          "Inform supervising attorney if applicable",
+          "Correct internally to prevent recurrence"
+        ],
+        "strong_answer_signals": [
+          "Integrity over convenience",
+          "Prompt correction",
+          "No delay in disclosure"
+        ],
+        "avoid": [
+          "Hoping it goes unnoticed",
+          "Only fixing if caught by opposing counsel",
+          "Delaying correction"
+        ]
+      }
+    },
+    {
+      "id": "law_004",
+      "text": "Tell me about a time you had an ethical dilemma in your practice. How did you resolve it?",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identified the specific ethical rule or conflict",
+          "Consulted the relevant ethics code or committee",
+          "Balanced competing duties (zombie to client, law, court, public)",
+          "Took conservative action to protect integrity"
+        ],
+        "strong_answer_signals": [
+          "Specific rule citation (e.g., Model Rule 1.6 confidentiality)",
+          "Proactive consultation",
+          "Client/court interests balanced appropriately"
+        ],
+        "avoid": [
+          "Ignoring the dilemma",
+          "Self-serving resolution",
+          "Violating confidentiality"
+        ]
+      }
+    },
+    {
+      "id": "law_005",
+      "text": "How do you approach legal research when the issue involves an unsettled area of law?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start with secondary sources (law review, treatises) for context",
+          "Trace primary authority lineage and circuit splits",
+          "Research forward to find recent developments",
+          "Frame argument acknowledging uncertainty with reasoned prediction"
+        ],
+        "strong_answer_signals": [
+          "Methodical progression from general to specific",
+          "Identifies binding vs persuasive authority",
+          "Distinguishes unfavorable precedent"
+        ],
+        "avoid": [
+          "Relying on single source",
+          "Ignoring contrary precedent",
+          "Oversimplifying complex issues"
+        ]
+      }
+    },
+    {
+      "id": "law_006",
+      "text": "Describe your experience with drafting a complex contract. What clauses are most critical to get right?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Definition and scope clauses to prevent ambiguity",
+          "Termination and dispute resolution mechanisms",
+          "Force majeure and limitation of liability caps",
+          "Representations, warranties, and indemnification balance"
+        ],
+        "strong_answer_signals": [
+          "Risk allocation clearly mapped",
+          "Dispute resolution forum chosen deliberately",
+          "Limitation of liability matched to insurance coverage"
+        ],
+        "avoid": [
+          "Over-reliance on boilerplate",
+          "Gaps in key definitions",
+          "Unbalanced indemnification"
+        ]
+      }
+    },
+    {
+      "id": "law_007",
+      "text": "Tell me about a time you had to negotiate a settlement with a difficult opposing party.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Pre-meeting prep: interests vs positions, BATNA analysis",
+          "Kept negotiations focused on interests not personalities",
+          "Used objective criteria (market rates, precedent)",
+          "Secured win-win or best-achievable outcome for client"
+        ],
+        "strong_answer_signals": [
+          "Strategic use of silence and timing",
+          "Maintained client's bottom line",
+          "Relationship preserved post-settlement"
+        ],
+        "avoid": [
+          "Personal attacks",
+          "Conceding without value exchange",
+          "Not preparing BATNA"
+        ]
+      }
+    },
+    {
+      "id": "law_008",
+      "text": "How do you explain a complex legal issue to a client who doesn't have a legal background?",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Avoid jargon; use analogies from client's experience",
+          "Structure answer with clear top-line summary (issue, rule, application, conclusion)",
+          "Provide concrete examples of possible outcomes",
+          "Check for understanding with follow-up questions"
+        ],
+        "strong_answer_signals": [
+          "Client understands risk and options",
+          "Actionable next steps clear"
+        ],
+        "avoid": [
+          "Legal terminology overload",
+          "Overpromising outcomes",
+          "Assuming understanding"
+        ]
+      }
+    },
+    {
+      "id": "law_009",
+      "text": "A client insists on pursuing a claim that you believe has no merit. How do you handle this?",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Clearly explain why the claim is weak, cite law, facts, case precedent",
+          "Discuss realistic downside (costs, damages, sanctions)",
+          "Offer alternative strategies with better prospects",
+          "If client insists, withdraw if ethical duties require"
+        ],
+        "strong_answer_signals": [
+          "Honest assessment without abandoning client",
+          "Alternatives proposed",
+          "Ethical boundaries respected"
+        ],
+        "avoid": [
+          "Rubber-stamp the claim",
+          "Threaten withdrawal prematurely",
+          "Not explaining risks honestly"
+        ]
+      }
+    },
+    {
+      "id": "law_010",
+      "text": "Walk me through how you would defend a class action lawsuit.",
+      "category": "technical",
+      "seniority": [
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Early assessment: certifiability, commonality, typicality",
+          "Motion to dismiss or decertify at class certification stage",
+          "Individualize through discovery, decertification strategy",
+          "Settlement considerations under Rule 23(e), fiduciary duty to absentees"
+        ],
+        "strong_answer_signals": [
+          "Strong grasp of Rule 23 requirements",
+          "Strategic timeline awareness",
+          "Settlement approval mechanics understood"
+        ],
+        "avoid": [
+          "Treating class actions like individual cases",
+          "Ignoring certification stage",
+          "Not understanding fiduciary duty to class"
+        ]
+      }
+    },
+    {
+      "id": "law_mo_001",
+      "text": "Why did you choose to pursue law? What drives you in this profession?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Personal story of what drew you to legal practice",
+          "Impact: helping clients, justice system, or societal change",
+          "Where you see yourself: partnership, public service, in-house counsel",
+          "Why this firm/organization specifically"
+        ],
+        "strong_answer_signals": [
+          "Specific origin story",
+          "Connects to actual work the role involves",
+          "Shows genuine understanding of legal profession's demands"
+        ],
+        "avoid": [
+          "Generic answers about justice or debate club",
+          "Only talking about money or prestige",
+          "Not connecting to the specific practice area"
+        ]
+      }
+    },
+    {
+      "id": "law_mo_002",
+      "text": "How do you maintain work-life balance in a profession known for long hours?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Acknowledge the profession's demands realistically",
+          "Boundary-setting strategies (delegation, time-blocking, communication)",
+          "Stress management and support systems",
+          "Sustainable habits that maintain competence and client service"
+        ],
+        "strong_answer_signals": [
+          "Concrete, sustainable strategies",
+          "Client service maintained while protecting boundaries",
+          "Awareness of burnout risk"
+        ],
+        "avoid": [
+          "Claiming to thrive on 80-hour weeks",
+          "Not acknowledging the profession's demands",
+          "Giving up self-care entirely"
+        ]
+      }
+    },
+    {
+      "id": "law_mo_003",
+      "text": "Describe a time you had to learn a completely new area of law for a case. How did you approach it?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Mapped learning needs to client matter timeline",
+          "Used secondary sources first for rapid orientation",
+          "Consulted specialists and practitioners in the field",
+          "Synthesized findings into actionable case strategy"
+        ],
+        "strong_answer_signals": [
+          "Systematic learning approach",
+          "Network leveraged effectively",
+          "Knowledge applied to strategy"
+        ],
+        "avoid": [
+          "Starting with primary sources only",
+          "Not consulting experts",
+          "Learning without application"
+        ]
+      }
+    },
+    {
+      "id": "law_011",
+      "text": "How do you handle a situation where your supervising attorney asks you to do something you believe is incorrect or unethical?",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Privately and respectfully raise the concern",
+          "Provide specific legal or ethical citation",
+          "Propose alternatives and discuss risks",
+          "Document the conversation; escalate if necessary"
+        ],
+        "strong_answer_signals": [
+          "Addresses issue directly with supervisor",
+          "Specific and constructive",
+          "Knows escalation path if unresolved"
+        ],
+        "avoid": [
+          "Silently complying",
+          "Going over the supervisor's head immediately",
+          "Not documenting"
+        ]
+      }
+    },
+    {
+      "id": "law_012",
+      "text": "Tell me about a time you had to manage a large volume of discovery. What tools and strategies did you use?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Early case assessment to scope document universe",
+          "Used e-discovery platforms (Relativity, Everlaw) for review and redaction",
+          "Designed search terms and date filters",
+          "Managed vendor costs and review team productivity"
+        ],
+        "strong_answer_signals": [
+          "Cost-conscious approach",
+          "Technology leveraged effectively",
+          "Quality control measures implemented"
+        ],
+        "avoid": [
+          "Manual review of everything",
+          "No cost controls",
+          "No quality assurance protocol"
+        ]
+      }
+    },
+    {
+      "id": "law_013",
+      "text": "Describe your experience with cross-examination. How do you prepare for it?",
+      "category": "technical",
+      "seniority": [
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Develop theme and theory of the case first",
+          "Draft questions to control narrative, not just contradict",
+          "Prepare for anticipated objections with foundation laid",
+          "Practice with mock witnesses and adjust"
+        ],
+        "strong_answer_signals": [
+          "Questions build witness's narrative",
+          "Foundation laid for key documents",
+          "Anticipates and adapts to witness responses"
+        ],
+        "avoid": [
+          "Q & A with witnesses",
+          "No coherent theme",
+          "Asking questions without knowing the answer"
+        ]
+      }
+    },
+    {
+      "id": "law_014",
+      "text": "How do you balance the adversarial nature of litigation with the need to maintain professional relationships?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Distinguished zealous advocacy from personal hostility",
+          "Followed professional conduct rules (no harassment, no ex parte)",
+          "Maintained collegial communication on logistics",
+          "Focused on facts and law, not personalities"
+        ],
+        "strong_answer_signals": [
+          "Professionalism maintained even under pressure",
+          "Colleagues respect the approach",
+          "Case outcomes not sacrificed"
+        ],
+        "avoid": [
+          "Being personally adversarial",
+          "Unprofessional conduct",
+          "Settling for less due to niceness"
+        ]
+      }
+    },
+    {
+      "id": "law_015",
+      "text": "Explain the difference between substantive law, procedural law, and jurisdiction. Give examples of each.",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Substantive law: defines rights and duties (e.g., statute of frauds); Procedural law: how courts operate (e.g., pleading requirements); Jurisdiction: court's authority over subject and people (subject matter vs personal)"
+        ],
+        "strong_answer_signals": [
+          "Clear distinctions with concrete examples",
+          "Subject matter vs personal jurisdiction distinguished",
+          "Procedural vs substantive applied correctly"
+        ],
+        "avoid": [
+          "Confusing the three concepts",
+          "Vague examples",
+          "Mixing substance and procedure"
+        ]
+      }
+    },
+    {
+      "id": "law_016",
+      "text": "Tell me about a public interest or pro bono project you worked on. What was your role?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identified the unmet legal need in the community",
+          "Coordinated with nonprofit or legal aid organization",
+          "Delegated among team members based on expertise",
+          "Measured impact beyond the immediate case"
+        ],
+        "strong_answer_signals": [
+          "Genuine community need addressed",
+          "Leadership or initiative shown",
+          "Measurable outcome"
+        ],
+        "avoid": [
+          "Token participation",
+          "No real impact",
+          "Self-serving motivation"
+        ]
+      }
+    },
+    {
+      "id": "law_017",
+      "text": "You realize the client gave you false information during your first meeting. What do you do?",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Withdraw from representation if non-consentable perjury",
+          "Inform client of ethical duty and risks",
+          "If consentable, obtain informed consent in writing",
+          "Correct record before tribunal"
+        ],
+        "strong_answer_signals": [
+          "Ethical duty prioritized over client comfort",
+          "Client informed promptly",
+          "Appropriate withdrawal if required"
+        ],
+        "avoid": [
+          "Ignoring false testimony",
+          "Not correcting the record",
+          "Withdrawing without client explanation"
+        ]
+      }
+    },
+    {
+      "id": "law_018",
+      "text": "How do you stay current on changes to laws and court decisions in your practice area?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Subscribe to practice-area newsletters and bar publications",
+          "Join relevant bar sections and CLE programs",
+          "Use legal databases' alerting features (Westlaw, Lexis) for key terms",
+          "Participate in peer networks and listservs"
+        ],
+        "strong_answer_signals": [
+          "Active and diverse learning strategy",
+          "Applies new knowledge practically"
+        ],
+        "avoid": [
+          "Passive reliance on memory",
+          "Only annual CLE",
+          "Not engaging professional communities"
+        ]
+      }
+    },
+    {
+      "id": "law_019",
+      "text": "Describe a time when your client was dissatisfied with your legal advice. How did you handle it?",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Listened without defensiveness to understand real concern",
+          "Re-explained the law and likely scenarios",
+          "Revised strategy or offered referral if appropriate",
+          "Followed up to rebuild trust"
+        ],
+        "strong_answer_signals": [
+          "Client concerns fully heard",
+          "Law explained with empathy",
+          "Outcome or process improved"
+        ],
+        "avoid": [
+          "Getting defensive or dismissive",
+          "Changing advice just to appease",
+          "Not following up"
+        ]
+      }
+    },
+    {
+      "id": "law_020",
+      "text": "How would you advise a client who wants to sign a non-compete that seems overly broad?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Explain enforceability varies by jurisdiction and scope",
+          "Negotiate narrower time, geography, and activity restrictions",
+          "Add severability clause if overbroad",
+          "Consider liquidated damages vs injunctive relief"
+        ],
+        "strong_answer_signals": [
+          "Analyzes enforceability by jurisdiction",
+          "Negotiates specific narrowing language",
+          "Includes alternative remedies"
+        ],
+        "avoid": [
+          "Blanket approval or rejection",
+          "Not addressing enforceability",
+          "No negotiation strategy"
+        ]
+      }
+    },
+    {
+      "id": "law_021",
+      "text": "Tell me about a time you had to prepare a witness for trial. What was your approach?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Reviewed documents and key facts thoroughly with witness",
+          "Conducted mock direct and cross-examinations",
+          "Addressed anxiety and communication style",
+          "Coordinated with client on expectations and concerns"
+        ],
+        "strong_answer_signals": [
+          "Witness confident and prepared",
+          "Testimony aligned with case theory",
+          "Client concerns addressed"
+        ],
+        "avoid": [
+          "Coaching on answers (subornation risk)",
+          "No mock examinations",
+          "Not addressing underlying anxiety"
+        ]
+      }
+    },
+    {
+      "id": "law_022",
+      "text": "What is the attorney-client privilege and when does it apply?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Protects confidential communications between lawyer and client for purpose of seeking or providing legal advice",
+          "Applies only when lawyer is acting in professional capacity",
+          "Waived if shared with third parties"
+        ],
+        "strong_answer_signals": [
+          "Includes intent requirement (legal advice sought)",
+          "Understands waiver implications",
+          "Distinguishes from work product doctrine"
+        ],
+        "avoid": [
+          "Thinking it covers all communication",
+          "Not understanding waiver and exceptions",
+          "Confusing with work product"
+        ]
+      }
+    },
+    {
+      "id": "law_023",
+      "text": "How do you handle billing disputes with clients?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Reviewed detailed records and explained billing methodology",
+          "Offered reasonable adjustment or payment plan",
+          "Documented agreement in writing",
+          "Maintained relationship despite financial tension"
+        ],
+        "strong_answer_signals": [
+          "Transparency in records",
+          "Client concerns addressed without abandoning position entirely",
+          "Relationship preserved or gracefully exited"
+        ],
+        "avoid": [
+          "Being defensive or rigid",
+          "No explanation of billing",
+          "Threatening litigation over fees"
+        ]
+      }
+    },
+    {
+      "id": "law_024",
+      "text": "Describe your experience with legal writing. What makes a compelling brief?",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Clear issue statement and rule from the outset",
+          "Logical IRAC organization (issue, rule, analysis, conclusion)",
+          "Use of cited authority to support each analysis point",
+          "Plain English and active voice; avoid clutter"
+        ],
+        "strong_answer_signals": [
+          "Argument flows predictably",
+          "Authority directly supports each point",
+          "Readable to non-specialist judges"
+        ],
+        "avoid": [
+          "No clear roadmap",
+          "Citations without integration",
+          "Overly academic language"
+        ]
+      }
+    },
+    {
+      "id": "law_025",
+      "text": "Why did you choose this firm/organization? What do you know about our practice?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Specific practice areas or clients the firm is known for"
+        ],
+        "strong_answer_signals": [
+          "Genuinely researched",
+          "Connects to personal goals and interests"
+        ],
+        "avoid": [
+          "Generic answer",
+          "No specific research"
+        ]
+      }
+    },
+    {
+      "id": "law_026",
+      "text": "How do you handle stress during high-stakes litigation?",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Maintains physical health (sleep, exercise)",
+          "Uses breathing or mindfulness techniques",
+          "Talks through pressure with mentors or peers",
+          "Focuses on process over outcome moment-to-moment"
+        ],
+        "strong_answer_signals": [
+          "Concrete coping strategies",
+          "Performance maintained under pressure"
+        ],
+        "avoid": [
+          "Claiming no stress",
+          "Substance use",
+          "Not maintaining health"
+        ]
+      }
+    },
+    {
+      "id": "law_027",
+      "text": "A case goes to mediation tomorrow and you have not yet reviewed all documents. How do you prepare?",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Review key exhibits and summary chronology first",
+          "Prepare core talking points and settlement range",
+          "Brief supervisor or senior attorney",
+          "Arrive early and organized"
+        ],
+        "strong_answer_signals": [
+          "Prioritizes high-impact materials",
+          "Clear communication of gaps",
+          "Contingency plans ready"
+        ],
+        "avoid": [
+          "Showing up unprepared",
+          "Not communicating gaps"
+        ]
+      }
+    },
+    {
+      "id": "law_028",
+      "text": "Explain the concept of 'duty' in tort law and give an example.",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Legal obligation to conform to a standard of care toward another"
+        ],
+        "strong_answer_signals": [
+          "Duty element of negligence explained",
+          "Standard of care concept"
+        ],
+        "avoid": [
+          "No duty, no liability",
+          "Confusing with criminal law",
+          "No example"
+        ]
+      }
+    },
+    {
+      "id": "law_029",
+      "text": "Describe a time you had to mentor a junior associate or paralegal. What was your approach?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identified their strengths and learning gaps",
+          "Provided structured feedback and resources",
+          "Created opportunities for hands-on practice",
+          "Tracked improvement over time"
+        ],
+        "strong_answer_signals": [
+          "Individual development plan",
+          "Results in mentee growth",
+          "Balanced support with independence"
+        ],
+        "avoid": [
+          "Delegation without mentoring",
+          "No feedback loop",
+          "Micromanaging"
+        ]
+      }
+    },
+    {
+      "id": "law_030",
+      "text": "How do you ensure client confidentiality when working in a shared or open office?",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Private phone booths or closed doors for sensitive calls"
+        ],
+        "strong_answer_signals": [
+          "Physical security considered",
+          "Technology safeguards"
+        ],
+        "avoid": [
+          "Casual conversation",
+          "No protocols"
+        ]
+      }
+    }
+  ]
+}

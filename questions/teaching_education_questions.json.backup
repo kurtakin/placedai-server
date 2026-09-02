@@ -1,0 +1,672 @@
+{
+  "metadata": {
+    "sector": "Teaching and Education",
+    "generated": "2026-08-30",
+    "total": 23,
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ]
+  },
+  "questions": [
+    {
+      "id": "tea_001",
+      "text": "Tell me about a time you had a student who was disengaged or struggling. How did you help them?",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identified the root cause of disengagement",
+          "Tailored instruction and support to the student's needs",
+          "Engaged the student or family in the solution",
+          "Measured progress and adjusted"
+        ],
+        "strong_answer_signals": [
+          "Specific student-centered strategies used",
+          "Family or support team engaged",
+          "Growth mindset demonstrated"
+        ],
+        "avoid": [
+          "Giving up on the student",
+          "Using one-size-fits-all approach",
+          "Not analyzing root cause"
+        ]
+      }
+    },
+    {
+      "id": "tea_002",
+      "text": "Describe a time you had to adapt your curriculum or teaching approach mid-semester. What happened?",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Recognized the need for change through data or observation",
+          "Designed and implemented the adaptation quickly",
+          "Communicated changes to students and stakeholders",
+          "Evaluated effectiveness of the adaptation"
+        ],
+        "strong_answer_signals": [
+          "Data-driven adaptation",
+          "Student-centered approach",
+          "Outcome measured and evaluated"
+        ],
+        "avoid": [
+          "Rigidly sticking to plan despite clear signals",
+          "Changing without communicating rationale",
+          "Not measuring the impact of changes"
+        ]
+      }
+    },
+    {
+      "id": "tea_003",
+      "text": "Tell me about a time you had to manage a challenging classroom situation. How did you maintain a productive environment?",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Stayed calm and de-escalated the situation",
+          "Applied specific classroom management strategies",
+          "Addressed the root behavior",
+          "Preserved learning for the rest of the class"
+        ],
+        "strong_answer_signals": [
+          "Specific strategies applied",
+          "Student dignity maintained",
+          "Learning environment restored quickly"
+        ],
+        "avoid": [
+          "Losing your temper or raising your voice",
+          "Disproportionate response to the behavior",
+          "Not following up with the student"
+        ]
+      }
+    },
+    {
+      "id": "tea_004",
+      "text": "Describe a time you received critical feedback from a supervisor, peer, or student about your teaching.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Listened to the feedback without defensiveness",
+          "Identified actionable areas for improvement",
+          "Implemented specific changes in your practice",
+          "Sought follow-up feedback to confirm progress"
+        ],
+        "strong_answer_signals": [
+          "Growth mindset demonstrated",
+          "Specific changes implemented",
+          "Measurable improvement in teaching"
+        ],
+        "avoid": [
+          "Getting defensive or dismissing feedback",
+          "Making changes without evidence of impact",
+          "Not seeking follow-up feedback"
+        ]
+      }
+    },
+    {
+      "id": "tea_005",
+      "text": "Tell me about a time you designed an innovative lesson or course that had a significant impact.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identified a learning gap or opportunity",
+          "Designed with clear objectives and inclusive methods",
+          "Integrated varied instructional strategies",
+          "Measured impact on student outcomes"
+        ],
+        "strong_answer_signals": [
+          "Innovative approaches used",
+          "Inclusive design considered",
+          "Student outcomes measured"
+        ],
+        "avoid": [
+          "Focusing on innovation without learning outcomes",
+          "Not assessing whether students learned",
+          "Ignoring diverse learner needs"
+        ]
+      }
+    },
+    {
+      "id": "tea_006",
+      "text": "Describe a time you had to work with colleagues who had different teaching philosophies or approaches.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Respected and acknowledged differing perspectives",
+          "Found common ground focused on student outcomes",
+          "Collaborated on shared goals",
+          "Maintained professional relationships"
+        ],
+        "strong_answer_signals": [
+          "Collaborative professional development",
+          "Shared goals identified",
+          "Professional respect maintained"
+        ],
+        "avoid": [
+          "Refusing to collaborate",
+          "Dismissing different approaches",
+          "Not focusing on student outcomes"
+        ]
+      }
+    },
+    {
+      "id": "tea_007",
+      "text": "How do you differentiate instruction for students with diverse learning needs?",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Assessed student learning styles, readiness levels, and interests",
+          "Used flexible grouping and varied instructional strategies",
+          "Provided multiple means of representation, engagement, and expression",
+          "Continuously monitored and adjusted"
+        ],
+        "strong_answer_signals": [
+          "UDL principles applied",
+          "Multiple assessment methods used",
+          "Specific accommodations provided"
+        ],
+        "avoid": [
+          "One-size-fits-all instruction",
+          "Not assessing student needs first",
+          "Not providing appropriate accommodations"
+        ]
+      }
+    },
+    {
+      "id": "tea_008",
+      "text": "Walk me through how you would design a lesson plan for a diverse classroom.",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Identified learning objectives aligned to standards",
+          "Selected appropriate instructional strategies and materials",
+          "Planned for differentiated instruction and accommodations",
+          "Built in formative assessment and reflection"
+        ],
+        "strong_answer_signals": [
+          "Standards-based objectives",
+          "Multiple modalities used",
+          "Assessment built into lesson design"
+        ],
+        "avoid": [
+          "Not aligning to standards",
+          "Not planning for differentiation",
+          "No assessment or reflection"
+        ]
+      }
+    },
+    {
+      "id": "tea_009",
+      "text": "How do you use formative assessment to guide your instruction?",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Designs ongoing, low-stakes assessments",
+          "Uses data to identify misconceptions and gaps",
+          "Adjusts instruction based on assessment results",
+          "Involves students in self-assessment and goal setting"
+        ],
+        "strong_answer_signals": [
+          "Multiple formative assessment strategies",
+          "Instruction adjusted based on data",
+          "Student metacognition encouraged"
+        ],
+        "avoid": [
+          "Only using summative assessments",
+          "Not using data to adjust instruction",
+          "Assessment without follow-up action"
+        ]
+      }
+    },
+    {
+      "id": "tea_010",
+      "text": "Explain how you incorporate technology into your teaching practice.",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Selects technology that enhances learning objectives",
+          "Uses LMS, interactive tools, and adaptive platforms",
+          "Ensures equitable access for all students",
+          "Integrates digital literacy and citizenship"
+        ],
+        "strong_answer_signals": [
+          "Specific tools and platforms named",
+          "Pedagogical rationale for technology use",
+          "Equity and access considered"
+        ],
+        "avoid": [
+          "Using technology for its own sake",
+          "Not considering digital divide",
+          "No pedagogical purpose for tech"
+        ]
+      }
+    },
+    {
+      "id": "tea_011",
+      "text": "How do you build an inclusive classroom culture?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Established clear norms of respect and belonging",
+          "Celebrated diverse perspectives and backgrounds",
+          "Created opportunities for all students to participate",
+          "Addressed bias and microaggressions"
+        ],
+        "strong_answer_signals": [
+          "Specific inclusivity strategies implemented",
+          "Student voice and choice encouraged",
+          "Safe space created for all learners"
+        ],
+        "avoid": [
+          "Only celebrating diversity without action",
+          "Ignoring bias or exclusionary behavior",
+          "Not giving voice to marginalized students"
+        ]
+      }
+    },
+    {
+      "id": "tea_012",
+      "text": "How do you manage the various demands and responsibilities of a teaching role?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Prioritized planning, instruction, and assessment",
+          "Organized administrative tasks efficiently",
+          "Delegated and collaborated with support staff",
+          "Protected time for student and professional growth"
+        ],
+        "strong_answer_signals": [
+          "Time management and prioritization strategies",
+          "Collaboration with colleagues demonstrated",
+          "Self-care and sustainability practiced"
+        ],
+        "avoid": [
+          "Trying to do everything alone",
+          "Burning out from overcommitment",
+          "Not setting boundaries"
+        ]
+      }
+    },
+    {
+      "id": "tea_013",
+      "text": "Describe your experience with professional development and continuing education.",
+      "category": "manager",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Identified areas for growth aligned to goals",
+          "Pursued workshops, courses, and certifications",
+          "Applied learning to improve practice",
+          "Shared knowledge with colleagues"
+        ],
+        "strong_answer_signals": [
+          "Specific PD activities and certifications",
+          "Applied learning with evidence",
+          "Knowledge sharing with team"
+        ],
+        "avoid": [
+          "Not engaging in professional development",
+          "Not applying new learning to practice",
+          "Not sharing with colleagues"
+        ]
+      }
+    },
+    {
+      "id": "tea_014",
+      "text": "How do you collaborate with parents, guardians, and other stakeholders?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Established regular and transparent communication",
+          "Engaged families as partners in learning",
+          "Used multiple channels and languages for outreach",
+          "Addressed concerns proactively and constructively"
+        ],
+        "strong_answer_signals": [
+          "Communication cadence maintained",
+          "Family engagement programs",
+          "Positive relationships built"
+        ],
+        "avoid": [
+          "Only communicating about problems",
+          "Not considering language barriers",
+          "Engaging families only when issues arise"
+        ]
+      }
+    },
+    {
+      "id": "tea_015",
+      "text": "Tell me about a time you had to advocate for resources or support for your students.",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identified specific resource gaps and their impact",
+          "Built a data-driven case for support",
+          "Presented to administration or community",
+          "Followed through to secure resources"
+        ],
+        "strong_answer_signals": [
+          "Data-driven advocacy",
+          "Resources secured for students",
+          "Community or admin engagement demonstrated"
+        ],
+        "avoid": [
+          "Not having data to support the request",
+          "Not following through after asking",
+          "Blaming administration without presenting solutions"
+        ]
+      }
+    },
+    {
+      "id": "tea_016",
+      "text": "How do you handle a student or parent who is consistently disruptive or unreasonable?",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Remained calm and professional",
+          "Listened to understand the underlying concern",
+          "Set clear boundaries while maintaining respect",
+          "Escalated or involved appropriate support if needed"
+        ],
+        "strong_answer_signals": [
+          "Professional boundaries maintained",
+          "Support resources offered",
+          "Documentation of interactions"
+        ],
+        "avoid": [
+          "Engaging in personal conflict",
+          "Lowering standards to avoid conflict",
+          "Not involving support resources"
+        ]
+      }
+    },
+    {
+      "id": "tea_017",
+      "text": "A student discloses abuse or a safety concern. What is your process?",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Remained calm and listened without judgment",
+          "Followed mandatory reporting laws and school policy",
+          "Reported to designated safeguarding officer immediately",
+          "Supported the student and maintained confidentiality"
+        ],
+        "strong_answer_signals": [
+          "Mandatory reporting requirements followed",
+          "Designated person notified",
+          "Student safety prioritized"
+        ],
+        "avoid": [
+          "Not reporting to authorities"
+        ]
+      }
+    },
+    {
+      "id": "tea_018",
+      "text": "How do you integrate real-world applications into your curriculum?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Identified authentic projects and problems",
+          "Connected learning to careers and community needs",
+          "Invited guest speakers and field experiences",
+          "Assessed through real-world deliverables"
+        ],
+        "strong_answer_signals": [
+          "Authentic projects integrated",
+          "Community partnerships formed",
+          "Real-world assessments used"
+        ],
+        "avoid": [
+          "Only using abstract examples",
+          "Not connecting to student interests",
+          "No assessment of real-world skills"
+        ]
+      }
+    },
+    {
+      "id": "tea_019",
+      "text": "How do you use data to inform your instruction and improve student outcomes?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Used formative and summative data regularly",
+          "Identified trends and individual student patterns",
+          "Adjusted instruction based on data",
+          "Shared data transparently with students and families"
+        ],
+        "strong_answer_signals": [
+          "Data-driven instructional adjustments",
+          "Individualized interventions based on data",
+          "Data shared and used collaboratively"
+        ],
+        "avoid": [
+          "Not using data to drive instruction"
+        ]
+      }
+    },
+    {
+      "id": "tea_020",
+      "text": "How do you support students with special education needs in an inclusive setting?",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Understood IEP or 504 requirements for each student",
+          "Collaborated with special education team",
+          "Provided accommodations and modifications",
+          "Monitored progress and adjusted supports"
+        ],
+        "strong_answer_signals": [
+          "Specific accommodations implemented",
+          "Co-teaching or collaboration models used",
+          "Progress monitored toward goals"
+        ],
+        "avoid": [
+          "Not following IEP requirements",
+          "Teaching students separately rather than including",
+          "Not collaborating with SPED team"
+        ]
+      }
+    },
+    {
+      "id": "tea_mo_001",
+      "text": "Why did you choose teaching as a career? What keeps you passionate about education?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Personal story of what drew you to teaching",
+          "What drives you: student growth, subject passion, making impact",
+          "Where you see yourself: leadership, mentoring, curriculum design",
+          "Why this school or district fits your values"
+        ],
+        "strong_answer_signals": [
+          "Specific and personal motivation",
+          "Shows genuine commitment to students",
+          "Connects to the specific community served"
+        ],
+        "avoid": [
+          "Generic answer about loving children",
+          "Only talking about summers off",
+          "Not connecting to specific school or district"
+        ]
+      }
+    },
+    {
+      "id": "tea_mo_002",
+      "text": "How do you handle the emotional demands and burnout risk in teaching?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Acknowledges the emotional investment required in teaching",
+          "Names specific strategies for sustainable practice",
+          "Builds support networks with colleagues",
+          "Makes time for self-care and professional renewal"
+        ],
+        "strong_answer_signals": [
+          "Realistic and concrete strategies",
+          "Support networks described",
+          "Long-term sustainability considered"
+        ],
+        "avoid": [
+          "Claiming teaching is never exhausting",
+          "Nothing specific about personal coping strategies",
+          "Activities not sustainable long-term"
+        ]
+      }
+    },
+    {
+      "id": "tea_mo_003",
+      "text": "Where do you see yourself in five years as an educator?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Teaching excellence: mentoring new teachers, curriculum leadership",
+          "Administrative path: department chair, instructional coach, assistant principal",
+          "Policy or specialization: subject matter expert, educational technology",
+          "Why this path fits this organization and community"
+        ],
+        "strong_answer_signals": [
+          "Clear and realistic career path",
+          "Shows investment in the field",
+          "Connects personal growth to student and community impact"
+        ],
+        "avoid": [
+          "Not having thought about it",
+          "Talking about leaving education",
+          "Vague goals without connection to impact"
+        ]
+      }
+    }
+  ]
+}

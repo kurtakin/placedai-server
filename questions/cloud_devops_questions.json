@@ -1,0 +1,940 @@
+{
+  "metadata": {
+    "sector": "Cloud Engineering / DevOps",
+    "generated": "2026-08-30",
+    "total": 35,
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ]
+  },
+  "questions": [
+    {
+      "id": "cd_001",
+      "text": "Tell me about a production outage you helped resolve. What was your role?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Incident detected quickly",
+          "Root cause identified",
+          "Fix implemented",
+          "Post-mortem followed"
+        ],
+        "strong_answer_signals": [
+          "Clear communication",
+          "Blameless post-mortem",
+          "Prevention measures"
+        ],
+        "avoid": [
+          "Blame on others",
+          "No follow-up"
+        ]
+      }
+    },
+    {
+      "id": "cd_002",
+      "text": "How do you design infrastructure as code (Terraform, CloudFormation)?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Modular and reusable modules",
+          "State management",
+          "Version control",
+          "DRY principles"
+        ],
+        "strong_answer_signals": [
+          "Production-grade patterns",
+          "Reviewed and tested"
+        ],
+        "avoid": [
+          "Copy-paste modules",
+          "No state locking"
+        ]
+      }
+    },
+    {
+      "id": "cd_003",
+      "text": "How do you implement a CI/CD pipeline from scratch?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Build, test, deploy stages",
+          "Artifact management",
+          "Approval gates",
+          "Rollback capability"
+        ],
+        "strong_answer_signals": [
+          "Fast and reliable",
+          "Zero-downtime deploys",
+          "Pipeline as code"
+        ],
+        "avoid": [
+          "Manual steps",
+          "No rollback",
+          "No tests"
+        ]
+      }
+    },
+    {
+      "id": "cd_004",
+      "text": "Tell me about implementing Kubernetes in production.",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Cluster provisioned",
+          "Workloads migrated",
+          "Monitoring and logging set up",
+          "Team trained"
+        ],
+        "strong_answer_signals": [
+          "Smooth migration",
+          "High availability",
+          "Team productive"
+        ],
+        "avoid": [
+          "Big-bang migration",
+          "No documentation",
+          "Team not trained"
+        ]
+      }
+    },
+    {
+      "id": "cd_005",
+      "text": "How do you handle a security incident in cloud infrastructure?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Incident response process",
+          "Forensics conducted",
+          "Affected systems isolated",
+          "Communication coordinated"
+        ],
+        "strong_answer_signals": [
+          "Quick containment",
+          "Thorough investigation",
+          "Lessons learned"
+        ],
+        "avoid": [
+          "Panic",
+          "No communication",
+          "Blame on team"
+        ]
+      }
+    },
+    {
+      "id": "cd_006",
+      "text": "How do you optimize cloud costs?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Right-sizing instances",
+          "Reserved capacity planning",
+          "Idle resource cleanup",
+          "Storage tiering"
+        ],
+        "strong_answer_signals": [
+          "Significant cost reduction",
+          "Continuous monitoring",
+          "Tagged resources"
+        ],
+        "avoid": [
+          "Over-provisioned",
+          "No tagging",
+          "Ignored costs"
+        ]
+      }
+    },
+    {
+      "id": "cd_007",
+      "text": "Describe your experience with monitoring and observability.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Metrics, logs, traces",
+          "Alerting strategy",
+          "Dashboard design",
+          "SLOs defined"
+        ],
+        "strong_answer_signals": [
+          "Proactive issue detection",
+          "Clear SLOs",
+          "Actionable alerts"
+        ],
+        "avoid": [
+          "Only metrics",
+          "Alert fatigue",
+          "No SLOs"
+        ]
+      }
+    },
+    {
+      "id": "cd_008",
+      "text": "Tell me about managing a multi-account or multi-cloud environment.",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Governance strategy",
+          "Account structure designed",
+          "Cross-account access",
+          "Centralized logging"
+        ],
+        "strong_answer_signals": [
+          "Clean separation",
+          "Centralized visibility"
+        ],
+        "avoid": [
+          "Account sprawl",
+          "No governance"
+        ]
+      }
+    },
+    {
+      "id": "cd_009",
+      "text": "How do you approach a greenfield cloud architecture project?",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Requirements gathered",
+          "Well-architected framework",
+          "Security and compliance",
+          "Cost estimation"
+        ],
+        "strong_answer_signals": [
+          "Documented decisions",
+          "Scalable design"
+        ],
+        "avoid": [
+          "Started building without design",
+          "No cost estimation"
+        ]
+      }
+    },
+    {
+      "id": "cd_010",
+      "text": "How do you handle a database migration to the cloud?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Migration strategy chosen",
+          "Data validated",
+          "Downtime minimized",
+          "Rollback plan"
+        ],
+        "strong_answer_signals": [
+          "Zero data loss",
+          "Tested thoroughly"
+        ],
+        "avoid": [
+          "No rollback plan",
+          "Big-bang cutover"
+        ]
+      }
+    },
+    {
+      "id": "cd_011",
+      "text": "How do you implement infrastructure security best practices?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Least privilege IAM",
+          "Network segmentation",
+          "Encryption everywhere",
+          "Vulnerability scanning"
+        ],
+        "strong_answer_signals": [
+          "Security by default",
+          "Regular audits"
+        ],
+        "avoid": [
+          "Open security groups",
+          "No encryption",
+          "No scanning"
+        ]
+      }
+    },
+    {
+      "id": "cd_012",
+      "text": "Tell me about a time you had to debug a complex distributed system issue.",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Logs and traces analyzed",
+          "Service map used",
+          "Root cause found",
+          "Fix verified"
+        ],
+        "strong_answer_signals": [
+          "Systematic approach",
+          "Cross-team collaboration"
+        ],
+        "avoid": [
+          "Random guessing",
+          "No data"
+        ]
+      }
+    },
+    {
+      "id": "cd_013",
+      "text": "How do you manage secrets in a cloud environment?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Secrets manager used",
+          "No hardcoded secrets",
+          "Rotation policy",
+          "Access control"
+        ],
+        "strong_answer_signals": [
+          "Centralized secrets",
+          "Audit logging"
+        ],
+        "avoid": [
+          "Secrets in code",
+          "No rotation"
+        ]
+      }
+    },
+    {
+      "id": "cd_014",
+      "text": "How do you implement auto-scaling?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Metrics-driven",
+          "Predictive scaling",
+          "Cost considered",
+          "Tested scale events"
+        ],
+        "strong_answer_signals": [
+          "Smooth scale events",
+          "Cost optimized"
+        ],
+        "avoid": [
+          "Over-scaling",
+          "No testing"
+        ]
+      }
+    },
+    {
+      "id": "cd_015",
+      "text": "Why cloud engineering / DevOps? What draws you to it?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Automation passion",
+          "Scale and reliability",
+          "Continuous learning",
+          "Impact on teams"
+        ],
+        "strong_answer_signals": [
+          "Specific project story",
+          "Community involvement"
+        ],
+        "avoid": [
+          "Just about tools",
+          "No specific interest"
+        ]
+      }
+    },
+    {
+      "id": "cd_016",
+      "text": "How do you approach disaster recovery planning?",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "RTO and RPO defined",
+          "Backup strategy",
+          "Failover tested",
+          "Runbook documented"
+        ],
+        "strong_answer_signals": [
+          "Tested regularly",
+          "Clear ownership"
+        ],
+        "avoid": [
+          "No testing",
+          "Undocumented"
+        ]
+      }
+    },
+    {
+      "id": "cd_017",
+      "text": "Tell me about a time you improved deployment frequency.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Pain points identified",
+          "Pipeline improved",
+          "Automation added",
+          "Measured improvement"
+        ],
+        "strong_answer_signals": [
+          "Faster and safer deploys",
+          "Team velocity up"
+        ],
+        "avoid": [
+          "No measurement",
+          "Just talked about it"
+        ]
+      }
+    },
+    {
+      "id": "cd_018",
+      "text": "How do you evaluate a new cloud service or tool?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Use case defined",
+          "POC conducted",
+          "Cost and lock-in analyzed",
+          "Stakeholder input"
+        ],
+        "strong_answer_signals": [
+          "Data-driven decision",
+          "Risk assessed"
+        ],
+        "avoid": [
+          "Hype-driven",
+          "No analysis"
+        ]
+      }
+    },
+    {
+      "id": "cd_019",
+      "text": "How do you handle a major incident that spans multiple services?",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Incident commander assigned",
+          "War room convened",
+          "Status updates regular",
+          "All-hands debugging"
+        ],
+        "strong_answer_signals": [
+          "Coordinated response",
+          "Clear ownership"
+        ],
+        "avoid": [
+          "Confusion",
+          "No commander"
+        ]
+      }
+    },
+    {
+      "id": "cd_020",
+      "text": "Describe your experience with configuration management (Ansible, Chef, Puppet).",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Idempotent playbooks",
+          "Version controlled",
+          "Tested changes",
+          "Used for scale"
+        ],
+        "strong_answer_signals": [
+          "Production usage",
+          "Consistent environments"
+        ],
+        "avoid": [
+          "No version control",
+          "Manual changes"
+        ]
+      }
+    },
+    {
+      "id": "cd_021",
+      "text": "How do you implement a service mesh?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Use case defined",
+          "Pilot service chosen",
+          "Observability added",
+          "Gradual rollout"
+        ],
+        "strong_answer_signals": [
+          "Measurable improvement",
+          "Team trained"
+        ],
+        "avoid": [
+          "Big-bang rollout",
+          "No pilot"
+        ]
+      }
+    },
+    {
+      "id": "cd_022",
+      "text": "Tell me about a time you had to balance reliability and feature velocity.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Risks discussed",
+          "SLOs defined",
+          "Trade-offs made",
+          "Outcome measured"
+        ],
+        "strong_answer_signals": [
+          "Informed decision",
+          "Stakeholder aligned"
+        ],
+        "avoid": [
+          "Ignored reliability",
+          "No measurement"
+        ]
+      }
+    },
+    {
+      "id": "cd_023",
+      "text": "How do you approach logging strategy for microservices?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Structured logs",
+          "Centralized storage",
+          "Correlation IDs",
+          "Retention policy"
+        ],
+        "strong_answer_signals": [
+          "Searchable logs",
+          "Trace context"
+        ],
+        "avoid": [
+          "Unstructured logs",
+          "No correlation"
+        ]
+      }
+    },
+    {
+      "id": "cd_024",
+      "text": "How do you manage technical debt in infrastructure code?",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Debt visible",
+          "Refactoring prioritized",
+          "Tech debt sprints",
+          "Documentation current"
+        ],
+        "strong_answer_signals": [
+          "Continuous improvement",
+          "Team ownership"
+        ],
+        "avoid": [
+          "Ignored debt",
+          "Old modules left"
+        ]
+      }
+    },
+    {
+      "id": "cd_025",
+      "text": "How do you implement policy as code?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Tools like OPA, Sentinel",
+          "Policy tested",
+          "CI/CD integrated",
+          "Continuous compliance"
+        ],
+        "strong_answer_signals": [
+          "Automated compliance",
+          "No manual reviews"
+        ],
+        "avoid": [
+          "Policies in docs only",
+          "No automation"
+        ]
+      }
+    },
+    {
+      "id": "cd_026",
+      "text": "Tell me about building a DevOps culture in a traditional organization.",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Resistance assessed",
+          "Quick wins delivered",
+          "Champions identified",
+          "Practices spread"
+        ],
+        "strong_answer_signals": [
+          "Culture shifted",
+          "Teams adopted"
+        ],
+        "avoid": [
+          "Mandated from top",
+          "No quick wins"
+        ]
+      }
+    },
+    {
+      "id": "cd_027",
+      "text": "How do you design a multi-region deployment?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Active-active vs active-passive",
+          "Data replication",
+          "Latency considered",
+          "Failover tested"
+        ],
+        "strong_answer_signals": [
+          "Resilient design",
+          "Tested failover"
+        ],
+        "avoid": [
+          "No testing",
+          "Single region assumption"
+        ]
+      }
+    },
+    {
+      "id": "cd_028",
+      "text": "How do you handle a vendor or cloud provider outage?",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Communication plan",
+          "Workarounds implemented",
+          "Multi-cloud or DR considered",
+          "Stakeholders updated"
+        ],
+        "strong_answer_signals": [
+          "Business continuity",
+          "Quick adaptation"
+        ],
+        "avoid": [
+          "Single cloud dependency",
+          "No plan"
+        ]
+      }
+    },
+    {
+      "id": "cd_029",
+      "text": "Describe your experience with serverless architectures.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Use cases identified",
+          "Cold start managed",
+          "Cost monitored",
+          "Vendor lock-in considered"
+        ],
+        "strong_answer_signals": [
+          "Production experience",
+          "Right tool for job"
+        ],
+        "avoid": [
+          "Serverless for everything",
+          "No cost analysis"
+        ]
+      }
+    },
+    {
+      "id": "cd_030",
+      "text": "How do you implement chaos engineering?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Hypothesis-driven",
+          "Production-safe experiments",
+          "Gradually expanded",
+          "Findings acted on"
+        ],
+        "strong_answer_signals": [
+          "Resilience improved",
+          "Systematic approach"
+        ],
+        "avoid": [
+          "Random failures",
+          "No hypothesis"
+        ]
+      }
+    },
+    {
+      "id": "cd_031",
+      "text": "How do you ensure infrastructure changes are safe?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Code review",
+          "Automated tests",
+          "Staged rollouts",
+          "Rollback ready"
+        ],
+        "strong_answer_signals": [
+          "Few incidents",
+          "Quick recovery"
+        ],
+        "avoid": [
+          "No review",
+          "Big-bang changes"
+        ]
+      }
+    },
+    {
+      "id": "cd_032",
+      "text": "Tell me about mentoring junior DevOps engineers.",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Skill assessment",
+          "Pair on incidents",
+          "Knowledge sharing",
+          "Career growth"
+        ],
+        "strong_answer_signals": [
+          "Engineers grew",
+          "Team capability up"
+        ],
+        "avoid": [
+          "No mentoring time",
+          "No growth"
+        ]
+      }
+    },
+    {
+      "id": "cd_033",
+      "text": "How do you balance automation vs human review?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Risk-based",
+          "Critical changes reviewed",
+          "Automation trusted for routine",
+          "Clear policy"
+        ],
+        "strong_answer_signals": [
+          "Right balance",
+          "Fast and safe"
+        ],
+        "avoid": [
+          "All manual",
+          "All automated"
+        ]
+      }
+    },
+    {
+      "id": "cd_034",
+      "text": "How do you handle capacity planning?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Growth projected",
+          "Peak load identified",
+          "Headroom planned",
+          "Cost analyzed"
+        ],
+        "strong_answer_signals": [
+          "Met demand",
+          "Cost optimized"
+        ],
+        "avoid": [
+          "No planning",
+          "Last minute scaling"
+        ]
+      }
+    },
+    {
+      "id": "cd_035",
+      "text": "Tell me about implementing GitOps.",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Git as source of truth",
+          "Automated sync",
+          "Drift detection",
+          "Rollback via Git"
+        ],
+        "strong_answer_signals": [
+          "Improved reliability",
+          "Audit trail"
+        ],
+        "avoid": [
+          "No automation",
+          "Drift ignored"
+        ]
+      }
+    }
+  ]
+}

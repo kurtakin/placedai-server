@@ -1,0 +1,924 @@
+{
+  "metadata": {
+    "sector": "Cybersecurity / Information Security",
+    "generated": "2026-08-30",
+    "total": 35,
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ]
+  },
+  "questions": [
+    {
+      "id": "csy_001",
+      "text": "Tell me about a security incident you handled. What was the impact and how did you respond?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Incident detected",
+          "Contained and eradicated",
+          "Communicated to stakeholders",
+          "Post-incident review"
+        ],
+        "strong_answer_signals": [
+          "Rapid response",
+          "Process followed",
+          "Lessons learned"
+        ],
+        "avoid": [
+          "Covered up",
+          "No post-mortem"
+        ]
+      }
+    },
+    {
+      "id": "csy_002",
+      "text": "How do you conduct a risk assessment for a new application?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Threat modeling",
+          "Vulnerability identification",
+          "Risk scoring",
+          "Mitigation plan"
+        ],
+        "strong_answer_signals": [
+          "Structured approach",
+          "Prioritized by risk"
+        ],
+        "avoid": [
+          "No threat model",
+          "No mitigation plan"
+        ]
+      }
+    },
+    {
+      "id": "csy_003",
+      "text": "How do you implement a zero trust architecture?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Verify every access request",
+          "Least privilege access",
+          "Micro-segmentation",
+          "Continuous monitoring"
+        ],
+        "strong_answer_signals": [
+          "Phased implementation",
+          "Measurable improvement"
+        ],
+        "avoid": [
+          "Trusted internal network",
+          "No monitoring"
+        ]
+      }
+    },
+    {
+      "id": "csy_004",
+      "text": "Tell me about a time you identified a vulnerability before it was exploited.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Vulnerability scan or pentest",
+          "Risk prioritized",
+          "Remediation plan",
+          "Verified fix"
+        ],
+        "strong_answer_signals": [
+          "Proactive discovery",
+          "No breach occurred"
+        ],
+        "avoid": [
+          "Found after breach",
+          "No patching"
+        ]
+      }
+    },
+    {
+      "id": "csy_005",
+      "text": "How do you handle a developer refusing to fix a security issue?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Explained business risk",
+          "Escalated through channels",
+          "Found workaround if needed",
+          "Documented decision"
+        ],
+        "strong_answer_signals": [
+          "Risk communicated",
+          "Business accepted"
+        ],
+        "avoid": [
+          "Dropped it",
+          "Bypassed process"
+        ]
+      }
+    },
+    {
+      "id": "csy_006",
+      "text": "Describe your approach to security awareness training.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Phishing simulations",
+          "Role-based training",
+          "Regular frequency",
+          "Measured effectiveness"
+        ],
+        "strong_answer_signals": [
+          "Phishing click rate dropped",
+          "Incidents reduced"
+        ],
+        "avoid": [
+          "Annual slide deck only",
+          "No measurement"
+        ]
+      }
+    },
+    {
+      "id": "csy_007",
+      "text": "How do you perform a penetration test?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Scope defined",
+          "Reconnaissance",
+          "Vulnerability scanning",
+          "Exploitation",
+          "Reporting"
+        ],
+        "strong_answer_signals": [
+          "Methodical approach",
+          "Actionable findings"
+        ],
+        "avoid": [
+          "Just ran a scanner",
+          "No report"
+        ]
+      }
+    },
+    {
+      "id": "csy_008",
+      "text": "Tell me about implementing an incident response plan.",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Plan written and approved",
+          "Team roles defined",
+          "Tabletop exercises",
+          "Plan tested and updated"
+        ],
+        "strong_answer_signals": [
+          "Plan was actionable",
+          "Response improved"
+        ],
+        "avoid": [
+          "Plan on paper only",
+          "No exercises"
+        ]
+      }
+    },
+    {
+      "id": "csy_009",
+      "text": "How do you secure cloud infrastructure?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Identity and access management",
+          "Network security groups",
+          "Encryption at rest and in transit",
+          "Monitoring and alerting"
+        ],
+        "strong_answer_signals": [
+          "Cloud-native security used",
+          "Regular audits"
+        ],
+        "avoid": [
+          "Default configurations",
+          "No monitoring"
+        ]
+      }
+    },
+    {
+      "id": "csy_010",
+      "text": "How do you manage secrets and credentials in an organization?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Secrets manager used",
+          "No hardcoded secrets",
+          "Rotation policy",
+          "Access control"
+        ],
+        "strong_answer_signals": [
+          "Centralized secrets",
+          "Audit trail"
+        ],
+        "avoid": [
+          "Passwords in code",
+          "No rotation"
+        ]
+      }
+    },
+    {
+      "id": "csy_011",
+      "text": "Tell me about balancing security and user experience.",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Risk assessment",
+          "Progressive security",
+          "User testing",
+          "Measured friction"
+        ],
+        "strong_answer_signals": [
+          "Security without excessive friction"
+        ],
+        "avoid": [
+          "Maximum security always",
+          "No UX consideration"
+        ]
+      }
+    },
+    {
+      "id": "csy_012",
+      "text": "How do you implement identity and access management (IAM)?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Role-based access control",
+          "Principle of least privilege",
+          "Multi-factor authentication",
+          "Access reviews"
+        ],
+        "strong_answer_signals": [
+          "Least privilege enforced",
+          "Audit trail"
+        ],
+        "avoid": [
+          "Everyone admin",
+          "No MFA"
+        ]
+      }
+    },
+    {
+      "id": "csy_013",
+      "text": "Tell me about conducting a security audit.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Scope defined",
+          "Evidence collected",
+          "Findings documented",
+          "Remediation tracked"
+        ],
+        "strong_answer_signals": [
+          "Comprehensive audit",
+          "Clear findings"
+        ],
+        "avoid": [
+          "Surface level only",
+          "No follow-up"
+        ]
+      }
+    },
+    {
+      "id": "csy_014",
+      "text": "How do you stay current with emerging threats?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Threat intelligence feeds",
+          "CVE monitoring",
+          "Security conferences",
+          "Bug bounty programs"
+        ],
+        "strong_answer_signals": [
+          "Specific sources named",
+          "Vulnerability reported"
+        ],
+        "avoid": [
+          "Only learned after breach",
+          "No continuous learning"
+        ]
+      }
+    },
+    {
+      "id": "csy_015",
+      "text": "How do you handle a data breach notification requirement?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Legal timeline understood",
+          "Stakeholder notification",
+          "Regulatory compliance",
+          "Communication plan"
+        ],
+        "strong_answer_signals": [
+          "Timely notification",
+          "Compliance verified"
+        ],
+        "avoid": [
+          "Delayed notification",
+          "No legal review"
+        ]
+      }
+    },
+    {
+      "id": "csy_016",
+      "text": "Tell me about implementing a SIEM solution.",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Log sources identified",
+          "Alert thresholds set",
+          "False positive tuned",
+          "Response workflows"
+        ],
+        "strong_answer_signals": [
+          "Alerts actionable",
+          "MTTD improved"
+        ],
+        "avoid": [
+          "Too many false positives",
+          "Logs without analysis"
+        ]
+      }
+    },
+    {
+      "id": "csy_017",
+      "text": "How do you approach application security (AppSec) in the SDLC?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Shift left approach",
+          "SAST and DAST integrated",
+          "Security code review",
+          "Dependency scanning"
+        ],
+        "strong_answer_signals": [
+          "Security in CI/CD",
+          "Vulnerabilities caught early"
+        ],
+        "avoid": [
+          "Security only at the end",
+          "Only manual review"
+        ]
+      }
+    },
+    {
+      "id": "csy_018",
+      "text": "Tell me about influencing security culture across the organization.",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Leadership buy-in",
+          "Training program",
+          "Metrics tracked",
+          "Culture improved"
+        ],
+        "strong_answer_signals": [
+          "Security awareness rose",
+          "Incidents decreased"
+        ],
+        "avoid": [
+          "Training only",
+          "No metrics"
+        ]
+      }
+    },
+    {
+      "id": "csy_019",
+      "text": "How do you handle third-party vendor security risk?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Vendor assessment",
+          "Security questionnaire",
+          "Contractual requirements",
+          "Ongoing monitoring"
+        ],
+        "strong_answer_signals": [
+          "Risk assessed",
+          "Regular reviews"
+        ],
+        "avoid": [
+          "No vendor assessment",
+          "Set and forgot"
+        ]
+      }
+    },
+    {
+      "id": "csy_020",
+      "text": "Describe your experience with compliance frameworks (SOC 2, ISO 27001, HIPAA).",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Requirements mapped",
+          "Controls implemented",
+          "Evidence collected",
+          "Audit passed"
+        ],
+        "strong_answer_signals": [
+          "Certification achieved"
+        ],
+        "avoid": [
+          "No mapping",
+          "Audit failed"
+        ]
+      }
+    },
+    {
+      "id": "csy_021",
+      "text": "Why cybersecurity? What draws you to the field?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Protection mission",
+          "Continuous challenge",
+          "Growing demand",
+          "Ethical purpose"
+        ],
+        "strong_answer_signals": [
+          "Specific incident story",
+          "Continuous learning drive"
+        ],
+        "avoid": [
+          "Only about money",
+          "No specific interest"
+        ]
+      }
+    },
+    {
+      "id": "csy_022",
+      "text": "How do you implement network segmentation?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Zone design",
+          "Access control lists",
+          "Micro-segmentation",
+          "Monitoring between zones"
+        ],
+        "strong_answer_signals": [
+          "Lateral movement prevented"
+        ],
+        "avoid": [
+          "Flat network",
+          "No monitoring"
+        ]
+      }
+    },
+    {
+      "id": "csy_023",
+      "text": "Tell me about a time you had to make an ethical decision in security.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Ethical dilemma identified",
+          "Stakeholders consulted",
+          "Decision aligned with values"
+        ],
+        "strong_answer_signals": [
+          "Ethical choice made",
+          "Trust maintained"
+        ],
+        "avoid": [
+          "Cut corners",
+          "Ignored ethics"
+        ]
+      }
+    },
+    {
+      "id": "csy_024",
+      "text": "How do you evaluate a new security tool?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Use case defined",
+          "Proof of concept",
+          "Integration assessment",
+          "ROI analysis"
+        ],
+        "strong_answer_signals": [
+          "Data-driven evaluation"
+        ],
+        "avoid": [
+          "Following trends",
+          "No evaluation"
+        ]
+      }
+    },
+    {
+      "id": "csy_025",
+      "text": "How do you handle encryption key management?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Key lifecycle management",
+          "Rotation schedule",
+          "Access control",
+          "Backup and recovery"
+        ],
+        "strong_answer_signals": [
+          "Policy followed",
+          "Key recovery tested"
+        ],
+        "avoid": [
+          "Hardcoded keys",
+          "No backup"
+        ]
+      }
+    },
+    {
+      "id": "csy_026",
+      "text": "Tell me about your experience with threat modeling.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "STRIDE or similar",
+          "Data flow mapping",
+          "Trust boundaries",
+          "Mitigation plan"
+        ],
+        "strong_answer_signals": [
+          "Threat model produced",
+          "Controls matched threats"
+        ],
+        "avoid": [
+          "No structured approach"
+        ]
+      }
+    },
+    {
+      "id": "csy_027",
+      "text": "How do you conduct a vulnerability management program?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Discovery and cataloging",
+          "Risk-based prioritization",
+          "Remediation SLAs",
+          "Reporting to stakeholders"
+        ],
+        "strong_answer_signals": [
+          "Vulnerabilities tracked",
+          "SLAs met"
+        ],
+        "avoid": [
+          "Scanned but no remediation",
+          "No reporting"
+        ]
+      }
+    },
+    {
+      "id": "csy_028",
+      "text": "Tell me about leading a security project across multiple teams.",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Project scope defined",
+          "Cross-team coordination",
+          "Regular updates",
+          "Project delivered"
+        ],
+        "strong_answer_signals": [
+          "Multiple teams aligned",
+          "Project completed"
+        ],
+        "avoid": [
+          "Single team only",
+          "Project stalled"
+        ]
+      }
+    },
+    {
+      "id": "csy_029",
+      "text": "How do you implement secure DevOps (DevSecOps)?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Security integrated into CI/CD",
+          "Automated security testing",
+          "Shift left culture",
+          "Metrics and dashboards"
+        ],
+        "strong_answer_signals": [
+          "Security automated in pipeline",
+          "Team adopted"
+        ],
+        "avoid": [
+          "Security only at the end"
+        ]
+      }
+    },
+    {
+      "id": "csy_030",
+      "text": "How do you handle privacy regulations (GDPR, CCPA)?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Data inventory and mapping",
+          "Consent mechanisms",
+          "Data subject rights process",
+          "DPO coordination"
+        ],
+        "strong_answer_signals": [
+          "Compliance achieved",
+          "User rights honored"
+        ],
+        "avoid": [
+          "No data inventory",
+          "Ignored user requests"
+        ]
+      }
+    },
+    {
+      "id": "csy_031",
+      "text": "Tell me about communicating security risk to non-technical leadership.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Translated technical risk to business impact",
+          "Prioritized with data",
+          "Recommended investment"
+        ],
+        "strong_answer_signals": [
+          "Leadership acted on risk",
+          "Budget approved"
+        ],
+        "avoid": [
+          "Too technical",
+          "No recommendation"
+        ]
+      }
+    },
+    {
+      "id": "csy_032",
+      "text": "Describe your approach to security architecture review.",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Architecture documentation review",
+          "Threat analysis",
+          "Control verification",
+          "Residual risk assessment"
+        ],
+        "strong_answer_signals": [
+          "Comprehensive review",
+          "Actionable findings"
+        ],
+        "avoid": [
+          "Shallow review",
+          "No follow-up"
+        ]
+      }
+    },
+    {
+      "id": "csy_033",
+      "text": "How do you implement a bug bounty or responsible disclosure program?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Scope defined",
+          "Reporting channel",
+          "Triaging process",
+          "Reward and recognition"
+        ],
+        "strong_answer_signals": [
+          "Vulnerabilities found ethically",
+          "Researchers engaged"
+        ],
+        "avoid": [
+          "No program",
+          "Legal threats to researchers"
+        ]
+      }
+    },
+    {
+      "id": "csy_034",
+      "text": "How do you ensure supply chain security?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Software bill of materials",
+          "Dependency scanning",
+          "Vendor assessment",
+          "Provenance verification"
+        ],
+        "strong_answer_signals": [
+          "SBOM maintained",
+          "Supply chain risks identified"
+        ],
+        "avoid": [
+          "No SBOM",
+          "Unverified dependencies"
+        ]
+      }
+    },
+    {
+      "id": "csy_035",
+      "text": "What is your approach to security governance and policy development?",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Policy framework",
+          "Stakeholder input",
+          "Regular review cycle",
+          "Enforcement mechanism"
+        ],
+        "strong_answer_signals": [
+          "Policies adopted",
+          "Compliance measured",
+          "Regular updates"
+        ],
+        "avoid": [
+          "Policies on paper only",
+          "No enforcement"
+        ]
+      }
+    }
+  ]
+}

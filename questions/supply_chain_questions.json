@@ -5,10 +5,10 @@
     "total": 46,
     "categories": [
       "behavioral",
-      "technical",
-      "situational",
+      "manager",
       "motivation",
-      "manager"
+      "situational",
+      "technical"
     ]
   },
   "questions": [
@@ -24,9 +24,9 @@
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Describe how you spotted the gap \u2014 data anomaly, cycle count, system vs physical discrepancy",
+          "Describe how you spotted the gap: data anomaly, cycle count, system vs physical discrepancy",
           "Explain the root cause you identified",
-          "Walk through your specific action \u2014 process change, system config, team training",
+          "Walk through your specific action, process change, system config, team training",
           "Quantify the result: shrinkage %, accuracy rate, time saved"
         ],
         "strong_answer_signals": [
@@ -52,7 +52,7 @@
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Set the stakes \u2014 what would have stopped if you did nothing",
+          "Set the stakes: what would have stopped if you did nothing",
           "Your immediate triage: what info did you need first",
           "How you sourced alternatives or negotiated partial delivery",
           "Communication to internal stakeholders throughout"
@@ -81,7 +81,7 @@
         "key_points": [
           "Name the stakeholders and their conflicting needs",
           "How you assessed which was truly urgent vs important",
-          "Communication approach \u2014 how you set expectations with each party",
+          "Communication approach: how you set expectations with each party",
           "Outcome and what you would do differently"
         ],
         "strong_answer_signals": [
@@ -108,7 +108,7 @@
         "key_points": [
           "What decision was being made and by whom",
           "What data you found that contradicted the current direction",
-          "How you presented it \u2014 to whom, in what format",
+          "How you presented it: to whom, in what format",
           "Result: was the decision changed? What was the impact?"
         ],
         "strong_answer_signals": [
@@ -134,7 +134,7 @@
         "structure": "STAR",
         "key_points": [
           "Scope of project and which functions were involved",
-          "Your specific role \u2014 did you have formal authority or not",
+          "Your specific role: did you have formal authority or not",
           "How you aligned different teams with different incentives",
           "Delivery outcome and lessons learned"
         ],
@@ -165,7 +165,7 @@
           "Gather market data: launch promotions, distribution plan, seasonal patterns",
           "Use qualitative input: sales team, marketing, customer commitments",
           "Set initial safety stock higher to absorb uncertainty, reduce as actuals come in",
-          "Establish a review cadence \u2014 weekly for first 90 days"
+          "Establish a review cadence: weekly for first 90 days"
         ],
         "strong_answer_signals": [
           "analogue method",
@@ -173,7 +173,7 @@
           "error tracking from day one"
         ],
         "avoid": [
-          "'I'd just use historical data' \u2014 there is none for new products",
+          "'I'd just use historical data': there is none for new products",
           "Not mentioning forecast error measurement"
         ]
       }
@@ -218,8 +218,8 @@
       "answer_framework": {
         "structure": "Formula + context",
         "key_points": [
-          "Reorder Point = (Average daily demand \u00d7 Lead time) + Safety stock",
-          "Safety stock = Z-score \u00d7 \u03c3(demand) \u00d7 \u221aLead time \u2014 for service level target",
+          "Reorder Point = (Average daily demand × Lead time) + Safety stock",
+          "Safety stock = Z-score × σ(demand) × √Lead time, for service level target",
           "Factors that change it: lead time variability, demand variability, service level target",
           "ABC classification to apply different service level targets by SKU importance",
           "Review cycle: how often do you recalculate as actuals change?"
@@ -246,9 +246,9 @@
       "answer_framework": {
         "structure": "Define + apply",
         "key_points": [
-          "A items: ~20% of SKUs, ~80% of value \u2014 tight control, frequent counts",
-          "B items: moderate value \u2014 standard controls",
-          "C items: high quantity, low value \u2014 bulk ordering, less frequent review",
+          "A items: ~20% of SKUs, ~80% of value, tight control, frequent counts",
+          "B items: moderate value: standard controls",
+          "C items: high quantity, low value, bulk ordering, less frequent review",
           "Can extend to XYZ for demand variability (X=stable, Z=erratic)",
           "Practical use: cycle count frequency, service level targets, reorder strategy"
         ],
@@ -273,7 +273,7 @@
       "answer_framework": {
         "structure": "Experience + critique",
         "key_points": [
-          "S&OP steps: demand review \u2192 supply review \u2192 pre-S&OP \u2192 executive S&OP",
+          "S&OP steps: demand review → supply review → pre-S&OP → executive S&OP",
           "Your specific role: data preparation, facilitation, or decision-making",
           "What worked: clear ownership, standardized data, pre-reads circulated in advance",
           "What didn't: siloed inputs, HiPPO decisions overriding data, no action tracking"
@@ -300,8 +300,8 @@
       "answer_framework": {
         "structure": "Metrics + response process",
         "key_points": [
-          "MAPE: mean absolute percentage error \u2014 good for comparison across SKUs",
-          "WMAPE: weighted by revenue \u2014 avoids low-volume SKU noise",
+          "MAPE: mean absolute percentage error, good for comparison across SKUs",
+          "WMAPE: weighted by revenue: avoids low-volume SKU noise",
           "Bias: are you consistently over or under forecasting?",
           "Root cause analysis: new competitor, promo not captured, seasonality shift",
           "Corrective actions: model recalibration, adding causal variables, consensus adjustment"
@@ -341,7 +341,7 @@
         ],
         "avoid": [
           "Listing tools without explaining how you used them",
-          "Overstating experience \u2014 interviewers probe deeply"
+          "Overstating experience: interviewers probe deeply"
         ]
       }
     },
@@ -356,10 +356,10 @@
       "answer_framework": {
         "structure": "Levers + trade-offs",
         "key_points": [
-          "Improve forecast accuracy \u2192 reduce safety stock needed",
+          "Improve forecast accuracy → reduce safety stock needed",
           "Reduce lead time variability through supplier collaboration",
           "Implement vendor-managed inventory (VMI) for C-items",
-          "Review min/max and reorder points \u2014 many are set and forgotten",
+          "Review min/max and reorder points, many are set and forgotten",
           "Consignment stock for slow-moving high-value items"
         ],
         "strong_answer_signals": [
@@ -368,7 +368,7 @@
           "mentions supplier collaboration not just internal levers"
         ],
         "avoid": [
-          "Just saying 'order less' \u2014 misses the service level trade-off",
+          "Just saying 'order less': misses the service level trade-off",
           "Not addressing the stockout risk explicitly"
         ]
       }
@@ -387,11 +387,11 @@
           "Discovery: current state pain points, data availability, integration landscape",
           "Requirements: user stories from planners, finance, sales",
           "Data readiness: cleanliness, history length, master data governance",
-          "Pilot: one product family, one region first \u2014 measure before scaling",
+          "Pilot: one product family, one region first, measure before scaling",
           "Change management: training, champion network, parallel run period"
         ],
         "strong_answer_signals": [
-          "data readiness first \u2014 most implementations fail here",
+          "data readiness first: most implementations fail here",
           "mentions parallel run",
           "change management is not an afterthought"
         ],
@@ -443,7 +443,7 @@
         "key_points": [
           "Triage by impact: which stockout causes the most business damage",
           "Check if any can be partially fulfilled to buy time",
-          "Communicate immediately \u2014 do not let the miss be a surprise",
+          "Communicate immediately: do not let the miss be a surprise",
           "Escalate if the trade-off is above your authority",
           "Document the decision and rationale"
         ],
@@ -470,8 +470,8 @@
         "structure": "Diagnostic process",
         "key_points": [
           "First: is the data input correct? Check for feed errors or master data changes",
-          "Look at bias direction \u2014 consistently over or under?",
-          "Segment by product, region, channel \u2014 where is the miss concentrated?",
+          "Look at bias direction: consistently over or under?",
+          "Segment by product, region, channel, where is the miss concentrated?",
           "External drivers: competitor entry, economic shift, channel mix change",
           "Short-term: override manually with judgment; long-term: recalibrate model"
         ],
@@ -499,7 +499,7 @@
         "structure": "Mediation + data-driven decision",
         "key_points": [
           "Ask sales for the specifics: committed PO or optimistic projection?",
-          "Model two scenarios: base case and upside case \u2014 show the inventory risk of each",
+          "Model two scenarios: base case and upside case, show the inventory risk of each",
           "Present the financial cost of being wrong in both directions",
           "Recommend a consensus position with a trigger point to act on the upside",
           "Get alignment in writing before committing supply"
@@ -526,7 +526,7 @@
       "answer_framework": {
         "structure": "Investigation + resolution",
         "key_points": [
-          "Recount first \u2014 rule out counting error",
+          "Recount first: rule out counting error",
           "Check recent transactions: receipts, shipments, transfers, adjustments",
           "Look for timing issues: in-transit not yet received, goods in quarantine",
           "If confirmed: write-off or adjustment with approval, update system",
@@ -558,7 +558,7 @@
           "Quick wins: liquidate obsolete stock, cancel open POs where possible",
           "Demand signal review: are min/max parameters still correct?",
           "Supplier negotiations: reduce order quantities, increase frequency",
-          "Monitor service level weekly \u2014 stop reduction if fill rate degrades"
+          "Monitor service level weekly: stop reduction if fill rate degrades"
         ],
         "strong_answer_signals": [
           "starts with data not with targets",
@@ -615,10 +615,10 @@
           "Balance: service level (fill rate, OTIF) alongside cost (inventory turns, carrying cost)",
           "Visibility: knowing what's happening before it becomes a problem",
           "Resilience: can the chain absorb disruption without catastrophic failure",
-          "Collaboration: internal alignment between sales, ops, finance \u2014 not siloed optimization"
+          "Collaboration: internal alignment between sales, ops, finance, not siloed optimization"
         ],
         "strong_answer_signals": [
-          "mentions both service AND cost \u2014 not just one",
+          "mentions both service AND cost: not just one",
           "talks about resilience not just efficiency",
           "cross-functional framing"
         ],
@@ -640,9 +640,9 @@
       "answer_framework": {
         "structure": "Showcase story",
         "key_points": [
-          "Choose a problem with real stakes \u2014 revenue, service, or cost impact",
+          "Choose a problem with real stakes, revenue, service, or cost impact",
           "Explain why it was complex: multiple variables, stakeholders, or unknowns",
-          "Walk through your approach \u2014 not just what you did but how you thought",
+          "Walk through your approach: not just what you did but how you thought",
           "Quantify the outcome and reflect on what you'd do differently"
         ],
         "strong_answer_signals": [
@@ -697,7 +697,7 @@
           "Model the ROI: conservative, base, and upside scenario",
           "Address risk: implementation risk, change management, data readiness",
           "Find an internal champion in finance or operations",
-          "Propose a pilot first \u2014 reduces commitment anxiety"
+          "Propose a pilot first: reduces commitment anxiety"
         ],
         "strong_answer_signals": [
           "ROI in $ not just % improvement",
@@ -720,11 +720,11 @@
       "answer_framework": {
         "structure": "Governance + relationship",
         "key_points": [
-          "Establish a structured consensus process \u2014 not a negotiation, a data review",
+          "Establish a structured consensus process, not a negotiation, a data review",
           "Show sales the cost of over-forecasting: write-offs, working capital tied up",
           "Create shared accountability: if sales commits to a number, they own it",
-          "Track and publish forecast accuracy by input source \u2014 transparency reduces gaming",
-          "Build the relationship outside the forecast meeting \u2014 trust reduces politics"
+          "Track and publish forecast accuracy by input source, transparency reduces gaming",
+          "Build the relationship outside the forecast meeting, trust reduces politics"
         ],
         "strong_answer_signals": [
           "shared accountability mechanism",
@@ -749,7 +749,7 @@
         "structure": "STAR",
         "key_points": [
           "Name the KPI and why it had been difficult to move",
-          "Describe your diagnostic approach \u2014 what had been tried before",
+          "Describe your diagnostic approach, what had been tried before",
           "Explain your specific intervention and why it was different",
           "Quantify the improvement and how long it held"
         ],
@@ -804,8 +804,8 @@
         "structure": "STAR",
         "key_points": [
           "What was being asked and why it was problematic",
-          "How you prepared your case \u2014 data, alternatives, risk framing",
-          "How you delivered the pushback \u2014 timing, tone, setting",
+          "How you prepared your case: data, alternatives, risk framing",
+          "How you delivered the pushback: timing, tone, setting",
           "The outcome and what you learned about managing upward"
         ],
         "strong_answer_signals": [
@@ -815,7 +815,7 @@
         ],
         "avoid": [
           "Framing it as 'I was right, they were wrong'",
-          "Never having pushed back \u2014 raises a red flag"
+          "Never having pushed back: raises a red flag"
         ]
       }
     },
@@ -832,8 +832,8 @@
         "structure": "STAR",
         "key_points": [
           "What type of error: data entry, system, process, forecast",
-          "How you caught it \u2014 routine check, anomaly detection, gut instinct confirmed by data",
-          "What would have happened if uncaught \u2014 quantify the risk",
+          "How you caught it: routine check, anomaly detection, gut instinct confirmed by data",
+          "What would have happened if uncaught, quantify the risk",
           "What process change you put in place to prevent recurrence"
         ],
         "strong_answer_signals": [
@@ -858,7 +858,7 @@
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Describe the difficulty specifically \u2014 different priorities, communication style, or conflict of interest",
+          "Describe the difficulty specifically, different priorities, communication style, or conflict of interest",
           "How you adjusted your approach to work with them",
           "What compromises or trade-offs were made",
           "Outcome and whether the relationship improved"
@@ -885,11 +885,11 @@
       "answer_framework": {
         "structure": "Define + improve",
         "key_points": [
-          "OTIF = On Time In Full \u2014 % of orders delivered complete and on schedule",
+          "OTIF = On Time In Full, % of orders delivered complete and on schedule",
           "Decompose: is the issue On Time, In Full, or both? They have different root causes",
           "On Time failures: lead time miscalculation, carrier issues, production delays",
           "In Full failures: inventory shortage, picking errors, supplier partial shipments",
-          "Fix cycle: measure by SKU, lane, and carrier \u2014 address the biggest buckets first"
+          "Fix cycle: measure by SKU, lane, and carrier, address the biggest buckets first"
         ],
         "strong_answer_signals": [
           "separates OT from IF root causes",
@@ -913,7 +913,7 @@
       "answer_framework": {
         "structure": "Compare",
         "key_points": [
-          "MPS (Master Production Schedule): what finished goods to produce and when \u2014 driven by demand forecast and orders",
+          "MPS (Master Production Schedule): what finished goods to produce and when, driven by demand forecast and orders",
           "MRP (Material Requirements Planning): what components and raw materials are needed to support the MPS",
           "MPS is the input; MRP is the explosion downstream",
           "MPS is used by planning and sales; MRP is used by procurement and production",
@@ -997,7 +997,7 @@
         "structure": "Identify + disposition",
         "key_points": [
           "Definition: slow-moving = below X turns/year; obsolete = end-of-life or superseded",
-          "Identification: run regular aging reports \u2014 flag items with no movement > 90/180 days",
+          "Identification: run regular aging reports, flag items with no movement > 90/180 days",
           "Disposition options: liquidation, return to supplier, donation, redeployment, write-off",
           "Prevention: better new product launch forecasting, min order quantity negotiation, shorter replenishment cycles",
           "Finance partnership: provision early to avoid year-end surprises"
@@ -1024,11 +1024,11 @@
       "answer_framework": {
         "structure": "Design blueprint",
         "key_points": [
-          "Step 1: Data review \u2014 statistical baseline, actuals vs forecast, inventory position",
-          "Step 2: Demand review \u2014 sales and marketing input, assumptions documented",
-          "Step 3: Supply review \u2014 capacity, supplier constraints, production plan",
-          "Step 4: Pre-S&OP \u2014 align finance, resolve gaps, escalate unresolved issues",
-          "Step 5: Executive S&OP \u2014 decision-making, investment calls, strategic alignment",
+          "Step 1: Data review: statistical baseline, actuals vs forecast, inventory position",
+          "Step 2: Demand review: sales and marketing input, assumptions documented",
+          "Step 3: Supply review: capacity, supplier constraints, production plan",
+          "Step 4: Pre-S&OP: align finance, resolve gaps, escalate unresolved issues",
+          "Step 5: Executive S&OP: decision-making, investment calls, strategic alignment",
           "Key success factors: pre-reads sent 48h in advance, decisions logged, action tracker maintained"
         ],
         "strong_answer_signals": [
@@ -1053,7 +1053,7 @@
       "answer_framework": {
         "structure": "Structure + optimization",
         "key_points": [
-          "Multi-echelon: central DC \u2192 regional DC \u2192 store/customer \u2014 each level holds stock",
+          "Multi-echelon: central DC → regional DC → store/customer: each level holds stock",
           "Challenge: optimizing total system inventory, not just each node in isolation",
           "Key principle: safety stock should be held at the right echelon based on lead time and variability",
           "Techniques: inventory positioning analysis, postponement strategy, lateral transshipment",
@@ -1081,10 +1081,10 @@
       "answer_framework": {
         "structure": "Crisis response plan",
         "key_points": [
-          "Immediate: lock in any available supply \u2014 buy forward if economics allow",
+          "Immediate: lock in any available supply, buy forward if economics allow",
           "Triage demand: which customers or products are highest priority?",
           "Explore substitutes: engineering or procurement review of alternative materials",
-          "Communicate: sales, operations, and leadership need to know now \u2014 not when stock runs out",
+          "Communicate: sales, operations, and leadership need to know now, not when stock runs out",
           "Build a daily tracker: supply remaining, consumption rate, projected stockout date"
         ],
         "strong_answer_signals": [
@@ -1141,7 +1141,7 @@
         "structure": "Evidence-based escalation",
         "key_points": [
           "Build the model: project service level at the proposed inventory level using historical demand variability",
-          "Quantify the revenue at risk from stockouts \u2014 in dollars finance understands",
+          "Quantify the revenue at risk from stockouts, in dollars finance understands",
           "Present two scenarios: hit the target and risk X in lost sales vs hold inventory and carry Y in cost",
           "Propose an alternative: reduce non-peak items, not peak-season critical SKUs",
           "Escalate with a recommendation, not just a problem"
@@ -1169,10 +1169,10 @@
       "answer_framework": {
         "structure": "90-day roadmap",
         "key_points": [
-          "Days 1-30: listen and learn \u2014 understand why it's manual, what pain points exist, where the data lives",
-          "Days 31-60: quick wins \u2014 standardize the Excel model, document the process, fix obvious data quality issues",
-          "Days 60-90: build the business case for a planning tool \u2014 quantify planner time, error rate, missed signals",
-          "Don't implement a system in 90 days \u2014 earn trust first, fix the data, then automate"
+          "Days 1-30: listen and learn: understand why it's manual, what pain points exist, where the data lives",
+          "Days 31-60: quick wins: standardize the Excel model, document the process, fix obvious data quality issues",
+          "Days 60-90: build the business case for a planning tool, quantify planner time, error rate, missed signals",
+          "Don't implement a system in 90 days, earn trust first, fix the data, then automate"
         ],
         "strong_answer_signals": [
           "diagnosis before action",
@@ -1256,7 +1256,7 @@
           "Team KPIs: WMAPE by planner, forecast bias, on-time completion of planning cycle",
           "Individual development: skill matrix updated quarterly, training tied to gaps",
           "Review cadence: weekly accuracy review, monthly retrospective on biggest misses",
-          "Recognition: celebrate when a difficult forecast was accurate \u2014 not just when it was easy",
+          "Recognition: celebrate when a difficult forecast was accurate, not just when it was easy",
           "Accountability: if a planner's number is consistently off, diagnose together before judging"
         ],
         "strong_answer_signals": [
@@ -1281,7 +1281,7 @@
         "structure": "Change management",
         "key_points": [
           "Understand the resistance first: fear of job loss, distrust of the tool, extra workload perception",
-          "Find early adopters \u2014 get them results first, let them be advocates",
+          "Find early adopters: get them results first, let them be advocates",
           "Show the 'what's in it for me': less firefighting, more strategic work, better data",
           "Train in small groups with real data, not generic demos",
           "Track adoption metrics and celebrate progress publicly"

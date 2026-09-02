@@ -1,0 +1,528 @@
+{
+  "questions": [
+    {
+      "id": "pmk_001",
+      "answer_framework": {
+        "avoid": [
+          "Vague descriptions without specific tactics",
+          "Blaming competitor for your challenges",
+          "Focusing only on features rather than customer value"
+        ],
+        "key_points": [
+          "Identified competitive landscape and key differentiators",
+          "Developed unique value proposition based on customer insights",
+          "Aligned messaging with target buyer personas",
+          "Created competitive battlecard strategy"
+        ],
+        "structure": "STAR",
+        "strong_answer_signals": [
+          "Demonstrates analytical thinking about competitive positioning",
+          "Shows understanding of customer pain points",
+          "Includes measurable outcomes like pipeline or win rate improvement"
+        ]
+      },
+      "category": "behavioral",
+      "text": "Describe a time when you had to position a product against a well-established competitor. How did you differentiate and win market share?",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ]
+    },
+    {
+      "id": "pmk_002",
+      "answer_framework": {
+        "avoid": [
+          "Generic cost-plus pricing approach",
+          "Ignoring competitive landscape",
+          "No mention of customer value metrics"
+        ],
+        "key_points": [
+          "Conduct value-based pricing analysis tied to customer ROI",
+          "Analyze competitor pricing tiers and positioning",
+          "Factor in customer willingness to pay research",
+          "Consider packaging tiers and monetization models"
+        ],
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Mentions value-based pricing methodology",
+          "Discusses bundling or packaging strategies",
+          "References data-driven pricing experiments"
+        ]
+      },
+      "category": "technical",
+      "text": "How do you determine pricing strategy for a new SaaS product entering a competitive market?",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ]
+    },
+    {
+      "id": "pmk_003",
+      "answer_framework": {
+        "key_points": [
+          "Authentic connection to the intersection of product and customer",
+          "Passion for storytelling that drives business outcomes",
+          "Interest in data-driven decision making",
+          "Desire to be the voice of the customer internally"
+        ],
+        "structure": "STAR",
+        "strong_answer_signals": [
+          "Articulates unique value of product marketing role",
+          "Shows enthusiasm for both creative and analytical work",
+          "Demonstrates understanding of PMM impact on business"
+        ]
+      },
+      "category": "motivation",
+      "text": "Why did you choose a career in product marketing, and what draws you to this field?",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "id": "pmk_004",
+      "answer_framework": {
+        "avoid": [
+          "One-time training without ongoing support",
+          "Creating materials without sales input",
+          "Focusing only on feature descriptions"
+        ],
+        "key_points": [
+          "Develop sales enablement materials including battle cards and objection handling guides",
+          "Create demo scripts and value proposition statements",
+          "Build ROI calculators and case studies",
+          "Conduct win/loss analysis to understand gaps"
+        ],
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Prioritizes sales-collaboration approach",
+          "Creates scalable enablement materials",
+          "Addresses specific enterprise buyer concerns"
+        ]
+      },
+      "category": "situational",
+      "text": "Your sales team is struggling to communicate the value of a new feature to enterprise buyers. How would you help them?",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ]
+    },
+    {
+      "id": "pmk_005",
+      "answer_framework": {
+        "key_points": [
+          "Aligned cross-functional teams on launch timeline and messaging",
+          "Developed integrated marketing plan across channels",
+          "Created feedback loops for rapid iteration",
+          "Measured and communicated success metrics clearly"
+        ],
+        "structure": "STAR",
+        "strong_answer_signals": [
+          "Demonstrates end-to-end launch ownership",
+          "Shows cross-functional collaboration skills",
+          "Includes measurable outcomes and learnings"
+        ]
+      },
+      "category": "behavioral",
+      "text": "Tell me about a product launch that exceeded expectations. What was your role and what made it successful?",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ]
+    },
+    {
+      "id": "pmk_006",
+      "answer_framework": {
+        "key_points": [
+          "Conduct customer interviews and surveys for primary research",
+          "Analyze buying patterns and engagement data",
+          "Map stakeholder influences and decision-making processes",
+          "Create persona documents with goals, pain points, and triggers"
+        ],
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Uses data-driven persona development approach",
+          "Differentiates between economic buyer and end user",
+          "Shows understanding of enterprise buying committees"
+        ]
+      },
+      "category": "technical",
+      "text": "How do you develop customer personas for a B2B SaaS product with multiple buyer types?",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ]
+    },
+    {
+      "id": "pmk_007",
+      "answer_framework": {
+        "key_points": [
+          "Appreciation for fast-paced product iteration",
+          "Interest in subscription business models and customer success",
+          "Excited by data-driven marketing in digital-first environments",
+          "Value of continuous customer engagement"
+        ],
+        "structure": "STAR",
+        "strong_answer_signals": [
+          "Understands SaaS-specific metrics like churn and LTV",
+          "Shows passion for product-led growth strategies",
+          "Articulates differences from traditional product marketing"
+        ]
+      },
+      "category": "motivation",
+      "text": "What attracts you to working in product marketing at a SaaS company specifically?",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "id": "pmk_008",
+      "answer_framework": {
+        "key_points": [
+          "Immediately assess impact on launch plan and messaging",
+          "Develop contingency messaging for internal and external stakeholders",
+          "Coordinate with product and sales on revised timeline",
+          "Implement damage control while maintaining credibility"
+        ],
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Demonstrates crisis communication skills",
+          "Balances transparency with strategic messaging",
+          "Shows ability to lead cross-functional response"
+        ]
+      },
+      "category": "situational",
+      "text": "During a product launch, you discover a major feature will be delayed by 2 weeks. How do you manage this?",
+      "seniority": [
+        "senior",
+        "manager"
+      ]
+    },
+    {
+      "id": "pmk_009",
+      "answer_framework": {
+        "key_points": [
+          "Define market opportunity and segmentation",
+          "Identify competitive dynamics in new segment",
+          "Adapt positioning and messaging for new audience",
+          "Develop channel strategy and pricing localization"
+        ],
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Shows systematic approach to market expansion",
+          "Considers regulatory and localization factors",
+          "Includes demand generation strategy"
+        ]
+      },
+      "category": "technical",
+      "text": "Walk me through how you would create a go-to-market strategy for an existing product expanding to a new market segment.",
+      "seniority": [
+        "senior",
+        "manager"
+      ]
+    },
+    {
+      "id": "pmk_010",
+      "answer_framework": {
+        "key_points": [
+          "Align feature prioritization with customer pain points and value",
+          "Consider market timing and competitive landscape",
+          "Evaluate business impact and revenue potential",
+          "Balance short-term wins with strategic positioning"
+        ],
+        "structure": "STAR",
+        "strong_answer_signals": [
+          "Uses data-driven prioritization framework",
+          "Considers both customer needs and business goals",
+          "Demonstrates strategic thinking about feature marketing"
+        ]
+      },
+      "category": "behavioral",
+      "text": "How do you prioritize which features to highlight in your product marketing campaigns?",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "id": "pmk_011",
+      "answer_framework": {
+        "key_points": [
+          "Create core value proposition with modular messaging components",
+          "Map messaging to buyer journey stages (awareness, consideration, decision)",
+          "Develop persona-specific messaging variants",
+          "Test and iterate based on engagement metrics"
+        ],
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Demonstrates understanding of buyer psychology",
+          "Creates scalable and adaptable messaging systems",
+          "Shows measurement mindset for messaging effectiveness"
+        ]
+      },
+      "category": "technical",
+      "text": "Describe your approach to developing messaging frameworks that resonate with different buyer stages.",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ]
+    },
+    {
+      "id": "pmk_012",
+      "answer_framework": {
+        "key_points": [
+          "Growth trajectory aligned with skills and interests",
+          "Interest in leadership and team development",
+          "Desire to tackle larger strategic challenges",
+          "Commitment to staying current with industry trends"
+        ],
+        "structure": "STAR",
+        "strong_answer_signals": [
+          "Realistic yet ambitious career goals",
+          "Shows self-awareness of development areas",
+          "Articulates value they want to create"
+        ]
+      },
+      "category": "motivation",
+      "text": "Where do you see your product marketing career in five years?",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "id": "pmk_013",
+      "answer_framework": {
+        "key_points": [
+          "Assess validity of concerns and gather internal feedback",
+          "Develop response strategy with product and leadership",
+          "Engage analyst relations with constructive dialogue",
+          "Amplify positive analyst relationships to balance narrative"
+        ],
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Remains calm and strategic under pressure",
+          "Shows understanding of analyst relations importance",
+          "Turns negative into improvement opportunity"
+        ]
+      },
+      "category": "situational",
+      "text": "A key analyst has published a negative review of your product. How do you respond?",
+      "seniority": [
+        "senior",
+        "manager"
+      ]
+    },
+    {
+      "id": "pmk_014",
+      "answer_framework": {
+        "key_points": [
+          "Define measurable objectives tied to business outcomes",
+          "Track pipeline influence and conversion rates",
+          "Measure brand awareness and consideration metrics",
+          "Report on revenue attribution and marketing ROI"
+        ],
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Focuses on revenue-impacting metrics",
+          "Creates measurement frameworks before campaigns",
+          "Shows sophistication in attribution modeling"
+        ]
+      },
+      "category": "technical",
+      "text": "How do you measure the success of your product marketing initiatives beyond vanity metrics?",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ]
+    },
+    {
+      "id": "pmk_015",
+      "answer_framework": {
+        "key_points": [
+          "Built business case with data and customer insights",
+          "Addressed stakeholder concerns through targeted messaging",
+          "Facilitated workshops to align on common vision",
+          "Created feedback mechanisms for ongoing alignment"
+        ],
+        "structure": "STAR",
+        "strong_answer_signals": [
+          "Demonstrates influence without authority skills",
+          "Shows data-driven persuasion approach",
+          "Achieves buy-in while respecting different perspectives"
+        ]
+      },
+      "category": "behavioral",
+      "text": "Tell me about a time you had to convince stakeholders to adopt your product positioning. How did you build consensus?",
+      "seniority": [
+        "senior",
+        "manager"
+      ]
+    },
+    {
+      "id": "pmk_016",
+      "answer_framework": {
+        "key_points": [
+          "Develop content that supports buyer journey stages",
+          "Create thought leadership to build credibility",
+          "Leverage content for SEO and organic discovery",
+          "Repurpose content across channels for efficiency"
+        ],
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Connects content to revenue outcomes",
+          "Shows understanding of content distribution strategy",
+          "Demonstrates content measurement approach"
+        ]
+      },
+      "category": "technical",
+      "text": "What role does content marketing play in your product marketing strategy?",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "id": "pmk_017",
+      "answer_framework": {
+        "key_points": [
+          "Develop pre-event buzz and teaser campaigns",
+          "Create on-site activation and demo strategy",
+          "Plan media and analyst briefings",
+          "Execute social proof and live content amplification"
+        ],
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Shows end-to-end event marketing expertise",
+          "Balances owned and earned media strategy",
+          "Demonstrates measurement plan for event impact"
+        ]
+      },
+      "category": "situational",
+      "text": "How would you plan marketing for a major product announcement at an industry conference?",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ]
+    },
+    {
+      "id": "pmk_018",
+      "answer_framework": {
+        "key_points": [
+          "Identify high-value channel partners and co-marketing opportunities",
+          "Develop partner-specific messaging and materials",
+          "Create enablement programs for channel sales teams",
+          "Measure channel performance and ROI"
+        ],
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Shows ecosystem thinking beyond direct sales",
+          "Creates scalable partner support programs",
+          "Demonstrates channel attribution capabilities"
+        ]
+      },
+      "category": "technical",
+      "text": "Describe your approach to channel marketing and partner enablement for product distribution.",
+      "seniority": [
+        "senior",
+        "manager"
+      ]
+    },
+    {
+      "id": "pmk_019",
+      "answer_framework": {
+        "key_points": [
+          "Ability to translate between technical and business language",
+          "Strong storytelling skills that inspire action",
+          "Data-driven decision making with creative flair",
+          "Building relationships across product, sales, and marketing"
+        ],
+        "structure": "STAR",
+        "strong_answer_signals": [
+          "Articulates leadership philosophy with examples",
+          "Shows emotional intelligence and communication skills",
+          "Demonstrates strategic impact through influence"
+        ]
+      },
+      "category": "motivation",
+      "text": "What makes a product marketing leader effective in driving cross-functional success?",
+      "seniority": [
+        "senior",
+        "manager"
+      ]
+    },
+    {
+      "id": "pmk_020",
+      "answer_framework": {
+        "key_points": [
+          "Conduct regular competitive research and win/loss analysis",
+          "Structure battlecards with actionable sales plays",
+          "Make battlecards accessible and easy to reference",
+          "Establish update cadence and ownership with sales"
+        ],
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Creates battlecards that drive sales conversations",
+          "Shows ongoing maintenance and adoption tracking",
+          "Demonstrates collaboration with sales enablement"
+        ]
+      },
+      "category": "technical",
+      "text": "How do you develop and maintain competitive battlecards that the sales team will actually use?",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ]
+    }
+  ],
+  "metadata": {
+    "sectors": [
+      "go-to-market strategy",
+      "product positioning",
+      "competitive analysis",
+      "messaging framework",
+      "launch planning",
+      "sales enablement",
+      "product marketing for SaaS",
+      "pricing strategy",
+      "packaging",
+      "customer persona development",
+      "product marketing analytics",
+      "content marketing for products",
+      "event marketing",
+      "influencer/analyst relations",
+      "product storytelling",
+      "feature launches",
+      "competitive battlecards",
+      "buyer journey mapping",
+      "channel marketing",
+      "product marketing career path"
+    ],
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "motivation",
+      "situational",
+      "technical"
+    ],
+    "generated": "2026-08-30",
+    "total": 20,
+    "sector": "Product Marketing"
+  }
+}

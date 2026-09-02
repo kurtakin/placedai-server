@@ -3,21 +3,27 @@
     "sector": "Universal Behavioral",
     "generated": "2026-04-14",
     "total": 108,
-    "categories": ["behavioral"]
+    "categories": [
+      "behavioral"
+    ]
   },
   "questions": [
     {
       "id": "ub_001",
       "category": "behavioral",
-      "seniority": ["mid", "senior", "manager"],
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "Tell me about a time you led a team through a difficult or ambiguous situation.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the ambiguity or complexity (unclear goals, conflicting information, high stakes)",
-          "Task — explain your role and what was at stake for the team or business",
-          "Action — walk through how you brought clarity (communicated vision, broke down the problem, involved team in problem-solving)",
-          "Result — quantify the outcome and the team's response (alignment achieved, deadline met, morale restored)"
+          "Situation: describe the ambiguity or complexity (unclear goals, conflicting information, high stakes)",
+          "Task: explain your role and what was at stake for the team or business",
+          "Action: walk through how you brought clarity (communicated vision, broke down the problem, involved team in problem-solving)",
+          "Result: quantify the outcome and the team's response (alignment achieved, deadline met, morale restored)"
         ],
         "strong_answer_signals": [
           "Demonstrated psychological safety by inviting input despite uncertainty",
@@ -34,15 +40,19 @@
     {
       "id": "ub_002",
       "category": "behavioral",
-      "seniority": ["mid", "senior", "manager"],
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "Describe a time you had to make a difficult decision with limited information.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — explain what information was missing and why you couldn't wait (time pressure, market window, stakeholder expectations)",
-          "Task — describe your role and what hinged on the decision",
-          "Action — walk through your decision-making process (what data you gathered quickly, how you managed risk, who you consulted)",
-          "Result — share the outcome and what you learned about decision-making under uncertainty"
+          "Situation: explain what information was missing and why you couldn't wait (time pressure, market window, stakeholder expectations)",
+          "Task: describe your role and what hinged on the decision",
+          "Action: walk through your decision-making process (what data you gathered quickly, how you managed risk, who you consulted)",
+          "Result: share the outcome and what you learned about decision-making under uncertainty"
         ],
         "strong_answer_signals": [
           "Gathered available data quickly rather than being paralyzed",
@@ -59,15 +69,18 @@
     {
       "id": "ub_003",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you had to influence people who did not report to you.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — explain the context (cross-functional, peer, stakeholder outside your chain of command)",
-          "Task — describe what you needed them to do and what resistance or misalignment existed",
-          "Action — detail your influence tactics (built a business case, found common ground, demonstrated benefits, involved them in design)",
-          "Result — share the concrete outcome and how the relationship evolved"
+          "Situation: explain the context (cross-functional, peer, stakeholder outside your chain of command)",
+          "Task: describe what you needed them to do and what resistance or misalignment existed",
+          "Action: detail your influence tactics (built a business case, found common ground, demonstrated benefits, involved them in design)",
+          "Result: share the concrete outcome and how the relationship evolved"
         ],
         "strong_answer_signals": [
           "Used data and business logic rather than authority to persuade",
@@ -84,15 +97,19 @@
     {
       "id": "ub_004",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Describe a situation where you took ownership of a problem that was not technically yours to solve.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — explain what the problem was and why it wasn't your responsibility (different team, department, or role)",
-          "Task — describe the impact if it remained unsolved and why you felt compelled to act",
-          "Action — walk through the steps you took to solve it (investigated root cause, coordinated across teams, took initiative)",
-          "Result — quantify the impact and the recognition or learning you gained"
+          "Situation: explain what the problem was and why it wasn't your responsibility (different team, department, or role)",
+          "Task: describe the impact if it remained unsolved and why you felt compelled to act",
+          "Action: walk through the steps you took to solve it (investigated root cause, coordinated across teams, took initiative)",
+          "Result: quantify the impact and the recognition or learning you gained"
         ],
         "strong_answer_signals": [
           "Identified a gap and stepped in without being asked",
@@ -109,15 +126,18 @@
     {
       "id": "ub_005",
       "category": "behavioral",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "Tell me about a time you had to rally a discouraged or underperforming team.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the state of the team (morale, performance metrics, what caused the decline)",
-          "Task — explain your goal and the stakes of not turning it around",
-          "Action — outline your rallying approach (reset goals, addressed root causes, rebuilt confidence, celebrated wins)",
-          "Result — share concrete metrics (engagement scores, retention, performance improvement)"
+          "Situation: describe the state of the team (morale, performance metrics, what caused the decline)",
+          "Task: explain your goal and the stakes of not turning it around",
+          "Action: outline your rallying approach (reset goals, addressed root causes, rebuilt confidence, celebrated wins)",
+          "Result: share concrete metrics (engagement scores, retention, performance improvement)"
         ],
         "strong_answer_signals": [
           "Diagnosed the true cause of low morale, not just symptoms",
@@ -134,15 +154,18 @@
     {
       "id": "ub_006",
       "category": "behavioral",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "Describe a time you had to set a new direction for a team and bring everyone on board.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — explain why a change in direction was necessary (market shift, strategy pivot, performance data)",
-          "Task — describe your challenge in bringing the team along (resistance, uncertainty, loss aversion)",
-          "Action — detail how you communicated the vision (compelling narrative, involved team in planning, addressed concerns)",
-          "Result — share adoption metrics and business impact of the new direction"
+          "Situation: explain why a change in direction was necessary (market shift, strategy pivot, performance data)",
+          "Task: describe your challenge in bringing the team along (resistance, uncertainty, loss aversion)",
+          "Action: detail how you communicated the vision (compelling narrative, involved team in planning, addressed concerns)",
+          "Result: share adoption metrics and business impact of the new direction"
         ],
         "strong_answer_signals": [
           "Communicated both the why and the how with clarity and urgency",
@@ -159,15 +182,19 @@
     {
       "id": "ub_007",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you demonstrated leadership without having a formal title or authority.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the context (peer, junior, working group, crisis) and what opportunity or need you saw",
-          "Task — explain what leadership was needed and why you stepped up despite having no formal role",
-          "Action — walk through how you led (influenced, coordinated, inspired, made decisions) without authority",
-          "Result — share the outcome and how others responded to your informal leadership"
+          "Situation: describe the context (peer, junior, working group, crisis) and what opportunity or need you saw",
+          "Task: explain what leadership was needed and why you stepped up despite having no formal role",
+          "Action: walk through how you led (influenced, coordinated, inspired, made decisions) without authority",
+          "Result: share the outcome and how others responded to your informal leadership"
         ],
         "strong_answer_signals": [
           "Earned credibility and followership through competence and trustworthiness",
@@ -184,15 +211,18 @@
     {
       "id": "ub_008",
       "category": "behavioral",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "Describe a situation where you had to step back and let your team lead.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — explain the circumstance (developing team member, delegation, team capability building)",
-          "Task — describe what you resisted or found difficult about stepping back",
-          "Action — detail how you created space for the team to lead (provided guardrails, stayed available but hands-off, provided feedback)",
-          "Result — share the team's growth and the business outcome they achieved"
+          "Situation: explain the circumstance (developing team member, delegation, team capability building)",
+          "Task: describe what you resisted or found difficult about stepping back",
+          "Action: detail how you created space for the team to lead (provided guardrails, stayed available but hands-off, provided feedback)",
+          "Result: share the team's growth and the business outcome they achieved"
         ],
         "strong_answer_signals": [
           "Deliberately chose to develop team capability over short-term efficiency",
@@ -209,15 +239,18 @@
     {
       "id": "ub_009",
       "category": "behavioral",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "Tell me about a time you had to hold someone accountable for poor performance.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the performance issue and its impact (missed deadlines, quality, collaboration, results)",
-          "Task — explain why direct accountability was necessary and the stakes",
-          "Action — walk through how you addressed it (documented, communicated expectations, provided support, escalated if needed)",
-          "Result — share the outcome (improved performance, departure, or learning for both parties)"
+          "Situation: describe the performance issue and its impact (missed deadlines, quality, collaboration, results)",
+          "Task: explain why direct accountability was necessary and the stakes",
+          "Action: walk through how you addressed it (documented, communicated expectations, provided support, escalated if needed)",
+          "Result: share the outcome (improved performance, departure, or learning for both parties)"
         ],
         "strong_answer_signals": [
           "Clear documentation and fair process throughout",
@@ -234,15 +267,20 @@
     {
       "id": "ub_010",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior", "manager"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "Describe how you build trust quickly when joining a new team or starting a new role.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the new role or team context (joined externally, moved internally, high pressure, skeptical team)",
-          "Task — explain the challenge (unfamiliar environment, need to prove capability, earn credibility)",
-          "Action — detail your trust-building approach (listened first, delivered early wins, kept commitments, showed vulnerability)",
-          "Result — share metrics of trust and acceptance (speed to influence, team feedback, collaboration)"
+          "Situation: describe the new role or team context (joined externally, moved internally, high pressure, skeptical team)",
+          "Task: explain the challenge (unfamiliar environment, need to prove capability, earn credibility)",
+          "Action: detail your trust-building approach (listened first, delivered early wins, kept commitments, showed vulnerability)",
+          "Result: share metrics of trust and acceptance (speed to influence, team feedback, collaboration)"
         ],
         "strong_answer_signals": [
           "Spent first weeks listening and learning rather than declaring changes",
@@ -259,15 +297,19 @@
     {
       "id": "ub_011",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you worked with a team to achieve a goal that was difficult to reach.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the difficulty (ambiguous goal, resource constraints, skill gaps, timeline pressure)",
-          "Task — explain your role and what success looked like",
-          "Action — detail how the team came together (aligned priorities, broke down the problem, coordinated, supported each other)",
-          "Result — share the achievement and how the team felt about it"
+          "Situation: describe the difficulty (ambiguous goal, resource constraints, skill gaps, timeline pressure)",
+          "Task: explain your role and what success looked like",
+          "Action: detail how the team came together (aligned priorities, broke down the problem, coordinated, supported each other)",
+          "Result: share the achievement and how the team felt about it"
         ],
         "strong_answer_signals": [
           "Clear breakdown of complex goal into manageable pieces",
@@ -284,15 +326,19 @@
     {
       "id": "ub_012",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you had to collaborate with a colleague who had a very different working style.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the difference in style (pace, detail orientation, communication, risk tolerance) and why it mattered",
-          "Task — explain the goal you had to achieve together and what could have gone wrong",
-          "Action — walk through how you bridged the gap (found mutual respect, adjusted your approach, communicated expectations)",
-          "Result — share how the collaboration went and what you learned"
+          "Situation: describe the difference in style (pace, detail orientation, communication, risk tolerance) and why it mattered",
+          "Task: explain the goal you had to achieve together and what could have gone wrong",
+          "Action: walk through how you bridged the gap (found mutual respect, adjusted your approach, communicated expectations)",
+          "Result: share how the collaboration went and what you learned"
         ],
         "strong_answer_signals": [
           "Genuinely tried to understand their perspective and value in their approach",
@@ -309,15 +355,18 @@
     {
       "id": "ub_013",
       "category": "behavioral",
-      "seniority": ["entry", "mid"],
+      "seniority": [
+        "entry",
+        "mid"
+      ],
       "text": "Tell me about a time you helped a teammate who was struggling with their work.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what they were struggling with (skill, confidence, context, workload) and how you noticed",
-          "Task — explain why you stepped in and what the impact would have been without your help",
-          "Action — detail how you helped (taught, coached, worked alongside, provided resources) without taking over",
-          "Result — share how they improved and the impact on the team"
+          "Situation: describe what they were struggling with (skill, confidence, context, workload) and how you noticed",
+          "Task: explain why you stepped in and what the impact would have been without your help",
+          "Action: detail how you helped (taught, coached, worked alongside, provided resources) without taking over",
+          "Result: share how they improved and the impact on the team"
         ],
         "strong_answer_signals": [
           "Approached with genuine curiosity about what they needed",
@@ -334,15 +383,18 @@
     {
       "id": "ub_014",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe a situation where your team disagreed on the best approach. How did you resolve it?",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the disagreement and the positions (safety vs. speed, quality vs. cost, short-term vs. long-term)",
-          "Task — explain your role in resolving it and why it mattered to get alignment",
-          "Action — walk through your process (acknowledged valid points from each side, brought data, got alignment on trade-offs, decided)",
-          "Result — share the decision, how the team responded, and the outcome"
+          "Situation: describe the disagreement and the positions (safety vs. speed, quality vs. cost, short-term vs. long-term)",
+          "Task: explain your role in resolving it and why it mattered to get alignment",
+          "Action: walk through your process (acknowledged valid points from each side, brought data, got alignment on trade-offs, decided)",
+          "Result: share the decision, how the team responded, and the outcome"
         ],
         "strong_answer_signals": [
           "Didn't dismiss any perspective without understanding it",
@@ -359,15 +411,18 @@
     {
       "id": "ub_015",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you contributed to making your team more effective overall.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what was limiting the team's effectiveness (process, communication, tools, skills, clarity)",
-          "Task — explain why you felt responsible for improving it",
-          "Action — detail what you did (proposed change, drove adoption, modeled new behavior, helped others adopt)",
-          "Result — share the concrete improvement in team throughput, quality, or satisfaction"
+          "Situation: describe what was limiting the team's effectiveness (process, communication, tools, skills, clarity)",
+          "Task: explain why you felt responsible for improving it",
+          "Action: detail what you did (proposed change, drove adoption, modeled new behavior, helped others adopt)",
+          "Result: share the concrete improvement in team throughput, quality, or satisfaction"
         ],
         "strong_answer_signals": [
           "Identified a root cause, not just a symptom",
@@ -384,15 +439,19 @@
     {
       "id": "ub_016",
       "category": "behavioral",
-      "seniority": ["mid", "senior", "manager"],
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "Describe a time you had to work in a cross-functional team with competing agendas.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the competing goals (sales vs. engineering, short-term vs. innovation) and the tension",
-          "Task — explain your objective and what was at stake",
-          "Action — walk through how you navigated it (understood each agenda, found common ground, escalated if needed, compromised strategically)",
-          "Result — share the outcome and the relationships that came out of it"
+          "Situation: describe the competing goals (sales vs. engineering, short-term vs. innovation) and the tension",
+          "Task: explain your objective and what was at stake",
+          "Action: walk through how you navigated it (understood each agenda, found common ground, escalated if needed, compromised strategically)",
+          "Result: share the outcome and the relationships that came out of it"
         ],
         "strong_answer_signals": [
           "Understood the legitimate pressures behind each agenda",
@@ -409,15 +468,18 @@
     {
       "id": "ub_017",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you built a strong working relationship with a difficult stakeholder.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what made them difficult (skeptical, demanding, burned by past failures, different goals)",
-          "Task — explain why building the relationship mattered and what you had to achieve together",
-          "Action — walk through your approach (sought to understand them, demonstrated reliability, found common ground, stayed patient)",
-          "Result — share how the relationship evolved and the impact on outcomes"
+          "Situation: describe what made them difficult (skeptical, demanding, burned by past failures, different goals)",
+          "Task: explain why building the relationship mattered and what you had to achieve together",
+          "Action: walk through your approach (sought to understand them, demonstrated reliability, found common ground, stayed patient)",
+          "Result: share how the relationship evolved and the impact on outcomes"
         ],
         "strong_answer_signals": [
           "Took responsibility for understanding them rather than dismissing them",
@@ -434,15 +496,18 @@
     {
       "id": "ub_018",
       "category": "behavioral",
-      "seniority": ["entry", "mid"],
+      "seniority": [
+        "entry",
+        "mid"
+      ],
       "text": "Describe a time you made a significant contribution to a team project even though you were not the lead.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the project and your role (supporting, individual contributor, specialist)",
-          "Task — explain what the project needed and what you saw as your opportunity to contribute",
-          "Action — detail your contribution (took initiative, solved a key problem, coordinated effort, filled a gap)",
-          "Result — share the impact of your contribution and recognition"
+          "Situation: describe the project and your role (supporting, individual contributor, specialist)",
+          "Task: explain what the project needed and what you saw as your opportunity to contribute",
+          "Action: detail your contribution (took initiative, solved a key problem, coordinated effort, filled a gap)",
+          "Result: share the impact of your contribution and recognition"
         ],
         "strong_answer_signals": [
           "Went beyond your formal scope without overstepping",
@@ -459,15 +524,18 @@
     {
       "id": "ub_019",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time a team you were part of failed to deliver and how you handled it.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what failed (missed deadline, wrong solution, lost client, failed launch) and why",
-          "Task — explain your role and what you could have controlled",
-          "Action — walk through what you did in response (owned your part, communicated with stakeholders, helped salvage what you could, captured lessons)",
-          "Result — share how you moved forward and what changed as a result"
+          "Situation: describe what failed (missed deadline, wrong solution, lost client, failed launch) and why",
+          "Task: explain your role and what you could have controlled",
+          "Action: walk through what you did in response (owned your part, communicated with stakeholders, helped salvage what you could, captured lessons)",
+          "Result: share how you moved forward and what changed as a result"
         ],
         "strong_answer_signals": [
           "Took responsibility for your part without deflecting blame",
@@ -484,15 +552,19 @@
     {
       "id": "ub_020",
       "category": "behavioral",
-      "seniority": ["mid", "senior", "manager"],
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "Describe a time you had to onboard or integrate a new team member quickly.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the context (critical hire, replaced someone, unexpected arrival, steep learning curve)",
-          "Task — explain why speed mattered and what successful onboarding meant",
-          "Action — detail your approach (assigned a buddy, prioritized critical knowledge, provided early wins, checked in regularly)",
-          "Result — share how quickly they became productive and how they felt about their start"
+          "Situation: describe the context (critical hire, replaced someone, unexpected arrival, steep learning curve)",
+          "Task: explain why speed mattered and what successful onboarding meant",
+          "Action: detail your approach (assigned a buddy, prioritized critical knowledge, provided early wins, checked in regularly)",
+          "Result: share how quickly they became productive and how they felt about their start"
         ],
         "strong_answer_signals": [
           "Understood what was critical vs. nice-to-know and prioritized accordingly",
@@ -509,15 +581,19 @@
     {
       "id": "ub_021",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you had a conflict with a colleague and how you resolved it.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the conflict (disagreement on approach, personality clash, competing priorities, miscommunication)",
-          "Task — explain what was at stake and why you needed to resolve it",
-          "Action — walk through your resolution approach (initiated conversation, listened to understand, found common ground, agreed on path forward)",
-          "Result — share how the relationship and work improved"
+          "Situation: describe the conflict (disagreement on approach, personality clash, competing priorities, miscommunication)",
+          "Task: explain what was at stake and why you needed to resolve it",
+          "Action: walk through your resolution approach (initiated conversation, listened to understand, found common ground, agreed on path forward)",
+          "Result: share how the relationship and work improved"
         ],
         "strong_answer_signals": [
           "Initiated the conversation rather than avoiding or escalating",
@@ -534,15 +610,19 @@
     {
       "id": "ub_022",
       "category": "behavioral",
-      "seniority": ["mid", "senior", "manager"],
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "Describe a time you had to give difficult feedback to someone on your team.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what the person was doing wrong and why it mattered (impact on results, team, client)",
-          "Task — explain why you had a responsibility to give feedback",
-          "Action — walk through how you delivered it (private setting, specific examples, focused on behavior not character, offered support)",
-          "Result — share how they responded and whether they changed"
+          "Situation: describe what the person was doing wrong and why it mattered (impact on results, team, client)",
+          "Task: explain why you had a responsibility to give feedback",
+          "Action: walk through how you delivered it (private setting, specific examples, focused on behavior not character, offered support)",
+          "Result: share how they responded and whether they changed"
         ],
         "strong_answer_signals": [
           "Gave feedback promptly, not after a pattern developed",
@@ -559,15 +639,19 @@
     {
       "id": "ub_023",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you disagreed with your manager and what you did.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what the disagreement was about (approach, decision, priority, resource allocation)",
-          "Task — explain why you felt it was important to speak up",
-          "Action — detail how you raised it (private conversation, came prepared with data, listened to their perspective, respected their decision)",
-          "Result — share what happened and how the relationship was affected"
+          "Situation: describe what the disagreement was about (approach, decision, priority, resource allocation)",
+          "Task: explain why you felt it was important to speak up",
+          "Action: detail how you raised it (private conversation, came prepared with data, listened to their perspective, respected their decision)",
+          "Result: share what happened and how the relationship was affected"
         ],
         "strong_answer_signals": [
           "Approached with genuine curiosity about their thinking, not judgment",
@@ -584,15 +668,18 @@
     {
       "id": "ub_024",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe a situation where two stakeholders had opposing needs and you were in the middle.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the stakeholders and their opposing needs (customer vs. engineering, short-term vs. long-term, profit vs. purpose)",
-          "Task — explain your role and what you needed to achieve",
-          "Action — walk through how you navigated it (understood both perspectives, found trade-offs, proposed solutions, managed expectations)",
-          "Result — share the outcome and how both stakeholders felt about it"
+          "Situation: describe the stakeholders and their opposing needs (customer vs. engineering, short-term vs. long-term, profit vs. purpose)",
+          "Task: explain your role and what you needed to achieve",
+          "Action: walk through how you navigated it (understood both perspectives, found trade-offs, proposed solutions, managed expectations)",
+          "Result: share the outcome and how both stakeholders felt about it"
         ],
         "strong_answer_signals": [
           "Understood the legitimacy of both perspectives",
@@ -609,15 +696,18 @@
     {
       "id": "ub_025",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you pushed back on a decision you believed was wrong.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the decision and why you believed it was wrong (based on data, past experience, potential consequences)",
-          "Task — explain what was at stake if the decision stood",
-          "Action — detail how you pushed back (gathered evidence, presented alternatives, escalated appropriately, respected the final decision)",
-          "Result — share what happened and whether the decision was changed or what you learned"
+          "Situation: describe the decision and why you believed it was wrong (based on data, past experience, potential consequences)",
+          "Task: explain what was at stake if the decision stood",
+          "Action: detail how you pushed back (gathered evidence, presented alternatives, escalated appropriately, respected the final decision)",
+          "Result: share what happened and whether the decision was changed or what you learned"
         ],
         "strong_answer_signals": [
           "You had data or clear reasoning, not just gut feeling",
@@ -634,15 +724,19 @@
     {
       "id": "ub_026",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you had to have an uncomfortable conversation that you had been avoiding.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what you had been avoiding (performance issue, boundary setting, difficult feedback, breaking bad news)",
-          "Task — explain what made you finally address it (consequences, someone else was affected, you realized avoidance wasn't helping)",
-          "Action — walk through how you had the conversation (prepared, chose right time/place, was direct but kind, listened)",
-          "Result — share how it went and what changed as a result"
+          "Situation: describe what you had been avoiding (performance issue, boundary setting, difficult feedback, breaking bad news)",
+          "Task: explain what made you finally address it (consequences, someone else was affected, you realized avoidance wasn't helping)",
+          "Action: walk through how you had the conversation (prepared, chose right time/place, was direct but kind, listened)",
+          "Result: share how it went and what changed as a result"
         ],
         "strong_answer_signals": [
           "You owned why you had been avoiding it (fear, discomfort) without making excuses",
@@ -659,15 +753,18 @@
     {
       "id": "ub_027",
       "category": "behavioral",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "Tell me about a time a conflict on your team was negatively impacting results. How did you address it?",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the conflict and its impact (missed deadlines, quality issues, turnover, disengagement)",
-          "Task — explain why you had to address it and what was at stake",
-          "Action — walk through your process (diagnosed root cause, met with individuals separately then together, helped find resolution, followed up)",
-          "Result — share the impact on team performance and culture"
+          "Situation: describe the conflict and its impact (missed deadlines, quality issues, turnover, disengagement)",
+          "Task: explain why you had to address it and what was at stake",
+          "Action: walk through your process (diagnosed root cause, met with individuals separately then together, helped find resolution, followed up)",
+          "Result: share the impact on team performance and culture"
         ],
         "strong_answer_signals": [
           "Addressed it promptly rather than hoping it would resolve itself",
@@ -684,15 +781,19 @@
     {
       "id": "ub_028",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you had to manage a situation where a colleague took credit for your work.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what happened and how you found out (in a meeting, during feedback, after the fact)",
-          "Task — explain what was at stake and why you needed to address it",
-          "Action — detail how you handled it (addressed directly with colleague, used appropriate channels, set boundaries, documented your contributions)",
-          "Result — share how it was resolved and how you prevented it in the future"
+          "Situation: describe what happened and how you found out (in a meeting, during feedback, after the fact)",
+          "Task: explain what was at stake and why you needed to address it",
+          "Action: detail how you handled it (addressed directly with colleague, used appropriate channels, set boundaries, documented your contributions)",
+          "Result: share how it was resolved and how you prevented it in the future"
         ],
         "strong_answer_signals": [
           "You addressed it directly with the person first before escalating",
@@ -709,15 +810,19 @@
     {
       "id": "ub_029",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you received harsh or unfair criticism. How did you respond?",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the criticism and why it felt harsh or unfair (tone, accuracy, timing, audience)",
-          "Task — explain what you were tempted to do versus what you actually did",
-          "Action — walk through your response (took a moment to process, separated emotion from content, sought clarification, looked for truth in it)",
-          "Result — share how you moved forward and what it cost you or taught you"
+          "Situation: describe the criticism and why it felt harsh or unfair (tone, accuracy, timing, audience)",
+          "Task: explain what you were tempted to do versus what you actually did",
+          "Action: walk through your response (took a moment to process, separated emotion from content, sought clarification, looked for truth in it)",
+          "Result: share how you moved forward and what it cost you or taught you"
         ],
         "strong_answer_signals": [
           "You didn't immediately defend yourself or counter-attack",
@@ -734,15 +839,18 @@
     {
       "id": "ub_030",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you successfully turned around a difficult relationship at work.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe how the relationship was difficult (tension, mistrust, conflict, past miscommunication)",
-          "Task — explain why turning it around mattered and what made it hard",
-          "Action — walk through what you did differently (initiated honest conversation, took responsibility for your part, built trust through actions, stayed patient)",
-          "Result — share how the relationship transformed and the impact on work"
+          "Situation: describe how the relationship was difficult (tension, mistrust, conflict, past miscommunication)",
+          "Task: explain why turning it around mattered and what made it hard",
+          "Action: walk through what you did differently (initiated honest conversation, took responsibility for your part, built trust through actions, stayed patient)",
+          "Result: share how the relationship transformed and the impact on work"
         ],
         "strong_answer_signals": [
           "You took responsibility for your part in the difficulty",
@@ -759,15 +867,19 @@
     {
       "id": "ub_031",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about your biggest professional failure and what you learned from it.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the failure clearly and without minimizing it (what happened, impact on business or people)",
-          "Task — explain your role and responsibility in the outcome",
-          "Action — walk through what you did to address it (took accountability, fixed the immediate issue, analyzed root cause)",
-          "Result — share specific lessons learned and how you changed as a result"
+          "Situation: describe the failure clearly and without minimizing it (what happened, impact on business or people)",
+          "Task: explain your role and responsibility in the outcome",
+          "Action: walk through what you did to address it (took accountability, fixed the immediate issue, analyzed root cause)",
+          "Result: share specific lessons learned and how you changed as a result"
         ],
         "strong_answer_signals": [
           "You owned the failure without excessive excuses",
@@ -784,15 +896,18 @@
     {
       "id": "ub_032",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you made a mistake that had a significant impact on the business.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the mistake and the business impact (financial loss, client impact, reputational, operational disruption)",
-          "Task — explain what you should have done differently",
-          "Action — walk through how you responded (immediately disclosed it, took steps to minimize damage, created recovery plan, learned from it)",
-          "Result — share how it was resolved and what you implemented to prevent recurrence"
+          "Situation: describe the mistake and the business impact (financial loss, client impact, reputational, operational disruption)",
+          "Task: explain what you should have done differently",
+          "Action: walk through how you responded (immediately disclosed it, took steps to minimize damage, created recovery plan, learned from it)",
+          "Result: share how it was resolved and what you implemented to prevent recurrence"
         ],
         "strong_answer_signals": [
           "You disclosed the mistake promptly rather than hiding it",
@@ -809,15 +924,19 @@
     {
       "id": "ub_033",
       "category": "behavioral",
-      "seniority": ["mid", "senior", "manager"],
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "Tell me about a time a project you led did not go as planned. What happened and what did you do?",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what went wrong (scope, timeline, quality, resources) and when you realized it",
-          "Task — explain what was at stake if you didn't address it",
-          "Action — walk through your response (diagnosed the issue, communicated to stakeholders, adjusted plan, reallocated resources, kept team motivated)",
-          "Result — share how it ended and what you learned about leadership or project management"
+          "Situation: describe what went wrong (scope, timeline, quality, resources) and when you realized it",
+          "Task: explain what was at stake if you didn't address it",
+          "Action: walk through your response (diagnosed the issue, communicated to stakeholders, adjusted plan, reallocated resources, kept team motivated)",
+          "Result: share how it ended and what you learned about leadership or project management"
         ],
         "strong_answer_signals": [
           "You surfaced the problem early, not after it was catastrophic",
@@ -834,15 +953,18 @@
     {
       "id": "ub_034",
       "category": "behavioral",
-      "seniority": ["entry", "mid"],
+      "seniority": [
+        "entry",
+        "mid"
+      ],
       "text": "Describe a time you missed a deadline or deliverable. How did you handle it?",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what you missed and the context (competing priorities, underestimated complexity, unexpected obstacles)",
-          "Task — explain the impact on others or the business",
-          "Action — walk through what you did (communicated early, found workarounds, negotiated timeline, helped minimize impact, owned the miss)",
-          "Result — share how it was resolved and what you implemented to avoid it in the future"
+          "Situation: describe what you missed and the context (competing priorities, underestimated complexity, unexpected obstacles)",
+          "Task: explain the impact on others or the business",
+          "Action: walk through what you did (communicated early, found workarounds, negotiated timeline, helped minimize impact, owned the miss)",
+          "Result: share how it was resolved and what you implemented to avoid it in the future"
         ],
         "strong_answer_signals": [
           "You communicated the miss early, not at the deadline",
@@ -859,15 +981,18 @@
     {
       "id": "ub_035",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time a decision you made turned out to be wrong. How did you course-correct?",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the decision and why it seemed right at the time",
-          "Task — explain when and how you realized it was wrong",
-          "Action — walk through how you course-corrected (analyzed what went wrong, communicated to stakeholders, made the new decision, managed the transition)",
-          "Result — share how the course correction unfolded and what you learned about decision-making"
+          "Situation: describe the decision and why it seemed right at the time",
+          "Task: explain when and how you realized it was wrong",
+          "Action: walk through how you course-corrected (analyzed what went wrong, communicated to stakeholders, made the new decision, managed the transition)",
+          "Result: share how the course correction unfolded and what you learned about decision-making"
         ],
         "strong_answer_signals": [
           "You recognized the wrong decision before it caused catastrophic damage",
@@ -884,15 +1009,19 @@
     {
       "id": "ub_036",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you had to recover quickly from a setback.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the setback (lost a deal, failed a launch, had a setback in a key relationship or project)",
-          "Task — explain what was at stake if you didn't recover quickly",
-          "Action — walk through your recovery process (processed the emotional impact, analyzed what went wrong, refocused, took action to move forward)",
-          "Result — share the outcome and how the setback actually contributed to longer-term success"
+          "Situation: describe the setback (lost a deal, failed a launch, had a setback in a key relationship or project)",
+          "Task: explain what was at stake if you didn't recover quickly",
+          "Action: walk through your recovery process (processed the emotional impact, analyzed what went wrong, refocused, took action to move forward)",
+          "Result: share the outcome and how the setback actually contributed to longer-term success"
         ],
         "strong_answer_signals": [
           "You didn't wallow or let the setback paralyze you",
@@ -909,15 +1038,18 @@
     {
       "id": "ub_037",
       "category": "behavioral",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "Tell me about a time your team made a mistake and how you handled it as a leader.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the mistake and its impact on business or customers",
-          "Task — explain your role as the leader and what accountability meant",
-          "Action — walk through how you handled it (took responsibility externally, helped team learn without shame, fixed the issue, prevented recurrence)",
-          "Result — share how the team grew from the mistake and the outcome"
+          "Situation: describe the mistake and its impact on business or customers",
+          "Task: explain your role as the leader and what accountability meant",
+          "Action: walk through how you handled it (took responsibility externally, helped team learn without shame, fixed the issue, prevented recurrence)",
+          "Result: share how the team grew from the mistake and the outcome"
         ],
         "strong_answer_signals": [
           "You publicly owned the mistake while holding individuals accountable privately",
@@ -934,15 +1066,18 @@
     {
       "id": "ub_038",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you recognized a mistake early and acted before it became a bigger problem.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what you noticed that tipped you off something was wrong (inconsistency, early warning signs, pattern)",
-          "Task — explain what bigger problem it could have become if you hadn't acted",
-          "Action — walk through your diagnostic approach and how you intervened early",
-          "Result — share the impact of catching it early versus what would have happened"
+          "Situation: describe what you noticed that tipped you off something was wrong (inconsistency, early warning signs, pattern)",
+          "Task: explain what bigger problem it could have become if you hadn't acted",
+          "Action: walk through your diagnostic approach and how you intervened early",
+          "Result: share the impact of catching it early versus what would have happened"
         ],
         "strong_answer_signals": [
           "You paid attention and caught small signals early",
@@ -959,15 +1094,18 @@
     {
       "id": "ub_039",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you communicated a complex idea to a non-technical audience.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the complex idea and why it mattered to this audience",
-          "Task — explain what was difficult about translating it (jargon, assumptions, competing interests)",
-          "Action — walk through your communication approach (analogies, step-by-step breakdown, visual aids, checked for understanding)",
-          "Result — share evidence that they understood and could act on it"
+          "Situation: describe the complex idea and why it mattered to this audience",
+          "Task: explain what was difficult about translating it (jargon, assumptions, competing interests)",
+          "Action: walk through your communication approach (analogies, step-by-step breakdown, visual aids, checked for understanding)",
+          "Result: share evidence that they understood and could act on it"
         ],
         "strong_answer_signals": [
           "You focused on impact and benefit, not technical detail",
@@ -984,15 +1122,18 @@
     {
       "id": "ub_040",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you had to persuade a skeptical senior stakeholder.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what you were trying to persuade them of and why they were skeptical",
-          "Task — explain what was at stake if you couldn't persuade them",
-          "Action — walk through your persuasion approach (understood their concerns, built a business case, showed data, involved them in design)",
-          "Result — share whether you persuaded them and how the decision played out"
+          "Situation: describe what you were trying to persuade them of and why they were skeptical",
+          "Task: explain what was at stake if you couldn't persuade them",
+          "Action: walk through your persuasion approach (understood their concerns, built a business case, showed data, involved them in design)",
+          "Result: share whether you persuaded them and how the decision played out"
         ],
         "strong_answer_signals": [
           "You understood why they were skeptical (past experience, different priorities, valid concerns)",
@@ -1009,15 +1150,18 @@
     {
       "id": "ub_041",
       "category": "behavioral",
-      "seniority": ["entry", "mid"],
+      "seniority": [
+        "entry",
+        "mid"
+      ],
       "text": "Tell me about a time your written or verbal communication prevented a misunderstanding.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the situation where miscommunication was likely (distributed team, technical content, high stakes)",
-          "Task — explain why clear communication mattered in this context",
-          "Action — detail what you did (wrote clearly, checked for understanding, used visuals, created documentation, followed up)",
-          "Result — share evidence that the misunderstanding was prevented"
+          "Situation: describe the situation where miscommunication was likely (distributed team, technical content, high stakes)",
+          "Task: explain why clear communication mattered in this context",
+          "Action: detail what you did (wrote clearly, checked for understanding, used visuals, created documentation, followed up)",
+          "Result: share evidence that the misunderstanding was prevented"
         ],
         "strong_answer_signals": [
           "You anticipated potential misunderstandings and proactively addressed them",
@@ -1034,15 +1178,18 @@
     {
       "id": "ub_042",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you successfully sold an idea that initially had no buy-in.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the idea and why it initially had no buy-in (risky, resource-intensive, challenged status quo)",
-          "Task — explain what was at stake if the idea never got off the ground",
-          "Action — walk through your persuasion journey (found champions, addressed concerns, showed proof points, adjusted timing)",
-          "Result — share how you got buy-in and the impact of implementing the idea"
+          "Situation: describe the idea and why it initially had no buy-in (risky, resource-intensive, challenged status quo)",
+          "Task: explain what was at stake if the idea never got off the ground",
+          "Action: walk through your persuasion journey (found champions, addressed concerns, showed proof points, adjusted timing)",
+          "Result: share how you got buy-in and the impact of implementing the idea"
         ],
         "strong_answer_signals": [
           "You understood the legitimate concerns behind the resistance",
@@ -1059,15 +1206,19 @@
     {
       "id": "ub_043",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you had to tailor your communication style to a specific audience.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the audience and their communication preferences (level of detail, pace, format, jargon)",
-          "Task — explain what you were communicating and why tailoring mattered",
-          "Action — walk through how you adapted (used different language, changed format, adjusted depth, checked their preferences)",
-          "Result — share how much more effective the communication was with tailoring"
+          "Situation: describe the audience and their communication preferences (level of detail, pace, format, jargon)",
+          "Task: explain what you were communicating and why tailoring mattered",
+          "Action: walk through how you adapted (used different language, changed format, adjusted depth, checked their preferences)",
+          "Result: share how much more effective the communication was with tailoring"
         ],
         "strong_answer_signals": [
           "You understood their needs and preferences, not just their role",
@@ -1084,15 +1235,18 @@
     {
       "id": "ub_044",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time when poor communication caused a problem and how you fixed it.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the miscommunication and what problem resulted (duplicated work, missed deadline, conflict, missed opportunity)",
-          "Task — explain when you realized the communication was the root cause",
-          "Action — walk through how you fixed it (clarified the miscommunication, realigned the work, improved processes)",
-          "Result — share how the situation was resolved and what communication processes you changed"
+          "Situation: describe the miscommunication and what problem resulted (duplicated work, missed deadline, conflict, missed opportunity)",
+          "Task: explain when you realized the communication was the root cause",
+          "Action: walk through how you fixed it (clarified the miscommunication, realigned the work, improved processes)",
+          "Result: share how the situation was resolved and what communication processes you changed"
         ],
         "strong_answer_signals": [
           "You identified miscommunication as the root cause, not other factors",
@@ -1109,15 +1263,18 @@
     {
       "id": "ub_045",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you had to communicate bad news to a senior leader or client.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the bad news and why it was significant (missed milestone, budget overrun, technical issue, relationship impact)",
-          "Task — explain why it was important to communicate it clearly and promptly",
-          "Action — walk through how you delivered it (gathered full facts, presented clearly, took responsibility, offered solutions)",
-          "Result — share how the leader/client responded and how the situation was resolved"
+          "Situation: describe the bad news and why it was significant (missed milestone, budget overrun, technical issue, relationship impact)",
+          "Task: explain why it was important to communicate it clearly and promptly",
+          "Action: walk through how you delivered it (gathered full facts, presented clearly, took responsibility, offered solutions)",
+          "Result: share how the leader/client responded and how the situation was resolved"
         ],
         "strong_answer_signals": [
           "You communicated the bad news proactively, not reactively",
@@ -1134,15 +1291,18 @@
     {
       "id": "ub_046",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you used storytelling or a clear narrative to drive a decision.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the decision that needed to be made and why a narrative approach was effective",
-          "Task — explain what was at stake and why data alone might not have been compelling",
-          "Action — walk through how you crafted the story (arc, characters, stakes, resolution) and delivered it",
-          "Result — share how the story influenced the decision and the outcome"
+          "Situation: describe the decision that needed to be made and why a narrative approach was effective",
+          "Task: explain what was at stake and why data alone might not have been compelling",
+          "Action: walk through how you crafted the story (arc, characters, stakes, resolution) and delivered it",
+          "Result: share how the story influenced the decision and the outcome"
         ],
         "strong_answer_signals": [
           "You grounded the story in truth and data, not just emotion",
@@ -1159,15 +1319,19 @@
     {
       "id": "ub_047",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you had to communicate across cultural or language differences.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the cultural or language differences and the communication challenge (different work styles, norms, language fluency)",
-          "Task — explain what you needed to communicate and why accuracy was important",
-          "Action — walk through your approach (adjusted pace, asked for clarification, checked understanding, showed respect for differences)",
-          "Result — share how the communication went and what you learned"
+          "Situation: describe the cultural or language differences and the communication challenge (different work styles, norms, language fluency)",
+          "Task: explain what you needed to communicate and why accuracy was important",
+          "Action: walk through your approach (adjusted pace, asked for clarification, checked understanding, showed respect for differences)",
+          "Result: share how the communication went and what you learned"
         ],
         "strong_answer_signals": [
           "You approached differences with curiosity, not judgment",
@@ -1184,15 +1348,19 @@
     {
       "id": "ub_048",
       "category": "behavioral",
-      "seniority": ["mid", "senior", "manager"],
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "Describe a time you built a compelling business case that led to action.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what you wanted to pursue and why it mattered (opportunity, problem, capability building)",
-          "Task — explain what you needed to convince decision-makers of",
-          "Action — walk through your business case (data and assumptions, financial impact, risks and mitigations, clear recommendation)",
-          "Result — share how it was received and what action was taken as a result"
+          "Situation: describe what you wanted to pursue and why it mattered (opportunity, problem, capability building)",
+          "Task: explain what you needed to convince decision-makers of",
+          "Action: walk through your business case (data and assumptions, financial impact, risks and mitigations, clear recommendation)",
+          "Result: share how it was received and what action was taken as a result"
         ],
         "strong_answer_signals": [
           "You included data but also narrative and business logic",
@@ -1209,15 +1377,19 @@
     {
       "id": "ub_049",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you had to adapt quickly to a major change at work.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the major change (reorganization, new system, shift in strategy, leadership change, market shift)",
-          "Task — explain what was required of you and the challenge of adapting quickly",
-          "Action — walk through how you adapted (learned new system, adjusted mindset, picked up new skills, helped others adapt)",
-          "Result — share how you came out of the change (competent, engaged, stronger)"
+          "Situation: describe the major change (reorganization, new system, shift in strategy, leadership change, market shift)",
+          "Task: explain what was required of you and the challenge of adapting quickly",
+          "Action: walk through how you adapted (learned new system, adjusted mindset, picked up new skills, helped others adapt)",
+          "Result: share how you came out of the change (competent, engaged, stronger)"
         ],
         "strong_answer_signals": [
           "You recognized the change and adapted rather than resisting",
@@ -1234,15 +1406,18 @@
     {
       "id": "ub_050",
       "category": "behavioral",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "Describe a time you led your team through a significant organizational change.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the change and how it affected your team (restructure, new direction, acquisition, culture shift)",
-          "Task — explain your role as leader and what the team needed from you",
-          "Action — walk through your leadership approach (acknowledged impact, provided clarity, managed anxiety, kept momentum)",
-          "Result — share how the team came through the change and what was preserved"
+          "Situation: describe the change and how it affected your team (restructure, new direction, acquisition, culture shift)",
+          "Task: explain your role as leader and what the team needed from you",
+          "Action: walk through your leadership approach (acknowledged impact, provided clarity, managed anxiety, kept momentum)",
+          "Result: share how the team came through the change and what was preserved"
         ],
         "strong_answer_signals": [
           "You acknowledged the difficulty while modeling positive adaptation",
@@ -1259,15 +1434,18 @@
     {
       "id": "ub_051",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you had to abandon a plan and change course mid-execution.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the plan and what happened that required changing course (new information, market shift, unexpected obstacles)",
-          "Task — explain what was at stake in the original plan versus the new direction",
-          "Action — walk through the decision to pivot (gathered new data, communicated to stakeholders, adjusted plan, managed the transition)",
-          "Result — share how the new direction turned out and what you learned about flexibility"
+          "Situation: describe the plan and what happened that required changing course (new information, market shift, unexpected obstacles)",
+          "Task: explain what was at stake in the original plan versus the new direction",
+          "Action: walk through the decision to pivot (gathered new data, communicated to stakeholders, adjusted plan, managed the transition)",
+          "Result: share how the new direction turned out and what you learned about flexibility"
         ],
         "strong_answer_signals": [
           "You recognized the change was needed rather than stubbornly sticking to the plan",
@@ -1284,15 +1462,19 @@
     {
       "id": "ub_052",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you had to learn a new skill or tool quickly to meet a challenge.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what skill or tool you needed to learn and why it was urgent",
-          "Task — explain what was at stake if you didn't learn it quickly",
-          "Action — walk through your learning approach (how you prioritized, resources you used, practiced, sought help)",
-          "Result — share how quickly you became proficient and the impact"
+          "Situation: describe what skill or tool you needed to learn and why it was urgent",
+          "Task: explain what was at stake if you didn't learn it quickly",
+          "Action: walk through your learning approach (how you prioritized, resources you used, practiced, sought help)",
+          "Result: share how quickly you became proficient and the impact"
         ],
         "strong_answer_signals": [
           "You recognized the gap and took responsibility for closing it",
@@ -1309,15 +1491,18 @@
     {
       "id": "ub_053",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you worked in a highly ambiguous environment where priorities kept shifting.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the environment and why it was so ambiguous (startup, transformation, unclear goals, changing leadership)",
-          "Task — explain how you operated effectively in that context",
-          "Action — walk through your approach (asked clarifying questions, stayed flexible, focused on impact, resurfaced priorities)",
-          "Result — share how you managed the shifting priorities and what you accomplished"
+          "Situation: describe the environment and why it was so ambiguous (startup, transformation, unclear goals, changing leadership)",
+          "Task: explain how you operated effectively in that context",
+          "Action: walk through your approach (asked clarifying questions, stayed flexible, focused on impact, resurfaced priorities)",
+          "Result: share how you managed the shifting priorities and what you accomplished"
         ],
         "strong_answer_signals": [
           "You didn't get paralyzed by ambiguity",
@@ -1334,15 +1519,18 @@
     {
       "id": "ub_054",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you turned a setback into a new opportunity.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the setback (lost deal, failed initiative, unexpected constraint, personnel change)",
-          "Task — explain how you chose to frame it as opportunity rather than just loss",
-          "Action — walk through how you pivoted (analyzed what went wrong, found the silver lining, created new plan, built new capability)",
-          "Result — share the opportunity that emerged and how it was better than the original plan"
+          "Situation: describe the setback (lost deal, failed initiative, unexpected constraint, personnel change)",
+          "Task: explain how you chose to frame it as opportunity rather than just loss",
+          "Action: walk through how you pivoted (analyzed what went wrong, found the silver lining, created new plan, built new capability)",
+          "Result: share the opportunity that emerged and how it was better than the original plan"
         ],
         "strong_answer_signals": [
           "You didn't just survive the setback, you used it as a springboard",
@@ -1359,15 +1547,18 @@
     {
       "id": "ub_055",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you embraced change when others on your team resisted it.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the change and why others resisted it (comfort with status quo, fear, lack of buy-in)",
-          "Task — explain what you saw as the benefit or necessity of the change",
-          "Action — walk through how you modeled embrace (understood their concerns, showed up positively, demonstrated benefits, helped others transition)",
-          "Result — share how others gradually came around and the impact of the change"
+          "Situation: describe the change and why others resisted it (comfort with status quo, fear, lack of buy-in)",
+          "Task: explain what you saw as the benefit or necessity of the change",
+          "Action: walk through how you modeled embrace (understood their concerns, showed up positively, demonstrated benefits, helped others transition)",
+          "Result: share how others gradually came around and the impact of the change"
         ],
         "strong_answer_signals": [
           "You didn't dismiss their concerns as invalid or old-fashioned",
@@ -1384,15 +1575,18 @@
     {
       "id": "ub_056",
       "category": "behavioral",
-      "seniority": ["entry", "mid"],
+      "seniority": [
+        "entry",
+        "mid"
+      ],
       "text": "Describe a time you had to work in a new industry or context with no prior experience.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the new industry or context and why you were in it without experience",
-          "Task — explain what you needed to learn and deliver despite the newness",
-          "Action — walk through your approach (studied the industry, asked good questions, drew on transferable skills, got mentorship)",
-          "Result — share how quickly you got up to speed and your contributions"
+          "Situation: describe the new industry or context and why you were in it without experience",
+          "Task: explain what you needed to learn and deliver despite the newness",
+          "Action: walk through your approach (studied the industry, asked good questions, drew on transferable skills, got mentorship)",
+          "Result: share how quickly you got up to speed and your contributions"
         ],
         "strong_answer_signals": [
           "You leveraged transferable skills while respecting what was different",
@@ -1409,15 +1603,18 @@
     {
       "id": "ub_057",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you had to maintain high performance during a period of organizational uncertainty.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the uncertainty (restructuring, leadership change, financial uncertainty, market shifts)",
-          "Task — explain what maintaining high performance meant and the challenge of doing so",
-          "Action — walk through how you stayed focused and productive (kept perspective, controlled what you could, stayed engaged)",
-          "Result — share your performance during that period and how you came out"
+          "Situation: describe the uncertainty (restructuring, leadership change, financial uncertainty, market shifts)",
+          "Task: explain what maintaining high performance meant and the challenge of doing so",
+          "Action: walk through how you stayed focused and productive (kept perspective, controlled what you could, stayed engaged)",
+          "Result: share your performance during that period and how you came out"
         ],
         "strong_answer_signals": [
           "You acknowledged the uncertainty without being consumed by it",
@@ -1434,15 +1631,19 @@
     {
       "id": "ub_058",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you proactively changed your approach after receiving unexpected feedback.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the feedback and why it was unexpected (surprised you, felt harsh, contradicted your self-image)",
-          "Task — explain what made you decide to take it seriously rather than dismiss it",
-          "Action — walk through how you changed (analyzed the feedback, understood the impact, adjusted your approach, sought confirmation)",
-          "Result — share how the change improved your relationships or effectiveness"
+          "Situation: describe the feedback and why it was unexpected (surprised you, felt harsh, contradicted your self-image)",
+          "Task: explain what made you decide to take it seriously rather than dismiss it",
+          "Action: walk through how you changed (analyzed the feedback, understood the impact, adjusted your approach, sought confirmation)",
+          "Result: share how the change improved your relationships or effectiveness"
         ],
         "strong_answer_signals": [
           "You didn't get defensive or dismiss unexpected feedback",
@@ -1459,15 +1660,19 @@
     {
       "id": "ub_059",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you solved a problem in a creative or unconventional way.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the problem and why conventional approaches wouldn't work (constraints, time pressure, no precedent)",
-          "Task — explain what success required and why you needed to think creatively",
-          "Action — walk through your creative process (reframed the problem, drew from other domains, prototyped, iterated)",
-          "Result — share how the creative solution worked and what impact it had"
+          "Situation: describe the problem and why conventional approaches wouldn't work (constraints, time pressure, no precedent)",
+          "Task: explain what success required and why you needed to think creatively",
+          "Action: walk through your creative process (reframed the problem, drew from other domains, prototyped, iterated)",
+          "Result: share how the creative solution worked and what impact it had"
         ],
         "strong_answer_signals": [
           "The solution was genuinely novel, not just a minor tweak",
@@ -1484,15 +1689,18 @@
     {
       "id": "ub_060",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you identified an opportunity that others had overlooked.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what you noticed that others missed (pattern, gap, emerging trend, underutilized asset)",
-          "Task — explain what the opportunity could unlock if pursued",
-          "Action — walk through how you surfaced it (gathered evidence, communicated clearly, proposed initial steps, built support)",
-          "Result — share whether the opportunity was pursued and what value it created"
+          "Situation: describe what you noticed that others missed (pattern, gap, emerging trend, underutilized asset)",
+          "Task: explain what the opportunity could unlock if pursued",
+          "Action: walk through how you surfaced it (gathered evidence, communicated clearly, proposed initial steps, built support)",
+          "Result: share whether the opportunity was pursued and what value it created"
         ],
         "strong_answer_signals": [
           "You noticed something real that others genuinely missed, not trivia",
@@ -1509,15 +1717,18 @@
     {
       "id": "ub_061",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you introduced a new idea or approach that improved results.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what was working but could be improved, or what new approach you proposed",
-          "Task — explain what results you believed the new idea could drive",
-          "Action — walk through how you introduced it (got buy-in, piloted it, measured results, scaled it)",
-          "Result — share the concrete improvement in results"
+          "Situation: describe what was working but could be improved, or what new approach you proposed",
+          "Task: explain what results you believed the new idea could drive",
+          "Action: walk through how you introduced it (got buy-in, piloted it, measured results, scaled it)",
+          "Result: share the concrete improvement in results"
         ],
         "strong_answer_signals": [
           "The new idea had clear logic and benefit before you pitched it",
@@ -1534,15 +1745,19 @@
     {
       "id": "ub_062",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you had to solve a problem with very limited resources.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the problem and the resource constraints (budget, headcount, time, tools)",
-          "Task — explain what success required despite the constraints",
-          "Action — walk through your approach (ruthlessly prioritized, got creative, leveraged what you had, asked for help)",
-          "Result — share how you solved the problem and what you learned about resourcefulness"
+          "Situation: describe the problem and the resource constraints (budget, headcount, time, tools)",
+          "Task: explain what success required despite the constraints",
+          "Action: walk through your approach (ruthlessly prioritized, got creative, leveraged what you had, asked for help)",
+          "Result: share how you solved the problem and what you learned about resourcefulness"
         ],
         "strong_answer_signals": [
           "You didn't use limited resources as an excuse",
@@ -1559,15 +1774,18 @@
     {
       "id": "ub_063",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you challenged the status quo and drove meaningful change.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the status quo you challenged (process, decision, assumption, organizational norm)",
-          "Task — explain why you believed it needed to change and what was at stake",
-          "Action — walk through how you challenged it (gathered evidence, built a case, got allies, managed resistance)",
-          "Result — share what changed and the impact of the change"
+          "Situation: describe the status quo you challenged (process, decision, assumption, organizational norm)",
+          "Task: explain why you believed it needed to change and what was at stake",
+          "Action: walk through how you challenged it (gathered evidence, built a case, got allies, managed resistance)",
+          "Result: share what changed and the impact of the change"
         ],
         "strong_answer_signals": [
           "You challenged something that needed challenging, not just because you wanted attention",
@@ -1584,15 +1802,18 @@
     {
       "id": "ub_064",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you used data or analytics to solve a problem in a new way.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the problem and how it was typically being addressed (intuition, past practice, guesswork)",
-          "Task — explain why a data-driven approach was needed",
-          "Action — walk through your analytical approach (defined the question, gathered data, analyzed it, drew conclusions, took action)",
-          "Result — share how the data-driven solution was better than the previous approach"
+          "Situation: describe the problem and how it was typically being addressed (intuition, past practice, guesswork)",
+          "Task: explain why a data-driven approach was needed",
+          "Action: walk through your analytical approach (defined the question, gathered data, analyzed it, drew conclusions, took action)",
+          "Result: share how the data-driven solution was better than the previous approach"
         ],
         "strong_answer_signals": [
           "You asked the right analytical questions",
@@ -1609,15 +1830,19 @@
     {
       "id": "ub_065",
       "category": "behavioral",
-      "seniority": ["mid", "senior", "manager"],
-      "text": "Tell me about a time you built something from scratch — a process, a product, or a team.",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Tell me about a time you built something from scratch, a process, a product, or a team.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what didn't exist and why you needed to build it",
-          "Task — explain the challenge of building from zero (no template, no existing infrastructure, uncertainty)",
-          "Action — walk through your building process (created vision, got resources, started small, iterated, scaled)",
-          "Result — share what exists now and the impact it has"
+          "Situation: describe what didn't exist and why you needed to build it",
+          "Task: explain the challenge of building from zero (no template, no existing infrastructure, uncertainty)",
+          "Action: walk through your building process (created vision, got resources, started small, iterated, scaled)",
+          "Result: share what exists now and the impact it has"
         ],
         "strong_answer_signals": [
           "You had a clear vision of what you were building before starting",
@@ -1634,15 +1859,18 @@
     {
       "id": "ub_066",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you experimented, failed fast, and iterated to find the right solution.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the problem and why you couldn't know the right solution upfront",
-          "Task — explain why experimenting and iterating was the right approach",
-          "Action — walk through your experimentation process (formed hypotheses, tested, learned from failures, adjusted, tried again)",
-          "Result — share what you learned and the solution you ultimately found"
+          "Situation: describe the problem and why you couldn't know the right solution upfront",
+          "Task: explain why experimenting and iterating was the right approach",
+          "Action: walk through your experimentation process (formed hypotheses, tested, learned from failures, adjusted, tried again)",
+          "Result: share what you learned and the solution you ultimately found"
         ],
         "strong_answer_signals": [
           "You didn't expect to get it right the first time",
@@ -1659,15 +1887,19 @@
     {
       "id": "ub_067",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you simplified a complex process or system to make it more effective.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the complexity (too many steps, unclear ownership, outdated tools, multiple systems)",
-          "Task — explain what the complexity was costing (time, errors, confusion, disengagement)",
-          "Action — walk through how you simplified it (mapped the current state, identified unnecessary steps, redesigned)",
-          "Result — share the impact of simplification (time saved, errors reduced, engagement improved)"
+          "Situation: describe the complexity (too many steps, unclear ownership, outdated tools, multiple systems)",
+          "Task: explain what the complexity was costing (time, errors, confusion, disengagement)",
+          "Action: walk through how you simplified it (mapped the current state, identified unnecessary steps, redesigned)",
+          "Result: share the impact of simplification (time saved, errors reduced, engagement improved)"
         ],
         "strong_answer_signals": [
           "You made something genuinely simpler without losing necessary rigor",
@@ -1684,15 +1916,18 @@
     {
       "id": "ub_068",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you generated a solution to a problem no one had previously tried to fix.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the problem and why no one had tried to fix it (too entrenched, assumed unfixable, no one noticed)",
-          "Task — explain why you decided to tackle it despite the barrier to entry",
-          "Action — walk through your approach (understood why it was overlooked, found a solution, built support, implemented)",
-          "Result — share what changed and the impact"
+          "Situation: describe the problem and why no one had tried to fix it (too entrenched, assumed unfixable, no one noticed)",
+          "Task: explain why you decided to tackle it despite the barrier to entry",
+          "Action: walk through your approach (understood why it was overlooked, found a solution, built support, implemented)",
+          "Result: share what changed and the impact"
         ],
         "strong_answer_signals": [
           "You identified a problem that was genuinely being ignored, not just hard",
@@ -1709,15 +1944,19 @@
     {
       "id": "ub_069",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you managed multiple competing deadlines successfully.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the competing deadlines (how many, how close together, stakes for each)",
-          "Task — explain what success required and the challenge of juggling them",
-          "Action — walk through your approach (prioritized ruthlessly, organized work, stayed organized, communicated updates)",
-          "Result — share that you delivered on all or most deadlines and the quality of work"
+          "Situation: describe the competing deadlines (how many, how close together, stakes for each)",
+          "Task: explain what success required and the challenge of juggling them",
+          "Action: walk through your approach (prioritized ruthlessly, organized work, stayed organized, communicated updates)",
+          "Result: share that you delivered on all or most deadlines and the quality of work"
         ],
         "strong_answer_signals": [
           "You prioritized based on impact, not just urgency",
@@ -1734,15 +1973,18 @@
     {
       "id": "ub_070",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time when you had to say no to a request in order to protect your priorities.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the request and why it would have derailed your priorities",
-          "Task — explain what was at stake in your key priorities versus the request",
-          "Action — walk through how you said no (was respectful, offered alternative, explained reasoning, stood firm)",
-          "Result — share how the no decision was received and what happened to your priorities"
+          "Situation: describe the request and why it would have derailed your priorities",
+          "Task: explain what was at stake in your key priorities versus the request",
+          "Action: walk through how you said no (was respectful, offered alternative, explained reasoning, stood firm)",
+          "Result: share how the no decision was received and what happened to your priorities"
         ],
         "strong_answer_signals": [
           "You said no respectfully, not abruptly",
@@ -1759,15 +2001,18 @@
     {
       "id": "ub_071",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you delivered a project on time when the odds were against you.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the project and the odds against on-time delivery (scope creep, resource constraints, unexpected obstacles)",
-          "Task — explain why on-time delivery mattered",
-          "Action — walk through what you did to beat the odds (anticipated risks, reprioritized ruthlessly, escalated blockers, kept team focused)",
-          "Result — share that you delivered on time and how you maintained quality"
+          "Situation: describe the project and the odds against on-time delivery (scope creep, resource constraints, unexpected obstacles)",
+          "Task: explain why on-time delivery mattered",
+          "Action: walk through what you did to beat the odds (anticipated risks, reprioritized ruthlessly, escalated blockers, kept team focused)",
+          "Result: share that you delivered on time and how you maintained quality"
         ],
         "strong_answer_signals": [
           "You didn't sacrifice quality to hit the deadline",
@@ -1784,15 +2029,18 @@
     {
       "id": "ub_072",
       "category": "behavioral",
-      "seniority": ["entry", "mid"],
+      "seniority": [
+        "entry",
+        "mid"
+      ],
       "text": "Describe a time you were overwhelmed by your workload and how you managed it.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what created the overload (new role, crisis, staffing gap, saying yes too much)",
-          "Task — explain what was at risk if you didn't manage it (quality, health, relationship breakdown)",
-          "Action — walk through how you managed it (asked for help, delegated, prioritized, communicated constraints)",
-          "Result — share how you got back to sustainable pace and what you learned"
+          "Situation: describe what created the overload (new role, crisis, staffing gap, saying yes too much)",
+          "Task: explain what was at risk if you didn't manage it (quality, health, relationship breakdown)",
+          "Action: walk through how you managed it (asked for help, delegated, prioritized, communicated constraints)",
+          "Result: share how you got back to sustainable pace and what you learned"
         ],
         "strong_answer_signals": [
           "You acknowledged the overload rather than just pushing through",
@@ -1809,15 +2057,18 @@
     {
       "id": "ub_073",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you had to reprioritize urgently because of an unexpected crisis.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the crisis and how it changed what mattered (urgent customer issue, security problem, leadership change, market event)",
-          "Task — explain what you needed to stop or defer to address the crisis",
-          "Action — walk through your reprioritization (assessed impact of dropping things, rallied the team, communicated changes)",
-          "Result — share how you handled the crisis and how you managed the deferred work"
+          "Situation: describe the crisis and how it changed what mattered (urgent customer issue, security problem, leadership change, market event)",
+          "Task: explain what you needed to stop or defer to address the crisis",
+          "Action: walk through your reprioritization (assessed impact of dropping things, rallied the team, communicated changes)",
+          "Result: share how you handled the crisis and how you managed the deferred work"
         ],
         "strong_answer_signals": [
           "You acted quickly without panic",
@@ -1834,15 +2085,18 @@
     {
       "id": "ub_074",
       "category": "behavioral",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "Describe a time you helped your team become more organized or efficient in managing work.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what was inefficient (chaotic, duplicative work, unclear priorities, context switching)",
-          "Task — explain what the inefficiency was costing (time, quality, morale) and why you felt responsible",
-          "Action — walk through how you improved organization (introduced process, tools, or discipline, got team buy-in)",
-          "Result — share measurable improvement in efficiency or satisfaction"
+          "Situation: describe what was inefficient (chaotic, duplicative work, unclear priorities, context switching)",
+          "Task: explain what the inefficiency was costing (time, quality, morale) and why you felt responsible",
+          "Action: walk through how you improved organization (introduced process, tools, or discipline, got team buy-in)",
+          "Result: share measurable improvement in efficiency or satisfaction"
         ],
         "strong_answer_signals": [
           "You involved the team in improving rather than imposing",
@@ -1859,15 +2113,18 @@
     {
       "id": "ub_075",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you anticipated a future bottleneck and planned ahead to avoid it.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what bottleneck you anticipated and what made you see it coming",
-          "Task — explain what would have happened if you hadn't acted",
-          "Action — walk through your planning (what resources or people you brought in early, how you sequenced work)",
-          "Result — share how the anticipated crisis was avoided thanks to your foresight"
+          "Situation: describe what bottleneck you anticipated and what made you see it coming",
+          "Task: explain what would have happened if you hadn't acted",
+          "Action: walk through your planning (what resources or people you brought in early, how you sequenced work)",
+          "Result: share how the anticipated crisis was avoided thanks to your foresight"
         ],
         "strong_answer_signals": [
           "You saw a pattern or trend that wasn't obvious to others",
@@ -1884,15 +2141,19 @@
     {
       "id": "ub_076",
       "category": "behavioral",
-      "seniority": ["mid", "senior", "manager"],
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "Describe a time you reduced time wasted in meetings or reporting in your team.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what was wasting time (too many meetings, unnecessary attendees, poor format, redundant reporting)",
-          "Task — explain what the wasted time was costing and why you felt responsible",
-          "Action — walk through what you changed (eliminated or condensed meetings, improved format, reduced reporting)",
-          "Result — share how much time was reclaimed and what the team did with it"
+          "Situation: describe what was wasting time (too many meetings, unnecessary attendees, poor format, redundant reporting)",
+          "Task: explain what the wasted time was costing and why you felt responsible",
+          "Action: walk through what you changed (eliminated or condensed meetings, improved format, reduced reporting)",
+          "Result: share how much time was reclaimed and what the team did with it"
         ],
         "strong_answer_signals": [
           "You measured what was wasteful before making changes",
@@ -1909,15 +2170,18 @@
     {
       "id": "ub_077",
       "category": "behavioral",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "Tell me about a time you delegated effectively to free yourself up for higher-value work.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what you were doing that someone else could do and why you needed to let go",
-          "Task — explain the challenge of delegating (trusting someone else, being available to help) and what was at stake",
-          "Action — walk through your delegation approach (chose the right person, gave them context and authority, stayed available, let go)",
-          "Result — share what you freed yourself up to do and how the delegate grew"
+          "Situation: describe what you were doing that someone else could do and why you needed to let go",
+          "Task: explain the challenge of delegating (trusting someone else, being available to help) and what was at stake",
+          "Action: walk through your delegation approach (chose the right person, gave them context and authority, stayed available, let go)",
+          "Result: share what you freed yourself up to do and how the delegate grew"
         ],
         "strong_answer_signals": [
           "You chose someone with growth potential, not just current capability",
@@ -1934,15 +2198,18 @@
     {
       "id": "ub_078",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you had to deliver something significant with half the expected time or budget.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what you needed to deliver and the constraint (half the time or budget)",
-          "Task — explain what success meant with the constraint",
-          "Action — walk through your approach (ruthlessly prioritized, got creative, stripped to essentials, managed scope)",
-          "Result — share what you delivered and how the constraints actually improved focus"
+          "Situation: describe what you needed to deliver and the constraint (half the time or budget)",
+          "Task: explain what success meant with the constraint",
+          "Action: walk through your approach (ruthlessly prioritized, got creative, stripped to essentials, managed scope)",
+          "Result: share what you delivered and how the constraints actually improved focus"
         ],
         "strong_answer_signals": [
           "You delivered something valuable despite the constraint",
@@ -1959,15 +2226,19 @@
     {
       "id": "ub_079",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you went above and beyond for a customer or client.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what the customer needed and what went above and beyond the standard",
-          "Task — explain why it mattered to you to go the extra mile",
-          "Action — walk through what you did (uncovered hidden need, spent extra time, found creative solution)",
-          "Result — share how the customer felt and the impact on the relationship or business"
+          "Situation: describe what the customer needed and what went above and beyond the standard",
+          "Task: explain why it mattered to you to go the extra mile",
+          "Action: walk through what you did (uncovered hidden need, spent extra time, found creative solution)",
+          "Result: share how the customer felt and the impact on the relationship or business"
         ],
         "strong_answer_signals": [
           "You went above and beyond in a way that mattered to the customer",
@@ -1984,15 +2255,19 @@
     {
       "id": "ub_080",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you resolved a difficult customer complaint successfully.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the complaint and what made it difficult (justified anger, complex issue, customer with power, unclear resolution)",
-          "Task — explain what success meant in resolving it",
-          "Action — walk through your approach (listened without defensiveness, took responsibility for your part, found solution, followed up)",
-          "Result — share how the customer felt afterward and the impact on the relationship"
+          "Situation: describe the complaint and what made it difficult (justified anger, complex issue, customer with power, unclear resolution)",
+          "Task: explain what success meant in resolving it",
+          "Action: walk through your approach (listened without defensiveness, took responsibility for your part, found solution, followed up)",
+          "Result: share how the customer felt afterward and the impact on the relationship"
         ],
         "strong_answer_signals": [
           "You didn't get defensive even though they were angry",
@@ -2009,15 +2284,18 @@
     {
       "id": "ub_081",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you identified a customer need before the customer articulated it.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe how you noticed the underlying need (patterns, questions they asked, problems they faced)",
-          "Task — explain what would have happened if you hadn't surfaced it",
-          "Action — walk through how you raised it with the customer (presented it gently, validated their challenge, offered solution)",
-          "Result — share how the customer responded and the value it created"
+          "Situation: describe how you noticed the underlying need (patterns, questions they asked, problems they faced)",
+          "Task: explain what would have happened if you hadn't surfaced it",
+          "Action: walk through how you raised it with the customer (presented it gently, validated their challenge, offered solution)",
+          "Result: share how the customer responded and the value it created"
         ],
         "strong_answer_signals": [
           "You understood their business or context well enough to spot the gap",
@@ -2034,15 +2312,18 @@
     {
       "id": "ub_082",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you had to push back on a customer request you believed was not in their best interest.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the request and why you believed it wasn't in their best interest",
-          "Task — explain what was at stake in saying no versus yes",
-          "Action — walk through how you pushed back (explained your concern, offered better alternative, showed you understood their goal)",
-          "Result — share how the customer responded and whether they accepted your recommendation"
+          "Situation: describe the request and why you believed it wasn't in their best interest",
+          "Task: explain what was at stake in saying no versus yes",
+          "Action: walk through how you pushed back (explained your concern, offered better alternative, showed you understood their goal)",
+          "Result: share how the customer responded and whether they accepted your recommendation"
         ],
         "strong_answer_signals": [
           "You came from a place of genuine care for their success, not obstruction",
@@ -2059,15 +2340,18 @@
     {
       "id": "ub_083",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time a customer's needs conflicted with internal constraints. How did you navigate it?",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what the customer wanted and what internal constraint prevented it (policy, technical, resource, timeline)",
-          "Task — explain what was at stake in each direction (customer satisfaction vs. internal viability)",
-          "Action — walk through how you navigated it (understood both perspectives, found creative solutions, escalated if needed)",
-          "Result — share how it was resolved and what the customer felt"
+          "Situation: describe what the customer wanted and what internal constraint prevented it (policy, technical, resource, timeline)",
+          "Task: explain what was at stake in each direction (customer satisfaction vs. internal viability)",
+          "Action: walk through how you navigated it (understood both perspectives, found creative solutions, escalated if needed)",
+          "Result: share how it was resolved and what the customer felt"
         ],
         "strong_answer_signals": [
           "You understood why both the constraint and customer need mattered",
@@ -2084,15 +2368,18 @@
     {
       "id": "ub_084",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you rebuilt trust with a customer after a service or delivery failure.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what failed and how it damaged trust",
-          "Task — explain why rebuilding the relationship mattered",
-          "Action — walk through your recovery approach (took full responsibility, fixed the issue, proved reliability with consistent delivery)",
-          "Result — share how trust was rebuilt and the relationship strengthened"
+          "Situation: describe what failed and how it damaged trust",
+          "Task: explain why rebuilding the relationship mattered",
+          "Action: walk through your recovery approach (took full responsibility, fixed the issue, proved reliability with consistent delivery)",
+          "Result: share how trust was rebuilt and the relationship strengthened"
         ],
         "strong_answer_signals": [
           "You didn't make excuses for the failure",
@@ -2109,15 +2396,19 @@
     {
       "id": "ub_085",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you proactively improved the customer experience without being asked.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what you noticed in the customer experience and what could be better",
-          "Task — explain why you felt responsible for improving it even without being asked",
-          "Action — walk through what you did (identified the gap, proposed improvement, implemented it)",
-          "Result — share how the customer experience improved and how customers responded"
+          "Situation: describe what you noticed in the customer experience and what could be better",
+          "Task: explain why you felt responsible for improving it even without being asked",
+          "Action: walk through what you did (identified the gap, proposed improvement, implemented it)",
+          "Result: share how the customer experience improved and how customers responded"
         ],
         "strong_answer_signals": [
           "You noticed something real that customers were experiencing",
@@ -2134,15 +2425,19 @@
     {
       "id": "ub_086",
       "category": "behavioral",
-      "seniority": ["mid", "senior", "manager"],
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "Describe a time you used customer feedback to drive a significant change internally.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what customer feedback revealed and why it required internal change",
-          "Task — explain what internal resistance or inertia you had to overcome",
-          "Action — walk through how you surfaced the feedback (presented it compellingly, got stakeholders to hear directly from customers, built case for change)",
-          "Result — share what changed internally and the impact on customer satisfaction"
+          "Situation: describe what customer feedback revealed and why it required internal change",
+          "Task: explain what internal resistance or inertia you had to overcome",
+          "Action: walk through how you surfaced the feedback (presented it compellingly, got stakeholders to hear directly from customers, built case for change)",
+          "Result: share what changed internally and the impact on customer satisfaction"
         ],
         "strong_answer_signals": [
           "You brought customer voice into internal conversations in a powerful way",
@@ -2159,15 +2454,19 @@
     {
       "id": "ub_087",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about the achievement you are most proud of in your career.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what made this achievement significant (scope, impact, difficulty, what you had to overcome)",
-          "Task — explain your role and what was at stake",
-          "Action — walk through what you did to make it happen (planned, executed, led, persisted)",
-          "Result — share the measurable impact and why you're proud of it"
+          "Situation: describe what made this achievement significant (scope, impact, difficulty, what you had to overcome)",
+          "Task: explain your role and what was at stake",
+          "Action: walk through what you did to make it happen (planned, executed, led, persisted)",
+          "Result: share the measurable impact and why you're proud of it"
         ],
         "strong_answer_signals": [
           "The achievement actually mattered, not just impressive-sounding",
@@ -2184,15 +2483,18 @@
     {
       "id": "ub_088",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you set a very ambitious goal and describe what you did to achieve it.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the ambitious goal and why it stretched you (never done before, clear obstacles, high stakes)",
-          "Task — explain what achieving it would mean",
-          "Action — walk through your execution plan (broke it into phases, anticipated obstacles, stayed focused, persisted through setbacks)",
-          "Result — share whether you achieved it and what you learned about setting and achieving ambitious goals"
+          "Situation: describe the ambitious goal and why it stretched you (never done before, clear obstacles, high stakes)",
+          "Task: explain what achieving it would mean",
+          "Action: walk through your execution plan (broke it into phases, anticipated obstacles, stayed focused, persisted through setbacks)",
+          "Result: share whether you achieved it and what you learned about setting and achieving ambitious goals"
         ],
         "strong_answer_signals": [
           "The goal was genuinely ambitious, not just moderately challenging",
@@ -2209,15 +2511,19 @@
     {
       "id": "ub_089",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you exceeded expectations significantly.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what the expectation was and why you thought you could exceed it",
-          "Task — explain what you set out to deliver beyond expectations",
-          "Action — walk through what you did (worked harder, thought bigger, found creative solutions)",
-          "Result — share how much you exceeded expectations and the impact"
+          "Situation: describe what the expectation was and why you thought you could exceed it",
+          "Task: explain what you set out to deliver beyond expectations",
+          "Action: walk through what you did (worked harder, thought bigger, found creative solutions)",
+          "Result: share how much you exceeded expectations and the impact"
         ],
         "strong_answer_signals": [
           "Expectations were clear and reasonable to start",
@@ -2234,15 +2540,19 @@
     {
       "id": "ub_090",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you pursued a goal independently without being asked or directed to.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what goal you identified and why it mattered even though you weren't asked",
-          "Task — explain what challenge you expected to face",
-          "Action — walk through how you pursued it (got clarity from leadership, organized effort, stayed focused)",
-          "Result — share what you achieved and the recognition or impact"
+          "Situation: describe what goal you identified and why it mattered even though you weren't asked",
+          "Task: explain what challenge you expected to face",
+          "Action: walk through how you pursued it (got clarity from leadership, organized effort, stayed focused)",
+          "Result: share what you achieved and the recognition or impact"
         ],
         "strong_answer_signals": [
           "You identified a goal that genuinely mattered, not just kept you busy",
@@ -2259,15 +2569,18 @@
     {
       "id": "ub_091",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you kept going when most people would have quit.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the difficulty or resistance that would have caused most people to quit",
-          "Task — explain why you decided to keep going",
-          "Action — walk through how you maintained momentum (drew on reserves, found support, refocused on purpose)",
-          "Result — share what you achieved by persisting and what you learned about resilience"
+          "Situation: describe the difficulty or resistance that would have caused most people to quit",
+          "Task: explain why you decided to keep going",
+          "Action: walk through how you maintained momentum (drew on reserves, found support, refocused on purpose)",
+          "Result: share what you achieved by persisting and what you learned about resilience"
         ],
         "strong_answer_signals": [
           "The difficulty was genuinely significant, not just moderately frustrating",
@@ -2284,15 +2597,19 @@
     {
       "id": "ub_092",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you took on a challenge well outside your comfort zone and succeeded.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what was outside your comfort zone (new skill, new context, new type of challenge)",
-          "Task — explain why you took it on despite the discomfort",
-          "Action — walk through how you tackled it (leaned into discomfort, asked for help, learned on the job, adapted)",
-          "Result — share how you succeeded and how you grew"
+          "Situation: describe what was outside your comfort zone (new skill, new context, new type of challenge)",
+          "Task: explain why you took it on despite the discomfort",
+          "Action: walk through how you tackled it (leaned into discomfort, asked for help, learned on the job, adapted)",
+          "Result: share how you succeeded and how you grew"
         ],
         "strong_answer_signals": [
           "The challenge was genuinely outside your comfort zone, not just unfamiliar",
@@ -2309,15 +2626,18 @@
     {
       "id": "ub_093",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you outperformed against all expectations in a new role.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the new role and what expectations were (expected ramp time, baseline performance)",
-          "Task — explain what you set out to achieve",
-          "Action — walk through how you outperformed (mastered role quickly, delivered immediately, built relationships, exceeded targets)",
-          "Result — share how much you exceeded expectations and the impact on your trajectory"
+          "Situation: describe the new role and what expectations were (expected ramp time, baseline performance)",
+          "Task: explain what you set out to achieve",
+          "Action: walk through how you outperformed (mastered role quickly, delivered immediately, built relationships, exceeded targets)",
+          "Result: share how much you exceeded expectations and the impact on your trajectory"
         ],
         "strong_answer_signals": [
           "There were clear initial expectations you exceeded",
@@ -2334,15 +2654,18 @@
     {
       "id": "ub_094",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you delivered results in a difficult or resource-constrained environment.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the constraint (budget, people, time, tools) and how it made delivery difficult",
-          "Task — explain what results you were expected to deliver despite the constraint",
-          "Action — walk through how you delivered (prioritized ruthlessly, got creative, leveraged what you had)",
-          "Result — share that you delivered results and how the constraint forced better decisions"
+          "Situation: describe the constraint (budget, people, time, tools) and how it made delivery difficult",
+          "Task: explain what results you were expected to deliver despite the constraint",
+          "Action: walk through how you delivered (prioritized ruthlessly, got creative, leveraged what you had)",
+          "Result: share that you delivered results and how the constraint forced better decisions"
         ],
         "strong_answer_signals": [
           "You delivered meaningful results despite real constraint",
@@ -2359,15 +2682,19 @@
     {
       "id": "ub_095",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you were asked to do something you felt was wrong. What did you do?",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what you were asked to do and why you felt it was wrong (unethical, harmful, dishonest)",
-          "Task — explain what was at stake and why you had to decide",
-          "Action — walk through how you responded (pushed back respectfully, offered alternative, escalated if needed)",
-          "Result — share what happened and how you felt about your choice"
+          "Situation: describe what you were asked to do and why you felt it was wrong (unethical, harmful, dishonest)",
+          "Task: explain what was at stake and why you had to decide",
+          "Action: walk through how you responded (pushed back respectfully, offered alternative, escalated if needed)",
+          "Result: share what happened and how you felt about your choice"
         ],
         "strong_answer_signals": [
           "You stood up for what was right while respecting the other person",
@@ -2384,15 +2711,18 @@
     {
       "id": "ub_096",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you made a decision that was right long-term but unpopular short-term.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the decision and why it was unpopular in the short term",
-          "Task — explain why you believed it was right long-term despite the short-term cost",
-          "Action — walk through how you communicated the decision (explained the long-term benefit, acknowledged the short-term pain, stayed committed)",
-          "Result — share how it played out long-term and whether people understood why you made the call"
+          "Situation: describe the decision and why it was unpopular in the short term",
+          "Task: explain why you believed it was right long-term despite the short-term cost",
+          "Action: walk through how you communicated the decision (explained the long-term benefit, acknowledged the short-term pain, stayed committed)",
+          "Result: share how it played out long-term and whether people understood why you made the call"
         ],
         "strong_answer_signals": [
           "You actually had a long-term perspective, not just a short-term reason",
@@ -2409,15 +2739,18 @@
     {
       "id": "ub_097",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you had to uphold a policy or principle when it was inconvenient.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the policy or principle and why upholding it was inconvenient",
-          "Task — explain what would have happened if you hadn't upheld it",
-          "Action — walk through how you maintained the standard (didn't make exceptions, explained the rationale, stayed firm)",
-          "Result — share how people responded and whether they understood"
+          "Situation: describe the policy or principle and why upholding it was inconvenient",
+          "Task: explain what would have happened if you hadn't upheld it",
+          "Action: walk through how you maintained the standard (didn't make exceptions, explained the rationale, stayed firm)",
+          "Result: share how people responded and whether they understood"
         ],
         "strong_answer_signals": [
           "You upheld the standard fairly, not to be rigid",
@@ -2434,15 +2767,19 @@
     {
       "id": "ub_098",
       "category": "behavioral",
-      "seniority": ["mid", "senior", "manager"],
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "Describe a time you noticed unethical behavior at work and what you did.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what unethical behavior you noticed and how you confirmed it",
-          "Task — explain what was at stake if you said nothing",
-          "Action — walk through how you addressed it (raised it with the person, escalated to leadership, reported through proper channels)",
-          "Result — share how it was resolved and what changed"
+          "Situation: describe what unethical behavior you noticed and how you confirmed it",
+          "Task: explain what was at stake if you said nothing",
+          "Action: walk through how you addressed it (raised it with the person, escalated to leadership, reported through proper channels)",
+          "Result: share how it was resolved and what changed"
         ],
         "strong_answer_signals": [
           "You took the concern seriously without being accusatory",
@@ -2459,15 +2796,19 @@
     {
       "id": "ub_099",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you were transparent when it would have been easier not to be.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what you had to be transparent about and why it would have been easier to hide it",
-          "Task — explain what was at stake in the transparency",
-          "Action — walk through how you were transparent (when you disclosed it, how you explained it, what you offered to do)",
-          "Result — share how people responded and how it built or damaged trust"
+          "Situation: describe what you had to be transparent about and why it would have been easier to hide it",
+          "Task: explain what was at stake in the transparency",
+          "Action: walk through how you were transparent (when you disclosed it, how you explained it, what you offered to do)",
+          "Result: share how people responded and how it built or damaged trust"
         ],
         "strong_answer_signals": [
           "You disclosed something that put you in an unfavorable light",
@@ -2484,15 +2825,19 @@
     {
       "id": "ub_100",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you admitted a mistake when you could have covered it up.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the mistake and why you could have covered it up",
-          "Task — explain what was at stake in admitting versus hiding it",
-          "Action — walk through when and how you admitted it (promptly, took responsibility, offered to fix it)",
-          "Result — share how people responded and how it affected trust"
+          "Situation: describe the mistake and why you could have covered it up",
+          "Task: explain what was at stake in admitting versus hiding it",
+          "Action: walk through when and how you admitted it (promptly, took responsibility, offered to fix it)",
+          "Result: share how people responded and how it affected trust"
         ],
         "strong_answer_signals": [
           "It would have been genuinely easy to hide the mistake",
@@ -2509,15 +2854,18 @@
     {
       "id": "ub_101",
       "category": "behavioral",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "Tell me about a time you had to hold a standard others wanted to lower.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the standard and who wanted to lower it and why",
-          "Task — explain what was at stake in maintaining the standard",
-          "Action — walk through how you held it (explained why it mattered, didn't make exceptions, stood firm despite pressure)",
-          "Result — share how the team responded and whether the standard was maintained"
+          "Situation: describe the standard and who wanted to lower it and why",
+          "Task: explain what was at stake in maintaining the standard",
+          "Action: walk through how you held it (explained why it mattered, didn't make exceptions, stood firm despite pressure)",
+          "Result: share how the team responded and whether the standard was maintained"
         ],
         "strong_answer_signals": [
           "You held the standard without being rigid or judgmental",
@@ -2534,15 +2882,18 @@
     {
       "id": "ub_102",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you chose the harder right over the easier wrong.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the choice between the harder right and the easier wrong",
-          "Task — explain what made the right choice harder and why it mattered",
-          "Action — walk through how you chose the right path (recognized the choice, weighed trade-offs, committed to the harder path)",
-          "Result — share what happened and how you felt about the choice"
+          "Situation: describe the choice between the harder right and the easier wrong",
+          "Task: explain what made the right choice harder and why it mattered",
+          "Action: walk through how you chose the right path (recognized the choice, weighed trade-offs, committed to the harder path)",
+          "Result: share what happened and how you felt about the choice"
         ],
         "strong_answer_signals": [
           "The harder right was genuinely harder, not just slightly inconvenient",
@@ -2559,15 +2910,19 @@
     {
       "id": "ub_103",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you sought feedback that changed how you work.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what you sought feedback about and why",
-          "Task — explain what was at stake in getting honest feedback",
-          "Action — walk through how you sought it (who you asked, how you created safety for honest feedback, listened without defensiveness)",
-          "Result — share how the feedback changed how you work and the impact"
+          "Situation: describe what you sought feedback about and why",
+          "Task: explain what was at stake in getting honest feedback",
+          "Action: walk through how you sought it (who you asked, how you created safety for honest feedback, listened without defensiveness)",
+          "Result: share how the feedback changed how you work and the impact"
         ],
         "strong_answer_signals": [
           "You genuinely sought feedback, not validation",
@@ -2584,15 +2939,19 @@
     {
       "id": "ub_104",
       "category": "behavioral",
-      "seniority": ["entry", "mid", "senior"],
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Describe a skill or capability you deliberately built over the past year.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what skill or capability you decided to build and why it mattered",
-          "Task — explain what you needed to do to build it",
-          "Action — walk through your learning journey (took courses, practiced, asked for feedback, applied it to work)",
-          "Result — share how you've grown and how you're using the new capability"
+          "Situation: describe what skill or capability you decided to build and why it mattered",
+          "Task: explain what you needed to do to build it",
+          "Action: walk through your learning journey (took courses, practiced, asked for feedback, applied it to work)",
+          "Result: share how you've grown and how you're using the new capability"
         ],
         "strong_answer_signals": [
           "You chose a skill that was genuinely needed, not just interesting",
@@ -2609,15 +2968,19 @@
     {
       "id": "ub_105",
       "category": "behavioral",
-      "seniority": ["mid", "senior", "manager"],
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "Tell me about a time you learned from someone with less experience than you.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe who you learned from and why they had valuable insights despite having less experience",
-          "Task — explain what you were open to learning about",
-          "Action — walk through how you approached it (asked questions, stayed humble, actually changed something based on what you learned)",
-          "Result — share what you learned and how it made you better"
+          "Situation: describe who you learned from and why they had valuable insights despite having less experience",
+          "Task: explain what you were open to learning about",
+          "Action: walk through how you approached it (asked questions, stayed humble, actually changed something based on what you learned)",
+          "Result: share what you learned and how it made you better"
         ],
         "strong_answer_signals": [
           "You were genuinely humble and open despite your experience advantage",
@@ -2634,15 +2997,18 @@
     {
       "id": "ub_106",
       "category": "behavioral",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "Describe a time you coached or mentored someone and saw them grow.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the person and what they were struggling with or trying to improve",
-          "Task — explain your role as their coach or mentor",
-          "Action — walk through how you coached them (asked good questions, provided perspective, gave them challenges, gave feedback)",
-          "Result — share concrete evidence of their growth (new capability, promotion, changed mindset, improved performance)"
+          "Situation: describe the person and what they were struggling with or trying to improve",
+          "Task: explain your role as their coach or mentor",
+          "Action: walk through how you coached them (asked good questions, provided perspective, gave them challenges, gave feedback)",
+          "Result: share concrete evidence of their growth (new capability, promotion, changed mindset, improved performance)"
         ],
         "strong_answer_signals": [
           "The person genuinely grew, not just felt supported",
@@ -2659,15 +3025,18 @@
     {
       "id": "ub_107",
       "category": "behavioral",
-      "seniority": ["mid", "senior"],
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you invested significantly in your own development during a busy period.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe the busy period and what development you pursued anyway",
-          "Task — explain why it mattered to you to invest in yourself despite the busyness",
-          "Action — walk through how you made time and space for development (created discipline, got support, protected the time)",
-          "Result — share what you developed and how it paid off"
+          "Situation: describe the busy period and what development you pursued anyway",
+          "Task: explain why it mattered to you to invest in yourself despite the busyness",
+          "Action: walk through how you made time and space for development (created discipline, got support, protected the time)",
+          "Result: share what you developed and how it paid off"
         ],
         "strong_answer_signals": [
           "The period was genuinely busy, not just moderately busy",
@@ -2684,15 +3053,18 @@
     {
       "id": "ub_108",
       "category": "behavioral",
-      "seniority": ["senior", "manager"],
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "Describe a time you changed your leadership or working style based on what you learned about yourself.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Situation — describe what you learned about yourself (blind spot, impact you weren't aware of, capability you lacked)",
-          "Task — explain what made you decide to change",
-          "Action — walk through how you changed your style (what you did differently, how you built the new habit, what support you used)",
-          "Result — share how the change impacted your relationships and effectiveness"
+          "Situation: describe what you learned about yourself (blind spot, impact you weren't aware of, capability you lacked)",
+          "Task: explain what made you decide to change",
+          "Action: walk through how you changed your style (what you did differently, how you built the new habit, what support you used)",
+          "Result: share how the change impacted your relationships and effectiveness"
         ],
         "strong_answer_signals": [
           "You learned something hard about yourself and acted on it",

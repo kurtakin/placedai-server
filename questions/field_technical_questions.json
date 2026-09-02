@@ -1,0 +1,844 @@
+{
+  "metadata": {
+    "sector": "Field and Technical Professions",
+    "generated": "2026-08-30",
+    "total": 29,
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ]
+  },
+  "questions": [
+    {
+      "id": "ft_001",
+      "text": "Tell me about a time you had to troubleshoot a complex equipment failure. How did you approach it?",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Systematically diagnosed the problem",
+          "Used diagnostic tools and equipment manuals",
+          "Identified root cause, not just symptoms",
+          "Resolved efficiently and documented the fix"
+        ],
+        "strong_answer_signals": [
+          "Specific diagnostic process followed",
+          "Root cause identified and fixed",
+          "Prevention of recurrence demonstrated"
+        ],
+        "avoid": [
+          "Randomly replacing parts without diagnosis",
+          "Not checking equipment manuals",
+          "Not documenting the fix"
+        ]
+      }
+    },
+    {
+      "id": "ft_002",
+      "text": "Describe a time you had to work safely at height or in a confined space. How did you ensure safety?",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Performed risk assessment before starting work",
+          "Used proper PPE and safety equipment",
+          "Followed lockout/tagout procedures",
+          "Worked with a buddy system"
+        ],
+        "strong_answer_signals": [
+          "Specific safety protocols followed",
+          "Zero-incident safety record",
+          "Safety culture demonstrated"
+        ],
+        "avoid": [
+          "Skipping PPE or safety checks",
+          "Working alone in hazardous conditions",
+          "Not following lockout/tagout"
+        ]
+      }
+    },
+    {
+      "id": "ft_003",
+      "text": "Tell me about a time you had to manage multiple urgent repair requests. How did you prioritize?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Assessed urgency and impact of each request",
+          "Prioritized safety-critical issues first",
+          "Communicated timelines to stakeholders",
+          "Delivered on commitments"
+        ],
+        "strong_answer_signals": [
+          "Safety-first prioritization",
+          "Clear communication with stakeholders",
+          "Efficient scheduling and resource management"
+        ],
+        "avoid": [
+          "Trying to handle everything at once",
+          "Not communicating delays",
+          "Ignoring safety priorities"
+        ]
+      }
+    },
+    {
+      "id": "ft_004",
+      "text": "Describe a time you had to work as part of a team on a large installation or project.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Understood your role and responsibilities clearly",
+          "Communicated progress and obstacles regularly",
+          "Supported team members and asked for help when needed",
+          "Delivered as part of the coordinated effort"
+        ],
+        "strong_answer_signals": [
+          "Clear role definition and coordination",
+          "Safety and quality maintained",
+          "Teamwork and collaboration demonstrated"
+        ],
+        "avoid": [
+          "Working in isolation",
+          "Not communicating with the team",
+          "Ignoring safety or quality standards"
+        ]
+      }
+    },
+    {
+      "id": "ft_005",
+      "text": "Tell me about a time you made a mistake on a job. How did you handle it?",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Acknowledged the mistake immediately",
+          "Assessed safety and quality impact",
+          "Took corrective action",
+          "Documented and learned from the experience"
+        ],
+        "strong_answer_signals": [
+          "Immediate acknowledgment of error",
+          "Corrective action taken",
+          "Process improvement implemented"
+        ],
+        "avoid": [
+          "Hiding the mistake",
+          "Blaming equipment or colleagues",
+          "Not learning from the error"
+        ]
+      }
+    },
+    {
+      "id": "ft_006",
+      "text": "Describe your experience with electrical safety standards and OSHA regulations.",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Knows OSHA standards for electrical work",
+          "Understands NFPA 70E and arc flash safety",
+          "Uses lockout/tagout procedures",
+          "Knows PPE requirements and classifications"
+        ],
+        "strong_answer_signals": [
+          "Specific standards referenced correctly",
+          "Practical safety implementation demonstrated",
+          "Recent safety training maintained"
+        ],
+        "avoid": [
+          "Not knowing basic OSHA requirements",
+          "No experience with lockout/tagout",
+          "Not wearing proper PPE on job site"
+        ]
+      }
+    },
+    {
+      "id": "ft_007",
+      "text": "How do you approach reading and interpreting electrical or mechanical schematics?",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Identifies the system and function from the diagram",
+          "Reads line and ladder diagrams, schematics, one-lines",
+          "Identifies components, wiring, and connections",
+          "Applies codes and standards to the design"
+        ],
+        "strong_answer_signals": [
+          "Specific diagram types identified",
+          "Components correctly identified",
+          "Applied codes and standards"
+        ],
+        "avoid": [
+          "Guessing without reading the schematic",
+          "Not understanding diagram symbols",
+          "Not cross-referencing with specifications"
+        ]
+      }
+    },
+    {
+      "id": "ft_008",
+      "text": "Walk me through how you would install a residential or commercial electrical panel.",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Verified site readiness and code compliance",
+          "Installed main panel with proper clearances",
+          "Connected feeders and branch circuits correctly",
+          "Tested and energized per NEC requirements"
+        ],
+        "strong_answer_signals": [
+          "NEC code followed",
+          "Clearances and mounting proper",
+          "Testing and verification performed"
+        ],
+        "avoid": [
+          "Skipping testing and verification",
+          "Not following NEC code",
+          "Not verifying clearances"
+        ]
+      }
+    },
+    {
+      "id": "ft_009",
+      "text": "How do you handle HVAC system diagnostics and troubleshooting?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Uses manifold gauges and diagnostic tools",
+          "Checks refrigerant charge and system pressures",
+          "Tests electrical components and controls",
+          "Evaluates airflow and ductwork"
+        ],
+        "strong_answer_signals": [
+          "Specific diagnostic tools used correctly",
+          "System charge verified and documented",
+          "Root cause found and repair completed"
+        ],
+        "avoid": [
+          "Replacing parts without diagnosis",
+          "Not using proper gauges",
+          "Not checking electrical components first"
+        ]
+      }
+    },
+    {
+      "id": "ft_010",
+      "text": "Describe the process for commissioning and testing a solar PV system.",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Verified all electrical connections and grounding",
+          "Tested string and module voltages and insulation resistance",
+          "Checked inverter settings and grid interconnection",
+          "Documented commissioning report and handed over"
+        ],
+        "strong_answer_signals": [
+          "Multi-meter and insulation tester used",
+          "NEC and local code compliance verified",
+          "Commissioning report complete"
+        ],
+        "avoid": [
+          "Not testing insulation resistance",
+          "Skipping grounding verification",
+          "Not documenting commissioning"
+        ]
+      }
+    },
+    {
+      "id": "ft_011",
+      "text": "How do you safely handle and maintain a wind turbine during operation and maintenance?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Follows lockout/tagout and energy control procedures",
+          "Uses proper PPE for working at height",
+          "Checks safety systems before climbing",
+          "Follows manufacturer maintenance schedule"
+        ],
+        "strong_answer_signals": [
+          "LOTO procedures followed",
+          "Height safety equipment used",
+          "Specific turbine components maintained"
+        ],
+        "avoid": [
+          "Skipping LOTO procedures",
+          "Working at height without full PPE",
+          "Not following OEM maintenance schedule"
+        ]
+      }
+    },
+    {
+      "id": "ft_012",
+      "text": "How do you perform electrical testing and use a multimeter properly?",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Selects correct range and function on multimeter",
+          "Tests voltage, current, and resistance safely",
+          "Verifies circuit is de-energized before testing",
+          "Documents readings and compares to specs"
+        ],
+        "strong_answer_signals": [
+          "Correct meter settings verified",
+          "Safe testing procedures followed",
+          "Readings documented and compared to specs"
+        ],
+        "avoid": [
+          "Using wrong range or function",
+          "Testing while circuit is energized unnecessarily",
+          "Not verifying readings against specifications"
+        ]
+      }
+    },
+    {
+      "id": "ft_013",
+      "text": "How do you handle refrigerant charging for HVAC systems?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Verifies system requirements and refrigerant type",
+          "Uses proper recovery and charging equipment",
+          "Measures superheat and subcooling",
+          "Handles refrigerant per EPA Section 608"
+        ],
+        "strong_answer_signals": [
+          "EPA certification referenced",
+          "Proper gauge and recovery equipment used",
+          "Superheat/subcooling measured and verified"
+        ],
+        "avoid": [
+          "Overcharging or undercharging refrigerant",
+          "Not using recovery equipment",
+          "Handling refrigerant without EPA certification"
+        ]
+      }
+    },
+    {
+      "id": "ft_014",
+      "text": "Describe your approach to reading blueprints and electrical diagrams for wind or solar installations.",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Identifies panel layouts and equipment locations",
+          "Reads single-line and three-line diagrams",
+          "Identifies wire sizes and conduit runs",
+          "Verifies code compliance with NEC and local standards"
+        ],
+        "strong_answer_signals": [
+          "Diagram types correctly identified",
+          "Equipment locations and sizes verified",
+          "Code requirements checked"
+        ],
+        "avoid": [
+          "Not verifying with specs",
+          "Not checking code requirements",
+          "Guessing wire sizes from diagrams"
+        ]
+      }
+    },
+    {
+      "id": "ft_015",
+      "text": "How do you ensure quality and safety on a busy job site?",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Established daily safety briefings and toolbox talks",
+          "Verified permits and job-specific safety plans",
+          "Monitored work for code compliance",
+          "Stopped work when safety was at risk"
+        ],
+        "strong_answer_signals": [
+          "Toolbox talks conducted",
+          "Permits verified and current",
+          "Stopping unsafe work demonstrated"
+        ],
+        "avoid": [
+          "Skipping safety briefings",
+          "Not monitoring code compliance",
+          "Not stopping unsafe work"
+        ]
+      }
+    },
+    {
+      "id": "ft_016",
+      "text": "How do you manage inventory and parts for field service work?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Maintained truck stock inventory and rotation",
+          "Forecasted parts needs based on service history",
+          "Coordinated with supply chain for emergency orders",
+          "Reduced truck stockouts and emergency costs"
+        ],
+        "strong_answer_signals": [
+          "Inventory tracking system used",
+          "Parts forecasting based on data",
+          "Emergency cost reduction demonstrated"
+        ],
+        "avoid": [
+          "Carrying excess or obsolete inventory",
+          "Not tracking parts usage",
+          "Frequent truck stockouts"
+        ]
+      }
+    },
+    {
+      "id": "ft_017",
+      "text": "Describe your experience with OSHA 10 or 30-hour training and safety culture.",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Completed OSHA 10 or 30-hour training",
+          "Modeled and reinforced safety behaviors",
+          "Participated in safety committees or audits",
+          "Mentored others on safe work practices"
+        ],
+        "strong_answer_signals": [
+          "Specific OSHA training completed",
+          "Safety culture actively promoted",
+          "Incident-free work record"
+        ],
+        "avoid": [
+          "Not having OSHA training",
+          "Not promoting safety culture",
+          "Not mentoring others on safety"
+        ]
+      }
+    },
+    {
+      "id": "ft_018",
+      "text": "How do you handle a situation where a customer or general contractor changes the scope of work?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Assessed the impact on schedule, cost, and safety",
+          "Communicated changes and revised estimates",
+          "Updated work orders and gained written approval",
+          "Documented all scope changes"
+        ],
+        "strong_answer_signals": [
+          "Written change order process followed",
+          "Schedule and cost impact assessed",
+          "Customer and GC communication clear"
+        ],
+        "avoid": [
+          "Accepting scope changes verbally",
+          "Not updating estimates",
+          "Working without written approval"
+        ]
+      }
+    },
+    {
+      "id": "ft_019",
+      "text": "You arrive at a job site and find conditions are unsafe or different from what was expected. What do you do?",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Stopped work and assessed the hazard",
+          "Notified the supervisor and documented the concern",
+          "Did not proceed until conditions were safe",
+          "Participated in hazard resolution"
+        ],
+        "strong_answer_signals": [
+          "Stopped work without pressure",
+          "Hazard documented and communicated",
+          "Conditions verified safe before proceeding"
+        ],
+        "avoid": [
+          "Proceeding despite unsafe conditions",
+          "Not notifying the supervisor",
+          "Making unsafe work decisions alone"
+        ]
+      }
+    },
+    {
+      "id": "ft_020",
+      "text": "A customer is unhappy with the quality of a completed installation. How do you respond?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Listened to the concern and inspected the work",
+          "Admitted and acknowledged any issues found",
+          "Proposed a correction plan with timeline",
+          "Followed through to customer satisfaction"
+        ],
+        "strong_answer_signals": [
+          "Inspection of the work done",
+          "Correction plan proposed and followed",
+          "Customer retention demonstrated"
+        ],
+        "avoid": [
+          "Becoming defensive about your work",
+          "Dismissing the customer's concern",
+          "Not following through on corrections"
+        ]
+      }
+    },
+    {
+      "id": "ft_021",
+      "text": "How do you maintain and grow your skills as a renewable energy technician?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Pursued manufacturer-specific training and certifications",
+          "Stayed current on NEC and renewable energy codes",
+          "Participated in peer review and knowledge sharing",
+          "Practiced hands-on skills regularly"
+        ],
+        "strong_answer_signals": [
+          "NABCEP or manufacturer certifications",
+          "Code updates tracked and applied",
+          "Hands-on practice maintained"
+        ],
+        "avoid": [
+          "Not pursuing continuing education",
+          "Not staying current on code changes",
+          "Not practicing hands-on skills"
+        ]
+      }
+    },
+    {
+      "id": "ft_022",
+      "text": "How do you install and configure a variable frequency drive (VFD) for an HVAC or industrial application?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Verified motor and load specifications",
+          "Set VFD parameters per manufacturer and application",
+          "Tested under load and verified operation",
+          "Documented settings and commissioning results"
+        ],
+        "strong_answer_signals": [
+          "Motor nameplate data verified",
+          "Parameters set per application needs",
+          "Load testing completed"
+        ],
+        "avoid": [
+          "Setting VFD without verifying motor specs",
+          "Not testing under load",
+          "Not documenting settings"
+        ]
+      }
+    },
+    {
+      "id": "ft_023",
+      "text": "What is your experience with solar panel mounting systems and racking?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Understood roof structure and load capacity",
+          "Installed roof hooks, rails, and attachments per code",
+          "Verified waterproofing and flashing integrity",
+          "Torqued hardware per specifications"
+        ],
+        "strong_answer_signals": [
+          "Load calculations or engineering review",
+          "Waterproofing verified",
+          "Torque specs followed"
+        ],
+        "avoid": [
+          "Not checking roof structure",
+          "Skipping waterproofing steps",
+          "Not torquing to spec"
+        ]
+      }
+    },
+    {
+      "id": "ft_024",
+      "text": "How do you handle wind turbine blade inspection and repair?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Performed visual and NDT inspection of blades",
+          "Documented findings with photos and measurements",
+          "Coordinated repairs with OEM or specialized team",
+          "Verified repair and performed post-repair inspection"
+        ],
+        "strong_answer_signals": [
+          "NDT methods used correctly",
+          "Findings documented thoroughly",
+          "OEM repair procedures followed"
+        ],
+        "avoid": [
+          "Not performing proper inspection",
+          "Not documenting findings",
+          "Making repairs without OEM approval"
+        ]
+      }
+    },
+    {
+      "id": "ft_025",
+      "text": "How do you handle arc flash and electrical hazards in industrial settings?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Performed arc flash study and labeled equipment",
+          "Wore appropriate PPE based on incident energy",
+          "Used insulated tools and rated equipment",
+          "Established approach boundaries and trained crew"
+        ],
+        "strong_answer_signals": [
+          "Arc flash study referenced",
+          "Proper PPE selected",
+          "Approach boundaries established and respected"
+        ],
+        "avoid": [
+          "Not wearing proper PPE",
+          "Working on energized equipment without analysis",
+          "Not establishing approach boundaries"
+        ]
+      }
+    },
+    {
+      "id": "ft_026",
+      "text": "Describe your experience with controls and automation in HVAC or renewable energy systems.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Programmed or configured BMS or BAS controls",
+          "Commissioned and tested control sequences",
+          "Troubleshot control and sensor issues",
+          "Optimized energy performance through controls"
+        ],
+        "strong_answer_signals": [
+          "Specific BAS/BMS platforms used",
+          "Controls commissioning performed",
+          "Energy savings demonstrated"
+        ],
+        "avoid": [
+          "Not understanding controls",
+          "Not testing control sequences",
+          "Not optimizing performance"
+        ]
+      }
+    },
+    {
+      "id": "ft_mo_001",
+      "text": "Why did you choose a career in skilled trades or technical field work?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Personal story of interest in hands-on work",
+          "What draws you to renewable energy, electrical, HVAC, or field work",
+          "Where you see yourself: master, lead, inspector, or business owner",
+          "Why this employer fits your career goals"
+        ],
+        "strong_answer_signals": [
+          "Specific career motivation shown",
+          "Hands-on work passion demonstrated",
+          "Career path aligns with employer needs"
+        ],
+        "avoid": [
+          "Generic answer about liking to work with hands",
+          "Only talking about pay",
+          "Not showing specific interest in the trade"
+        ]
+      }
+    },
+    {
+      "id": "ft_mo_002",
+      "text": "How do you stay current with changing codes, technologies, and renewable energy developments?",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Attends manufacturer training and continuing education",
+          "Reads industry publications and code updates",
+          "Participates in trade shows and certifications",
+          "Applies new knowledge to daily work"
+        ],
+        "strong_answer_signals": [
+          "Specific certifications maintained",
+          "Code updates tracked and applied",
+          "Continuous learning demonstrated"
+        ],
+        "avoid": [
+          "Not pursuing continuing education",
+          "Not reading code changes",
+          "Not applying new technology"
+        ]
+      }
+    },
+    {
+      "id": "ft_mo_003",
+      "text": "How do you maintain physical fitness and safety habits for demanding field work?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Maintains physical conditioning for climbing, lifting, and outdoor work",
+          "Follows personal safety routines and habits",
+          "Stays current on first aid and emergency response",
+          "Knows when to ask for help or take a break"
+        ],
+        "strong_answer_signals": [
+          "Physical fitness maintained for job demands",
+          "Safety habits practiced consistently",
+          "Emergency response knowledge current"
+        ],
+        "avoid": [
+          "Ignoring physical fitness for demanding work",
+          "Not maintaining safety habits",
+          "Not knowing emergency response procedures"
+        ]
+      }
+    }
+  ]
+}

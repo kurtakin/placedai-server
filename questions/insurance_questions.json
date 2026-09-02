@@ -1,0 +1,797 @@
+{
+  "metadata": {
+    "sector": "Insurance",
+    "generated": "2026-08-30",
+    "total": 30,
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ]
+  },
+  "questions": [
+    {
+      "id": "in_001",
+      "text": "Tell me about a complex claim you handled.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Claim complexity",
+          "Investigation conducted",
+          "Settlement negotiated",
+          "Client satisfaction"
+        ],
+        "strong_answer_signals": [
+          "Fair settlement",
+          "Lost time minimized"
+        ],
+        "avoid": [
+          "Rushed decision",
+          "No investigation"
+        ]
+      }
+    },
+    {
+      "id": "in_002",
+      "text": "How do you approach risk assessment for underwriting?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Data analyzed",
+          "Rating factors applied",
+          "Experience modification",
+          "Pricing determined"
+        ],
+        "strong_answer_signals": [
+          "Accurate pricing",
+          "Risk assessed"
+        ],
+        "avoid": [
+          "No data",
+          "Overly conservative"
+        ]
+      }
+    },
+    {
+      "id": "in_003",
+      "text": "Describe your experience with claims investigation.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Suspicious claims identified",
+          "Evidence gathered",
+          "Expert consulted",
+          "Fraud prevented"
+        ],
+        "strong_answer_signals": [
+          "Fraud detected",
+          "Recovery achieved"
+        ],
+        "avoid": [
+          "No verification",
+          "Trusted claims"
+        ]
+      }
+    },
+    {
+      "id": "in_004",
+      "text": "How do you handle a policyholder who disputes a denial?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Concern understood",
+          "Policy reviewed",
+          "Appeal process used",
+          "Communication maintained"
+        ],
+        "strong_answer_signals": [
+          "Resolution achieved",
+          "Relationship preserved"
+        ],
+        "avoid": [
+          "Stonewalled",
+          "No empathy"
+        ]
+      }
+    },
+    {
+      "id": "in_005",
+      "text": "Why insurance? What drives your success in this field?",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Risk management passion",
+          "Data analysis interest",
+          "Long-term client relationships",
+          "Financial stability"
+        ],
+        "strong_answer_signals": [
+          "Specific motivation",
+          "Long-term focus"
+        ],
+        "avoid": [
+          "Commission only",
+          "No purpose"
+        ]
+      }
+    },
+    {
+      "id": "in_006",
+      "text": "How do you stay current with insurance regulations?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "State updates",
+          "Licensing",
+          "Regulatory bulletins",
+          "Compliance training"
+        ],
+        "strong_answer_signals": [
+          "Current license",
+          "Regulation aware"
+        ],
+        "avoid": [
+          "Lapsed licensing",
+          "No compliance"
+        ]
+      }
+    },
+    {
+      "id": "in_007",
+      "text": "Describe your approach to actuarial analysis.",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Statistical methods",
+          "Experience data",
+          "Trend analysis",
+          "Reserve calculations"
+        ],
+        "strong_answer_signals": [
+          "Accurate analysis",
+          "Risk measured"
+        ],
+        "avoid": [
+          "Simple averaging",
+          "No trend"
+        ]
+      }
+    },
+    {
+      "id": "in_008",
+      "text": "How do you handle a catastrophic loss or catastrophe?",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Claims surge managed",
+          "Reinsurance utilized",
+          "Communication coordinated",
+          "Recovery plan"
+        ],
+        "strong_answer_signals": [
+          "Reserves sufficient",
+          "Stakeholders informed"
+        ],
+        "avoid": [
+          "Overwhelmed",
+          "Poor communication"
+        ]
+      }
+    },
+    {
+      "id": "in_009",
+      "text": "How do you approach sales in a difficult market?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Product knowledge",
+          "Customer needs",
+          "Differentiation",
+          "Pipeline management"
+        ],
+        "strong_answer_signals": [
+          "Sales maintained",
+          "Product value communicated"
+        ],
+        "avoid": [
+          "Price discounting",
+          "Product discounting"
+        ]
+      }
+    },
+    {
+      "id": "in_010",
+      "text": "Tell me about improving claims processing efficiency.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Process mapped",
+          "Bottlenecks identified",
+          "Automation implemented",
+          "TAT improved"
+        ],
+        "strong_answer_signals": [
+          "Efficient claims",
+          "Customer satisfaction"
+        ],
+        "avoid": [
+          "Manual-only",
+          "No improvement"
+        ]
+      }
+    },
+    {
+      "id": "in_011",
+      "text": "How do you handle a compliance audit?",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Records organized",
+          "Controls documented",
+          "Issues addressed",
+          "Audit completed"
+        ],
+        "strong_answer_signals": [
+          "Clean audit",
+          "Regulation followed"
+        ],
+        "avoid": [
+          "Poor documentation",
+          "Surprises on audit"
+        ]
+      }
+    },
+    {
+      "id": "in_012",
+      "text": "How do you approach portfolio management in insurance?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Risk portfolio reviewed",
+          "Diversification applied",
+          "Reserve adequacy",
+          "Reinsurance strategy"
+        ],
+        "strong_answer_signals": [
+          "Diversified book",
+          "Reserves adequate"
+        ],
+        "avoid": [
+          "Concentration risk",
+          "Low reserves"
+        ]
+      }
+    },
+    {
+      "id": "in_013",
+      "text": "Describe your experience with reinsurance.",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Treaty vs facultative",
+          "Pricing models",
+          "Claims handled",
+          "Ceding strategy"
+        ],
+        "strong_answer_signals": [
+          "Optimally ceded",
+          "Captive retained"
+        ],
+        "avoid": [
+          "Over-ceded",
+          "No analysis"
+        ]
+      }
+    },
+    {
+      "id": "in_014",
+      "text": "How do you handle customer complaints?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Complaint logged",
+          "Investigation",
+          "Resolution offered",
+          "Follow-up"
+        ],
+        "strong_answer_signals": [
+          "Customer satisfaction",
+          "No repeat"
+        ],
+        "avoid": [
+          "ignored",
+          "No resolution"
+        ]
+      }
+    },
+    {
+      "id": "in_015",
+      "text": "How do you approach financial reporting for insurance?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Statutory reporting",
+          "NAIC forms",
+          "ACORD data",
+          "Regulatory filing"
+        ],
+        "strong_answer_signals": [
+          "Timely filing",
+          "No errors"
+        ],
+        "avoid": [
+          "Late filing",
+          "Errors",
+          "No filing"
+        ]
+      }
+    },
+    {
+      "id": "in_016",
+      "text": "Tell me about a time you improved retention.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Churn analyzed",
+          "Improvement initiatives",
+          "Retention rate measured",
+          "Results achieved"
+        ],
+        "strong_answer_signals": [
+          "Reduced churn",
+          "Customer loyalty"
+        ],
+        "avoid": [
+          "No analysis",
+          "No action"
+        ]
+      }
+    },
+    {
+      "id": "in_017",
+      "text": "How do you handle underwriting for unusual risks?",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Exposure evaluated",
+          "Experts consulted",
+          "Terms structured",
+          "Premium set"
+        ],
+        "strong_answer_signals": [
+          "Risk properly covered",
+          "Client retained"
+        ],
+        "avoid": [
+          "Auto-rejected",
+          "No analysis"
+        ]
+      }
+    },
+    {
+      "id": "in_018",
+      "text": "How do you approach loss control consulting?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Risk assessments",
+          "Recommendations",
+          "Follow-up",
+          "Claims reduction"
+        ],
+        "strong_answer_signals": [
+          "Losses reduced",
+          "Client value"
+        ],
+        "avoid": [
+          "One-time visit",
+          "No follow-up"
+        ]
+      }
+    },
+    {
+      "id": "in_019",
+      "text": "Describe your experience with MGA or wholesale operations.",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Carrier agreements",
+          "Product development",
+          "Margin management",
+          "Compliance"
+        ],
+        "strong_answer_signals": [
+          "Profitable MGAs",
+          "Regulatory compliance"
+        ],
+        "avoid": [
+          "No oversight",
+          "Margin erosion"
+        ]
+      }
+    },
+    {
+      "id": "in_020",
+      "text": "How do you manage regulatory changes like rate filings?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Filing requirements",
+          "Rate justification",
+          "Documentation",
+          "Approval process"
+        ],
+        "strong_answer_signals": [
+          "Filings approved",
+          "Rates competitive"
+        ],
+        "avoid": [
+          "Late filings",
+          "Insufficient documentation"
+        ]
+      }
+    },
+    {
+      "id": "in_021",
+      "text": "What changes have you seen in insurance technology?",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "AI underwriting",
+          "IoT telematics",
+          "Digital claims",
+          "Insurtech partnerships"
+        ],
+        "strong_answer_signals": [
+          "Tech adoption",
+          "Competitive advantage"
+        ],
+        "avoid": [
+          "Resistance to change",
+          "No innovation"
+        ]
+      }
+    },
+    {
+      "id": "in_022",
+      "text": "How do you handle a policyholder in financial difficulty?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Payment options",
+          "Hardship programs",
+          "Documentation",
+          "Collections strategy"
+        ],
+        "strong_answer_signals": [
+          "Retained customer",
+          "Managed risk"
+        ],
+        "avoid": [
+          "Immediate cancellation",
+          "No options"
+        ]
+      }
+    },
+    {
+      "id": "in_023",
+      "text": "How do you approach D&O liability insurance?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Coverage analysis",
+          "Management concerns",
+          "Claims handling",
+          "Reporting requirements"
+        ],
+        "strong_answer_signals": [
+          "Adequate coverage",
+          "Claims managed"
+        ],
+        "avoid": [
+          "Over or underinsurance"
+        ]
+      }
+    },
+    {
+      "id": "in_024",
+      "text": "Describe your approach to ESG in insurance.",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Sustainable underwriting",
+          "Green investments",
+          "ESG reporting",
+          "Client engagement"
+        ],
+        "strong_answer_signals": [
+          "ESG integration",
+          "Client value"
+        ],
+        "avoid": [
+          "ESG ignored",
+          "No reporting"
+        ]
+      }
+    },
+    {
+      "id": "in_025",
+      "text": "How do you handle cross-border insurance?",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Regulatory research",
+          "Local partners",
+          "Compliance",
+          "Currency"
+        ],
+        "strong_answer_signals": [
+          "Smooth placement",
+          "Regulatory compliant"
+        ],
+        "avoid": [
+          "No local knowledge",
+          "Regulatory issues"
+        ]
+      }
+    },
+    {
+      "id": "in_026",
+      "text": "Tell me about your experience with claims automation.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Tools evaluated",
+          "Process mapped",
+          "Exceptions handled",
+          "Results measured"
+        ],
+        "strong_answer_signals": [
+          "Efficiency gains",
+          "Accuracy maintained"
+        ],
+        "avoid": [
+          "Pure automation",
+          "No exceptions"
+        ]
+      }
+    },
+    {
+      "id": "in_027",
+      "text": "How do you approach insurance product development?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Market analysis",
+          "Pricing models",
+          "Distribution plan",
+          "Launch strategy"
+        ],
+        "strong_answer_signals": [
+          "Profitable product",
+          "Market fit"
+        ],
+        "avoid": [
+          "No analysis",
+          "Poor positioning"
+        ]
+      }
+    },
+    {
+      "id": "in_028",
+      "text": "How do you handle a major incident like a natural disaster?",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Emergency response",
+          "Claims surge",
+          "Reinsurance activation",
+          "Communication"
+        ],
+        "strong_answer_signals": [
+          "Reserves adequate",
+          "Customer protected"
+        ],
+        "avoid": [
+          "Overwhelmed",
+          "No plan"
+        ]
+      }
+    },
+    {
+      "id": "in_029",
+      "text": "Describe your approach to fraud investigation.",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Indicators reviewed",
+          "Investigation conducted",
+          "Recovery pursued",
+          "Prevention measures"
+        ],
+        "strong_answer_signals": [
+          "Fraud detected",
+          "Loss recovered"
+        ],
+        "avoid": [
+          "Ignored signs",
+          "No investigation"
+        ]
+      }
+    },
+    {
+      "id": "in_030",
+      "text": "How do you balance service and profitability?",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Service metrics tracked",
+          "Cost analysis",
+          "Value proposition",
+          "Customer segmentation"
+        ],
+        "strong_answer_signals": [
+          "Profitable service",
+          "Customer loyalty"
+        ],
+        "avoid": [
+          "Cost only",
+          "No service focus"
+        ]
+      }
+    }
+  ]
+}

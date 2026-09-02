@@ -2,183 +2,774 @@
   "metadata": {
     "sector": "Data Analyst",
     "generated": "2026-04-19",
-    "total": 40,
-    "categories": ["behavioral", "technical", "situational", "motivation", "manager"]
+    "total": 29,
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ]
   },
   "questions": [
-    { "id": "da_b_001", "category": "behavioral", "seniority": ["entry","mid","senior"],
+    {
+      "id": "da_b_001",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time your analysis changed a business decision.",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Describe the decision being made without data", "How you structured the analysis and presented findings", "Outcome and business impact of the change"],
-        "strong_answer_signals": ["Quantified impact","Clear stakeholder communication","Data-driven recommendation adopted"],
-        "avoid": ["Analysis done but never acted on","No business context"] }},
-    { "id": "da_b_002", "category": "behavioral", "seniority": ["mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Describe the decision being made without data",
+          "How you structured the analysis and presented findings",
+          "Outcome and business impact of the change"
+        ],
+        "strong_answer_signals": [
+          "Quantified impact",
+          "Clear stakeholder communication",
+          "Data-driven recommendation adopted"
+        ],
+        "avoid": [
+          "Analysis done but never acted on",
+          "No business context"
+        ]
+      }
+    },
+    {
+      "id": "da_b_002",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you found a significant error in a dataset used by the business.",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["How you identified the error (anomaly detection, cross-validation)", "Steps taken to validate and scope the impact", "How you communicated and corrected it"],
-        "strong_answer_signals": ["Systematic validation","Immediate stakeholder communication","Root cause fixed upstream"],
-        "avoid": ["Quietly fixing without communicating impact","No upstream fix"] }},
-    { "id": "da_b_003", "category": "behavioral", "seniority": ["entry","mid"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "How you identified the error (anomaly detection, cross-validation)",
+          "Steps taken to validate and scope the impact",
+          "How you communicated and corrected it"
+        ],
+        "strong_answer_signals": [
+          "Systematic validation",
+          "Immediate stakeholder communication",
+          "Root cause fixed upstream"
+        ],
+        "avoid": [
+          "Quietly fixing without communicating impact",
+          "No upstream fix"
+        ]
+      }
+    },
+    {
+      "id": "da_b_003",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
       "text": "Tell me about a time you had to explain a complex analysis to a non-technical audience.",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Knew your audience — what they care about", "Translated numbers into business language", "Used visuals to simplify complexity"],
-        "strong_answer_signals": ["Audience-appropriate language","Key finding upfront","Actionable recommendation"],
-        "avoid": ["Overwhelming with methodology","No clear recommendation"] }},
-    { "id": "da_b_004", "category": "behavioral", "seniority": ["mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Knew your audience: what they care about",
+          "Translated numbers into business language",
+          "Used visuals to simplify complexity"
+        ],
+        "strong_answer_signals": [
+          "Audience-appropriate language",
+          "Key finding upfront",
+          "Actionable recommendation"
+        ],
+        "avoid": [
+          "Overwhelming with methodology",
+          "No clear recommendation"
+        ]
+      }
+    },
+    {
+      "id": "da_b_004",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you had to work with incomplete or messy data and what you did.",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Assess quality: what is missing, biased, or noisy", "Cleaning and imputation decisions documented", "Caveated findings appropriately"],
-        "strong_answer_signals": ["Transparent about limitations","Documented assumptions","Stakeholders understood caveats"],
-        "avoid": ["Cleaning without documentation","Presenting as if data was perfect"] }},
-    { "id": "da_b_005", "category": "behavioral", "seniority": ["senior","manager"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Assess quality: what is missing, biased, or noisy",
+          "Cleaning and imputation decisions documented",
+          "Caveated findings appropriately"
+        ],
+        "strong_answer_signals": [
+          "Transparent about limitations",
+          "Documented assumptions",
+          "Stakeholders understood caveats"
+        ],
+        "avoid": [
+          "Cleaning without documentation",
+          "Presenting as if data was perfect"
+        ]
+      }
+    },
+    {
+      "id": "da_b_005",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "Tell me about a time you built a metrics framework from scratch for a product or team.",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Defined north star and supporting metrics", "Aligned stakeholders on definitions", "Implemented tracking and created dashboards"],
-        "strong_answer_signals": ["North star clarity","Cross-functional alignment","Actionable dashboard design"],
-        "avoid": ["Too many metrics with no priority","No stakeholder buy-in"] }},
-    { "id": "da_t_001", "category": "technical", "seniority": ["entry","mid"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Defined north star and supporting metrics",
+          "Aligned stakeholders on definitions",
+          "Implemented tracking and created dashboards"
+        ],
+        "strong_answer_signals": [
+          "North star clarity",
+          "Cross-functional alignment",
+          "Actionable dashboard design"
+        ],
+        "avoid": [
+          "Too many metrics with no priority",
+          "No stakeholder buy-in"
+        ]
+      }
+    },
+    {
+      "id": "da_t_001",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
       "text": "How do you approach writing a SQL query to find duplicate records in a large table?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["GROUP BY + HAVING COUNT > 1 approach", "Window functions (ROW_NUMBER) for deduplication", "Performance: indexing and partition pruning"],
-        "strong_answer_signals": ["CTE for readability","Performance-aware approach","Handles edge cases (NULL)"],
-        "avoid": ["SELECT DISTINCT with no explanation","No consideration of scale"] }},
-    { "id": "da_t_002", "category": "technical", "seniority": ["mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "GROUP BY + HAVING COUNT > 1 approach",
+          "Window functions (ROW_NUMBER) for deduplication",
+          "Performance: indexing and partition pruning"
+        ],
+        "strong_answer_signals": [
+          "CTE for readability",
+          "Performance-aware approach",
+          "Handles edge cases (NULL)"
+        ],
+        "avoid": [
+          "SELECT DISTINCT with no explanation",
+          "No consideration of scale"
+        ]
+      }
+    },
+    {
+      "id": "da_t_002",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Explain how you would design a dashboard for monitoring key business KPIs.",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Audience and decision context first", "Limit KPIs to actionable leading indicators", "Drill-down capability and alert thresholds"],
-        "strong_answer_signals": ["Decision-oriented design","Appropriate chart types","Data freshness and latency labels"],
-        "avoid": ["Vanity metrics","Too many charts with no narrative"] }},
-    { "id": "da_t_003", "category": "technical", "seniority": ["entry","mid"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Audience and decision context first",
+          "Limit KPIs to actionable leading indicators",
+          "Drill-down capability and alert thresholds"
+        ],
+        "strong_answer_signals": [
+          "Decision-oriented design",
+          "Appropriate chart types",
+          "Data freshness and latency labels"
+        ],
+        "avoid": [
+          "Vanity metrics",
+          "Too many charts with no narrative"
+        ]
+      }
+    },
+    {
+      "id": "da_t_003",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
       "text": "Walk me through how you would conduct A/B test analysis.",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Sample size and power calculation before launch", "Randomisation check and SRM test", "Statistical significance vs practical significance"],
-        "strong_answer_signals": ["Pre-registration of hypothesis","SRM awareness","Business context applied to result"],
-        "avoid": ["Stopping test early on first significance","No power calculation"] }},
-    { "id": "da_t_004", "category": "technical", "seniority": ["mid","senior"],
-      "text": "How do you handle outliers in a dataset — do you always remove them?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Understand the source: error vs genuine extreme value", "Domain context determines treatment", "Document and report whatever decision is made"],
-        "strong_answer_signals": ["Context-driven judgment","IQR / Z-score / domain rules","Sensitivity analysis with and without outliers"],
-        "avoid": ["Always remove","Never remove — one-size answer"] }},
-    { "id": "da_t_005", "category": "technical", "seniority": ["senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Sample size and power calculation before launch",
+          "Randomisation check and SRM test",
+          "Statistical significance vs practical significance"
+        ],
+        "strong_answer_signals": [
+          "Pre-registration of hypothesis",
+          "SRM awareness",
+          "Business context applied to result"
+        ],
+        "avoid": [
+          "Stopping test early on first significance",
+          "No power calculation"
+        ]
+      }
+    },
+    {
+      "id": "da_t_004",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How do you handle outliers in a dataset, do you always remove them?",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Understand the source: error vs genuine extreme value",
+          "Domain context determines treatment",
+          "Document and report whatever decision is made"
+        ],
+        "strong_answer_signals": [
+          "Context-driven judgment",
+          "IQR / Z-score / domain rules",
+          "Sensitivity analysis with and without outliers"
+        ],
+        "avoid": [
+          "Always remove",
+          "Never remove: one-size answer"
+        ]
+      }
+    },
+    {
+      "id": "da_t_005",
+      "category": "technical",
+      "seniority": [
+        "senior"
+      ],
       "text": "Describe the difference between correlation and causation with a business example.",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Correlation: two variables move together, no direction claimed", "Causation requires controlled experiment or causal inference methods", "Real business example where confusion caused bad decisions"],
-        "strong_answer_signals": ["Concrete example","Mentions confounders","Proposes how to test causation"],
-        "avoid": ["Textbook answer with no example","No mention of confounding"] }},
-    { "id": "da_s_001", "category": "situational", "seniority": ["entry","mid"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Correlation: two variables move together, no direction claimed",
+          "Causation requires controlled experiment or causal inference methods",
+          "Real business example where confusion caused bad decisions"
+        ],
+        "strong_answer_signals": [
+          "Concrete example",
+          "Mentions confounders",
+          "Proposes how to test causation"
+        ],
+        "avoid": [
+          "Textbook answer with no example",
+          "No mention of confounding"
+        ]
+      }
+    },
+    {
+      "id": "da_s_001",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
       "text": "A stakeholder disagrees with your analysis findings. How do you handle it?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Understand their objection — data, methodology, or assumption", "Walk through the analysis together transparently", "Update if their point is valid; hold firm with evidence if not"],
-        "strong_answer_signals": ["Intellectual honesty","Collaborative review","Evidence-based resolution"],
-        "avoid": ["Immediately capitulating","Digging in without listening"] }},
-    { "id": "da_s_002", "category": "situational", "seniority": ["mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Understand their objection: data, methodology, or assumption",
+          "Walk through the analysis together transparently",
+          "Update if their point is valid; hold firm with evidence if not"
+        ],
+        "strong_answer_signals": [
+          "Intellectual honesty",
+          "Collaborative review",
+          "Evidence-based resolution"
+        ],
+        "avoid": [
+          "Immediately capitulating",
+          "Digging in without listening"
+        ]
+      }
+    },
+    {
+      "id": "da_s_002",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "You are asked to deliver an analysis in half the normal time. What do you do?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Scope negotiation: what question is most critical", "Fast-path: existing data, rough cut first", "Communicate confidence level of expedited analysis"],
-        "strong_answer_signals": ["Scope negotiation first","Directional result with caveats","Follow-up full analysis planned"],
-        "avoid": ["Full analysis compressed with no quality signal","Silent quality cut"] }},
-    { "id": "da_s_003", "category": "situational", "seniority": ["mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Scope negotiation: what question is most critical",
+          "Fast-path: existing data, rough cut first",
+          "Communicate confidence level of expedited analysis"
+        ],
+        "strong_answer_signals": [
+          "Scope negotiation first",
+          "Directional result with caveats",
+          "Follow-up full analysis planned"
+        ],
+        "avoid": [
+          "Full analysis compressed with no quality signal",
+          "Silent quality cut"
+        ]
+      }
+    },
+    {
+      "id": "da_s_003",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "You discover that a widely used company dashboard has been showing incorrect data for months. What do you do?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Validate the error thoroughly before raising alarm", "Escalate to data team lead and affected business owners immediately", "Correct the data, audit decisions made on bad data, document fix"],
-        "strong_answer_signals": ["Validate before alarming","Rapid transparent escalation","Root cause and prevention"],
-        "avoid": ["Silent fix","Waiting to see if anyone notices"] }},
-    { "id": "da_s_004", "category": "situational", "seniority": ["entry","mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Validate the error thoroughly before raising alarm",
+          "Escalate to data team lead and affected business owners immediately",
+          "Correct the data, audit decisions made on bad data, document fix"
+        ],
+        "strong_answer_signals": [
+          "Validate before alarming",
+          "Rapid transparent escalation",
+          "Root cause and prevention"
+        ],
+        "avoid": [
+          "Silent fix",
+          "Waiting to see if anyone notices"
+        ]
+      }
+    },
+    {
+      "id": "da_s_004",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Two business units are asking for conflicting analyses that require the same data resource. How do you prioritise?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Understand business impact of each request", "Escalate to manager if equal priority", "Communicate timeline to both stakeholders"],
-        "strong_answer_signals": ["Impact-based prioritisation","Transparent timeline communication","Stakeholder management"],
-        "avoid": ["First-come-first-served without impact assessment","No communication"] }},
-    { "id": "da_s_005", "category": "situational", "seniority": ["mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Understand business impact of each request",
+          "Escalate to manager if equal priority",
+          "Communicate timeline to both stakeholders"
+        ],
+        "strong_answer_signals": [
+          "Impact-based prioritisation",
+          "Transparent timeline communication",
+          "Stakeholder management"
+        ],
+        "avoid": [
+          "First-come-first-served without impact assessment",
+          "No communication"
+        ]
+      }
+    },
+    {
+      "id": "da_s_005",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "You are handed a Python script that produces results no one understands and the author has left. What do you do?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Run it and document what it produces", "Trace logic step by step; add comments", "Validate output against known truth; refactor or document"],
-        "strong_answer_signals": ["Systematic code archaeology","Adds documentation","Validates outputs before trusting"],
-        "avoid": ["Run and use without understanding","Rewrite without validating equivalence"] }},
-    { "id": "da_m_001", "category": "motivation", "seniority": ["entry","mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Run it and document what it produces",
+          "Trace logic step by step; add comments",
+          "Validate output against known truth; refactor or document"
+        ],
+        "strong_answer_signals": [
+          "Systematic code archaeology",
+          "Adds documentation",
+          "Validates outputs before trusting"
+        ],
+        "avoid": [
+          "Run and use without understanding",
+          "Rewrite without validating equivalence"
+        ]
+      }
+    },
+    {
+      "id": "da_m_001",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "What type of analytical problems do you find most engaging?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Specific domain (customer behaviour, operations, finance)", "Why that domain excites you", "Connection to this role's data challenges"],
-        "strong_answer_signals": ["Specific and authentic","Connects to role","Shows depth of interest"],
-        "avoid": ["Generic 'I love data'","No connection to role"] }},
-    { "id": "da_m_002", "category": "motivation", "seniority": ["mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Specific domain (customer behaviour, operations, finance)",
+          "Why that domain excites you",
+          "Connection to this role's data challenges"
+        ],
+        "strong_answer_signals": [
+          "Specific and authentic",
+          "Connects to role",
+          "Shows depth of interest"
+        ],
+        "avoid": [
+          "Generic 'I love data'",
+          "No connection to role"
+        ]
+      }
+    },
+    {
+      "id": "da_m_002",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "How do you stay current with new tools and techniques in the data space?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Specific learning channels (papers, blogs, communities)", "Tool or technique recently adopted", "How applied to current work"],
-        "strong_answer_signals": ["Applied not just read","Named specific resources","Shares knowledge with team"],
-        "avoid": ["Vague 'I read articles'","No application to real work"] }},
-    { "id": "da_m_003", "category": "motivation", "seniority": ["entry","mid"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Specific learning channels (papers, blogs, communities)",
+          "Tool or technique recently adopted",
+          "How applied to current work"
+        ],
+        "strong_answer_signals": [
+          "Applied not just read",
+          "Named specific resources",
+          "Shares knowledge with team"
+        ],
+        "avoid": [
+          "Vague 'I read articles'",
+          "No application to real work"
+        ]
+      }
+    },
+    {
+      "id": "da_m_003",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
       "text": "Why do you want to be a data analyst rather than a data scientist or engineer?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Clarity on the distinction — business questions vs model building", "Your strengths: business intuition, communication, SQL/BI", "What you find fulfilling about insight delivery"],
-        "strong_answer_signals": ["Self-aware role preference","Genuine business orientation","Not just 'couldn't do ML'"],
-        "avoid": ["'I couldn't get a data science job'","No self-awareness of the role"] }},
-    { "id": "da_m_004", "category": "motivation", "seniority": ["mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Clarity on the distinction: business questions vs model building",
+          "Your strengths: business intuition, communication, SQL/BI",
+          "What you find fulfilling about insight delivery"
+        ],
+        "strong_answer_signals": [
+          "Self-aware role preference",
+          "Genuine business orientation",
+          "Not just 'couldn't do ML'"
+        ],
+        "avoid": [
+          "'I couldn't get a data science job'",
+          "No self-awareness of the role"
+        ]
+      }
+    },
+    {
+      "id": "da_m_004",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a personal or side project involving data you are proud of.",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Problem you chose to investigate and why", "Data sources and methods used", "Insight or outcome produced"],
-        "strong_answer_signals": ["Genuine curiosity driven","Clear insight produced","Shared publicly or with community"],
-        "avoid": ["No personal work at all","Copied tutorial with no original thinking"] }},
-    { "id": "da_mg_001", "category": "manager", "seniority": ["manager","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Problem you chose to investigate and why",
+          "Data sources and methods used",
+          "Insight or outcome produced"
+        ],
+        "strong_answer_signals": [
+          "Genuine curiosity driven",
+          "Clear insight produced",
+          "Shared publicly or with community"
+        ],
+        "avoid": [
+          "No personal work at all",
+          "Copied tutorial with no original thinking"
+        ]
+      }
+    },
+    {
+      "id": "da_mg_001",
+      "category": "manager",
+      "seniority": [
+        "manager",
+        "senior"
+      ],
       "text": "How do you ensure the data team's output aligns with business priorities?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Regular stakeholder alignment sessions", "Prioritisation framework tied to business OKRs", "Visible roadmap and progress communication"],
-        "strong_answer_signals": ["OKR-linked analytics roadmap","Stakeholder input process","Regular impact reviews"],
-        "avoid": ["Data team working in isolation","No impact measurement"] }},
-    { "id": "da_mg_002", "category": "manager", "seniority": ["manager"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Regular stakeholder alignment sessions",
+          "Prioritisation framework tied to business OKRs",
+          "Visible roadmap and progress communication"
+        ],
+        "strong_answer_signals": [
+          "OKR-linked analytics roadmap",
+          "Stakeholder input process",
+          "Regular impact reviews"
+        ],
+        "avoid": [
+          "Data team working in isolation",
+          "No impact measurement"
+        ]
+      }
+    },
+    {
+      "id": "da_mg_002",
+      "category": "manager",
+      "seniority": [
+        "manager"
+      ],
       "text": "How do you build data literacy across a non-technical organisation?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Assess baseline literacy by team", "Training, self-serve dashboards, office hours", "Celebrate data-driven wins publicly"],
-        "strong_answer_signals": ["Tailored by audience","Self-serve enablement","Cultural reinforcement"],
-        "avoid": ["One-size training","No follow-through"] }},
-    { "id": "da_t_006", "category": "technical", "seniority": ["mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Assess baseline literacy by team",
+          "Training, self-serve dashboards, office hours",
+          "Celebrate data-driven wins publicly"
+        ],
+        "strong_answer_signals": [
+          "Tailored by audience",
+          "Self-serve enablement",
+          "Cultural reinforcement"
+        ],
+        "avoid": [
+          "One-size training",
+          "No follow-through"
+        ]
+      }
+    },
+    {
+      "id": "da_t_006",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "How would you model customer churn using available transaction data?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Define churn (no purchase in X days)", "Feature engineering: RFM, tenure, product breadth", "Model selection and business-friendly output (probability)"],
-        "strong_answer_signals": ["Clear churn definition","Feature richness","Business usability of output"],
-        "avoid": ["Model without defining churn first","No actionable score output"] }},
-    { "id": "da_b_006", "category": "behavioral", "seniority": ["entry","mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Define churn (no purchase in X days)",
+          "Feature engineering: RFM, tenure, product breadth",
+          "Model selection and business-friendly output (probability)"
+        ],
+        "strong_answer_signals": [
+          "Clear churn definition",
+          "Feature richness",
+          "Business usability of output"
+        ],
+        "avoid": [
+          "Model without defining churn first",
+          "No actionable score output"
+        ]
+      }
+    },
+    {
+      "id": "da_b_006",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you automated a manual reporting process.",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Manual process pain — time, error rate", "Automation approach (SQL, Python, BI scheduled report)", "Time saved and accuracy improvement"],
-        "strong_answer_signals": ["Quantified time saving","Documented and handed off","Reduced error rate"],
-        "avoid": ["Automation for its own sake","No measurement of impact"] }},
-    { "id": "da_b_007", "category": "behavioral", "seniority": ["mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Manual process pain: time, error rate",
+          "Automation approach (SQL, Python, BI scheduled report)",
+          "Time saved and accuracy improvement"
+        ],
+        "strong_answer_signals": [
+          "Quantified time saving",
+          "Documented and handed off",
+          "Reduced error rate"
+        ],
+        "avoid": [
+          "Automation for its own sake",
+          "No measurement of impact"
+        ]
+      }
+    },
+    {
+      "id": "da_b_007",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe how you managed a project where the data you needed was not available.",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Identified alternative proxies or external sources", "Communicated limitation to stakeholders", "Worked with engineering to instrument missing data"],
-        "strong_answer_signals": ["Creative proxy identification","Transparent communication","Long-term data gap fixed"],
-        "avoid": ["Stopped analysis with no alternative","No upstream fix"] }},
-    { "id": "da_s_006", "category": "situational", "seniority": ["senior","manager"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identified alternative proxies or external sources",
+          "Communicated limitation to stakeholders",
+          "Worked with engineering to instrument missing data"
+        ],
+        "strong_answer_signals": [
+          "Creative proxy identification",
+          "Transparent communication",
+          "Long-term data gap fixed"
+        ],
+        "avoid": [
+          "Stopped analysis with no alternative",
+          "No upstream fix"
+        ]
+      }
+    },
+    {
+      "id": "da_s_006",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "Leadership wants to launch a product based on analysis you believe is flawed. What do you do?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Document your concern with evidence clearly", "Escalate through proper channels with urgency proportional to risk", "Propose a fast validation to confirm before full launch"],
-        "strong_answer_signals": ["Evidence-based escalation","Proposed fast mitigation","Respected final decision with concern on record"],
-        "avoid": ["Silent compliance","Public undermining of the decision"] }},
-    { "id": "da_t_007", "category": "technical", "seniority": ["entry","mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Document your concern with evidence clearly",
+          "Escalate through proper channels with urgency proportional to risk",
+          "Propose a fast validation to confirm before full launch"
+        ],
+        "strong_answer_signals": [
+          "Evidence-based escalation",
+          "Proposed fast mitigation",
+          "Respected final decision with concern on record"
+        ],
+        "avoid": [
+          "Silent compliance",
+          "Public undermining of the decision"
+        ]
+      }
+    },
+    {
+      "id": "da_t_007",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "What is the difference between a data warehouse and a data lake, and when would you use each?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Warehouse: structured, schema-on-write, BI-optimised", "Lake: raw, schema-on-read, flexible for ML and EDA", "Lakehouse pattern combines both"],
-        "strong_answer_signals": ["Use-case driven recommendation","Cost and query performance trade-offs","Modern lakehouse awareness"],
-        "avoid": ["One is always better","No use-case context"] }},
-    { "id": "da_b_008", "category": "behavioral", "seniority": ["entry","mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Warehouse: structured, schema-on-write, BI-optimised",
+          "Lake: raw, schema-on-read, flexible for ML and EDA",
+          "Lakehouse pattern combines both"
+        ],
+        "strong_answer_signals": [
+          "Use-case driven recommendation",
+          "Cost and query performance trade-offs",
+          "Modern lakehouse awareness"
+        ],
+        "avoid": [
+          "One is always better",
+          "No use-case context"
+        ]
+      }
+    },
+    {
+      "id": "da_b_008",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you influenced a team to adopt better data practices.",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Identified the pain point (data quality, inconsistent definitions)", "Proposed and piloted the improvement", "Adoption strategy and outcome"],
-        "strong_answer_signals": ["Led by example","Made change easy for colleagues","Measured adoption and quality improvement"],
-        "avoid": ["Mandated change without buy-in","No follow-up on adoption"] }},
-    { "id": "da_t_008", "category": "technical", "seniority": ["mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identified the pain point (data quality, inconsistent definitions)",
+          "Proposed and piloted the improvement",
+          "Adoption strategy and outcome"
+        ],
+        "strong_answer_signals": [
+          "Led by example",
+          "Made change easy for colleagues",
+          "Measured adoption and quality improvement"
+        ],
+        "avoid": [
+          "Mandated change without buy-in",
+          "No follow-up on adoption"
+        ]
+      }
+    },
+    {
+      "id": "da_t_008",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "How do you validate that a data pipeline is producing correct outputs?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Row count and null checks", "Business rule assertions and range tests", "End-to-end reconciliation against source"],
-        "strong_answer_signals": ["Automated data quality tests","Alert on anomaly","Reconciliation to source system"],
-        "avoid": ["Manual spot check only","No automated monitoring"] }},
-    { "id": "da_m_005", "category": "motivation", "seniority": ["entry","mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Row count and null checks",
+          "Business rule assertions and range tests",
+          "End-to-end reconciliation against source"
+        ],
+        "strong_answer_signals": [
+          "Automated data quality tests",
+          "Alert on anomaly",
+          "Reconciliation to source system"
+        ],
+        "avoid": [
+          "Manual spot check only",
+          "No automated monitoring"
+        ]
+      }
+    },
+    {
+      "id": "da_m_005",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "What is the most impactful analysis you have ever done and why?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Business context and stakes", "Your methodology and key finding", "Concrete business outcome driven by the insight"],
-        "strong_answer_signals": ["Significant business outcome","Clear causality between insight and action","Shows analytical depth"],
-        "avoid": ["Technically impressive but no business impact","Vague outcome"] }}
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Business context and stakes",
+          "Your methodology and key finding",
+          "Concrete business outcome driven by the insight"
+        ],
+        "strong_answer_signals": [
+          "Significant business outcome",
+          "Clear causality between insight and action",
+          "Shows analytical depth"
+        ],
+        "avoid": [
+          "Technically impressive but no business impact",
+          "Vague outcome"
+        ]
+      }
+    }
   ]
 }

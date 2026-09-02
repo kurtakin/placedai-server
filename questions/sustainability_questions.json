@@ -1,0 +1,827 @@
+{
+  "metadata": {
+    "sector": "Sustainability / ESG / Climate",
+    "generated": "2026-08-30",
+    "total": 30,
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ]
+  },
+  "questions": [
+    {
+      "id": "esg_001",
+      "text": "Tell me about an ESG initiative you led from strategy to execution.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Business case built",
+          "Stakeholders aligned",
+          "Implementation executed",
+          "Outcomes measured"
+        ],
+        "strong_answer_signals": [
+          "Measurable impact",
+          "Stakeholder engagement"
+        ],
+        "avoid": [
+          "Just policy docs",
+          "No measurement",
+          "No buy-in"
+        ]
+      }
+    },
+    {
+      "id": "esg_002",
+      "text": "How do you measure Scope 1, 2, and 3 emissions?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "GHG Protocol applied",
+          "Data sources identified",
+          "Boundaries defined",
+          "Verification used"
+        ],
+        "strong_answer_signals": [
+          "Accurate inventory",
+          "Audited data"
+        ],
+        "avoid": [
+          "Estimated only",
+          "No boundaries",
+          "No verification"
+        ]
+      }
+    },
+    {
+      "id": "esg_003",
+      "text": "How do you approach materiality assessment for ESG reporting?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Stakeholder engagement",
+          "Double materiality",
+          "Topic prioritization",
+          "Validation"
+        ],
+        "strong_answer_signals": [
+          "Comprehensive assessment",
+          "Stakeholder-driven"
+        ],
+        "avoid": [
+          "Generic topics",
+          "No engagement",
+          "No prioritization"
+        ]
+      }
+    },
+    {
+      "id": "esg_004",
+      "text": "Tell me about implementing a sustainability reporting framework (GRI, SASB, TCFD).",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Framework chosen",
+          "Data collected",
+          "Disclosure published",
+          "Verified"
+        ],
+        "strong_answer_signals": [
+          "Compliant disclosure",
+          "Stakeholder trust"
+        ],
+        "avoid": [
+          "Inconsistent reporting",
+          "No framework",
+          "Late filing"
+        ]
+      }
+    },
+    {
+      "id": "esg_005",
+      "text": "Why sustainability / ESG? What drives you?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Climate action passion",
+          "Business transformation",
+          "Long-term impact",
+          "Systems thinking"
+        ],
+        "strong_answer_signals": [
+          "Specific motivation",
+          "Long-term commitment"
+        ],
+        "avoid": [
+          "Just trend-following",
+          "No passion",
+          "Short-term view"
+        ]
+      }
+    },
+    {
+      "id": "esg_006",
+      "text": "How do you handle greenwashing risk in corporate communications?",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Claims substantiated",
+          "Avoided vague language",
+          "Third-party verification",
+          "Science-based targets"
+        ],
+        "strong_answer_signals": [
+          "Credible claims",
+          "No greenwashing"
+        ],
+        "avoid": [
+          "Vague claims",
+          "No verification",
+          "Marketing only"
+        ]
+      }
+    },
+    {
+      "id": "esg_007",
+      "text": "How do you calculate a product carbon footprint?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Lifecycle assessment",
+          "Emission factors used",
+          "Hotspots identified",
+          "Reduction levers"
+        ],
+        "strong_answer_signals": [
+          "Comprehensive LCA",
+          "Actionable insights"
+        ],
+        "avoid": [
+          "Cradle-to-gate only",
+          "No factors",
+          "No reduction"
+        ]
+      }
+    },
+    {
+      "id": "esg_008",
+      "text": "How do you set science-based emissions reduction targets?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "SBTi methodology",
+          "Baseline set",
+          "Pathway defined",
+          "Annual tracking"
+        ],
+        "strong_answer_signals": [
+          "SBTi validated",
+          "Clear trajectory"
+        ],
+        "avoid": [
+          "Arbitrary targets",
+          "No baseline",
+          "No validation"
+        ]
+      }
+    },
+    {
+      "id": "esg_009",
+      "text": "Tell me about engaging suppliers on ESG performance.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Code of conduct",
+          "Assessment program",
+          "Capacity building",
+          "Improvement tracking"
+        ],
+        "strong_answer_signals": [
+          "Supplier improvement",
+          "Engagement scaled"
+        ],
+        "avoid": [
+          "One-off assessment",
+          "No follow-up",
+          "No support"
+        ]
+      }
+    },
+    {
+      "id": "esg_010",
+      "text": "How do you approach circular economy business models?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Design for circularity",
+          "Reverse logistics",
+          "Material recovery",
+          "Business case"
+        ],
+        "strong_answer_signals": [
+          "Waste reduced",
+          "New revenue"
+        ],
+        "avoid": [
+          "Recycling only",
+          "No redesign",
+          "No economics"
+        ]
+      }
+    },
+    {
+      "id": "esg_011",
+      "text": "How do you handle ESG data quality and assurance?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Data governance",
+          "Internal controls",
+          "External assurance",
+          "Continuous improvement"
+        ],
+        "strong_answer_signals": [
+          "High-quality data",
+          "Reasonable assurance"
+        ],
+        "avoid": [
+          "Self-reported only",
+          "No controls",
+          "No assurance"
+        ]
+      }
+    },
+    {
+      "id": "esg_012",
+      "text": "How do you integrate climate risk into enterprise risk management?",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Physical and transition risks",
+          "Scenario analysis",
+          "Financial impact",
+          "Mitigation strategies"
+        ],
+        "strong_answer_signals": [
+          "Risk integrated",
+          "Scenario tested"
+        ],
+        "avoid": [
+          "Not in ERM",
+          "No scenarios",
+          "No financial impact"
+        ]
+      }
+    },
+    {
+      "id": "esg_013",
+      "text": "Tell me about a time you influenced executive leadership on ESG.",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Business case presented",
+          "Stakeholder concerns addressed",
+          "Decision influenced",
+          "Outcome achieved"
+        ],
+        "strong_answer_signals": [
+          "Strategy changed",
+          "Investment made"
+        ],
+        "avoid": [
+          "No influence",
+          "No business case",
+          "No follow-up"
+        ]
+      }
+    },
+    {
+      "id": "esg_014",
+      "text": "How do you approach social impact measurement?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Theory of change",
+          "Output vs outcome vs impact",
+          "SROI or similar",
+          "Stakeholder voice"
+        ],
+        "strong_answer_signals": [
+          "Real impact shown",
+          "Stakeholder centered"
+        ],
+        "avoid": [
+          "Outputs only",
+          "No theory",
+          "No stakeholders"
+        ]
+      }
+    },
+    {
+      "id": "esg_015",
+      "text": "How do you handle biodiversity and nature-related disclosures (TNFD)?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Dependencies assessed",
+          "Nature-related risks",
+          "Metrics applied",
+          "Targets set"
+        ],
+        "strong_answer_signals": [
+          "Holistic approach",
+          "TNFD aligned"
+        ],
+        "avoid": [
+          "Climate only",
+          "No nature lens",
+          "No metrics"
+        ]
+      }
+    },
+    {
+      "id": "esg_016",
+      "text": "Describe your experience with sustainable finance and ESG investing.",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "ESG integration",
+          "Stewardship",
+          "Impact investing",
+          "Reporting standards"
+        ],
+        "strong_answer_signals": [
+          "Strategy executed",
+          "Stewardship impact"
+        ],
+        "avoid": [
+          "Negative screening only",
+          "No engagement",
+          "No reporting"
+        ]
+      }
+    },
+    {
+      "id": "esg_017",
+      "text": "How do you approach DEI in sustainability work?",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Just transition",
+          "Inclusive design",
+          "Stakeholder voice",
+          "Equity outcomes"
+        ],
+        "strong_answer_signals": [
+          "Inclusive approach",
+          "Just transition considered"
+        ],
+        "avoid": [
+          "Climate only",
+          "No equity",
+          "Top-down"
+        ]
+      }
+    },
+    {
+      "id": "esg_018",
+      "text": "Tell me about a sustainability program that did not work.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Program launched",
+          "Failure identified",
+          "Root cause analyzed",
+          "Lesson applied"
+        ],
+        "strong_answer_signals": [
+          "Honest assessment",
+          "Subsequent success"
+        ],
+        "avoid": [
+          "Blamed others",
+          "No lesson",
+          "Same mistake"
+        ]
+      }
+    },
+    {
+      "id": "esg_019",
+      "text": "How do you handle EU CSRD and other global ESG regulations?",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Regulation analyzed",
+          "Gap assessment",
+          "Implementation roadmap",
+          "Cross-functional team"
+        ],
+        "strong_answer_signals": [
+          "Compliant on time",
+          "Comprehensive approach"
+        ],
+        "avoid": [
+          "Reactive",
+          "No gap analysis",
+          "Siloed"
+        ]
+      }
+    },
+    {
+      "id": "esg_020",
+      "text": "How do you approach stakeholder engagement on ESG?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Stakeholder mapping",
+          "Materiality dialogue",
+          "Engagement plan",
+          "Feedback loop"
+        ],
+        "strong_answer_signals": [
+          "Continuous engagement",
+          "Materiality informed"
+        ],
+        "avoid": [
+          "One-way communication",
+          "No mapping",
+          "No feedback"
+        ]
+      }
+    },
+    {
+      "id": "esg_021",
+      "text": "How do you measure the ROI of sustainability investments?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Costs and benefits",
+          "NPV and IRR",
+          "Risk-adjusted returns",
+          "Intangibles valued"
+        ],
+        "strong_answer_signals": [
+          "Business case clear",
+          "Stakeholder aligned"
+        ],
+        "avoid": [
+          "No ROI analysis",
+          "Cost only",
+          "No business case"
+        ]
+      }
+    },
+    {
+      "id": "esg_022",
+      "text": "Tell me about building a sustainability team from scratch.",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Mandate secured",
+          "Roles defined",
+          "Hired talent",
+          "Quick wins delivered"
+        ],
+        "strong_answer_signals": [
+          "Team productive",
+          "Quick wins"
+        ],
+        "avoid": [
+          "No mandate",
+          "Slow hiring",
+          "No quick wins"
+        ]
+      }
+    },
+    {
+      "id": "esg_023",
+      "text": "How do you approach climate scenario analysis?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Scenarios chosen",
+          "Assumptions documented",
+          "Portfolio impact",
+          "Strategy implications"
+        ],
+        "strong_answer_signals": [
+          "Robust analysis",
+          "Strategy aligned"
+        ],
+        "avoid": [
+          "One scenario",
+          "No assumptions",
+          "No strategy link"
+        ]
+      }
+    },
+    {
+      "id": "esg_024",
+      "text": "How do you handle green bonds and sustainable debt instruments?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Use of proceeds",
+          "Framework alignment",
+          "Reporting",
+          "Verification"
+        ],
+        "strong_answer_signals": [
+          "ICMA aligned",
+          "Credible issuance"
+        ],
+        "avoid": [
+          "No framework",
+          "Loose proceeds",
+          "No reporting"
+        ]
+      }
+    },
+    {
+      "id": "esg_025",
+      "text": "What changes do you see coming in ESG reporting?",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Mandatory disclosure",
+          "Assurance requirements",
+          "Interoperability",
+          "Real-time data"
+        ],
+        "strong_answer_signals": [
+          "Forward thinking",
+          "Specific changes"
+        ],
+        "avoid": [
+          "No awareness",
+          "Vague trends"
+        ]
+      }
+    },
+    {
+      "id": "esg_026",
+      "text": "How do you approach sustainable supply chain management?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Risk assessment",
+          "Audits",
+          "Capacity building",
+          "Transparency"
+        ],
+        "strong_answer_signals": [
+          "Supply chain improved",
+          "Tier visibility"
+        ],
+        "avoid": [
+          "Tier 1 only",
+          "No audits",
+          "No engagement"
+        ]
+      }
+    },
+    {
+      "id": "esg_027",
+      "text": "Tell me about water stewardship and water risk management.",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Water risk assessed",
+          "Targets set",
+          "Community engagement",
+          "Reporting"
+        ],
+        "strong_answer_signals": [
+          "Water secured",
+          "Stakeholders engaged"
+        ],
+        "avoid": [
+          "Water ignored",
+          "No assessment",
+          "No targets"
+        ]
+      }
+    },
+    {
+      "id": "esg_028",
+      "text": "How do you approach energy efficiency programs?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Audits conducted",
+          "Measures implemented",
+          "Savings measured",
+          "Behavioral change"
+        ],
+        "strong_answer_signals": [
+          "Energy reduced",
+          "Cost saved"
+        ],
+        "avoid": [
+          "One-time audit",
+          "No follow-through",
+          "No measurement"
+        ]
+      }
+    },
+    {
+      "id": "esg_029",
+      "text": "How do you handle climate-related litigation risk?",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Legal exposure assessed",
+          "Disclosure reviewed",
+          "Strategy adapted",
+          "Insurance considered"
+        ],
+        "strong_answer_signals": [
+          "Risk managed",
+          "Proactive approach"
+        ],
+        "avoid": [
+          "Ignored legal risk",
+          "No disclosure review",
+          "Reactive only"
+        ]
+      }
+    },
+    {
+      "id": "esg_030",
+      "text": "Tell me about a successful sustainability partnership or coalition.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Partners identified",
+          "Shared goals defined",
+          "Joint action executed",
+          "Impact measured"
+        ],
+        "strong_answer_signals": [
+          "Collective impact",
+          "Stakeholder trust"
+        ],
+        "avoid": [
+          "One-sided",
+          "No measurement",
+          "No partners"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,727 @@
+{
+  "metadata": {
+    "sector": "Sales & Customer Management",
+    "generated": "2026-08-30",
+    "total": 25,
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ]
+  },
+  "questions": [
+    {
+      "id": "sales_001",
+      "text": "Tell me about your largest deal closed. Walk me through the process.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Prospecting and qualification",
+          "Discovery and needs analysis",
+          "Solution mapping and proposal",
+          "Negotiation and close"
+        ],
+        "strong_answer_signals": [
+          "Deal size quantified",
+          "Multi-stakeholder navigated",
+          "Competitive displacement"
+        ],
+        "avoid": [
+          "Lucky deal",
+          "No process",
+          "Team not credited"
+        ]
+      }
+    },
+    {
+      "id": "sales_002",
+      "text": "How do you qualify leads to focus on best opportunities?",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "BANT or MEDDIC framework",
+          "Budget, authority, need, timeline",
+          "Fit and competitive positioning",
+          "Disqualify early"
+        ],
+        "strong_answer_signals": [
+          "Qualified pipeline accurate",
+          "Win rate improved",
+          "Time on bad deals reduced"
+        ],
+        "avoid": [
+          "Everyone is qualified",
+          "No qualification framework",
+          "Chasing bad deals"
+        ]
+      }
+    },
+    {
+      "id": "sales_003",
+      "text": "Describe a time you lost a big deal. What did you learn?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Root cause analysis",
+          "Win/loss review conducted",
+          "Lessons applied to next deal",
+          "Competitive intelligence gained"
+        ],
+        "strong_answer_signals": [
+          "Honest assessment",
+          "Process improved",
+          "Win rate improved"
+        ],
+        "avoid": [
+          "Blame on competition",
+          "No learning",
+          "Same mistakes repeated"
+        ]
+      }
+    },
+    {
+      "id": "sales_004",
+      "text": "How do you handle a prospect who keeps pushing meetings but never buys?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Set clear expectations upfront",
+          "Document value delivered",
+          "Create urgency with data",
+          "Disengage if no commitment"
+        ],
+        "strong_answer_signals": [
+          "Pipeline hygiene improved",
+          "Time on non-buyers reduced",
+          "Win rate increased"
+        ],
+        "avoid": [
+          "Endless meetings",
+          "No urgency created",
+          "Afraid to disengage"
+        ]
+      }
+    },
+    {
+      "id": "sales_005",
+      "text": "Tell me about building a territory plan.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Market segmentation",
+          "Account prioritization",
+          "Coverage model",
+          "Activity and revenue targets"
+        ],
+        "strong_answer_signals": [
+          "Territory coverage balanced",
+          "Quota attainable",
+          "Growth trajectory clear"
+        ],
+        "avoid": [
+          "Random territory",
+          "Unbalanced coverage",
+          "No growth plan"
+        ]
+      }
+    },
+    {
+      "id": "sales_006",
+      "text": "How do you run a discovery call?",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with agenda",
+          "Open-ended questions",
+          "Active listening",
+          "Summarize and next steps"
+        ],
+        "strong_answer_signals": [
+          "Needs uncovered",
+          "Budget and timeline identified",
+          "Follow-up scheduled"
+        ],
+        "avoid": [
+          "Talking more than listening",
+          "No agenda",
+          "Pitch too early"
+        ]
+      }
+    },
+    {
+      "id": "sales_007",
+      "text": "Describe managing a complex sale with multiple stakeholders.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Stakeholder mapping",
+          "Tailored value for each persona",
+          "Coach identified and developed",
+          "Political dynamics navigated"
+        ],
+        "strong_answer_signals": [
+          "All stakeholders aligned",
+          "Coach activated",
+          "Decision made"
+        ],
+        "avoid": [
+          "Single stakeholder",
+          "No coach",
+          "Politics ignored"
+        ]
+      }
+    },
+    {
+      "id": "sales_008",
+      "text": "How do you handle price objections?",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Understand the real objection",
+          "Reframe value vs cost",
+          "Quantify ROI",
+          "Negotiate scope not just price"
+        ],
+        "strong_answer_signals": [
+          "Value articulated",
+          "Alternatives offered",
+          "Margin protected"
+        ],
+        "avoid": [
+          "Immediately discounting",
+          "No value reframe",
+          "Giving away margin"
+        ]
+      }
+    },
+    {
+      "id": "sales_009",
+      "text": "Tell me about exceeding your quota consistently.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Pipeline building discipline",
+          "Process and methodology",
+          "Territory and account strategy",
+          "Continuous improvement"
+        ],
+        "strong_answer_signals": [
+          "Quota exceeded 100%+",
+          "Sustainable methods",
+          "Others can replicate"
+        ],
+        "avoid": [
+          "Lucky deals",
+          "No process",
+          "Can not be replicated"
+        ]
+      }
+    },
+    {
+      "id": "sales_010",
+      "text": "How do you use CRM (Salesforce, HubSpot) to manage your pipeline?",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Pipeline stages defined",
+          "Activities logged",
+          "Forecasting accuracy",
+          "Reporting and dashboards"
+        ],
+        "strong_answer_signals": [
+          "Forecast accuracy >90%",
+          "Pipeline review efficient",
+          "Data-driven decisions"
+        ],
+        "avoid": [
+          "CRM as notebook",
+          "Data incomplete",
+          "No forecasting"
+        ]
+      }
+    },
+    {
+      "id": "sales_011",
+      "text": "Describe your approach to account management and retention.",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Quarterly business reviews",
+          "Expansion opportunities",
+          "Risk monitoring",
+          "Executive relationships"
+        ],
+        "strong_answer_signals": [
+          "NRR >100%",
+          "Churn reduced",
+          "Expansion identified"
+        ],
+        "avoid": [
+          "Only at renewal",
+          "No QBRs",
+          "Risk not monitored"
+        ]
+      }
+    },
+    {
+      "id": "sales_012",
+      "text": "How do you prepare for a sales presentation?",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Research company and personas",
+          "Tailor to their pain points",
+          "Practice and rehearse",
+          "Prepare for objections"
+        ],
+        "strong_answer_signals": [
+          "Highly relevant presentation",
+          "Questions anticipated",
+          "Demo prepared"
+        ],
+        "avoid": [
+          "Generic deck",
+          "No research",
+          "Not rehearsed"
+        ]
+      }
+    },
+    {
+      "id": "sales_013",
+      "text": "Tell me about a time you closed a deal in a competitive situation.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Competitive intelligence gathered",
+          "Differentiation articulated",
+          "Timeline accelerated",
+          "Value emphasized over price"
+        ],
+        "strong_answer_signals": [
+          "Displacement of incumbent",
+          "Competitive advantage clear",
+          "Win documented"
+        ],
+        "avoid": [
+          "Compete only on price",
+          "No differentiation",
+          "Did not understand competition"
+        ]
+      }
+    },
+    {
+      "id": "sales_014",
+      "text": "How do you stay motivated through a sales slump?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Routines and discipline",
+          "Focus on activities not results",
+          "Coach and peer support",
+          "Process review and adjustment"
+        ],
+        "strong_answer_signals": [
+          "Slump recovered",
+          "Process improved",
+          "Mental resilience shown"
+        ],
+        "avoid": [
+          "Giving up",
+          "No routine",
+          "Blaming market"
+        ]
+      }
+    },
+    {
+      "id": "sales_015",
+      "text": "Describe your experience with sales methodology (MEDDIC, SPIN, Challenger, etc).",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Methodology named and applied",
+          "Training and certification",
+          "Coaching to the methodology",
+          "Results tracked"
+        ],
+        "strong_answer_signals": [
+          "Win rate improved with methodology",
+          "Team trained",
+          "Coaching conversations"
+        ],
+        "avoid": [
+          "No formal methodology",
+          "Training not applied",
+          "Results not tracked"
+        ]
+      }
+    },
+    {
+      "id": "sales_016",
+      "text": "How do you handle a customer requesting a significant discount?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Understand value delivered",
+          "Escalate appropriately",
+          "Negotiate non-price terms",
+          "Document discount authority"
+        ],
+        "strong_answer_signals": [
+          "Margin protected",
+          "Value reaffirmed",
+          "Approval documented"
+        ],
+        "avoid": [
+          "Automatic discount",
+          "No approval process",
+          "Margin erosion"
+        ]
+      }
+    },
+    {
+      "id": "sales_017",
+      "text": "Tell me about building relationships with C-suite executives.",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Executive presence developed",
+          "Business value focus",
+          "Trust built over time",
+          "Executive sponsor created"
+        ],
+        "strong_answer_signals": [
+          "Executive access",
+          "Strategic deals",
+          "Long-term relationships"
+        ],
+        "avoid": [
+          "Only tactical",
+          "No executive presence",
+          "Transactional only"
+        ]
+      }
+    },
+    {
+      "id": "sales_018",
+      "text": "How do you forecast accurately?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Pipeline stage probability",
+          "Deal risk assessment",
+          "Historical analysis",
+          "Commit vs upside forecast"
+        ],
+        "strong_answer_signals": [
+          "Forecast accuracy >90%",
+          "Commit reliable",
+          "Variance explained"
+        ],
+        "avoid": [
+          "Hockey stick only",
+          "No probability",
+          "Sandbagging"
+        ]
+      }
+    },
+    {
+      "id": "sales_019",
+      "text": "Describe a time you had to recover a churned customer.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Root cause understood",
+          "Executive outreach",
+          "Win-back offer developed",
+          "Prevention measures"
+        ],
+        "strong_answer_signals": [
+          "Customer recovered",
+          "Lessons applied",
+          "Retention improved"
+        ],
+        "avoid": [
+          "No root cause",
+          "Blame on customer",
+          "No follow-up"
+        ]
+      }
+    },
+    {
+      "id": "sales_020",
+      "text": "How do you manage your pipeline review with your manager?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Deal reviews prepared",
+          "Risk and help needed clear",
+          "Coaching engaged",
+          "Action items tracked"
+        ],
+        "strong_answer_signals": [
+          "Productive reviews",
+          "Win rate improved",
+          "Manager value-add"
+        ],
+        "avoid": [
+          "Unprepared reviews",
+          "No help requested",
+          "Coaching ignored"
+        ]
+      }
+    },
+    {
+      "id": "sales_021",
+      "text": "Tell me about upselling or cross-selling to existing customers.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identified expansion opportunity",
+          "Mapped to customer needs",
+          "Presented value",
+          "Closed expansion"
+        ],
+        "strong_answer_signals": [
+          "NRR >110%",
+          "Expansion >30% of quota",
+          "Customer value increased"
+        ],
+        "avoid": [
+          "No expansion conversations",
+          "Random upsell",
+          "Customer annoyed"
+        ]
+      }
+    },
+    {
+      "id": "sales_022",
+      "text": "How do you handle a prospect who says they are happy with the competition?",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Understand why they are happy",
+          "Identify gaps in their current solution",
+          "Position unique value",
+          "Create reason to evaluate"
+        ],
+        "strong_answer_signals": [
+          "Discovery done",
+          "Competitive angle clear",
+          "Evaluation reason created"
+        ],
+        "avoid": [
+          "Bashing competition",
+          "No discovery",
+          "No unique angle"
+        ]
+      }
+    },
+    {
+      "id": "sales_023",
+      "text": "Describe managing a team of salespeople.",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Hiring and onboarding",
+          "Coaching and development",
+          "Performance management",
+          "Compensation and motivation"
+        ],
+        "strong_answer_signals": [
+          "Team quota exceeded",
+          "Retention high",
+          "People promoted"
+        ],
+        "avoid": [
+          "Micromanagement",
+          "No coaching",
+          "High turnover"
+        ]
+      }
+    },
+    {
+      "id": "sales_024",
+      "text": "How do you create urgency in a deal without being pushy?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Business impact data",
+          "Timeline drivers",
+          "Risk of inaction",
+          "Mutual close plan"
+        ],
+        "strong_answer_signals": [
+          "Urgency genuine",
+          "Customer driven",
+          "Close date met"
+        ],
+        "avoid": [
+          "Fake urgency",
+          "Pushy tactics",
+          "Customer resistant"
+        ]
+      }
+    },
+    {
+      "id": "sales_025",
+      "text": "Why sales? What drives you?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Impact motivation",
+          "Competition and achievement",
+          "Variety of deals",
+          "Growth path"
+        ],
+        "strong_answer_signals": [
+          "Genuine motivation",
+          "Specific stories",
+          "Clear growth ambition"
+        ],
+        "avoid": [
+          "Just money",
+          "No specific examples",
+          "Comfort zone"
+        ]
+      }
+    }
+  ]
+}

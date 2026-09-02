@@ -1,0 +1,1392 @@
+{
+  "metadata": {
+    "sector": "Nursing (Registered Nurse)",
+    "generated": "2026-08-29",
+    "total": 48,
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ],
+    "region": "North America",
+    "note": "Written for US and Canadian acute care hiring: SBAR, Joint Commission, HIPAA, sepsis and CLABSI bundles, restraint rules, safe harbor and assignment despite objection."
+  },
+  "questions": [
+    {
+      "id": "nur_b_001",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about yourself and your nursing background.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with licence and setting: RN or BSN, years of experience, unit type (med-surg, ICU, ED, tele, LTC) and typical patient ratio",
+          "Name the patient population and acuity you handle, plus certifications (BLS, ACLS, PALS, CCRN, TNCC, NIHSS)",
+          "Give one concrete strength with evidence: preceptor for new grads, unit fall rate improvement, charge nurse rotation",
+          "Close by tying your background to this unit and why you applied here"
+        ],
+        "strong_answer_signals": [
+          "Specific ratios and acuity: caring for 5 med-surg patients or 2 ICU patients shows the interviewer your real scope",
+          "EMR fluency named directly (Epic, Cerner, Meditech) because onboarding cost is a hiring concern",
+          "A measurable contribution rather than a list of duties"
+        ],
+        "avoid": [
+          "Reciting your resume chronologically from nursing school forward",
+          "Personal life details, commute, or family circumstances",
+          "Running past two minutes, which signals you cannot prioritise under pressure"
+        ]
+      }
+    },
+    {
+      "id": "nur_b_002",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about a time you caught a medication error before it reached the patient.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Name the catch point: order verification, MAR review, barcode scan alert, or independent double check on a high alert drug",
+          "State what was wrong: wrong dose, wrong route, wrong patient, duplicate therapy, or an allergy conflict",
+          "Describe escalation: you held the dose, contacted the prescriber or pharmacy, and documented",
+          "Close with the system fix: variance report filed, order set corrected, or a change you suggested"
+        ],
+        "strong_answer_signals": [
+          "Treats the five rights as an active habit, not a slogan",
+          "Files a safety or variance report and frames it as system improvement rather than blaming a person",
+          "Mentions high alert medications by name (insulin, heparin, opioids, potassium) and the double check policy"
+        ],
+        "avoid": [
+          "Naming or blaming the prescriber or pharmacist",
+          "Saying you gave the dose and monitored the patient instead of holding it",
+          "A story with no reporting step, which reads as a near miss that was buried"
+        ]
+      }
+    },
+    {
+      "id": "nur_b_003",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Describe a time you disagreed with a physician about a patient's plan of care.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Ground the disagreement in assessment data: vitals, labs, trends, or a change you observed at the bedside",
+          "Show you used a structured tool: SBAR, or a graded assertiveness phrase such as I am concerned, I am uncomfortable, this is a safety issue",
+          "Describe the escalation chain you followed if the first conversation did not resolve it: charge nurse, rapid response, nursing supervisor, attending",
+          "End with the patient outcome and the professional relationship afterwards"
+        ],
+        "strong_answer_signals": [
+          "Frames the nurse role as patient advocate with an obligation to escalate, not as insubordination",
+          "Knows the chain of command and names it, which tells the interviewer you will use it on their unit",
+          "Keeps a collaborative tone: the goal was the patient, not winning"
+        ],
+        "avoid": [
+          "A story where you simply followed an order you believed was unsafe",
+          "Emotional or personal framing of the physician",
+          "Escalating past the chain of command as a first move"
+        ]
+      }
+    },
+    {
+      "id": "nur_b_004",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about a difficult patient or family member and how you handled it.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Reframe difficult as distressed: fear, pain, grief, loss of control, or poor communication earlier in the stay",
+          "Describe de-escalation concretely: you sat down, made eye level contact, listened without interrupting, acknowledged the feeling",
+          "Explain what you actually changed: a care conference, a consistent nurse assignment, hourly rounding, a call to the provider for a pain plan",
+          "Close with the result and what you now do earlier because of it"
+        ],
+        "strong_answer_signals": [
+          "Names a real technique (active listening, teach back, hourly rounding, family care conference)",
+          "Sets a boundary safely when behaviour crossed into abuse or threat, including calling security and documenting",
+          "Connects the experience to patient satisfaction scores, which managers are measured on"
+        ],
+        "avoid": [
+          "Describing the patient or family as crazy, entitled, or a frequent flyer",
+          "Making yourself the hero without naming teammates or the provider",
+          "Any story that ends with you avoiding the room"
+        ]
+      }
+    },
+    {
+      "id": "nur_b_005",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about a mistake you made in patient care and what you did about it.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Pick a real, honest error that did not cause permanent harm: a late medication, a missed assessment, a charting error, a delayed escalation",
+          "Say immediately what you did for the patient first: assessed, took vitals, notified the provider and charge nurse",
+          "Describe disclosure: you reported it, completed the variance report, and participated in follow up",
+          "Name the specific practice change you made and still use"
+        ],
+        "strong_answer_signals": [
+          "Patient first, then disclosure, then system: that order is what safety leaders listen for",
+          "Uses just culture language: the question is what in the system allowed this, not who is at fault",
+          "Shows the change stuck, with an example of it working later"
+        ],
+        "avoid": [
+          "Claiming you have never made a mistake, which reads as low self awareness or dishonesty",
+          "A fake mistake such as caring too much or staying late",
+          "Any hint that you did not report it"
+        ]
+      }
+    },
+    {
+      "id": "nur_b_006",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Describe a time you advocated for a patient.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "State whose voice was missing: a patient in pain, a non English speaker, a confused patient with no family, someone being discharged unsafely",
+          "Describe the barrier: a busy provider, a language gap, an insurance or placement problem, a family disagreement",
+          "Show the action: you requested an interpreter, called a care conference, pushed for a palliative or social work consult, delayed an unsafe discharge",
+          "Close with the outcome for the patient"
+        ],
+        "strong_answer_signals": [
+          "Uses a certified interpreter rather than a family member, which is the correct and legally safer practice",
+          "Pulls in the right resource: social work, case management, chaplain, palliative care, ethics committee",
+          "Frames advocacy as part of the role rather than an act of courage"
+        ],
+        "avoid": [
+          "Vague advocacy with no specific action taken",
+          "Going around the team rather than through it",
+          "A story where the advocacy was really a complaint about staffing"
+        ]
+      }
+    },
+    {
+      "id": "nur_b_007",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about a time you supported a patient or family through death or bad news.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Set the clinical context briefly and respectfully, with no identifying detail",
+          "Describe your role: presence, honest answers within your scope, comfort measures, arranging privacy and time",
+          "Name the resources you brought in: chaplain, palliative care, social work, bereavement services, cultural or religious accommodation",
+          "Close with how you cared for yourself and your team afterwards, such as a debrief"
+        ],
+        "strong_answer_signals": [
+          "Comfortable sitting in silence rather than filling it with reassurance",
+          "Knows the scope line: the provider delivers the prognosis, the nurse supports and interprets",
+          "Mentions a debrief or peer support, which tells a manager you will not burn out silently"
+        ],
+        "avoid": [
+          "Clinical detail that could identify a patient",
+          "Presenting yourself as unaffected, which reads as detached",
+          "Promising outcomes or discussing prognosis outside your scope"
+        ]
+      }
+    },
+    {
+      "id": "nur_b_008",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about a shift when everything happened at once. How did you manage it?",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Set the load: number of patients, acuity, an admission and a discharge, a deteriorating patient, short staffing",
+          "State your triage rule out loud: airway, breathing, circulation first, then time critical medications, then everything else",
+          "Show delegation: what you gave to the CNA or LPN within scope, and what you kept",
+          "Name the help you asked for, because asking is the competency being tested"
+        ],
+        "strong_answer_signals": [
+          "A stated prioritisation framework rather than working faster",
+          "Delegation that respects scope of practice",
+          "Communicating with the charge nurse early rather than after falling behind"
+        ],
+        "avoid": [
+          "Pride in doing it all alone without help",
+          "Skipping breaks and staying two hours late as the solution",
+          "No mention of what got deprioritised, since something always does"
+        ]
+      }
+    },
+    {
+      "id": "nur_b_009",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about a time you helped a new nurse or a struggling colleague.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Describe the gap: time management, a skill, confidence calling providers, or emotional strain after an event",
+          "Show how you approached it privately and without judgement",
+          "Give the concrete support: shadowing, a brain sheet or report template, walking through an SBAR before the call, taking a patient to free them up",
+          "Close with their improvement and what it did for the unit"
+        ],
+        "strong_answer_signals": [
+          "Preceptor or charge experience shown through behaviour, not a title",
+          "Escalates to the educator or manager when the issue is a safety gap, not just a confidence gap",
+          "Understands that new grad retention is a direct cost concern for the manager interviewing you"
+        ],
+        "avoid": [
+          "Talking down about the colleague or about new grads generally",
+          "Doing their work for them instead of building the skill",
+          "Covering up a genuine competency or safety problem"
+        ]
+      }
+    },
+    {
+      "id": "nur_b_010",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Describe an ethical dilemma you faced in your practice.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Choose a real tension: a family requesting that the patient not be told, care that felt futile, a patient refusing treatment, or resource allocation",
+          "Name the competing principles simply: autonomy, beneficence, non maleficence, justice",
+          "Describe process over verdict: you raised it with the team, requested an ethics consult, checked the advance directive or POLST, involved the surrogate decision maker",
+          "Close with the resolution and your reflection"
+        ],
+        "strong_answer_signals": [
+          "Knows the ethics consult exists and that using it is a strength",
+          "Respects capacity and autonomy even when personally uncomfortable",
+          "Separates personal values from professional obligation"
+        ],
+        "avoid": [
+          "Imposing your own religious or moral view on the patient",
+          "Presenting a purely clinical problem as an ethical one",
+          "Deciding alone when a formal process was available"
+        ]
+      }
+    },
+    {
+      "id": "nur_b_011",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Describe your experience with electronic medical records (EMR) and patient safety.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Set the context: specific unit/setting and EMR system (Epic, Cerner, Meditech)",
+          "Describe your actions: alerts you implemented, order sets, discharge summaries, or patient portal use",
+          "Share outcomes: reduced medication errors, improved efficiency, better patient engagement",
+          "Conclude with system improvements: documentation changes, training updates, or process refinements"
+        ],
+        "strong_answer_signals": [
+          "Names specific EMR features (bar code medication administration, medication administration records)",
+          "Quantifies impact: reduced errors by specific percentage, saved specific time per shift",
+          "Connects technology directly to patient safety outcomes"
+        ],
+        "avoid": [
+          "Only describing technical features without patient safety impact",
+          "Mentioning EMR issues without solutions or improvements",
+          "Vague statements about EMRs without specific examples"
+        ]
+      }
+    },
+    {
+      "id": "nur_b_012",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about a time you prioritised conflicting demands on your shift.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Set the competing demands: two patients both needing attention, a provider call, a charting deadline, a family request, a deteriorating patient",
+          "Describe how you decided: stated framework (acuity over chronology, time critical over routine, safety over documentation)",
+          "Show what you did and what you deferred, with the reasoning",
+          "Close with the outcome and what you would do differently"
+        ],
+        "strong_answer_signals": [
+          "Names the specific framework rather than just working harder",
+          "Does not claim to have done everything perfectly",
+          "Communicated changes to the charge nurse rather than absorbing the risk silently"
+        ],
+        "avoid": [
+          "Claiming you never have to deprioritise",
+          "Putting documentation ahead of patient safety",
+          "Not mentioning what suffered as a result"
+        ]
+      }
+    },
+    {
+      "id": "nur_s_001",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Two of your patients deteriorate at the same time. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Say the rule first: assess by ABCs and take the patient whose airway, breathing or circulation is threatened",
+          "Get help in the same breath: call the charge nurse, pull the rapid response or code team, send a colleague to the second room",
+          "Give a concrete example of sorting: a patient with a systolic of 70 and altered mental status outranks new chest pain with stable vitals, but both need eyes on them within minutes",
+          "Close with documentation and provider notification for both"
+        ],
+        "strong_answer_signals": [
+          "Calls for help immediately rather than trying to cover both rooms alone",
+          "Names the escalation resource by its real name: rapid response, code blue, house supervisor",
+          "Delegates the second assessment rather than leaving that patient unmonitored"
+        ],
+        "avoid": [
+          "Choosing one patient and not addressing the other at all",
+          "Waiting to notify the provider until both are stabilised",
+          "Answering only in general terms with no triage logic"
+        ]
+      }
+    },
+    {
+      "id": "nur_s_002",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "You notice a colleague charted an assessment that you are certain was not performed. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Patient first: verify the patient is safe by performing the assessment yourself",
+          "Go to the colleague directly and privately, allowing for the possibility you are wrong or that it was a charting error",
+          "If it is falsification or it recurs, escalate to the charge nurse or manager, because charting fraud is a licence level issue",
+          "Document only what you personally assessed, never what someone else did"
+        ],
+        "strong_answer_signals": [
+          "Understands that false documentation is a regulatory and legal problem, not an interpersonal one",
+          "Still starts with the direct private conversation rather than reporting first",
+          "Knows the duty to report does not depend on friendship"
+        ],
+        "avoid": [
+          "Ignoring it to protect a coworker",
+          "Discussing it with other staff instead of the person or the manager",
+          "Correcting or altering another nurse's documentation yourself"
+        ]
+      }
+    },
+    {
+      "id": "nur_s_003",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "A patient refuses a medication that you believe they need. How do you handle it?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start from the right: a patient with capacity may refuse any treatment, and the refusal itself is not the problem to solve",
+          "Explore the reason: side effects, a past experience, cost, misunderstanding, or a swallowing or timing issue you can fix",
+          "Educate with teach back, offer alternatives within the order, and involve the provider if a change is warranted",
+          "Document the refusal, the education given, and the provider notification"
+        ],
+        "strong_answer_signals": [
+          "Names capacity explicitly rather than assuming refusal means non compliance",
+          "Finds the fixable cause: nausea, an unswallowable pill, a missed explanation",
+          "Documents thoroughly, since refusal documentation is a legal protection"
+        ],
+        "avoid": [
+          "Persuading through fear or hiding the medication in food",
+          "Labelling the patient non compliant in the chart",
+          "Failing to notify the provider of a refused critical medication"
+        ]
+      }
+    },
+    {
+      "id": "nur_s_004",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "A caller says they are the patient's daughter and asks for an update. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Do not confirm or deny that the patient is even admitted until identity and authorisation are established",
+          "Use the mechanism your facility provides: a code word or passphrase set with the patient, or documented authorised contacts",
+          "If the patient has capacity, ask the patient directly what may be shared and with whom",
+          "Note that HIPAA permits sharing relevant information with someone involved in care when the patient agrees or does not object, but the phone is where identity fails"
+        ],
+        "strong_answer_signals": [
+          "Knows the passphrase or approved contact process by name",
+          "Puts the decision back with the patient rather than judging who deserves information",
+          "Understands that acknowledging admission is itself disclosure"
+        ],
+        "avoid": [
+          "Giving clinical detail because the caller knew the patient's date of birth",
+          "Refusing all communication rigidly, which is not what the rule requires",
+          "Transferring the problem to someone else without explaining it"
+        ]
+      }
+    },
+    {
+      "id": "nur_s_005",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "You are floated to a unit whose patient population you do not normally care for. How do you handle the shift?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "State the principle: you accept the assignment but only within your demonstrated competence, and you say so up front",
+          "Ask for a resource nurse or buddy, a unit orientation, and where the emergency equipment and protocols are",
+          "Negotiate the assignment: request the patients whose acuity matches your skills and decline specific tasks you are not competent to perform, such as an unfamiliar drip or device",
+          "Document the conversation if the assignment remains unsafe, and follow the facility's assignment despite objection process"
+        ],
+        "strong_answer_signals": [
+          "Distinguishes refusing to float, which is usually not an option, from refusing a task outside competence, which is a professional duty",
+          "Asks for the buddy system proactively instead of struggling silently",
+          "Knows the assignment despite objection form exists"
+        ],
+        "avoid": [
+          "Refusing the float outright, which reads as a teamwork problem",
+          "Accepting everything silently and hoping for the best",
+          "Complaining about the float rather than making it safe"
+        ]
+      }
+    },
+    {
+      "id": "nur_s_006",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "A physician gives you a verbal order you believe is unsafe. Walk me through what you do.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Read back and verify first, because a large share of these are transcription or communication errors rather than clinical ones",
+          "State the concern with data and a clear assertion: I am concerned about this dose because the creatinine came back at 3.2 this morning",
+          "Do not administer while the concern is unresolved, and escalate up the chain: charge nurse, supervisor, pharmacy, the attending or the medical director on call",
+          "Document the order, your concern, who you notified and the outcome"
+        ],
+        "strong_answer_signals": [
+          "Read back and verify named as standard practice",
+          "Uses pharmacy as an ally, which is fast and often resolves it",
+          "Understands that administering a known unsafe order does not transfer liability to the prescriber"
+        ],
+        "avoid": [
+          "Giving the medication because a physician ordered it",
+          "Refusing without offering the clinical reason",
+          "Stopping at the first no rather than continuing up the chain"
+        ]
+      }
+    },
+    {
+      "id": "nur_s_007",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Your assignment tonight is heavier than you believe is safe. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Speak to the charge nurse before the shift begins, with specifics rather than a general objection: acuity, drips, total care patients, a new admission pending",
+          "Propose a solution: redistribute one patient, ask for CNA support, request the house supervisor look at float pool coverage",
+          "If it stands, complete the assignment despite objection or safe harbor form where your state or facility provides one, and still care for the patients",
+          "Follow up afterwards with staffing committee or acuity tool data rather than only complaining"
+        ],
+        "strong_answer_signals": [
+          "Raises it before the shift, not at hour six",
+          "Brings acuity evidence, not just a headcount",
+          "Never abandons patients, since walking out is patient abandonment and a licence issue"
+        ],
+        "avoid": [
+          "Refusing the assignment and leaving",
+          "Saying nothing and absorbing it, which normalises unsafe staffing",
+          "Framing it as a personal grievance rather than a patient safety issue"
+        ]
+      }
+    },
+    {
+      "id": "nur_s_008",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "A patient falls on your shift. What are your next steps?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Assess before moving: level of consciousness, injury, head strike, neuro checks, vitals, and pain",
+          "Notify the provider and the family, and follow the post fall protocol including neuro checks if unwitnessed or a head strike is suspected",
+          "Document objectively what you found: found on floor beside bed, no witness, rather than an interpretation of what happened",
+          "Complete the incident report, then reassess the fall risk plan: bed alarm, hourly rounding, non skid socks, toileting schedule, mobility consult"
+        ],
+        "strong_answer_signals": [
+          "Assesses before lifting, which is the single most common error",
+          "Documents facts in the chart and puts analysis in the incident report, not the other way around",
+          "Treats prevention as the real answer: most falls are toileting related"
+        ],
+        "avoid": [
+          "Helping the patient up immediately without assessing",
+          "Charting the incident report was completed in the medical record",
+          "Blaming the patient for not calling for help"
+        ]
+      }
+    },
+    {
+      "id": "nur_s_009",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "A confused patient is trying to leave the unit. How do you respond?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Separate the two cases: a patient with capacity may leave against medical advice, a patient without capacity cannot consent to leave and must be kept safe",
+          "De-escalate first: walk with them, redirect, address the underlying need such as pain, toileting, or wanting to go home to a pet",
+          "Notify the provider and charge nurse, assess capacity and delirium causes, and use the least restrictive measures before restraints",
+          "Know the restraint rules: an order is required, they are time limited, they require documented monitoring and cannot be standing or PRN orders"
+        ],
+        "strong_answer_signals": [
+          "Screens for reversible delirium causes: infection, hypoxia, pain, medication, urinary retention",
+          "Names least restrictive first and knows restraints are a last resort with a legal framework",
+          "Involves security and the provider appropriately rather than physically managing it alone"
+        ],
+        "avoid": [
+          "Reaching for restraints as the first step",
+          "Letting a patient without capacity sign out AMA",
+          "Handling an elopement risk without notifying anyone"
+        ]
+      }
+    },
+    {
+      "id": "nur_s_010",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "You suspect a coworker is impaired at work. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Patients first: the colleague must be removed from patient care immediately, so this goes to the charge nurse or supervisor now, not at the end of the shift",
+          "Report observable facts, not a diagnosis: slurred speech, unsteady gait, unaccounted narcotic waste, frequent unwitnessed wastes, long unexplained absences",
+          "Do not confront alone and do not let them drive home; that is the supervisor's process",
+          "Note that most states have a non punitive alternative to discipline or peer assistance programme, so reporting can be what saves their licence and their life"
+        ],
+        "strong_answer_signals": [
+          "Acts within the shift rather than waiting for more evidence",
+          "Uses factual observation language, which is what the investigation needs",
+          "Frames reporting as care for the colleague as well as the patients"
+        ],
+        "avoid": [
+          "Covering for them or handling it privately as a friend",
+          "Gossiping with other staff before reporting",
+          "Waiting to be certain, since certainty is not the reporting standard"
+        ]
+      }
+    },
+    {
+      "id": "nur_t_001",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Walk me through how you give handoff report.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Name the tool: SBAR, situation, background, assessment, recommendation, and say you use it at shift change, provider calls and transfers",
+          "Situation and background: name, age, admitting diagnosis, day of stay, code status, allergies, isolation",
+          "Assessment: current vitals and trend, systems review by exception, lines and drains, drips with rates, pain, mobility and fall risk, intake and output",
+          "Recommendation: what is pending, what to watch for, what needs to happen this shift, and any family or discharge issues"
+        ],
+        "strong_answer_signals": [
+          "Bedside handoff with the patient included, which is the current standard and reduces errors",
+          "Leads with code status and allergies rather than burying them",
+          "Reports trends rather than a single number: the pressure has been drifting down over three checks"
+        ],
+        "avoid": [
+          "A head to toe recitation with no prioritisation",
+          "Leaving out pending orders, pending labs or what the last provider conversation concluded",
+          "Handing off opinions about the patient or family instead of clinical data"
+        ]
+      }
+    },
+    {
+      "id": "nur_t_002",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "How do you prioritise your patients at the start of a shift?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "State the framework: ABCs first, then acute over chronic, then actual problems over potential ones, with Maslow for the rest",
+          "Describe the practical routine: review report and the MAR, lay eyes on the sickest patient first, then a quick safety round on everyone within the first hour",
+          "Name the time critical anchors: time sensitive medications such as antibiotics and insulin, pre op preparation, scheduled procedures, blood draws",
+          "Explain that you reprioritise continuously and communicate changes to the charge nurse"
+        ],
+        "strong_answer_signals": [
+          "Names a named framework rather than I just work from most to least important",
+          "Shows you use the MAR and acuity tools rather than memory",
+          "Mentions reassessing and communicating changes, which shows dynamic prioritisation"
+        ],
+        "avoid": [
+          "No framework, just working on whoever speaks up first",
+          "Leaving out the reprioritisation step, which is where mistakes happen",
+          "Prioritising documentation over patient assessment"
+        ]
+      }
+    },
+    {
+      "id": "nur_t_003",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Walk me through what you check when a patient is on a ventilator.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Airway and ventilation settings: tube type, size, depth, cuff pressure, ventilator mode, tidal volume, respiratory rate, FiO2, PEEP, alarm settings",
+          "Patient synchrony: is the patient breathing in phase with the ventilator, any fighting the vent, use of sedation, whether the settings match the clinical picture",
+          "Haemodynamics: ventilated patients need adequate perfusion, watch for hypotension, the effect of positive pressure on cardiac output, need for fluids or vasopressors",
+          "Complications and daily care: oral care, suctioning, weaning readiness, sedation vacation, spontaneous breathing trial criteria"
+        ],
+        "strong_answer_signals": [
+          "Cuff pressure specifically: 20-30 cmH2O is the range, too high causes tracheal necrosis",
+          "Names ventilator-associated events and prevention bundles: head of bed elevation, oral care, sedation vacation",
+          "Shows understanding that the ventilator is supporting but not fixing the underlying problem"
+        ],
+        "avoid": [
+          "Only describing settings without linking them to the patient's condition",
+          "Forgetting to mention alarm settings and daily checks",
+          "Treating ventilation as a machine management problem rather than a patient management problem"
+        ]
+      }
+    },
+    {
+      "id": "nur_t_004",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "How do you assess for and manage a patient with chest pain?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Assess: LOC, OPQRST for pain characteristics, vital signs including SpO2, 12 lead ECG within 10 minutes, IV access, troponin and other labs, chest X-ray",
+          "Immediate interventions: oxygen if SpO2 under 94, aspirin 324mg chewable, nitroglycerin sublingual if BP over 90 systolic, IV morphine for pain, establish IV access",
+          "Rule out immediately life threatening causes: STEMI, aortic dissection, PE, tension pneumothorax, cardiac tamponade",
+          "Notify the provider immediately with the full picture and your nursing assessment"
+        ],
+        "strong_answer_signals": [
+          "Knows the 10 minute door to ECG standard for chest pain protocols",
+          "Names OPQRST specifically as the pain assessment tool",
+          "Differentiates unstable angina from STEMI on the ECG"
+        ],
+        "avoid": [
+          "Waiting for the provider to round before calling with an abnormal ECG",
+          "Treating pain without first ruling out immediately life threatening causes",
+          "Giving nitroglycerin before checking for inferior STEMI or hypotension"
+        ]
+      }
+    },
+    {
+      "id": "nur_t_005",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Describe the signs of sepsis and the actions you would take.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Identify SIRS criteria: temperature above 100.4F or below 96.8F, heart rate above 90, respiratory rate above 20, WBC above 12,000 or below 4,000",
+          "Name qSOFA: altered mental status, systolic BP 100 or below, respiratory rate 22 or above. Two of three means high risk",
+          "Act immediately: notify the provider, obtain cultures before antibiotics if possible, start broad spectrum antibiotics within one hour, fluid resuscitation, continuous monitoring",
+          "Document: time of onset, time of cultures, time of antibiotics, fluid balance, clinical response"
+        ],
+        "strong_answer_signals": [
+          "Knows the one hour bundle and the importance of time to antibiotics",
+          "Names the sepsis bundles specifically: blood cultures before antibiotics, broad spectrum abx within one hour, 30ml per kg fluid bolus",
+          "Understands that lactate elevation is a marker of tissue hypoperfusion"
+        ],
+        "avoid": [
+          "Waiting for a confirmed culture before starting antibiotics",
+          "Missing qSOFA because only looking at fever and white count",
+          "Fluid resuscitation without monitoring for signs of overload"
+        ]
+      }
+    },
+    {
+      "id": "nur_t_006",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How do you manage a patient with diabetes and a blood glucose of 450?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Assess the patient: mental status, level of consciousness, Kussmaul respirations, signs of dehydration, fruity breath, blood pressure, heart rate, ECG",
+          "Check for DKA vs HHS: DKA typically type 1, lower glucose but high anion gap metabolic acidosis, ketones; HHS typically type 2, higher glucose but no ketones, hyperosmolar",
+          "Interventions: IV fluids with normal saline initially, insulin infusion per protocol, potassium replacement once K under 5.3, hourly glucose checks, monitor for cerebral oedema in HHS",
+          "Notify the provider immediately with your assessment and pending labs"
+        ],
+        "strong_answer_signals": [
+          "Knows not to give insulin until potassium is confirmed above 3.3, because insulin drives potassium intracellularly and can cause fatal arrhythmia",
+          "Names the difference between DKA and HHS protocols",
+          "Starts fluid resuscitation before insulin, which is the correct order"
+        ],
+        "avoid": [
+          "Giving insulin before checking potassium",
+          "Assuming all hyperglycaemia is the same and treating it the same way",
+          "Missing the neurological assessment in HHS, which can present with altered mental status and focal deficits"
+        ]
+      }
+    },
+    {
+      "id": "nur_t_007",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Walk me through your assessment of a patient with an altered level of consciousness.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "ABCs first: is the airway protected, is the patient breathing adequately, is perfusion intact",
+          "Use a systematic tool: Glasgow Coma Scale for conscious level, AVPU (Alert Voice Pain Unresponsive), and a full neurological assessment including pupils, motor response, speech",
+          "Rule out immediately life threatening causes: hypoxia, hypoglycaemia, opioid overdose, stroke, seizure postictal, sepsis, intoxication",
+          "Report a declining trend early, not just the current number"
+        ],
+        "strong_answer_signals": [
+          "Checks glucose immediately as part of the standard altered consciousness work up",
+          "Uses a named scale and applies it consistently",
+          "Knows to assess for lateralising signs indicating stroke"
+        ],
+        "avoid": [
+          "Skipping the glucose check because the patient seems alert enough",
+          "Only calling the provider when the GCS drops to a specific number rather than noting any decline",
+          "Treating symptoms without investigating the cause"
+        ]
+      }
+    },
+    {
+      "id": "nur_t_008",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "What are the signs of a deep vein thrombosis and pulmonary embolism, and how do you respond?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "DVT signs: unilateral leg swelling, warmth, erythema, calf pain with dorsiflexion, palpable cord",
+          "PE signs: sudden dyspnoea, pleuritic chest pain, tachycardia, tachypnoea, hypoxia, haemoptysis, syncope, sense of dread",
+          "Immediate actions: put the patient on telemetry, high flow oxygen, obtain IV access, notify the provider immediately, prepare for possible thrombolysis or anticoagulation",
+          "Prevention: know who is at risk, apply sequential compression devices, give prophylactic anticoagulation as ordered, ambulate early"
+        ],
+        "strong_answer_signals": [
+          "Wells score or Padua score named for risk stratification",
+          "Knows that PE can present without leg symptoms in up to half of cases",
+          "Does not massage a swollen leg, which could dislodge the clot"
+        ],
+        "avoid": [
+          "Waiting for a positive D-dimer before escalating concern",
+          "Ambulating a patient you suspect has DVT before imaging",
+          "Missing the atypical PE presentation in an elderly or immobile patient"
+        ]
+      }
+    },
+    {
+      "id": "nur_t_009",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "What do you monitor for in a patient receiving blood products?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Pre transfusion: patient identification with two identifiers, informed consent, vital signs, IV access gauge and patency, blood product unit verification with a second nurse",
+          "During: vital signs at 15 minutes (or sooner if symptoms), monitor for reactions: fever, chills, pruritis, hypotension, tachycardia, chest pain, anxiety, dark urine",
+          "Acute reactions and responses:febrile non haemolytic (stop, saline flush, notify), allergic urticaria (antihistamine, may restart slowly), acute haemolytic (stop immediately, IV fluids, notify, send unit and blood sample to lab), TRALI (stop, oxygen, notify, no restart)",
+          "Documentation: time started and finished, vital signs before during and after, any reactions and interventions, patient tolerance"
+        ],
+        "strong_answer_signals": [
+          "Knows the two nurse verification process by name",
+          "Can differentiate the severity of transfusion reactions and respond appropriately",
+          "Does not stop monitoring after the transfusion is finished, since some reactions are delayed"
+        ],
+        "avoid": [
+          "Running the transfusion faster than protocol to save time",
+          "Missing the transfusion reaction because the patient is sleeping",
+          "Not documenting the product unit number"
+        ]
+      }
+    },
+    {
+      "id": "nur_t_010",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "What are the key elements of pain assessment and management?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Assess: use a validated scale (0-10 numeric, Wong Baker faces, CPOT for ventilated patients, PAINAD for dementia), document location, character, aggravating and relieving factors, timing",
+          "Assess function: does pain stop the patient from breathing deeply, coughing, mobilising, sleeping",
+          "Consider multimodal management: pharmacological (acetaminophen, NSAIDs, opioids as ordered) plus non pharmacological (repositioning, ice, heat, distraction, music, therapeutic touch)",
+          "Reassess after interventions: pain is the fifth vital sign, and an intervention without a reassessment is incomplete"
+        ],
+        "strong_answer_signals": [
+          "Uses the CPOT or PAINAD scale for patients who cannot self report",
+          "Balances opioid stewardship with adequate pain control",
+          "Documents reassessment, not just the initial score"
+        ],
+        "avoid": [
+          "Taking the first pain score as a complete picture without reassessing after intervention",
+          "Assuming patients on opioids are automatically pain free",
+          "Ignoring nonverbal pain cues in sedated or cognitively impaired patients"
+        ]
+      }
+    },
+    {
+      "id": "nur_t_011",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How do you assess a patient before and after administration of opioid analgesics?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Before: respiratory rate, depth and pattern, oxygen saturation, blood pressure, heart rate, level of consciousness, pain score, sedation score (RASS or Pasero), allergy history",
+          "Check the order: dose, route, frequency, prn parameters, and whether the patient has had recent opioid doses that may accumulate",
+          "After: reassess in 30-60 minutes depending on route, monitor for respiratory depression, over sedation, hypotension, nausea",
+          "Have naloxone and oxygen at the bedside for high risk patients, and know when to hold and notify rather than give"
+        ],
+        "strong_answer_signals": [
+          "Uses the Pasero Opioid-Induced Sedation Scale (POSS) or RASS before and after",
+          "Knows the signs of opioid toxicity: pinpoint pupils, respiratory depression, altered mental status",
+          "Does not give another dose if the patient is already oversedated"
+        ],
+        "avoid": [
+          "Giving opioids without checking the respiratory rate",
+          "Assuming the patient is in pain because they are on opioids",
+          "Not reassessing after administration"
+        ]
+      }
+    },
+    {
+      "id": "nur_t_012",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Describe the process for administering intravenous medications safely.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Five rights: right patient (two identifiers), right drug, right dose, right route, right time. Plus right documentation, right to refuse, right indication",
+          "Check compatibility: IV push vs infusion, which lumen of a multi lumen catheter, any Y site or tubing compatibility concerns",
+          "Monitor for infiltration, phlebitis, anaphylaxis, and for drug specific reactions: potassium burns, vancomycin needs infusion rate for Red Man syndrome, vesicants cause tissue necrosis if extravasated",
+          "Document the site, the drug, the dose, the time, the response, and any complications"
+        ],
+        "strong_answer_signals": [
+          "Names specific infiltration and phlebitis scales",
+          "Knows that vancomycin requires 60-90 minute infusion to prevent Red Man syndrome",
+          "Does not administer IV push potassium under any circumstances"
+        ],
+        "avoid": [
+          "Not checking IV site before and during administration",
+          "Mixing medications in the same syringe without checking compatibility",
+          "Giving IV push medications through a peripheral line that is already showing signs of phlebitis"
+        ]
+      }
+    },
+    {
+      "id": "nur_m_001",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "How do you handle a conflict between two members of your team?",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Set the context: the nature of the conflict, the impact on patient care, and when you became aware of it",
+          "Your action: spoke to each person privately first, then together if appropriate, used active listening and focused on behaviour rather than personality",
+          "Resolution: agreed expectations, clarified roles or processes if the conflict stemmed from a structural gap, documented if needed",
+          "Outcome: team function restored, and a process improvement came out of it if the conflict revealed a systems problem"
+        ],
+        "strong_answer_signals": [
+          "Speaks to each person separately before bringing them together",
+          "Does not take sides or engage in gossip about the conflict",
+          "Addresses the impact on patient care, not just the interpersonal tension"
+        ],
+        "avoid": [
+          "Managing conflict by removing one person from the team",
+          "Escalating to HR before attempting direct resolution",
+          "Ignoring the conflict and hoping it resolves itself"
+        ]
+      }
+    },
+    {
+      "id": "nur_m_002",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Tell me about a time you had to deliver difficult feedback to a staff member.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Prepare the facts: what specifically happened, the impact on patient care or team function, any prior conversations",
+          "Set the context privately: open with care for the person, be specific about the behaviour not the person, state the expectation clearly",
+          "Invite dialogue: allow them to explain, listen without interrupting, address their concerns",
+          "Follow up: document the conversation, check in on progress, and follow through on any commitments you made"
+        ],
+        "strong_answer_signals": [
+          "Is specific: not you have an attitude but you interrupted report three times yesterday in front of the charge nurse",
+          "Keeps it private and does not deliver corrective feedback in front of other staff",
+          "Follows up, which is what separates a coaching conversation from a reprimand"
+        ],
+        "avoid": [
+          "Delivering feedback when emotions are high",
+          "Making it personal or bringing in past issues",
+          "Not following up after the conversation"
+        ]
+      }
+    },
+    {
+      "id": "nur_m_003",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "How do you manage a team when there is high turnover or understaffing?",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Set the context: the specific vacancy rate, the acuity of the patients, and the impact on the existing team",
+          "Your action: reached out to float pool or agency for coverage, restructured assignments based on acuity not geography, communicated transparently with the team about the situation",
+          "Kept patients safe: used acuity based assignment tools, conducted safety huddles, ensured new or agency staff had adequate support",
+          "Supported the team: acknowledged the strain, checked in individually, followed up on any incidents caused by understaffing"
+        ],
+        "strong_answer_signals": [
+          "Uses the unit acuity tool rather than just splitting assignments evenly",
+          "Does not assign a new graduate or agency nurse to the highest acuity patient without a buddy",
+          "Documents staffing variances for future resource allocation conversations"
+        ],
+        "avoid": [
+          "Pretending the staffing situation is not affecting the team",
+          "Assigning more patients without adjusting the acuity or complexity",
+          "Not following up with leadership on the staffing gap"
+        ]
+      }
+    },
+    {
+      "id": "nur_m_004",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "How do you develop and mentor the nurses on your team?",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Set the context: the size and experience mix of the team, specific development needs you identified",
+          "Your action: individual development conversations, pairing new grads with skilled preceptors, clinical ladder opportunities, certification support, regular feedback",
+          "Show outcomes: specific nurses who were promoted, achieved certification, or improved in specific areas",
+          "Close with your belief that investing in staff development improves retention and patient outcomes"
+        ],
+        "strong_answer_signals": [
+          "Names a specific development programme or clinical ladder your unit has",
+          "Tracks outcomes: did the nurse improve, were they retained",
+          "Balances development with unit needs and does not approve every educational opportunity without considering coverage"
+        ],
+        "avoid": [
+          "Treating mentoring as a buzzword without concrete examples",
+          "Only mentoring nurses who remind you of yourself",
+          "Not following through on development plans"
+        ]
+      }
+    },
+    {
+      "id": "nur_m_005",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "Walk me through how you would investigate a medication error on your unit.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Immediate response: ensure patient safety, provide necessary care, notify the provider and supervisor, secure the medication if relevant",
+          "Data gathering: review the MAR and medication order, interview the nurse involved without blame, check the five rights documentation, review the system for contributing factors",
+          "Root cause analysis: identify whether it was a person error, a process error, a system design error, or a communication failure. Ask why five times to get to the root cause",
+          "Action and follow up: implement a system fix (change the process, add a forcing function, update the order set), educate the team, monitor for recurrence"
+        ],
+        "strong_answer_signals": [
+          "Uses a named framework: just culture, Swiss cheese model, or RCA2",
+          "Distinguishes between human error, at risk behaviour, and reckless behaviour, and responds accordingly",
+          "Follows up with the affected patient and family appropriately"
+        ],
+        "avoid": [
+          "Blaming the individual without looking at system factors",
+          "Implementing a solution without checking that it actually addresses the root cause",
+          "Treating the investigation as complete when the incident report is filed"
+        ]
+      }
+    },
+    {
+      "id": "nur_m_006",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "How do you ensure quality and safety standards are maintained on your unit?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Monitoring: use the unit quality dashboard, track fall rates, CAUTI, CLABSI, VAP, HAPU, medication error rates, nurse sensitive indicators, patient satisfaction scores",
+          "Education and accountability: regular staff education on evidence based practice, competency assessments, just culture principles",
+          "Process improvement: participate in or lead quality improvement projects, use data to identify trends, implement evidence based bundles",
+          "Escalation: know when to escalate quality concerns to the nurse manager, quality department, or patient safety officer"
+        ],
+        "strong_answer_signals": [
+          "Names specific quality metrics and benchmarks relevant to the unit",
+          "Knows that quality improvement requires frontline staff engagement, not just leadership mandates",
+          "Uses incident reports as learning opportunities rather than punishment triggers"
+        ],
+        "avoid": [
+          "Monitoring without acting on the data",
+          "Only focusing on the metrics that are publicly reported",
+          "Treating quality as a compliance exercise rather than a patient outcome priority"
+        ]
+      }
+    },
+    {
+      "id": "nur_m_007",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "How do you handle a situation where a family member is unhappy with the care their loved one is receiving?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Listen first: allow the family member to express their concern fully without interrupting, validate their feelings and the seriousness of their concern",
+          "Investigate: review the care provided, speak with the nursing staff involved, identify what the actual gap is",
+          "Respond: provide a clear and honest explanation, outline what will be done differently, and give a timeframe for follow up",
+          "Follow up: check in with the family before and after the next shift, document the conversation and the resolution, consider a care conference for ongoing concerns"
+        ],
+        "strong_answer_signals": [
+          "Does not become defensive or dismissive",
+          "Treats a family complaint as an opportunity to improve the care experience",
+          "Follows up personally, which shows the family their concern was taken seriously"
+        ],
+        "avoid": [
+          "Telling the family member they are wrong",
+          "Passing the concern to someone else without ensuring it is addressed",
+          "Making promises you cannot keep"
+        ]
+      }
+    },
+    {
+      "id": "nur_m_008",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "How do you manage your time and priorities across clinical, administrative and leadership responsibilities?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Structure your day: review the unit census and acuity at start of shift, identify the highest priority patient safety issues, schedule time for staff check ins and documentation",
+          "Delegate appropriately: know what only you can do versus what can be delegated to a charge nurse or team leader",
+          "Protect time for leadership work: strategic planning, quality improvement, staff development, and documentation do not happen if they are always displaced by urgent clinical tasks",
+          "Review and adjust: at end of shift assess what was completed, what was deferred, and why, and adjust the next day"
+        ],
+        "strong_answer_signals": [
+          "Names specific tools or routines for managing competing demands",
+          "Does not let administrative work consistently displace clinical supervision",
+          "Knows when to say no to additional commitments"
+        ],
+        "avoid": [
+          "Being available to everyone all the time and never protecting your own work time",
+          "Prioritising administrative metrics over patient safety",
+          "Not communicating with your team about your workload and boundaries"
+        ]
+      }
+    },
+    {
+      "id": "nur_mo_001",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Why nursing? Walk me through what drew you to this career.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Personal origin story: a specific moment, person, or experience that sparked the interest in nursing as a career",
+          "What keeps you in it: specific aspects of the work that give you professional satisfaction, such as patient contact, problem solving, teamwork",
+          "Where you see yourself going: growth areas, specialisation, leadership, or continued clinical excellence",
+          "Why this organisation: a specific connection between your goals and what this facility offers or represents"
+        ],
+        "strong_answer_signals": [
+          "Specific and personal, not a rehearsed answer",
+          "Shows self awareness about both the rewards and the challenges of nursing",
+          "Makes a genuine connection to the organisation you are applying to"
+        ],
+        "avoid": [
+          "I have always wanted to help people without specifics",
+          "Talking only about the challenges and not the rewards",
+          "A generic answer that could apply to any healthcare role"
+        ]
+      }
+    },
+    {
+      "id": "nur_mo_002",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Where do you see yourself in five years?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Clinical expertise: a specific area of specialisation, certification, or advanced skill you want to develop",
+          "Leadership or education: a charge role, preceptorship, mentorship, or formal education",
+          "Why this unit or organisation fits that path: a specific opportunity here that supports that goal",
+          "Realistic about the steps: you know the timeline and what it takes to get there"
+        ],
+        "strong_answer_signals": [
+          "Has thought about it specifically, not just said five years to have an answer",
+          "Shows ambition without unrealistic expectations",
+          "Connects personal growth to the value you will bring to the unit"
+        ],
+        "avoid": [
+          "Saying you have not thought that far ahead",
+          "Talking about leaving nursing or the organisation within five years",
+          "Being vague about both the goal and the path to it"
+        ]
+      }
+    },
+    {
+      "id": "nur_mo_003",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "What do you do to maintain your own physical and mental health as a nurse?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Acknowledge the reality: the physical demands (long shifts, lifting, standing) and emotional demands (death, suffering, moral distress) are real",
+          "Name what you actually do: exercise, sleep hygiene, healthy eating, boundaries around work email on days off, debriefing with peers",
+          "Show awareness of unit culture: what you do to contribute to a culture where colleagues also feel able to prioritise their wellbeing",
+          "Know your limits: when to take a break, when to ask for support, when to use the employee assistance programme"
+        ],
+        "strong_answer_signals": [
+          "Concrete and realistic, not just I try to eat well and sleep",
+          "Names peer support and debriefing specifically",
+          "Shows you understand that self care is not optional or selfish"
+        ],
+        "avoid": [
+          "Claiming you leave work at work completely",
+          "Nothing specific, which suggests you have not thought about it",
+          "Activities that are not sustainable (exercise twice a day, no days off)"
+        ]
+      }
+    },
+    {
+      "id": "nur_mo_004",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "What is your greatest professional strength and your greatest development area?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Strength: name one specific, credible strength backed by a concrete example. It should be a nursing skill, not a generic personality trait",
+          "Development area: name one genuine growth area, not a strength disguised as a weakness. It should be something you are actively working on",
+          "Show the connection between the two: how your strength sometimes creates the development area, or how you are using your strength to address the development area",
+          "Close with what you are doing about the development area"
+        ],
+        "strong_answer_signals": [
+          "Strength is specific and verifiable: not I am compassionate but I have a 98 percent fall prevention rate",
+          "Development area is genuine and actionable",
+          "Does not use the tired old strengths and weaknesses list"
+        ],
+        "avoid": [
+          "I work too hard or I am a perfectionist",
+          "Naming a strength that has no evidence behind it",
+          "Having no real development area"
+        ]
+      }
+    },
+    {
+      "id": "nur_mo_005",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Why are you leaving your current position?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Answer forward, not backward: name what you are moving toward such as acuity, specialty, a residency, growth, or a schedule that fits your life",
+          "If you are leaving something genuinely bad such as unsafe staffing, say it factually and once, without a list of grievances",
+          "Keep it short and do not name individuals",
+          "Bridge immediately into why this role fits"
+        ],
+        "strong_answer_signals": [
+          "Neutral, professional language about the previous employer",
+          "A reason the interviewer can actually satisfy, which makes you a plausible long term hire",
+          "Brief, then moves on"
+        ],
+        "avoid": [
+          "Criticising managers, coworkers or the organisation",
+          "A long story about a conflict",
+          "Vague answers such as looking for a change, which invite suspicion"
+        ]
+      }
+    },
+    {
+      "id": "nur_mo_006",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "What questions do you have about this unit or this organisation?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Always ask, and ask about the work: what does the nurse to patient ratio actually look like on nights and weekends, and how often is it exceeded",
+          "Ask about support and onboarding: how long is orientation for someone with my experience, what is the preceptor model, is there a residency or a mentor",
+          "Ask about the team and growth: turnover on this unit in the past year, shared governance, clinical ladder, certification support, charge and preceptor opportunities",
+          "Close with a forward question: what would make someone successful in their first six months here, and what are the next steps"
+        ],
+        "strong_answer_signals": [
+          "Asks the ratio question with the nights and weekends qualifier, which is where the real answer lives",
+          "Asks about turnover directly, which signals an experienced candidate",
+          "Ends by asking about next steps and timeline"
+        ],
+        "avoid": [
+          "Having no questions, which reads as indifference",
+          "Leading with pay, shift differential and vacation in a first interview",
+          "Questions answered on the job posting"
+        ]
+      }
+    }
+  ]
+}

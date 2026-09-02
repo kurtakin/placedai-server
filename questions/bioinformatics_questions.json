@@ -1,0 +1,583 @@
+{
+  "metadata": {
+    "sector": "Bioinformatics",
+    "generated": "2026-08-30",
+    "total": 20,
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "motivation",
+      "situational",
+      "technical"
+    ]
+  },
+  "questions": [
+    {
+      "id": "bio_001",
+      "text": "Describe your experience with genomic data analysis pipelines. How have you handled raw sequencing data, quality control, and variant calling?",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Data preprocessing steps (FASTQ cleaning, adapter trimming)",
+          "Quality assessment with FastQC or similar tools",
+          "Variant calling with GATK or FreeBayes",
+          "Annotation and filtering of variant calls"
+        ],
+        "strong_answer_signals": [
+          "Hands-on experience with tools like FastQC, Trimmomatic",
+          "Understanding of quality metrics and thresholds",
+          "Reproducible pipeline design with documentation"
+        ],
+        "avoid": [
+          "Theoretical knowledge only with no tool examples",
+          "Listing tools without explaining workflow logic",
+          "Ignoring data quality considerations"
+        ]
+      }
+    },
+    {
+      "id": "bio_002",
+      "text": "Walk me through how you would approach a BLAST analysis for identifying homologous genes. What parameters would you optimize and why?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Database selection (nr, nt, protein vs nucleotide)",
+          "Parameter optimization (e-value, word size, matches)",
+          "Hit filtering and statistical interpretation",
+          "Multiple query handling and batch processing"
+        ],
+        "strong_answer_signals": [
+          "Knowledge of e-value thresholds, word size impacts",
+          "Understanding of compositional biases and low-complexity filtering",
+          "Ability to troubleshoot and validate BLAST results"
+        ],
+        "avoid": [
+          "Generic BLAST usage without optimization reasoning",
+          "Using default parameters blindly",
+          "Not validating database appropriateness"
+        ]
+      }
+    },
+    {
+      "id": "bio_003",
+      "text": "Tell me about a time you implemented a multiple sequence alignment project. What challenges did you face and how did you overcome them?",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Tool selection based on dataset size and sequence types",
+          "Handling of divergent sequences and gap penalties",
+          "Post-alignment refinement and visualization",
+          "Documentation for reproducibility"
+        ],
+        "strong_answer_signals": [
+          "Specific alignment strategies based on sequence similarity",
+          "Methods for handling gaps and indels appropriately",
+          "Clear explanation of tool selection rationale"
+        ],
+        "avoid": [
+          "Tool names only without implementation details",
+          "Vague descriptions of alignment quality",
+          "Ignoring alignment visualization needs"
+        ]
+      }
+    },
+    {
+      "id": "bio_004",
+      "text": "Explain your experience with phylogenetic tree construction. How do you ensure the reliability of your phylogenetic inferences?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Model selection for sequence evolution (GTR, HKY85)",
+          "Tree building method choice (NJ, ML, Bayesian)",
+          "Branch support assessment (bootstrap, posterior probabilities)",
+          "Tree validation and outlier detection"
+        ],
+        "strong_answer_signals": [
+          "Bootstrapping methods and convergence diagnostics",
+          "Model selection criteria (AIC, BIC)",
+          "Understanding of molecular clock assumptions"
+        ],
+        "avoid": [
+          "Superficial understanding of tree building algorithms",
+          "Skipping model selection and support assessment",
+          "Ignoring model adequacy testing"
+        ]
+      }
+    },
+    {
+      "id": "bio_005",
+      "text": "Describe a situation where you predicted protein structure. What methods did you use and how did you validate the results?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Homology modeling vs. ab initio prediction approaches",
+          "Template selection and quality assessment",
+          "Model refinement and energy minimization",
+          "Validation metrics (Ramachandran, RMSD comparison)"
+        ],
+        "strong_answer_signals": [
+          "Validation with RMSD calculations against crystal structures",
+          "Community servers usage (SWISS-MODEL, Phyre2, AlphaFold)",
+          "Understanding of model confidence scores"
+        ],
+        "avoid": [
+          "Only theoretical structure prediction concepts",
+          "Generic statements about prediction accuracy",
+          "Ignoring experimental validation steps"
+        ]
+      }
+    },
+    {
+      "id": "bio_006",
+      "text": "Share an example of building a bioinformatics pipeline. How did you handle scalability and reproducibility?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Containerization with Docker or Singularity",
+          "Workflow management (Snakemake, Nextflow, CWL)",
+          "Version control and dependency tracking",
+          "Parallel processing and resource optimization"
+        ],
+        "strong_answer_signals": [
+          "Pipeline automation with defined input-output relationships",
+          "Workflow management tools implementation",
+          "Clear documentation for pipeline reproduction"
+        ],
+        "avoid": [
+          "Small-scale scripts without scalability focus",
+          "Manual workflow steps or inconsistent environments",
+          "No version control for pipelines"
+        ]
+      }
+    },
+    {
+      "id": "bio_007",
+      "text": "How do you stay current with bioinformatics tools and methodologies? Give me a specific example of a new tool you implemented.",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Journal reading, conference attendance, online communities",
+          "Evaluating tool merit on benchmarks and documentation",
+          "Implementation with practical validation experiments",
+          "Knowledge sharing within team or organization"
+        ],
+        "strong_answer_signals": [
+          "Specific tool integration with measurable impact",
+          "Comparison of new vs. old approach effectiveness",
+          "Evidence of continuous learning habits"
+        ],
+        "avoid": [
+          "Vague statements about staying current",
+          "Listing papers without application examples",
+          "Only mentioning tools without implementation"
+        ]
+      }
+    },
+    {
+      "id": "bio_008",
+      "text": "Walk through your experience with RNA-seq analysis. How do you handle differential expression analysis and batch effects?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Read alignment to reference genome (STAR, HISAT2)",
+          "Quantification methods (TPM, RPKM, count matrices)",
+          "Differential expression tools (DESeq2, edgeR, limma)",
+          "Batch effect identification and correction strategies"
+        ],
+        "strong_answer_signals": [
+          "DESeq2 and edgeR usage with proper normalization",
+          "Batch correction with ComBat or SVA methods",
+          "Validation with independent datasets or qPCR"
+        ],
+        "avoid": [
+          "Just counting reads without proper normalization",
+          "Ignoring batch effects in experimental design",
+          "Differential expression without multiple testing correction"
+        ]
+      }
+    },
+    {
+      "id": "bio_009",
+      "text": "Tell me about a time you worked with CRISPR technology. What was your role and what were the key outcomes?",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Guide RNA design and off-target prediction tools",
+          "Experimental validation methods and controls",
+          "Data analysis from CRISPR screens or editing experiments",
+          "Interpretation of gene function from results"
+        ],
+        "strong_answer_signals": [
+          "Specific targets identified and validated experimentally",
+          "Methods for detecting off-target effects or editing efficiency",
+          "Clear outcome measurement and biological interpretation"
+        ],
+        "avoid": [
+          "Only theoretical CRISPR knowledge or design considerations",
+          "Guide RNA design without validation steps",
+          "Ignoring potential off-target considerations"
+        ]
+      }
+    },
+    {
+      "id": "bio_010",
+      "text": "Explain how you would design a GWAS study. What statistical considerations and quality controls are essential?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Sample size calculation and power analysis",
+          "Quality control for genotypes and phenotypes",
+          "Multiple testing correction (Bonferroni, FDR approaches)",
+          "Population stratification assessment and correction"
+        ],
+        "strong_answer_signals": [
+          "Power analysis and effect size considerations",
+          "Population structure control (PCA, kinship matrices)",
+          "Replication strategy and result validation"
+        ],
+        "avoid": [
+          "Ignoring population structure or relatedness",
+          "Using no multiple testing correction thresholds",
+          "Design without replication or validation plan"
+        ]
+      }
+    },
+    {
+      "id": "bio_011",
+      "text": "Describe your experience with systems biology modeling. How do you integrate different data types?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Network reconstruction algorithms (correlation, Bayesian networks)",
+          "Integration of omics data (transcriptomics, proteomics, metabolomics)",
+          "Model validation with independent datasets",
+          "Parameter estimation and sensitivity analysis"
+        ],
+        "strong_answer_signals": [
+          "Data integration strategies using common identifiers",
+          "Model validation with cross-validation or holdout sets",
+          "Ability to interpret biological insights from models"
+        ],
+        "avoid": [
+          "Theoretical modeling without biological grounding",
+          "Just connecting data types without integration strategy",
+          "Models without validation approaches"
+        ]
+      }
+    },
+    {
+      "id": "bio_012",
+      "text": "Share an example of biomarker discovery work you've been involved in. What was your contribution and the impact?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Statistical validation methods (ROC curves, AUC values)",
+          "Independent cohort validation for biomarkers",
+          "Biomarker panels vs. single marker approaches",
+          "Clinical relevance and utility assessment"
+        ],
+        "strong_answer_signals": [
+          "Biomarker validation with appropriate statistical methods",
+          "Clear articulation of clinical or research impact",
+          "Understanding of statistical power for biomarker detection"
+        ],
+        "avoid": [
+          "Just naming biomarkers without validation evidence",
+          "Statistical significance without clinical relevance",
+          "Single-center findings without replication"
+        ]
+      }
+    },
+    {
+      "id": "bio_013",
+      "text": "How do you approach drug discovery bioinformatics tasks? Give me specific examples of your work.",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Target identification and validation strategies",
+          "Virtual screening and docking approaches",
+          "Hit-to-lead and lead optimization analysis",
+          "ADMET prediction and drug-likeness assessment"
+        ],
+        "strong_answer_signals": [
+          "Target identification with pathway and network analysis",
+          "Hit-to-lead optimization with SAR analysis",
+          "Integration of multiple prediction models"
+        ],
+        "avoid": [
+          "Vague drug discovery process descriptions",
+          "Only molecular docking without validation",
+          "Generic statements about drug targets"
+        ]
+      }
+    },
+    {
+      "id": "bio_014",
+      "text": "Tell me about your experience with structural bioinformatics. How do you analyze protein-ligand interactions?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Docking algorithms and scoring functions (AutoDock, Vina)",
+          "Binding site identification and characterization",
+          "Interaction analysis (hydrogen bonds, hydrophobic contacts)",
+          "Experimental validation or computational refinement"
+        ],
+        "strong_answer_signals": [
+          "Scoring functions understanding and calibration",
+          "Binding mode validation with experimental data",
+          "Interpretation of interaction energetics"
+        ],
+        "avoid": [
+          "Only structural theory without computational methods",
+          "Docking without interaction interpretation",
+          "Ignoring scoring function limitations"
+        ]
+      }
+    },
+    {
+      "id": "bio_015",
+      "text": "Describe how you've handled population genetics analysis. What specific challenges did you face?",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Fst and other population differentiation metrics",
+          "Principal Component Analysis (PCA) for structure",
+          "Admixture analysis and ancestry estimation",
+          "Migration and demographic history inference"
+        ],
+        "strong_answer_signals": [
+          "Population structure detection with appropriate methods",
+          "Migration or demographic pattern interpretation",
+          "Awareness of sampling bias and limitations"
+        ],
+        "avoid": [
+          "Basic allele frequency calculations only",
+          "Ignoring population substructure importance",
+          "No discussion of method limitations"
+        ]
+      }
+    },
+    {
+      "id": "bio_016",
+      "text": "Explain your experience with epigenetics data analysis. How do you handle different modification types?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "ChIP-seq peak calling algorithms (MACS2, SICER)",
+          "ATAC-seq analysis for chromatin accessibility",
+          "Methylation analysis (WGBS, bisulfite sequencing)",
+          "Integration with gene expression data"
+        ],
+        "strong_answer_signals": [
+          "Integration with expression data for regulatory inference",
+          "Peak quality assessment and artifact removal",
+          "Differential analysis with proper controls"
+        ],
+        "avoid": [
+          "Only methylation analysis ignoring other marks",
+          "Peak calling without QC considerations",
+          "Modifications analysis without genomic context"
+        ]
+      }
+    },
+    {
+      "id": "bio_017",
+      "text": "Share an example of biostatistics work in biology. How did you handle complex statistical models?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Mixed effects models for hierarchical data",
+          "Survival analysis and time-to-event models",
+          "Multivariate analysis and dimension reduction",
+          "Model validation and diagnostic checking"
+        ],
+        "strong_answer_signals": [
+          "Model validation with diagnostic plots and residuals",
+          "Interpretation of model coefficients biologically",
+          "Assessment of model assumptions and limitations"
+        ],
+        "avoid": [
+          "Basic t-tests or chi-square only",
+          "Modeling without assumption checking",
+          "Results presentation without biological interpretation"
+        ]
+      }
+    },
+    {
+      "id": "bio_018",
+      "text": "How do you approach machine learning in biological applications? Give me a specific project example.",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Feature engineering for biological data types",
+          "Cross-validation strategies for small datasets",
+          "Model interpretation and biological insight extraction",
+          "Validation with independent test sets or experiments"
+        ],
+        "strong_answer_signals": [
+          "Model interpretation methods (SHAP, LIME, feature importance)",
+          "Biological insights derived from model predictions",
+          "Validation beyond metrics (experimental follow-up)"
+        ],
+        "avoid": [
+          "Generic ML descriptions without biological context",
+          "Overfitting without validation strategies",
+          "Black box models without interpretability focus"
+        ]
+      }
+    },
+    {
+      "id": "bio_019",
+      "text": "Describe your experience with NCBI/Ensembl databases. How have you used them in your work?",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "API usage (Entrez Programming Utilities, REST APIs)",
+          "Data retrieval and parsing strategies",
+          "Annotation file handling (GTF, GFF, RefSeq)",
+          "Batch processing and query optimization"
+        ],
+        "strong_answer_signals": [
+          "API usage for programmatic data retrieval",
+          "Data retrieval efficiency and error handling",
+          "Annotation parsing and data integration"
+        ],
+        "avoid": [
+          "Only manual database searching through web interfaces",
+          "Ignoring API rate limits and query optimization",
+          "Data retrieval without parsing strategy"
+        ]
+      }
+    },
+    {
+      "id": "bio_020",
+      "text": "Tell me about a bioinformatics pipeline you've optimized. What bottlenecks did you identify and how did you resolve them?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Performance profiling and bottleneck identification",
+          "Parallelization and compute resource optimization",
+          "I/O optimization and memory management",
+          "Result tracking and pipeline monitoring"
+        ],
+        "strong_answer_signals": [
+          "Speed improvements with quantifiable metrics",
+          "Resource optimization (CPU, memory, storage)",
+          "Systematic bottleneck identification approach"
+        ],
+        "avoid": [
+          "Minor tweaks without measuring impact",
+          "Optimization without considering trade-offs",
+          "No systematic performance profiling"
+        ]
+      }
+    }
+  ]
+}

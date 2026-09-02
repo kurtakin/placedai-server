@@ -1,0 +1,605 @@
+{
+  "metadata": {
+    "sector": "Construction and Building Trades",
+    "generated": "2026-08-30",
+    "total": 20,
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "motivation",
+      "situational",
+      "technical"
+    ]
+  },
+  "questions": [
+    {
+      "id": "cbt_001",
+      "text": "Describe a time you had to interpret a complex blueprint under tight deadlines on a construction site.",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Blueprint symbol recognition",
+          "Cross-referencing drawings with specifications",
+          "Coordination with trades",
+          "Asking clarifying questions to supervisor",
+          "Documenting revisions"
+        ],
+        "strong_answer_signals": [
+          "References specific drawing types like plan, section, or elevation",
+          "Mentions verification with field conditions",
+          "Demonstrates tolerance and scale awareness"
+        ],
+        "avoid": [
+          "Claiming to never make mistakes reading drawings",
+          "Ignoring discrepancies between sheets",
+          "Skipping cross-discipline coordination"
+        ]
+      }
+    },
+    {
+      "id": "cbt_002",
+      "text": "Tell me about a situation where you had to apply OSHA safety standards after observing an unsafe practice.",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identifying the hazard",
+          "Stopping or correcting the unsafe act",
+          "Documenting the incident",
+          "Implementing corrective training",
+          "Reporting to supervisor or safety officer"
+        ],
+        "strong_answer_signals": [
+          "Names relevant OSHA standard or CFR section",
+          "Balances urgency with respectful correction",
+          "Follows up to verify fix"
+        ],
+        "avoid": [
+          "Ignoring the issue to avoid conflict",
+          "Taking unilateral action without documentation",
+          "Failing to follow up after correction"
+        ]
+      }
+    },
+    {
+      "id": "cbt_003",
+      "text": "Why do you want to pursue a career in the building trades rather than a desk-based role?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Genuine interest in tangible work",
+          "Appreciation for craft and skill-building",
+          "Long-term career growth in trades",
+          "Desire for stable demand in construction",
+          "Personal experience that sparked interest"
+        ],
+        "strong_answer_signals": [
+          "References specific craft or trade specialty",
+          "Mentions apprenticeship or training path",
+          "Connects to tangible outcomes and pride in work"
+        ],
+        "avoid": [
+          "Saying you could not find other work",
+          "Blaming office environments entirely",
+          "Vague answers without personal connection"
+        ]
+      }
+    },
+    {
+      "id": "cbt_004",
+      "text": "Walk me through how you would calculate the materials needed for a concrete slab of given dimensions.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Calculating volume in cubic yards",
+          "Accounting for waste and overage",
+          "Reinforcement requirements",
+          "Formwork and sub-base preparation",
+          "Concrete mix design considerations"
+        ],
+        "strong_answer_signals": [
+          "Correctly converts units between feet and yards",
+          "Adds typical 5-10% waste factor",
+          "Considers rebar spacing or wire mesh"
+        ],
+        "avoid": [
+          "Forgetting to convert cubic feet to cubic yards",
+          "Ignoring waste allowance",
+          "Overlooking reinforcement needs"
+        ]
+      }
+    },
+    {
+      "id": "cbt_005",
+      "text": "Describe a time you had to coordinate multiple subcontractors on a tight project schedule.",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Sequencing trade work logically",
+          "Holding coordination meetings",
+          "Resolving conflicts between trades",
+          "Tracking dependencies",
+          "Communicating schedule changes proactively"
+        ],
+        "strong_answer_signals": [
+          "References pull-planning or look-ahead schedules",
+          "Names specific trades involved",
+          "Shows conflict resolution between subs"
+        ],
+        "avoid": [
+          "Blaming subcontractors for delays",
+          "Failing to communicate changes",
+          "Micromanaging instead of coordinating"
+        ]
+      }
+    },
+    {
+      "id": "cbt_006",
+      "text": "How do you select the appropriate materials for a project given budget, climate, and code requirements?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Reviewing local building codes",
+          "Evaluating climate exposure and durability",
+          "Comparing lifecycle costs",
+          "Consulting specifications and engineers",
+          "Considering sustainability and availability"
+        ],
+        "strong_answer_signals": [
+          "Mentions specific code sections or manufacturer specs",
+          "Weighs upfront cost vs lifecycle cost",
+          "Involves engineer or architect in decisions"
+        ],
+        "avoid": [
+          "Choosing cheapest option only",
+          "Ignoring local climate impacts",
+          "Skipping code compliance review"
+        ]
+      }
+    },
+    {
+      "id": "cbt_007",
+      "text": "Tell me about a time a project sequencing decision went wrong and how you recovered.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identifying the sequencing issue",
+          "Communicating impact to stakeholders",
+          "Reordering or fast-tracking tasks",
+          "Recovering lost schedule",
+          "Capturing lessons learned"
+        ],
+        "strong_answer_signals": [
+          "Uses specific project example with timeline",
+          "Shows data-driven recovery plan",
+          "Documents the lesson for future projects"
+        ],
+        "avoid": [
+          "Blaming weather or external factors only",
+          "Refusing to take responsibility",
+          "Failing to document lessons learned"
+        ]
+      }
+    },
+    {
+      "id": "cbt_008",
+      "text": "Explain the critical steps in preparing and pouring a residential foundation.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Site excavation and grading",
+          "Formwork installation",
+          "Rebar placement per engineering",
+          "Pouring, vibrating, and finishing concrete",
+          "Curing and waterproofing"
+        ],
+        "strong_answer_signals": [
+          "References soil bearing capacity",
+          "Mentions concrete slump and cure time",
+          "Discusses waterproofing or damp-proofing"
+        ],
+        "avoid": [
+          "Skipping soil testing",
+          "Ignoring rebar cover requirements",
+          "Rushing cure time"
+        ]
+      }
+    },
+    {
+      "id": "cbt_009",
+      "text": "Describe a time you taught a junior team member a framing or tool technique.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Assessing learner's skill level",
+          "Demonstrating the technique safely",
+          "Allowing supervised practice",
+          "Giving corrective feedback",
+          "Confirming competence on the task"
+        ],
+        "strong_answer_signals": [
+          "Mentions safety considerations first",
+          "Adapts teaching to learner pace",
+          "Verifies competency before independent work"
+        ],
+        "avoid": [
+          "Assuming they will figure it out",
+          "Skipping safety briefing",
+          "Criticizing rather than coaching"
+        ]
+      }
+    },
+    {
+      "id": "cbt_010",
+      "text": "What motivates you to stay in the construction industry despite its physical demands and weather exposure?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Pride in built results",
+          "Team camaraderie on job sites",
+          "Continuous learning of new methods",
+          "Job stability and demand",
+          "Personal physical readiness mindset"
+        ],
+        "strong_answer_signals": [
+          "References specific projects completed",
+          "Acknowledges difficulty with realistic framing",
+          "Shows long-term career commitment"
+        ],
+        "avoid": [
+          "Complaining about other industries",
+          "Overstating physical capabilities",
+          "Vague answers about job security"
+        ]
+      }
+    },
+    {
+      "id": "cbt_011",
+      "text": "How would you handle a situation where an inspector fails your work for a code violation you believe is incorrectly applied?",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Listening carefully to the inspector's reasoning",
+          "Reviewing the cited code section calmly",
+          "Consulting plans, engineer, or supervisor",
+          "Requesting re-inspection with corrections or clarification",
+          "Maintaining professional relationship with inspector"
+        ],
+        "strong_answer_signals": [
+          "References specific code section citations",
+          "Collaborates with design team",
+          "Preserves inspector relationship for future"
+        ],
+        "avoid": [
+          "Arguing aggressively with inspector",
+          "Ignoring inspector and proceeding",
+          "Failing to document the interaction"
+        ]
+      }
+    },
+    {
+      "id": "cbt_012",
+      "text": "Walk through the basics of sizing an electrical circuit for a residential room addition.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Calculating expected load in amps",
+          "Selecting wire gauge per NEC",
+          "Determining breaker size",
+          "Planning circuit count and layout",
+          "Following code-required receptacle spacing"
+        ],
+        "strong_answer_signals": [
+          "References NEC article numbers",
+          "Calculates load with safety margin",
+          "Plans for future load growth"
+        ],
+        "avoid": [
+          "Undersizing wire for the breaker",
+          "Ignoring voltage drop on long runs",
+          "Overloading circuits without calculation"
+        ]
+      }
+    },
+    {
+      "id": "cbt_013",
+      "text": "Tell me about a time you used critical path scheduling to deliver a project on time.",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identifying critical activities",
+          "Building the schedule logic",
+          "Monitoring float and dependencies",
+          "Adjusting resources to maintain path",
+          "Communicating changes to team"
+        ],
+        "strong_answer_signals": [
+          "Names specific scheduling tool or method",
+          "Quantifies days saved or protected",
+          "Shows trade-off analysis on choices"
+        ],
+        "avoid": [
+          "Confusing critical path with any path",
+          "Failing to monitor float",
+          "Ignoring non-critical dependencies"
+        ]
+      }
+    },
+    {
+      "id": "cbt_014",
+      "text": "Describe how you estimate costs for a small renovation project from takeoff to bid.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Performing quantity takeoff from drawings",
+          "Applying unit costs to quantities",
+          "Adding labor burden and overhead",
+          "Including contingency and profit",
+          "Reviewing scope and exclusions in bid"
+        ],
+        "strong_answer_signals": [
+          "References RSMeans or similar cost data",
+          "Includes specific overhead and margin percentages",
+          "Builds in realistic contingency"
+        ],
+        "avoid": [
+          "Skipping quantity takeoff details",
+          "Leaving out overhead or profit",
+          "Omitting exclusions or qualifications"
+        ]
+      }
+    },
+    {
+      "id": "cbt_015",
+      "text": "How do you stay current on contractor licensing and continuing education requirements in your state?",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Tracking license renewal dates",
+          "Completing approved CE before deadlines",
+          "Documenting CE certificates",
+          "Adapting to new code cycles",
+          "Subscribing to regulatory updates"
+        ],
+        "strong_answer_signals": [
+          "References specific state board requirements",
+          "Builds CE completion into calendar",
+          "Mentions code update cycles like IECC or IBC"
+        ],
+        "avoid": [
+          "Letting license lapse",
+          "Treating CE as a checkbox",
+          "Ignoring code update cycles"
+        ]
+      }
+    },
+    {
+      "id": "cbt_016",
+      "text": "Describe your approach to sustainable building practices on a new residential project.",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Selecting energy-efficient envelope materials",
+          "Planning for proper insulation and air sealing",
+          "Integrating renewable or efficient HVAC",
+          "Using low-VOC finishes",
+          "Pursuing certification like LEED or Energy Star"
+        ],
+        "strong_answer_signals": [
+          "References HERS index or energy modeling",
+          "Mentions specific insulation R-values",
+          "Discusses embodied carbon of materials"
+        ],
+        "avoid": [
+          "Treating sustainability as only solar panels",
+          "Ignoring envelope performance",
+          "Skipping third-party certification"
+        ]
+      }
+    },
+    {
+      "id": "cbt_017",
+      "text": "Tell me about a time you had to install or finish drywall on a complex ceiling or wall.",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Measuring and cutting drywall accurately",
+          "Handling inside and outside corners",
+          "Taping and mudding in multiple coats",
+          "Sanding smooth without damage",
+          "Matching texture across repairs"
+        ],
+        "strong_answer_signals": [
+          "References mudding stages and drying time",
+          "Mentions corner bead types",
+          "Discusses texture matching techniques"
+        ],
+        "avoid": [
+          "Skipping sanding between coats",
+          "Rushing drying times",
+          "Leaving visible seams or fasteners"
+        ]
+      }
+    },
+    {
+      "id": "cbt_018",
+      "text": "Describe a time you had to troubleshoot an HVAC issue on a job site.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identifying symptoms from occupant or test data",
+          "Checking airflow, refrigerant, electrical",
+          "Using gauges and meters safely",
+          "Diagnosing root issue not just symptom",
+          "Verifying fix and documenting results"
+        ],
+        "strong_answer_signals": [
+          "Uses manufacturer troubleshooting flow",
+          "Documents findings with measurements",
+          "Considers system-wide impact not just unit"
+        ],
+        "avoid": [
+          "Replacing parts without diagnosis",
+          "Skipping electrical safety steps",
+          "Failing to verify the fix"
+        ]
+      }
+    },
+    {
+      "id": "cbt_019",
+      "text": "Why should we hire you over other candidates for this roofing or exterior work position?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Specific experience with roofing systems",
+          "Safety training like fall protection",
+          "Reliability and weather tolerance",
+          "Quality craftsmanship demonstrated",
+          "Long-term fit with company values"
+        ],
+        "strong_answer_signals": [
+          "References specific systems like TPO, EPDM, shingle",
+          "Mentions OSHA 10 or 30 certification",
+          "Shows pride in weather-tight results"
+        ],
+        "avoid": [
+          "Blaming past employers",
+          "Overpromising speed or scope",
+          "Vague claims of being hardworking"
+        ]
+      }
+    },
+    {
+      "id": "cbt_020",
+      "text": "How would you handle a flooring installation where the subfloor is not level?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Measuring levelness across the room",
+          "Identifying high and low spots",
+          "Choosing leveling compound or underlayment",
+          "Re-measuring after corrections",
+          "Documenting condition for warranty"
+        ],
+        "strong_answer_signals": [
+          "References specific tolerance like 3/16 over 10 feet",
+          "Uses appropriate leveling products",
+          "Documents pre-install condition with photos"
+        ],
+        "avoid": [
+          "Installing over uneven subfloor",
+          "Skipping moisture testing",
+          "Failing to document pre-existing conditions"
+        ]
+      }
+    }
+  ]
+}

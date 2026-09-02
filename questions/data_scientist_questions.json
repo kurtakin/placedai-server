@@ -1,0 +1,1025 @@
+{
+  "metadata": {
+    "sector": "Data Scientist",
+    "generated": "2026-08-30",
+    "total": 35,
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ]
+  },
+  "questions": [
+    {
+      "id": "ds_001",
+      "text": "Tell me about a time you had to explain a complex machine learning model to a non-technical stakeholder. How did you make it accessible?",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Assessed stakeholder technical level and business context",
+          "Used analogies and visualizations to explain concepts",
+          "Focused on business impact rather than technical details",
+          "Confirmed understanding through questions and feedback"
+        ],
+        "strong_answer_signals": [
+          "Storytelling or visual aids used effectively",
+          "Translated technical concepts to business language",
+          "Measured stakeholder comprehension and adjustment"
+        ],
+        "avoid": [
+          "Drowning audience in technical details",
+          "Assuming background knowledge",
+          "Not checking for understanding"
+        ]
+      }
+    },
+    {
+      "id": "ds_002",
+      "text": "Describe a time your model failed in production. What did you learn and how did you fix it?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identified the failure through monitoring and user feedback",
+          "Root caused whether it was data drift, code bug, or model issue",
+          "Implemented fix with rollback or retraining",
+          "Added monitoring to catch similar failures earlier"
+        ],
+        "strong_answer_signals": [
+          "Specific failure mode named and fixed",
+          "Monitoring and alerting improvements made",
+          "Documentation updated to prevent recurrence"
+        ],
+        "avoid": [
+          "Blaming data or engineering without evidence",
+          "Fixing without root cause analysis",
+          "Not adding safeguards for the future"
+        ]
+      }
+    },
+    {
+      "id": "ds_003",
+      "text": "Tell me about a time you had to work with messy or incomplete data. How did you handle it?",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Assessed data quality and documented gaps",
+          "Applied cleaning, imputation, or collection strategies",
+          "Validated results despite data limitations",
+          "Communicated uncertainty to stakeholders"
+        ],
+        "strong_answer_signals": [
+          "Specific data quality issues named and addressed",
+          "Uncertainty quantified in results",
+          "Cleaning techniques applied appropriately"
+        ],
+        "avoid": [
+          "Pretending data was clean when it was not",
+          "Throwing away data without exploring alternatives",
+          "Not documenting data limitations"
+        ]
+      }
+    },
+    {
+      "id": "ds_004",
+      "text": "Describe a time you had to advocate for a data-driven approach when stakeholders preferred intuition.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Framed data insights in business language stakeholders cared about",
+          "Ran experiments or pilots to demonstrate value",
+          "Showed early wins with measurable impact",
+          "Built trust through consistent delivery"
+        ],
+        "strong_answer_signals": [
+          "Won over skeptics through results",
+          "Specific business impact quantified",
+          "Stakeholder became advocate for data-driven approach"
+        ],
+        "avoid": [
+          "Dismissing stakeholder intuition entirely",
+          "Running analysis without clear business question",
+          "Not following up on initial results"
+        ]
+      }
+    },
+    {
+      "id": "ds_005",
+      "text": "Tell me about a time you had to meet a tight deadline on a data science project. How did you manage?",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Scoped the minimum viable deliverable upfront",
+          "Prioritized high-impact features over nice-to-haves",
+          "Communicated trade-offs clearly to stakeholders",
+          "Delivered on time with clear next steps"
+        ],
+        "strong_answer_signals": [
+          "Scope managed proactively",
+          "Trade-offs documented and agreed",
+          "Quality not sacrificed for speed"
+        ],
+        "avoid": [
+          "Promising full solution under tight deadline",
+          "Sacrificing model validation for speed",
+          "Not communicating delays early"
+        ]
+      }
+    },
+    {
+      "id": "ds_006",
+      "text": "Describe a time you had to collaborate with engineering to deploy a model to production.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Defined model requirements and API contracts clearly",
+          "Worked with engineering on model serving infrastructure",
+          "Established monitoring and rollback procedures",
+          "Handed off with documentation and runbooks"
+        ],
+        "strong_answer_signals": [
+          "MLOps practices applied",
+          "Clear handoff documentation created",
+          "Monitoring and alerting set up"
+        ],
+        "avoid": [
+          "Treating deployment as engineering problem alone",
+          "No monitoring plan for production model",
+          "Handing off without proper documentation"
+        ]
+      }
+    },
+    {
+      "id": "ds_007",
+      "text": "Tell me about a time you discovered an insight that contradicted business assumptions. How did you handle it?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Validated the finding through multiple analyses",
+          "Framed the insight constructively rather than as criticism",
+          "Presented evidence and let data speak",
+          "Explored implications and next steps collaboratively"
+        ],
+        "strong_answer_signals": [
+          "Finding validated before presenting",
+          "Constructive framing of uncomfortable truth",
+          "Stakeholders engaged on implications"
+        ],
+        "avoid": [
+          "Dismissing the finding to avoid conflict",
+          "Overstating confidence in surprising results",
+          "Not having evidence to support the contradiction"
+        ]
+      }
+    },
+    {
+      "id": "ds_008",
+      "text": "Describe a time you had to decide whether to build or buy a data science solution.",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Evaluated build vs buy based on core competency and cost",
+          "Considered time-to-market and maintenance burden",
+          "Assessed vendor lock-in and data privacy risks",
+          "Made recommendation with clear rationale"
+        ],
+        "strong_answer_signals": [
+          "Total cost of ownership analyzed",
+          "Core vs non-core differentiation made",
+          "Risk assessment included"
+        ],
+        "avoid": [
+          "Defaulting to build or buy without analysis",
+          "Ignoring maintenance and support costs",
+          "Not considering data privacy implications"
+        ]
+      }
+    },
+    {
+      "id": "ds_009",
+      "text": "How do you prioritize competing data science projects with limited resources?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Evaluated projects by business impact and feasibility",
+          "Assessed data availability and technical complexity",
+          "Aligned with strategic priorities and stakeholder needs",
+          "Communicated prioritization framework transparently"
+        ],
+        "strong_answer_signals": [
+          "ROI or impact estimation framework used",
+          "Stakeholder alignment on priorities",
+          "Resource constraints explicitly managed"
+        ],
+        "avoid": [
+          "Ad-hoc prioritization without criteria",
+          "Avoiding hard conversations about trade-offs",
+          "Not communicating why some projects wait"
+        ]
+      }
+    },
+    {
+      "id": "ds_010",
+      "text": "Describe your experience building and leading a data science team.",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Defined team structure and hiring strategy",
+          "Built culture of experimentation and learning",
+          "Mentored and developed team members",
+          "Connected team work to business outcomes"
+        ],
+        "strong_answer_signals": [
+          "Team growth and retention demonstrated",
+          "Individual contributors developed and promoted",
+          "Team delivered measurable business impact"
+        ],
+        "avoid": [
+          "Managing too hands-on or too hands-off",
+          "Not investing in team development",
+          "Team isolated from business impact"
+        ]
+      }
+    },
+    {
+      "id": "ds_011",
+      "text": "Walk me through how you would design an A/B test for a new recommendation algorithm.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Defined success metric aligned with business goal",
+          "Calculated required sample size and duration",
+          "Randomized at appropriate unit",
+          "Established guardrail metrics to catch harms"
+        ],
+        "strong_answer_signals": [
+          "Statistical power analysis performed",
+          "Primary and secondary metrics defined",
+          "Holdout and control groups properly set up"
+        ],
+        "avoid": [
+          "Running test without power calculation",
+          "Picking metrics that do not match business goal",
+          "Not considering network effects"
+        ]
+      }
+    },
+    {
+      "id": "ds_012",
+      "text": "Explain the difference between L1 and L2 regularization. When would you use each?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "L1 produces sparse solutions, L2 shrinks coefficients",
+          "L2 better when all features matter; L1 for sparsity desired",
+          "Elastic net combines both approaches",
+          "Trade-off between interpretability and performance"
+        ],
+        "strong_answer_signals": [
+          "Geometric interpretation of penalties",
+          "When to use each with examples",
+          "Modern alternatives mentioned"
+        ],
+        "avoid": [
+          "Only stating mathematical formula without intuition",
+          "Not mentioning feature selection property of L1",
+          "Confusing L1 and L2 properties"
+        ]
+      }
+    },
+    {
+      "id": "ds_013",
+      "text": "How do you handle class imbalance in a classification problem?",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Use appropriate evaluation metrics",
+          "Apply resampling techniques like SMOTE",
+          "Use class weights in loss function",
+          "Consider ensemble methods"
+        ],
+        "strong_answer_signals": [
+          "Multiple techniques combined",
+          "Evaluation metric chosen for business context",
+          "Business cost of errors considered"
+        ],
+        "avoid": [
+          "Only using accuracy on imbalanced data",
+          "Blindly oversampling without validation",
+          "Not considering business cost of errors"
+        ]
+      }
+    },
+    {
+      "id": "ds_014",
+      "text": "Describe the steps you would take to build a churn prediction model.",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Define churn and establish label definition",
+          "Engineer features from user behavior data",
+          "Handle class imbalance and temporal aspects",
+          "Validate with time-based split"
+        ],
+        "strong_answer_signals": [
+          "Churn definition aligned with business",
+          "Feature engineering from raw event data",
+          "Temporal validation strategy explained"
+        ],
+        "avoid": [
+          "Using future data in training",
+          "Not defining churn window appropriately",
+          "Not considering concept drift"
+        ]
+      }
+    },
+    {
+      "id": "ds_015",
+      "text": "What techniques do you use for feature selection?",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Filter methods: correlation, chi-square, mutual information",
+          "Wrapper methods: recursive feature elimination, forward selection",
+          "Embedded methods: L1 regularization, tree-based importance",
+          "Consider domain knowledge and business interpretability"
+        ],
+        "strong_answer_signals": [
+          "Multiple techniques compared and combined",
+          "Trade-off between performance and interpretability discussed",
+          "Curse of dimensionality addressed"
+        ],
+        "avoid": [
+          "Using all features without selection",
+          "Only relying on correlation",
+          "Not considering business interpretability needs"
+        ]
+      }
+    },
+    {
+      "id": "ds_016",
+      "text": "Explain how you would approach a time series forecasting problem.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Explored time series characteristics: trend, seasonality, stationarity",
+          "Applied appropriate methods (ARIMA, Prophet, LSTM, XGBoost)",
+          "Handled exogenous variables and holidays",
+          "Validated with time-based cross-validation"
+        ],
+        "strong_answer_signals": [
+          "Time series decomposition discussed",
+          "Multiple model families compared",
+          "Uncertainty quantification included"
+        ],
+        "avoid": [
+          "Ignoring trend and seasonality assumptions",
+          "Using future data in training",
+          "Not handling holidays and special events"
+        ]
+      }
+    },
+    {
+      "id": "ds_017",
+      "text": "How do you detect and handle data drift in production models?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Monitor feature distribution and prediction drift",
+          "Set up alerts for statistical thresholds",
+          "Implement retraining pipeline with new data",
+          "Distinguish between concept drift and data drift"
+        ],
+        "strong_answer_signals": [
+          "Monitoring dashboard and alerts implemented",
+          "Retraining strategy defined (scheduled vs triggered)",
+          "Rollback procedure established"
+        ],
+        "avoid": [
+          "Deploying without monitoring plan",
+          "Retraining without validation",
+          "Not distinguishing drift types"
+        ]
+      }
+    },
+    {
+      "id": "ds_018",
+      "text": "Describe your experience with deep learning. What architectures have you used?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Named specific architectures with use cases (CNN, RNN, Transformer)",
+          "Discussed when DL outperforms traditional ML",
+          "Addressed overfitting, regularization, and compute constraints",
+          "Mentioned transfer learning and pre-trained models"
+        ],
+        "strong_answer_signals": [
+          "Architecture choices justified by problem characteristics",
+          "Practical deployment considerations discussed",
+          "Knowledge of latest architectures (LLMs, diffusion)"
+        ],
+        "avoid": [
+          "Vague mention of deep learning without specifics",
+          "Recommending DL when simpler models suffice",
+          "Ignoring compute and data requirements"
+        ]
+      }
+    },
+    {
+      "id": "ds_019",
+      "text": "A stakeholder asks you to build a model to predict X. What is your first step?",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Understand the business problem and success criteria",
+          "Assess data availability and quality",
+          "Define the prediction target and time horizon",
+          "Establish baseline with simple approaches"
+        ],
+        "strong_answer_signals": [
+          "Ask clarifying questions about business impact",
+          "Check data availability before committing",
+          "Propose quick baseline to set expectations"
+        ],
+        "avoid": [
+          "Immediately jumping to modeling",
+          "Assuming data is available and clean",
+          "Not asking about business value of prediction"
+        ]
+      }
+    },
+    {
+      "id": "ds_020",
+      "text": "You discover your model has significant bias against a protected group. How do you respond?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Stop deployment and communicate the issue immediately",
+          "Conduct fairness audit across protected groups",
+          "Identify root cause (data, features, or algorithm)",
+          "Apply fairness interventions and re-evaluate"
+        ],
+        "strong_answer_signals": [
+          "Fairness metrics computed (equal opportunity, disparate impact)",
+          "Root cause analysis performed",
+          "Stakeholders informed before shipping"
+        ],
+        "avoid": [
+          "Shipping and fixing later",
+          "Blaming data without investigating",
+          "Not involving legal or compliance team"
+        ]
+      }
+    },
+    {
+      "id": "ds_021",
+      "text": "How would you estimate the ROI of a machine learning project?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Define baseline and counterfactual scenario",
+          "Quantify benefits (revenue, cost savings, efficiency)",
+          "Account for implementation and maintenance costs",
+          "Present as range with confidence levels"
+        ],
+        "strong_answer_signals": [
+          "A/B test or pilot used for measurement",
+          "Total cost of ownership included",
+          "Conservative estimates with clear assumptions"
+        ],
+        "avoid": [
+          "Claiming full value without measurement",
+          "Ignoring implementation and maintenance costs",
+          "Not setting up measurement before deployment"
+        ]
+      }
+    },
+    {
+      "id": "ds_022",
+      "text": "Your model performs well on test data but stakeholders say it does not match their experience. What do you do?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Validate against stakeholder expectations and edge cases",
+          "Check for distribution shift or data quality issues",
+          "Collect qualitative feedback and iterate",
+          "Explain model limitations and uncertainty"
+        ],
+        "strong_answer_signals": [
+          "Investigated gap between metrics and perception",
+          "Stakeholder input used to improve model",
+          "Model limitations communicated clearly"
+        ],
+        "avoid": [
+          "Defending model without investigation",
+          "Overfitting to test metrics only",
+          "Not involving stakeholders in evaluation"
+        ]
+      }
+    },
+    {
+      "id": "ds_023",
+      "text": "How do you decide when a model is ready for production?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Performance meets business requirements",
+          "Robustness tested against edge cases",
+          "Monitoring and rollback plan in place",
+          "Stakeholders aligned on acceptable trade-offs"
+        ],
+        "strong_answer_signals": [
+          "Model card or documentation created",
+          "A/B test or shadow mode completed",
+          "Fairness and bias checks passed"
+        ],
+        "avoid": [
+          "Shipping solely based on accuracy metric",
+          "No monitoring plan for production",
+          "Ignoring stakeholder alignment on acceptable performance"
+        ]
+      }
+    },
+    {
+      "id": "ds_024",
+      "text": "What metrics would you use to evaluate a recommendation system?",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Engagement metrics (click-through, dwell time, add-to-cart)",
+          "Business metrics (conversion, revenue per user)",
+          "Diversity and coverage metrics",
+          "User satisfaction surveys and long-term retention"
+        ],
+        "strong_answer_signals": [
+          "Multiple metric categories balanced",
+          "Short-term vs long-term metrics distinguished",
+          "Exploration vs exploitation discussed"
+        ],
+        "avoid": [
+          "Only optimizing for CTR",
+          "Not considering serendipity and diversity",
+          "Ignoring business outcomes"
+        ]
+      }
+    },
+    {
+      "id": "ds_025",
+      "text": "Explain the bias-variance tradeoff. How does it affect model selection?",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "High bias = underfitting, high variance = overfitting",
+          "More complexity reduces bias but increases variance",
+          "Cross-validation used to find optimal complexity",
+          "Regularization balances the tradeoff"
+        ],
+        "strong_answer_signals": [
+          "Visual explanation of the tradeoff curve",
+          "How validation error guides selection",
+          "Practical implications for model selection"
+        ],
+        "avoid": [
+          "Only memorizing the definition",
+          "Not connecting to cross-validation",
+          "Confusing bias and variance"
+        ]
+      }
+    },
+    {
+      "id": "ds_026",
+      "text": "Describe your experience with natural language processing projects.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "NLP tasks addressed (classification, NER, generation, embedding)",
+          "Modern approaches: transformers, fine-tuning, RAG",
+          "Handling of ambiguous or informal language",
+          "Evaluation metrics for text-based tasks"
+        ],
+        "strong_answer_signals": [
+          "Specific models and techniques named",
+          "RAG or retrieval approaches discussed",
+          "Handling of edge cases in text"
+        ],
+        "avoid": [
+          "Vague mention of NLP without specifics",
+          "Recommending transformers for simple tasks",
+          "Not discussing evaluation challenges"
+        ]
+      }
+    },
+    {
+      "id": "ds_027",
+      "text": "How do you ensure reproducibility in your data science work?",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Version control for code and data",
+          "Environment management with Docker or virtualenv",
+          "Random seed setting and experiment tracking",
+          "Documentation of preprocessing and feature engineering"
+        ],
+        "strong_answer_signals": [
+          "MLOps tools like MLflow or Weights & Biases used",
+          "Pipeline reproducibility demonstrated",
+          "Code review and documentation practices"
+        ],
+        "avoid": [
+          "No version control or experiment tracking",
+          "Randomness not controlled",
+          "Steps not documented for others"
+        ]
+      }
+    },
+    {
+      "id": "ds_028",
+      "text": "What is your experience with large language models? How have you used them in production?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Prompt engineering and fine-tuning approaches",
+          "Retrieval-Augmented Generation (RAG) architectures",
+          "Evaluation and quality assurance for LLM outputs",
+          "Cost and latency considerations in deployment"
+        ],
+        "strong_answer_signals": [
+          "Production deployment experience with LLMs",
+          "Handling hallucinations and quality control",
+          "Task-specific fine-tuning vs prompting tradeoffs"
+        ],
+        "avoid": [
+          "No practical LLM deployment experience",
+          "Ignoring evaluation challenges with LLMs",
+          "Not discussing cost and latency constraints"
+        ]
+      }
+    },
+    {
+      "id": "ds_029",
+      "text": "How do you approach building data pipelines for ML?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Data ingestion, cleaning, and transformation pipelines",
+          "Feature engineering and storage with feature stores",
+          "Orchestration and scheduling with Airflow or Prefect",
+          "Monitoring data quality and freshness"
+        ],
+        "strong_answer_signals": [
+          "Modern tooling used (Airflow, dbt, Spark)",
+          "Feature store architecture discussed",
+          "Data quality checks automated"
+        ],
+        "avoid": [
+          "Manual pipeline steps prone to error",
+          "No data quality monitoring",
+          "Features computed ad-hoc without reuse"
+        ]
+      }
+    },
+    {
+      "id": "ds_030",
+      "text": "Explain the difference between causal inference and prediction. When would you use each?",
+      "category": "technical",
+      "seniority": [
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Prediction: forecast outcomes without intervention",
+          "Causal inference: estimate the effect of an intervention",
+          "Causal methods: A/B tests, propensity scores, DiD, instrumental variables",
+          "Choose based on whether you need to predict or intervene"
+        ],
+        "strong_answer_signals": [
+          "Examples of when each approach applies",
+          "Limitations of observational causal inference discussed",
+          "A/B testing described as gold standard"
+        ],
+        "avoid": [
+          "Confusing correlation with causation",
+          "Using prediction model for causal questions",
+          "Not discussing assumptions of causal methods"
+        ]
+      }
+    },
+    {
+      "id": "ds_mo_001",
+      "text": "Why did you choose data science as a career? What keeps you passionate about this field?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Personal story of what drew you to data science",
+          "What excites you: solving problems, finding patterns, driving impact",
+          "Where you see yourself: specialization, leadership, research",
+          "Why this organization fits your goals"
+        ],
+        "strong_answer_signals": [
+          "Specific and personal origin story",
+          "Shows genuine curiosity and drive",
+          "Connects to actual work this role involves"
+        ],
+        "avoid": [
+          "Generic answer about loving data",
+          "Only talking about money or prestige",
+          "Not showing genuine interest in the field"
+        ]
+      }
+    },
+    {
+      "id": "ds_mo_002",
+      "text": "Where do you see yourself in five years as a data scientist?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Technical depth: specialization in ML, NLP, computer vision, or analytics",
+          "Leadership path: senior IC, ML engineering manager, or data science lead",
+          "Domain expertise: specific industry or business function focus",
+          "Why this path fits this organization"
+        ],
+        "strong_answer_signals": [
+          "Clear vision with realistic steps",
+          "Shows ambition without being unrealistic",
+          "Connects personal growth to business value"
+        ],
+        "avoid": [
+          "Not having thought about it",
+          "Vague goals without a path",
+          "Leaving data science entirely"
+        ]
+      }
+    },
+    {
+      "id": "ds_mo_003",
+      "text": "How do you stay current with the rapidly evolving data science field?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Continuous learning through papers, courses, and conferences",
+          "Community engagement via open source, meetups, and forums",
+          "Practical application through pet projects and competitions",
+          "Selective focus on what matters most for your work"
+        ],
+        "strong_answer_signals": [
+          "Specific resources and learning practices named",
+          "Balance of breadth and depth in learning",
+          "Applied learning demonstrated through projects"
+        ],
+        "avoid": [
+          "Claiming to read every research paper",
+          "No practical learning activities",
+          "Overwhelmed by constant change without action"
+        ]
+      }
+    },
+    {
+      "id": "ds_031",
+      "text": "How do you evaluate whether a machine learning model is overfitting?",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Compare training and validation performance to detect divergence",
+          "Use cross-validation to estimate generalization error",
+          "Monitor learning curves for early stopping decisions",
+          "Apply regularization techniques like L1/L2 or dropout"
+        ],
+        "strong_answer_signals": [
+          "Cross-validation strategy explained clearly",
+          "Learning curves interpreted correctly",
+          "Regularization techniques applied appropriately"
+        ],
+        "avoid": [
+          "Only looking at training performance",
+          "Not using validation set or cross-validation",
+          "Ignoring the gap between train and validation error"
+        ]
+      }
+    },
+    {
+      "id": "ds_032",
+      "text": "What is the difference between parametric and non-parametric models? Give examples of each.",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Parametric: fixed number of parameters (linear regression, logistic regression, Naive Bayes)",
+          "Non-parametric: parameters grow with data (decision trees, k-NN, SVM with non-linear kernels)",
+          "Parametric models assume functional form; non-parametric make fewer assumptions",
+          "Trade-off between interpretability, speed, and flexibility"
+        ],
+        "strong_answer_signals": [
+          "Concrete examples given for each type",
+          "Assumptions and trade-offs clearly explained",
+          "When to use each type based on data characteristics"
+        ],
+        "avoid": [
+          "Confusing the distinction between parametric and non-parametric",
+          "Not giving concrete examples",
+          "Mixing up model families"
+        ]
+      }
+    }
+  ]
+}

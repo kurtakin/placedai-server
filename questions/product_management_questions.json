@@ -1,0 +1,777 @@
+{
+  "metadata": {
+    "sector": "Product Management",
+    "generated": "2026-08-30",
+    "total": 30,
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ]
+  },
+  "questions": [
+    {
+      "id": "pmg_001",
+      "text": "Tell me about a product you launched from scratch. What was your role?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Idea validated",
+          "Roadmap defined",
+          "Cross-functional team led",
+          "Metrics tracked"
+        ],
+        "strong_answer_signals": [
+          "Shipped successfully",
+          "User adoption measured"
+        ],
+        "avoid": [
+          "Vague role",
+          "No metrics"
+        ]
+      }
+    },
+    {
+      "id": "pmg_002",
+      "text": "How do you prioritize features when everything is high priority?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Impact vs effort",
+          "User pain points",
+          "Business value",
+          "Stakeholder alignment"
+        ],
+        "strong_answer_signals": [
+          "Clear rationale",
+          "Framework used"
+        ],
+        "avoid": [
+          "No framework",
+          "All high priority"
+        ]
+      }
+    },
+    {
+      "id": "pmg_003",
+      "text": "How do you handle conflicting feedback from stakeholders?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Synthesized feedback",
+          "User research data",
+          "Weighted decisions",
+          "Communicated trade-offs"
+        ],
+        "strong_answer_signals": [
+          "Data-backed decision"
+        ],
+        "avoid": [
+          "Picked one arbitrarily",
+          "Ignored feedback"
+        ]
+      }
+    },
+    {
+      "id": "pmg_004",
+      "text": "Describe your approach to discovering user needs.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "User interviews",
+          "Surveys",
+          "Analytics review",
+          "Competitive research"
+        ],
+        "strong_answer_signals": [
+          "Clear user personas",
+          "Insights drove roadmap"
+        ],
+        "avoid": [
+          "No user research"
+        ]
+      }
+    },
+    {
+      "id": "pmg_005",
+      "text": "Tell me about a product failure. What did you learn?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Product launched",
+          "Metrics disappointed",
+          "Root cause found",
+          "Iteration planned"
+        ],
+        "strong_answer_signals": [
+          "Learned from failure",
+          "Iteration planned"
+        ],
+        "avoid": [
+          "Blamed team",
+          "No iteration"
+        ]
+      }
+    },
+    {
+      "id": "pmg_006",
+      "text": "How do you write a product requirements document?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Problem statement",
+          "User stories",
+          "Acceptance criteria",
+          "Success metrics"
+        ],
+        "strong_answer_signals": [
+          "Clear scope",
+          "Measurable outcomes"
+        ],
+        "avoid": [
+          "Vague requirements",
+          "No acceptance criteria"
+        ]
+      }
+    },
+    {
+      "id": "pmg_007",
+      "text": "How do you define success metrics for a product?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "North star metric",
+          "Guardrail metrics",
+          "Leading and lagging indicators",
+          "Cohort analysis"
+        ],
+        "strong_answer_signals": [
+          "SMART metrics",
+          "North star defined"
+        ],
+        "avoid": [
+          "Vanity metrics",
+          "Too many KPIs"
+        ]
+      }
+    },
+    {
+      "id": "pmg_008",
+      "text": "Tell me about a time you had to kill a product feature.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Data showed low adoption",
+          "Decision to sunset",
+          "Communication plan",
+          "User migration"
+        ],
+        "strong_answer_signals": [
+          "Data-driven decision",
+          "User communication"
+        ],
+        "avoid": [
+          "Kept dead feature",
+          "No communication"
+        ]
+      }
+    },
+    {
+      "id": "pmg_009",
+      "text": "How do you conduct competitive analysis?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Feature comparison",
+          "Positioning",
+          "Pricing",
+          "Market share"
+        ],
+        "strong_answer_signals": [
+          "Clear differentiation"
+        ],
+        "avoid": [
+          "No analysis",
+          "Copy competitors"
+        ]
+      }
+    },
+    {
+      "id": "pmg_010",
+      "text": "How do you work with engineering to set realistic timelines?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Break down epics",
+          "Estimate with engineering",
+          "Buffer for unknowns",
+          "Scope negotiation"
+        ],
+        "strong_answer_signals": [
+          "Realistic timelines",
+          "Trust built"
+        ],
+        "avoid": [
+          "Imposed deadlines"
+        ]
+      }
+    },
+    {
+      "id": "pmg_011",
+      "text": "Describe your experience with A/B testing.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Hypothesis",
+          "Test design",
+          "Statistical significance",
+          "Decision criteria"
+        ],
+        "strong_answer_signals": [
+          "Data-driven decisions",
+          "Statistical rigor"
+        ],
+        "avoid": [
+          "No hypothesis",
+          "Peeking early"
+        ]
+      }
+    },
+    {
+      "id": "pmg_012",
+      "text": "Tell me about influencing executive decision-making.",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Presented data",
+          "Clear recommendation",
+          "Stakeholder buy-in",
+          "Outcome achieved"
+        ],
+        "strong_answer_signals": [
+          "Influenced strategy",
+          "Data-backed"
+        ],
+        "avoid": [
+          "No data",
+          "No follow-up"
+        ]
+      }
+    },
+    {
+      "id": "pmg_013",
+      "text": "How do you handle a product that is not meeting its goals?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Diagnosed the gap",
+          "Root cause analysis",
+          "Pivot or persevere",
+          "Communication"
+        ],
+        "strong_answer_signals": [
+          "Honest assessment",
+          "Action plan"
+        ],
+        "avoid": [
+          "Denied the problem",
+          "Blamed external factors"
+        ]
+      }
+    },
+    {
+      "id": "pmg_014",
+      "text": "How do you manage a product roadmap?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Outcome-based themes",
+          "Quarterly planning",
+          "Flexibility",
+          "Stakeholder communication"
+        ],
+        "strong_answer_signals": [
+          "Clear themes",
+          "Stakeholder aligned"
+        ],
+        "avoid": [
+          "Feature list only",
+          "No flexibility"
+        ]
+      }
+    },
+    {
+      "id": "pmg_015",
+      "text": "Why product management? What keeps you going?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Impact on users",
+          "Cross-functional leadership",
+          "Problem solving",
+          "Continuous learning"
+        ],
+        "strong_answer_signals": [
+          "Specific product story"
+        ],
+        "avoid": [
+          "Only about title",
+          "No user impact"
+        ]
+      }
+    },
+    {
+      "id": "pmg_016",
+      "text": "How do you validate a product idea before building?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Problem interviews",
+          "Landing page test",
+          "Concierge MVP",
+          "Demand signal"
+        ],
+        "strong_answer_signals": [
+          "Validated demand",
+          "Iterated quickly"
+        ],
+        "avoid": [
+          "Built without validation"
+        ]
+      }
+    },
+    {
+      "id": "pmg_017",
+      "text": "How do you define and measure product-market fit?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Retention metrics",
+          "Willingness to recommend",
+          "Organic growth",
+          "Customer interviews"
+        ],
+        "strong_answer_signals": [
+          "PMF signal identified",
+          "Metrics improved"
+        ],
+        "avoid": [
+          "No PMF definition"
+        ]
+      }
+    },
+    {
+      "id": "pmg_018",
+      "text": "Tell me about managing a product across multiple platforms.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Platform differences assessed",
+          "Unified experience",
+          "Platform-specific features",
+          "Consistent metrics"
+        ],
+        "strong_answer_signals": [
+          "Cross-platform coherence"
+        ],
+        "avoid": [
+          "Treated each platform separately"
+        ]
+      }
+    },
+    {
+      "id": "pmg_019",
+      "text": "How do you handle scope creep in a sprint?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Accept vs defer vs drop",
+          "Impact on velocity",
+          "Communicated to team",
+          "Documented"
+        ],
+        "strong_answer_signals": [
+          "Scope managed"
+        ],
+        "avoid": [
+          "Accepted everything"
+        ]
+      }
+    },
+    {
+      "id": "pmg_020",
+      "text": "Describe your experience with pricing strategy.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Value-based pricing",
+          "Willingness to pay",
+          "Competitive pricing",
+          "Tiered plans"
+        ],
+        "strong_answer_signals": [
+          "Revenue impact positive"
+        ],
+        "avoid": [
+          "Cost-plus only",
+          "No research"
+        ]
+      }
+    },
+    {
+      "id": "pmg_021",
+      "text": "How do you use data to drive product decisions?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Analytics tools",
+          "Funnel analysis",
+          "Cohort analysis",
+          "Experimentation"
+        ],
+        "strong_answer_signals": [
+          "Data-informed",
+          "Not data-dictated"
+        ],
+        "avoid": [
+          "No data",
+          "Vanity metrics only"
+        ]
+      }
+    },
+    {
+      "id": "pmg_022",
+      "text": "Tell me about saying no to a valuable stakeholder.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Understood the request",
+          "Presented trade-offs",
+          "Offered alternatives",
+          "Maintained relationship"
+        ],
+        "strong_answer_signals": [
+          "Stakeholder understood"
+        ],
+        "avoid": [
+          "Just said no",
+          "Damaged relationship"
+        ]
+      }
+    },
+    {
+      "id": "pmg_023",
+      "text": "How do you approach user research on a tight timeline?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Rapid interviews",
+          "Surveys",
+          "Heuristic evaluation",
+          "Existing data"
+        ],
+        "strong_answer_signals": [
+          "Fast insights",
+          "Actionable"
+        ],
+        "avoid": [
+          "No research",
+          "Took too long"
+        ]
+      }
+    },
+    {
+      "id": "pmg_024",
+      "text": "How do you align product vision with company strategy?",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Company OKRs mapped",
+          "Product vision articulated",
+          "Team alignment",
+          "Quarterly check-ins"
+        ],
+        "strong_answer_signals": [
+          "Vision aligned with strategy"
+        ],
+        "avoid": [
+          "Disconnected vision"
+        ]
+      }
+    },
+    {
+      "id": "pmg_025",
+      "text": "Describe your experience with technical products.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Technical depth",
+          "Engineering partnership",
+          "Architecture understanding",
+          "Trade-off negotiation"
+        ],
+        "strong_answer_signals": [
+          "Technical credibility",
+          "Engineering trust"
+        ],
+        "avoid": [
+          "No technical understanding"
+        ]
+      }
+    },
+    {
+      "id": "pmg_026",
+      "text": "How do you handle metrics that show a feature is not working?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Validated data quality",
+          "Hypothesis tested",
+          "Iteration or sunset"
+        ],
+        "strong_answer_signals": [
+          "Data-driven action",
+          "No attachment to feature"
+        ],
+        "avoid": [
+          "Ignored metrics"
+        ]
+      }
+    },
+    {
+      "id": "pmg_027",
+      "text": "Tell me about building a product team from scratch.",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Roles defined",
+          "Hiring plan",
+          "Culture set",
+          "Processes established"
+        ],
+        "strong_answer_signals": [
+          "Team productive quickly"
+        ],
+        "avoid": [
+          "No structure",
+          "Hired wrong people"
+        ]
+      }
+    },
+    {
+      "id": "pmg_028",
+      "text": "How do you decide what to build next?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "User pain",
+          "Business value",
+          "Effort",
+          "Strategic fit"
+        ],
+        "strong_answer_signals": [
+          "Clear prioritization"
+        ],
+        "avoid": [
+          "No framework",
+          "Stakeholder demands only"
+        ]
+      }
+    },
+    {
+      "id": "pmg_029",
+      "text": "How do you measure customer satisfaction (CSAT, NPS)?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Survey design",
+          "Timing",
+          "Segmentation",
+          "Action on feedback"
+        ],
+        "strong_answer_signals": [
+          "Scores tracked",
+          "Actions taken"
+        ],
+        "avoid": [
+          "Survey only",
+          "No action"
+        ]
+      }
+    },
+    {
+      "id": "pmg_030",
+      "text": "What is your approach to product lifecycle management?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Introduction strategy",
+          "Growth optimization",
+          "Maturity planning",
+          "Sunset strategy"
+        ],
+        "strong_answer_signals": [
+          "Full lifecycle planned"
+        ],
+        "avoid": [
+          "Only launch phase",
+          "No sunset plan"
+        ]
+      }
+    }
+  ]
+}

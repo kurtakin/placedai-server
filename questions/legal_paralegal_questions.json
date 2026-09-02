@@ -1,0 +1,671 @@
+{
+  "metadata": {
+    "sector": "Legal & Paralegal",
+    "generated": "2026-08-30",
+    "total": 25,
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ]
+  },
+  "questions": [
+    {
+      "id": "lg_001",
+      "text": "Tell me about a complex legal matter you worked on.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Matter complexity assessed",
+          "Strategy developed",
+          "Stakeholders coordinated",
+          "Outcome achieved"
+        ],
+        "strong_answer_signals": [
+          "Strong analytical work",
+          "Effective strategy"
+        ],
+        "avoid": [
+          "Vague description",
+          "No outcome"
+        ]
+      }
+    },
+    {
+      "id": "lg_002",
+      "text": "How do you conduct legal research?",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Issue framed",
+          "Sources identified",
+          "Cross-referenced",
+          "Memo written"
+        ],
+        "strong_answer_signals": [
+          "Thorough research",
+          "Well-organized memo"
+        ],
+        "avoid": [
+          "Relied on one source",
+          "No memo"
+        ]
+      }
+    },
+    {
+      "id": "lg_003",
+      "text": "How do you handle a tight deadline on a legal matter?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Prioritized tasks",
+          "Managed scope",
+          "Communicated timeline",
+          "Delivered quality work"
+        ],
+        "strong_answer_signals": [
+          "On-time delivery",
+          "Quality maintained"
+        ],
+        "avoid": [
+          "Missed deadline",
+          "No communication"
+        ]
+      }
+    },
+    {
+      "id": "lg_004",
+      "text": "Tell me about a time you had to maintain client confidentiality.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Confidentiality risk identified",
+          "Proper protocols followed",
+          "Information protected",
+          "Client trust maintained"
+        ],
+        "strong_answer_signals": [
+          "Strict adherence",
+          "Trust preserved"
+        ],
+        "avoid": [
+          "Disclosed information",
+          "No protocol"
+        ]
+      }
+    },
+    {
+      "id": "lg_005",
+      "text": "How do you draft a contract or legal document?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Requirements understood",
+          "Templates used",
+          "Risk identified",
+          "Reviewed thoroughly"
+        ],
+        "strong_answer_signals": [
+          "Clear and enforceable",
+          "Client protected"
+        ],
+        "avoid": [
+          "Vague language",
+          "No review"
+        ]
+      }
+    },
+    {
+      "id": "lg_006",
+      "text": "How do you handle a conflict of interest?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Conflict identified",
+          "Disclosed appropriately",
+          "Withdrew or waived",
+          "Documented"
+        ],
+        "strong_answer_signals": [
+          "Ethical handling",
+          "Clear documentation"
+        ],
+        "avoid": [
+          "Ignored conflict",
+          "No disclosure"
+        ]
+      }
+    },
+    {
+      "id": "lg_007",
+      "text": "Why legal? What drives you in this field?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Justice motivation",
+          "Analytical interest",
+          "Problem solving",
+          "Impact on clients"
+        ],
+        "strong_answer_signals": [
+          "Specific motivation",
+          "Long-term commitment"
+        ],
+        "avoid": [
+          "Only about money",
+          "No specific reason"
+        ]
+      }
+    },
+    {
+      "id": "lg_008",
+      "text": "Describe your experience with e-discovery.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Tools used",
+          "Process followed",
+          "Privilege protected",
+          "Cost managed"
+        ],
+        "strong_answer_signals": [
+          "Efficient process",
+          "No spoliation"
+        ],
+        "avoid": [
+          "Manual review only",
+          "Privilege breached"
+        ]
+      }
+    },
+    {
+      "id": "lg_009",
+      "text": "How do you stay current with legal changes?",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Continuing legal education",
+          "Legal publications",
+          "Bar association",
+          "Practice updates"
+        ],
+        "strong_answer_signals": [
+          "Specific sources named",
+          "Practice informed"
+        ],
+        "avoid": [
+          "No CLE",
+          "Outdated knowledge"
+        ]
+      }
+    },
+    {
+      "id": "lg_010",
+      "text": "Tell me about managing a large caseload.",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Prioritization system",
+          "Calendar management",
+          "Delegation",
+          "Technology used"
+        ],
+        "strong_answer_signals": [
+          "All matters attended",
+          "No missed deadlines"
+        ],
+        "avoid": [
+          "Missed deadlines",
+          "Overwhelmed"
+        ]
+      }
+    },
+    {
+      "id": "lg_011",
+      "text": "How do you handle an opposing counsel who is difficult?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Professional demeanor",
+          "Focused on issues",
+          "Avoided personalization",
+          "Escalated when needed"
+        ],
+        "strong_answer_signals": [
+          "Maintained professionalism",
+          "Effective negotiation"
+        ],
+        "avoid": [
+          "Took personally",
+          "Responded emotionally"
+        ]
+      }
+    },
+    {
+      "id": "lg_012",
+      "text": "Tell me about a time you had to explain complex legal concepts to a client.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Assessed client knowledge",
+          "Used plain language",
+          "Visual aids",
+          "Verified understanding"
+        ],
+        "strong_answer_signals": [
+          "Client understood",
+          "Informed decisions"
+        ],
+        "avoid": [
+          "Used legal jargon",
+          "No verification"
+        ]
+      }
+    },
+    {
+      "id": "lg_013",
+      "text": "How do you approach compliance and regulatory work?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Regulations identified",
+          "Gap analysis done",
+          "Policies developed",
+          "Training provided"
+        ],
+        "strong_answer_signals": [
+          "Compliance achieved",
+          "No violations"
+        ],
+        "avoid": [
+          "Box-checking",
+          "No training"
+        ]
+      }
+    },
+    {
+      "id": "lg_014",
+      "text": "Describe your experience with case management software.",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Systems used",
+          "Workflow organized",
+          "Document management",
+          "Billing tracked"
+        ],
+        "strong_answer_signals": [
+          "Efficient workflow",
+          "No missed items"
+        ],
+        "avoid": [
+          "Disorganized",
+          "No tracking"
+        ]
+      }
+    },
+    {
+      "id": "lg_015",
+      "text": "How do you handle a pro bono or under-resourced matter?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Resource needs assessed",
+          "Creative solutions",
+          "Community resources",
+          "Quality maintained"
+        ],
+        "strong_answer_signals": [
+          "Client served well",
+          "Resources leveraged"
+        ],
+        "avoid": [
+          "Cut corners",
+          "Poor outcome"
+        ]
+      }
+    },
+    {
+      "id": "lg_016",
+      "text": "Tell me about a case you lost. What did you learn?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Case reviewed",
+          "Lessons identified",
+          "Practice improved",
+          "Honest reflection"
+        ],
+        "strong_answer_signals": [
+          "Practice evolved",
+          "Lessons applied"
+        ],
+        "avoid": [
+          "Blamed judge",
+          "No learning"
+        ]
+      }
+    },
+    {
+      "id": "lg_017",
+      "text": "How do you approach document review?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Strategy developed",
+          "Tech-assisted review",
+          "Quality control",
+          "Privilege logged"
+        ],
+        "strong_answer_signals": [
+          "Efficient and accurate",
+          "No privilege issues"
+        ],
+        "avoid": [
+          "Slow manual review",
+          "Privilege issues"
+        ]
+      }
+    },
+    {
+      "id": "lg_018",
+      "text": "How do you mentor junior associates or paralegals?",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Skill assessment",
+          "Training provided",
+          "Quality review",
+          "Career development"
+        ],
+        "strong_answer_signals": [
+          "Team grew",
+          "Quality maintained"
+        ],
+        "avoid": [
+          "No training",
+          "High turnover"
+        ]
+      }
+    },
+    {
+      "id": "lg_019",
+      "text": "Tell me about a time you had to make a difficult ethical decision.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Ethical issue identified",
+          "Rules consulted",
+          "Decision made",
+          "Documented"
+        ],
+        "strong_answer_signals": [
+          "Ethical resolution",
+          "Bar compliant"
+        ],
+        "avoid": [
+          "Cut corners",
+          "No documentation"
+        ]
+      }
+    },
+    {
+      "id": "lg_020",
+      "text": "How do you handle client expectations that are unrealistic?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Set clear expectations early",
+          "Educated client",
+          "Documented agreement",
+          "Managed throughout"
+        ],
+        "strong_answer_signals": [
+          "Client aligned",
+          "Trust maintained"
+        ],
+        "avoid": [
+          "Over-promised",
+          "Disappointed client"
+        ]
+      }
+    },
+    {
+      "id": "lg_021",
+      "text": "Describe your experience with litigation support.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Tools used",
+          "Case preparation",
+          "Court filings",
+          "Discovery managed"
+        ],
+        "strong_answer_signals": [
+          "Effective support",
+          "No missed deadlines"
+        ],
+        "avoid": [
+          "Disorganized",
+          "Late filings"
+        ]
+      }
+    },
+    {
+      "id": "lg_022",
+      "text": "How do you approach negotiation?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Prepared thoroughly",
+          "Understood interests",
+          "Created options",
+          "BATNA analyzed"
+        ],
+        "strong_answer_signals": [
+          "Successful outcomes",
+          "Relationships maintained"
+        ],
+        "avoid": [
+          "Unprepared",
+          "Adversarial only"
+        ]
+      }
+    },
+    {
+      "id": "lg_023",
+      "text": "How do you handle multiple simultaneous deadlines?",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Prioritized by urgency and importance",
+          "Calendar used",
+          "Communication maintained",
+          "Quality preserved"
+        ],
+        "strong_answer_signals": [
+          "All deadlines met",
+          "Quality maintained"
+        ],
+        "avoid": [
+          "Missed deadlines",
+          "Rushed work"
+        ]
+      }
+    },
+    {
+      "id": "lg_024",
+      "text": "Tell me about a successful case or matter outcome.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Strategy executed",
+          "Team coordinated",
+          "Outcome favorable",
+          "Lessons captured"
+        ],
+        "strong_answer_signals": [
+          "Strong result",
+          "Team effort"
+        ],
+        "avoid": [
+          "Self-aggrandizing",
+          "No detail"
+        ]
+      }
+    },
+    {
+      "id": "lg_025",
+      "text": "How do you approach business development in legal practice?",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Network built",
+          "Thought leadership",
+          "Client relationships",
+          "Referral network"
+        ],
+        "strong_answer_signals": [
+          "Practice grew",
+          "Strong relationships"
+        ],
+        "avoid": [
+          "No business development",
+          "Relied on firm only"
+        ]
+      }
+    }
+  ]
+}

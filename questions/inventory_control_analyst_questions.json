@@ -2,231 +2,985 @@
   "metadata": {
     "sector": "Inventory Control Analyst",
     "generated": "2026-04-19",
-    "total": 42,
-    "categories": ["behavioral", "technical", "situational", "motivation", "manager"]
+    "total": 37,
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ]
   },
   "questions": [
-    { "id": "ica_b_001", "category": "behavioral", "seniority": ["entry","mid","senior"],
+    {
+      "id": "ica_b_001",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you discovered a significant inventory discrepancy and how you resolved it.",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["How you detected it: cycle count, system alert, physical observation", "Investigation method: location audit, transaction history review, team interviews", "Root cause identified and corrective action taken"],
-        "strong_answer_signals": ["Structured investigation approach","Root cause fixed not just adjustment made","Recurrence prevented via process change"],
-        "avoid": ["Made system adjustment without investigating cause","Blamed team without evidence"] }},
-    { "id": "ica_b_002", "category": "behavioral", "seniority": ["entry","mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "How you detected it: cycle count, system alert, physical observation",
+          "Investigation method: location audit, transaction history review, team interviews",
+          "Root cause identified and corrective action taken"
+        ],
+        "strong_answer_signals": [
+          "Structured investigation approach",
+          "Root cause fixed not just adjustment made",
+          "Recurrence prevented via process change"
+        ],
+        "avoid": [
+          "Made system adjustment without investigating cause",
+          "Blamed team without evidence"
+        ]
+      }
+    },
+    {
+      "id": "ica_b_002",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you improved inventory accuracy in a warehouse or DC.",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Baseline accuracy level and how it was measured", "Root causes identified: process gaps, scanning errors, receiving errors", "Interventions and accuracy improvement achieved"],
-        "strong_answer_signals": ["Before and after accuracy % measured","Multiple root causes addressed","Sustained improvement not one-off"],
-        "avoid": ["Improvement claimed with no measurement","Single fix for a multi-cause problem"] }},
-    { "id": "ica_b_003", "category": "behavioral", "seniority": ["mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Baseline accuracy level and how it was measured",
+          "Root causes identified: process gaps, scanning errors, receiving errors",
+          "Interventions and accuracy improvement achieved"
+        ],
+        "strong_answer_signals": [
+          "Before and after accuracy % measured",
+          "Multiple root causes addressed",
+          "Sustained improvement not one-off"
+        ],
+        "avoid": [
+          "Improvement claimed with no measurement",
+          "Single fix for a multi-cause problem"
+        ]
+      }
+    },
+    {
+      "id": "ica_b_003",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you designed or overhauled a cycle count programme.",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Previous programme shortcomings: frequency, coverage, ABC alignment", "New design: ABC-based frequency, blind count methodology, threshold policy", "Accuracy improvement and shrinkage reduction outcomes"],
-        "strong_answer_signals": ["Risk-based ABC frequency","Blind count to prevent bias","Measurable accuracy improvement"],
-        "avoid": ["Annual physical count reliance","Counts without blind methodology"] }},
-    { "id": "ica_b_004", "category": "behavioral", "seniority": ["entry","mid"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Previous programme shortcomings: frequency, coverage, ABC alignment",
+          "New design: ABC-based frequency, blind count methodology, threshold policy",
+          "Accuracy improvement and shrinkage reduction outcomes"
+        ],
+        "strong_answer_signals": [
+          "Risk-based ABC frequency",
+          "Blind count to prevent bias",
+          "Measurable accuracy improvement"
+        ],
+        "avoid": [
+          "Annual physical count reliance",
+          "Counts without blind methodology"
+        ]
+      }
+    },
+    {
+      "id": "ica_b_004",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
       "text": "Tell me about a time you identified a process that was causing recurring inventory errors.",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Pattern recognition: same error type, same location, same shift", "Root cause analysis: 5-why or fishbone", "Process change implemented and error rate reduction"],
-        "strong_answer_signals": ["Data-driven pattern identification","5-why depth","Quantified error rate before and after"],
-        "avoid": ["One-off fix without pattern analysis","No measurement of improvement"] }},
-    { "id": "ica_b_005", "category": "behavioral", "seniority": ["mid","senior","manager"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Pattern recognition: same error type, same location, same shift",
+          "Root cause analysis: 5-why or fishbone",
+          "Process change implemented and error rate reduction"
+        ],
+        "strong_answer_signals": [
+          "Data-driven pattern identification",
+          "5-why depth",
+          "Quantified error rate before and after"
+        ],
+        "avoid": [
+          "One-off fix without pattern analysis",
+          "No measurement of improvement"
+        ]
+      }
+    },
+    {
+      "id": "ica_b_005",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
       "text": "Describe a time you led a physical inventory count across a large facility.",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Preparation: location labelling, system freeze, count team training", "Execution: zone assignment, blind first count, recount process for variances", "Reconciliation: variance investigation before system adjustment"],
-        "strong_answer_signals": ["Pre-count preparation rigour","Variance investigation before adjustment","Accurate close achieved"],
-        "avoid": ["Adjusted without investigating variances","No preparation process"] }},
-    { "id": "ica_b_006", "category": "behavioral", "seniority": ["entry","mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Preparation: location labelling, system freeze, count team training",
+          "Execution: zone assignment, blind first count, recount process for variances",
+          "Reconciliation: variance investigation before system adjustment"
+        ],
+        "strong_answer_signals": [
+          "Pre-count preparation rigour",
+          "Variance investigation before adjustment",
+          "Accurate close achieved"
+        ],
+        "avoid": [
+          "Adjusted without investigating variances",
+          "No preparation process"
+        ]
+      }
+    },
+    {
+      "id": "ica_b_006",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you reduced shrinkage or stock loss in a warehouse operation.",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Shrinkage type identified: theft, damage, admin error, vendor short-ship", "Controls implemented: cage security, CCTV, receiving verification, process audit", "Shrinkage value reduction achieved"],
-        "strong_answer_signals": ["Classified shrinkage by type first","Multiple control layers","Quantified financial saving"],
-        "avoid": ["Assumed theft without evidence","Single control with no layering"] }},
-    { "id": "ica_b_007", "category": "behavioral", "seniority": ["mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Shrinkage type identified: theft, damage, admin error, vendor short-ship",
+          "Controls implemented: cage security, CCTV, receiving verification, process audit",
+          "Shrinkage value reduction achieved"
+        ],
+        "strong_answer_signals": [
+          "Classified shrinkage by type first",
+          "Multiple control layers",
+          "Quantified financial saving"
+        ],
+        "avoid": [
+          "Assumed theft without evidence",
+          "Single control with no layering"
+        ]
+      }
+    },
+    {
+      "id": "ica_b_007",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you worked with operations to improve receiving accuracy.",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Problem: short-ships or mis-picks from suppliers being booked in incorrectly", "Solutions: blind receiving process, vendor scorecard, receiving SOP update", "Receiving discrepancy rate improvement"],
-        "strong_answer_signals": ["Blind receiving methodology","Vendor accountability via scorecard","SOP standardised and trained"],
-        "avoid": ["Accepted vendor quantities without verification","No SOP or training"] }},
-    { "id": "ica_b_008", "category": "behavioral", "seniority": ["mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Problem: short-ships or mis-picks from suppliers being booked in incorrectly",
+          "Solutions: blind receiving process, vendor scorecard, receiving SOP update",
+          "Receiving discrepancy rate improvement"
+        ],
+        "strong_answer_signals": [
+          "Blind receiving methodology",
+          "Vendor accountability via scorecard",
+          "SOP standardised and trained"
+        ],
+        "avoid": [
+          "Accepted vendor quantities without verification",
+          "No SOP or training"
+        ]
+      }
+    },
+    {
+      "id": "ica_b_008",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you managed a WMS or ERP inventory module implementation or upgrade.",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Pre-go-live: data cleanse, UAT, team training", "Go-live: parallel run or phased rollout, issue triage", "Post-go-live: accuracy stabilisation and process embedding"],
-        "strong_answer_signals": ["Data cleanse before cutover","Parallel run or phased approach","Accuracy monitoring post-launch"],
-        "avoid": ["Big bang with no parallel run","No data cleanse before migration"] }},
-    { "id": "ica_b_009", "category": "behavioral", "seniority": ["senior","manager"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Pre-go-live: data cleanse, UAT, team training",
+          "Go-live: parallel run or phased rollout, issue triage",
+          "Post-go-live: accuracy stabilisation and process embedding"
+        ],
+        "strong_answer_signals": [
+          "Data cleanse before cutover",
+          "Parallel run or phased approach",
+          "Accuracy monitoring post-launch"
+        ],
+        "avoid": [
+          "Big bang with no parallel run",
+          "No data cleanse before migration"
+        ]
+      }
+    },
+    {
+      "id": "ica_b_009",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "Describe how you built a culture of inventory accuracy accountability in a warehouse team.",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Made accuracy visible: daily location accuracy scoreboard", "Tied accuracy to team performance and recognition", "Blameless investigation of errors as learning opportunities"],
-        "strong_answer_signals": ["Visual management of accuracy KPIs","Positive reinforcement not just punishment","Error as learning culture"],
-        "avoid": ["Blame culture — drove hiding of errors","No visibility of accuracy metrics"] }},
-    { "id": "ica_b_010", "category": "behavioral", "seniority": ["entry","mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Made accuracy visible: daily location accuracy scoreboard",
+          "Tied accuracy to team performance and recognition",
+          "Blameless investigation of errors as learning opportunities"
+        ],
+        "strong_answer_signals": [
+          "Visual management of accuracy KPIs",
+          "Positive reinforcement not just punishment",
+          "Error as learning culture"
+        ],
+        "avoid": [
+          "Blame culture: drove hiding of errors",
+          "No visibility of accuracy metrics"
+        ]
+      }
+    },
+    {
+      "id": "ica_b_010",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you reconciled a major discrepancy between the financial ledger and physical inventory.",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Gathered transaction trail: receipts, issues, adjustments, transfers", "Identified break: timing difference, unit of measure error, coding error", "Corrected in both operational and financial system with documentation"],
-        "strong_answer_signals": ["Transaction trail methodology","Identified specific break point","Both systems corrected and finance informed"],
-        "avoid": ["Adjusted operational system only","No transaction trail analysis"] }},
-    { "id": "ica_t_001", "category": "technical", "seniority": ["entry","mid"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Gathered transaction trail: receipts, issues, adjustments, transfers",
+          "Identified break: timing difference, unit of measure error, coding error",
+          "Corrected in both operational and financial system with documentation"
+        ],
+        "strong_answer_signals": [
+          "Transaction trail methodology",
+          "Identified specific break point",
+          "Both systems corrected and finance informed"
+        ],
+        "avoid": [
+          "Adjusted operational system only",
+          "No transaction trail analysis"
+        ]
+      }
+    },
+    {
+      "id": "ica_t_001",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
       "text": "What is cycle counting and how does ABC classification determine count frequency?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Cycle count: continuous partial count vs annual full physical", "ABC by value/velocity: A = weekly/daily, B = monthly, C = quarterly", "Maintains perpetual accuracy without full operational shutdown"],
-        "strong_answer_signals": ["Named frequency by class","Business rationale for frequency difference","Blind count methodology mentioned"],
-        "avoid": ["Same frequency for all SKUs","No explanation of risk-based logic"] }},
-    { "id": "ica_t_002", "category": "technical", "seniority": ["entry","mid"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Cycle count: continuous partial count vs annual full physical",
+          "ABC by value/velocity: A = weekly/daily, B = monthly, C = quarterly",
+          "Maintains perpetual accuracy without full operational shutdown"
+        ],
+        "strong_answer_signals": [
+          "Named frequency by class",
+          "Business rationale for frequency difference",
+          "Blind count methodology mentioned"
+        ],
+        "avoid": [
+          "Same frequency for all SKUs",
+          "No explanation of risk-based logic"
+        ]
+      }
+    },
+    {
+      "id": "ica_t_002",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
       "text": "How do you calculate and interpret inventory accuracy rate?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Locations accurate / total locations counted × 100", "Measured at location-SKU level, not just aggregate value", "Target: 99%+ for A-class; industry benchmark context"],
-        "strong_answer_signals": ["Location-level not value-only","Named industry benchmark","Trend monitoring not just snapshot"],
-        "avoid": ["Value accuracy only — hides location errors","No benchmark"] }},
-    { "id": "ica_t_003", "category": "technical", "seniority": ["mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Locations accurate / total locations counted × 100",
+          "Measured at location-SKU level, not just aggregate value",
+          "Target: 99%+ for A-class; industry benchmark context"
+        ],
+        "strong_answer_signals": [
+          "Location-level not value-only",
+          "Named industry benchmark",
+          "Trend monitoring not just snapshot"
+        ],
+        "avoid": [
+          "Value accuracy only: hides location errors",
+          "No benchmark"
+        ]
+      }
+    },
+    {
+      "id": "ica_t_003",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "What is a WMS adjustment audit and why is controlling system adjustments critical?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Adjustments change system stock without physical movement — can mask errors", "Audit: every adjustment requires reason code, supervisor approval above threshold", "Trend analysis of adjustments by type reveals systemic issues"],
-        "strong_answer_signals": ["Approval threshold policy","Reason code analysis","Escalation for high-value adjustments"],
-        "avoid": ["Open adjustment access to all users","No audit trail"] }},
-    { "id": "ica_t_004", "category": "technical", "seniority": ["entry","mid"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Adjustments change system stock without physical movement, can mask errors",
+          "Audit: every adjustment requires reason code, supervisor approval above threshold",
+          "Trend analysis of adjustments by type reveals systemic issues"
+        ],
+        "strong_answer_signals": [
+          "Approval threshold policy",
+          "Reason code analysis",
+          "Escalation for high-value adjustments"
+        ],
+        "avoid": [
+          "Open adjustment access to all users",
+          "No audit trail"
+        ]
+      }
+    },
+    {
+      "id": "ica_t_004",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
       "text": "How would you investigate a negative stock balance in the system?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Pull transaction history for that SKU-location", "Common causes: pick before receipt posted, manual scan sequence error, unit of measure mismatch", "Correct transaction at source, not just quantity adjustment"],
-        "strong_answer_signals": ["Transaction audit first","Root cause by type","Source correction not just stock fix"],
-        "avoid": ["Direct adjustment without investigation","Assumed it was a system glitch"] }},
-    { "id": "ica_t_005", "category": "technical", "seniority": ["mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Pull transaction history for that SKU-location",
+          "Common causes: pick before receipt posted, manual scan sequence error, unit of measure mismatch",
+          "Correct transaction at source, not just quantity adjustment"
+        ],
+        "strong_answer_signals": [
+          "Transaction audit first",
+          "Root cause by type",
+          "Source correction not just stock fix"
+        ],
+        "avoid": [
+          "Direct adjustment without investigation",
+          "Assumed it was a system glitch"
+        ]
+      }
+    },
+    {
+      "id": "ica_t_005",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "How do you use transaction history reports in a WMS to investigate a stock discrepancy?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Filter by SKU, location, date range", "Trace: receipt → put-away → pick → dispatch sequence", "Identify missing or duplicate transaction, user, shift"],
-        "strong_answer_signals": ["Step-by-step transaction trace","User and shift pattern analysis","Named WMS systems used (SAP, Manhattan, HighJump)"],
-        "avoid": ["Relied on memory or team self-report","No transaction trail analysis"] }},
-    { "id": "ica_t_006", "category": "technical", "seniority": ["mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Filter by SKU, location, date range",
+          "Trace: receipt → put-away → pick → dispatch sequence",
+          "Identify missing or duplicate transaction, user, shift"
+        ],
+        "strong_answer_signals": [
+          "Step-by-step transaction trace",
+          "User and shift pattern analysis",
+          "Named WMS systems used (SAP, Manhattan, HighJump)"
+        ],
+        "avoid": [
+          "Relied on memory or team self-report",
+          "No transaction trail analysis"
+        ]
+      }
+    },
+    {
+      "id": "ica_t_006",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "What is the difference between location accuracy and inventory value accuracy, and which matters more?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Location accuracy: right SKU, right quantity, right place — operational", "Value accuracy: financial book vs physical value — financial reporting", "Both matter: location for operations, value for finance — root cause often same"],
-        "strong_answer_signals": ["Explained both dimensions","Context-dependent which is priority","Root cause linkage between both"],
-        "avoid": ["One is always more important without context","No understanding of both dimensions"] }},
-    { "id": "ica_t_007", "category": "technical", "seniority": ["entry","mid"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Location accuracy: right SKU, right quantity, right place, operational",
+          "Value accuracy: financial book vs physical value, financial reporting",
+          "Both matter: location for operations, value for finance, root cause often same"
+        ],
+        "strong_answer_signals": [
+          "Explained both dimensions",
+          "Context-dependent which is priority",
+          "Root cause linkage between both"
+        ],
+        "avoid": [
+          "One is always more important without context",
+          "No understanding of both dimensions"
+        ]
+      }
+    },
+    {
+      "id": "ica_t_007",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
       "text": "How do you manage first-in-first-out (FIFO) compliance in a warehouse and why does it matter?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["WMS directed put-away and pick by receipt date", "Physical: date rotation labelling, location discipline", "Matters: expiry management, quality, financial FIFO costing"],
-        "strong_answer_signals": ["System-directed FIFO in WMS","Physical labelling and discipline","Consequence of non-compliance: expiry, write-off"],
-        "avoid": ["Manual FIFO with no system support","No link to business risk"] }},
-    { "id": "ica_t_008", "category": "technical", "seniority": ["mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "WMS directed put-away and pick by receipt date",
+          "Physical: date rotation labelling, location discipline",
+          "Matters: expiry management, quality, financial FIFO costing"
+        ],
+        "strong_answer_signals": [
+          "System-directed FIFO in WMS",
+          "Physical labelling and discipline",
+          "Consequence of non-compliance: expiry, write-off"
+        ],
+        "avoid": [
+          "Manual FIFO with no system support",
+          "No link to business risk"
+        ]
+      }
+    },
+    {
+      "id": "ica_t_008",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "How do you handle inventory adjustments for damaged goods found during a cycle count?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Segregate and quarantine damaged stock immediately", "Grade damage: rework, return to vendor, write-off, discount sale", "System adjustment with reason code and supporting photo/documentation"],
-        "strong_answer_signals": ["Quarantine before adjustment","Disposition decision process","Documented with evidence"],
-        "avoid": ["Immediate write-off without recovery attempt","No documentation"] }},
-    { "id": "ica_t_009", "category": "technical", "seniority": ["senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Segregate and quarantine damaged stock immediately",
+          "Grade damage: rework, return to vendor, write-off, discount sale",
+          "System adjustment with reason code and supporting photo/documentation"
+        ],
+        "strong_answer_signals": [
+          "Quarantine before adjustment",
+          "Disposition decision process",
+          "Documented with evidence"
+        ],
+        "avoid": [
+          "Immediate write-off without recovery attempt",
+          "No documentation"
+        ]
+      }
+    },
+    {
+      "id": "ica_t_009",
+      "category": "technical",
+      "seniority": [
+        "senior"
+      ],
       "text": "How would you design a variance threshold policy for inventory adjustments?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Threshold tiers by value: auto-approve low value, manager approval mid, director for high", "Reason code mandatory for all adjustments regardless of value", "Monthly threshold breach reporting to finance and ops leadership"],
-        "strong_answer_signals": ["Value-tiered approval","Reason code always mandatory","Governance reporting"],
-        "avoid": ["Single threshold for all","No escalation for large adjustments"] }},
-    { "id": "ica_t_010", "category": "technical", "seniority": ["mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Threshold tiers by value: auto-approve low value, manager approval mid, director for high",
+          "Reason code mandatory for all adjustments regardless of value",
+          "Monthly threshold breach reporting to finance and ops leadership"
+        ],
+        "strong_answer_signals": [
+          "Value-tiered approval",
+          "Reason code always mandatory",
+          "Governance reporting"
+        ],
+        "avoid": [
+          "Single threshold for all",
+          "No escalation for large adjustments"
+        ]
+      }
+    },
+    {
+      "id": "ica_t_010",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "What KPIs would you track as an inventory control analyst and at what frequency?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Daily: location accuracy %, cycle count completion rate, open discrepancies", "Weekly: adjustment value by reason code, shrinkage by type", "Monthly: accuracy trend vs target, write-off value, vendor discrepancy rate"],
-        "strong_answer_signals": ["Tiered cadence by decision horizon","Leading and lagging indicators","Action triggers defined per KPI"],
-        "avoid": ["Monthly only — too infrequent for operational control","No action linkage"] }},
-    { "id": "ica_s_001", "category": "situational", "seniority": ["entry","mid"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Daily: location accuracy %, cycle count completion rate, open discrepancies",
+          "Weekly: adjustment value by reason code, shrinkage by type",
+          "Monthly: accuracy trend vs target, write-off value, vendor discrepancy rate"
+        ],
+        "strong_answer_signals": [
+          "Tiered cadence by decision horizon",
+          "Leading and lagging indicators",
+          "Action triggers defined per KPI"
+        ],
+        "avoid": [
+          "Monthly only: too infrequent for operational control",
+          "No action linkage"
+        ]
+      }
+    },
+    {
+      "id": "ica_s_001",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
       "text": "You count a location and find 50 units in the system but only 35 physically. What steps do you take before making any system adjustment?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Recount the location to rule out count error", "Check adjacent locations for mis-slotted stock", "Review transaction history for recent picks, moves, or receipts on that SKU"],
-        "strong_answer_signals": ["Recount first","Adjacent location check","Transaction history before any adjustment"],
-        "avoid": ["Adjust immediately on first count","No investigation at all"] }},
-    { "id": "ica_s_002", "category": "situational", "seniority": ["mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Recount the location to rule out count error",
+          "Check adjacent locations for mis-slotted stock",
+          "Review transaction history for recent picks, moves, or receipts on that SKU"
+        ],
+        "strong_answer_signals": [
+          "Recount first",
+          "Adjacent location check",
+          "Transaction history before any adjustment"
+        ],
+        "avoid": [
+          "Adjust immediately on first count",
+          "No investigation at all"
+        ]
+      }
+    },
+    {
+      "id": "ica_s_002",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "During a cycle count programme review you notice one shift consistently has higher discrepancy rates than others. How do you handle it?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Validate the pattern with at least 4 weeks of data", "Investigate: process adherence, training, equipment, supervisor oversight", "Raise with operations management with evidence; propose targeted intervention"],
-        "strong_answer_signals": ["Data validation before conclusion","Multi-cause investigation","Collaborative resolution with ops management"],
-        "avoid": ["Assumed blame without investigation","Raised without data"] }},
-    { "id": "ica_s_003", "category": "situational", "seniority": ["mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Validate the pattern with at least 4 weeks of data",
+          "Investigate: process adherence, training, equipment, supervisor oversight",
+          "Raise with operations management with evidence; propose targeted intervention"
+        ],
+        "strong_answer_signals": [
+          "Data validation before conclusion",
+          "Multi-cause investigation",
+          "Collaborative resolution with ops management"
+        ],
+        "avoid": [
+          "Assumed blame without investigation",
+          "Raised without data"
+        ]
+      }
+    },
+    {
+      "id": "ica_s_003",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Finance requires a year-end physical inventory count to be completed in one weekend. How do you plan and execute it?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Pre-count: system freeze, location clean-up, count team briefing, zone assignment", "Count day: blind first count, immediate recount for variances above threshold", "Post-count: variance investigation before cut-off, finance sign-off"],
-        "strong_answer_signals": ["System freeze and clean-up pre-count","Blind methodology","Variance investigation before sign-off"],
-        "avoid": ["Counting without system freeze","Adjusting all variances without investigation"] }},
-    { "id": "ica_s_004", "category": "situational", "seniority": ["entry","mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Pre-count: system freeze, location clean-up, count team briefing, zone assignment",
+          "Count day: blind first count, immediate recount for variances above threshold",
+          "Post-count: variance investigation before cut-off, finance sign-off"
+        ],
+        "strong_answer_signals": [
+          "System freeze and clean-up pre-count",
+          "Blind methodology",
+          "Variance investigation before sign-off"
+        ],
+        "avoid": [
+          "Counting without system freeze",
+          "Adjusting all variances without investigation"
+        ]
+      }
+    },
+    {
+      "id": "ica_s_004",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "A warehouse operative tells you they think a colleague has been stealing product. How do you respond?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Take the report seriously and document it immediately", "Escalate to HR and security — do not investigate alone", "Review inventory records for that area/shift to see if data supports concern"],
-        "strong_answer_signals": ["Immediate escalation to HR and security","Did not accuse or confront individually","Data review to assess pattern"],
-        "avoid": ["Confronted the accused directly","Dismissed the report","Shared the allegation with other team members"] }},
-    { "id": "ica_s_005", "category": "situational", "seniority": ["mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Take the report seriously and document it immediately",
+          "Escalate to HR and security: do not investigate alone",
+          "Review inventory records for that area/shift to see if data supports concern"
+        ],
+        "strong_answer_signals": [
+          "Immediate escalation to HR and security",
+          "Did not accuse or confront individually",
+          "Data review to assess pattern"
+        ],
+        "avoid": [
+          "Confronted the accused directly",
+          "Dismissed the report",
+          "Shared the allegation with other team members"
+        ]
+      }
+    },
+    {
+      "id": "ica_s_005",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Your WMS goes down mid-cycle count. How do you manage?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Switch to paper count sheets — pre-printed from last system backup", "Track all movements manually during downtime with timestamp", "On system recovery: enter manual counts, reconcile with any movements during outage"],
-        "strong_answer_signals": ["Pre-planned downtime contingency","Manual count fallback ready","Clean reconciliation on recovery"],
-        "avoid": ["Stopped counting with no contingency","Resumed count without accounting for movements during outage"] }},
-    { "id": "ica_s_006", "category": "situational", "seniority": ["mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Switch to paper count sheets: pre-printed from last system backup",
+          "Track all movements manually during downtime with timestamp",
+          "On system recovery: enter manual counts, reconcile with any movements during outage"
+        ],
+        "strong_answer_signals": [
+          "Pre-planned downtime contingency",
+          "Manual count fallback ready",
+          "Clean reconciliation on recovery"
+        ],
+        "avoid": [
+          "Stopped counting with no contingency",
+          "Resumed count without accounting for movements during outage"
+        ]
+      }
+    },
+    {
+      "id": "ica_s_006",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "A supplier is consistently short-shipping by 2-5% and your team has been booking in full quantities. How do you fix this?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Quantify total value of over-booked stock over past 6 months", "Implement blind receiving immediately — count before system booking", "Formal supplier dispute raised via procurement with evidence"],
-        "strong_answer_signals": ["Quantified financial exposure","Blind receiving implemented immediately","Procurement engaged for formal dispute and credit"],
-        "avoid": ["Accepted going forward without recovering past loss","No process change at receiving"] }},
-    { "id": "ica_s_007", "category": "situational", "seniority": ["senior","manager"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Quantify total value of over-booked stock over past 6 months",
+          "Implement blind receiving immediately, count before system booking",
+          "Formal supplier dispute raised via procurement with evidence"
+        ],
+        "strong_answer_signals": [
+          "Quantified financial exposure",
+          "Blind receiving implemented immediately",
+          "Procurement engaged for formal dispute and credit"
+        ],
+        "avoid": [
+          "Accepted going forward without recovering past loss",
+          "No process change at receiving"
+        ]
+      }
+    },
+    {
+      "id": "ica_s_007",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
       "text": "Operations wants to skip cycle counts during peak season to focus on throughput. How do you respond?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Explain the risk: accuracy drops during high-volume periods — errors multiply faster", "Propose a reduced but maintained count plan: A-class only during peak", "Quantify past cost of post-peak accuracy recovery"],
-        "strong_answer_signals": ["Held firm with risk data","Offered compromise not full concession","Quantified cost of skipping"],
-        "avoid": ["Agreed to full suspension","Refused without compromise option"] }},
-    { "id": "ica_m_001", "category": "motivation", "seniority": ["entry","mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Explain the risk: accuracy drops during high-volume periods, errors multiply faster",
+          "Propose a reduced but maintained count plan: A-class only during peak",
+          "Quantify past cost of post-peak accuracy recovery"
+        ],
+        "strong_answer_signals": [
+          "Held firm with risk data",
+          "Offered compromise not full concession",
+          "Quantified cost of skipping"
+        ],
+        "avoid": [
+          "Agreed to full suspension",
+          "Refused without compromise option"
+        ]
+      }
+    },
+    {
+      "id": "ica_m_001",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "What draws you to inventory control specifically rather than other supply chain roles?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Precision and process discipline appeal", "Tangible impact: accuracy drives service and financial integrity", "Detective-like investigation of discrepancies"],
-        "strong_answer_signals": ["Specific to control not just supply chain","Operational precision as a genuine strength","Connected to this role's challenges"],
-        "avoid": ["'I could not get another role'","No specific aspect of control articulated"] }},
-    { "id": "ica_m_002", "category": "motivation", "seniority": ["mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Precision and process discipline appeal",
+          "Tangible impact: accuracy drives service and financial integrity",
+          "Detective-like investigation of discrepancies"
+        ],
+        "strong_answer_signals": [
+          "Specific to control not just supply chain",
+          "Operational precision as a genuine strength",
+          "Connected to this role's challenges"
+        ],
+        "avoid": [
+          "'I could not get another role'",
+          "No specific aspect of control articulated"
+        ]
+      }
+    },
+    {
+      "id": "ica_m_002",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "How do you stay motivated when much of your work is routine counting and data reconciliation?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["See the bigger picture: accuracy underpins service and P&L", "Find the detective work in discrepancy investigation engaging", "Set personal improvement targets and measure progress"],
-        "strong_answer_signals": ["Genuine process discipline mindset","Connected routine to business outcome","Self-improvement orientation"],
-        "avoid": ["Admitted to finding it boring","No coping mechanism or genuine engagement"] }},
-    { "id": "ica_m_003", "category": "motivation", "seniority": ["mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "See the bigger picture: accuracy underpins service and P&L",
+          "Find the detective work in discrepancy investigation engaging",
+          "Set personal improvement targets and measure progress"
+        ],
+        "strong_answer_signals": [
+          "Genuine process discipline mindset",
+          "Connected routine to business outcome",
+          "Self-improvement orientation"
+        ],
+        "avoid": [
+          "Admitted to finding it boring",
+          "No coping mechanism or genuine engagement"
+        ]
+      }
+    },
+    {
+      "id": "ica_m_003",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Where do you see inventory control technology heading in the next few years?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["RFID and autonomous mobile robots (AMRs) for continuous cycle counting", "Computer vision for real-time location accuracy monitoring", "AI-driven anomaly detection replacing rule-based adjustment audits"],
-        "strong_answer_signals": ["Named specific technologies","Business case for adoption","Realistic timeline and current adoption context"],
-        "avoid": ["Vague 'more automation'","No specific technology named"] }},
-    { "id": "ica_mg_001", "category": "manager", "seniority": ["manager","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "RFID and autonomous mobile robots (AMRs) for continuous cycle counting",
+          "Computer vision for real-time location accuracy monitoring",
+          "AI-driven anomaly detection replacing rule-based adjustment audits"
+        ],
+        "strong_answer_signals": [
+          "Named specific technologies",
+          "Business case for adoption",
+          "Realistic timeline and current adoption context"
+        ],
+        "avoid": [
+          "Vague 'more automation'",
+          "No specific technology named"
+        ]
+      }
+    },
+    {
+      "id": "ica_mg_001",
+      "category": "manager",
+      "seniority": [
+        "manager",
+        "senior"
+      ],
       "text": "How do you build and maintain a high-accuracy inventory control team?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Hire for precision, process orientation, and curiosity", "Daily accuracy scoreboards and team huddles", "Blameless error investigation culture with SOP improvement as outcome"],
-        "strong_answer_signals": ["Right hire profile","Visual daily performance management","Psychological safety for error reporting"],
-        "avoid": ["Blame culture","No daily visibility of accuracy"] }},
-    { "id": "ica_mg_002", "category": "manager", "seniority": ["manager"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Hire for precision, process orientation, and curiosity",
+          "Daily accuracy scoreboards and team huddles",
+          "Blameless error investigation culture with SOP improvement as outcome"
+        ],
+        "strong_answer_signals": [
+          "Right hire profile",
+          "Visual daily performance management",
+          "Psychological safety for error reporting"
+        ],
+        "avoid": [
+          "Blame culture",
+          "No daily visibility of accuracy"
+        ]
+      }
+    },
+    {
+      "id": "ica_mg_002",
+      "category": "manager",
+      "seniority": [
+        "manager"
+      ],
       "text": "How do you influence warehouse operations managers to prioritise inventory accuracy?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Translate accuracy to operational cost: rework, re-picks, customer returns", "Share accuracy data in their weekly ops review not just your own", "Celebrate shared wins when accuracy improves"],
-        "strong_answer_signals": ["Business case in their language","Embedded in their review cadence","Shared ownership of metric"],
-        "avoid": ["Presented only in inventory control meetings","No business cost translation"] }},
-    { "id": "ica_mg_003", "category": "manager", "seniority": ["manager","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Translate accuracy to operational cost: rework, re-picks, customer returns",
+          "Share accuracy data in their weekly ops review not just your own",
+          "Celebrate shared wins when accuracy improves"
+        ],
+        "strong_answer_signals": [
+          "Business case in their language",
+          "Embedded in their review cadence",
+          "Shared ownership of metric"
+        ],
+        "avoid": [
+          "Presented only in inventory control meetings",
+          "No business cost translation"
+        ]
+      }
+    },
+    {
+      "id": "ica_mg_003",
+      "category": "manager",
+      "seniority": [
+        "manager",
+        "senior"
+      ],
       "text": "Tell me about a time you managed a cross-functional project to reduce inventory write-offs.",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Write-off root cause analysis across procurement, operations, and finance", "Cross-functional action plan with owners and deadlines", "Write-off value reduction achieved and sustained"],
-        "strong_answer_signals": ["Multi-function root cause","Clear ownership of each action","Financial outcome measured and reported"],
-        "avoid": ["Inventory control acted alone","No financial outcome measurement"] }},
-    { "id": "ica_t_011", "category": "technical", "seniority": ["entry","mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Write-off root cause analysis across procurement, operations, and finance",
+          "Cross-functional action plan with owners and deadlines",
+          "Write-off value reduction achieved and sustained"
+        ],
+        "strong_answer_signals": [
+          "Multi-function root cause",
+          "Clear ownership of each action",
+          "Financial outcome measured and reported"
+        ],
+        "avoid": [
+          "Inventory control acted alone",
+          "No financial outcome measurement"
+        ]
+      }
+    },
+    {
+      "id": "ica_t_011",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "How do you ensure unit of measure accuracy when receiving goods into the WMS?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["UOM defined on item master and matched to PO", "Receiving staff trained on each vs case vs pallet receiving", "UOM errors flagged as root cause category in discrepancy analysis"],
-        "strong_answer_signals": ["Item master UOM governance","Receiving training on UOM","UOM as tracked discrepancy root cause"],
-        "avoid": ["No UOM verification at receiving","Treated all discrepancies the same without UOM category"] }},
-    { "id": "ica_t_012", "category": "technical", "seniority": ["mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "UOM defined on item master and matched to PO",
+          "Receiving staff trained on each vs case vs pallet receiving",
+          "UOM errors flagged as root cause category in discrepancy analysis"
+        ],
+        "strong_answer_signals": [
+          "Item master UOM governance",
+          "Receiving training on UOM",
+          "UOM as tracked discrepancy root cause"
+        ],
+        "avoid": [
+          "No UOM verification at receiving",
+          "Treated all discrepancies the same without UOM category"
+        ]
+      }
+    },
+    {
+      "id": "ica_t_012",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "What controls would you put in place to manage inventory in a bonded or customs warehouse?",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Strict goods-in and goods-out documentation with customs references", "Segregated physical locations for bonded stock with access controls", "Regular reconciliation of customs declarations vs system stock"],
-        "strong_answer_signals": ["Documentation rigour","Physical segregation","Customs authority reconciliation"],
-        "avoid": ["Mixed bonded and duty-paid stock","No reconciliation to customs records"] }},
-    { "id": "ica_b_011", "category": "behavioral", "seniority": ["entry","mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Strict goods-in and goods-out documentation with customs references",
+          "Segregated physical locations for bonded stock with access controls",
+          "Regular reconciliation of customs declarations vs system stock"
+        ],
+        "strong_answer_signals": [
+          "Documentation rigour",
+          "Physical segregation",
+          "Customs authority reconciliation"
+        ],
+        "avoid": [
+          "Mixed bonded and duty-paid stock",
+          "No reconciliation to customs records"
+        ]
+      }
+    },
+    {
+      "id": "ica_b_011",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
       "text": "Tell me about a time you trained warehouse staff on inventory accuracy procedures.",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Assessed training gap: new SOP, new system, new hires", "Training design: hands-on, location-based, competency sign-off", "Accuracy improvement post-training and knowledge retention checks"],
-        "strong_answer_signals": ["Practical hands-on training design","Competency assessment not just attendance","Post-training accuracy measured"],
-        "avoid": ["Slideshow only with no practical element","No assessment of understanding"] }},
-    { "id": "ica_b_012", "category": "behavioral", "seniority": ["mid","senior"],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Assessed training gap: new SOP, new system, new hires",
+          "Training design: hands-on, location-based, competency sign-off",
+          "Accuracy improvement post-training and knowledge retention checks"
+        ],
+        "strong_answer_signals": [
+          "Practical hands-on training design",
+          "Competency assessment not just attendance",
+          "Post-training accuracy measured"
+        ],
+        "avoid": [
+          "Slideshow only with no practical element",
+          "No assessment of understanding"
+        ]
+      }
+    },
+    {
+      "id": "ica_b_012",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
       "text": "Describe a time you introduced a new inventory control process that faced resistance from the warehouse team.",
-      "answer_framework": { "structure": "STAR",
-        "key_points": ["Understood source of resistance: extra work, distrust, unclear benefit", "Involved team in design and piloted with willing participants first", "Demonstrated benefit with data; rolled out with team champions"],
-        "strong_answer_signals": ["Diagnosed resistance before responding","Inclusive pilot approach","Data-demonstrated benefit before full rollout"],
-        "avoid": ["Mandated without engagement","Abandoned change due to resistance"] }}
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Understood source of resistance: extra work, distrust, unclear benefit",
+          "Involved team in design and piloted with willing participants first",
+          "Demonstrated benefit with data; rolled out with team champions"
+        ],
+        "strong_answer_signals": [
+          "Diagnosed resistance before responding",
+          "Inclusive pilot approach",
+          "Data-demonstrated benefit before full rollout"
+        ],
+        "avoid": [
+          "Mandated without engagement",
+          "Abandoned change due to resistance"
+        ]
+      }
+    }
   ]
 }

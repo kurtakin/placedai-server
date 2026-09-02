@@ -1,0 +1,454 @@
+{
+  "metadata": {
+    "generated": "2026-08-30",
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "motivation",
+      "situational",
+      "technical"
+    ],
+    "sector": "Music Audio Production",
+    "total": 15
+  },
+  "questions": [
+    {
+      "text": "Walk me through your signal flow from microphone input to the finished DAW session. How do you approach recording setup in Pro Tools, Logic Pro, or Ableton Live?",
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Understands signal chain",
+          "Clean gain staging",
+          "Noise awareness"
+        ],
+        "key_points": [
+          "Established proper signal path",
+          "Set gain staging correctly",
+          "Configured DAW input routing",
+          "Monitored for noise and distortion"
+        ],
+        "structure": "STAR",
+        "avoid": [
+          "Ignores gain staging",
+          "No monitoring plan",
+          "Poor routing decisions"
+        ]
+      },
+      "category": "technical",
+      "id": "ma_001",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "text": "Describe your mixing process for a dense multi-track session. How do you approach balances, EQ, and dynamics?",
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Systematic workflow",
+          "Sonic awareness",
+          "Technical proficiency"
+        ],
+        "key_points": [
+          "Organized session and created rough mix",
+          "Applied EQ and dynamic processing",
+          "Used automation for movement",
+          "Polished with bus processing and master"
+        ],
+        "structure": "STAR",
+        "avoid": [
+          "Starts without plan",
+          "Ignores gain staging",
+          "No automation thought"
+        ]
+      },
+      "category": "technical",
+      "id": "ma_002",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "text": "What is your mastering workflow and how does it differ from mixing? Walk me through preparing a track for release.",
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Understands loudness standards",
+          "Reference checking",
+          "Format awareness"
+        ],
+        "key_points": [
+          "Assessed mixes for balance",
+          "Applied EQ and compression",
+          "Checked loudness and dynamics",
+          "Exported in correct formats"
+        ],
+        "structure": "STAR",
+        "avoid": [
+          "Over-compresses",
+          "Ignores format requirements",
+          "No reference comparison"
+        ]
+      },
+      "category": "technical",
+      "id": "ma_003",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "text": "How do you set up and execute a high-quality vocal recording session?",
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Performance focus",
+          "Technical precision",
+          "Artist management"
+        ],
+        "key_points": [
+          "Prepared session and headphone mix",
+          "Selected and positioned microphone",
+          "Established performance comfort",
+          "Monitored levels and noise throughout"
+        ],
+        "structure": "STAR",
+        "avoid": [
+          "Poor mic selection",
+          "Ignores headphone mix",
+          "No noise management"
+        ]
+      },
+      "category": "technical",
+      "id": "ma_004",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "text": "How do you choose the right microphone for different recording situations?",
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Mic knowledge",
+          "Context-aware selection",
+          "Technical understanding"
+        ],
+        "key_points": [
+          "Assessed source and environment",
+          "Matched polar pattern to need",
+          "Considered frequency and transient response",
+          "Tested and compared options"
+        ],
+        "structure": "STAR",
+        "avoid": [
+          "Uses same mic always",
+          "Ignores environment",
+          "Polar pattern mistakes"
+        ]
+      },
+      "category": "technical",
+      "id": "ma_005",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "text": "Describe a time you designed original sound effects for a visual project. Walk me through your sound design process.",
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Creative approach",
+          "Technical processing skills",
+          "Storytelling mindset"
+        ],
+        "key_points": [
+          "Analyzed visual and emotional needs",
+          "Layered source recordings creatively",
+          "Processed with effects and synthesis",
+          "Integrated with picture sync"
+        ],
+        "structure": "STAR",
+        "avoid": [
+          "Uses stock sounds only",
+          "No layering strategy",
+          "Ignores sync needs"
+        ]
+      },
+      "category": "behavioral",
+      "id": "ma_006",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "text": "How do you use MIDI and virtual instruments to create realistic-sounding musical parts?",
+      "answer_framework": {
+        "strong_answer_signals": [
+          "MIDI programming skill",
+          "Instrument knowledge",
+          "Humanization technique"
+        ],
+        "key_points": [
+          "Programmed or recorded MIDI data",
+          "Selected appropriate virtual instruments",
+          "Edited velocity and timing for realism",
+          "Added humanization and expression"
+        ],
+        "structure": "STAR",
+        "avoid": [
+          "Leaves everything default",
+          "Ignores velocity",
+          "No humanization"
+        ]
+      },
+      "category": "technical",
+      "id": "ma_007",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "text": "Walk me through setting up and managing live sound for a small venue performance. What is your typical signal flow?",
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Live sound competence",
+          "Quick problem solving",
+          "Ears-on mixing"
+        ],
+        "key_points": [
+          "Assessed venue acoustics andPA system",
+          "Set up signal routing and gain",
+          "Monitored and mixed during performance",
+          "Managed feedback and issues in real time"
+        ],
+        "structure": "STAR",
+        "avoid": [
+          "Poor gain structure",
+          "No monitor plan",
+          "Ignores feedback"
+        ]
+      },
+      "category": "technical",
+      "id": "ma_008",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "text": "A client needs a podcast episode edited and delivered within 4 hours for an urgent release. How do you handle this?",
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Efficiency mindset",
+          "Quality under pressure",
+          "Clear communication"
+        ],
+        "key_points": [
+          "Prioritized critical editing steps",
+          "Used templates and shortcuts",
+          "Managed quality vs speed tradeoff",
+          "Communicated timeline to client"
+        ],
+        "structure": "STAR",
+        "avoid": [
+          "Rushes without QC",
+          "Misses deadlines",
+          "No client communication"
+        ]
+      },
+      "category": "situational",
+      "id": "ma_009",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ]
+    },
+    {
+      "text": "Why did you pursue a career in music and audio production? What drives your passion for this craft?",
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Genuine passion",
+          "Persistent curiosity",
+          "Concrete examples"
+        ],
+        "key_points": [
+          "Connected personal story to audio passion",
+          "Showed evidence of dedication and growth",
+          "Shared specific experiences that shaped path",
+          "Articulated future goals in the field"
+        ],
+        "structure": "STAR",
+        "avoid": [
+          "Generic answers",
+          "No personal connection",
+          "Lacks specific stories"
+        ]
+      },
+      "category": "motivation",
+      "id": "ma_010",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "text": "How does music theory inform your production and arrangement decisions?",
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Theory application",
+          "Arrangement skill",
+          "Practical knowledge"
+        ],
+        "key_points": [
+          "Used theory for harmonic choices",
+          "Applied arrangement principles",
+          "Made chord voicings and inversions",
+          "Balanced melody harmony rhythm"
+        ],
+        "structure": "STAR",
+        "avoid": [
+          "Ignores theory",
+          "No harmonic planning",
+          "Arrangement chaos"
+        ]
+      },
+      "category": "technical",
+      "id": "ma_011",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "text": "Tell me about your experience composing or producing a soundtrack for a film, TV, or game project. How did you approach it?",
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Creative vision",
+          "Technical delivery",
+          "Collaborative approach"
+        ],
+        "key_points": [
+          "Analyzed brief and emotional requirements",
+          "Developed themes and motifs",
+          "Created temp cues and iterated",
+          "Delivered in required formats"
+        ],
+        "structure": "STAR",
+        "avoid": [
+          "No thematic development",
+          "Ignores brief",
+          "Delivery format errors"
+        ]
+      },
+      "category": "behavioral",
+      "id": "ma_012",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "text": "Describe your approach to creating and mixing audio specifically for video games or interactive media.",
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Interactive audio knowledge",
+          "Middleware familiarity",
+          "Technical planning"
+        ],
+        "key_points": [
+          "Understood interactive audio needs",
+          "Created sound banks or layers",
+          "Managed middleware integration",
+          "Balanced audio for game engines"
+        ],
+        "structure": "STAR",
+        "avoid": [
+          "Treats it like linear media",
+          "Ignores middleware",
+          "No layer planning"
+        ]
+      },
+      "category": "behavioral",
+      "id": "ma_013",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ]
+    },
+    {
+      "text": "Explain your understanding of audio signal flow from source to speaker. How do you troubleshoot signal chain issues?",
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Systematic troubleshooting",
+          "Technical knowledge",
+          "Proper grounding practice"
+        ],
+        "key_points": [
+          "Traced signal path systematically",
+          "Identified gain and impedance issues",
+          "Used proper connection methods",
+          "Tested each stage independently"
+        ],
+        "structure": "STAR",
+        "avoid": [
+          "Random changes",
+          "Ignores grounding",
+          "No test method"
+        ]
+      },
+      "category": "technical",
+      "id": "ma_014",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "text": "When setting up a project studio, how do you approach acoustic treatment and monitoring to ensure accurate playback?",
+      "answer_framework": {
+        "strong_answer_signals": [
+          "Acoustic knowledge",
+          "Speaker placement skill",
+          "Reference monitoring focus"
+        ],
+        "key_points": [
+          "Assessed room dimensions and issues",
+          "Selected appropriate acoustic treatment",
+          "Positioned speakers and listening position",
+          "Calibrated monitor levels"
+        ],
+        "structure": "STAR",
+        "avoid": [
+          "Ignores room acoustics",
+          "Poor speaker placement",
+          "No calibration"
+        ]
+      },
+      "category": "technical",
+      "id": "ma_015",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ]
+    }
+  ]
+}

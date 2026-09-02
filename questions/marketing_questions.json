@@ -1,0 +1,781 @@
+{
+  "metadata": {
+    "sector": "Marketing & Digital Marketing",
+    "generated": "2026-08-30",
+    "total": 30,
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ]
+  },
+  "questions": [
+    {
+      "id": "mk_001",
+      "text": "Tell me about a campaign that failed. What did you learn?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Campaign launched",
+          "Metrics disappointed",
+          "Root cause identified",
+          "Iterated"
+        ],
+        "strong_answer_signals": [
+          "Failed fast",
+          "Insights applied"
+        ],
+        "avoid": [
+          "Blamed team",
+          "No post-mortem"
+        ]
+      }
+    },
+    {
+      "id": "mk_002",
+      "text": "How do you define success metrics for a marketing campaign?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Aligned to business goals",
+          "KPIs defined upfront",
+          "Baseline established",
+          "Attribution set"
+        ],
+        "strong_answer_signals": [
+          "SMART metrics",
+          "ROI measurable"
+        ],
+        "avoid": [
+          "Vanity metrics only",
+          "No baseline"
+        ]
+      }
+    },
+    {
+      "id": "mk_003",
+      "text": "How do you segment an audience for a targeted campaign?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Demographic and behavioral data",
+          "Pain points identified",
+          "Personalization strategy",
+          "Segments tested"
+        ],
+        "strong_answer_signals": [
+          "Data-driven segments",
+          "Conversion improved"
+        ],
+        "avoid": [
+          "One-size-fits-all",
+          "No data"
+        ]
+      }
+    },
+    {
+      "id": "mk_004",
+      "text": "Tell me about aligning marketing with sales on lead quality.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Defined lead scoring",
+          "Jointly reviewed criteria",
+          "Shared feedback loop",
+          "Improved handoff"
+        ],
+        "strong_answer_signals": [
+          "Lead quality improved",
+          "Trust built"
+        ],
+        "avoid": [
+          "Blamed sales",
+          "Siloed work"
+        ]
+      }
+    },
+    {
+      "id": "mk_005",
+      "text": "How do you handle a brand crisis on social media?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Acknowledged quickly",
+          "Took responsibility",
+          "Communicated transparently",
+          "Corrective action taken"
+        ],
+        "strong_answer_signals": [
+          "Rapid response",
+          "Empathy shown"
+        ],
+        "avoid": [
+          "Deleted comments",
+          "Ignored it"
+        ]
+      }
+    },
+    {
+      "id": "mk_006",
+      "text": "Describe your approach to content marketing strategy.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Audience research",
+          "Content pillars defined",
+          "Editorial calendar",
+          "Distribution plan"
+        ],
+        "strong_answer_signals": [
+          "Content drove traffic",
+          "Consistent publishing"
+        ],
+        "avoid": [
+          "No strategy",
+          "No distribution"
+        ]
+      }
+    },
+    {
+      "id": "mk_007",
+      "text": "How do you evaluate ROI for a marketing channel?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Attribution model chosen",
+          "CAC calculated",
+          "LTV factored",
+          "Tested and scaled"
+        ],
+        "strong_answer_signals": [
+          "Channel scaled profitably"
+        ],
+        "avoid": [
+          "Only looked at clicks",
+          "No attribution"
+        ]
+      }
+    },
+    {
+      "id": "mk_008",
+      "text": "Tell me about launching a product with no marketing budget.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Leveraged organic channels",
+          "Partnered for co-marketing",
+          "Created viral mechanics",
+          "Measured traction"
+        ],
+        "strong_answer_signals": [
+          "Zero budget growth",
+          "Community built"
+        ],
+        "avoid": [
+          "Waited for budget",
+          "Complained"
+        ]
+      }
+    },
+    {
+      "id": "mk_009",
+      "text": "How do you run an A/B test effectively?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Hypothesis defined",
+          "One variable",
+          "Statistical significance",
+          "Sample size calculated"
+        ],
+        "strong_answer_signals": [
+          "Valid conclusions",
+          "Actionable insights"
+        ],
+        "avoid": [
+          "No hypothesis",
+          "Peeking early"
+        ]
+      }
+    },
+    {
+      "id": "mk_010",
+      "text": "How do you prioritize brand building vs performance marketing?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Business stage considered",
+          "Short vs long-term",
+          "Budget split",
+          "Both measured"
+        ],
+        "strong_answer_signals": [
+          "Balanced approach"
+        ],
+        "avoid": [
+          "Ignored one entirely"
+        ]
+      }
+    },
+    {
+      "id": "mk_011",
+      "text": "Describe your experience with marketing automation.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Platform used",
+          "Funnel mapped",
+          "Email sequences",
+          "Lead nurturing"
+        ],
+        "strong_answer_signals": [
+          "Automation improved efficiency"
+        ],
+        "avoid": [
+          "Bought platform unused",
+          "No strategy"
+        ]
+      }
+    },
+    {
+      "id": "mk_012",
+      "text": "Tell me about a time you disagreed with the CMO or VP of Marketing.",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Understood perspective",
+          "Presented data-driven alternative",
+          "Compromised or convinced"
+        ],
+        "strong_answer_signals": [
+          "Respectful disagreement",
+          "Outcome achieved"
+        ],
+        "avoid": [
+          "Public confrontation",
+          "Resigned"
+        ]
+      }
+    },
+    {
+      "id": "mk_013",
+      "text": "How do you approach competitive analysis for a product launch?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Competitors identified",
+          "Positioning analyzed",
+          "Differentiation found",
+          "Positioning defined"
+        ],
+        "strong_answer_signals": [
+          "Clear positioning"
+        ],
+        "avoid": [
+          "No competitor analysis",
+          "No differentiation"
+        ]
+      }
+    },
+    {
+      "id": "mk_014",
+      "text": "How do you build a marketing strategy from scratch for a new product?",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Market research",
+          "Target persona",
+          "Positioning",
+          "Channel strategy",
+          "KPIs"
+        ],
+        "strong_answer_signals": [
+          "Complete strategy",
+          "Stakeholder buy-in"
+        ],
+        "avoid": [
+          "No research",
+          "No KPIs"
+        ]
+      }
+    },
+    {
+      "id": "mk_015",
+      "text": "Tell me about pivoting your marketing strategy mid-campaign.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Recognized need to pivot",
+          "Data triggered pivot",
+          "Communicated to stakeholders",
+          "New approach executed"
+        ],
+        "strong_answer_signals": [
+          "Agile response",
+          "Data-backed pivot"
+        ],
+        "avoid": [
+          "Stuck on failing plan"
+        ]
+      }
+    },
+    {
+      "id": "mk_016",
+      "text": "How do you handle creative disagreements with the design team?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Shared the brief",
+          "Respected design expertise",
+          "Focused on user needs",
+          "Data-informed decisions"
+        ],
+        "strong_answer_signals": [
+          "Collaborative process"
+        ],
+        "avoid": [
+          "Overruled without reason",
+          "Micromanaged design"
+        ]
+      }
+    },
+    {
+      "id": "mk_017",
+      "text": "Describe your approach to SEO strategy.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Keyword research",
+          "Content optimization",
+          "Technical SEO",
+          "Link building",
+          "Performance tracking"
+        ],
+        "strong_answer_signals": [
+          "Organic traffic grew"
+        ],
+        "avoid": [
+          "Keyword stuffing",
+          "Black hat tactics"
+        ]
+      }
+    },
+    {
+      "id": "mk_018",
+      "text": "How do you measure brand awareness?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Aided and unaided recall",
+          "Share of voice",
+          "Direct traffic",
+          "Social mentions"
+        ],
+        "strong_answer_signals": [
+          "Multiple signals tracked"
+        ],
+        "avoid": [
+          "Only impressions",
+          "Vanity metrics"
+        ]
+      }
+    },
+    {
+      "id": "mk_019",
+      "text": "Tell me about a cross-functional campaign you led.",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Aligned product, sales, marketing",
+          "Shared timeline",
+          "Regular syncs",
+          "Campaign launched"
+        ],
+        "strong_answer_signals": [
+          "Cross-team collaboration"
+        ],
+        "avoid": [
+          "Marketing only",
+          "No alignment"
+        ]
+      }
+    },
+    {
+      "id": "mk_020",
+      "text": "Why marketing? What keeps you in this field?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Impact on business",
+          "Creative expression",
+          "Data-driven decisions",
+          "Constant evolution"
+        ],
+        "strong_answer_signals": [
+          "Specific campaign stories",
+          "Always learning"
+        ],
+        "avoid": [
+          "Only about title",
+          "No specific interest"
+        ]
+      }
+    },
+    {
+      "id": "mk_021",
+      "text": "How do you approach demand generation vs lead generation?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Top-of-funnel awareness",
+          "Middle nurture",
+          "Bottom conversion",
+          "Full-funnel view"
+        ],
+        "strong_answer_signals": [
+          "Funnel mapped",
+          "Pipeline impact shown"
+        ],
+        "avoid": [
+          "Only did lead gen",
+          "No full-funnel view"
+        ]
+      }
+    },
+    {
+      "id": "mk_022",
+      "text": "How do you handle underperforming paid ads?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Audited targeting and creative",
+          "Checked attribution",
+          "Optimized bids",
+          "Paused or scaled"
+        ],
+        "strong_answer_signals": [
+          "Data-driven decisions"
+        ],
+        "avoid": [
+          "Let it run wasting budget"
+        ]
+      }
+    },
+    {
+      "id": "mk_023",
+      "text": "Tell me about building a brand from scratch.",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Defined brand purpose",
+          "Visual identity",
+          "Voice and tone guidelines",
+          "Consistent application",
+          "Internal buy-in"
+        ],
+        "strong_answer_signals": [
+          "Clear brand identity"
+        ],
+        "avoid": [
+          "No brand guidelines",
+          "Inconsistent messaging"
+        ]
+      }
+    },
+    {
+      "id": "mk_024",
+      "text": "Describe your experience with marketing analytics and dashboards.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Tools used (GA, Mixpanel)",
+          "Dashboards built",
+          "Attribution models",
+          "Insights communicated"
+        ],
+        "strong_answer_signals": [
+          "Data-informed decisions"
+        ],
+        "avoid": [
+          "No analytics",
+          "Dashboard unused"
+        ]
+      }
+    },
+    {
+      "id": "mk_025",
+      "text": "How do you ensure marketing campaigns comply with regulations (GDPR, CAN-SPAM)?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Legal requirements understood",
+          "Consent mechanisms",
+          "Data handling policy",
+          "Regular audits"
+        ],
+        "strong_answer_signals": [
+          "Compliance verified",
+          "Privacy respected"
+        ],
+        "avoid": [
+          "Ignored regulations"
+        ]
+      }
+    },
+    {
+      "id": "mk_026",
+      "text": "Tell me about turning around a negative customer perception.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identified the perception gap",
+          "Listened to feedback",
+          "Changed messaging or product",
+          "Measured improvement"
+        ],
+        "strong_answer_signals": [
+          "Customer trust restored"
+        ],
+        "avoid": [
+          "Dismissed feedback",
+          "Blamed customers"
+        ]
+      }
+    },
+    {
+      "id": "mk_027",
+      "text": "How do you decide which social media channels to focus on?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Audience presence",
+          "Platform strengths",
+          "Resource availability",
+          "Competitor presence"
+        ],
+        "strong_answer_signals": [
+          "Focused on right channels",
+          "Results tracked"
+        ],
+        "avoid": [
+          "On every platform",
+          "FOMO-driven"
+        ]
+      }
+    },
+    {
+      "id": "mk_028",
+      "text": "How do you build an email marketing strategy?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Segmentation",
+          "Personalization",
+          "Timing optimization",
+          "A/B testing subject lines",
+          "Unsubscribe handling"
+        ],
+        "strong_answer_signals": [
+          "High open and click rates",
+          "Low unsubscribe"
+        ],
+        "avoid": [
+          "Blast emails to all"
+        ]
+      }
+    },
+    {
+      "id": "mk_029",
+      "text": "Tell me about a time you had to do more with less in marketing.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Audit existing resources",
+          "Repurposed content",
+          "Automated processes",
+          "Leveraged partnerships"
+        ],
+        "strong_answer_signals": [
+          "Creative resourcefulness"
+        ],
+        "avoid": [
+          "Complained about budget",
+          "Did nothing"
+        ]
+      }
+    },
+    {
+      "id": "mk_030",
+      "text": "What is your approach to integrated marketing communications?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Unified messaging",
+          "Channel coordination",
+          "Consistent brand voice",
+          "Measurement across channels"
+        ],
+        "strong_answer_signals": [
+          "Seamless customer experience"
+        ],
+        "avoid": [
+          "Each channel different message"
+        ]
+      }
+    }
+  ]
+}

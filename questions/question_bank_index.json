@@ -1,121 +1,1024 @@
 {
   "metadata": {
     "description": "Master index for the Interview Aid App question bank",
-    "generated": "2026-04-19",
-    "grand_total": 484,
-    "total_files": 10,
-    "schema_version": "1.0"
+    "generated": "2026-09-02",
+    "grand_total": 1579,
+    "total_files": 51,
+    "schema_version": "1.1"
   },
   "files": [
     {
-      "file": "supply_chain_questions.json",
-      "sector": "Supply Chain & Logistics",
-      "total": 46,
-      "categories": ["behavioral","manager","motivation","situational","technical"],
-      "seniority_levels": ["entry","manager","mid","senior"]
+      "file": "accounting_questions.json",
+      "sector": "Accounting & Bookkeeping",
+      "total": 40,
+      "categories": [
+        "behavioral"
+      ],
+      "seniority_levels": [
+        "entry",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "agriculture_farm_management_questions.json",
+      "sector": "Agriculture and Farm Management",
+      "total": 15,
+      "categories": [
+        "behavioral",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "ai_ml_engineering_questions.json",
+      "sector": "AI / ML Engineering",
+      "total": 35,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "bioinformatics_questions.json",
+      "sector": "Bioinformatics",
+      "total": 20,
+      "categories": [
+        "behavioral",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "cloud_devops_questions.json",
+      "sector": "Cloud Engineering / DevOps",
+      "total": 35,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "construction_building_trades_questions.json",
+      "sector": "Construction and Building Trades",
+      "total": 20,
+      "categories": [
+        "behavioral",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "consulting_questions.json",
+      "sector": "Management Consulting",
+      "total": 25,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "content_creation_questions.json",
+      "sector": "Content Creation",
+      "total": 20,
+      "categories": [
+        "behavioral",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "customer_service_questions.json",
+      "sector": "Customer Service & Support",
+      "total": 25,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "customer_success_questions.json",
+      "sector": "Customer Success",
+      "total": 20,
+      "categories": [
+        "behavioral",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "cybersecurity_questions.json",
+      "sector": "Cybersecurity / Information Security",
+      "total": 35,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "data_analyst_questions.json",
+      "sector": "Data Analyst",
+      "total": 29,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "data_engineering_questions.json",
+      "sector": "Data Engineering",
+      "total": 35,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "data_scientist_questions.json",
+      "sector": "Data Scientist",
+      "total": 35,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "education_leadership_questions.json",
+      "sector": "Education Leadership",
+      "total": 25,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "field_technical_questions.json",
+      "sector": "Field and Technical Professions",
+      "total": 29,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
     },
     {
       "file": "finance_questions.json",
       "sector": "Finance",
       "total": 46,
-      "categories": ["behavioral","manager","motivation","situational","technical"],
-      "seniority_levels": ["entry","manager","mid","senior"]
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "graphic_design_questions.json",
+      "sector": "Graphic Design",
+      "total": 20,
+      "categories": [
+        "behavioral",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "healthcare_administrator_questions.json",
+      "sector": "Healthcare Services Administrator",
+      "total": 28,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "healthcare_clinical_questions.json",
+      "sector": "Healthcare Clinical (NP, PA, Pharmacy)",
+      "total": 30,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "healthcare_support_questions.json",
+      "sector": "Healthcare Support (CNA, MA, PCT)",
+      "total": 46,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid"
+      ]
+    },
+    {
+      "file": "hr_questions.json",
+      "sector": "Human Resources & Recruiting",
+      "total": 25,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "insurance_questions.json",
+      "sector": "Insurance",
+      "total": 30,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "inventory_analyst_questions.json",
+      "sector": "Inventory Analyst",
+      "total": 23,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "inventory_control_analyst_questions.json",
+      "sector": "Inventory Control Analyst",
+      "total": 37,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "inventory_planner_questions.json",
+      "sector": "Inventory Planner",
+      "total": 23,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "legal_lawyer_questions.json",
+      "sector": "Legal (Lawyer)",
+      "total": 33,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "legal_paralegal_questions.json",
+      "sector": "Legal & Paralegal",
+      "total": 25,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "logistics_questions.json",
+      "sector": "Logistics & Transportation",
+      "total": 28,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "marketing_questions.json",
+      "sector": "Marketing & Digital Marketing",
+      "total": 30,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "music_audio_questions.json",
+      "sector": "Music Audio Production",
+      "total": 15,
+      "categories": [
+        "behavioral",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "nursing_questions.json",
+      "sector": "Nursing (Registered Nurse)",
+      "total": 48,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "operations_manager_questions.json",
+      "sector": "General & Operations Management",
+      "total": 46,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "manager",
+        "mid",
+        "senior"
+      ]
     },
     {
       "file": "operations_questions.json",
       "sector": "Operations & Manufacturing",
       "total": 46,
-      "categories": ["behavioral","manager","motivation","situational","technical"],
-      "seniority_levels": ["entry","manager","mid","senior"]
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "product_management_questions.json",
+      "sector": "Product Management",
+      "total": 30,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "product_marketing_questions.json",
+      "sector": "Product Marketing",
+      "total": 20,
+      "categories": [
+        "behavioral",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "project_management_questions.json",
+      "sector": "Project & Program Management",
+      "total": 25,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "qa_testing_questions.json",
+      "sector": "QA / Testing",
+      "total": 20,
+      "categories": [
+        "behavioral",
+        "manager",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "real_estate_agent_questions.json",
+      "sector": "Real Estate Agent",
+      "total": 20,
+      "categories": [
+        "behavioral",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "real_estate_questions.json",
+      "sector": "Real Estate & Property Management",
+      "total": 20,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "recruiting_talent_acquisition_questions.json",
+      "sector": "Recruiting / Talent Acquisition",
+      "total": 20,
+      "categories": [
+        "behavioral",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "sales_questions.json",
+      "sector": "Sales & Customer Management",
+      "total": 25,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "software_engineering_questions.json",
+      "sector": "Software Engineering",
+      "total": 40,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "supply_chain_questions.json",
+      "sector": "Supply Chain & Logistics",
+      "total": 46,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "sustainability_questions.json",
+      "sector": "Sustainability / ESG / Climate",
+      "total": 30,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "teaching_questions.json",
+      "sector": "Teaching and Education",
+      "total": 48,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "technical_writing_questions.json",
+      "sector": "Technical Writing",
+      "total": 20,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "technology_questions.json",
+      "sector": "Technology",
+      "total": 35,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
     },
     {
       "file": "universal_behavioral_questions.json",
       "sector": "Universal Behavioral",
       "total": 108,
-      "categories": ["behavioral"],
-      "seniority_levels": ["entry","manager","mid","senior"]
+      "categories": [
+        "behavioral"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
     },
     {
-      "file": "technology_questions.json",
-      "sector": "Technology",
-      "total": 40,
-      "categories": ["behavioral","manager","motivation","situational","technical"],
-      "seniority_levels": ["entry","manager","mid","senior"]
+      "file": "ux_ui_questions.json",
+      "sector": "UX/UI Design",
+      "total": 30,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
     },
     {
-      "file": "data_analyst_questions.json",
-      "sector": "Data Analyst",
-      "total": 40,
-      "categories": ["behavioral","manager","motivation","situational","technical"],
-      "seniority_levels": ["entry","manager","mid","senior"]
-    },
-    {
-      "file": "logistics_questions.json",
-      "sector": "Logistics & Transportation",
-      "total": 40,
-      "categories": ["behavioral","manager","motivation","situational","technical"],
-      "seniority_levels": ["entry","manager","mid","senior"]
-    },
-    {
-      "file": "inventory_planner_questions.json",
-      "sector": "Inventory Planner",
-      "total": 38,
-      "categories": ["behavioral","manager","motivation","situational","technical"],
-      "seniority_levels": ["entry","manager","mid","senior"]
-    },
-    {
-      "file": "inventory_analyst_questions.json",
-      "sector": "Inventory Analyst",
-      "total": 38,
-      "categories": ["behavioral","manager","motivation","situational","technical"],
-      "seniority_levels": ["entry","manager","mid","senior"]
-    },
-    {
-      "file": "inventory_control_analyst_questions.json",
-      "sector": "Inventory Control Analyst",
-      "total": 42,
-      "categories": ["behavioral","manager","motivation","situational","technical"],
-      "seniority_levels": ["entry","manager","mid","senior"]
+      "file": "video_film_production_questions.json",
+      "sector": "Video Film Production",
+      "total": 20,
+      "categories": [
+        "behavioral",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
     }
   ],
   "sector_tags": {
-    "supply_chain":         "supply_chain_questions.json",
-    "finance":              "finance_questions.json",
-    "operations":           "operations_questions.json",
+    "supply_chain": "supply_chain_questions.json",
+    "finance": "finance_questions.json",
+    "operations": "operations_questions.json",
     "universal_behavioral": "universal_behavioral_questions.json",
-    "technology":           "technology_questions.json",
-    "data_analyst":         "data_analyst_questions.json",
-    "logistics":            "logistics_questions.json",
-    "inventory_planner":    "inventory_planner_questions.json",
-    "inventory_analyst":         "inventory_analyst_questions.json",
-    "inventory_control_analyst": "inventory_control_analyst_questions.json"
+    "technology": "technology_questions.json",
+    "data_analyst": "data_analyst_questions.json",
+    "logistics": "logistics_questions.json",
+    "inventory_planner": "inventory_planner_questions.json",
+    "inventory_analyst": "inventory_analyst_questions.json",
+    "inventory_control_analyst": "inventory_control_analyst_questions.json",
+    "nursing": "nursing_questions.json",
+    "operations_manager": "operations_manager_questions.json",
+    "healthcare_support": "healthcare_support_questions.json",
+    "customer_service": "customer_service_questions.json",
+    "accounting": "accounting_questions.json",
+    "hr": "hr_questions.json",
+    "project_management": "project_management_questions.json",
+    "consulting": "consulting_questions.json",
+    "sales": "sales_questions.json"
   },
   "category_index": {
     "behavioral": [
-      "supply_chain_questions.json","finance_questions.json","operations_questions.json",
-      "universal_behavioral_questions.json","technology_questions.json",
-      "data_analyst_questions.json","logistics_questions.json",
-      "inventory_planner_questions.json","inventory_analyst_questions.json","inventory_control_analyst_questions.json"
+      "supply_chain_questions.json",
+      "finance_questions.json",
+      "operations_questions.json",
+      "universal_behavioral_questions.json",
+      "technology_questions.json",
+      "data_analyst_questions.json",
+      "logistics_questions.json",
+      "inventory_planner_questions.json",
+      "inventory_analyst_questions.json",
+      "inventory_control_analyst_questions.json",
+      "nursing_questions.json",
+      "operations_manager_questions.json",
+      "healthcare_support_questions.json",
+      "customer_service_questions.json",
+      "accounting_questions.json",
+      "hr_questions.json",
+      "project_management_questions.json",
+      "consulting_questions.json",
+      "sales_questions.json"
     ],
     "technical": [
-      "supply_chain_questions.json","finance_questions.json","operations_questions.json",
-      "technology_questions.json","data_analyst_questions.json","logistics_questions.json",
-      "inventory_planner_questions.json","inventory_analyst_questions.json","inventory_control_analyst_questions.json"
+      "supply_chain_questions.json",
+      "finance_questions.json",
+      "operations_questions.json",
+      "technology_questions.json",
+      "data_analyst_questions.json",
+      "logistics_questions.json",
+      "inventory_planner_questions.json",
+      "inventory_analyst_questions.json",
+      "inventory_control_analyst_questions.json",
+      "nursing_questions.json",
+      "operations_manager_questions.json",
+      "healthcare_support_questions.json",
+      "customer_service_questions.json",
+      "accounting_questions.json",
+      "hr_questions.json",
+      "project_management_questions.json",
+      "consulting_questions.json",
+      "sales_questions.json"
     ],
     "situational": [
-      "supply_chain_questions.json","finance_questions.json","operations_questions.json",
-      "technology_questions.json","data_analyst_questions.json","logistics_questions.json",
-      "inventory_planner_questions.json","inventory_analyst_questions.json","inventory_control_analyst_questions.json"
+      "supply_chain_questions.json",
+      "finance_questions.json",
+      "operations_questions.json",
+      "technology_questions.json",
+      "data_analyst_questions.json",
+      "logistics_questions.json",
+      "inventory_planner_questions.json",
+      "inventory_analyst_questions.json",
+      "inventory_control_analyst_questions.json",
+      "nursing_questions.json",
+      "operations_manager_questions.json",
+      "healthcare_support_questions.json",
+      "customer_service_questions.json",
+      "accounting_questions.json",
+      "hr_questions.json",
+      "project_management_questions.json",
+      "consulting_questions.json",
+      "sales_questions.json"
     ],
     "motivation": [
-      "supply_chain_questions.json","finance_questions.json","operations_questions.json",
-      "technology_questions.json","data_analyst_questions.json","logistics_questions.json",
-      "inventory_planner_questions.json","inventory_analyst_questions.json","inventory_control_analyst_questions.json"
+      "supply_chain_questions.json",
+      "finance_questions.json",
+      "operations_questions.json",
+      "technology_questions.json",
+      "data_analyst_questions.json",
+      "logistics_questions.json",
+      "inventory_planner_questions.json",
+      "inventory_analyst_questions.json",
+      "inventory_control_analyst_questions.json",
+      "nursing_questions.json",
+      "operations_manager_questions.json",
+      "healthcare_support_questions.json",
+      "accounting_questions.json",
+      "hr_questions.json",
+      "project_management_questions.json",
+      "consulting_questions.json",
+      "sales_questions.json",
+      "customer_service_questions.json"
     ],
     "manager": [
-      "supply_chain_questions.json","finance_questions.json","operations_questions.json",
-      "technology_questions.json","data_analyst_questions.json","logistics_questions.json",
-      "inventory_planner_questions.json","inventory_analyst_questions.json","inventory_control_analyst_questions.json"
+      "supply_chain_questions.json",
+      "finance_questions.json",
+      "operations_questions.json",
+      "technology_questions.json",
+      "data_analyst_questions.json",
+      "logistics_questions.json",
+      "inventory_planner_questions.json",
+      "inventory_analyst_questions.json",
+      "inventory_control_analyst_questions.json",
+      "nursing_questions.json",
+      "operations_manager_questions.json",
+      "healthcare_support_questions.json",
+      "customer_service_questions.json",
+      "accounting_questions.json",
+      "hr_questions.json",
+      "project_management_questions.json",
+      "consulting_questions.json",
+      "sales_questions.json"
     ]
   }
 }

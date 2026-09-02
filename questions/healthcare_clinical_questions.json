@@ -1,0 +1,798 @@
+{
+  "metadata": {
+    "sector": "Healthcare Clinical (NP, PA, Pharmacy)",
+    "generated": "2026-08-30",
+    "total": 30,
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ]
+  },
+  "questions": [
+    {
+      "id": "hcc_001",
+      "text": "Tell me about a time you managed a difficult patient case.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Case complexity assessed",
+          "Interdisciplinary collaboration",
+          "Patient-centered care",
+          "Outcome achieved"
+        ],
+        "strong_answer_signals": [
+          "Comprehensive care",
+          "Patient trust built"
+        ],
+        "avoid": [
+          "Dismissed complexity",
+          "No collaboration"
+        ]
+      }
+    },
+    {
+      "id": "hcc_002",
+      "text": "How do you approach medication reconciliation?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Complete medication history",
+          "Cross-referenced sources",
+          "Patient interview",
+          "Discrepancies resolved"
+        ],
+        "strong_answer_signals": [
+          "Errors prevented",
+          "Comprehensive review"
+        ],
+        "avoid": [
+          "Rushed review",
+          "No patient interview"
+        ]
+      }
+    },
+    {
+      "id": "hcc_003",
+      "text": "How do you handle a patient who refuses treatment?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Understood patient concerns",
+          "Explained risks and benefits",
+          "Respected autonomy",
+          "Documented decision"
+        ],
+        "strong_answer_signals": [
+          "Patient autonomy respected",
+          "Clear documentation"
+        ],
+        "avoid": [
+          "Coerced patient",
+          "No documentation"
+        ]
+      }
+    },
+    {
+      "id": "hcc_004",
+      "text": "Tell me about a time you caught a medication error.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Error identified quickly",
+          "Reported appropriately",
+          "Patient safety ensured",
+          "Process improved"
+        ],
+        "strong_answer_signals": [
+          "Patient safety protected",
+          "Systemic fix"
+        ],
+        "avoid": [
+          "Covered up",
+          "No process change"
+        ]
+      }
+    },
+    {
+      "id": "hcc_005",
+      "text": "How do you stay current with clinical guidelines and evidence?",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Guidelines reviewed",
+          "Journals and CME",
+          "Peer discussions",
+          "Evidence-based practice"
+        ],
+        "strong_answer_signals": [
+          "Specific sources named",
+          "Practice updated"
+        ],
+        "avoid": [
+          "Relied on training only",
+          "Outdated practice"
+        ]
+      }
+    },
+    {
+      "id": "hcc_006",
+      "text": "Describe your approach to chronic disease management.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Comprehensive assessment",
+          "Patient education",
+          "Care plan developed",
+          "Outcomes tracked"
+        ],
+        "strong_answer_signals": [
+          "Patient outcomes improved",
+          "Coordinated care"
+        ],
+        "avoid": [
+          "Medication only",
+          "No follow-up"
+        ]
+      }
+    },
+    {
+      "id": "hcc_007",
+      "text": "How do you handle a high-pressure clinical situation?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Stayed calm",
+          "Used systematic approach",
+          "Called for help when needed",
+          "Communicated clearly"
+        ],
+        "strong_answer_signals": [
+          "Good outcome",
+          "Team coordination"
+        ],
+        "avoid": [
+          "Panicked",
+          "No help called"
+        ]
+      }
+    },
+    {
+      "id": "hcc_008",
+      "text": "Tell me about collaborating with physicians and specialists.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Clear communication",
+          "Respected expertise",
+          "Patient-focused",
+          "Followed through"
+        ],
+        "strong_answer_signals": [
+          "Effective collaboration",
+          "Patient care improved"
+        ],
+        "avoid": [
+          "Hierarchical issues",
+          "No follow-through"
+        ]
+      }
+    },
+    {
+      "id": "hcc_009",
+      "text": "How do you approach patient education?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Assessed health literacy",
+          "Used teach-back",
+          "Provided resources",
+          "Family included"
+        ],
+        "strong_answer_signals": [
+          "Patient understood",
+          "Adherence improved"
+        ],
+        "avoid": [
+          "Medical jargon",
+          "No verification"
+        ]
+      }
+    },
+    {
+      "id": "hcc_010",
+      "text": "Why healthcare? What keeps you in this field?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Patient impact",
+          "Intellectual challenge",
+          "Continuous learning",
+          "Helping people"
+        ],
+        "strong_answer_signals": [
+          "Specific patient stories",
+          "Long-term commitment"
+        ],
+        "avoid": [
+          "Only about money",
+          "No specific reason"
+        ]
+      }
+    },
+    {
+      "id": "hcc_011",
+      "text": "How do you handle ethical dilemmas in clinical practice?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Identified ethical issue",
+          "Consulted ethics committee",
+          "Considered all stakeholders",
+          "Documented reasoning"
+        ],
+        "strong_answer_signals": [
+          "Patient-centered resolution",
+          "Clear documentation"
+        ],
+        "avoid": [
+          "Ignored issue",
+          "No consultation"
+        ]
+      }
+    },
+    {
+      "id": "hcc_012",
+      "text": "Tell me about a time you had to deliver bad news to a patient.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Prepared carefully",
+          "Used SPIKES protocol",
+          "Offered support",
+          "Followed up"
+        ],
+        "strong_answer_signals": [
+          "Patient received well",
+          "Support provided"
+        ],
+        "avoid": [
+          "Rushed disclosure",
+          "No support offered"
+        ]
+      }
+    },
+    {
+      "id": "hcc_013",
+      "text": "How do you manage your clinical documentation?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Timely documentation",
+          "Clear and concise",
+          "Compliant with regulations",
+          "Used templates wisely"
+        ],
+        "strong_answer_signals": [
+          "Quality documentation",
+          "Efficient workflow"
+        ],
+        "avoid": [
+          "Late documentation",
+          "Vague notes"
+        ]
+      }
+    },
+    {
+      "id": "hcc_014",
+      "text": "Describe your experience with EHR systems.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Systems used",
+          "Workflow optimization",
+          "Template use",
+          "Efficiency improvements"
+        ],
+        "strong_answer_signals": [
+          "Improved workflow",
+          "Reduced clicks"
+        ],
+        "avoid": [
+          "Struggled with EHR",
+          "No optimization"
+        ]
+      }
+    },
+    {
+      "id": "hcc_015",
+      "text": "How do you approach polypharmacy in elderly patients?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Medication review",
+          "Beers criteria applied",
+          "Deprescribing considered",
+          "Patient goals discussed"
+        ],
+        "strong_answer_signals": [
+          "Reduced medication burden",
+          "Patient-centered"
+        ],
+        "avoid": [
+          "Added more medications",
+          "No review"
+        ]
+      }
+    },
+    {
+      "id": "hcc_016",
+      "text": "Tell me about managing a patient with multiple comorbidities.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Comprehensive assessment",
+          "Prioritized conditions",
+          "Coordinated specialists",
+          "Patient goals aligned"
+        ],
+        "strong_answer_signals": [
+          "Coordinated care",
+          "Patient quality of life"
+        ],
+        "avoid": [
+          "Siloed treatment",
+          "No coordination"
+        ]
+      }
+    },
+    {
+      "id": "hcc_017",
+      "text": "How do you handle a situation where you do not know the answer?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Admitted uncertainty",
+          "Researched or consulted",
+          "Followed up with patient",
+          "Documented"
+        ],
+        "strong_answer_signals": [
+          "Patient safety first",
+          "Honest communication"
+        ],
+        "avoid": [
+          "Made up answer",
+          "Did not follow up"
+        ]
+      }
+    },
+    {
+      "id": "hcc_018",
+      "text": "How do you approach preventive care?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Evidence-based guidelines",
+          "Risk assessment",
+          "Patient counseling",
+          "Follow-up scheduled"
+        ],
+        "strong_answer_signals": [
+          "Preventive services delivered",
+          "Patient outcomes improved"
+        ],
+        "avoid": [
+          "Reactive only",
+          "No follow-up"
+        ]
+      }
+    },
+    {
+      "id": "hcc_019",
+      "text": "Tell me about a time you had to advocate for a patient.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identified patient need",
+          "Navigated system",
+          "Communicated effectively",
+          "Outcome achieved"
+        ],
+        "strong_answer_signals": [
+          "Patient received needed care",
+          "Persistent advocacy"
+        ],
+        "avoid": [
+          "Gave up",
+          "No outcome"
+        ]
+      }
+    },
+    {
+      "id": "hcc_020",
+      "text": "How do you approach quality improvement in your practice?",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Data reviewed",
+          "Improvement identified",
+          "PDSA cycles",
+          "Measured impact"
+        ],
+        "strong_answer_signals": [
+          "Outcomes improved",
+          "Team engagement"
+        ],
+        "avoid": [
+          "No measurement",
+          "One-off changes"
+        ]
+      }
+    },
+    {
+      "id": "hcc_021",
+      "text": "Describe your experience with telehealth.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Platforms used",
+          "Patient engagement",
+          "Limitations understood",
+          "Documentation maintained"
+        ],
+        "strong_answer_signals": [
+          "Effective virtual care",
+          "Good outcomes"
+        ],
+        "avoid": [
+          "Phone only",
+          "Poor documentation"
+        ]
+      }
+    },
+    {
+      "id": "hcc_022",
+      "text": "How do you handle cultural differences in patient care?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Cultural humility",
+          "Asked about preferences",
+          "Adapted approach",
+          "Used interpreters when needed"
+        ],
+        "strong_answer_signals": [
+          "Respectful care",
+          "Patient trust built"
+        ],
+        "avoid": [
+          "Made assumptions",
+          "Dismissed concerns"
+        ]
+      }
+    },
+    {
+      "id": "hcc_023",
+      "text": "Tell me about a time you had a conflict with a colleague.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Addressed directly",
+          "Listened actively",
+          "Found common ground",
+          "Patient care prioritized"
+        ],
+        "strong_answer_signals": [
+          "Resolved professionally",
+          "Working relationship maintained"
+        ],
+        "avoid": [
+          "Avoided conflict",
+          "Took sides"
+        ]
+      }
+    },
+    {
+      "id": "hcc_024",
+      "text": "How do you approach antibiotic stewardship?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Appropriate prescribing",
+          "Culture-guided therapy",
+          "Patient education",
+          "Resistance patterns considered"
+        ],
+        "strong_answer_signals": [
+          "Appropriate use",
+          "Patient outcomes preserved"
+        ],
+        "avoid": [
+          "Overprescribing",
+          "No culture"
+        ]
+      }
+    },
+    {
+      "id": "hcc_025",
+      "text": "How do you manage a busy clinic day?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Time management",
+          "Triage approach",
+          "Efficient documentation",
+          "Team coordination"
+        ],
+        "strong_answer_signals": [
+          "Quality care maintained",
+          "Patient satisfaction"
+        ],
+        "avoid": [
+          "Rushed visits",
+          "Burnout ignored"
+        ]
+      }
+    },
+    {
+      "id": "hcc_026",
+      "text": "Tell me about a complex diagnostic case.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Differential diagnosis",
+          "Appropriate testing",
+          "Specialist consultation",
+          "Diagnosis reached"
+        ],
+        "strong_answer_signals": [
+          "Thorough workup",
+          "Correct diagnosis"
+        ],
+        "avoid": [
+          "Premature closure",
+          "No consultation"
+        ]
+      }
+    },
+    {
+      "id": "hcc_027",
+      "text": "How do you handle end-of-life discussions?",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Patient and family included",
+          "Goals of care discussed",
+          "Compassionate communication",
+          "Documented"
+        ],
+        "strong_answer_signals": [
+          "Patient dignity respected",
+          "Clear goals"
+        ],
+        "avoid": [
+          "Avoided discussion",
+          "Dismissive"
+        ]
+      }
+    },
+    {
+      "id": "hcc_028",
+      "text": "How do you approach continuing education and board certification?",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "CME completed",
+          "Board certified",
+          "Learning goals set",
+          "Practice improved"
+        ],
+        "strong_answer_signals": [
+          "Current certification",
+          "Specific learning"
+        ],
+        "avoid": [
+          "Lapsed certification",
+          "No learning"
+        ]
+      }
+    },
+    {
+      "id": "hcc_029",
+      "text": "Describe your experience with clinical research.",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Studies participated",
+          "IRB compliance",
+          "Patient safety",
+          "Evidence applied"
+        ],
+        "strong_answer_signals": [
+          "Research-informed practice",
+          "Patient safety"
+        ],
+        "avoid": [
+          "Protocol deviations",
+          "No application"
+        ]
+      }
+    },
+    {
+      "id": "hcc_030",
+      "text": "How do you handle stress and prevent burnout?",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Self-care practices",
+          "Boundaries set",
+          "Support system",
+          "Professional help when needed"
+        ],
+        "strong_answer_signals": [
+          "Sustainable practice",
+          "Team support"
+        ],
+        "avoid": [
+          "Workaholic mindset",
+          "No boundaries"
+        ]
+      }
+    }
+  ]
+}

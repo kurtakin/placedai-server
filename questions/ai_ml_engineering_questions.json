@@ -1,0 +1,965 @@
+{
+  "metadata": {
+    "sector": "AI / ML Engineering",
+    "generated": "2026-08-30",
+    "total": 35,
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ]
+  },
+  "questions": [
+    {
+      "id": "ai_001",
+      "text": "Tell me about an ML model you took from research to production.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Research summary",
+          "Pipeline built",
+          "Production deployment",
+          "Outcome measured"
+        ],
+        "strong_answer_signals": [
+          "Business impact shown",
+          "Cross-team collaboration"
+        ],
+        "avoid": [
+          "Stayed in research",
+          "No productionization",
+          "No metrics"
+        ]
+      }
+    },
+    {
+      "id": "ai_002",
+      "text": "How do you design a model evaluation framework?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Metrics aligned to business",
+          "Offline and online evaluation",
+          "A/B testing",
+          "Bias and fairness checks"
+        ],
+        "strong_answer_signals": [
+          "Right metric for the problem",
+          "Continuous evaluation"
+        ],
+        "avoid": [
+          "Only accuracy",
+          "No bias check",
+          "No business metric"
+        ]
+      }
+    },
+    {
+      "id": "ai_003",
+      "text": "How do you handle data leakage in your ML pipeline?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Train/val/test split strict",
+          "Time-based splits",
+          "Feature engineering discipline",
+          "Sanity checks"
+        ],
+        "strong_answer_signals": [
+          "Caught leakage early",
+          "Tested thoroughly"
+        ],
+        "avoid": [
+          "No awareness",
+          "Random splits",
+          "No checks"
+        ]
+      }
+    },
+    {
+      "id": "ai_004",
+      "text": "Tell me about a model that failed in production. What happened?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Failure detected",
+          "Root cause identified",
+          "Model retrained",
+          "Monitoring added"
+        ],
+        "strong_answer_signals": [
+          "Quick detection",
+          "Prevention added"
+        ],
+        "avoid": [
+          "Discovered late",
+          "No monitoring",
+          "Same failure recurred"
+        ]
+      }
+    },
+    {
+      "id": "ai_005",
+      "text": "How do you approach prompt engineering for LLM applications?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Structured prompts",
+          "Few-shot examples",
+          "Eval set built",
+          "Iterative refinement"
+        ],
+        "strong_answer_signals": [
+          "Measurable improvements",
+          "Systematic approach"
+        ],
+        "avoid": [
+          "Ad-hoc prompts",
+          "No evaluation",
+          "Trial and error only"
+        ]
+      }
+    },
+    {
+      "id": "ai_006",
+      "text": "How do you handle model drift and retraining?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Drift detection",
+          "Retraining schedule",
+          "Versioning",
+          "Rollback strategy"
+        ],
+        "strong_answer_signals": [
+          "Automated monitoring",
+          "Versioned models"
+        ],
+        "avoid": [
+          "No drift detection",
+          "Manual retraining",
+          "No rollback"
+        ]
+      }
+    },
+    {
+      "id": "ai_007",
+      "text": "Why AI/ML engineering? What drives you?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Intellectual challenge",
+          "Real-world impact",
+          "Continuous learning",
+          "Ethical considerations"
+        ],
+        "strong_answer_signals": [
+          "Specific projects",
+          "Long-term vision"
+        ],
+        "avoid": [
+          "Hype-driven",
+          "No ethics thought",
+          "No interest in impact"
+        ]
+      }
+    },
+    {
+      "id": "ai_008",
+      "text": "How do you handle bias and fairness in ML systems?",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Disparate impact analysis",
+          "Fairness metrics",
+          "Stakeholder input",
+          "Mitigation strategies"
+        ],
+        "strong_answer_signals": [
+          "Bias found and fixed",
+          "Stakeholder trust"
+        ],
+        "avoid": [
+          "Ignored bias",
+          "No metrics",
+          "Treating all as equal"
+        ]
+      }
+    },
+    {
+      "id": "ai_009",
+      "text": "Describe your experience with MLOps tools.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Tools used (MLflow, Kubeflow, etc.)",
+          "Pipeline orchestration",
+          "Model registry",
+          "Deployment strategies"
+        ],
+        "strong_answer_signals": [
+          "Production experience",
+          "Right tool for job"
+        ],
+        "avoid": [
+          "Notebooks only",
+          "No orchestration",
+          "No production"
+        ]
+      }
+    },
+    {
+      "id": "ai_010",
+      "text": "How do you approach feature engineering at scale?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Feature store",
+          "Automated features",
+          "Drift detection",
+          "Reusability"
+        ],
+        "strong_answer_signals": [
+          "Scalable features",
+          "Reduced duplication"
+        ],
+        "avoid": [
+          "Manual only",
+          "No store",
+          "Duplicated work"
+        ]
+      }
+    },
+    {
+      "id": "ai_011",
+      "text": "Tell me about a time you had to explain an ML model to non-technical stakeholders.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Translated technical details",
+          "Used analogies",
+          "Visualized predictions",
+          "Connected to business"
+        ],
+        "strong_answer_signals": [
+          "Stakeholder understood",
+          "Decision enabled"
+        ],
+        "avoid": [
+          "Jargon-heavy",
+          "No translation",
+          "No business link"
+        ]
+      }
+    },
+    {
+      "id": "ai_012",
+      "text": "How do you choose between different ML model architectures?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Problem framing",
+          "Data characteristics",
+          "Performance vs cost",
+          "Interpretability needs"
+        ],
+        "strong_answer_signals": [
+          "Thoughtful selection",
+          "Cost considered"
+        ],
+        "avoid": [
+          "Always deep learning",
+          "No thought",
+          "No interpretability"
+        ]
+      }
+    },
+    {
+      "id": "ai_013",
+      "text": "How do you handle an LLM hallucination problem?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Detected hallucination",
+          "Root cause analysis",
+          "RAG or grounding added",
+          "Eval set updated"
+        ],
+        "strong_answer_signals": [
+          "Hallucination reduced",
+          "Grounding implemented"
+        ],
+        "avoid": [
+          "No detection",
+          "Ignored problem",
+          "No eval set"
+        ]
+      }
+    },
+    {
+      "id": "ai_014",
+      "text": "How do you approach cost optimization for LLM applications?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Token usage analyzed",
+          "Caching implemented",
+          "Model size matched to need",
+          "Batch processing"
+        ],
+        "strong_answer_signals": [
+          "Significant cost reduction",
+          "Quality maintained"
+        ],
+        "avoid": [
+          "Ignored costs",
+          "Over-provisioned",
+          "Quality dropped"
+        ]
+      }
+    },
+    {
+      "id": "ai_015",
+      "text": "Tell me about implementing a vector search system.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Use case identified",
+          "Embedding strategy",
+          "Vector DB chosen",
+          "Search quality measured"
+        ],
+        "strong_answer_signals": [
+          "High-quality search",
+          "Production ready"
+        ],
+        "avoid": [
+          "Just used a library",
+          "No eval",
+          "No scale thinking"
+        ]
+      }
+    },
+    {
+      "id": "ai_016",
+      "text": "How do you ensure reproducibility in ML experiments?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Random seeds fixed",
+          "Code versioned",
+          "Data versioned",
+          "Environment pinned"
+        ],
+        "strong_answer_signals": [
+          "Reproducible results",
+          "Audit trail"
+        ],
+        "avoid": [
+          "No version control",
+          "No seeds",
+          "Cannot reproduce"
+        ]
+      }
+    },
+    {
+      "id": "ai_017",
+      "text": "How do you handle cold start problems in recommendation systems?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Content-based fallback",
+          "Exploration strategy",
+          "Hybrid approach",
+          "Onboarding flow"
+        ],
+        "strong_answer_signals": [
+          "Engagement maintained",
+          "Strategies tested"
+        ],
+        "avoid": [
+          "Only collaborative",
+          "No fallback",
+          "No testing"
+        ]
+      }
+    },
+    {
+      "id": "ai_018",
+      "text": "How do you approach A/B testing for ML models?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Hypothesis defined",
+          "Power analysis",
+          "Guardrail metrics",
+          "Statistical rigor"
+        ],
+        "strong_answer_signals": [
+          "Statistically valid",
+          "Business impact measured"
+        ],
+        "avoid": [
+          "No power analysis",
+          "Peeking early",
+          "No guardrails"
+        ]
+      }
+    },
+    {
+      "id": "ai_019",
+      "text": "Describe your experience with deep learning frameworks.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Frameworks used",
+          "Model architectures",
+          "Training pipelines",
+          "Production deployment"
+        ],
+        "strong_answer_signals": [
+          "Production experience",
+          "Right framework choice"
+        ],
+        "avoid": [
+          "Only tutorials",
+          "No production",
+          "No comparison"
+        ]
+      }
+    },
+    {
+      "id": "ai_020",
+      "text": "How do you handle ML security threats (adversarial attacks, data poisoning)?",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Threats assessed",
+          "Defenses added",
+          "Monitoring set up",
+          "Response plan"
+        ],
+        "strong_answer_signals": [
+          "Threats mitigated",
+          "Model hardened"
+        ],
+        "avoid": [
+          "Ignored threats",
+          "No monitoring",
+          "No response plan"
+        ]
+      }
+    },
+    {
+      "id": "ai_021",
+      "text": "How do you build an AI feature product team?",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Roles defined",
+          "Hiring plan",
+          "Cross-functional collaboration",
+          "Process established"
+        ],
+        "strong_answer_signals": [
+          "Team productive",
+          "Clear ownership"
+        ],
+        "avoid": [
+          "No structure",
+          "Siloed work",
+          "No collaboration"
+        ]
+      }
+    },
+    {
+      "id": "ai_022",
+      "text": "Tell me about a successful AI project you led.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Problem identified",
+          "Solution designed",
+          "Team coordinated",
+          "Outcome achieved"
+        ],
+        "strong_answer_signals": [
+          "Business impact",
+          "Team effort"
+        ],
+        "avoid": [
+          "Vague outcome",
+          "No metrics",
+          "No team"
+        ]
+      }
+    },
+    {
+      "id": "ai_023",
+      "text": "How do you handle stakeholder expectations for AI projects?",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Realistic expectations set",
+          "Milestones communicated",
+          "Risks explained",
+          "Results measured"
+        ],
+        "strong_answer_signals": [
+          "Stakeholders aligned",
+          "Trust maintained"
+        ],
+        "avoid": [
+          "Over-promised",
+          "No milestones",
+          "No risks"
+        ]
+      }
+    },
+    {
+      "id": "ai_024",
+      "text": "How do you approach continuous learning in AI/ML?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Papers read",
+          "Courses taken",
+          "Projects built",
+          "Community engagement"
+        ],
+        "strong_answer_signals": [
+          "Specific sources named",
+          "Recent learning"
+        ],
+        "avoid": [
+          "No learning",
+          "Stale knowledge",
+          "No community"
+        ]
+      }
+    },
+    {
+      "id": "ai_025",
+      "text": "How do you approach RAG (Retrieval-Augmented Generation) systems?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Document chunking strategy",
+          "Embedding choice",
+          "Retrieval evaluation",
+          "Context window management"
+        ],
+        "strong_answer_signals": [
+          "High retrieval quality",
+          "Production ready"
+        ],
+        "avoid": [
+          "Naive RAG",
+          "No eval",
+          "Wrong chunk size"
+        ]
+      }
+    },
+    {
+      "id": "ai_026",
+      "text": "How do you handle ML compliance and regulation (EU AI Act)?",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Risk classification",
+          "Documentation",
+          "Audit trail",
+          "Bias testing"
+        ],
+        "strong_answer_signals": [
+          "Compliant system",
+          "Documentation complete"
+        ],
+        "avoid": [
+          "Ignored regulation",
+          "No documentation",
+          "No audit"
+        ]
+      }
+    },
+    {
+      "id": "ai_027",
+      "text": "Describe your experience with cloud AI services (AWS SageMaker, Azure ML, Vertex AI).",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Services used",
+          "Cost considerations",
+          "Integration",
+          "Scaling experience"
+        ],
+        "strong_answer_signals": [
+          "Production experience",
+          "Cost aware"
+        ],
+        "avoid": [
+          "Tutorials only",
+          "No cost thought",
+          "No integration"
+        ]
+      }
+    },
+    {
+      "id": "ai_028",
+      "text": "How do you approach time-series forecasting?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Data patterns analyzed",
+          "Baseline models",
+          "Advanced methods tested",
+          "Metrics chosen"
+        ],
+        "strong_answer_signals": [
+          "Outperformed baseline",
+          "Right metric"
+        ],
+        "avoid": [
+          "No baseline",
+          "Wrong metric",
+          "Ignored patterns"
+        ]
+      }
+    },
+    {
+      "id": "ai_029",
+      "text": "Tell me about a time you had to deploy a model with strict latency requirements.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Latency target defined",
+          "Model optimized",
+          "Infrastructure tuned",
+          "Performance measured"
+        ],
+        "strong_answer_signals": [
+          "Met latency target",
+          "Quality preserved"
+        ],
+        "avoid": [
+          "Missed target",
+          "Quality dropped",
+          "No optimization"
+        ]
+      }
+    },
+    {
+      "id": "ai_030",
+      "text": "How do you handle multi-modal AI applications?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Modalities identified",
+          "Fusion strategy",
+          "Eval framework",
+          "User experience"
+        ],
+        "strong_answer_signals": [
+          "Cross-modal understanding",
+          "User value"
+        ],
+        "avoid": [
+          "Single modality",
+          "No fusion",
+          "No eval"
+        ]
+      }
+    },
+    {
+      "id": "ai_031",
+      "text": "How do you approach model interpretability and explainability?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "SHAP or LIME used",
+          "Stakeholder-friendly explanations",
+          "Trust building",
+          "Regulatory needs"
+        ],
+        "strong_answer_signals": [
+          "Models explained",
+          "Stakeholder trust"
+        ],
+        "avoid": [
+          "Black box only",
+          "No explanation",
+          "No stakeholder input"
+        ]
+      }
+    },
+    {
+      "id": "ai_032",
+      "text": "Tell me about building a chatbot or conversational AI.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Use case defined",
+          "Architecture designed",
+          "Quality measured",
+          "Iterated"
+        ],
+        "strong_answer_signals": [
+          "User satisfaction",
+          "Continuous improvement"
+        ],
+        "avoid": [
+          "Just deployed",
+          "No measurement",
+          "No iteration"
+        ]
+      }
+    },
+    {
+      "id": "ai_033",
+      "text": "How do you handle versioning of data, code, and models together?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "DVC or similar",
+          "Lineage tracked",
+          "Reproducible pipelines",
+          "Audit trail"
+        ],
+        "strong_answer_signals": [
+          "Full lineage",
+          "Reproducible"
+        ],
+        "avoid": [
+          "Just code",
+          "No data versioning",
+          "No model versioning"
+        ]
+      }
+    },
+    {
+      "id": "ai_034",
+      "text": "How do you evaluate an AI vendor or tool?",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Use case fit",
+          "POC conducted",
+          "Cost analyzed",
+          "Integration assessed"
+        ],
+        "strong_answer_signals": [
+          "Data-driven decision",
+          "Risk assessed"
+        ],
+        "avoid": [
+          "Hype-driven",
+          "No POC",
+          "No cost analysis"
+        ]
+      }
+    },
+    {
+      "id": "ai_035",
+      "text": "What trends in AI are you most excited about?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Specific trend named",
+          "Why it matters",
+          "Personal projects",
+          "Long-term view"
+        ],
+        "strong_answer_signals": [
+          "Specific knowledge",
+          "Forward thinking"
+        ],
+        "avoid": [
+          "Vague trends",
+          "No personal engagement",
+          "No long-term view"
+        ]
+      }
+    }
+  ]
+}

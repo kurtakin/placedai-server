@@ -1,0 +1,1147 @@
+{
+  "metadata": {
+    "sector": "Software Engineering",
+    "generated": "2026-08-30",
+    "total": 40,
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ]
+  },
+  "questions": [
+    {
+      "id": "se_001",
+      "text": "Tell me about a time you had to debug a production issue under pressure. How did you handle it?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Reproduced the issue quickly",
+          "Isolated the root cause",
+          "Communicated status to stakeholders",
+          "Implemented a fix and monitoring"
+        ],
+        "strong_answer_signals": [
+          "Used structured debugging approach",
+          "Minimized user impact",
+          "Post-mortem followed up"
+        ],
+        "avoid": [
+          "Blamed third parties",
+          "No root cause analysis",
+          "Avoided post-incident review"
+        ]
+      }
+    },
+    {
+      "id": "se_002",
+      "text": "How do you approach writing tests for a new feature?",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start with acceptance criteria",
+          "Write failing test first",
+          "Cover edge cases",
+          "Refactor with confidence"
+        ],
+        "strong_answer_signals": [
+          "High coverage on critical paths",
+          "Tests are readable and maintainable",
+          "CI/CD integration"
+        ],
+        "avoid": [
+          "No tests",
+          "Only happy path tested",
+          "Brittle tests that break on refactor"
+        ]
+      }
+    },
+    {
+      "id": "se_003",
+      "text": "Describe a time your code caused a regression. What happened and what did you learn?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identified the regression quickly",
+          "Root cause was a missing edge case",
+          "Added regression test",
+          "Process improved"
+        ],
+        "strong_answer_signals": [
+          "Took ownership",
+          "Test added to prevent recurrence",
+          "Process change implemented"
+        ],
+        "avoid": [
+          "Blamed another team",
+          "No lasting fix",
+          "Same issue recurred"
+        ]
+      }
+    },
+    {
+      "id": "se_004",
+      "text": "How do you handle disagreements with a tech lead about architecture decisions?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Presented data and trade-offs",
+          "Respected the final decision",
+          "Documented rationale for future reference",
+          "Revisited when results came in"
+        ],
+        "strong_answer_signals": [
+          "Collaborative approach",
+          "Data-driven argument",
+          "Open to being wrong"
+        ],
+        "avoid": [
+          "Refused to implement",
+          "Complained afterward",
+          "No technical justification"
+        ]
+      }
+    },
+    {
+      "id": "se_005",
+      "text": "Tell me about a time you had to make a tech debt decision. How did you balance speed and quality?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Assessed risk vs velocity",
+          "Communicated debt to stakeholders",
+          "Created a paydown timeline",
+          "Documented the trade-off"
+        ],
+        "strong_answer_signals": [
+          "Explicit decision",
+          "Time-boxed repayment",
+          "No hidden shortcuts"
+        ],
+        "avoid": [
+          "Never addressed debt",
+          "Always said yes to new features",
+          "No communication"
+        ]
+      }
+    },
+    {
+      "id": "se_006",
+      "text": "How do you review a pull request from a junior developer?",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Checked correctness first",
+          "Gave constructive feedback",
+          "Focused on learning",
+          "Maintained psychological safety"
+        ],
+        "strong_answer_signals": [
+          "Mentored while reviewing",
+          "Specific suggestions",
+          "Encouraged questions"
+        ],
+        "avoid": [
+          "Harsh criticism",
+          "Only pointed out errors",
+          "Took hours to merge or reject"
+        ]
+      }
+    },
+    {
+      "id": "se_007",
+      "text": "Describe your approach to migrating a monolith to microservices.",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Identified bounded contexts",
+          "Strangler fig pattern",
+          "API gateway introduced",
+          "Data consistency strategy"
+        ],
+        "strong_answer_signals": [
+          "Incremental migration",
+          "Backward compatibility maintained",
+          "Team boundaries respected"
+        ],
+        "avoid": [
+          "Big bang rewrite",
+          "Ignored data migration",
+          "No rollback plan"
+        ]
+      }
+    },
+    {
+      "id": "se_008",
+      "text": "How do you ensure code quality across a team?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Linting and formatting standards",
+          "Code review process",
+          "Automated testing",
+          "Definition of done"
+        ],
+        "strong_answer_signals": [
+          "Quality gates in CI",
+          "Consistent style",
+          "Team buy-in"
+        ],
+        "avoid": [
+          "No standards",
+          "Reviews only sometimes",
+          "Quality depends on individuals"
+        ]
+      }
+    },
+    {
+      "id": "se_009",
+      "text": "Tell me about a time you mentored a junior developer.",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Assessed their level",
+          "Set learning goals",
+          "Pair-programmed regularly",
+          "Gave consistent feedback"
+        ],
+        "strong_answer_signals": [
+          "Developer grew noticeably",
+          "Knowledge was shared",
+          "Mentoring was sustainable"
+        ],
+        "avoid": [
+          "Just dumped code",
+          "No structure",
+          "Developer left or stayed stuck"
+        ]
+      }
+    },
+    {
+      "id": "se_010",
+      "text": "Describe your experience with CI/CD pipelines.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Build automated",
+          "Test suite integrated",
+          "Deployment automated",
+          "Rollback strategy"
+        ],
+        "strong_answer_signals": [
+          "Fast feedback loop",
+          "Deployment frequency high",
+          "Failed builds caught quickly"
+        ],
+        "avoid": [
+          "Manual deployment",
+          "No rollback",
+          "Deploy only on Fridays"
+        ]
+      }
+    },
+    {
+      "id": "se_011",
+      "text": "How do you handle a feature request that seems impossible technically?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Explored feasibility",
+          "Proposed alternatives",
+          "Broke into smaller pieces",
+          "Communicated constraints"
+        ],
+        "strong_answer_signals": [
+          "Innovative solution found",
+          "Stakeholder understood limitations",
+          "Partial delivery"
+        ],
+        "avoid": [
+          "Said no immediately",
+          "Tried to do it all at once",
+          "No explanation"
+        ]
+      }
+    },
+    {
+      "id": "se_012",
+      "text": "Tell me about a time you had to work with an outdated codebase. How did you handle it?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Assessed the situation",
+          "Incremental improvements",
+          "Documentation added",
+          "Tests introduced gradually"
+        ],
+        "strong_answer_signals": [
+          "No big rewrite",
+          "Team was involved",
+          "Progress was visible"
+        ],
+        "avoid": [
+          "Frustration openly shown",
+          "Attempted full rewrite",
+          "No documentation"
+        ]
+      }
+    },
+    {
+      "id": "se_013",
+      "text": "How do you decide between building a solution vs buying a third-party one?",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Total cost of ownership",
+          "Time to market",
+          "Maintenance burden",
+          "Strategic differentiation"
+        ],
+        "strong_answer_signals": [
+          "Data-driven decision",
+          "Long-term view",
+          "Stakeholder alignment"
+        ],
+        "avoid": [
+          "Always build",
+          "Always buy",
+          "No analysis"
+        ]
+      }
+    },
+    {
+      "id": "se_014",
+      "text": "Tell me about optimizing a slow-performing application.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Profiled to find bottleneck",
+          "Measured before optimizing",
+          "Applied targeted fix",
+          "Verified improvement"
+        ],
+        "strong_answer_signals": [
+          "Data-backed changes",
+          "Significant improvement measured",
+          "Avoided premature optimization"
+        ],
+        "avoid": [
+          "Guessed the bottleneck",
+          "Optimized before measuring",
+          "Premature optimization everywhere"
+        ]
+      }
+    },
+    {
+      "id": "se_015",
+      "text": "How do you handle competing priorities from multiple stakeholders?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Made priorities transparent",
+          "Aligned on business outcomes",
+          "Negotiated scope",
+          "Communicated trade-offs"
+        ],
+        "strong_answer_signals": [
+          "Single source of truth",
+          "Stakeholders accepted decisions",
+          "Delivery stayed on track"
+        ],
+        "avoid": [
+          "Tried to do everything",
+          "No communication",
+          "Always said yes"
+        ]
+      }
+    },
+    {
+      "id": "se_016",
+      "text": "Describe your approach to database design for a new application.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Normalized schema",
+          "Identified access patterns",
+          "Indexed for queries",
+          "Considered scaling"
+        ],
+        "strong_answer_signals": [
+          "Normalization was right level",
+          "Query performance considered",
+          "Migration path planned"
+        ],
+        "avoid": [
+          "Over-normalized",
+          "No indexes",
+          "No thought to scaling"
+        ]
+      }
+    },
+    {
+      "id": "se_017",
+      "text": "Tell me about a time you had to communicate a technical issue to a non-technical stakeholder.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Translated technical impact",
+          "Estimated timeline",
+          "Offered alternatives",
+          "Kept them updated"
+        ],
+        "strong_answer_signals": [
+          "Clear language",
+          "Managed expectations",
+          "Actionable update"
+        ],
+        "avoid": [
+          "Jargon-heavy",
+          "No timeline",
+          "Only shared bad news late"
+        ]
+      }
+    },
+    {
+      "id": "se_018",
+      "text": "How do you approach learning a new programming language or framework?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Built something with it",
+          "Read source code",
+          "Joined community",
+          "Compared to what you know"
+        ],
+        "strong_answer_signals": [
+          "Practical project built",
+          "Shipped something quickly",
+          "Deepened over time"
+        ],
+        "avoid": [
+          "Only tutorials",
+          "No project",
+          "Forgot after weeks"
+        ]
+      }
+    },
+    {
+      "id": "se_019",
+      "text": "How do you handle a security vulnerability found in your code?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Assessed severity",
+          "Patched immediately if critical",
+          "Communicated to affected parties",
+          "Reviewed codebase for similar issues"
+        ],
+        "strong_answer_signals": [
+          "Responsible disclosure",
+          "Root cause fixed",
+          "Prevention measures added"
+        ],
+        "avoid": [
+          "Ignored it",
+          "Only patched surface",
+          "Blamed a dependency"
+        ]
+      }
+    },
+    {
+      "id": "se_020",
+      "text": "Tell me about a time you disagreed with a product requirement and how you handled it.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Understood the why",
+          "Presented technical concerns",
+          "Proposed alternative approach",
+          "Accepted decision professionally"
+        ],
+        "strong_answer_signals": [
+          "Respected the product goal",
+          "Solution found",
+          "No resentment"
+        ],
+        "avoid": [
+          "Refused to build it",
+          "Public disagreement",
+          "Sulked afterward"
+        ]
+      }
+    },
+    {
+      "id": "se_021",
+      "text": "Describe your experience with distributed systems and concurrency.",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Consistent vs eventual consistency",
+          "Race conditions handled",
+          "Message queues used",
+          "Idempotency designed"
+        ],
+        "strong_answer_signals": [
+          "Thought through edge cases",
+          "Used appropriate patterns"
+        ],
+        "avoid": [
+          "Ignored race conditions",
+          "No error handling",
+          "Assumed everything is synchronous"
+        ]
+      }
+    },
+    {
+      "id": "se_022",
+      "text": "How do you measure your own productivity as an engineer?",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Shipped features vs hours",
+          "Code review throughput",
+          "Bugs introduced",
+          "Learning milestones"
+        ],
+        "strong_answer_signals": [
+          "Outcome-focused metrics",
+          "Balanced speed and quality",
+          "Self-reflective"
+        ],
+        "avoid": [
+          "Lines of code",
+          "Hours at desk",
+          "Only velocity"
+        ]
+      }
+    },
+    {
+      "id": "se_023",
+      "text": "Tell me about a time you had to support a system you did not build.",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Documented what you inherited",
+          "Added tests",
+          "Phased improvements",
+          "Knowledge transferred"
+        ],
+        "strong_answer_signals": [
+          "Quick onboarding",
+          "Respected original design",
+          "Incremental improvement"
+        ],
+        "avoid": [
+          "Immediate rewrite",
+          "No documentation",
+          "Struggled silently"
+        ]
+      }
+    },
+    {
+      "id": "se_024",
+      "text": "How do you design an API? What makes a good API?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Resource modeling",
+          "Consistent naming",
+          "Versioning strategy",
+          "Error handling",
+          "Documentation"
+        ],
+        "strong_answer_signals": [
+          "Client-focused design",
+          "Backward compatible",
+          "Clear contracts"
+        ],
+        "avoid": [
+          "Inconsistent naming",
+          "No versioning",
+          "Undocumented edge cases"
+        ]
+      }
+    },
+    {
+      "id": "se_025",
+      "text": "Describe your experience with cloud platforms (AWS, Azure, GCP).",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Services you have used",
+          "Architecture patterns",
+          "Cost optimization",
+          "Security practices"
+        ],
+        "strong_answer_signals": [
+          "Certifications or projects",
+          "Multi-service solutions",
+          "Cost awareness"
+        ],
+        "avoid": [
+          "Only used compute",
+          "No cost management",
+          "No security consideration"
+        ]
+      }
+    },
+    {
+      "id": "se_026",
+      "text": "Tell me about a time you had to make a difficult tech decision with incomplete information.",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Gathered what was known",
+          "Assessed risks",
+          "Made reversible decision",
+          "Updated when information improved"
+        ],
+        "strong_answer_signals": [
+          "Good enough decision",
+          "Decision was reversible",
+          "Learned from outcome"
+        ],
+        "avoid": [
+          "Never decided",
+          "Over-analyzed",
+          "Ignored the deadline"
+        ]
+      }
+    },
+    {
+      "id": "se_027",
+      "text": "How do you handle on-call rotations and incidents?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Runbook followed",
+          "Communication plan",
+          "Escalation path",
+          "Post-incident review"
+        ],
+        "strong_answer_signals": [
+          "Calm under pressure",
+          "Process followed",
+          "Learning after"
+        ],
+        "avoid": [
+          "Panic response",
+          "No communication",
+          "No follow-up review"
+        ]
+      }
+    },
+    {
+      "id": "se_028",
+      "text": "Why software engineering? What keeps you excited about it?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Problem-solving satisfaction",
+          "Continuous learning",
+          "Building things that matter",
+          "Community and craft"
+        ],
+        "strong_answer_signals": [
+          "Specific project stories",
+          "Recent learning goals",
+          "Long-term vision"
+        ],
+        "avoid": [
+          "Just writing code",
+          "No curiosity",
+          "Only about money"
+        ]
+      }
+    },
+    {
+      "id": "se_029",
+      "text": "How do you approach performance optimization for a web application?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Measured before optimizing",
+          "Frontend vs backend vs network",
+          "Caching strategy",
+          "Lazy loading",
+          "Bundle optimization"
+        ],
+        "strong_answer_signals": [
+          "Measurable improvement",
+          "User-perceived speed improved",
+          "Avoided premature optimization"
+        ],
+        "avoid": [
+          "Guessed bottlenecks",
+          "No measurement",
+          "Over-optimized early code"
+        ]
+      }
+    },
+    {
+      "id": "se_030",
+      "text": "Tell me about a time you had to deliver with a tight deadline. How did you manage it?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Assessed scope realistically",
+          "Prioritized ruthlessly",
+          "Communicated risks early",
+          "Delivered minimum viable product"
+        ],
+        "strong_answer_signals": [
+          "Honest assessment",
+          "Scope was managed",
+          "Quality was maintained"
+        ],
+        "avoid": [
+          "Secretly worked overtime",
+          "Cut corners silently",
+          "No stakeholder update"
+        ]
+      }
+    },
+    {
+      "id": "se_031",
+      "text": "How do you handle code review feedback that you disagree with?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Listened fully",
+          "Asked clarifying questions",
+          "Presented alternative approach",
+          "Accepted or compromised"
+        ],
+        "strong_answer_signals": [
+          "Open-minded",
+          "Evidence-based discussion",
+          "Improved the code"
+        ],
+        "avoid": [
+          "Defensive response",
+          "Ignored feedback",
+          "Made personal"
+        ]
+      }
+    },
+    {
+      "id": "se_032",
+      "text": "Describe your experience with system design at scale.",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Load estimation",
+          "Horizontal scaling",
+          "Database sharding",
+          "Caching layers",
+          "Message queues",
+          "CDN and edge"
+        ],
+        "strong_answer_signals": [
+          "Trade-offs clearly explained",
+          "Back-of-envelope estimates",
+          "Handled failure modes"
+        ],
+        "avoid": [
+          "Ignored failure modes",
+          "No capacity planning",
+          "Single point of failure overlooked"
+        ]
+      }
+    },
+    {
+      "id": "se_033",
+      "text": "How do you approach refactoring legacy code that has no tests?",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Characterized existing behavior",
+          "Added characterization tests",
+          "Small safe refactors",
+          "Moved to testable architecture"
+        ],
+        "strong_answer_signals": [
+          "No functionality changed",
+          "Gradual improvement",
+          "Tests added progressively"
+        ],
+        "avoid": [
+          "Big rewrite",
+          "No tests added",
+          "Broke existing behavior"
+        ]
+      }
+    },
+    {
+      "id": "se_034",
+      "text": "Tell me about a time you influenced the technical direction of a project.",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identified a problem or opportunity",
+          "Proposed a solution",
+          "Gained buy-in",
+          "Delivered results"
+        ],
+        "strong_answer_signals": [
+          "Technical leadership shown",
+          "Others adopted the idea",
+          "Measurable impact"
+        ],
+        "avoid": [
+          "Suggested but gave up",
+          "No data to back it",
+          "No follow-through"
+        ]
+      }
+    },
+    {
+      "id": "se_035",
+      "text": "How do you handle technical debt in a fast-moving product team?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Made debt visible",
+          "Linked debt to velocity impact",
+          "Allocated capacity",
+          "Prioritized by risk"
+        ],
+        "strong_answer_signals": [
+          "Debt tracked",
+          "Team understood trade-offs",
+          "Progress visible"
+        ],
+        "avoid": [
+          "Ignored it",
+          "Only new features",
+          "Team frustrated silently"
+        ]
+      }
+    },
+    {
+      "id": "se_036",
+      "text": "Describe your experience with containerization and orchestration (Docker, Kubernetes).",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Containerized workloads",
+          "Orchestration managed",
+          "Networking and storage",
+          "Scaling and deployments"
+        ],
+        "strong_answer_signals": [
+          "Production experience",
+          "Know how to debug K8s",
+          "Resource optimization"
+        ],
+        "avoid": [
+          "Only local Docker",
+          "No orchestration",
+          "No production use"
+        ]
+      }
+    },
+    {
+      "id": "se_037",
+      "text": "Tell me about a time you had to onboard to a new codebase quickly. How did you do it?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Found documentation and tests",
+          "Ran the application",
+          "Made a small contribution",
+          "Asked targeted questions"
+        ],
+        "strong_answer_signals": [
+          "Productive quickly",
+          "Smart contribution",
+          "Respected the codebase"
+        ],
+        "avoid": [
+          "Asked basic questions repeatedly",
+          "No code exploration",
+          "Weeks to contribute"
+        ]
+      }
+    },
+    {
+      "id": "se_038",
+      "text": "How do you handle a situation where the deadline is unrealistic?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Presented data on scope",
+          "Offered alternatives",
+          "Escalated when needed",
+          "Protected the team"
+        ],
+        "strong_answer_signals": [
+          "Negotiated scope",
+          "Stakeholder heard",
+          "No burnout"
+        ],
+        "avoid": [
+          "Silently agreed",
+          "Burned out the team",
+          "Delivered broken code"
+        ]
+      }
+    },
+    {
+      "id": "se_039",
+      "text": "What is your approach to writing clean, maintainable code?",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Meaningful naming",
+          "Small focused functions",
+          "Single responsibility",
+          "Clear comments where needed",
+          "Consistent formatting"
+        ],
+        "strong_answer_signals": [
+          "Readable code",
+          "Easy to change",
+          "Team standards followed"
+        ],
+        "avoid": [
+          "Clever but unreadable",
+          "No comments",
+          "Long functions",
+          "Inconsistent style"
+        ]
+      }
+    },
+    {
+      "id": "se_040",
+      "text": "How do you approach incident management and post-mortems?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Incident response process",
+          "Communication during incident",
+          "Post-mortem within days",
+          "Action items tracked",
+          "Blameless culture"
+        ],
+        "strong_answer_signals": [
+          "Process followed",
+          "Lessons learned",
+          "Prevention implemented"
+        ],
+        "avoid": [
+          "No post-mortem",
+          "Blamed individuals",
+          "Same incident repeated"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,729 @@
+{
+  "metadata": {
+    "sector": "Human Resources & Recruiting",
+    "generated": "2026-08-30",
+    "total": 25,
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ]
+  },
+  "questions": [
+    {
+      "id": "hr_001",
+      "text": "Describe a time you filled a difficult-to-fill role. What was your strategy?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Analyzed why role was hard to fill",
+          "Expanded sourcing channels",
+          "Partnered with hiring manager on requirements",
+          "Built talent pipeline"
+        ],
+        "strong_answer_signals": [
+          "Creative sourcing strategies",
+          "Requirements refined realistically",
+          "Pipeline built proactively"
+        ],
+        "avoid": [
+          "Only used job boards",
+          "Blamed talent market",
+          "No sourcing innovation"
+        ]
+      }
+    },
+    {
+      "id": "hr_002",
+      "text": "Tell me about a time you had to let someone go. How did you handle it?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Documented performance issues",
+          "Followed legal and policy requirements",
+          "Handled conversation with dignity",
+          "Provided support and transition"
+        ],
+        "strong_answer_signals": [
+          "Legal compliance",
+          "Compassionate approach",
+          "Documentation thorough"
+        ],
+        "avoid": [
+          "Surprise termination",
+          "No documentation",
+          "Inconsistent treatment"
+        ]
+      }
+    },
+    {
+      "id": "hr_003",
+      "text": "How do you ensure DEI in your hiring process?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Bias training for interviewers",
+          "Structured interviews",
+          "Diverse sourcing channels",
+          "Metrics tracking by demographic"
+        ],
+        "strong_answer_signals": [
+          "Specific DEI programs",
+          "Metrics reviewed regularly",
+          "Pipeline diversity improved"
+        ],
+        "avoid": [
+          "No tracking",
+          "Token hiring",
+          "No interviewer training"
+        ]
+      }
+    },
+    {
+      "id": "hr_004",
+      "text": "Describe a compensation negotiation you facilitated.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Researched market data",
+          "Balanced candidate and budget needs",
+          "Found creative non-salary benefits",
+          "Closed successfully"
+        ],
+        "strong_answer_signals": [
+          "Win-win outcome",
+          "Market data used",
+          "Retention addressed"
+        ],
+        "avoid": [
+          "Lowballing",
+          "No negotiation prep",
+          "Burning budget"
+        ]
+      }
+    },
+    {
+      "id": "hr_005",
+      "text": "How do you handle a toxic workplace situation?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Investigate facts",
+          "Document findings",
+          "Apply consistent consequences",
+          "Monitor and follow up"
+        ],
+        "strong_answer_signals": [
+          "Due process followed",
+          "Consistent treatment",
+          "Culture improved"
+        ],
+        "avoid": [
+          "Ignoring complaints",
+          "Inconsistent discipline",
+          "No follow-up"
+        ]
+      }
+    },
+    {
+      "id": "hr_006",
+      "text": "Tell me about building an employer brand strategy.",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Defined EVP and culture pillars",
+          "Employee ambassador program",
+          "Social media and content strategy",
+          "Measured brand impact on hiring"
+        ],
+        "strong_answer_signals": [
+          "EVP clearly defined",
+          "Talent pipeline improved",
+          "NPS or brand surveys tracked"
+        ],
+        "avoid": [
+          "No EVP",
+          "Brand not aligned with culture",
+          "No metrics"
+        ]
+      }
+    },
+    {
+      "id": "hr_007",
+      "text": "How do you design a performance review system that actually works?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Clear competencies and behaviors",
+          "Calibration sessions",
+          "Training for managers",
+          "Regular feedback not just annual"
+        ],
+        "strong_answer_signals": [
+          "Performance improved",
+          "Manager capability built",
+          "Calibration consistent"
+        ],
+        "avoid": [
+          "Once a year only",
+          "No manager training",
+          "No calibration"
+        ]
+      }
+    },
+    {
+      "id": "hr_008",
+      "text": "Describe a failed hire. What did you learn?",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Root cause analysis",
+          "Updated interview process",
+          "Hiring manager alignment",
+          "Onboarding improvements"
+        ],
+        "strong_answer_signals": [
+          "Honest assessment",
+          "Process improved",
+          "Patterns identified"
+        ],
+        "avoid": [
+          "Blame on candidate",
+          "No learning",
+          "Same mistake repeated"
+        ]
+      }
+    },
+    {
+      "id": "hr_009",
+      "text": "How do you manage HRIS implementation?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Stakeholder requirements gathering",
+          "Change management",
+          "Data migration planning",
+          "Training and adoption"
+        ],
+        "strong_answer_signals": [
+          "On-time and on-budget",
+          "Adoption >90%",
+          "Data clean"
+        ],
+        "avoid": [
+          "Scope creep",
+          "Low adoption",
+          "Data quality issues"
+        ]
+      }
+    },
+    {
+      "id": "hr_010",
+      "text": "Tell me about developing an L&D program from scratch.",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Needs assessment",
+          "Program design with SMEs",
+          "Delivery methods selected",
+          "Impact measured"
+        ],
+        "strong_answer_signals": [
+          "Skills gap addressed",
+          "Learner feedback positive",
+          "Business impact shown"
+        ],
+        "avoid": [
+          "No needs assessment",
+          "No impact measurement",
+          "Low completion rates"
+        ]
+      }
+    },
+    {
+      "id": "hr_011",
+      "text": "How do you handle accommodation requests under ADA?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Interactive process initiated",
+          "Medical documentation reviewed",
+          "Reasonable accommodation explored",
+          "Undue hardship evaluated"
+        ],
+        "strong_answer_signals": [
+          "Process followed",
+          "Documentation complete",
+          "Legal compliant"
+        ],
+        "avoid": [
+          "Denying without exploration",
+          "No interactive process",
+          "Documentation gaps"
+        ]
+      }
+    },
+    {
+      "id": "hr_012",
+      "text": "How do you retain top performers in a competitive market?",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Stay interviews not exit interviews",
+          "Career pathing",
+          "Comp benchmarks",
+          "Culture and purpose focus"
+        ],
+        "strong_answer_signals": [
+          "Retention rate improved",
+          "High performers stayed",
+          "Flight risk addressed"
+        ],
+        "avoid": [
+          "Only compensation",
+          "No career path",
+          "Reactive not proactive"
+        ]
+      }
+    },
+    {
+      "id": "hr_013",
+      "text": "Describe your experience with ATS systems.",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Greenhouse, Lever, Workday experience",
+          "Workflow design",
+          "Reporting and analytics",
+          "Integration with HRIS"
+        ],
+        "strong_answer_signals": [
+          "Process optimized",
+          "Candidate experience improved",
+          "Metrics tracked"
+        ],
+        "avoid": [
+          "Basic usage only",
+          "No analytics",
+          "Poor candidate experience"
+        ]
+      }
+    },
+    {
+      "id": "hr_014",
+      "text": "How do you handle a pay equity issue?",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Conduct pay audit",
+          "Identify gaps and root causes",
+          "Develop remediation plan",
+          "Communicate transparently"
+        ],
+        "strong_answer_signals": [
+          "Audit completed",
+          "Remediation equitable",
+          "Legal compliant"
+        ],
+        "avoid": [
+          "Ignoring the issue",
+          "Inconsistent remediation",
+          "No communication"
+        ]
+      }
+    },
+    {
+      "id": "hr_015",
+      "text": "Tell me about a restructuring or layoff you managed.",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Business rationale clear",
+          "Selection criteria objective",
+          "Communication plan",
+          "Severance and support provided"
+        ],
+        "strong_answer_signals": [
+          "Legal compliant",
+          "Process dignified",
+          "Remaining employees supported"
+        ],
+        "avoid": [
+          "No criteria",
+          "Poor communication",
+          "Key talent lost"
+        ]
+      }
+    },
+    {
+      "id": "hr_016",
+      "text": "How do you measure HR business impact?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "HR metrics dashboard",
+          "Time to fill, cost per hire, turnover",
+          "Employee engagement scores",
+          "Link to business outcomes"
+        ],
+        "strong_answer_signals": [
+          "C-suite metrics presented",
+          "Business impact shown",
+          "Predictive analytics"
+        ],
+        "avoid": [
+          "Activity metrics only",
+          "No correlation to business",
+          "Vanity metrics"
+        ]
+      }
+    },
+    {
+      "id": "hr_017",
+      "text": "How do you handle a harassment complaint?",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Take complaint seriously",
+          "Confidential investigation",
+          "Appropriate action",
+          "No retaliation policy"
+        ],
+        "strong_answer_signals": [
+          "Process followed",
+          "Investigation thorough",
+          "Victim protected"
+        ],
+        "avoid": [
+          "Minimizing complaint",
+          "No investigation",
+          "Retaliation"
+        ]
+      }
+    },
+    {
+      "id": "hr_018",
+      "text": "Describe building a recruiting function for a startup.",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Limited resources leveraged",
+          "Employer brand story",
+          "Efficient processes built",
+          "Culture first hiring"
+        ],
+        "strong_answer_signals": [
+          "Scalable processes",
+          "Top talent attracted",
+          "Culture preserved"
+        ],
+        "avoid": [
+          "Copying enterprise playbooks",
+          "No employer brand",
+          "Bad hires early"
+        ]
+      }
+    },
+    {
+      "id": "hr_019",
+      "text": "How do you approach workforce planning?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Demand forecast by role",
+          "Internal supply analysis",
+          "Gap identification",
+          "Action plan for gaps"
+        ],
+        "strong_answer_signals": [
+          "Skills matrix built",
+          "Succession plans done",
+          "Gaps closed"
+        ],
+        "avoid": [
+          "Ad-hoc hiring",
+          "No succession",
+          "Skills gaps ignored"
+        ]
+      }
+    },
+    {
+      "id": "hr_020",
+      "text": "Tell me about your experience with SHRM or other HR certifications.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "SHRM-CP, SHRM-SCP, PHR, SPHR",
+          "Recertification maintained",
+          "Knowledge applied to work",
+          "Continuous learning"
+        ],
+        "strong_answer_signals": [
+          "Current certification",
+          "Practice informed by body of knowledge",
+          "Learning shared"
+        ],
+        "avoid": [
+          "Expired certification",
+          "No continuing education",
+          "Knowledge not applied"
+        ]
+      }
+    },
+    {
+      "id": "hr_021",
+      "text": "How do you manage HR projects with non-HR stakeholders?",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Translate HR to business language",
+          "Stakeholder alignment early",
+          "Regular updates and demos",
+          "Change management"
+        ],
+        "strong_answer_signals": [
+          "Stakeholder buy-in",
+          "Adoption high",
+          "Business outcomes achieved"
+        ],
+        "avoid": [
+          "HR-only view",
+          "Low adoption",
+          "No stakeholder input"
+        ]
+      }
+    },
+    {
+      "id": "hr_022",
+      "text": "Describe handling a union organizing campaign.",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Legal compliance strictly followed",
+          "Listened to employee concerns",
+          "Improved working conditions",
+          "No retaliation"
+        ],
+        "strong_answer_signals": [
+          "Legal compliant",
+          "Employee relations improved",
+          "Surveys improved"
+        ],
+        "avoid": [
+          "Intimidation",
+          "Retaliation",
+          "Ignoring concerns"
+        ]
+      }
+    },
+    {
+      "id": "hr_023",
+      "text": "How do you design variable pay programs?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Clear performance metrics",
+          "Fair and transparent formula",
+          "Budget affordability tested",
+          "Communication plan"
+        ],
+        "strong_answer_signals": [
+          "Metrics aligned to strategy",
+          "Retention impact shown",
+          "Legal compliant"
+        ],
+        "avoid": [
+          "Unclear metrics",
+          "Gaming the system",
+          "No communication"
+        ]
+      }
+    },
+    {
+      "id": "hr_024",
+      "text": "Tell me about onboarding that actually improves retention.",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Pre-boarding experience",
+          "First 90-day plan",
+          "Buddy/mentor assignment",
+          "30-60-90 check-ins"
+        ],
+        "strong_answer_signals": [
+          "Retention improved",
+          "New hire productivity faster",
+          "Feedback collected"
+        ],
+        "avoid": [
+          "Day one only",
+          "No structured plan",
+          "No check-ins"
+        ]
+      }
+    },
+    {
+      "id": "hr_025",
+      "text": "Why HR? What drives you in this field?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "People impact motivation",
+          "Business partnership passion",
+          "Continuous learning in employment law",
+          "Career path clarity"
+        ],
+        "strong_answer_signals": [
+          "Specific impact story",
+          "Business acumen",
+          "Growth trajectory clear"
+        ],
+        "avoid": [
+          "Just helping people",
+          "No business connection",
+          "Static career view"
+        ]
+      }
+    }
+  ]
+}

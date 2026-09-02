@@ -1,0 +1,457 @@
+{
+  "metadata": {
+    "sector": "Agriculture and Farm Management",
+    "generated": "2026-08-30",
+    "total": 15,
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "motivation",
+      "situational",
+      "technical"
+    ]
+  },
+  "questions": [
+    {
+      "id": "afm_001",
+      "text": "Describe a time you planned a crop rotation schedule that improved yield or soil health on your operation.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Analyzing previous season performance",
+          "Selecting rotation by family and nutrient need",
+          "Scheduling cover crops",
+          "Coordinating planting and harvest windows",
+          "Documenting results year over year"
+        ],
+        "strong_answer_signals": [
+          "References specific crop families or nitrogen-fixing benefits",
+          "Shows multi-year planning",
+          "Measures yield or soil organic matter change"
+        ],
+        "avoid": [
+          "Repeating same crop year after year",
+          "Ignoring cover crop benefits",
+          "Skipping post-season analysis"
+        ]
+      }
+    },
+    {
+      "id": "afm_002",
+      "text": "Tell me about a situation where you had to manage a livestock health emergency on site.",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Recognizing early symptoms",
+          "Isolating the affected animal",
+          "Contacting veterinarian promptly",
+          "Following treatment and observation plan",
+          "Updating herd health records"
+        ],
+        "strong_answer_signals": [
+          "References biosecurity protocols",
+          "Documents treatment and outcome",
+          "Engages vet quickly rather than delaying"
+        ],
+        "avoid": [
+          "Waiting too long to call vet",
+          "Failing to isolate sick animal",
+          "Skipping record updates"
+        ]
+      }
+    },
+    {
+      "id": "afm_003",
+      "text": "Why are you interested in farm management rather than other agricultural careers?",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Combination of business and production appeal",
+          "Long-term stewardship of land",
+          "Working with family or community legacy",
+          "Variety of work across seasons",
+          "Tangible results from operational decisions"
+        ],
+        "strong_answer_signals": [
+          "References personal farm background or mentorship",
+          "Connects to business planning interest",
+          "Shows appreciation for long-term land stewardship"
+        ],
+        "avoid": [
+          "Saying there were no other options",
+          "Focusing only on outdoor lifestyle",
+          "Ignoring the business side"
+        ]
+      }
+    },
+    {
+      "id": "afm_004",
+      "text": "Walk me through how you would set up an irrigation schedule for a new field with variable soil types.",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Testing soil texture and infiltration rate",
+          "Calculating crop water demand",
+          "Choosing irrigation method per soil",
+          "Scheduling by evapotranspiration data",
+          "Monitoring soil moisture sensors"
+        ],
+        "strong_answer_signals": [
+          "References ET rates or crop coefficients",
+          "Adjusts schedule by soil water holding capacity",
+          "Uses moisture sensors or probe data"
+        ],
+        "avoid": [
+          "Applying one schedule to entire field",
+          "Ignoring soil texture differences",
+          "Overwatering without measurement"
+        ]
+      }
+    },
+    {
+      "id": "afm_005",
+      "text": "Describe a time you operated farm equipment safely during a high-pressure planting window.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Performing pre-operation inspection",
+          "Following safe operating procedures",
+          "Communicating with team on equipment moves",
+          "Adjusting to weather and field conditions",
+          "Completing maintenance after use"
+        ],
+        "strong_answer_signals": [
+          "Mentions specific safety checks like PTO shields",
+          "Documents hours and field conditions",
+          "Adjusts for fatigue during long shifts"
+        ],
+        "avoid": [
+          "Skipping pre-op checks",
+          "Pushing equipment past safe hours",
+          "Failing to communicate equipment moves"
+        ]
+      }
+    },
+    {
+      "id": "afm_006",
+      "text": "How would you approach a pest outbreak using integrated pest management principles?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Scouting and identifying pest correctly",
+          "Setting action thresholds",
+          "Choosing cultural and biological controls first",
+          "Applying chemical controls only when justified",
+          "Evaluating effectiveness after treatment"
+        ],
+        "strong_answer_signals": [
+          "References specific IPM thresholds",
+          "Uses resistant varieties or beneficial insects",
+          "Documents resistance management plan"
+        ],
+        "avoid": [
+          "Spraying at first sight",
+          "Ignoring thresholds",
+          "Repeating same chemical mode of action"
+        ]
+      }
+    },
+    {
+      "id": "afm_007",
+      "text": "Tell me about a time you had to make a tough financial decision on the farm during a low-margin year.",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Reviewing cash flow and cost structure",
+          "Identifying non-essential expenses",
+          "Communicating with lenders or partners",
+          "Implementing cost-saving measures",
+          "Tracking impact on operations"
+        ],
+        "strong_answer_signals": [
+          "Uses actual financial figures",
+          "Engages lender or accountant proactively",
+          "Balances cost cuts with operational impact"
+        ],
+        "avoid": [
+          "Cutting essential inputs",
+          "Ignoring lender communication",
+          "Failing to track impact"
+        ]
+      }
+    },
+    {
+      "id": "afm_008",
+      "text": "Which USDA programs have you used to support your operation and how did you apply?",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identifying relevant program like EQIP or CRP",
+          "Working with NRCS or FSA staff",
+          "Completing application accurately",
+          "Implementing practice on schedule",
+          "Documenting compliance for payments"
+        ],
+        "strong_answer_signals": [
+          "References specific program codes",
+          "Describes practice implementation timeline",
+          "Maintains records for audits"
+        ],
+        "avoid": [
+          "Confusing program names",
+          "Missing reporting deadlines",
+          "Treating funds as free money without compliance"
+        ]
+      }
+    },
+    {
+      "id": "afm_009",
+      "text": "Describe a sustainable practice you have implemented that reduced input costs or improved soil.",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identifying the opportunity",
+          "Pilot testing the practice",
+          "Measuring economic and agronomic impact",
+          "Scaling successful practices",
+          "Sharing results with peers or advisors"
+        ],
+        "strong_answer_signals": [
+          "References measurable cost or yield change",
+          "Uses data from soil tests or budgets",
+          "Engages extension or agronomist"
+        ],
+        "avoid": [
+          "Implementing without measurement",
+          "Treating sustainability as separate from profit",
+          "Ignoring peer learning opportunities"
+        ]
+      }
+    },
+    {
+      "id": "afm_010",
+      "text": "Tell me about a time you coordinated supply chain logistics from harvest to buyer.",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Forecasting harvest timing",
+          "Scheduling labor and equipment",
+          "Coordinating transport and storage",
+          "Communicating with buyer on quality",
+          "Resolving delays or shortages"
+        ],
+        "strong_answer_signals": [
+          "References specific logistics software or partners",
+          "Documents chain of custody",
+          "Plans for weather or quality contingencies"
+        ],
+        "avoid": [
+          "Reacting rather than forecasting",
+          "Failing to communicate with buyer",
+          "Skipping storage condition planning"
+        ]
+      }
+    },
+    {
+      "id": "afm_011",
+      "text": "How do you evaluate the viability of a direct marketing channel like farmers markets or CSA?",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Calculating price vs wholesale",
+          "Estimating customer acquisition cost",
+          "Assessing labor and logistics needs",
+          "Testing with a small pilot",
+          "Scaling based on margin and demand"
+        ],
+        "strong_answer_signals": [
+          "Builds per-unit margin analysis",
+          "Compares channel time commitments",
+          "Uses pilot data before scaling"
+        ],
+        "avoid": [
+          "Assuming higher price equals higher profit",
+          "Ignoring labor and transport costs",
+          "Scaling before pilot validation"
+        ]
+      }
+    },
+    {
+      "id": "afm_012",
+      "text": "Describe a situation where you developed an agritourism event that engaged visitors safely.",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Identifying visitor interest and farm capacity",
+          "Planning activities with safety controls",
+          "Training staff on guest interactions",
+          "Managing liability and insurance",
+          "Collecting feedback for improvement"
+        ],
+        "strong_answer_signals": [
+          "References insurance and liability coverage",
+          "Trains staff on safety protocols",
+          "Uses feedback to refine next season"
+        ],
+        "avoid": [
+          "Ignoring liability coverage",
+          "Skipping staff training",
+          "Treating guests like family without rules"
+        ]
+      }
+    },
+    {
+      "id": "afm_013",
+      "text": "Tell me about a time you had to manage labor during a critical seasonal peak.",
+      "category": "behavioral",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Forecasting labor demand",
+          "Recruiting seasonal workers",
+          "Training on safety and tasks",
+          "Supervising daily productivity",
+          "Recognizing and retaining good workers"
+        ],
+        "strong_answer_signals": [
+          "References H-2A or domestic labor rules",
+          "Documents training completion",
+          "Provides feedback and incentives"
+        ],
+        "avoid": [
+          "Treating seasonal workers as expendable",
+          "Skipping safety training",
+          "Failing to plan labor ahead"
+        ]
+      }
+    },
+    {
+      "id": "afm_014",
+      "text": "How do you keep up with regulatory compliance such as EPA, FSMA, or animal welfare rules?",
+      "category": "situational",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Subscribing to agency updates",
+          "Building compliance into SOPs",
+          "Training staff on requirements",
+          "Documenting records for audits",
+          "Reviewing changes annually"
+        ],
+        "strong_answer_signals": [
+          "References specific regulations like FSMA Produce Safety",
+          "Maintains audit-ready records",
+          "Reviews SOPs annually"
+        ],
+        "avoid": [
+          "Reactive to inspections only",
+          "Treating documentation as paperwork",
+          "Skipping staff training"
+        ]
+      }
+    },
+    {
+      "id": "afm_015",
+      "text": "Walk me through how you would pilot a precision agriculture tool on your operation.",
+      "category": "technical",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Identifying a specific pain point",
+          "Piloting on a small field or zone",
+          "Collecting baseline and trial data",
+          "Evaluating ROI honestly",
+          "Scaling only if ROI supports it"
+        ],
+        "strong_answer_signals": [
+          "Uses yield maps or variable rate data",
+          "Calculates payback period",
+          "Compares tool cost to expected benefit"
+        ],
+        "avoid": [
+          "Buying tools because they are new",
+          "Skipping baseline data",
+          "Scaling before ROI validation"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,1175 @@
+{
+  "metadata": {
+    "sector": "Accounting & Bookkeeping",
+    "generated": "2026-08-30",
+    "total": 40,
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral"
+    ],
+    "region": "North America",
+    "note": "Written for US and Canadian public accounting, corporate accounting, and bookkeeping roles. GAAP, ASC 606, revenue recognition, reconciliation, closing, audit support, tax prep, AP/AR, payroll."
+  },
+  "questions": [
+    {
+      "id": "acct_001",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_002",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_003",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_004",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_005",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_006",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_007",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_008",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_009",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_010",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_011",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_012",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_013",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_014",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_015",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_016",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_017",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_018",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_019",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_020",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_021",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_022",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_023",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_024",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_025",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_026",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_027",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_028",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_029",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_030",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_031",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_032",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_033",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_034",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_035",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_036",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_037",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_038",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_039",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    },
+    {
+      "id": "acct_040",
+      "text": "Tell me about yourself and your accounting background.",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Open with role and setting",
+          "Name certifications and tools",
+          "Give one concrete strength with evidence",
+          "Close by tying background to role"
+        ],
+        "strong_answer_signals": [
+          "Names specific accounting standards",
+          "Mentions specific ERP or close tools",
+          "Measurable contribution"
+        ],
+        "avoid": [
+          "Only listing duties without outcomes",
+          "Confusing bookkeeping with accounting",
+          "Personal details"
+        ]
+      }
+    }
+  ]
+}

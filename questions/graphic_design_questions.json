@@ -1,0 +1,639 @@
+{
+  "metadata": {
+    "generated": "2026-08-30",
+    "sectors_covered": [
+      "brand identity design",
+      "typography",
+      "color theory",
+      "layout design",
+      "Adobe Creative Suite mastery",
+      "Figma/Sketch",
+      "logo design",
+      "print vs digital",
+      "design systems",
+      "responsive design",
+      "accessibility in design",
+      "portfolio presentation",
+      "client presentations",
+      "creative briefs",
+      "design critiques",
+      "motion graphics basics",
+      "illustration",
+      "photography direction",
+      "packaging design",
+      "design project management"
+    ],
+    "sector": "Graphic Design",
+    "schema_version": "1.1",
+    "categories": [
+      "behavioral",
+      "motivation",
+      "situational",
+      "technical"
+    ],
+    "total": 20
+  },
+  "questions": [
+    {
+      "answer_framework": {
+        "structure": "STAR",
+        "avoid": [
+          "Defending work defensively without listening",
+          "Taking criticism personally and shutting down",
+          "Ignoring valid concerns to protect feelings"
+        ],
+        "key_points": [
+          "Maintained professionalism and emotional composure",
+          "Separated personal feelings from design critique",
+          "Asked clarifying questions to understand feedback",
+          "Used feedback to improve the design meaningfully"
+        ],
+        "strong_answer_signals": [
+          "Shows growth mindset and openness to feedback",
+          "Demonstrates design maturity beyond ego",
+          "Includes specific example of how feedback improved work"
+        ]
+      },
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Describe a time when you received harsh criticism on a design you were proud of. How did you handle it?",
+      "category": "behavioral",
+      "id": "gd_001"
+    },
+    {
+      "answer_framework": {
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Demonstrates end-to-end brand thinking",
+          "Shows understanding of brand strategy before visual design",
+          "Includes scalability and adaptability considerations"
+        ],
+        "key_points": [
+          "Discovery: brand strategy, audience, competitive analysis",
+          "Concept exploration: mood boards, style directions, rough sketches",
+          "Logo development: primary, secondary, icon variations",
+          "System extension: colors, typography, patterns, imagery",
+          "Application mockups and guidelines documentation"
+        ],
+        "framework_name": "Brand Identity Development Process",
+        "avoid": [
+          "Starting with design before understanding business",
+          "No consideration for real-world application",
+          "Missing brand guidelines or documentation"
+        ]
+      },
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Walk me through your process for creating a brand identity system from logo to application.",
+      "category": "technical",
+      "id": "gd_002"
+    },
+    {
+      "answer_framework": {
+        "structure": "STAR",
+        "avoid": [
+          "Using jargon without explanation",
+          "Dismissing questions as ignorant",
+          "Being defensive about design choices"
+        ],
+        "key_points": [
+          "Used non-technical language and relatable analogies",
+          "Connected design choices to business objectives",
+          "Created visual presentations that spoke for themselves",
+          "Remained open to questions and education"
+        ],
+        "strong_answer_signals": [
+          "Shows communication and presentation skills",
+          "Can advocate for good design without being condescending",
+          "Balances expertise with collaboration"
+        ]
+      },
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "How do you explain your design decisions to clients or stakeholders who may not have a design background?",
+      "category": "behavioral",
+      "id": "gd_003"
+    },
+    {
+      "answer_framework": {
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Balances following process with creative problem-solving",
+          "Advocates for brand consistency while being flexible",
+          "Knows when to escalate versus compromise"
+        ],
+        "key_points": [
+          "Clarify the scope and reasons for the conflicting request",
+          "Present the brand guidelines and explain their purpose",
+          "Propose alternatives that satisfy the brief while maintaining brand integrity",
+          "Document the decision and get appropriate approvals",
+          "Create a feedback loop for future brief refinement"
+        ],
+        "framework_name": "Brief-Brand Conflict Resolution",
+        "avoid": [
+          "Blindly following the brief and breaking brand consistency",
+          "Rigidly refusing any deviation without discussion",
+          "Making changes without stakeholder approval"
+        ]
+      },
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "You're given a design brief that conflicts with current brand guidelines. How do you navigate this situation?",
+      "category": "situational",
+      "id": "gd_004"
+    },
+    {
+      "answer_framework": {
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Shows deep understanding of type principles",
+          "Knows when to break rules intentionally",
+          "Includes consideration for digital performance"
+        ],
+        "key_points": [
+          "Understanding message and tone before selecting type",
+          "Readability and legibility hierarchy consideration",
+          "Pairing strategy: contrast versus harmony",
+          "Systematic approach to font weights and sizes",
+          "Testing across mediums and viewing conditions"
+        ],
+        "framework_name": "Typography Selection Process"
+      },
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "What is your approach to typography in design? How do you select and pair typefaces?",
+      "category": "technical",
+      "id": "gd_005"
+    },
+    {
+      "answer_framework": {
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Understands both design and development perspectives",
+          "Shows experience with scaling design across teams",
+          "Knows how to balance flexibility with consistency"
+        ],
+        "key_points": [
+          "Audit of existing patterns and inconsistencies",
+          "Component library creation with clear usage guidelines",
+          "Documentation and code-design alignment",
+          "Governance model for contribution and updates",
+          "Onboarding and adoption strategy"
+        ],
+        "framework_name": "Design System Development",
+        "avoid": [
+          "Creating a system too rigid for practical use",
+          "No documentation or communication of the system",
+          "Ignoring existing team workflows"
+        ]
+      },
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "Describe your experience with design systems. How do you ensure consistency across a product or organization?",
+      "category": "technical",
+      "id": "gd_006"
+    },
+    {
+      "answer_framework": {
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Knows specific accessibility standards",
+          "Integrates accessibility from start not as afterthought",
+          "Can balance accessibility with aesthetic goals"
+        ],
+        "key_points": [
+          "WCAG guidelines and color contrast requirements",
+          "Alternative text and screen reader considerations",
+          "Keyboard navigation and focus states",
+          "Typography sizing and spacing for readability",
+          "User testing with diverse ability groups"
+        ],
+        "framework_name": "Accessibility-First Design",
+        "avoid": [
+          "Treating accessibility as compliance checkbox only",
+          "No knowledge of assistive technology needs",
+          "Assuming good design is automatically accessible"
+        ]
+      },
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "How do you ensure your designs are accessible to users with disabilities?",
+      "category": "technical",
+      "id": "gd_007"
+    },
+    {
+      "answer_framework": {
+        "structure": "STAR",
+        "avoid": [
+          "Focusing only on creative aspects ignoring business",
+          "No awareness of industry shifts",
+          "Sounding uncertain about career direction"
+        ],
+        "key_points": [
+          "Genuine passion for visual problem-solving",
+          "Curiosity about emerging technologies and trends",
+          "Understanding of AI's impact on design practice",
+          "Commitment to continuous skill development"
+        ],
+        "strong_answer_signals": [
+          "Shows enthusiasm without being cliché",
+          "Aware of industry trends beyond tools",
+          "Balances tradition with forward thinking"
+        ]
+      },
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "What draws you to graphic design, and where do you see the industry heading in the next five years?",
+      "category": "motivation",
+      "id": "gd_008"
+    },
+    {
+      "answer_framework": {
+        "structure": "STAR",
+        "avoid": [
+          "Panicking or missing deadlines",
+          "Cutting corners on quality without communication",
+          "Not communicating early about timeline risks"
+        ],
+        "key_points": [
+          "Prioritization of critical path deliverables",
+          "Communication with stakeholders about realistic timelines",
+          "Efficiency techniques and process optimization",
+          "Quality management within time constraints"
+        ],
+        "strong_answer_signals": [
+          "Shows project management and planning skills",
+          "Knows when to cut scope versus reduce quality",
+          "Maintains calm under pressure"
+        ]
+      },
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Describe your workflow when working on a major design project with tight deadlines.",
+      "category": "behavioral",
+      "id": "gd_009"
+    },
+    {
+      "answer_framework": {
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Understands technical constraints of different devices",
+          "Designs for content hierarchy across all sizes",
+          "Shows experience with design-to-code handoff"
+        ],
+        "key_points": [
+          "Mobile-first design methodology",
+          "Breakpoint strategy based on content needs not devices",
+          "Flexible grids and scalable components",
+          "Performance consideration for mobile users",
+          "Testing across real devices and browsers"
+        ],
+        "framework_name": "Responsive Design Strategy",
+        "avoid": [
+          "Designing desktop first then squeezing for mobile",
+          "Ignoring performance and loading speed",
+          "No consideration for touch versus click interactions"
+        ]
+      },
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "How do you approach responsive design across different screen sizes and devices?",
+      "category": "technical",
+      "id": "gd_010"
+    },
+    {
+      "answer_framework": {
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Shows flexibility and adaptability to tools",
+          "Understands collaboration needs beyond personal preference",
+          "Knows limitations of each tool"
+        ],
+        "key_points": [
+          "Adobe Creative Suite: print production, illustration depth, video integration",
+          "Figma: real-time collaboration, prototyping, design systems",
+          "When to use each tool for optimal workflow",
+          "Hybrid approaches for team needs",
+          "Keeping skills current across evolving tools"
+        ],
+        "framework_name": "Design Tool Comparison",
+        "avoid": [
+          "Dogmatic attachment to one tool over others",
+          "No experience with collaboration tools",
+          "Dismissing new tools without trying them"
+        ]
+      },
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about your experience with Adobe Creative Suite versus Figma. What are the strengths of each?",
+      "category": "technical",
+      "id": "gd_011"
+    },
+    {
+      "answer_framework": {
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Shows maturity in receiving and giving feedback",
+          "Creates environment for honest creative discussion",
+          "Knows how to facilitate without dominating"
+        ],
+        "key_points": [
+          "Establishing psychological safety and ground rules",
+          "Framing critique around user needs not personal taste",
+          "Specific and actionable feedback language",
+          "Balancing positive reinforcement with improvement areas",
+          "Follow-up and iteration documentation"
+        ],
+        "framework_name": "Effective Design Critique Process",
+        "avoid": [
+          "Critiques becoming personal attacks",
+          "No structure leading to unfocused discussion",
+          "Designers being defensive and not listening"
+        ]
+      },
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "How do you conduct and participate in design critiques? What makes them effective?",
+      "category": "technical",
+      "id": "gd_012"
+    },
+    {
+      "answer_framework": {
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Shows theoretical knowledge with practical application",
+          "Knows limitations of screen versus print color",
+          "Includes systematic approach to palette documentation"
+        ],
+        "key_points": [
+          "Understanding color psychology and associations",
+          "Primary, secondary, accent color selection",
+          "Accessibility contrast requirements",
+          "Harmony rules: complementary, analogous, triadic",
+          "Testing across print and digital mediums"
+        ],
+        "framework_name": "Color Palette Development",
+        "avoid": [
+          "Choosing colors based purely on personal preference",
+          "No testing for colorblind accessibility",
+          "Ignoring brand and cultural color meanings"
+        ]
+      },
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Describe your approach to color theory. How do you create color palettes that work?",
+      "category": "technical",
+      "id": "gd_013"
+    },
+    {
+      "answer_framework": {
+        "structure": "STAR",
+        "avoid": [
+          "Giving in immediately without defending good design",
+          "Being stubborn and dismissive of concerns",
+          "Going over stakeholder's head without trying first"
+        ],
+        "key_points": [
+          "Approached with respect and data-backed reasoning",
+          "Asked questions to understand their perspective",
+          "Proposed alternative solutions with clear rationale",
+          "Knew when to compromise versus stand firm"
+        ],
+        "strong_answer_signals": [
+          "Shows professional judgment and diplomacy",
+          "Can advocate for design while respecting hierarchy",
+          "Knows the difference between principles and preferences"
+        ]
+      },
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "You disagree with a senior stakeholder about a design direction. How do you handle this?",
+      "category": "situational",
+      "id": "gd_014"
+    },
+    {
+      "answer_framework": {
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Understands motion as functional not decorative",
+          "Knows technical constraints of web and mobile",
+          "Shows restraint and intentionality in animation"
+        ],
+        "key_points": [
+          "Purpose: enhancement versus distraction consideration",
+          "Timing and easing principles for natural movement",
+          "Hierarchy guidance through animation",
+          "Performance and file size optimization",
+          "Testing across platforms and devices"
+        ],
+        "framework_name": "Motion Design Approach",
+        "avoid": [
+          "Over-animating everything",
+          "Ignoring performance impact",
+          "No understanding of motion principles"
+        ]
+      },
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "What is your experience with motion graphics? How do you approach animation in design?",
+      "category": "technical",
+      "id": "gd_015"
+    },
+    {
+      "answer_framework": {
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Shows strategic thinking about audience",
+          "Includes case studies not just pretty images",
+          "Demonstrates communication and storytelling skills"
+        ],
+        "key_points": [
+          "Curating best work rather than showing everything",
+          "Telling the story: problem, process, solution, results",
+          "Visual consistency in portfolio itself",
+          "Context and metrics to demonstrate impact",
+          "Clear contact and availability information"
+        ],
+        "framework_name": "Portfolio Presentation Strategy",
+        "avoid": [
+          "Showing only final images without process",
+          "Inconsistent quality across portfolio pieces",
+          "No narrative or context for work"
+        ]
+      },
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "How do you create a portfolio presentation that showcases your work effectively to potential employers or clients?",
+      "category": "technical",
+      "id": "gd_016"
+    },
+    {
+      "answer_framework": {
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Understands print production and material constraints",
+          "Shows experience with 3D and physical considerations",
+          "Balances aesthetics with practical requirements"
+        ],
+        "key_points": [
+          "Physical constraints: materials, printing, shelf placement",
+          "Regulatory and legal requirements",
+          "Sustainability and environmental impact",
+          "Retail environment and shelf presence",
+          "User experience: opening, using, storing"
+        ],
+        "framework_name": "Packaging Design Considerations",
+        "avoid": [
+          "Designing as if packaging is a flat surface",
+          "Ignoring shipping and handling durability",
+          "No consideration for retail environment"
+        ]
+      },
+      "seniority": [
+        "senior"
+      ],
+      "text": "Describe your experience with packaging design. What considerations are unique to this medium?",
+      "category": "technical",
+      "id": "gd_017"
+    },
+    {
+      "answer_framework": {
+        "structure": "STAR",
+        "avoid": [
+          "Starting work without clear direction",
+          "Delivering something then asking if it's right",
+          "Being frustrated with unclear requests"
+        ],
+        "key_points": [
+          "Asked questions to uncover requirements and goals",
+          "Proposed discovery phase to define scope",
+          "Created multiple directions to narrow preferences",
+          "Documented assumptions and got sign-off"
+        ],
+        "strong_answer_signals": [
+          "Shows initiative and problem-framing skills",
+          "Comfortable with ambiguity while driving clarity",
+          "Builds collaborative relationships with stakeholders"
+        ]
+      },
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "How do you handle design requests that come without clear requirements or a creative brief?",
+      "category": "situational",
+      "id": "gd_018"
+    },
+    {
+      "answer_framework": {
+        "structure": "Framework",
+        "strong_answer_signals": [
+          "Shows understanding of photographic techniques",
+          "Can translate brand needs to visual direction",
+          "Knows when to commission versus use stock"
+        ],
+        "key_points": [
+          "Brief development with creative direction",
+          "Mood board and reference compilation",
+          "Working with photographers on concept execution",
+          "Image editing and retouching direction",
+          "Stock imagery curation and selection criteria"
+        ],
+        "framework_name": "Photography Direction Process",
+        "avoid": [
+          "No visual direction leading to inconsistent results",
+          "Micromanaging photographer's artistic choices",
+          "Settling for mediocre stock without alternatives"
+        ]
+      },
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "What is your experience with photography direction? How do you work with photographers or direct stock imagery selection?",
+      "category": "technical",
+      "id": "gd_019"
+    },
+    {
+      "answer_framework": {
+        "structure": "STAR",
+        "avoid": [
+          "Missing deadlines without early warning",
+          "Scope creep without proper change management",
+          "Blaming stakeholders for unrealistic expectations"
+        ],
+        "key_points": [
+          "Project planning with clear milestones and dependencies",
+          "Stakeholder alignment and expectation management",
+          "Resource allocation and task prioritization",
+          "Communication cadence and status updates",
+          "Risk identification and contingency planning"
+        ],
+        "strong_answer_signals": [
+          "Shows project management and leadership skills",
+          "Balances quality with deadline constraints",
+          "Keeps stakeholders aligned without excessive meetings"
+        ]
+      },
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "Tell me about a time you had to manage a design project with multiple stakeholders and tight deadlines.",
+      "category": "behavioral",
+      "id": "gd_020"
+    }
+  ]
+}
