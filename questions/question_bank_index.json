@@ -2,8 +2,8 @@
   "metadata": {
     "description": "Master index for the Interview Aid App question bank",
     "generated": "2026-09-02",
-    "grand_total": 1646,
-    "total_files": 52,
+    "grand_total": 1676,
+    "total_files": 53,
     "schema_version": "1.1"
   },
   "files": [
@@ -26,6 +26,24 @@
       "total": 15,
       "categories": [
         "behavioral",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid",
+        "senior"
+      ]
+    },
+    {
+      "file": "ai_fluency_questions.json",
+      "sector": "AI Fluency (all sectors)",
+      "total": 30,
+      "categories": [
+        "behavioral",
+        "manager",
         "motivation",
         "situational",
         "technical"

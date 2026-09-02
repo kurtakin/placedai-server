@@ -1,0 +1,933 @@
+{
+  "metadata": {
+    "sector": "AI Fluency (all sectors)",
+    "generated": "2026-09-02",
+    "total": 30,
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ],
+    "region": "North America",
+    "schema_version": "1.1",
+    "cross_sector": true,
+    "note": "Not a sector. A cross-cutting set like Universal Behavioral. AI now appears in 8 percent of job titles and most of that is outside tech: marketing postings mentioning AI went from 8.4 to 14.9 percent during 2025 and HR from 4.4 to 8.8. Employers screen for judgement, above all for knowing when NOT to use AI, so the pack is built around that rather than around enthusiasm."
+  },
+  "questions": [
+    {
+      "id": "aif_b_001",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "How do you use AI in your work?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Name ONE workflow, not a tool list. The question is about judgement, not about which apps you have opened",
+          "Give the before and after with a number: reporting went from five days to one, a first draft that took two hours now takes twenty minutes, and say what you did with the time you got back",
+          "Say where the human stays in the loop, because that sentence is what separates a strong answer from a weak one. You verify against the source, you do not send it unchecked, and you own the output",
+          "Name one thing you deliberately do not use it for, and why. Interviewers screen for that boundary more than for enthusiasm",
+          "Sector fill-in: a marketer talks first drafts and audience research; an accountant talks reconciliation summaries and never the numbers themselves; a nurse talks documentation drafting and never clinical judgement; a developer talks scaffolding and tests with review; a teacher talks lesson differentiation and never grading unseen"
+        ],
+        "strong_answer_signals": [
+          "One concrete workflow with a measured saving beats five tools named",
+          "States explicitly where they verify and where they refuse, which is the judgement employers are screening for",
+          "Owns the output rather than treating the tool as the author"
+        ],
+        "avoid": [
+          "I do not really use AI, which now reads as incuriosity rather than caution",
+          "I use ChatGPT for everything, which reads as no judgement at all",
+          "Buzzwords such as optimising workflows with no example and no number"
+        ]
+      }
+    },
+    {
+      "id": "aif_b_002",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Tell me about a time AI saved you significant time.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Set the task and the old cost honestly: how long it used to take and how often you did it. Frequency matters more than a one-off",
+          "Describe the change specifically: what you gave the tool, what you kept doing yourself, and what the review step was",
+          "Give the saving as a rate rather than a single event: hours per week or per month, so it compounds",
+          "Say what the reclaimed time went to. Saving four hours a week only counts if you can name what those hours produced",
+          "Be honest about the setup cost. It rarely works on the first attempt and admitting the iteration makes the number believable"
+        ],
+        "strong_answer_signals": [
+          "A recurring saving stated as a rate, with what the time was redeployed to",
+          "Admits the iteration and the failed first attempts, which makes the claim credible",
+          "Kept a review step rather than removing themselves from the process"
+        ],
+        "avoid": [
+          "A suspiciously round claim such as it made me ten times faster",
+          "A saving with no verification step, which raises a quality question",
+          "Time saved with no account of what it was spent on"
+        ]
+      }
+    },
+    {
+      "id": "aif_b_003",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Tell me about a time you caught an AI mistake before it caused a problem.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "This is the highest value story you can tell on this topic, so have one ready",
+          "Name the error type precisely: a fabricated citation or statistic, a confident but outdated fact, a subtle calculation error, a misread of context, or a plausible answer to the wrong question",
+          "Say what made you check. Usually it is domain knowledge: the number did not match what you know about the business, the tone was wrong for the audience, the source did not exist",
+          "Describe the verification: you went to the primary source, you recalculated, you asked a colleague, you tested it",
+          "Close with the process you changed so that the check is now systematic rather than lucky"
+        ],
+        "strong_answer_signals": [
+          "Caught it through domain expertise, which proves the expertise is real",
+          "Built a repeatable check afterwards instead of relying on vigilance",
+          "Understands that fluent and confident output is not evidence of correctness"
+        ],
+        "avoid": [
+          "Having no such story, which suggests you are not checking",
+          "Blaming the tool rather than owning the review responsibility",
+          "A trivial catch such as a typo"
+        ]
+      }
+    },
+    {
+      "id": "aif_b_004",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Tell me about a time you decided not to use AI for something.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "This question is the real screen. Anyone can be enthusiastic; judgement is the scarce part",
+          "Give a genuine category: confidential or personal data that must not leave the organisation, a decision affecting someone's job or care, work where the reasoning itself is the deliverable, something requiring accountability you cannot delegate, or a relationship conversation that must be human",
+          "Say how you decided, not just that you decided: the stakes, the reversibility, whether an error would be visible, and whether you could verify the output at all",
+          "Note that verifiability is the practical test. If you cannot check the answer, you should not be using it for that",
+          "Close with the rule you now apply"
+        ],
+        "strong_answer_signals": [
+          "Has an articulated rule rather than a vague discomfort",
+          "Names verifiability as the deciding factor",
+          "Distinguishes low stakes and reversible from high stakes and irreversible"
+        ],
+        "avoid": [
+          "I use it for everything, which is the answer that fails this question",
+          "A refusal based on fear rather than reasoning",
+          "Claiming a policy prevented it with no view of your own"
+        ]
+      }
+    },
+    {
+      "id": "aif_b_005",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Tell me about learning a new AI tool and putting it to work.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Name the trigger: a bottleneck you had, not a tool you saw on social media. Starting from the problem is the signal",
+          "Describe how you evaluated it: a small real task first, compared against how you did it before, and checked whether the output survived your own review",
+          "Say what you learned about where it was good and where it was not. Every tool has a shape",
+          "Describe adoption: you built it into a routine, wrote down the prompts that worked, and shared it",
+          "Include the honest part: what you tried that did not work and what you abandoned"
+        ],
+        "strong_answer_signals": [
+          "Started from a problem rather than from the tool",
+          "Tested on a real task where they could judge the quality",
+          "Abandoned something that did not work, which shows evaluation rather than hype"
+        ],
+        "avoid": [
+          "Adopting tools because they are new",
+          "No evaluation step, just enthusiasm",
+          "Claiming mastery of a long list of tools"
+        ]
+      }
+    },
+    {
+      "id": "aif_b_006",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Tell me about helping colleagues use AI.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Start from their work, not from the technology. People adopt when it solves something they already complain about",
+          "Describe what you actually did: showed it on their own task, gave them a starting prompt, sat with them the first time, wrote a short guide",
+          "Handle the resistance honestly. It is usually fear of being replaced, a bad first experience, or a genuine quality concern, and each needs a different response",
+          "Include the guardrails you taught alongside the capability: what not to paste in, how to verify, and who owns the output",
+          "Give the outcome and how it spread"
+        ],
+        "strong_answer_signals": [
+          "Taught the guardrails at the same time as the capability",
+          "Took the fear seriously instead of dismissing it",
+          "Demonstrated on the colleague's own work rather than a generic demo"
+        ],
+        "avoid": [
+          "Evangelising rather than teaching",
+          "Dismissing concerns as resistance to change",
+          "Teaching the tool without teaching verification"
+        ]
+      }
+    },
+    {
+      "id": "aif_b_007",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Tell me about a time AI output was biased, unfair or inappropriate.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Give a real category: a summary that flattened an important nuance, language skewed toward one group, a recommendation that would disadvantage someone, or a tone that was wrong for the audience",
+          "Say how you noticed. Usually it is knowing the people or the context well enough to feel that something is off",
+          "Describe what you did with the specific output and, more importantly, what you changed in the process",
+          "Escalate where the stakes justify it: anything touching hiring, lending, care, discipline or access needs a human decision and often a documented one",
+          "Note the regulatory direction if it fits your field, since AI decisions affecting people are increasingly subject to rules"
+        ],
+        "strong_answer_signals": [
+          "Knows that bias shows up as plausible and fluent, not as obviously wrong",
+          "Treats decisions about people as requiring human accountability",
+          "Changed the process rather than only the one output"
+        ],
+        "avoid": [
+          "Assuming the tool is neutral because it is a machine",
+          "Using AI output as the basis for a decision about a person with no human review",
+          "Noticing but not raising it"
+        ]
+      }
+    },
+    {
+      "id": "aif_b_008",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "How do you keep current as these tools change so fast?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be specific about your sources rather than saying you follow the space: a newsletter, a practitioner community in your field, release notes for the tools you actually use, and colleagues",
+          "Say how you filter. Most of what is published is noise, and the useful filter is whether it changes something you do this week",
+          "Describe a habit rather than an intention: a set time, a small test on a real task, a note of what worked",
+          "Emphasise depth over breadth. Knowing two tools well beats a shallow tour of twenty",
+          "Mention the durable part: prompting and verification habits transfer between tools, so that is what is worth learning"
+        ],
+        "strong_answer_signals": [
+          "Names actual sources rather than gesturing at the field",
+          "Has a filter for noise and says what it is",
+          "Invests in transferable skill rather than tool trivia"
+        ],
+        "avoid": [
+          "I read about it online",
+          "Chasing every new release",
+          "No routine at all, which is now a real gap in most knowledge roles"
+        ]
+      }
+    },
+    {
+      "id": "aif_s_001",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Your manager asks you to use AI to do the work of a team that is being cut. How do you respond?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Do not answer with a yes or a no. Answer with what is actually automatable and what is not, because that is the useful contribution",
+          "Break the work down: which parts are repetitive and verifiable, which need judgement, relationship or accountability, and which carry risk if they go wrong quietly",
+          "Be honest about the hidden costs: review time, error rates, the setup and maintenance, and what happens when the tool is wrong and nobody catches it",
+          "Give a realistic proposal with a pilot and a measurement rather than a promise, and name the quality bar that must hold",
+          "Raise the people question directly and professionally if it is a safety, service or compliance issue"
+        ],
+        "strong_answer_signals": [
+          "Decomposes the work instead of answering the question as posed",
+          "Names review time as a real cost, which most people forget",
+          "Proposes a measured pilot rather than a commitment"
+        ],
+        "avoid": [
+          "Promising it can absorb the work without evidence",
+          "Refusing outright with no analysis",
+          "Ignoring the risk of silent errors at scale"
+        ]
+      }
+    },
+    {
+      "id": "aif_s_002",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "A colleague submits work that is clearly AI generated and not checked.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Focus on the quality problem, not on the fact that they used a tool. Using AI is not the issue; submitting unverified work is",
+          "Be specific about what is wrong: a fabricated source, a number that does not reconcile, a generic answer to a specific question, or something that will not survive the client or the regulator",
+          "Go to them first, privately, and assume good intent. Most of the time it is time pressure, not laziness",
+          "Fix the process rather than the instance: a review step, a rule that sources get checked, or a norm that the person who submits it owns it",
+          "Escalate if it recurs or if it touches accuracy that could harm someone"
+        ],
+        "strong_answer_signals": [
+          "Separates the tool from the behaviour, which is the mature framing",
+          "Names the accountability principle: whoever submits it owns it",
+          "Proposes a process change rather than policing"
+        ],
+        "avoid": [
+          "Treating AI use as the offence",
+          "Reporting them before speaking with them",
+          "Letting it pass because everyone does it"
+        ]
+      }
+    },
+    {
+      "id": "aif_s_003",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "A client or customer asks whether AI was used in this work.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Answer honestly. The cost of being caught in a denial is far higher than the cost of the disclosure",
+          "Describe the division of labour rather than a yes or no: what the tool drafted or accelerated, what you directed, and what you verified and stand behind",
+          "Emphasise accountability. You are responsible for the output regardless of how it was produced, and saying that plainly usually settles the concern",
+          "Know the contractual or regulatory position where it exists: some clients, sectors and jurisdictions now require disclosure or prohibit certain uses",
+          "If they object, respect it and adjust for their work"
+        ],
+        "strong_answer_signals": [
+          "Comfortable being transparent rather than defensive",
+          "Frames it as accountability rather than as a confession",
+          "Aware that disclosure obligations exist in some contexts"
+        ],
+        "avoid": [
+          "Denying it",
+          "Being defensive or evasive, which reads as concealment",
+          "Overclaiming that no AI touched anything when it did"
+        ]
+      }
+    },
+    {
+      "id": "aif_s_004",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "You are asked to put confidential or personal data into an AI tool.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Stop and check before pasting. Once data leaves, it cannot be recalled",
+          "Know the questions: is this an approved enterprise tool with a data agreement, does it train on the input, where is the data stored, and what does the contract or the regulation say",
+          "Categories that need real caution: customer personal data, health information, payment data, employee records, unreleased financials, source code and anything under an NDA",
+          "Offer the safe version rather than a flat no: anonymise or redact, use a synthetic example, use an approved internal deployment, or ask the tooling owner to approve",
+          "Escalate to whoever owns data governance if the request keeps coming"
+        ],
+        "strong_answer_signals": [
+          "Knows the difference between a consumer tool and an approved enterprise deployment",
+          "Offers the anonymised path rather than only refusing",
+          "Understands that pasting is irreversible"
+        ],
+        "avoid": [
+          "Pasting because a manager asked",
+          "Assuming a paid subscription means the data is safe",
+          "Refusing with no alternative and no escalation"
+        ]
+      }
+    },
+    {
+      "id": "aif_s_005",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "An AI tool gives you a confident answer in a high stakes moment and you cannot verify it immediately.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Treat unverified as unknown. Confidence in the output is not evidence, and fluency is not accuracy",
+          "Say what you would actually do: state the uncertainty rather than passing it on as fact, buy time, or give the part you can stand behind and flag the rest",
+          "Scale the response to the stakes. A low stakes reversible answer can go out with a caveat; a clinical, legal, financial or safety answer cannot",
+          "Name your verification route: the primary source, the policy, a colleague, a recalculation",
+          "Note that saying I do not know yet, I will confirm and come back is almost always better received than a confident wrong answer"
+        ],
+        "strong_answer_signals": [
+          "Comfortable saying I need to verify that",
+          "Scales rigour to stakes and reversibility",
+          "Never passes an unverified AI claim on as their own knowledge"
+        ],
+        "avoid": [
+          "Repeating it as fact because it sounded authoritative",
+          "Freezing rather than giving the verified part",
+          "Treating all decisions with the same level of rigour"
+        ]
+      }
+    },
+    {
+      "id": "aif_s_006",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Your company has no AI policy and you want to use a tool. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "No policy is not permission. Absence of a rule is where most real incidents come from",
+          "Ask before you start, and ask the right owner: IT, security, legal or privacy depending on what the data is",
+          "Make it easy to say yes: bring the specific tool, the specific use case, the data involved, and what you propose not to use it for",
+          "Start with the lowest risk version: public information, no client data, human review on everything",
+          "Offer to write down what you learn so it becomes the basis of a policy rather than a private habit"
+        ],
+        "strong_answer_signals": [
+          "Treats silence as risk rather than as freedom",
+          "Brings a scoped proposal instead of a general request",
+          "Turns their own use into the beginning of a standard"
+        ],
+        "avoid": [
+          "Using it quietly because nobody said no",
+          "Asking for blanket approval for AI in general",
+          "Waiting for a policy that may never arrive and doing nothing"
+        ]
+      }
+    },
+    {
+      "id": "aif_s_007",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "The AI recommendation contradicts your professional judgement.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Your judgement and your accountability do not transfer to the tool. You sign the work",
+          "Take the disagreement seriously in both directions: check whether the tool has caught something you missed, and check what context it lacks that you have",
+          "Look for the reason: outdated training data, missing context about this client or patient or system, an assumption that does not hold here, or a genuine blind spot of yours",
+          "Escalate or get a second human opinion where the stakes are high, rather than resolving it alone in either direction",
+          "Document the decision and the reasoning, especially in regulated work"
+        ],
+        "strong_answer_signals": [
+          "Uses the disagreement as a prompt to check their own reasoning",
+          "Retains accountability rather than deferring to the output",
+          "Documents the reasoning where it matters"
+        ],
+        "avoid": [
+          "Deferring automatically because the tool is sophisticated",
+          "Dismissing it automatically because it is a machine",
+          "Not investigating the source of the disagreement"
+        ]
+      }
+    },
+    {
+      "id": "aif_t_001",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Which AI tools do you actually use, and for what?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Pair each tool with a job rather than listing names: this one for drafting and rewriting, this one for research where I can follow the citations, this one built into the software I already use, this one for code or data",
+          "Depth beats breadth. Two tools you know the failure modes of is a stronger answer than ten you have opened once",
+          "Say which are approved at your workplace and which you use personally, because the distinction shows governance awareness",
+          "Mention where AI is already inside the tools you use anyway: the CRM, the EMR, the design suite, the spreadsheet, the ticketing system. Most people underreport this",
+          "Sector fill-in: name the tools of YOUR field, not just the general chat assistants, because that is what shows you actually work in it"
+        ],
+        "strong_answer_signals": [
+          "Tool paired with a specific job and a known weakness",
+          "Distinguishes approved workplace tools from personal ones",
+          "Names field-specific tools rather than only general assistants"
+        ],
+        "avoid": [
+          "A long list with no use case",
+          "Claiming expertise in tools you have barely used, since a follow-up question exposes it",
+          "Forgetting the AI already embedded in your daily software"
+        ]
+      }
+    },
+    {
+      "id": "aif_t_002",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "How do you verify AI output?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Have an actual method, since this is the competency being tested more than any other in this topic",
+          "Facts and citations: go to the primary source. A confident reference that does not exist is the most common failure and the most damaging",
+          "Numbers: recalculate independently. Never let a generated figure into a report unchecked",
+          "Reasoning: check it against what you know about this specific context. Generic advice that is true in general is often wrong here",
+          "Scale the effort to the stakes and the reversibility, and be explicit that anything published, filed, clinical or contractual gets the full check"
+        ],
+        "strong_answer_signals": [
+          "Names fabricated citations specifically, which shows real experience",
+          "Recalculates rather than sanity-checking numbers by eye",
+          "Has a tiered approach rather than one level of rigour for everything"
+        ],
+        "avoid": [
+          "It usually looks right, which is not verification",
+          "Asking the same tool whether it is correct",
+          "Only checking when something feels wrong"
+        ]
+      }
+    },
+    {
+      "id": "aif_t_003",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "What makes a good prompt?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Context, task, format, constraints. Say who it is for, what you want, in what shape, and what to avoid",
+          "Give it the raw material rather than expecting it to know: your data, the actual document, the real audience, the previous version",
+          "Ask for the reasoning or the sources when you need to check the work, since output you cannot verify is output you cannot use",
+          "Iterate rather than expecting one shot, and keep the prompts that worked so it becomes a reusable asset rather than a re-invention each time",
+          "Know when the prompt is not the problem. Some tasks are outside what the tool can do and better prompting will not fix that"
+        ],
+        "strong_answer_signals": [
+          "Supplies real context and material rather than asking generic questions",
+          "Asks for sources or reasoning so the output is checkable",
+          "Keeps a library of what worked"
+        ],
+        "avoid": [
+          "Magic words and prompt tricks as the answer",
+          "Expecting one perfect prompt with no iteration",
+          "Never questioning whether the task suits the tool at all"
+        ]
+      }
+    },
+    {
+      "id": "aif_t_004",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "What would you never put into an AI tool?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Customer and patient personal data, health records, payment and card data, government identifiers, employee records and anything under an NDA",
+          "Unreleased financials, legal strategy, proprietary code and trade secrets",
+          "Credentials of any kind: passwords, keys, tokens. This should be automatic",
+          "Note the exception properly: an approved enterprise deployment with a data processing agreement and no training on inputs changes the answer for some of these, and knowing that distinction is the mark of someone who has thought about it",
+          "Name your field's specific regime: HIPAA in US healthcare, PIPEDA and provincial law in Canada, GDPR for EU residents, PCI for card data, and sector rules in finance and law"
+        ],
+        "strong_answer_signals": [
+          "Knows that approved enterprise tooling changes the analysis, rather than treating all tools as one",
+          "Names the regime relevant to their own field",
+          "Includes credentials, which people forget"
+        ],
+        "avoid": [
+          "Not knowing, which is a disqualifying answer in any regulated field",
+          "Assuming a paid plan means the data is protected",
+          "A blanket refusal that shows no understanding of why"
+        ]
+      }
+    },
+    {
+      "id": "aif_t_005",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Where does AI fail in your specific field?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "This is where domain expertise shows, so answer with your field rather than in general",
+          "Name the general failure modes and then localise them: fabrication that sounds authoritative, a training cutoff that misses recent changes, no access to your internal context, confident answers on questions with no single right answer",
+          "Localise it: outdated regulation or codes in law, accounting and safety; missing patient or client context in care; plausible but wrong figures in finance; code that compiles and is subtly wrong; advice that ignores your market or jurisdiction",
+          "Say what you do about each: check the effective date, supply the internal context, verify the source, test the output",
+          "The failures that matter are the plausible ones. Obvious errors are safe because everyone catches them"
+        ],
+        "strong_answer_signals": [
+          "Answers with field-specific failure modes rather than generic ones",
+          "Points out that plausible errors are the dangerous ones",
+          "Pairs each failure with a mitigation"
+        ],
+        "avoid": [
+          "It sometimes gets things wrong, with nothing behind it",
+          "Claiming it is unreliable in general, which shows no engagement",
+          "No mitigation attached"
+        ]
+      }
+    },
+    {
+      "id": "aif_t_006",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "How would you measure whether an AI tool actually helped?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Baseline first, before adoption, or you will never be able to prove anything",
+          "Measure the pair, never speed alone: time or cost per unit AND a quality measure such as error rate, rework, review time, or customer or client outcome",
+          "Count the total cost honestly: licences, the time spent learning and prompting, the review step, and the errors that get through",
+          "Compare against the real alternative, which is often a simpler fix such as a template, a checklist or a better process, not the previous manual method",
+          "Set a decision point in advance: what result would make you stop using it"
+        ],
+        "strong_answer_signals": [
+          "Insists on a baseline before adoption",
+          "Includes review time and error cost in the total",
+          "Sets a kill criterion up front"
+        ],
+        "avoid": [
+          "Measuring speed alone, which is how quality quietly degrades",
+          "Ignoring the review burden shifted onto humans",
+          "No comparison against a simpler non-AI fix"
+        ]
+      }
+    },
+    {
+      "id": "aif_t_007",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Explain a limitation of these tools in plain language.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Pick one and explain it clearly, since the test is whether you understand it well enough to teach it",
+          "Fabrication: it produces the most plausible continuation, not a looked-up fact, so a wrong answer arrives with the same confidence as a right one",
+          "Knowledge cutoff and staleness: it may not know a recent change in law, price, product or protocol unless it can look it up",
+          "No access to your context: it does not know your client, your patient, your codebase or your internal policy unless you supply it",
+          "Consistency: the same question can produce different answers, which matters when the output feeds a process",
+          "Close with the practical consequence: this is exactly why verification is a step and not an optional extra"
+        ],
+        "strong_answer_signals": [
+          "Explains it simply enough for a non-technical colleague",
+          "Connects the limitation to a working practice",
+          "Understands that confidence and correctness are unrelated in the output"
+        ],
+        "avoid": [
+          "Technical jargon that dodges the question",
+          "Saying it is just autocomplete as a dismissal with no practical consequence",
+          "Not being able to name a single limitation"
+        ]
+      }
+    },
+    {
+      "id": "aif_m_001",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "How would you introduce AI to your team?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start from a real bottleneck the team already complains about, not from the technology. Adoption follows relief, not mandates",
+          "Address the fear first and honestly. If people think this is about cutting headcount they will quietly not adopt it, and you will never find out why",
+          "Pilot small with volunteers, on low risk work, with a measured before and after and a defined review step",
+          "Ship the guardrails with the capability: what data may never go in, what always needs human review, and who owns the output",
+          "Share what worked AND what did not, so the team learns to evaluate rather than to believe"
+        ],
+        "strong_answer_signals": [
+          "Names job fear as the first obstacle and addresses it directly",
+          "Volunteers and a pilot rather than a mandate",
+          "Guardrails introduced at the same time as the tool"
+        ],
+        "avoid": [
+          "Mandating adoption and measuring usage as the goal",
+          "Ignoring the employment anxiety in the room",
+          "Rolling out broadly with no pilot and no measurement"
+        ]
+      }
+    },
+    {
+      "id": "aif_m_002",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "How do you evaluate whether an AI investment is worth it?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start from the problem and the baseline, and include doing nothing as a real option",
+          "Total cost of ownership, not the licence price: subscriptions, integration, training, prompt and workflow development, the ongoing review burden, and the cost of errors that slip through",
+          "Benefit measured on both axes: throughput or cost AND quality, with a defined quality bar that must not drop",
+          "Risk column: data exposure, vendor lock-in, a model or pricing change you do not control, and regulatory exposure if it touches decisions about people",
+          "Pilot, measure, and commit to a post-implementation review. Most claimed savings never get checked"
+        ],
+        "strong_answer_signals": [
+          "Counts the review burden as a cost rather than assuming it away",
+          "Names vendor and model change as a real risk",
+          "Commits to checking whether the promised saving appeared"
+        ],
+        "avoid": [
+          "Buying because competitors are buying",
+          "Licence cost as the whole cost",
+          "No baseline, so no way to prove the outcome"
+        ]
+      }
+    },
+    {
+      "id": "aif_m_003",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "A team member refuses to use AI tools. How do you handle it?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Find the actual reason before responding. Fear for their job, a bad first experience, a real quality or ethical concern, or feeling too far behind to start are four different problems",
+          "Take the quality and ethics objections seriously. Sometimes the refuser is right and is protecting you from a mistake",
+          "For fear: be honest about what you can and cannot promise, and do not offer reassurance you cannot back",
+          "For skill gap: pair them with someone, start on their own work, and give them room to be a beginner without an audience",
+          "Where it is a genuine job requirement, say so clearly and set the expectation with support and a timeline, the same as any other skill"
+        ],
+        "strong_answer_signals": [
+          "Treats the objection as information rather than as resistance",
+          "Willing to conclude the refuser has a point",
+          "Honest about what they can promise on job security"
+        ],
+        "avoid": [
+          "Dismissing it as resistance to change",
+          "Public pressure or comparison to faster adopters",
+          "Making promises about job security you do not control"
+        ]
+      }
+    },
+    {
+      "id": "aif_m_004",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "How would you set an AI usage policy for your team?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Make it enabling, not just prohibiting. A policy that only says no gets ignored and drives usage underground where you cannot see it",
+          "Cover the four questions people actually have: which tools are approved, what data may never be entered, what always requires human review, and who is accountable for the output",
+          "Tier it by risk rather than one blanket rule: internal drafting is not the same as anything client facing, regulated, or affecting a person's employment, care or money",
+          "Address disclosure: when clients, customers or colleagues should be told",
+          "Keep it short, review it on a date, and give people a named person to ask. A policy nobody can find is not a policy"
+        ],
+        "strong_answer_signals": [
+          "Understands that a prohibition-only policy pushes usage into the shadows",
+          "Tiers by risk instead of a single rule",
+          "Names accountability explicitly: the human who submits it owns it"
+        ],
+        "avoid": [
+          "A blanket ban, which is unenforceable and costs you the upside",
+          "A policy with no owner and no review date",
+          "Rules with no explanation, which nobody follows"
+        ]
+      }
+    },
+    {
+      "id": "aif_m_005",
+      "category": "manager",
+      "seniority": [
+        "senior",
+        "manager"
+      ],
+      "text": "How do you protect quality while adopting AI?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Define the quality bar and measure it BEFORE adoption, otherwise a slow decline is invisible",
+          "Watch the metric that actually degrades: error and rework rate, complaints, returns, escalations, or audit findings, not just throughput",
+          "Keep a human in the loop wherever an error would be expensive, invisible or irreversible, and be explicit about where that line sits",
+          "Guard against the specific new risk: at scale, a small error rate becomes a large number of errors, and plausible errors are the ones that get through",
+          "Watch the skill erosion risk too. If juniors never do the work manually, in a few years nobody can check the output"
+        ],
+        "strong_answer_signals": [
+          "Names skill erosion, which almost nobody raises and is the real long-term risk",
+          "Measures quality before adoption so decline is detectable",
+          "Understands that scale multiplies a small error rate"
+        ],
+        "avoid": [
+          "Assuming quality holds because output looks fine",
+          "Measuring only speed",
+          "No plan for how the next generation learns to judge the work"
+        ]
+      }
+    },
+    {
+      "id": "aif_mo_001",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "Are you worried AI will replace your job?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Answer with clear eyes rather than with either fear or bravado. Both read badly",
+          "Separate tasks from jobs. Parts of most roles are automatable and the role reorganises around what is left, which is usually judgement, relationships, accountability and physical presence",
+          "Say what in YOUR role is hard to automate and why, specifically. That is the real content of this answer",
+          "Show you are moving toward the durable part: the judgement, the client relationship, the ability to review and be accountable for AI output",
+          "End on agency: the practical bet is being the person who uses it well rather than the person who avoids it"
+        ],
+        "strong_answer_signals": [
+          "Names specifically what in their role resists automation and why",
+          "Neither dismissive nor anxious",
+          "Positioning themselves toward judgement and accountability"
+        ],
+        "avoid": [
+          "It could never do what I do, which reads as complacency",
+          "Visible anxiety, which makes an interviewer worry about resilience",
+          "Treating it as someone else's problem"
+        ]
+      }
+    },
+    {
+      "id": "aif_mo_002",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "What excites or concerns you about AI in your field?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Give one of each. Only excitement reads as naive, only concern reads as resistant",
+          "Ground both in your own field rather than in the general debate about the technology",
+          "Excitement: name the drudgery it removes and what that frees people to do, ideally the part of the job you care about",
+          "Concern: pick a real professional one such as quality at scale, deskilling, accountability when something goes wrong, bias in decisions about people, or over-trust in confident output",
+          "Show you are doing something about the concern rather than only naming it"
+        ],
+        "strong_answer_signals": [
+          "Both sides, both specific to their field",
+          "A concern that is professional rather than existential",
+          "Acting on the concern rather than observing it"
+        ],
+        "avoid": [
+          "Generic techno-optimism or generic doom",
+          "Concerns copied from headlines with no connection to their work",
+          "Refusing to name any downside"
+        ]
+      }
+    },
+    {
+      "id": "aif_mo_003",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior",
+        "manager"
+      ],
+      "text": "What questions do you have about how this team uses AI?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Ask what is approved and what the policy is, since the answer tells you a great deal about how the organisation is run",
+          "Ask what they actually use it for today and what has been tried and abandoned",
+          "Ask where the human review sits and who owns the output when something goes wrong",
+          "Ask how they are thinking about the effect on the team and on hiring, which is a fair and revealing question",
+          "Ask whether there is training or budget, since that tells you if they are serious or performative"
+        ],
+        "strong_answer_signals": [
+          "Asks what was abandoned, which reveals whether they evaluate honestly",
+          "Asks who owns the output, which is the accountability question nobody asks",
+          "Treats it as a fit question in both directions"
+        ],
+        "avoid": [
+          "No questions on a topic this central",
+          "Only asking which tools they have",
+          "Questions that read as anxiety about job security"
+        ]
+      }
+    }
+  ]
+}
