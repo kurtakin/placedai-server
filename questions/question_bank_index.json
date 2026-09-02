@@ -2,8 +2,8 @@
   "metadata": {
     "description": "Master index for the Interview Aid App question bank",
     "generated": "2026-09-02",
-    "grand_total": 1600,
-    "total_files": 51,
+    "grand_total": 1646,
+    "total_files": 52,
     "schema_version": "1.1"
   },
   "files": [
@@ -358,6 +358,23 @@
     {
       "file": "healthcare_support_questions.json",
       "sector": "Healthcare Support (CNA, MA, PCT)",
+      "total": 46,
+      "categories": [
+        "behavioral",
+        "manager",
+        "motivation",
+        "situational",
+        "technical"
+      ],
+      "seniority_levels": [
+        "entry",
+        "manager",
+        "mid"
+      ]
+    },
+    {
+      "file": "home_health_aide_questions.json",
+      "sector": "Home Health & Personal Care Aide",
       "total": 46,
       "categories": [
         "behavioral",

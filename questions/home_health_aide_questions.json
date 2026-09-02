@@ -1,0 +1,1348 @@
+{
+  "metadata": {
+    "sector": "Home Health & Personal Care Aide",
+    "generated": "2026-09-02",
+    "total": 46,
+    "categories": [
+      "behavioral",
+      "manager",
+      "motivation",
+      "situational",
+      "technical"
+    ],
+    "region": "North America",
+    "schema_version": "1.1",
+    "note": "Largest occupation in the US by employment. Distinct from facility CNA work: alone in the client home, no nurse on site, family dynamics, scope and medication limits, mandated reporting, financial exploitation, EVV, personal safety, travel and scheduling."
+  },
+  "questions": [
+    {
+      "id": "hha_b_001",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about yourself and your caregiving experience.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Credential and status: HHA or PCA certification, CNA if you have it, CPR and first aid current, plus a valid driver licence and reliable vehicle if the role needs travel",
+          "Setting and caseload: home care, private duty or agency, how many clients per week, hours per visit, and whether you worked live-in or hourly",
+          "The client types you have handled: dementia, post-surgical, mobility limited, hospice and end of life, bariatric transfers, or a client with challenging behaviour",
+          "One thing you are known for, then say why home care rather than a facility"
+        ],
+        "strong_answer_signals": [
+          "States certification and whether it is current, since it gates the hire",
+          "Names the client types, which tells the coordinator who they can send you to",
+          "Chose home care deliberately rather than defaulting into it"
+        ],
+        "avoid": [
+          "Being vague about which tasks you are trained and permitted to do",
+          "Describing clients in a way that sounds impatient or dismissive",
+          "Skipping the transport question when the job is visit based"
+        ]
+      }
+    },
+    {
+      "id": "hha_b_002",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a difficult client and how you handled it.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Reframe difficult as distressed: losing independence, in pain, frightened, embarrassed at needing help with personal care, or grieving a life they had",
+          "Describe what you noticed and what you changed: your approach, the order of tasks, the timing, giving them choice and control wherever possible",
+          "Show respect for their home. You are a guest in it, and behaving like staff in a facility is what causes most friction",
+          "Say when you reported the pattern to your supervisor rather than absorbing it alone",
+          "Close with the relationship afterwards"
+        ],
+        "strong_answer_signals": [
+          "Understands that resistance is often about dignity and control, not about you",
+          "Gives choices rather than instructions",
+          "Reports patterns to the agency instead of quietly coping"
+        ],
+        "avoid": [
+          "Calling a client difficult, stubborn or a complainer",
+          "Overriding their preferences because your way is faster",
+          "A story where you argued with the client"
+        ]
+      }
+    },
+    {
+      "id": "hha_b_003",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you noticed a change in a client and reported it.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Say what you observed in plain factual terms: not eating, new confusion, a fall, swelling, a change in skin, sleeping more, a wound that looked worse, not taking medication",
+          "You are often the only person who sees them regularly, so your observation is the whole early warning system",
+          "Report the same day to the supervising nurse or the care coordinator, and document it in the visit notes",
+          "Report the observation, not a diagnosis. Assessment is outside your scope",
+          "Close with what happened: a nurse visit, a medication change, a hospital admission that was caught early"
+        ],
+        "strong_answer_signals": [
+          "Reports promptly rather than at the next scheduled call",
+          "Uses objective language rather than interpreting",
+          "Understands that the aide is often the first to see decline"
+        ],
+        "avoid": [
+          "Waiting to see if it gets worse",
+          "Telling only the family and not the agency",
+          "Diagnosing or giving medical opinions to the client"
+        ]
+      }
+    },
+    {
+      "id": "hha_b_004",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about working with a client's family.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Families are part of the job, not a distraction. They are often exhausted, guilty and worried, and that comes out sideways",
+          "Communicate consistently: what you did during the visit, what you noticed, what supplies are running low. A short update prevents most conflict",
+          "Stay in your lane: care plan questions go to the care coordinator or nurse, not to you deciding on the spot",
+          "Handle disagreement between family members by staying neutral and referring the decision back to the agency and whoever holds authority",
+          "Respect the client's privacy even from family, and follow what the agency has authorised"
+        ],
+        "strong_answer_signals": [
+          "Proactive short updates rather than waiting to be asked",
+          "Refuses to take sides in a family disagreement",
+          "Knows the care plan is changed by the agency, not by a family request in the moment"
+        ],
+        "avoid": [
+          "Agreeing to extra tasks outside the care plan to keep the family happy",
+          "Discussing one family member with another",
+          "Treating the family as an obstacle"
+        ]
+      }
+    },
+    {
+      "id": "hha_b_005",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you made a mistake at work.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Choose a real and non catastrophic one: a missed task, a documentation error, arriving late, a miscommunication about a medication reminder",
+          "Client first: made sure they were safe, then reported it to the agency immediately rather than hoping nobody noticed",
+          "Completed whatever incident report the agency requires",
+          "Name the habit you built afterwards and give an example of it working since",
+          "Say plainly that in home care nobody is watching, so honesty is the whole basis of trust"
+        ],
+        "strong_answer_signals": [
+          "Reported it themselves when nobody would have known",
+          "Client safety before self protection",
+          "A concrete habit, not a promise to be careful"
+        ],
+        "avoid": [
+          "Claiming you have never made a mistake",
+          "Hiding an error because you were alone",
+          "Blaming the schedule or the family"
+        ]
+      }
+    },
+    {
+      "id": "hha_b_006",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a client interaction you are proud of.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Keep it small and real. This work is made of small moments, not rescues",
+          "What you noticed that someone else might have missed: a preference, a fear, a reason they were refusing, a way to make a task easier for them",
+          "What you did and why it mattered to that particular person",
+          "The effect: they ate, they walked further, they let you help with something they had been refusing, they seemed less alone",
+          "What it taught you about the work"
+        ],
+        "strong_answer_signals": [
+          "Notices the person, not just the task list",
+          "Preserves independence rather than doing everything for them",
+          "Genuine rather than performed"
+        ],
+        "avoid": [
+          "Identifying details about the client",
+          "A dramatic medical rescue outside your scope",
+          "Generic answers about loving to help people"
+        ]
+      }
+    },
+    {
+      "id": "hha_b_007",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you dealt with the loss of a client.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "This is a real and regular part of home care, especially in hospice and long term clients. Answer honestly rather than stoically",
+          "What you did in the moment: followed the agency protocol, supported the family in the way that was appropriate for you, treated the client with dignity",
+          "How you processed it: talking to the agency, a colleague, employee support if available, or your own routine",
+          "That you came back and did the next visit properly, without carrying it into that client's home",
+          "Say if you attended a service where that was welcomed by the family"
+        ],
+        "strong_answer_signals": [
+          "Honest about the emotional weight without being overwhelmed by it",
+          "Knows the protocol for an expected death at home and follows it",
+          "Has a real way of processing loss, which predicts staying in the job"
+        ],
+        "avoid": [
+          "Claiming it does not affect you",
+          "Describing yourself as unable to cope with it",
+          "Crossing professional boundaries with the family afterwards"
+        ]
+      }
+    },
+    {
+      "id": "hha_b_008",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you were asked to do something you were not comfortable with.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Give the real category: a task outside your scope or training, something not in the care plan, being asked to work off the clock, handling money, or being asked to lie in the notes",
+          "You said no clearly and without apology, and explained the reason in one sentence",
+          "Offered what you could do instead, and called the agency the same day rather than deciding alone",
+          "Documented what was asked",
+          "Say plainly that agreeing once sets a precedent that gets harder to undo"
+        ],
+        "strong_answer_signals": [
+          "Refuses without being confrontational, then escalates properly",
+          "Understands the precedent problem",
+          "Names documenting money and valuables as protection for both sides"
+        ],
+        "avoid": [
+          "Doing it anyway to avoid conflict",
+          "Not telling the agency",
+          "Being harsh with the client or family about it"
+        ]
+      }
+    },
+    {
+      "id": "hha_b_009",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you had to be flexible or adapt quickly.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Home care is unpredictable: a client who is unwell, a cancelled or added visit, traffic and weather, a family emergency at the house, equipment that has broken",
+          "Describe what you reprioritised and how you communicated it. Calling ahead when you will be late is the single most valued behaviour in this job",
+          "Keep the essentials protected: safety, medication reminders, toileting, food and fluids, before anything optional",
+          "Say when you called the office rather than deciding alone",
+          "Close with the outcome and what you now keep in the car or the bag because of it"
+        ],
+        "strong_answer_signals": [
+          "Calls ahead rather than arriving late silently",
+          "Protects the essential tasks and says what got dropped",
+          "Uses the office as a resource rather than absorbing everything"
+        ],
+        "avoid": [
+          "Skipping documentation to catch up on time",
+          "Cutting personal care corners",
+          "Not communicating a delay"
+        ]
+      }
+    },
+    {
+      "id": "hha_b_010",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you worked with someone whose background or beliefs were very different from yours.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "You enter people's homes and their culture, faith, diet, language and family structure are theirs, not yours to adjust",
+          "Describe what you learned and asked rather than assumed: food preparation rules, modesty and who may provide personal care, shoes in the house, prayer times, how decisions are made in that family",
+          "Say that you asked respectfully rather than guessing, and adjusted your routine",
+          "Use professional interpretation where language is a barrier rather than relying on a child in the family",
+          "Close with the trust that resulted"
+        ],
+        "strong_answer_signals": [
+          "Asks the client how they want things done instead of assuming",
+          "Names modesty and same-gender care preferences, which are common and often mishandled",
+          "Does not use a family child as an interpreter"
+        ],
+        "avoid": [
+          "Imposing your own diet, faith or standards in their home",
+          "Treating a preference as a difficulty",
+          "Assuming based on appearance or accent"
+        ]
+      }
+    },
+    {
+      "id": "hha_t_001",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What personal care tasks are you trained to perform, and what are you not allowed to do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Permitted in most jurisdictions: bathing, dressing, grooming, oral care, toileting and incontinence care, transfers and ambulation, feeding, repositioning, light housekeeping, meal preparation, laundry, shopping and escorting to appointments",
+          "Usually NOT permitted for an HHA or PCA: administering medication, wound care beyond the simplest dressing, injections, catheter or ostomy procedures unless specifically trained and delegated, and any clinical assessment",
+          "Medication is the line most people get wrong: reminding, opening a pre-filled box and handing it over may be allowed, actually administering or deciding a dose is not",
+          "The narrowest of three rules governs: your certification, your state or provincial regulation, and the agency policy",
+          "Say you confirm the scope at each new agency rather than assuming it carries over"
+        ],
+        "strong_answer_signals": [
+          "Draws the medication reminder versus administration line without prompting",
+          "Knows scope varies by state and province",
+          "Says how they respond when asked to exceed it"
+        ],
+        "avoid": [
+          "Claiming you can do clinical tasks to sound more capable",
+          "Being unsure what you are permitted to do",
+          "Doing something outside scope because a family member asked"
+        ]
+      }
+    },
+    {
+      "id": "hha_t_002",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you safely transfer or move a client at home?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Assess before you touch: weight bearing status, how they moved yesterday, pain, cognition and cooperation, and any device or line",
+          "The home is the hard part. There is no ceiling lift, the bathroom is narrow, the bed is low and there may be rugs and steps. Plan the route and clear it first",
+          "Use what you have properly: gait belt, transfer board, a hospital bed at the right height, wheelchair brakes locked, sturdy shoes on the client",
+          "Body mechanics: feet apart, bend the knees, load close, never twist, count out loud so you move together",
+          "If it is not safe for one person, do not do it. Call the office and get the plan or the equipment changed. A hurt back ends this career"
+        ],
+        "strong_answer_signals": [
+          "Recognises the home environment is the real risk, not the client weight",
+          "Refuses an unsafe one person transfer and escalates it",
+          "Clears the path and locks the brakes before starting"
+        ],
+        "avoid": [
+          "Lifting alone because there is nobody else there",
+          "Pulling under the arms",
+          "Improvising with furniture instead of proper equipment"
+        ]
+      }
+    },
+    {
+      "id": "hha_t_003",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What do you do to prevent falls in a client's home?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Most falls happen going to the bathroom, so offer toileting proactively rather than waiting to be asked",
+          "Fix the environment on your first visit and keep checking: loose rugs, cords, clutter in walkways, poor lighting, no night light, wet floors, pets underfoot",
+          "Equipment used correctly: grab bars, raised toilet seat, shower chair, non slip mat, walker within reach and actually being used, correct footwear rather than socks or loose slippers",
+          "Watch the person too: new weakness, dizziness on standing, new medication, poor sleep, or not eating and drinking",
+          "Report hazards you cannot fix and any near miss to the agency, since the care plan may need to change"
+        ],
+        "strong_answer_signals": [
+          "Names toileting as the main fall trigger and rounds proactively",
+          "Notices dizziness on standing as a medication or hydration signal",
+          "Reports near misses, not only falls"
+        ],
+        "avoid": [
+          "Telling the client to call for help as the whole plan",
+          "Ignoring hazards because it is their home and their choice",
+          "Not reporting a near miss"
+        ]
+      }
+    },
+    {
+      "id": "hha_t_004",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What would you do if you found your client on the floor?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Do not move them. Check responsiveness and breathing, look for bleeding, obvious injury or a possible head strike",
+          "If they are unresponsive, not breathing normally, bleeding badly, in severe pain, or you suspect a head or hip injury, call 911 first",
+          "If they are alert and uninjured, still do not lift alone. Follow agency policy, which usually means calling the office or emergency services for a lift assist",
+          "Call the agency and the family, stay with the client, keep them warm and calm",
+          "Document exactly what you found in factual words: found on the floor beside the bed, not fell out of bed. You did not see it happen"
+        ],
+        "strong_answer_signals": [
+          "Assesses before moving, which is the whole answer",
+          "Knows the criteria for calling 911 rather than guessing",
+          "Documents what was found, not what was assumed"
+        ],
+        "avoid": [
+          "Helping them up quickly because they ask you to",
+          "Leaving them alone to go and call",
+          "Writing that they fell when you did not witness it"
+        ]
+      }
+    },
+    {
+      "id": "hha_t_005",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle medication in the home?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know your line precisely. Most HHAs and PCAs may remind, may bring the box and water, and may not administer or decide anything",
+          "Reminding well: at the right time, checking that they took it, and never pushing it into their mouth or hiding it in food",
+          "Watch and report: refusals, doses left in the box, running out, confusion about what to take, new side effects, dizziness or drowsiness, and any new prescription that appears",
+          "If they refuse, do not force it. Report it the same day, since a pattern of refusal matters clinically",
+          "Never touch the pill organiser setup unless that is explicitly in your scope and the care plan"
+        ],
+        "strong_answer_signals": [
+          "Refuses to administer even when the family asks",
+          "Reports leftover doses, which is often the first sign of decline",
+          "Never conceals medication in food"
+        ],
+        "avoid": [
+          "Filling or adjusting a pill organiser outside scope",
+          "Deciding to skip or double a dose",
+          "Not reporting a refusal"
+        ]
+      }
+    },
+    {
+      "id": "hha_t_006",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you support a client with dementia?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Approach from the front, make eye contact, say who you are every visit, speak slowly with short sentences and one instruction at a time",
+          "Never argue with their reality or correct them. Redirect, validate the feeling, and offer a limited choice: this shirt or that one",
+          "Keep the routine and the environment stable. Same order of tasks, same time, familiar objects. Change is what triggers distress",
+          "When they resist care, look for the trigger: pain, needing the toilet, hunger, cold, overstimulation, fear of water, or an unfamiliar face. Come back in ten minutes rather than forcing it",
+          "Report a sudden change in a previously calm client. Sudden confusion often means delirium from infection, pain, dehydration or medication, and that needs a nurse"
+        ],
+        "strong_answer_signals": [
+          "Knows sudden change suggests delirium and reports rather than accepting it as the dementia",
+          "Uses come back later as a legitimate strategy",
+          "Watches for wandering and safety in the home"
+        ],
+        "avoid": [
+          "Correcting or reasoning with the client",
+          "Forcing care to stay on schedule",
+          "Treating resistance as bad behaviour rather than communication"
+        ]
+      }
+    },
+    {
+      "id": "hha_t_007",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What do you watch for on the skin, and how do you prevent pressure injuries?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Look every time you provide personal care, especially over the bony areas: tailbone, hips, heels, elbows, shoulder blades, and under the breasts or any skin fold",
+          "Report redness that does not fade when pressed, any broken skin, blisters, warmth, swelling, odour or drainage. Report the same day",
+          "Prevent: reposition at least every two hours in bed and about hourly in a chair, offload the heels, keep skin clean and dry, manage incontinence promptly, keep bedding smooth, and never drag them across the sheet",
+          "Nutrition and fluids matter more than most people realise. Poor intake is a direct cause of skin breakdown, so report reduced eating and drinking",
+          "Wound care itself is usually a nurse task. Observe and report"
+        ],
+        "strong_answer_signals": [
+          "Knows non blanching redness is stage one and reports it immediately",
+          "Names heels and moisture, which are the two most commonly missed",
+          "Connects nutrition and hydration to skin"
+        ],
+        "avoid": [
+          "Massaging a reddened area, which causes damage",
+          "Applying creams or dressings outside your scope",
+          "Waiting for the next scheduled nurse visit to mention it"
+        ]
+      }
+    },
+    {
+      "id": "hha_t_008",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle meals, nutrition and hydration?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Follow the prescribed diet exactly: diabetic, low sodium, renal, thickened liquids for swallowing problems, allergies. Getting this wrong can cause real harm",
+          "Thickened liquids and texture modified diets exist because of choking risk. Never give a normal drink to someone on thickened fluids because they asked",
+          "Encourage rather than force: offer preferred foods, small frequent portions, sit with them, make it pleasant, keep fluids within reach and prompt regularly",
+          "Watch and report: weight change, food left uneaten, coughing during meals, pocketing food in the cheek, difficulty swallowing, or reduced fluids",
+          "Food safety in the home: check expiry dates, safe storage, and clean preparation surfaces"
+        ],
+        "strong_answer_signals": [
+          "Knows coughing while eating is an aspiration warning and reports it",
+          "Never overrides a thickened liquid order out of sympathy",
+          "Reports intake changes as clinical information"
+        ],
+        "avoid": [
+          "Adjusting a prescribed diet because the client dislikes it",
+          "Leaving a meal and leaving the house without checking they ate",
+          "Rushing a client who eats slowly"
+        ]
+      }
+    },
+    {
+      "id": "hha_t_009",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you document your visits and why does it matter?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Record what you actually did, what you observed, the times, and anything the client refused. If it is not documented it is treated as not done",
+          "Use objective language and quote the client where it matters. No opinions, no labels",
+          "Complete it at the time or right after the visit, not from memory at the end of the week",
+          "Electronic visit verification is now standard for Medicaid funded home care in the US, so clock in and out honestly at the home. Falsifying it is fraud, not a shortcut",
+          "Documentation is what protects you, the client and the agency if anything is questioned later"
+        ],
+        "strong_answer_signals": [
+          "Knows EVV exists and treats it as a legal record",
+          "Documents refusals, which are clinically meaningful",
+          "Writes at the time rather than reconstructing"
+        ],
+        "avoid": [
+          "Clocking in from the car or before arriving",
+          "Copying yesterday's notes",
+          "Recording a task as done when it was refused"
+        ]
+      }
+    },
+    {
+      "id": "hha_t_010",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What infection control do you practise in someone's home?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Hand hygiene is the foundation: on arrival, before and after personal care, after toileting or contact with body fluids, after gloves, before food preparation, and on leaving",
+          "Bring your own supplies and do not assume the home has them: gloves, hand sanitiser, aprons, and a way to bag soiled items",
+          "Standard precautions with every client. Treat all body fluids as infectious regardless of what you have been told",
+          "Clean as you go: disinfect surfaces you used, handle laundry safely, dispose of waste per the plan, and never take contaminated items into your car uncontained",
+          "Protect the client too: do not work with a fever, vomiting or diarrhoea, and follow the agency policy on when to stay away"
+        ],
+        "strong_answer_signals": [
+          "Brings supplies rather than assuming the home is equipped",
+          "Says they stay away when unwell, since these clients are vulnerable",
+          "Thinks about their car and their next client as a transmission route"
+        ],
+        "avoid": [
+          "Gloves used as a substitute for hand washing",
+          "Working through a stomach illness because the client depends on you",
+          "Reusing gloves between tasks"
+        ]
+      }
+    },
+    {
+      "id": "hha_t_011",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What would you do in an emergency when you are alone in the home?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know before it happens: where the address is written down, where the emergency contact list is, whether there is a DNR or POLST in the home, and where the exits are",
+          "Call 911 first for anything life threatening. Do not call the agency first, do not call the family first",
+          "Give the dispatcher the address clearly, then the situation, and stay on the line. Perform CPR within your certification if indicated",
+          "Then call the agency and the emergency contact, and stay with the client until help arrives",
+          "Document afterwards, and know that a valid DNR must be honoured and that it changes what you do"
+        ],
+        "strong_answer_signals": [
+          "911 before the agency, in that order, stated clearly",
+          "Knows to check for a DNR or POLST at the start of a placement, not during the emergency",
+          "Current CPR certification"
+        ],
+        "avoid": [
+          "Calling the office first while the client deteriorates",
+          "Not knowing whether an advance directive exists",
+          "Leaving the client to find a neighbour"
+        ]
+      }
+    },
+    {
+      "id": "hha_t_012",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you keep yourself safe in a client's home?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Assess the environment on arrival every time: lighting, exits, pets, other people in the house, anyone under the influence, weapons visible, unsafe wiring or heating",
+          "Position yourself with a way out during care with an agitated client, and never let yourself be cornered in a bathroom or bedroom",
+          "Trust your instinct. If a situation feels unsafe, leave and call the agency from the car. No visit is worth your safety and no agency should punish that",
+          "Practical habits: keep your phone on you, tell the office your schedule, park facing out, and be aware in unfamiliar neighbourhoods after dark",
+          "Report every incident, including verbal threats and harassment. Under reporting is why these patterns persist"
+        ],
+        "strong_answer_signals": [
+          "Says explicitly that they will leave and call rather than pushing through",
+          "Keeps an exit path during care",
+          "Reports verbal threats, not only physical incidents"
+        ],
+        "avoid": [
+          "Staying in a threatening situation out of duty to the client",
+          "Not telling the agency about harassment",
+          "Entering a home you have been warned about with no plan"
+        ]
+      }
+    },
+    {
+      "id": "hha_s_001",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You arrive and the client refuses to let you in or refuses care.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Stay calm and do not force entry or care. A competent adult may refuse, and that right does not disappear because a service is booked",
+          "Find the reason: confusion about who you are, embarrassment, pain, a bad experience with a previous aide, or wanting a different gender for personal care",
+          "Try again gently: introduce yourself fully, offer a smaller task first, come back in a few minutes, or start with something they do want",
+          "Call the agency the same visit. Do not simply leave and say nothing, and do not sit in the car and clock the hours",
+          "Document the refusal factually. A pattern of refusals can mean decline and needs a nurse assessment"
+        ],
+        "strong_answer_signals": [
+          "Respects the refusal while still trying to understand it",
+          "Calls the office during the visit rather than after",
+          "Documents rather than quietly writing it off"
+        ],
+        "avoid": [
+          "Forcing or guilting the client into care",
+          "Leaving without notifying anyone",
+          "Recording the visit as completed"
+        ]
+      }
+    },
+    {
+      "id": "hha_s_002",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A family member asks you to do something that is not in the care plan.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Distinguish the harmless from the real problem. Small courtesy is one thing; unpaid extra hours, other people's laundry, childcare, heavy cleaning or clinical tasks are another",
+          "Say no kindly and once, with the reason: that is not in the care plan, and I need the agency to add it so it is authorised and covered",
+          "Offer the route: I will ask the coordinator to call you today",
+          "Call the agency the same day, because the request will come again and the plan may genuinely need updating",
+          "Say the precedent problem out loud: agreeing once makes the next refusal harder and it is how scope creep starts"
+        ],
+        "strong_answer_signals": [
+          "Names scope creep as a real pattern in home care",
+          "Routes it to the agency rather than deciding alone",
+          "Declines without damaging the relationship"
+        ],
+        "avoid": [
+          "Agreeing to keep the peace",
+          "Doing it and not telling the agency",
+          "Being blunt or defensive with the family"
+        ]
+      }
+    },
+    {
+      "id": "hha_s_003",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You suspect your client is being abused, neglected or financially exploited.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "In most states and provinces you are a mandated reporter. The standard is reasonable suspicion, not proof, and reporting is a duty rather than a choice",
+          "Report immediately to the agency and to Adult Protective Services or the provincial equivalent as your policy requires. Do not wait for the next scheduled call",
+          "Document objective observations in the client's own words where they volunteered something: unexplained bruising, weight loss, poor hygiene, missing money or property, being left alone, someone controlling their access to food or medication",
+          "Do not investigate, do not confront the suspected person, and do not tip them off. You could put the client at greater risk",
+          "Financial exploitation is the one most often missed: new people around the money, pressure to sign things, unpaid bills despite income"
+        ],
+        "strong_answer_signals": [
+          "Knows the standard is suspicion, not certainty",
+          "Names financial exploitation, which most candidates forget",
+          "Does not confront or investigate"
+        ],
+        "avoid": [
+          "Waiting for more evidence",
+          "Confronting the family member",
+          "Assuming the agency will handle the external report for you without checking"
+        ]
+      }
+    },
+    {
+      "id": "hha_s_004",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "The home is unsanitary or unsafe. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Separate the two questions: can I work here safely today, and does this need to change",
+          "Immediate hazards get reported the same day: no heat or water, a gas smell, exposed wiring, hoarding blocking exits, pest infestation, spoiled food, or an aggressive animal",
+          "Do what you safely can within your role: clear a walking path, wash what is needed for care, keep the personal care area clean. You are not there to deep clean the house",
+          "Report it to the agency so the care plan and the risk assessment can change, and so other staff are warned",
+          "Respect that it is their home and their autonomy, and that change usually needs social work rather than a lecture from you"
+        ],
+        "strong_answer_signals": [
+          "Distinguishes an emergency hazard from a lifestyle they have the right to choose",
+          "Protects the immediate care area without trying to fix everything",
+          "Escalates so the agency can involve social work"
+        ],
+        "avoid": [
+          "Cleaning the whole house instead of doing the care tasks",
+          "Shaming the client about how they live",
+          "Continuing to work in a genuinely dangerous home without reporting it"
+        ]
+      }
+    },
+    {
+      "id": "hha_s_005",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Your client offers you a gift, money, or asks you to handle their finances.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Follow the agency policy, which almost always prohibits accepting gifts, tips, loans, or being named in a will",
+          "Decline warmly rather than coldly: it means a lot that you offered, and I am not allowed to accept it, my agency is strict about that",
+          "Never accept a bank card, PIN, cheque signing authority, or being added to an account. That is where accusations begin, and refusing protects you as much as them",
+          "If shopping is part of the care plan, follow the process exactly: written list, keep every receipt, return the change, record it, and get it signed where required",
+          "Report any offer to the agency so it is on record"
+        ],
+        "strong_answer_signals": [
+          "Refuses in a way that preserves the relationship",
+          "Understands documentation of money protects the aide",
+          "Reports the offer rather than just declining it"
+        ],
+        "avoid": [
+          "Accepting a small gift because refusing felt rude",
+          "Handling money with no receipts",
+          "Ever taking a PIN or card"
+        ]
+      }
+    },
+    {
+      "id": "hha_s_006",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You are running late or cannot make a scheduled visit.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Call the office immediately, as soon as you know, not when you are already late. These clients are often alone and waiting",
+          "Let the agency contact the client and arrange cover. Do not arrange your own substitute or ask a friend to cover",
+          "For illness, call as early as possible so cover can be found. Coming in sick to a vulnerable client is not dedication",
+          "Never no-show. A missed visit for a client who needs toileting, medication reminders or food is a safety event, not an inconvenience",
+          "Plan around the predictable: traffic, weather, the winter, and build margin between visits"
+        ],
+        "strong_answer_signals": [
+          "Calls the moment they know rather than when they are already overdue",
+          "Understands a missed visit can be a safety event",
+          "Does not arrange informal cover"
+        ],
+        "avoid": [
+          "Arriving late repeatedly and treating it as normal",
+          "Working while contagious",
+          "Sending someone else in your place"
+        ]
+      }
+    },
+    {
+      "id": "hha_s_007",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A client becomes physically aggressive toward you.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Safety first: step back, give space, do not restrain, and keep yourself between the client and the exit rather than the other way around",
+          "Stop the task. Whatever you were doing is almost certainly the trigger, especially personal care with a client who has dementia",
+          "Look for the cause: pain, fear, being startled, not understanding, needing the toilet, or overstimulation",
+          "If it does not settle or you feel unsafe, leave and call the agency from outside. Call 911 if anyone is in danger",
+          "Report every incident including near misses, and ask for the care plan to be reviewed. Aggression is often preventable once the trigger is known"
+        ],
+        "strong_answer_signals": [
+          "Leaves rather than trying to manage it alone",
+          "Never restrains, which is outside scope and dangerous",
+          "Reports so the plan can change instead of enduring it"
+        ],
+        "avoid": [
+          "Restraining or physically overpowering the client",
+          "Continuing the task through the aggression",
+          "Not reporting because they did not mean it"
+        ]
+      }
+    },
+    {
+      "id": "hha_s_008",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A family member asks you for private information about the client, or another agency asks about them.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Confirm nothing until you know who is authorised. Being a relative does not automatically grant access",
+          "Check the care plan and the agency for who is on the authorised contact list, and route anything beyond routine care updates to the coordinator or nurse",
+          "If the client has capacity, their wishes govern. Ask them what they want shared and with whom",
+          "Never discuss a client with neighbours, friends, or on social media. Posting anything about a client, including a photo, is a firing offence and a privacy breach",
+          "In the US this sits under HIPAA where the agency is a covered entity; in Canada under PIPEDA and provincial health privacy law"
+        ],
+        "strong_answer_signals": [
+          "Puts the decision back with the client where they have capacity",
+          "Names social media explicitly as the modern breach",
+          "Routes rather than refuses flatly"
+        ],
+        "avoid": [
+          "Sharing because the person is clearly a close relative",
+          "Discussing clients with other clients or in public",
+          "Any photo or post involving a client"
+        ]
+      }
+    },
+    {
+      "id": "hha_s_009",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Your client wants to do something the care plan says they should not.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start from autonomy. A competent adult can make choices others consider unwise, and your role is not to control them",
+          "Understand what they want and why: walking without the walker because it feels like defeat, a food they miss, going outside alone",
+          "Explain the risk plainly and once, without lecturing, and look for a middle path: I will walk beside you, or let us do it together after you have eaten",
+          "Never physically prevent them, and never restrain",
+          "Report it to the agency and document it. If the risk is real and repeated, the care plan or the assessment needs to change, and that is a nurse or coordinator decision"
+        ],
+        "strong_answer_signals": [
+          "Respects autonomy and capacity rather than overriding it",
+          "Offers a compromise instead of a refusal",
+          "Documents and escalates rather than silently allowing or silently preventing"
+        ],
+        "avoid": [
+          "Physically stopping or restraining a client",
+          "Repeated lecturing",
+          "Allowing a serious risk without reporting it"
+        ]
+      }
+    },
+    {
+      "id": "hha_s_010",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You are assigned to a client whose care needs are beyond your training.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Say so before the visit or as soon as you see it, not halfway through a task you cannot safely complete",
+          "Be specific about what exactly is beyond you: a hoyer lift you have not been trained on, a feeding tube, a catheter, a two person transfer with one aide scheduled, or a behaviour you are not equipped for",
+          "Ask for training or for the assignment to be adjusted. Willing to learn is very different from refusing the client",
+          "Do what you safely can in the meantime and keep the client safe",
+          "Never attempt an untrained clinical task, even if the family insists it is simple and the last aide did it"
+        ],
+        "strong_answer_signals": [
+          "Raises it before starting rather than mid task",
+          "Asks to be trained, which signals willingness rather than avoidance",
+          "Holds the line when the family says the previous aide did it"
+        ],
+        "avoid": [
+          "Attempting it to be helpful",
+          "Refusing the whole assignment with no alternative offered",
+          "Saying nothing and doing a partial job"
+        ]
+      }
+    },
+    {
+      "id": "hha_m_001",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "As a scheduler or coordinator, how do you match aides to clients?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Match on skill and training first: transfers, dementia experience, hoyer lift certification, and any delegated task the client needs",
+          "Then the human factors that decide whether a placement lasts: gender preference for personal care, language, cultural or dietary needs, pets and allergies, smoking, and personality fit",
+          "Then geography and travel time, because unpaid drive time is one of the biggest reasons aides quit",
+          "Continuity matters clinically, not just socially. The aide who knows the client notices the change that saves a hospital admission, so protect the pairing",
+          "Build a backup plan per client so a call-out does not become a missed visit"
+        ],
+        "strong_answer_signals": [
+          "Treats continuity as a clinical safeguard rather than a nicety",
+          "Names travel time as a retention factor",
+          "Has a named backup for each client"
+        ],
+        "avoid": [
+          "Filling slots by availability alone",
+          "Ignoring stated preferences for personal care",
+          "No contingency for call-outs"
+        ]
+      }
+    },
+    {
+      "id": "hha_m_002",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "An aide calls out and you cannot find cover.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Triage by risk, not by order of the schedule. A client who lives alone and needs toileting, medication reminders or a meal is not the same as a companionship visit",
+          "Work the options: on-call staff, offer the shift, ask a nearby aide to extend, split a visit, or a supervisor covering personally",
+          "Contact the client and family early with the truth and the plan. Silence is what generates complaints and lost contracts",
+          "Ask the family whether they can cover the essential task today, but only as an interim measure and not as an expectation",
+          "Log the missed or shortened visit and feed the pattern back. Repeated call-outs are a scheduling and retention problem, not a today problem"
+        ],
+        "strong_answer_signals": [
+          "Triages by client risk rather than treating all visits equally",
+          "Communicates early rather than after the missed visit",
+          "Separates the immediate fix from the underlying cause"
+        ],
+        "avoid": [
+          "Leaving a high risk client with no visit and no call",
+          "Relying on family cover as the standing plan",
+          "Mandating overtime as the only tool"
+        ]
+      }
+    },
+    {
+      "id": "hha_m_003",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you supervise aides you rarely see in person?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Build the structure that replaces line of sight: clear care plans, EVV, visit notes reviewed rather than filed, and scheduled supervisory visits in the home",
+          "Do announced and unannounced supervisory visits, and use them to observe technique, not only to tick a compliance box",
+          "Stay in contact: a regular check-in call, an accessible coordinator, and a way to raise problems that does not feel like a complaint",
+          "Watch the signals: late clock-ins, thin documentation, client or family comments, and a rise in incidents",
+          "Recognise good work specifically. Aides work alone and invisibly, and being unseen is a major reason they leave"
+        ],
+        "strong_answer_signals": [
+          "Reads visit notes rather than only collecting them",
+          "Uses supervisory visits to coach technique",
+          "Treats invisibility as the core management problem in home care"
+        ],
+        "avoid": [
+          "Managing purely by EVV data",
+          "Contact only when something goes wrong",
+          "Treating supervisory visits as paperwork"
+        ]
+      }
+    },
+    {
+      "id": "hha_m_004",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How would you reduce aide turnover?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Measure first, and measure the first ninety days separately. Most home care attrition happens in the first weeks",
+          "Fix the concrete things aides actually leave over: unpredictable hours, unpaid travel time, long drives, being sent to a client they are not trained for, and not being told what they are walking into",
+          "Onboard properly: shadow shifts, a named contact, a realistic first caseload, and a check-in in the first week",
+          "Protect them: take safety and harassment reports seriously and act, since ignoring one report loses several aides",
+          "Give a path and recognition: additional certifications, a senior or mentor role, a route toward CNA or LPN, and consistent hours for those who want them"
+        ],
+        "strong_answer_signals": [
+          "Names travel time and schedule stability, the two most cited real causes",
+          "Separates first ninety day attrition",
+          "Acts on safety reports as a retention lever"
+        ],
+        "avoid": [
+          "Recognition events as the strategy",
+          "Blaming the labour market",
+          "Ignoring that being sent in unprepared is the top complaint"
+        ]
+      }
+    },
+    {
+      "id": "hha_m_005",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "A family complains about one of your aides.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Take it seriously and get the facts before reacting. Hear the family fully, then hear the aide separately and without prejudgement",
+          "Separate the categories, because they need different responses: a personality mismatch, a genuine performance gap, a care plan that no longer matches the need, or a serious allegation",
+          "Anything involving suspected abuse, theft or a safety event goes down the formal path immediately, including any mandated reporting, and the aide is removed from the placement while it is investigated",
+          "For everything else, coach and follow up with a date, and change the placement if the fit genuinely does not work",
+          "Close the loop with the family so they know something happened. Silence is what turns a complaint into a lost client"
+        ],
+        "strong_answer_signals": [
+          "Hears both sides before deciding",
+          "Escalates serious allegations immediately rather than coaching them",
+          "Closes the loop with the family"
+        ],
+        "avoid": [
+          "Removing the aide automatically to please the client",
+          "Dismissing the complaint because the aide is reliable",
+          "Never telling the family the outcome"
+        ]
+      }
+    },
+    {
+      "id": "hha_m_006",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you keep the agency compliant?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Credentials current and tracked with expiry alerts: certification, CPR, TB screening and immunisations, background checks, driver licence and insurance",
+          "Documentation that survives an audit: care plans signed and current, visit notes complete and timely, supervisory visits at the required interval, incident reports filed",
+          "EVV compliance for Medicaid funded services in the US, and provincial requirements in Canada. Falsified visit records are billing fraud with serious consequences for the agency",
+          "Training on the required schedule, including annual competencies and mandated reporter training",
+          "Treat readiness as continuous rather than a scramble before a survey, and run internal file audits to find gaps first"
+        ],
+        "strong_answer_signals": [
+          "Tracks expiries proactively rather than discovering them at audit",
+          "Names EVV falsification as fraud, not a paperwork issue",
+          "Runs internal audits"
+        ],
+        "avoid": [
+          "Compliance as a pre-audit cleanup",
+          "Letting a lapsed certification stay in the field",
+          "Treating documentation as separate from care quality"
+        ]
+      }
+    },
+    {
+      "id": "hha_m_007",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you onboard and train a new aide?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start with the practical reality, not just the policy binder: what the day looks like, how to reach someone, what to do in an emergency, and what to do if a client refuses",
+          "Verify competency rather than assume it: observe transfers, personal care and documentation, and sign off only when they are safe",
+          "Ramp the caseload deliberately and start them with clients whose needs match their training",
+          "Introduce them properly to the client and family. An aide who arrives unannounced starts at a disadvantage that is hard to recover",
+          "Check in during the first week and again at thirty days, and ask what they are unsure about rather than whether they have questions"
+        ],
+        "strong_answer_signals": [
+          "Observes competency instead of taking a certificate at face value",
+          "Introduces the aide rather than sending them cold",
+          "Asks specific check-in questions"
+        ],
+        "avoid": [
+          "A full caseload from day one",
+          "Signing off competencies without observing",
+          "No contact after the first day"
+        ]
+      }
+    },
+    {
+      "id": "hha_m_008",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you handle a client or family who is difficult to serve?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Diagnose what is actually happening: unrealistic expectations of what the service covers, unmet clinical need that home care alone cannot solve, grief and stress, or genuinely unacceptable behaviour toward staff",
+          "Reset expectations directly and in writing: what the care plan includes, what it does not, and what would need to change to add it",
+          "Consider whether the need has outgrown the service. Recommending a reassessment or a higher level of care is doing the job, not failing at it",
+          "Protect your staff. Harassment, discrimination or unsafe conditions are grounds to change or end the placement, and staff must see you act",
+          "Document everything, and follow the proper process for discharging a client, including notice and continuity of care"
+        ],
+        "strong_answer_signals": [
+          "Willing to end a placement to protect staff",
+          "Recognises when the clinical need has outgrown home care",
+          "Resets expectations in writing rather than repeatedly verbally"
+        ],
+        "avoid": [
+          "Rotating aides through a placement without addressing the cause",
+          "Keeping revenue at the cost of staff safety",
+          "Discharging a client without notice or a proper process"
+        ]
+      }
+    },
+    {
+      "id": "hha_mo_001",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Why do you want to do this work?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Give one specific reason, briefly. A personal experience is fine if you keep it short and turn it into something professional",
+          "Show you know what the work actually involves: bodily care, physical demands, emotional weight, and being alone with the responsibility",
+          "Say why home care specifically rather than a facility: one to one, continuity, the person stays where they want to be",
+          "If this is a step toward CNA or nursing, say so honestly. Many agencies support it"
+        ],
+        "strong_answer_signals": [
+          "Realistic about the physical and personal nature of the work",
+          "Chose home care deliberately",
+          "Honest about further education plans"
+        ],
+        "avoid": [
+          "I just love helping people, with nothing behind it",
+          "A view of the job that skips the hard parts",
+          "A long personal story"
+        ]
+      }
+    },
+    {
+      "id": "hha_mo_002",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Why do you want to work for this agency?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Name something specific: their client population, their reputation among aides, training or certification support, consistent hours, or that they pay travel time",
+          "Say what you need to do the job well: a realistic schedule, being told what you are walking into, and being able to reach someone when there is a problem",
+          "Say what you bring that reduces their risk: current certification, transport, the client types you can handle, availability that matches their gaps",
+          "Ask about the things that determine whether you can stay"
+        ],
+        "strong_answer_signals": [
+          "Names something only true of this agency",
+          "Asks for what they need rather than accepting anything",
+          "Matches their availability to the agency gaps"
+        ],
+        "avoid": [
+          "Reasons that fit any agency",
+          "Pay alone as the reason",
+          "No questions about how the agency actually operates"
+        ]
+      }
+    },
+    {
+      "id": "hha_mo_003",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle the physical and emotional demands?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Physical: proper body mechanics, using equipment and asking for a second person every time rather than saving minutes. Your back is your career",
+          "Emotional: name what is genuinely hard, which is attachment and loss, watching decline, and being alone with the responsibility",
+          "Boundaries: caring deeply without carrying it home, and knowing the difference between compassion and taking on the family's burden",
+          "Your actual supports: colleagues, the agency, employee assistance where offered, and a routine outside work",
+          "Say you would raise it with the coordinator rather than quietly running down. Burnout in this role is real and predictable"
+        ],
+        "strong_answer_signals": [
+          "Protects their own body without exception",
+          "Names attachment and loss honestly",
+          "Would ask for support rather than absorbing it"
+        ],
+        "avoid": [
+          "Claiming nothing affects you",
+          "Lifting alone to be efficient",
+          "No boundary between the client's life and yours"
+        ]
+      }
+    },
+    {
+      "id": "hha_mo_004",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Where do you see yourself in a few years?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Commit to doing this role well and say what you want to be good at: dementia care, hospice, complex transfers, or being the aide they send to the hardest placements",
+          "Be honest about further training if that is the plan: CNA, LPN or RN. Say the timeline and that you want to keep working while you study",
+          "Name growth inside the agency: senior aide, mentor for new hires, or a coordinator role",
+          "Tie it to what the agency gains"
+        ],
+        "strong_answer_signals": [
+          "Honest about education plans rather than hiding them",
+          "Wants to specialise, which signals commitment to the work",
+          "Names an internal path"
+        ],
+        "avoid": [
+          "Making it obvious this is temporary and low effort",
+          "No goals at all",
+          "A plan unrelated to this employer"
+        ]
+      }
+    },
+    {
+      "id": "hha_mo_005",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Why are you leaving your current position?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Answer forward: more consistent hours, less travel, a client type you want, better training, or a schedule that fits your life",
+          "If the real reason is genuinely poor, such as unsafe placements or unpaid travel, state it factually and once without a list",
+          "Never name individuals or clients",
+          "Move straight into why this agency fits"
+        ],
+        "strong_answer_signals": [
+          "Neutral and brief about the previous agency",
+          "A reason this employer can actually satisfy",
+          "Consistent with the dates on the application"
+        ],
+        "avoid": [
+          "Criticising a previous client or family",
+          "A long grievance",
+          "Being so vague it raises questions"
+        ]
+      }
+    },
+    {
+      "id": "hha_mo_006",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What questions do you have for us?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Ask about the work itself: what is a typical caseload, how many clients a day, and how much travel between them",
+          "Ask what protects you: is travel time paid, do I get the care plan before the first visit, what happens if a home is unsafe, and who do I reach after hours",
+          "Ask about training and growth: orientation length, whether they train on lifts and dementia care, and whether they support CNA certification",
+          "Ask about stability: how consistent are the hours, and how are call-outs and cancellations handled for pay",
+          "Close by asking what makes an aide successful here and what the next steps are"
+        ],
+        "strong_answer_signals": [
+          "Asks whether travel time is paid, which experienced aides always ask",
+          "Asks who to reach after hours and what happens in an unsafe home",
+          "Asks about hour consistency, the top reason aides leave"
+        ],
+        "avoid": [
+          "No questions at all",
+          "Only asking about pay rate",
+          "Questions the job posting already answered"
+        ]
+      }
+    }
+  ]
+}
