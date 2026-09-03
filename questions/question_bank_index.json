@@ -1,8 +1,8 @@
 {
   "metadata": {
     "description": "Master index for the Interview Aid App question bank",
-    "generated": "2026-09-02",
-    "grand_total": 2050,
+    "generated": "2026-09-03",
+    "grand_total": 2087,
     "total_files": 61,
     "schema_version": "1.1"
   },
@@ -780,8 +780,8 @@
     },
     {
       "file": "real_estate_questions.json",
-      "sector": "Real Estate & Property Management",
-      "total": 20,
+      "sector": "Property Management",
+      "total": 46,
       "categories": [
         "behavioral",
         "manager",
@@ -990,8 +990,8 @@
     },
     {
       "file": "technology_questions.json",
-      "sector": "Technology",
-      "total": 35,
+      "sector": "IT & Technical Support",
+      "total": 46,
       "categories": [
         "behavioral",
         "manager",
@@ -1002,8 +1002,7 @@
       "seniority_levels": [
         "entry",
         "manager",
-        "mid",
-        "senior"
+        "mid"
       ]
     },
     {

@@ -1,539 +1,1389 @@
 {
   "metadata": {
-    "sector": "Real Estate & Property Management",
-    "generated": "2026-08-30",
-    "total": 20,
-    "schema_version": "1.1",
+    "sector": "Property Management",
+    "generated": "2026-09-03",
+    "total": 46,
     "categories": [
       "behavioral",
       "manager",
       "motivation",
       "situational",
       "technical"
-    ]
+    ],
+    "region": "North America",
+    "schema_version": "1.1",
+    "note": "Property, real estate and community association managers 460K (BLS May 2025). Rewritten from an agent flavoured bank that duplicated real_estate_agent. Covers occupancy and renewals, rent setting, delinquency and the statutory notice track, budgets and variance, work orders and preventive maintenance, make ready and deposits, vendor contracts, lease administration, fair housing and accommodation requests, safety and insurance, and the site manager and portfolio track."
   },
   "questions": [
     {
-      "id": "re_001",
-      "text": "Tell me about closing a challenging deal.",
+      "id": "pm_b_001",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about yourself and your property management experience.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Asset type first, because the job is different in each: residential multifamily, single family portfolio, commercial office, retail, industrial, student, senior, HOA or strata",
+          "Scale: number of units or square footage, number of sites, whether you were on site or managing a portfolio remotely",
+          "Scope: leasing, renewals, maintenance, capital projects, budgets, owner reporting, or all of it",
+          "Numbers you owned: occupancy, delinquency, renewal rate, average days vacant, operating budget size",
+          "Licence and certifications where the market requires them, and the software you ran the portfolio on",
+          "One outcome with a figure attached: occupancy lifted, delinquency cut, turnover time reduced, an expense line brought back under budget"
+        ],
+        "strong_answer_signals": [
+          "Names asset type and scale in the first two sentences",
+          "Owns numbers rather than describing duties",
+          "Shows operations, finance and people together"
+        ],
+        "avoid": [
+          "Describing the role as collecting rent",
+          "No figures at all",
+          "Confusing this with a sales agent role"
+        ]
+      }
+    },
+    {
+      "id": "pm_b_002",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about a difficult resident or tenant you had to manage.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Set the scene with what the lease actually said, since that is the frame for everything that follows",
+          "Document from the first contact. In tenancy matters the written record decides the outcome",
+          "Separate the issue from the emotion. A large share of escalations are about not being heard the first time",
+          "Apply the lease consistently, because an exception for one resident becomes a precedent for the building",
+          "Escalate on a defined path: conversation, written notice, formal notice, legal process only when correctly served",
+          "Close with the result, ideally a renewal or a clean resolution rather than an eviction"
+        ],
+        "strong_answer_signals": [
+          "Written record from day one",
+          "Consistency with the lease",
+          "A resolution that kept the tenancy"
+        ],
+        "avoid": [
+          "Personalising the conflict",
+          "Improvising a legal step",
+          "Only having eviction stories"
+        ]
+      }
+    },
+    {
+      "id": "pm_b_003",
       "category": "behavioral",
       "seniority": [
         "mid",
         "senior"
       ],
+      "text": "Describe an after hours emergency you handled.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Objections handled",
-          "Creative solutions",
-          "Documentation managed",
-          "Deal closed"
+          "Say what made it an emergency: risk to life, risk to the building, or loss of an essential service such as heat, water or power",
+          "First move is to make it safe and stop the damage spreading, not to find out who is at fault",
+          "Who you called and in what order: emergency services, the on call trade, the insurer, the owner, the affected residents",
+          "Communication to residents while it was still unresolved, because silence generates more calls than bad news does",
+          "The paperwork afterwards: incident record, photographs, invoices, insurance claim, and the follow up repair",
+          "What you changed so it was less likely to happen again"
         ],
         "strong_answer_signals": [
-          "Creative negotiation",
-          "Result achieved"
+          "Safety before cost",
+          "Ordered escalation with real contacts",
+          "Residents informed during, not after"
         ],
         "avoid": [
-          "Gave up easily",
-          "No creativity"
+          "Waiting for owner approval while damage spread",
+          "No documentation or insurance follow up",
+          "Treating it as a one off with no prevention"
         ]
       }
     },
     {
-      "id": "re_002",
-      "text": "How do you price a property competitively?",
+      "id": "pm_b_004",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about a mistake you made that cost money.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Pick something real with a number attached. A missed contract renewal, a mispriced unit, an unbilled recovery, a repair approved without quotes",
+          "Say how it was found, and whether you raised it yourself",
+          "The immediate fix and what it cost to correct",
+          "The control you put in place afterwards: a calendar of key dates, a second signature above a threshold, a monthly variance review",
+          "How you told the owner, since owners forgive errors far more readily than they forgive being surprised"
+        ],
+        "strong_answer_signals": [
+          "Real number, no hedging",
+          "Self reported",
+          "A control that outlived the incident"
+        ],
+        "avoid": [
+          "A fake mistake that is really a strength",
+          "Blaming a vendor or a colleague",
+          "No process change"
+        ]
+      }
+    },
+    {
+      "id": "pm_b_005",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about a time you had to push back on an owner or client.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Name the issue: a deferred repair with a habitability or liability angle, an unlawful instruction, rent set above what the market will bear, a budget cut that would cost more later",
+          "Lead with the owner's own interest, in their language: liability, vacancy days, asset value, insurance position",
+          "Bring evidence, not opinion. Comparable rents, contractor quotes, the inspection report, the statute",
+          "Offer options with costs rather than a flat refusal, and say which one you recommend",
+          "Put the recommendation in writing whatever they decide, because that record protects both of you",
+          "The outcome, including the times the owner still said no and what you did then"
+        ],
+        "strong_answer_signals": [
+          "Frames it as the owner's risk",
+          "Written recommendation regardless of outcome",
+          "Knows where the line is legally"
+        ],
+        "avoid": [
+          "Following an instruction that breaks tenancy or safety law",
+          "Arguing without numbers",
+          "Going around the owner"
+        ]
+      }
+    },
+    {
+      "id": "pm_b_006",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Describe a conflict you had with a contractor or vendor.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "State what the scope of work and the agreed price actually were, since most vendor conflicts start there",
+          "Separate a quality problem from a scope problem, because they are fixed in completely different ways",
+          "Deal with it against the contract and the photographs rather than in an argument on site",
+          "Protect the resident experience while it is unresolved, since they did not choose the vendor",
+          "Say whether you held payment, required a rework, or replaced the vendor, and why that was proportionate",
+          "How you changed procurement afterwards: written scopes, defined response times, retention on larger jobs"
+        ],
+        "strong_answer_signals": [
+          "Contract and photos as the basis",
+          "Proportionate response",
+          "A procurement change that prevented a repeat"
+        ],
+        "avoid": [
+          "Paying to avoid the argument",
+          "No written scope in the first place",
+          "Letting the resident absorb the delay"
+        ]
+      }
+    },
+    {
+      "id": "pm_b_007",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about something you did that improved resident retention.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Start with why people were leaving, from exit surveys, renewal conversations and maintenance history rather than a guess",
+          "Name the specific change: maintenance response times, a renewal conversation ninety days out, parking, noise enforcement, communication cadence, a targeted capital item",
+          "Say the cost of the change against the cost of a turn, which is usually the argument that gets it approved",
+          "Measure it: renewal rate before and after, days vacant, turn cost per unit",
+          "Say what did not work, because retention work is full of things that sound good and change nothing"
+        ],
+        "strong_answer_signals": [
+          "Diagnosed before acting",
+          "Compared cost of change against turn cost",
+          "Before and after numbers"
+        ],
+        "avoid": [
+          "Resident events as the whole answer",
+          "No measurement",
+          "Ignoring maintenance responsiveness"
+        ]
+      }
+    },
+    {
+      "id": "pm_b_008",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about a time you delivered unwelcome news to residents.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Typical cases: a rent increase, a non renewal, a long shutdown of an amenity, a construction programme, a parking change",
+          "Give notice earlier than the minimum required, since the legal minimum is a floor and not a communication plan",
+          "Say the reason plainly and do not hide behind policy language",
+          "Say what you are doing to reduce the impact and what you cannot change",
+          "Give people a route to ask questions, and answer the same question the same way for everyone",
+          "Follow the statutory notice form and timing exactly where one applies"
+        ],
+        "strong_answer_signals": [
+          "More notice than required",
+          "Plain reason given",
+          "Consistent answers across residents"
+        ],
+        "avoid": [
+          "Notice by the legal minimum only",
+          "Vague corporate wording",
+          "Different stories to different residents"
+        ]
+      }
+    },
+    {
+      "id": "pm_b_009",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Describe a complaint that escalated above you.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Say honestly what caused the escalation: a slow response, an unclear answer, an unfair outcome, or a resident who was always going to escalate",
+          "Whether you flagged it upward before it escalated, which is the part interviewers are really testing",
+          "The facts you handed over: dates, notices, work orders, correspondence, so whoever took it over was not starting cold",
+          "The outcome and whether the original decision held",
+          "What you changed so the same complaint type resolves at your level next time"
+        ],
+        "strong_answer_signals": [
+          "Escalated it upward first",
+          "Handed over a complete file",
+          "Honest about the cause"
+        ],
+        "avoid": [
+          "Being surprised by the escalation",
+          "Defending an indefensible delay",
+          "No file to hand over"
+        ]
+      }
+    },
+    {
+      "id": "pm_b_010",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a day when everything competed for your attention.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Sort by risk first: anything unsafe or uninhabitable outranks everything else regardless of who is shouting",
+          "Then legal deadlines, which do not move: notice periods, filing dates, inspection dates",
+          "Then money: a move in that will not complete, a large delinquency, a lease expiring unaddressed",
+          "Delegate or defer the rest openly rather than silently, and tell people when you will get back to them",
+          "Say what you dropped, since a real answer includes a cost",
+          "The system that keeps this from being improvised every day: a morning triage, a shared work order queue, a weekly key dates review"
+        ],
+        "strong_answer_signals": [
+          "Safety and legal deadlines outrank noise",
+          "Tells people when they will be answered",
+          "Names what was dropped"
+        ],
+        "avoid": [
+          "Claiming everything got done",
+          "First come first served",
+          "Loudest voice wins"
+        ]
+      }
+    },
+    {
+      "id": "pm_t_001",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How do you keep occupancy high?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Renewals before new leases, because keeping a resident costs a fraction of turning a unit, and the conversation starts months before expiry",
+          "Know submarket rents and concessions weekly. Pricing behind the market gives away revenue, pricing ahead buys vacancy days",
+          "Compress turnover time on purpose: pre schedule the make ready, order materials before move out, market during the notice period",
+          "Lead response speed moves leasing more than any advertising choice. State your response standard in minutes or hours",
+          "Fix the reasons people leave rather than advertising harder",
+          "Screen properly, since a bad tenancy costs more than a vacant month"
+        ],
+        "strong_answer_signals": [
+          "Renewal strategy stated before marketing",
+          "Weekly market pricing discipline",
+          "Occupancy, renewal rate and days vacant quoted"
+        ],
+        "avoid": [
+          "Loosening screening to fill units",
+          "Advertising as the whole answer",
+          "No numbers"
+        ]
+      }
+    },
+    {
+      "id": "pm_t_002",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How do you set and adjust rents?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start from a real comparable survey: same submarket, same unit type, same condition and amenity level, adjusted for concessions rather than headline rent",
+          "Watch leading indicators weekly: traffic, tour to application rate, days on market, expiry schedule for the next ninety days",
+          "Price the unit, not the building. Floor, exposure, renovation status and view are worth real money",
+          "Model the trade off explicitly. A rent increase that adds a month of vacancy usually loses",
+          "Renewal increases are a separate calculation, since the alternative is a turn cost, not a market rent",
+          "Respect any rent control, stabilisation or notice requirement that applies, and know the ceiling and the notice period"
+        ],
+        "strong_answer_signals": [
+          "Adjusts comps for concessions",
+          "Weighs vacancy days against rent gain",
+          "Knows the regulatory ceiling"
+        ],
+        "avoid": [
+          "Copying headline asking rents",
+          "Same increase for everyone",
+          "Ignoring notice requirements"
+        ]
+      }
+    },
+    {
+      "id": "pm_t_003",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Walk me through your delinquency and collections process.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Contact on day one. Delinquency is a curve, and almost everything recoverable is recovered early",
+          "Find out which case it is: a payment error, a temporary hardship, or a resident who has stopped paying. The three need different responses",
+          "Payment plans in writing with dates and amounts, and a rule about how often you will do it",
+          "Run the statutory notice track in parallel with the conversation, correctly served, so goodwill does not cost you the legal position",
+          "Weekly aged delinquency review with the owner, not a monthly surprise",
+          "Report what actually matters: current delinquency percentage, bad debt written off, and how much of the arrears is in one or two units"
+        ],
+        "strong_answer_signals": [
+          "Day one contact",
+          "Written payment plans",
+          "Legal track running in parallel"
+        ],
+        "avoid": [
+          "Waiting until month end",
+          "Verbal promises with no record",
+          "Treating every case identically"
+        ]
+      }
+    },
+    {
+      "id": "pm_t_004",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Take me through the eviction process as you have run it.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Say plainly that eviction is a last resort and expensive, and that most files should resolve before it",
+          "Name the grounds and the correct notice for those grounds under the law you work in, since using the wrong notice restarts everything",
+          "Service matters as much as content: method, who served, when, and proof of service kept on file",
+          "The file you build from the start: ledger, correspondence, notices, inspection records, incident reports",
+          "Where legal counsel takes over and what you hand them",
+          "What happens after the order: possession, condition, the balance owing and whether it is worth pursuing"
+        ],
+        "strong_answer_signals": [
+          "Correct notice for the grounds",
+          "Proof of service kept",
+          "Knows where counsel takes over"
+        ],
+        "avoid": [
+          "Self help measures such as changing locks or cutting services",
+          "Vague about notice periods",
+          "Sloppy or reconstructed file"
+        ]
+      }
+    },
+    {
+      "id": "pm_t_005",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How do you build and manage an annual operating budget?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Build from the rent roll and the expiry schedule up, not last year plus a percentage",
+          "Split controllable from uncontrollable: taxes, insurance and utilities behave differently from repairs, landscaping and turnover",
+          "Assume realistic vacancy, bad debt and concessions rather than the number that makes the budget look good",
+          "Separate operating expense from capital, since mixing them misstates both the owner's return and the tax position",
+          "Variance review every month with a written explanation for anything material, and a reforecast rather than pretending the original number still holds",
+          "Know the recovery side too: common area maintenance, escalations, utility billing, and the reconciliation at year end"
+        ],
+        "strong_answer_signals": [
+          "Builds from the rent roll",
+          "Honest vacancy and bad debt assumptions",
+          "Monthly variance with reforecast"
+        ],
+        "avoid": [
+          "Last year plus inflation",
+          "Capital and operating mixed",
+          "Variances explained only at year end"
+        ]
+      }
+    },
+    {
+      "id": "pm_t_006",
       "category": "technical",
       "seniority": [
         "entry",
         "mid",
         "senior"
       ],
+      "text": "How do you run maintenance and work orders?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Market analysis",
-          "Comparable sales",
-          "Condition assessment",
-          "Pricing strategy"
+          "Everything goes through one system. Requests taken by text or in the car park disappear and become complaints",
+          "Priority tiers with published response times: emergency, urgent, routine, and what qualifies for each",
+          "Preventive maintenance on a calendar for the items that cause the expensive failures: heating and cooling, roofs, water heaters, drains, fire and life safety",
+          "Track completion time and reopened rate, since a fast close with a return visit is not a fix",
+          "Notice and entry rules followed for every visit, because entry without proper notice is a real legal exposure",
+          "Feed the recurring failures into the capital plan instead of repairing the same item forever"
         ],
         "strong_answer_signals": [
-          "Accurate pricing",
-          "Quick sale"
+          "Single intake system",
+          "Published response times by tier",
+          "Reopened rate tracked"
         ],
         "avoid": [
-          "Overpriced",
-          "No research"
+          "Verbal requests accepted",
+          "No preventive schedule",
+          "Entry without proper notice"
         ]
       }
     },
     {
-      "id": "re_003",
-      "text": "Describe your approach to lead generation.",
+      "id": "pm_t_007",
       "category": "technical",
       "seniority": [
         "mid",
         "senior"
       ],
+      "text": "How do you manage the make ready and turnover process?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Prospecting methods",
-          "Network building",
-          "Online marketing",
-          "Follow-up process"
+          "Start at notice, not at move out. Inspect early so the scope and the materials are known before the keys come back",
+          "Fixed scope by turn type: a light refresh, a standard turn, a full renovation, each with a target cost and a target number of days",
+          "Trades scheduled in sequence in advance rather than called on the day the unit empties",
+          "Deposit accounting done properly: move in condition record, move out inspection, itemised statement inside the statutory deadline, and normal wear and tear not charged",
+          "Market the unit during the notice period so leasing and the make ready run in parallel",
+          "Report average turn days and cost per turn, and treat both as controllable"
         ],
         "strong_answer_signals": [
-          "Consistent leads",
-          "Conversion high"
+          "Scope set at notice",
+          "Trades pre sequenced",
+          "Deposit handled inside the statutory deadline"
         ],
         "avoid": [
-          "One method only",
-          "No follow-up"
+          "Starting the process at move out",
+          "Charging normal wear and tear",
+          "Turn days treated as fixed"
         ]
       }
     },
     {
-      "id": "re_004",
-      "text": "How do you handle a difficult tenant?",
+      "id": "pm_t_008",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How do you select and manage vendors and contracts?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Written scope before pricing, because three quotes against three different scopes tell you nothing",
+          "Verify insurance, licensing and workers compensation before anyone starts, and diarise the expiry dates",
+          "Competitive bidding above a threshold, with the reason for the choice written down when it is not the lowest price",
+          "Contract terms that matter on site: response times, after hours cover, rates for extras, term and termination, and who supplies materials",
+          "Performance reviewed on data: response time, callbacks, invoice accuracy, resident feedback",
+          "No personal relationship or gift that could look like a conflict, and disclose anything that could"
+        ],
+        "strong_answer_signals": [
+          "Scope before quotes",
+          "Insurance and licence verified and diarised",
+          "Written justification when not lowest price"
+        ],
+        "avoid": [
+          "Sole sourcing by habit",
+          "Expired insurance certificates",
+          "Undisclosed vendor relationships"
+        ]
+      }
+    },
+    {
+      "id": "pm_t_009",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "What property management software have you used and what do you do with it?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Name the platforms and be honest about depth: Yardi, RealPage, AppFolio, Entrata, MRI, Buildium, Rent Manager, or an in house system",
+          "Say what you actually ran in it: rent roll, ledgers, work orders, renewals, applicant screening, owner statements, budgets",
+          "The reports you produced and read weekly rather than the ones that sat unopened",
+          "Data hygiene, because the reports are only as good as lease dates, charge codes and unit status being kept correct",
+          "Where you exported and worked in a spreadsheet, and why",
+          "How quickly you have picked up a new platform, since portfolios change systems"
+        ],
+        "strong_answer_signals": [
+          "Honest about depth per platform",
+          "Names the reports used weekly",
+          "Understands data hygiene"
+        ],
+        "avoid": [
+          "Listing every platform as expert",
+          "Cannot name a single report",
+          "Treating the system as data entry only"
+        ]
+      }
+    },
+    {
+      "id": "pm_t_010",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How do you handle lease administration and renewals?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "A key dates calendar covering expiries, renewal notice deadlines, escalation dates, option dates and insurance renewals, because a missed date is money lost",
+          "Abstract every lease into the fields that drive operations: term, rent and escalation, deposit, responsibilities, notice periods, options and any unusual clause",
+          "Renewal outreach on a schedule, typically ninety to one hundred and twenty days before expiry, with the decision based on turn cost against market rent",
+          "Every variation in writing and executed, since side agreements made verbally are the ones that surface in a dispute",
+          "Check the file is complete: signed lease, addenda, deposit record, insurance certificate where required, move in condition record",
+          "On commercial leases know the recovery mechanics you are administering, since that is where errors get expensive"
+        ],
+        "strong_answer_signals": [
+          "Key dates calendar owned",
+          "Lease abstracts maintained",
+          "Renewal outreach on a set timeline"
+        ],
+        "avoid": [
+          "Finding out about an expiry from the resident",
+          "Verbal variations",
+          "Incomplete lease files"
+        ]
+      }
+    },
+    {
+      "id": "pm_t_011",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "What do you do to stay compliant with fair housing and tenancy law?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know the protected classes federally and in your state, province or city, since local lists are often longer",
+          "Consistency is the defence: the same screening criteria, written down, applied to every applicant in the same order",
+          "Be careful in advertising and in showings. Describe the property, never the ideal resident, and do not steer anyone toward or away from a building or floor",
+          "Handle accommodation and modification requests as a process with a clear route, not as a favour or a refusal",
+          "Everyone who talks to applicants gets trained, including leasing staff and anyone covering the phone",
+          "Keep records long enough to show what you did, because a defensible file is what actually resolves a complaint"
+        ],
+        "strong_answer_signals": [
+          "Knows local protected classes go beyond federal",
+          "Written criteria applied identically",
+          "Accommodation requests treated as a process"
+        ],
+        "avoid": [
+          "Describing preferred residents",
+          "Steering by building or floor",
+          "Exceptions made case by case"
+        ]
+      }
+    },
+    {
+      "id": "pm_t_012",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How do you handle building safety, inspections and insurance?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "A compliance calendar for the statutory items: fire alarm and sprinkler testing, extinguishers, emergency lighting, elevators, boilers, backflow, and whatever the local code adds",
+          "Routine property inspections on a schedule with a written record and photographs, including unit inspections where the lease allows and notice is given",
+          "Habitability items are not negotiable and do not wait for a budget cycle: heat, water, sanitation, structural safety, and anything that makes a unit unsafe",
+          "Insurance side: the policy limits and exclusions you operate under, resident insurance requirements, certificates from vendors, and how claims are reported and evidenced",
+          "Incidents documented at the time with photographs and witness details, because claims often arrive a year later",
+          "Known hazards handled correctly: asbestos, lead, mould, and anything with its own disclosure rules"
+        ],
+        "strong_answer_signals": [
+          "Compliance calendar with statutory items",
+          "Habitability treated as non negotiable",
+          "Incidents documented at the time"
+        ],
+        "avoid": [
+          "Inspections without a written record",
+          "Deferring a safety item for budget",
+          "Relying on memory for incidents"
+        ]
+      }
+    },
+    {
+      "id": "pm_s_001",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "A major water leak is reported at two in the morning. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Stop the water first. Know where the shutoffs are before the night you need them, and say so",
+          "Make it safe: electricity near water, ceilings holding weight, and residents moved out of affected units",
+          "Call the emergency plumber and the restoration contractor. Drying starts within hours or the mould problem starts instead",
+          "Tell the affected residents and the ones below them what is happening and what to move",
+          "Document everything as it happens: photographs, times, who attended, what was found",
+          "Owner and insurer notified the same night for anything material, and a written follow up in the morning"
+        ],
+        "strong_answer_signals": [
+          "Knows shutoff locations",
+          "Restoration started within hours",
+          "Photographs and times captured live"
+        ],
+        "avoid": [
+          "Waiting until morning",
+          "Seeking owner approval before stopping damage",
+          "No documentation for the claim"
+        ]
+      }
+    },
+    {
+      "id": "pm_s_002",
       "category": "situational",
       "seniority": [
         "mid",
         "senior"
       ],
+      "text": "A resident threatens legal action against the property. How do you respond?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Issues identified",
-          "Communication used",
-          "Resolutions offered",
-          "Documentation"
+          "Stay professional and do not argue the merits in the moment or by text message",
+          "Preserve everything immediately: work orders, correspondence, notices, inspection records, photographs, and stop any routine deletion",
+          "Notify your manager, the owner and the insurer according to the reporting policy, and do it the same day",
+          "Do not admit liability or offer a settlement outside your authority",
+          "Answer only the operational things you would have answered anyway, such as completing an outstanding repair, and keep doing them",
+          "Route further communication through the correct channel once counsel is involved"
         ],
         "strong_answer_signals": [
-          "Resolved issue",
-          "Relationship maintained"
+          "Immediate preservation of records",
+          "Same day notification up the line",
+          "No admissions or unauthorised offers"
         ],
         "avoid": [
-          "Eviction immediate",
-          "No communication"
+          "Arguing the case by email",
+          "Continuing to correspond after counsel is engaged",
+          "Delaying notification"
         ]
       }
     },
     {
-      "id": "re_005",
-      "text": "Why real estate? What drives your success?",
+      "id": "pm_s_003",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "An owner refuses to approve a repair you believe is required. What now?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Separate the two cases, because they are not the same problem: a repair that is legally required, and a repair that is merely a good idea",
+          "If it affects habitability or safety, say plainly that it is not optional, cite the obligation, and explain the exposure in money",
+          "Quantify the alternative: the cost of the claim, the notice a resident can serve, the rent abatement risk, the larger repair later",
+          "Put the recommendation and the owner's decision in writing every time, since that record is what protects you",
+          "Escalate inside your own company when an owner instructs something unlawful, rather than carrying it alone",
+          "Know the point at which your firm must decline the instruction or resign the management"
+        ],
+        "strong_answer_signals": [
+          "Distinguishes required from desirable",
+          "Costs the alternative",
+          "Written record of instruction and refusal"
+        ],
+        "avoid": [
+          "Quietly complying with an unlawful instruction",
+          "Arguing on principle without numbers",
+          "Handling it alone with no escalation"
+        ]
+      }
+    },
+    {
+      "id": "pm_s_004",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Two residents are in a dispute with each other. How do you handle it?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Hear both separately and take notes with dates rather than acting on the first version",
+          "Judge it against the lease and the community rules, not against who is more persuasive",
+          "Enforce the rule identically for both, since selective enforcement is where these become complaints against the property",
+          "Some of it is evidential: noise logs, camera footage where it exists and is lawful to review, neighbour reports",
+          "Escalate on the normal notice path when a rule is genuinely being broken, and say so to both parties",
+          "Know the cases that are not yours to mediate: threats, violence, harassment, or anything involving a protected class, which go to the police or up the line immediately"
+        ],
+        "strong_answer_signals": [
+          "Both sides heard separately",
+          "Lease as the standard",
+          "Knows what is not a mediation"
+        ],
+        "avoid": [
+          "Taking the first caller's side",
+          "Selective enforcement",
+          "Mediating a safety or harassment matter"
+        ]
+      }
+    },
+    {
+      "id": "pm_s_005",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "A unit fails a municipal or lender inspection. What is your process?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Read the notice properly: what failed, which code section, the correction deadline, and the reinspection process",
+          "Fix the safety items immediately regardless of the deadline",
+          "Build a corrective plan with owner, cost and dates, and communicate with the inspector rather than going silent until the deadline",
+          "Tell the affected residents what is happening in their unit and when",
+          "Then ask the real question: is this one unit or a pattern across the property, and inspect the rest before the inspector does",
+          "Close it out with evidence: photographs, invoices, the reinspection result, and a record kept for the file"
+        ],
+        "strong_answer_signals": [
+          "Safety items fixed before the deadline",
+          "Inspector kept informed",
+          "Checks whether it is a pattern"
+        ],
+        "avoid": [
+          "Waiting until the deadline",
+          "Fixing only the cited unit",
+          "No closeout evidence"
+        ]
+      }
+    },
+    {
+      "id": "pm_s_006",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A contractor does not show up on a move in day. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Call the resident before they call you, and give them a real time, not a vague one",
+          "Establish what is actually blocking occupancy. A missing appliance is different from no hot water or an unfinished floor",
+          "Have a backup route: a second vendor, an in house team, or a comparable unit if the unit genuinely cannot be occupied",
+          "If they cannot move in, offer something concrete: hotel cost, rent credit, moving help, within your authority and confirmed in writing",
+          "Deal with the vendor afterwards on performance, not in the middle of the crisis",
+          "Change the process so a critical path job is confirmed the day before rather than assumed"
+        ],
+        "strong_answer_signals": [
+          "Proactive call to the resident",
+          "Distinguishes blocking from cosmetic",
+          "Concrete remedy inside authority"
+        ],
+        "avoid": [
+          "Letting the resident arrive to find out",
+          "Blaming the vendor to the resident",
+          "No confirmation step for critical jobs"
+        ]
+      }
+    },
+    {
+      "id": "pm_s_007",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A resident's payment has bounced three months in a row. How do you handle it?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Talk to them and find out which situation it is rather than assuming: a bank issue, a timing issue, or genuine hardship",
+          "Apply the lease terms on returned payment fees and on the payment method, since most leases allow you to require certified funds after repeated returns",
+          "Written payment plan if it is recoverable, with dates, amounts and what happens if it is missed",
+          "Run the statutory notice track in parallel so the legal position is preserved while you work with them",
+          "Point them to rent assistance programmes where they exist, because a resident who recovers is far cheaper than a turn plus bad debt",
+          "Set a decision point in advance so this is not still running in month six"
+        ],
+        "strong_answer_signals": [
+          "Diagnoses the cause",
+          "Certified funds after repeated returns",
+          "A defined decision point"
+        ],
+        "avoid": [
+          "Verbal arrangements only",
+          "No parallel legal track",
+          "Letting arrears drift indefinitely"
+        ]
+      }
+    },
+    {
+      "id": "pm_s_008",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "A resident requests an accommodation for a disability. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Treat it as a request to be processed, not a favour to be judged, and start the process the day it arrives",
+          "Ask only what you are permitted to ask. Where the need is not obvious you may seek verification of the need, not a diagnosis or medical records",
+          "Distinguish a reasonable accommodation, which is a change in rules or services, from a modification, which is a physical change, since who pays differs",
+          "Assistance animals are not pets: no pet fee, no breed or weight rule, and the request is assessed on the same accommodation standard",
+          "Engage in an interactive dialogue and offer an alternative if the specific request is genuinely not workable, rather than simply refusing",
+          "Document the request, the exchange and the outcome, and escalate anything you are unsure about before answering"
+        ],
+        "strong_answer_signals": [
+          "Knows what may and may not be asked",
+          "Separates accommodation from modification",
+          "Interactive dialogue rather than flat refusal"
+        ],
+        "avoid": [
+          "Asking for a diagnosis",
+          "Charging pet fees for an assistance animal",
+          "Refusing without offering an alternative"
+        ]
+      }
+    },
+    {
+      "id": "pm_s_009",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "A fire or storm makes several units uninhabitable. What is your first week?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Account for people first, work with emergency services, and do not let anyone back into an unsafe building",
+          "Secure the site against further damage and against entry, and get the utilities isolated correctly",
+          "Set one communication channel and one point of contact so residents are not chasing three different answers",
+          "Insurance from day one: adjuster on site, claim opened, photographs, inventory of damage, and every cost coded to the event",
+          "Rehousing and displacement: what the lease and the local law require, what the policy covers, and what the owner will fund",
+          "Track the reconstruction as a project with dates, and give residents a realistic return date rather than an optimistic one"
+        ],
+        "strong_answer_signals": [
+          "People and site security first",
+          "Adjuster engaged immediately",
+          "Single communication channel"
+        ],
+        "avoid": [
+          "Optimistic return dates",
+          "Costs not coded to the event",
+          "Multiple conflicting spokespeople"
+        ]
+      }
+    },
+    {
+      "id": "pm_s_010",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "You are six months into the year and the budget is running over. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Find out where the variance actually is before cutting anything, and split it into price, volume and one off events",
+          "Separate what is controllable from what is not. Insurance, taxes and utilities usually are not, so the response is a reforecast rather than an action plan",
+          "Do not close the gap by deferring safety, habitability or preventive maintenance, since that moves cost into next year with interest",
+          "Look at the revenue side too: occupancy, delinquency, unbilled recoveries, and fees that are not being charged",
+          "Reforecast the year honestly and take it to the owner with options and consequences rather than a single recommendation",
+          "Agree the reporting cadence for the rest of the year so there is no second surprise"
+        ],
+        "strong_answer_signals": [
+          "Diagnoses variance before cutting",
+          "Protects preventive and safety spend",
+          "Reforecast with options for the owner"
+        ],
+        "avoid": [
+          "Across the board cuts",
+          "Deferring maintenance to hit a number",
+          "Telling the owner at year end"
+        ]
+      }
+    },
+    {
+      "id": "pm_m_001",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you lead an on site team of leasing and maintenance staff?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Say the shape of the team: leasing, maintenance technicians, porters, concierge, and who reported to you directly",
+          "A short daily huddle around the same three things: move ins and move outs, open emergencies, and money",
+          "Leasing and maintenance fail when they operate separately, so the make ready and the leasing calendar are one plan",
+          "Cross cover for holidays, sickness and the on call rota, agreed in advance rather than negotiated each time",
+          "Clear standards per role with numbers attached, and feedback that happens weekly rather than annually",
+          "Safety and training for the trades side is a management responsibility, not a formality"
+        ],
+        "strong_answer_signals": [
+          "Leasing and maintenance run as one plan",
+          "Daily operating rhythm",
+          "On call rota agreed in advance"
+        ],
+        "avoid": [
+          "Managing only the leasing side",
+          "No cover plan",
+          "Annual feedback only"
+        ]
+      }
+    },
+    {
+      "id": "pm_m_002",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you hire for a property team?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Define the actual job first. Lease up, stabilised asset and troubled asset need very different people",
+          "For maintenance test the trade: a practical assessment, certifications where required, and honesty about what they will and will not attempt",
+          "For leasing test the behaviour that matters: response speed, follow up discipline and how they handle an objection, not just presentation",
+          "Screen for the resident facing part deliberately, since this job puts people in other people's homes on their worst days",
+          "Fair, consistent and documented hiring, with the same questions and the same criteria for every candidate",
+          "Onboarding that covers fair housing, entry rules, emergency procedure and the systems before they are left alone with residents"
+        ],
+        "strong_answer_signals": [
+          "Job defined by asset situation",
+          "Practical assessment for trades",
+          "Consistent documented process"
+        ],
+        "avoid": [
+          "Hiring on gut feel",
+          "No practical test for maintenance",
+          "Onboarding without compliance training"
+        ]
+      }
+    },
+    {
+      "id": "pm_m_003",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "What numbers do you manage a property or portfolio by?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Revenue side: occupancy, economic occupancy against physical, renewal rate, average days vacant, concessions given, rent growth on new and renewal separately",
+          "Collections: current delinquency percentage, aged arrears, bad debt written off",
+          "Expense side: net operating income against budget, controllable expense per unit, turn cost per unit, maintenance cost per unit",
+          "Operations: work order completion time by priority, reopened rate, preventive maintenance completion",
+          "Leading indicators, since the ones above are all lagging: traffic, tour to lease conversion, notices given for the next ninety days",
+          "Say which of these you looked at weekly rather than listing everything as if all of it gets equal attention"
+        ],
+        "strong_answer_signals": [
+          "Economic versus physical occupancy",
+          "Leading indicators named",
+          "Says which are reviewed weekly"
+        ],
+        "avoid": [
+          "Occupancy as the only measure",
+          "Listing every metric equally",
+          "No leading indicators"
+        ]
+      }
+    },
+    {
+      "id": "pm_m_004",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you handle an underperforming member of staff?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be specific about what is missing, with dates and examples, rather than a general impression",
+          "Check the obvious causes first: unclear expectations, missing training, broken tools or systems, workload, or something personal",
+          "Agree a written plan with measurable targets and a review date, and say what support comes with it",
+          "Follow the company process and document each step, because the alternative costs the company later",
+          "Manage the resident and owner impact while it is being worked through, since they should not absorb the gap",
+          "Be willing to conclude it, and say honestly whether you have had to"
+        ],
+        "strong_answer_signals": [
+          "Specific evidence with dates",
+          "Checks systemic causes first",
+          "Has actually concluded a case"
+        ],
+        "avoid": [
+          "Hoping it improves",
+          "No written plan",
+          "Skipping the documented process"
+        ]
+      }
+    },
+    {
+      "id": "pm_m_005",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you train a team on fair housing and compliance?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Formal training on hiring and then refreshed at a set interval, recorded, including anyone who covers the phone or the front desk",
+          "Train on the real situations rather than the statute: phone enquiries, showings, application decisions, accommodation requests, and how to describe a property",
+          "Give scripts and written criteria so answers do not depend on who is asked",
+          "Audit rather than assume: mystery shop the leasing line, review advertising copy, sample applicant decisions for consistency",
+          "Make it safe to escalate an uncertain question before answering it, since the wrong confident answer is the expensive one",
+          "Cover the adjacent obligations too: entry notice, deposit handling, and privacy of resident data"
+        ],
+        "strong_answer_signals": [
+          "Trains scenarios, not statutes",
+          "Audits with mystery shops",
+          "Escalation is safe and expected"
+        ],
+        "avoid": [
+          "One induction session and nothing after",
+          "No audit",
+          "Front desk staff untrained"
+        ]
+      }
+    },
+    {
+      "id": "pm_m_006",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you manage the relationship with owners or clients?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know what each owner actually wants, since a hold for cash flow, a repositioning and a sale in twelve months lead to opposite decisions",
+          "Reporting on a fixed cadence with the same format, so they can compare months rather than decode a new layout",
+          "Bad news early and in writing, because the surprise costs more trust than the problem does",
+          "Recommendations with options and costs, and a stated recommendation, rather than passing every decision up unfiltered",
+          "Know the limits of your authority and the management agreement, including spending thresholds and what needs consent",
+          "Be able to answer the question behind the question, which is usually about return, risk and the value of the asset"
+        ],
+        "strong_answer_signals": [
+          "Tailors to the owner's strategy",
+          "Bad news early and written",
+          "Recommends rather than just reports"
+        ],
+        "avoid": [
+          "Reporting format that changes monthly",
+          "Escalating everything",
+          "Not knowing the spending authority"
+        ]
+      }
+    },
+    {
+      "id": "pm_m_007",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you manage several properties at once?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "A weekly rhythm that covers every site on the same measures, so nothing goes quiet for a month",
+          "Manage by exception once the standard reports are reliable, and spend the recovered time on the site that is actually in trouble",
+          "Site visits on a schedule and unannounced sometimes, because a report and a walk tell you different things",
+          "Standardise what should be identical across sites: work order priorities, screening criteria, notice templates, vendor rates",
+          "Route emergencies through one clear escalation path so on site staff never have to guess",
+          "Be honest that portfolio work means trusting site managers, and say how you build and check that trust"
+        ],
+        "strong_answer_signals": [
+          "Same measures across sites weekly",
+          "Manages by exception with a real reporting base",
+          "Physical visits still happen"
+        ],
+        "avoid": [
+          "Attention driven by whoever escalates",
+          "Everything bespoke per site",
+          "Never walking the properties"
+        ]
+      }
+    },
+    {
+      "id": "pm_m_008",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you take on a new property into management?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Get the documents before day one: leases and abstracts, rent roll, deposit records and where the money is held, service contracts, warranties, keys and access, compliance certificates",
+          "Verify rather than accept. Audit the rent roll against the leases and the deposits against the ledger, because inherited errors become yours",
+          "Walk every common area and a sample of units, and record condition with photographs on day one",
+          "Immediate compliance check: fire and life safety, outstanding orders or violations, insurance in place, licences current",
+          "Introduce yourself to residents properly with one clear message about how to reach you and how requests will work now",
+          "Give the owner a first ninety day plan with what you found, what it will cost and what you will fix first"
+        ],
+        "strong_answer_signals": [
+          "Audits the rent roll and deposits",
+          "Day one condition record",
+          "Ninety day plan with findings"
+        ],
+        "avoid": [
+          "Accepting handover records at face value",
+          "No resident communication",
+          "Discovering violations months later"
+        ]
+      }
+    },
+    {
+      "id": "pm_mo_001",
       "category": "motivation",
       "seniority": [
         "entry",
         "mid",
         "senior"
       ],
+      "text": "Why property management?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Independent success",
-          "Asset management",
-          "Relationship building",
-          "Market knowledge"
+          "Name what the work actually is: running a real asset where operations, money and people meet, and where the results are visible every month",
+          "Say what suits you about it: variety, ownership of a property, problems that end rather than run forever, being measured on numbers you control",
+          "If you came from another field, connect it honestly: hospitality, construction, accounting, retail management and customer service all transfer well",
+          "Show you know the hard parts, since anyone who has done it will test for that: after hours calls, difficult conversations, legal exposure, the pressure of vacancy",
+          "Tie it to this employer's asset type rather than giving an answer that would fit any property"
         ],
         "strong_answer_signals": [
-          "Specific market story",
-          "Long-term focus"
+          "Understands the mix of operations, finance and people",
+          "Acknowledges the hard parts",
+          "Specific to this asset type"
         ],
         "avoid": [
-          "Commission only",
-          "No market interest"
+          "I like working with people as the whole answer",
+          "Confusing it with sales",
+          "Nothing about the difficult side"
         ]
       }
     },
     {
-      "id": "re_006",
-      "text": "How do you handle multiple offers on a property?",
-      "category": "technical",
+      "id": "pm_mo_002",
+      "category": "motivation",
       "seniority": [
         "mid",
         "senior"
       ],
+      "text": "Where do you want to be in a few years?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Offers evaluated",
-          "Best and final",
-          "Negotiation",
-          "Client advised"
+          "Say a real direction, since this field has clear paths: site manager, portfolio or regional manager, asset management, commercial specialism, or ownership side",
+          "Connect it to what this role would build, so growth and staying are the same story",
+          "Name the concrete steps: a certification, a larger or more complex asset, budget and capital responsibility, managing managers",
+          "Show commitment to the property in front of you, because the honest concern is whether you will leave in a year",
+          "If you want an eventual move to the ownership or investment side, say so in a way that adds value here rather than sounding like a stopover"
         ],
         "strong_answer_signals": [
-          "Client best interest",
-          "Quick decision"
+          "A defined path with steps",
+          "Growth tied to this role",
+          "Commitment to the current asset"
         ],
         "avoid": [
-          "Rushed decision",
-          "No evaluation"
+          "No direction at all",
+          "A plan that clearly needs a different employer",
+          "Naming a title with no reasoning"
         ]
       }
     },
     {
-      "id": "re_007",
-      "text": "Tell me about a time you had to overcome market challenges.",
-      "category": "behavioral",
-      "seniority": [
-        "mid",
-        "senior"
-      ],
-      "answer_framework": {
-        "structure": "STAR",
-        "key_points": [
-          "Market downturn",
-          "Creative marketing",
-          "Client needs met",
-          "Results achieved"
-        ],
-        "strong_answer_signals": [
-          "Adapted strategy",
-          "Client retained"
-        ],
-        "avoid": [
-          "Blamed market",
-          "No adaptation"
-        ]
-      }
-    },
-    {
-      "id": "re_008",
-      "text": "How do you manage property maintenance and tenant relations?",
-      "category": "manager",
-      "seniority": [
-        "mid",
-        "senior"
-      ],
-      "answer_framework": {
-        "structure": "Framework",
-        "key_points": [
-          "Preventive maintenance",
-          "Emergency response",
-          "Tenant satisfaction",
-          "Vendor management"
-        ],
-        "strong_answer_signals": [
-          "Low vacancy",
-          "Positive reviews"
-        ],
-        "avoid": [
-          "Reactive only",
-          "No prevention"
-        ]
-      }
-    },
-    {
-      "id": "re_009",
-      "text": "How do you handle a bidding war?",
-      "category": "situational",
-      "seniority": [
-        "mid",
-        "senior"
-      ],
-      "answer_framework": {
-        "structure": "Framework",
-        "key_points": [
-          "Market assessment",
-          "Negotiation strategy",
-          "Client preparation",
-          "Timing"
-        ],
-        "strong_answer_signals": [
-          "Sale maximised",
-          "Client satisfied"
-        ],
-        "avoid": [
-          "Left money on table",
-          "No preparation"
-        ]
-      }
-    },
-    {
-      "id": "re_010",
-      "text": "Describe your experience with commercial real estate.",
-      "category": "technical",
-      "seniority": [
-        "mid",
-        "senior"
-      ],
-      "answer_framework": {
-        "structure": "Framework",
-        "key_points": [
-          "Property types",
-          "Lease structuring",
-          "Tenant placement",
-          "Market analysis"
-        ],
-        "strong_answer_signals": [
-          "Successful leaseups",
-          "Tenant satisfaction"
-        ],
-        "avoid": [
-          "Residential only",
-          "No commercial"
-        ]
-      }
-    },
-    {
-      "id": "re_011",
-      "text": "How do you approach a buyer agent relationship?",
-      "category": "technical",
+      "id": "pm_mo_003",
+      "category": "motivation",
       "seniority": [
         "entry",
         "mid",
         "senior"
       ],
+      "text": "Why are you leaving your current role?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Trust building",
-          "Communication",
-          "MLS usage",
-          "Transaction management"
+          "Give a forward reason: a larger portfolio, a different asset type, budget and capital ownership, a company that invests in its properties",
+          "Be careful with the common real reasons, since they are legitimate but need care: an owner who would not fund repairs, unsustainable on call load, staffing that was never filled",
+          "State it factually with no criticism of individuals, because interviewers hear how you might describe them later",
+          "Say something good about what you are leaving, since that reads as honest rather than rehearsed",
+          "Bring it back to what specifically attracted you here"
         ],
         "strong_answer_signals": [
-          "Ongoing referrals",
-          "Smooth transactions"
+          "Forward looking and specific",
+          "Factual about difficulties",
+          "Balanced view of the current employer"
         ],
         "avoid": [
-          "Competitive only",
-          "No communication"
+          "Criticising an owner or manager personally",
+          "Vague generalities",
+          "A reason that would apply here too"
         ]
       }
     },
     {
-      "id": "re_012",
-      "text": "How do you handle a title or inspection issue?",
-      "category": "situational",
+      "id": "pm_mo_004",
+      "category": "motivation",
       "seniority": [
         "mid",
         "senior"
       ],
+      "text": "What type of property do you most want to manage and why?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Problem identified",
-          "Solutions presented",
-          "Client advised",
-          "Deal protected"
+          "Have a real preference and a reason, because the asset types genuinely differ: multifamily is high volume and resident intensive, commercial is lease and recovery heavy, mixed use is both, HOA is governance heavy",
+          "Connect the preference to your strengths and to the numbers you have moved",
+          "Be honest about what you have not done and how you would come up to speed, since claiming everything reads as claiming nothing",
+          "Show flexibility without giving a shapeless answer, and say which parts transfer directly",
+          "Line the answer up with the portfolio this employer actually runs"
         ],
         "strong_answer_signals": [
-          "Issue resolved",
-          "Deal closed"
+          "A reasoned preference",
+          "Honest about gaps",
+          "Matches the employer's portfolio"
         ],
         "avoid": [
-          "Panic",
-          "No options"
+          "Any property is fine",
+          "Overstating unfamiliar asset types",
+          "A preference that ignores the vacancy on offer"
         ]
       }
     },
     {
-      "id": "re_013",
-      "text": "Tell me about building your real estate business.",
-      "category": "behavioral",
-      "seniority": [
-        "mid",
-        "senior"
-      ],
-      "answer_framework": {
-        "structure": "STAR",
-        "key_points": [
-          "Early days",
-          "Growth strategies",
-          "Brand building",
-          "Business systems"
-        ],
-        "strong_answer_signals": [
-          "Sustainable growth",
-          "Efficient systems"
-        ],
-        "avoid": [
-          "Luck only",
-          "No systems"
-        ]
-      }
-    },
-    {
-      "id": "re_014",
-      "text": "How do you handle commission disputes?",
-      "category": "situational",
-      "seniority": [
-        "mid",
-        "senior"
-      ],
-      "answer_framework": {
-        "structure": "Framework",
-        "key_points": [
-          "Escalate appropriately",
-          "Multiple perspectives heard",
-          "Fair resolution",
-          "Documentation"
-        ],
-        "strong_answer_signals": [
-          "Relationship preserved",
-          "Fair outcome"
-        ],
-        "avoid": [
-          "Confrontational",
-          "No documentation"
-        ]
-      }
-    },
-    {
-      "id": "re_015",
-      "text": "How do you approach luxury property marketing?",
-      "category": "technical",
-      "seniority": [
-        "mid",
-        "senior"
-      ],
-      "answer_framework": {
-        "structure": "Framework",
-        "key_points": [
-          "High-end photography",
-          "Targeted marketing",
-          "Exclusive networks",
-          "Discreet presentation"
-        ],
-        "strong_answer_signals": [
-          "Qualified buyers",
-          "Brand enhanced"
-        ],
-        "avoid": [
-          "Mass marketing only",
-          "No photography"
-        ]
-      }
-    },
-    {
-      "id": "re_016",
-      "text": "What is your approach to time on market?",
-      "category": "technical",
-      "seniority": [
-        "mid",
-        "senior"
-      ],
-      "answer_framework": {
-        "structure": "Framework",
-        "key_points": [
-          "Pricing first",
-          "Marketing intensity",
-          "Market timing",
-          "Open house strategy"
-        ],
-        "strong_answer_signals": [
-          "Quick sale",
-          "Proper price"
-        ],
-        "avoid": [
-          "Empty promises",
-          "Overpricing"
-        ]
-      }
-    },
-    {
-      "id": "re_017",
-      "text": "How do you handle a short sale or distressed property?",
-      "category": "situational",
-      "seniority": [
-        "mid",
-        "senior"
-      ],
-      "answer_framework": {
-        "structure": "Framework",
-        "key_points": [
-          "Investor analysis",
-          "Negotiation",
-          "Approval process",
-          "Creative offer"
-        ],
-        "strong_answer_signals": [
-          "Successful sale",
-          "Client protected"
-        ],
-        "avoid": [
-          "No negotiations",
-          "Unrealistic pricing"
-        ]
-      }
-    },
-    {
-      "id": "re_018",
-      "text": "How do you approach virtual tours and digital marketing?",
-      "category": "technical",
+      "id": "pm_mo_005",
+      "category": "motivation",
       "seniority": [
         "entry",
         "mid",
         "senior"
       ],
+      "text": "How do you feel about being on call and handling emergencies?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "3D tours used",
-          "Social media",
-          "SEO",
-          "Online listings"
+          "Answer directly, since evasion here reads as a no. Say what rota you have carried and for how long",
+          "Say how you make it sustainable: a proper rota, published emergency criteria so routine requests are not treated as emergencies, a reliable after hours vendor list",
+          "Give a real example of a night call and how it went",
+          "Be honest about your limits, because someone who overpromises leaves inside a year",
+          "Point out that a good preventive maintenance programme is what reduces emergency calls, which shows you think about the cause"
         ],
         "strong_answer_signals": [
-          "Increased exposure",
-          "More inquiries"
+          "Direct answer with real rota experience",
+          "Emergency criteria published",
+          "Links prevention to fewer call outs"
         ],
         "avoid": [
-          "Outdated marketing",
-          "No digital"
+          "Evasive or conditional answers",
+          "Claiming unlimited availability",
+          "No practical example"
         ]
       }
     },
     {
-      "id": "re_019",
-      "text": "Describe your experience with real estate finance.",
-      "category": "technical",
+      "id": "pm_mo_006",
+      "category": "motivation",
       "seniority": [
+        "entry",
         "mid",
         "senior"
       ],
+      "text": "What do you know about our portfolio and why us?",
       "answer_framework": {
         "structure": "Framework",
         "key_points": [
-          "Loan types",
-          "Rate shopping",
-          "Qualification process",
-          "Closing coordination"
+          "Do the specific homework: asset types, markets, roughly how many units or how much space, whether they own or manage for third parties, and anything recently acquired or built",
+          "Owner operator and third party manager are different jobs, so say which they are and that you understand what that changes",
+          "Name something concrete that attracted you: a property you know, the market they are in, a repositioning, their reputation with residents",
+          "Connect your own numbers to a problem they plausibly have, such as lease up, delinquency or turnover",
+          "Have real questions ready about scope, portfolio size, team and reporting lines"
         ],
         "strong_answer_signals": [
-          "Smooth closings",
-          "Client educated"
+          "Knows owner operator versus third party",
+          "Names a specific property or market",
+          "Connects own results to their problem"
         ],
         "avoid": [
-          "No finance knowledge",
-          "Poor coordination"
-        ]
-      }
-    },
-    {
-      "id": "re_020",
-      "text": "How do you handle market downturn or correction?",
-      "category": "situational",
-      "seniority": [
-        "mid",
-        "senior"
-      ],
-      "answer_framework": {
-        "structure": "Framework",
-        "key_points": [
-          "Market reality",
-          "Strategic adjustments",
-          "Client communication",
-          "Opportunistic positioning"
-        ],
-        "strong_answer_signals": [
-          "Client protected",
-          "Positioned for recovery"
-        ],
-        "avoid": [
-          "Denial",
-          "Panic selling"
+          "Generic praise",
+          "No idea of portfolio size or asset type",
+          "No questions prepared"
         ]
       }
     }

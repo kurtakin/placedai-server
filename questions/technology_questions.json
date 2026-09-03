@@ -1,928 +1,1392 @@
 {
   "metadata": {
-    "sector": "Technology",
-    "generated": "2026-04-19",
-    "total": 35,
+    "sector": "IT & Technical Support",
+    "generated": "2026-09-02",
+    "total": 46,
     "categories": [
       "behavioral",
       "manager",
       "motivation",
       "situational",
       "technical"
-    ]
+    ],
+    "region": "North America",
+    "schema_version": "1.1",
+    "note": "Yeniden yazildi. Onceki surum 'Technology' adiyla 35 yazilim muhendisligi sorusu tasiyordu ve software_engineering bankasiyla ayni isi anlatiyordu; overlay paketi ise IT destegiydi, yani banka ile paket farkli mesleklerden bahsediyordu. Bu surum paketle hizali: sorun giderme metodu, DNS ve DHCP, dizin hizmeti ve grup politikasi, cihaz yonetimi ve dagitim halkalari, erisim ve gorevden ayrilma, yedek ve geri yukleme testi, ag ve kablosuz, gunluk guvenlik ve kimlik avi mudahalesi, bilet ve dokumantasyon, degisim yonetimi, butce ve ekip."
   },
   "questions": [
     {
-      "id": "tech_b_001",
-      "category": "behavioral",
-      "seniority": [
-        "entry",
-        "mid",
-        "senior"
-      ],
-      "text": "Tell me about a time you had to learn a new technology quickly to deliver a project.",
-      "answer_framework": {
-        "structure": "STAR",
-        "key_points": [
-          "Describe urgency and timeline",
-          "How you structured learning (docs, tutorials, peers)",
-          "What you delivered and quality of outcome"
-        ],
-        "strong_answer_signals": [
-          "Self-directed learning",
-          "Time-boxed approach",
-          "Delivered on deadline"
-        ],
-        "avoid": [
-          "Saying you know everything",
-          "No concrete outcome"
-        ]
-      }
-    },
-    {
-      "id": "tech_b_002",
-      "category": "behavioral",
-      "seniority": [
-        "mid",
-        "senior"
-      ],
-      "text": "Describe a situation where you had to debug a critical production issue under pressure.",
-      "answer_framework": {
-        "structure": "STAR",
-        "key_points": [
-          "Set the stakes: impact on users/revenue",
-          "Your diagnostic approach (logs, metrics, bisect)",
-          "Resolution and post-mortem action"
-        ],
-        "strong_answer_signals": [
-          "Systematic debugging",
-          "Clear communication to stakeholders",
-          "Root cause fix not just patch"
-        ],
-        "avoid": [
-          "Panic-driven random changes",
-          "No post-mortem"
-        ]
-      }
-    },
-    {
-      "id": "tech_b_003",
+      "id": "it_b_001",
       "category": "behavioral",
       "seniority": [
         "entry",
         "mid"
       ],
-      "text": "Tell me about a time you received critical code review feedback and how you handled it.",
+      "text": "Tell me about yourself and your IT support background.",
       "answer_framework": {
-        "structure": "STAR",
+        "structure": "Framework",
         "key_points": [
-          "Describe the feedback and your initial reaction",
-          "How you engaged with the reviewer",
-          "What you changed and what you learned"
+          "Say which layer you work at: end user support, systems and servers, network, identity and access, or IT operations management",
+          "Environment in numbers: users supported, sites, ticket volume per week, the device fleet, and users per technician",
+          "Stack once: Active Directory or Entra, Intune or Jamf, Microsoft 365 or Google Workspace, the ticketing tool, the remote tool",
+          "Certifications, since they still screen on these: CompTIA A+ and Network+, Microsoft, Cisco, ITIL",
+          "One outcome: resolution time cut, a rollout delivered, onboarding automated, a recurring fault eliminated",
+          "Say whether you have worked in a small team where you are the whole department, since that is a different job"
         ],
         "strong_answer_signals": [
-          "Open mindset",
-          "Asked clarifying questions",
-          "Applied learning to future code"
+          "Users per technician stated without being asked",
+          "Names systems rather than saying computer literate",
+          "Says which layer they actually work at"
         ],
         "avoid": [
-          "Defensiveness",
-          "Dismissing feedback"
+          "Describing yourself as good with computers",
+          "Vague about which systems you can administer",
+          "No ticket volume or user count"
         ]
       }
     },
     {
-      "id": "tech_b_004",
+      "id": "it_b_002",
       "category": "behavioral",
       "seniority": [
-        "mid",
-        "senior",
-        "manager"
+        "entry",
+        "mid"
       ],
-      "text": "Describe a time you had to make a technical decision with incomplete information.",
+      "text": "Tell me about a difficult problem you solved.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "What was unknown and why",
-          "How you assessed risk and gathered minimum viable info",
-          "Decision made and outcome"
+          "Pick something with a real diagnosis, not a password reset: an intermittent network fault, a failing update, a permissions problem nobody could reproduce, a performance issue",
+          "Say how you scoped it first: one user, one machine, one site, or everyone. That single answer changes the whole investigation",
+          "Action: what you ruled out and in what order, and what evidence you used rather than guessing",
+          "Say when you escalated or called the vendor, and what you handed over",
+          "Result: fixed, and whether you found the cause or only the workaround. Be honest about the difference",
+          "What you documented so the next person is faster"
         ],
         "strong_answer_signals": [
-          "Structured risk assessment",
-          "Documented trade-offs",
-          "Reversible decision where possible"
+          "Scopes before diagnosing",
+          "Honest about cause versus workaround",
+          "Documents the fix"
         ],
         "avoid": [
-          "Analysis paralysis",
-          "No documentation of reasoning"
+          "Reimaging as the first move",
+          "Changing several things at once",
+          "A story with no documentation at the end"
         ]
       }
     },
     {
-      "id": "tech_b_005",
+      "id": "it_b_003",
       "category": "behavioral",
       "seniority": [
-        "senior",
-        "manager"
+        "entry",
+        "mid"
       ],
-      "text": "Tell me about a time you advocated for technical debt reduction against business pressure.",
+      "text": "Tell me about a frustrated user you dealt with.",
       "answer_framework": {
         "structure": "STAR",
         "key_points": [
-          "Business context and pressure",
-          "How you quantified the debt risk in business terms",
-          "Outcome and compromise reached"
+          "Acknowledge the impact before the technology. They are not angry about DNS, they are angry about missing a meeting",
+          "Action: set expectations honestly, including when you do not yet know. Silence is what turns frustration into escalation",
+          "Give a workaround while the real fix runs: a hotspot, a loaner, a shared machine, a phone",
+          "Explain without jargon and without condescension. Never say it is user error, even when it is",
+          "Follow up after it is fixed, since that one message changes how the department sees IT",
+          "Result: the issue resolved and the relationship afterwards"
         ],
         "strong_answer_signals": [
-          "Translated tech risk to business impact",
-          "Found middle ground",
-          "Tracked and delivered debt reduction"
+          "Acknowledges impact before explaining",
+          "Provides a workaround immediately",
+          "Follows up afterwards"
         ],
         "avoid": [
-          "Pure technical argument with no business framing",
-          "Giving up without presenting case"
+          "Blaming the user, even gently",
+          "Going silent while working on it",
+          "Treating an executive differently on security"
         ]
       }
     },
     {
-      "id": "tech_t_001",
+      "id": "it_b_004",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you were overwhelmed by tickets.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Set the volume honestly: a major outage, a rollout gone wrong, a colleague absent, a Monday after a change window",
+          "Action: triage by impact times urgency rather than by arrival order",
+          "Communicate on the tickets you are NOT working on yet. An unanswered ticket costs more goodwill than a slow one",
+          "Escalate early and ask for help rather than quietly drowning",
+          "Look for the pattern: twenty tickets about one thing is a project, not twenty tickets",
+          "Result: the queue handled and what you changed so it did not repeat"
+        ],
+        "strong_answer_signals": [
+          "Triages by impact times urgency",
+          "Answers tickets they cannot start yet",
+          "Spots the pattern behind the volume"
+        ],
+        "avoid": [
+          "Working strictly first in first out",
+          "Silently absorbing an impossible queue",
+          "No follow up on the underlying cause"
+        ]
+      }
+    },
+    {
+      "id": "it_b_005",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a mistake you made.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Real examples: a change that broke something, a wrong group policy, a deleted account, a misconfigured firewall rule, an update pushed too widely",
+          "Own it immediately and tell whoever was affected. In IT a hidden change is far worse than the change",
+          "Action: rolled back, contained the impact, and communicated to users before they discovered it",
+          "Result and the process you changed: a test group, a change window, a peer review, a backup check first",
+          "Say plainly that change control exists because of exactly this"
+        ],
+        "strong_answer_signals": [
+          "Reports before users discover it",
+          "Names the process change, not just the fix",
+          "Understands why change control exists"
+        ],
+        "avoid": [
+          "Saying you have never broken anything",
+          "Rolling back quietly and saying nothing",
+          "Blaming the vendor or the update"
+        ]
+      }
+    },
+    {
+      "id": "it_b_006",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a project or rollout you delivered.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Pick something with scope: an operating system upgrade, a mail migration, an identity move, a device refresh, a new ticketing system",
+          "Numbers up front: how many users, how many devices, over what window, with what budget",
+          "Planning: the pilot group, the rollback plan, the maintenance window, and who you told before you started",
+          "Communication is most of the work. What users heard, when, and what you did for those who could not be interrupted",
+          "What went wrong, because something did, and how you kept the schedule",
+          "Result and what you would do differently"
+        ],
+        "strong_answer_signals": [
+          "Pilot group and rollback plan both named",
+          "Communicated before starting",
+          "Honest about what went wrong"
+        ],
+        "avoid": [
+          "A rollout with no pilot",
+          "No rollback position",
+          "Users finding out on the day"
+        ]
+      }
+    },
+    {
+      "id": "it_b_007",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you had to say no to a user request.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Common ones: local admin rights, personal software, an unapproved cloud service, data on a personal device, bypassing multi factor authentication",
+          "Action: understand what they were actually trying to do, since there is usually a safe way to achieve it",
+          "Explain the risk in their terms rather than quoting policy at them",
+          "Offer the compliant alternative. Being the department of no is how shadow IT starts",
+          "Escalate the genuine business case rather than blocking it permanently",
+          "Result: the safe route they took, or the exception properly approved and recorded"
+        ],
+        "strong_answer_signals": [
+          "Finds the safe way to achieve the goal",
+          "Explains risk in their language",
+          "Escalates a real business case rather than blocking"
+        ],
+        "avoid": [
+          "Granting local admin to stop the complaints",
+          "Quoting policy with no alternative",
+          "A flat no that produced shadow IT"
+        ]
+      }
+    },
+    {
+      "id": "it_b_008",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about working with a colleague or another team.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Examples: a developer needing access, facilities during an office move, HR on onboarding, a vendor engineer, security on an incident",
+          "Action: understood their constraint before pushing yours, and agreed who does what by when",
+          "Say how you handled a disagreement about priority or approach",
+          "Result: the outcome and the working relationship afterwards",
+          "IT sits between every department. Show that you are easy to work with, since that is half the job"
+        ],
+        "strong_answer_signals": [
+          "Understands the other side constraint first",
+          "Agrees owners and dates",
+          "Easy to work with"
+        ],
+        "avoid": [
+          "A story where the other team was the obstacle",
+          "Handling a disagreement by escalating first",
+          "Ignoring a request because it was not logged properly"
+        ]
+      }
+    },
+    {
+      "id": "it_b_009",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about feedback you received.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Real feedback here: ticket notes too thin, slow to update users, not escalating early enough, too much jargon, closing tickets without confirming the fix",
+          "Action: asked what good looked like and what you practised",
+          "Result: the observable change, ideally in a number such as reopened tickets or first response time",
+          "Say whether you asked for a review of your ticket notes afterwards"
+        ],
+        "strong_answer_signals": [
+          "Asks what good looks like",
+          "Change visible in a metric",
+          "Invites review"
+        ],
+        "avoid": [
+          "Feedback that was really praise",
+          "Disagreeing with the standard",
+          "No evidence it stuck"
+        ]
+      }
+    },
+    {
+      "id": "it_b_010",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about a time you improved something without being asked.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Options: a knowledge base article, an automated onboarding step, a script for a repeated task, a monitoring alert, a cleaned up asset register",
+          "Say what triggered it: usually a task you did three times and got tired of",
+          "Action: what you built, who you checked with, and how you got others to use it",
+          "Result with a number: hours saved per month, tickets avoided, onboarding time cut",
+          "Say how you documented it so it did not become a thing only you understand"
+        ],
+        "strong_answer_signals": [
+          "Triggered by a repeated task",
+          "Quantifies the saving",
+          "Documented so it is not personal knowledge"
+        ],
+        "avoid": [
+          "A script only you can run or maintain",
+          "An improvement nobody else adopted",
+          "Automating something without telling anyone"
+        ]
+      }
+    },
+    {
+      "id": "it_t_001",
       "category": "technical",
       "seniority": [
         "entry",
         "mid"
       ],
-      "text": "How would you design a RESTful API for a task management application?",
+      "text": "Walk me through how you troubleshoot a problem.",
       "answer_framework": {
-        "structure": "STAR",
+        "structure": "Framework",
         "key_points": [
-          "Define resources (tasks, users, projects)",
-          "HTTP verbs and endpoint design",
-          "Auth, versioning, error handling"
+          "Show a method, because the method IS the question: reproduce, isolate, test one change at a time, verify with the user, document",
+          "Define the problem precisely first: what exactly happens, when did it start, what changed, who else is affected",
+          "Scope it early: one user, one machine, one site, or everyone. That answer changes the entire investigation",
+          "Work the layers in order rather than guessing: physical, network, authentication, application, permissions, data",
+          "Say when you escalate and what you hand over: what you tried, what you ruled out, what the logs said",
+          "Close the loop with the user in plain language and record the fix"
         ],
         "strong_answer_signals": [
-          "Stateless design",
-          "Clear resource naming",
-          "Pagination and filtering"
+          "Scopes before diagnosing",
+          "One change at a time",
+          "Hands over what was ruled out, not just the symptom"
         ],
         "avoid": [
-          "Ignoring auth",
-          "No error handling discussion"
+          "Reimaging first",
+          "Changing several settings at once and hoping",
+          "Closing a ticket without confirming with the user"
         ]
       }
     },
     {
-      "id": "tech_t_002",
-      "category": "technical",
-      "seniority": [
-        "mid",
-        "senior"
-      ],
-      "text": "How do you approach performance optimization of a slow database query?",
-      "answer_framework": {
-        "structure": "STAR",
-        "key_points": [
-          "Measure first (EXPLAIN, query plan)",
-          "Index strategy and query rewrite",
-          "Caching layer and denormalization trade-offs"
-        ],
-        "strong_answer_signals": [
-          "Data-driven approach",
-          "Understood full data lifecycle",
-          "Measured before and after"
-        ],
-        "avoid": [
-          "Guessing without measuring",
-          "Adding indexes blindly"
-        ]
-      }
-    },
-    {
-      "id": "tech_t_003",
-      "category": "technical",
-      "seniority": [
-        "senior"
-      ],
-      "text": "Describe how you would architect a system to handle 1 million concurrent users.",
-      "answer_framework": {
-        "structure": "STAR",
-        "key_points": [
-          "Horizontal scaling and load balancing",
-          "Stateless services, caching (CDN, Redis)",
-          "Database sharding and async processing"
-        ],
-        "strong_answer_signals": [
-          "Trade-off awareness",
-          "Incremental scaling",
-          "Cost consideration"
-        ],
-        "avoid": [
-          "Single server solution",
-          "Ignoring cost"
-        ]
-      }
-    },
-    {
-      "id": "tech_t_004",
+      "id": "it_t_002",
       "category": "technical",
       "seniority": [
         "entry",
         "mid"
       ],
-      "text": "How do you ensure code quality in your development workflow?",
+      "text": "Explain DNS and how you troubleshoot it.",
       "answer_framework": {
-        "structure": "STAR",
+        "structure": "Framework",
         "key_points": [
-          "Code reviews and PR standards",
-          "Automated testing (unit, integration, e2e)",
-          "CI/CD pipeline and linting"
+          "Definition first: DNS resolves a name to an address. Then say the practical truth, that a surprising share of outages are DNS",
+          "Know the record types you actually meet: A, CNAME, MX, TXT for verification and mail security, and SRV for some services",
+          "Troubleshooting order: is it this machine only, does it resolve with a different resolver, is it cached, is the record correct at the authoritative server",
+          "Name the tools: nslookup or dig, ipconfig flushdns, and checking the resolver the client is actually using",
+          "Common causes: a stale cache, a wrong or missing record, a client pointing at the wrong DNS server, a TTL that has not expired yet, split horizon differences",
+          "Say what you check first when a single site fails versus when everything fails"
         ],
         "strong_answer_signals": [
-          "Test coverage metrics",
-          "Automated gates",
-          "Documentation standards"
+          "Knows to test with a different resolver",
+          "Understands caching and TTL",
+          "Names the tools and uses them in a sensible order"
         ],
         "avoid": [
-          "Manual testing only",
-          "No peer review process"
+          "Reciting record types with no troubleshooting method",
+          "Flushing DNS as the only technique",
+          "Not knowing which resolver the client is using"
         ]
       }
     },
     {
-      "id": "tech_t_005",
+      "id": "it_t_003",
       "category": "technical",
       "seniority": [
-        "mid",
-        "senior"
+        "entry",
+        "mid"
       ],
-      "text": "How would you approach migrating a monolith to microservices?",
+      "text": "Explain DHCP and what goes wrong with it.",
       "answer_framework": {
-        "structure": "STAR",
+        "structure": "Framework",
         "key_points": [
-          "Identify bounded contexts and seams",
-          "Strangler fig pattern: incremental migration",
-          "Data ownership and service communication"
+          "Definition: automatic address assignment, with the lease process being discover, offer, request, acknowledge",
+          "Know the scope: the address range, the lease duration, the reservations, and the options handed out such as gateway and DNS",
+          "Real world failures: scope exhaustion, a rogue DHCP server, a failed relay across subnets, a client stuck on an old lease",
+          "Symptom recognition: an address in the automatic private range means the client got no answer from a server",
+          "Troubleshooting: check the scope utilisation, check the relay, check for a second server, release and renew on the client",
+          "Say why reservations matter for printers and infrastructure"
         ],
         "strong_answer_signals": [
-          "Incremental approach",
-          "Clear domain boundaries",
-          "Managed rollback strategy"
+          "Recognises the automatic private address as a no server symptom",
+          "Knows about rogue DHCP and relays",
+          "Checks scope utilisation"
         ],
         "avoid": [
-          "Big bang rewrite",
-          "Ignoring data coupling"
+          "Knowing the acronym but not the failure modes",
+          "Release and renew as the whole answer",
+          "Not knowing what a relay does"
         ]
       }
     },
     {
-      "id": "tech_s_001",
+      "id": "it_t_004",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What do you know about Active Directory or Entra ID?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Purpose: identity, authentication and authorisation, with objects organised into containers so policy can be applied by group",
+          "Structure: users, groups, computers, organisational units, and why nesting groups by role beats assigning permissions individually",
+          "Group policy or its cloud equivalent: settings applied by container, with precedence and inheritance. Say how you troubleshoot a policy that did not apply",
+          "Authentication basics: what happens when a user signs in, and the common failures such as time skew, a locked account, a stale cached credential",
+          "Hybrid identity: synchronisation between on premises and cloud, and what breaks when sync fails",
+          "Say how you handle a joiner, a mover and a leaver, since the mover is the one everyone forgets"
+        ],
+        "strong_answer_signals": [
+          "Assigns permissions by group, not by user",
+          "Can troubleshoot policy that did not apply",
+          "Names the mover as the forgotten case"
+        ],
+        "avoid": [
+          "Assigning permissions to individual users",
+          "Not knowing how to check applied policy",
+          "No process for role changes"
+        ]
+      }
+    },
+    {
+      "id": "it_t_005",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you manage devices and deployment?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Standardise the build: a single image or a configuration profile, so machines are alike and support is predictable",
+          "Use the management platform properly: enrolment, configuration profiles, compliance policies, application deployment, and remote wipe",
+          "Patch on a schedule with a pilot ring first. Pushing an update to everyone at once is how you take out a company",
+          "Encryption enabled and the recovery key escrowed centrally, since an encrypted machine with a lost key is a lost machine",
+          "Asset records that are accurate: who has what, warranty status, and where it is. Most organisations get this wrong",
+          "Have a plan for a lost or stolen device and for a departing employee returning theirs"
+        ],
+        "strong_answer_signals": [
+          "Pilot ring before wide deployment",
+          "Recovery keys escrowed",
+          "Asset records treated as a real control"
+        ],
+        "avoid": [
+          "Pushing updates to everyone at once",
+          "Encryption without key escrow",
+          "An asset register nobody has verified"
+        ]
+      }
+    },
+    {
+      "id": "it_t_006",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle access and permissions?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Least privilege by default, granted by role rather than by request, and reviewed periodically",
+          "Joiners, movers and leavers as a single process. The mover accumulates permissions silently and nobody notices",
+          "Offboarding is same day and complete: accounts, mailbox, devices, SaaS applications, shared credentials, building access",
+          "Privileged accounts separate from daily accounts, and never shared. Shared admin logins destroy accountability",
+          "Multi factor authentication wherever it is possible, and know your exception process",
+          "Record who approved each grant, since access without an approver is an audit finding"
+        ],
+        "strong_answer_signals": [
+          "Least privilege by role",
+          "Movers handled, not just leavers",
+          "Separate privileged accounts"
+        ],
+        "avoid": [
+          "Shared admin accounts",
+          "Access granted verbally with no record",
+          "Offboarding that takes a week"
+        ]
+      }
+    },
+    {
+      "id": "it_t_007",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you approach backups and recovery?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "State the principle: a backup that has never been restored is not a backup, it is a hope",
+          "Know the three two one idea: multiple copies, more than one medium, at least one off site or otherwise isolated",
+          "Immutable or offline copies matter now, because ransomware targets the backups first",
+          "Know the two numbers that define the requirement: how much data you can afford to lose, and how long you can be down",
+          "Test restores on a schedule and document the result. Test the full restore, not just a single file",
+          "Cloud services still need backup. Retention in a mail platform is not the same as a backup"
+        ],
+        "strong_answer_signals": [
+          "Says an untested backup is not a backup",
+          "Knows ransomware targets backups",
+          "Understands cloud services still need backup"
+        ],
+        "avoid": [
+          "Assuming a backup job that reports success is working",
+          "No isolated or immutable copy",
+          "Never having done a full restore test"
+        ]
+      }
+    },
+    {
+      "id": "it_t_008",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What networking do you understand?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Addressing: what a subnet is, why a device with the wrong mask cannot reach the gateway, and what a default gateway does",
+          "The path a packet takes, and how you follow it: check the local machine, the switch port, the VLAN, the gateway, the firewall, then the destination",
+          "Tools you actually use: ping, traceroute, nslookup or dig, port testing, and reading the interface status",
+          "VLANs and why they exist: segmentation for security and for broadcast control",
+          "Wireless problems specifically: coverage versus interference, channel overlap, roaming, and authentication failures. Most wireless complaints are not bandwidth",
+          "VPN and remote access: the tunnel, split tunnel or full, certificate or multi factor, and what breaks on a hotel network"
+        ],
+        "strong_answer_signals": [
+          "Follows the path methodically rather than guessing",
+          "Knows most wireless complaints are not bandwidth",
+          "Can explain a subnet mask failure"
+        ],
+        "avoid": [
+          "Rebooting the switch as a diagnostic",
+          "Treating every wireless issue as bandwidth",
+          "Not knowing how to test a port"
+        ]
+      }
+    },
+    {
+      "id": "it_t_009",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle security in day to day IT?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Patching and endpoint protection on a schedule you can prove, not when someone remembers",
+          "Phishing: how a report reaches you, how you contain it, and what you do about the credentials that may already be gone",
+          "Multi factor everywhere possible, and treat a multi factor fatigue attack as a real pattern rather than a user error",
+          "Least privilege, no shared accounts, and privileged access separated",
+          "Know your incident escalation path before you need it, and preserve evidence rather than cleaning up first",
+          "Say no to the unsafe request politely and offer the safe version. That skill is why experienced people get hired",
+          "Awareness training matters, but design the system so a single mistake is not fatal"
+        ],
+        "strong_answer_signals": [
+          "Preserves evidence rather than cleaning up",
+          "Knows the escalation path in advance",
+          "Designs so one mistake is not fatal"
+        ],
+        "avoid": [
+          "Wiping a compromised machine before anyone investigates",
+          "Treating phishing as purely a user training problem",
+          "Local admin granted to reduce complaints"
+        ]
+      }
+    },
+    {
+      "id": "it_t_010",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you use ticketing and documentation?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Log everything, including the walk up requests. Unlogged work is invisible when staffing is discussed",
+          "Write ticket notes for the next person, not for yourself: symptom, what you checked, what you ruled out, what fixed it",
+          "Categorise honestly so the data can find patterns. Miscategorised tickets make problem management impossible",
+          "Know the difference between an incident and a problem: the incident restores service, the problem removes the cause",
+          "Build the knowledge base from real tickets, and link the article from the ticket so it gets used",
+          "Confirm with the user before closing, since a reopened ticket is worse than an open one"
+        ],
+        "strong_answer_signals": [
+          "Logs walk ups so the workload is visible",
+          "Distinguishes incident from problem",
+          "Confirms before closing"
+        ],
+        "avoid": [
+          "Fixing at the desk and never logging it",
+          "Ticket notes that say fixed",
+          "Closing without user confirmation"
+        ]
+      }
+    },
+    {
+      "id": "it_t_011",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "What scripting or automation have you done?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be honest about level. Many good technicians are not scripters and employers would rather know",
+          "Name the language and what you actually automated: user creation, onboarding steps, reporting, software deployment, log collection, health checks",
+          "Say how you tested it before running it widely, since a bad script scales a mistake instantly",
+          "Version and document it so it is not personal knowledge that leaves with you",
+          "Say what you would automate first here: usually the task the team does most often by hand",
+          "Know when not to automate: a rare task, or one where being wrong is expensive"
+        ],
+        "strong_answer_signals": [
+          "Honest about level",
+          "Tested before running widely",
+          "Knows when not to automate"
+        ],
+        "avoid": [
+          "A script that only runs on your machine",
+          "Running an untested script against production",
+          "Overstating scripting ability"
+        ]
+      }
+    },
+    {
+      "id": "it_t_012",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How is IT support measured?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "First response and resolution time against the agreed service levels, split by priority",
+          "First contact resolution, which tells you whether the front line is genuinely fixing things",
+          "Reopened tickets, which is the honest quality measure and the one most teams ignore",
+          "Ticket volume by category, since the pattern points at the problem worth fixing permanently",
+          "User satisfaction, taken with care because response rates are low and skewed",
+          "Say which you personally influenced and how, with a number"
+        ],
+        "strong_answer_signals": [
+          "Names reopened tickets as the quality measure",
+          "Uses category volume to find root causes",
+          "Has moved a number personally"
+        ],
+        "avoid": [
+          "Closing tickets fast as the only goal",
+          "No awareness of service levels",
+          "Gaming a metric such as closing and reopening"
+        ]
+      }
+    },
+    {
+      "id": "it_s_001",
       "category": "situational",
       "seniority": [
         "entry",
         "mid"
       ],
-      "text": "Your team is behind schedule on a release. How do you handle it?",
+      "text": "A senior executive says their laptop is broken minutes before a board meeting.",
       "answer_framework": {
-        "structure": "STAR",
+        "structure": "Framework",
         "key_points": [
-          "Assess what is blocking progress",
-          "Triage features: must-have vs nice-to-have",
-          "Communicate timeline revision to stakeholders early"
+          "Get them working first. The meeting is the deliverable, the laptop is not",
+          "Fastest path to a working setup: a loaner, a phone or tablet for the call, someone else machine, or dialling in by phone",
+          "Then diagnose properly afterwards rather than under pressure in front of an audience",
+          "Communicate a clear time: I will have you in the meeting in five minutes, and then meet it",
+          "Do not skip security for speed. No shared logins, no disabled encryption, no local admin as a shortcut",
+          "Follow up afterwards with the real fix and the cause"
         ],
         "strong_answer_signals": [
-          "Scope negotiation",
-          "Transparent communication",
-          "Risk-based prioritization"
+          "Restores the meeting before diagnosing",
+          "Gives a specific time and meets it",
+          "Refuses to trade security for speed"
         ],
         "avoid": [
-          "Heroic overtime without scope discussion",
-          "Surprise delays"
+          "Debugging on the spot while the meeting starts",
+          "Handing over a shared or admin login",
+          "No follow up on the actual fault"
         ]
       }
     },
     {
-      "id": "tech_s_002",
+      "id": "it_s_002",
       "category": "situational",
-      "seniority": [
-        "mid",
-        "senior"
-      ],
-      "text": "A colleague pushes code that causes a production outage. How do you respond?",
-      "answer_framework": {
-        "structure": "STAR",
-        "key_points": [
-          "Restore service first: rollback or hotfix",
-          "Blameless post-mortem process",
-          "Process improvement to prevent recurrence"
-        ],
-        "strong_answer_signals": [
-          "Service restoration priority",
-          "Blameless culture",
-          "Systemic fix not personal blame"
-        ],
-        "avoid": [
-          "Blaming the individual",
-          "No process change"
-        ]
-      }
-    },
-    {
-      "id": "tech_s_003",
-      "category": "situational",
-      "seniority": [
-        "senior",
-        "manager"
-      ],
-      "text": "You are asked to estimate a project with many unknowns. How do you proceed?",
-      "answer_framework": {
-        "structure": "STAR",
-        "key_points": [
-          "Break into known and unknown components",
-          "Time-box discovery spikes",
-          "Provide range estimates with confidence levels"
-        ],
-        "strong_answer_signals": [
-          "Range-based estimates",
-          "Explicit assumptions",
-          "Regular re-estimation checkpoints"
-        ],
-        "avoid": [
-          "Single point estimate with false precision",
-          "No discovery phase"
-        ]
-      }
-    },
-    {
-      "id": "tech_s_004",
-      "category": "situational",
-      "seniority": [
-        "mid",
-        "senior"
-      ],
-      "text": "How do you handle disagreement with a technical approach chosen by your team lead?",
-      "answer_framework": {
-        "structure": "STAR",
-        "key_points": [
-          "Understand their reasoning first",
-          "Present your alternative with trade-offs",
-          "Commit to team decision once made"
-        ],
-        "strong_answer_signals": [
-          "Evidence-based argument",
-          "Respectful disagreement",
-          "Team alignment after decision"
-        ],
-        "avoid": [
-          "Silent compliance with no input",
-          "Undermining decision after it's made"
-        ]
-      }
-    },
-    {
-      "id": "tech_s_005",
-      "category": "situational",
-      "seniority": [
-        "entry",
-        "mid",
-        "senior"
-      ],
-      "text": "You discover a security vulnerability in production. What do you do?",
-      "answer_framework": {
-        "structure": "STAR",
-        "key_points": [
-          "Assess severity and blast radius immediately",
-          "Escalate to security team and management",
-          "Patch, audit logs, communicate to affected parties"
-        ],
-        "strong_answer_signals": [
-          "Rapid severity assessment",
-          "Proper escalation chain",
-          "Transparent communication"
-        ],
-        "avoid": [
-          "Downplaying severity",
-          "Trying to fix alone without escalation"
-        ]
-      }
-    },
-    {
-      "id": "tech_m_001",
-      "category": "motivation",
-      "seniority": [
-        "entry",
-        "mid",
-        "senior"
-      ],
-      "text": "What drives you to stay current with emerging technologies?",
-      "answer_framework": {
-        "structure": "STAR",
-        "key_points": [
-          "Genuine curiosity or problem-solving drive",
-          "Specific learning habits (blogs, side projects, communities)",
-          "How it translates to your current role"
-        ],
-        "strong_answer_signals": [
-          "Concrete examples of self-learning",
-          "Applied knowledge to work",
-          "Active community participation"
-        ],
-        "avoid": [
-          "Generic answer with no specifics",
-          "Learning for learning's sake with no application"
-        ]
-      }
-    },
-    {
-      "id": "tech_m_002",
-      "category": "motivation",
-      "seniority": [
-        "mid",
-        "senior"
-      ],
-      "text": "Why do you want to work in this specific technology stack?",
-      "answer_framework": {
-        "structure": "STAR",
-        "key_points": [
-          "Specific technical reasons (performance, ecosystem, community)",
-          "Your experience and depth with it",
-          "How it aligns with the role's challenges"
-        ],
-        "strong_answer_signals": [
-          "Deep technical rationale",
-          "Honest about gaps",
-          "Enthusiasm with substance"
-        ],
-        "avoid": [
-          "Generic excitement",
-          "No real technical reasoning"
-        ]
-      }
-    },
-    {
-      "id": "tech_m_003",
-      "category": "motivation",
       "seniority": [
         "entry",
         "mid"
       ],
-      "text": "What kind of engineering problems do you find most energizing?",
+      "text": "A user reports a phishing email they already clicked.",
       "answer_framework": {
-        "structure": "STAR",
+        "structure": "Framework",
         "key_points": [
-          "Specific problem domain (scale, algorithms, UX)",
-          "Example of engaging with such a problem",
-          "Connection to role you are applying for"
+          "Thank them first and mean it. A user who reports is worth more than one who hides it, and how you react determines whether the next person reports",
+          "Contain immediately: reset the credentials, revoke active sessions and tokens, and check multi factor registrations for anything the attacker added",
+          "Check for mail rules created on the account, since forwarding and hiding rules are the classic follow up",
+          "Isolate the device if anything was downloaded or run",
+          "Search whether the same message reached others and remove it from mailboxes",
+          "Report through the incident process. Do not decide alone that it was minor",
+          "Preserve evidence rather than cleaning up first"
         ],
         "strong_answer_signals": [
-          "Authentic specificity",
-          "Connects to role's challenges",
-          "Shows self-awareness"
+          "Thanks the reporter, protecting future reporting",
+          "Revokes sessions and checks new mail rules",
+          "Checks who else received it"
         ],
         "avoid": [
-          "Vague 'I love solving problems'",
-          "No connection to the role"
+          "Making the user feel stupid",
+          "Only resetting the password and stopping there",
+          "Deciding alone that it was not serious"
         ]
       }
     },
     {
-      "id": "tech_m_004",
-      "category": "motivation",
+      "id": "it_s_003",
+      "category": "situational",
       "seniority": [
-        "senior",
-        "manager"
+        "entry",
+        "mid"
       ],
-      "text": "How do you balance technical excellence with shipping fast?",
+      "text": "A change you made broke something for many users.",
       "answer_framework": {
-        "structure": "STAR",
+        "structure": "Framework",
         "key_points": [
-          "Define quality floors vs perfectionism",
-          "Risk-based approach to trade-offs",
-          "How you revisit speed shortcuts post-launch"
+          "Roll back first if you can. Understanding can wait, service cannot",
+          "Communicate immediately and broadly: what is affected, what you are doing, and when you will update again. Then meet that update time",
+          "Own it plainly. Trying to work out whether anyone will notice is the wrong instinct",
+          "Once service is restored, find the actual cause rather than assuming",
+          "Change the process: a test group, a change window, a peer review, a documented rollback plan",
+          "Write it up honestly. A blameless record is what stops it recurring"
         ],
         "strong_answer_signals": [
-          "Pragmatic quality standards",
-          "Explicit trade-off documentation",
-          "Follow-through on debt"
+          "Rolls back before diagnosing",
+          "Communicates before being asked",
+          "Changes the process, not just the setting"
         ],
         "avoid": [
-          "Always perfectionist or always fast, no nuance",
-          "No process for managing shortcuts"
+          "Trying to fix it quietly before anyone notices",
+          "Restoring service and never finding the cause",
+          "No rollback plan existed"
         ]
       }
     },
     {
-      "id": "tech_m_005",
-      "category": "motivation",
+      "id": "it_s_004",
+      "category": "situational",
       "seniority": [
-        "mid",
-        "senior"
+        "entry",
+        "mid"
       ],
-      "text": "Tell me about a side project or open source contribution you are proud of.",
+      "text": "A user asks for local admin rights to install something.",
       "answer_framework": {
-        "structure": "STAR",
+        "structure": "Framework",
         "key_points": [
-          "What problem it solved and why you started",
-          "Technical choices made and why",
-          "Impact or learning outcome"
+          "Find out what they actually need to do. There is usually a supported way to achieve it",
+          "Offer the alternatives: deploy it through the management platform, a portal self service install, a licensed approved equivalent, or a temporary elevation with an expiry",
+          "Explain the risk in their terms: one wrong install with admin rights can reach every file they can reach",
+          "If there is a genuine business need, take it through the exception process with an approver, a scope and a review date. Do not grant it informally",
+          "Record the decision either way",
+          "Say plainly that permanent local admin as a convenience is how most endpoint compromises spread"
         ],
         "strong_answer_signals": [
-          "Real problem motivation",
-          "Shipped and maintained",
-          "Lessons applied to professional work"
+          "Finds the supported alternative",
+          "Uses a time limited exception with an approver",
+          "Records the decision"
         ],
         "avoid": [
-          "Never shipped",
-          "Purely resume-driven with no genuine interest"
+          "Granting it because they are senior",
+          "Refusing with no alternative, producing shadow IT",
+          "An informal grant with no record or expiry"
         ]
       }
     },
     {
-      "id": "tech_mg_001",
+      "id": "it_s_005",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Several users report the network is slow.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Scope it first: which users, which sites, which applications, wired or wireless, and when it started",
+          "Slow is a symptom, not a diagnosis. Get one concrete measurement before touching anything",
+          "Check the obvious in order: is it one application or everything, is it internet or internal, is there a change or an outage upstream",
+          "Look at the monitoring rather than the anecdotes. If there is no monitoring, that is your finding",
+          "Wireless complaints are usually coverage, interference or client roaming rather than bandwidth",
+          "Communicate what you know while you investigate, and give an update time",
+          "Afterwards, add the monitoring or alert that would have told you first"
+        ],
+        "strong_answer_signals": [
+          "Gets a measurement before acting",
+          "Separates internal from internet, one app from all",
+          "Adds the missing monitoring afterwards"
+        ],
+        "avoid": [
+          "Rebooting infrastructure to see what happens",
+          "Accepting slow as a diagnosis",
+          "No communication while investigating"
+        ]
+      }
+    },
+    {
+      "id": "it_s_006",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You are asked to give someone access to another person mailbox or files.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Do not act on the request alone. Verify who is asking and whether they have the authority",
+          "Know the proper route: manager approval, HR involvement where it concerns an individual, and a record of the approval",
+          "For a departed employee, follow the offboarding process. For someone absent, use a delegated access method rather than sharing their credentials",
+          "Never share the person password or log in as them. Use the supported delegation, which also preserves the audit trail",
+          "Consider whether legal or HR needs to be involved, particularly in an investigation or a dispute",
+          "Record what was granted, to whom, by whose approval, and remove it when it is no longer needed"
+        ],
+        "strong_answer_signals": [
+          "Requires documented approval",
+          "Uses delegation rather than credentials",
+          "Removes the access afterwards"
+        ],
+        "avoid": [
+          "Logging in as the user",
+          "Granting because a manager asked verbally",
+          "Access granted and never removed"
+        ]
+      }
+    },
+    {
+      "id": "it_s_007",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A critical server or service goes down.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Confirm the scope and the impact before acting: what is down, who is affected, and what depends on it",
+          "Communicate immediately with an update time, and keep the updates coming even when there is no news",
+          "Restore service first. Root cause can wait unless the cause is actively making it worse",
+          "Work the evidence: monitoring, logs, recent changes. Recent changes are the first place to look and the most commonly skipped",
+          "Escalate early to the vendor or the specialist rather than at hour three",
+          "Afterwards: root cause, a written record, and the monitoring or redundancy that would have reduced the impact"
+        ],
+        "strong_answer_signals": [
+          "Restores service before diagnosing",
+          "Checks recent changes first",
+          "Escalates early rather than late"
+        ],
+        "avoid": [
+          "Investigating root cause while users are down",
+          "Silence during the outage",
+          "No post incident review"
+        ]
+      }
+    },
+    {
+      "id": "it_s_008",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You suspect a machine is infected with malware or ransomware.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Isolate it from the network immediately, but do not power it off, since memory evidence is lost and some ransomware behaves worse on reboot",
+          "Do not start cleaning. Preserve the state for whoever investigates",
+          "Escalate through the security incident process at once. This is not a desktop support decision",
+          "Check the blast radius: what shares that machine could reach, what credentials were on it, and whether anything else shows the same signs",
+          "Check the backups are intact and isolated, since that is what the attacker will have targeted",
+          "Communicate carefully and follow the organisation direction on who is told what",
+          "Never pay or negotiate. That is a leadership and legal decision, not yours"
+        ],
+        "strong_answer_signals": [
+          "Isolates without powering off",
+          "Checks backup integrity",
+          "Escalates rather than cleaning"
+        ],
+        "avoid": [
+          "Running a cleaner and declaring it fixed",
+          "Powering off immediately",
+          "Handling it alone as a desktop issue"
+        ]
+      }
+    },
+    {
+      "id": "it_s_009",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "You are the only IT person and three urgent things happen at once.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Rank by business impact: how many people are stopped, is revenue affected, is there a safety or security dimension",
+          "Tell all three what is happening and when you will get to them. Being told you are third is far better than silence",
+          "Look for the quick containment on the others: a workaround, a manual process, a temporary access",
+          "Ask for help: a colleague, a vendor support line, a managed service contact, or a manager to handle communications",
+          "Do not attempt all three in parallel. Context switching under pressure is how mistakes get made",
+          "Afterwards, raise the single point of failure honestly, because being the only IT person IS the risk"
+        ],
+        "strong_answer_signals": [
+          "Ranks by business impact and says so",
+          "Communicates the queue position",
+          "Raises the single person risk afterwards"
+        ],
+        "avoid": [
+          "Working all three at once",
+          "Silence to the two waiting",
+          "Never raising the resourcing risk"
+        ]
+      }
+    },
+    {
+      "id": "it_s_010",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A user keeps having the same problem every week.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Stop treating it as an incident and treat it as a problem. Repeatedly restoring service is a failure to fix anything",
+          "Gather the pattern: when, after what, on which machine, following which action. Ask the user what they were doing each time",
+          "Look at the ticket history properly rather than starting from scratch each week",
+          "Test a hypothesis rather than swapping parts. Swapping until it stops is expensive and often coincidental",
+          "Consider the causes people skip: a scheduled task, a profile issue, a failing component, a network condition, or a workflow that does not fit the tool",
+          "Fix the cause, then confirm over a period rather than declaring victory the same day",
+          "Document it, since a recurring fault usually affects more people than the one who reports it"
+        ],
+        "strong_answer_signals": [
+          "Reframes it as a problem, not an incident",
+          "Tests a hypothesis rather than swapping parts",
+          "Confirms over time"
+        ],
+        "avoid": [
+          "Applying the same workaround weekly",
+          "Replacing hardware without evidence",
+          "Closing it the same day and calling it fixed"
+        ]
+      }
+    },
+    {
+      "id": "it_m_001",
       "category": "manager",
       "seniority": [
-        "manager",
-        "senior"
-      ],
-      "text": "How do you help junior engineers grow their technical skills?",
-      "answer_framework": {
-        "structure": "STAR",
-        "key_points": [
-          "Pairing, code review as teaching moments",
-          "Stretch assignments with safety net",
-          "Regular 1:1s focused on development"
-        ],
-        "strong_answer_signals": [
-          "Concrete mentoring examples",
-          "Measurable growth in reports",
-          "Tailored approach per person"
-        ],
-        "avoid": [
-          "Generic 'I mentor them'",
-          "No follow-through or measurement"
-        ]
-      }
-    },
-    {
-      "id": "tech_mg_002",
-      "category": "manager",
-      "seniority": [
+        "mid",
         "manager"
       ],
-      "text": "Describe how you managed a team through a major architecture change.",
+      "text": "How do you run an IT support team?",
       "answer_framework": {
-        "structure": "STAR",
+        "structure": "Framework",
         "key_points": [
-          "Vision communication and buy-in process",
-          "Migration plan and risk mitigation",
-          "How you kept team productive during transition"
+          "Make the work visible: a queue everyone can see, clear ownership, and service levels that are actually agreed with the business rather than invented",
+          "Set standards that are observable: response times, note quality, confirm before closing, escalate at a defined point",
+          "Protect project time. A team that is entirely reactive never fixes the cause of anything",
+          "Coach on the tickets: review notes, listen to how people talk to users, and give feedback the same week",
+          "Balance the load and rotate the unpopular work rather than letting it land on the most agreeable person",
+          "Watch the pattern data and turn recurring incidents into projects"
         ],
         "strong_answer_signals": [
-          "Inclusive decision-making",
-          "Parallel run strategy",
-          "Team morale maintained"
+          "Protects project time deliberately",
+          "Coaches from real tickets",
+          "Turns recurring incidents into projects"
         ],
         "avoid": [
-          "Top-down mandate with no buy-in",
-          "Big bang with no fallback"
+          "Managing purely from the ticket count",
+          "A team that is entirely reactive",
+          "Standards that were never agreed with the business"
         ]
       }
     },
     {
-      "id": "tech_mg_003",
+      "id": "it_m_002",
       "category": "manager",
       "seniority": [
-        "manager",
-        "senior"
-      ],
-      "text": "How do you handle a high performer who is resistant to process improvements?",
-      "answer_framework": {
-        "structure": "STAR",
-        "key_points": [
-          "Understand root cause of resistance",
-          "Find ways to involve them in shaping the process",
-          "Clear expectations if behaviour continues"
-        ],
-        "strong_answer_signals": [
-          "Empathy-first approach",
-          "Involved them as co-creator",
-          "Held firm on team standards"
-        ],
-        "avoid": [
-          "Ignoring to keep the peace",
-          "Immediate escalation without conversation"
-        ]
-      }
-    },
-    {
-      "id": "tech_mg_004",
-      "category": "manager",
-      "seniority": [
+        "mid",
         "manager"
       ],
-      "text": "How do you prioritise technical roadmap items against product feature requests?",
+      "text": "How do you handle change management?",
       "answer_framework": {
-        "structure": "STAR",
+        "structure": "Framework",
         "key_points": [
-          "Framework: risk, impact, opportunity cost",
-          "Cross-functional alignment with product and business",
-          "Communicate trade-offs transparently"
+          "Classify changes: standard and pre approved, normal with review, and emergency with retrospective approval. Without that split, either everything is bureaucratic or nothing is controlled",
+          "Every change needs a stated impact, a test, a rollback plan, and a communication step. A change with no rollback is not approved",
+          "Schedule windows and respect them, and know the business calendar so you do not change during month end or a peak trading week",
+          "Review changes as a group where the risk warrants it, and keep the record",
+          "Track change related incidents. If most of your outages follow changes, the process is not working",
+          "Make the emergency route real, since a process that cannot handle urgency gets bypassed entirely"
         ],
         "strong_answer_signals": [
-          "Quantified risk of deferred tech work",
-          "Regular joint planning sessions",
-          "Visible tech roadmap to stakeholders"
+          "Splits standard from normal from emergency",
+          "Requires a rollback plan",
+          "Tracks change related incidents"
         ],
         "avoid": [
-          "Unilateral tech decisions",
-          "No business impact framing"
+          "A process so heavy it gets bypassed",
+          "No rollback requirement",
+          "Changing during a business peak"
         ]
       }
     },
     {
-      "id": "tech_mg_005",
+      "id": "it_m_003",
       "category": "manager",
       "seniority": [
-        "manager",
-        "senior"
+        "mid",
+        "manager"
       ],
-      "text": "Tell me about a time you had to let go of a technical approach you championed.",
+      "text": "How do you plan and defend an IT budget?",
       "answer_framework": {
-        "structure": "STAR",
+        "structure": "Framework",
         "key_points": [
-          "What you championed and why",
-          "New evidence or constraint that emerged",
-          "How you transitioned gracefully and what you learned"
+          "Know the run cost first: licences, hardware refresh, support contracts, connectivity, and cloud consumption",
+          "Refresh on a cycle rather than on failure. Emergency replacement always costs more and it costs it at the worst time",
+          "Justify in business terms: downtime avoided, hours saved, risk reduced, compliance required. Not the specification of the device",
+          "Review licences and contracts before renewal. Unused licences and auto renewals are the most common waste",
+          "Separate what is genuinely required from what is desirable, and be honest about the consequence of deferring each",
+          "Give a number: cost reduced, a contract renegotiated, a consolidation delivered"
         ],
         "strong_answer_signals": [
-          "Intellectual humility",
-          "Smooth team transition",
-          "Learning articulated"
+          "Knows the run cost before asking for anything new",
+          "Justifies in business terms",
+          "Reviews before auto renewal"
         ],
         "avoid": [
-          "Never happened: red flag",
-          "Lingering resentment in the story"
+          "Asking for budget in technical specifications",
+          "Replacing hardware only on failure",
+          "Licences nobody has audited"
         ]
       }
     },
     {
-      "id": "tech_b_006",
-      "category": "behavioral",
-      "seniority": [
-        "entry",
-        "mid"
-      ],
-      "text": "Tell me about a time you improved the test coverage of a legacy codebase.",
-      "answer_framework": {
-        "structure": "STAR",
-        "key_points": [
-          "Assessed coverage gaps and risk areas",
-          "Strategy: highest-risk modules first",
-          "Coverage improvement and defect reduction"
-        ],
-        "strong_answer_signals": [
-          "Risk-based prioritisation",
-          "Measurable coverage increase",
-          "Fewer production regressions"
-        ],
-        "avoid": [
-          "100% coverage obsession with no risk lens",
-          "No measurement"
-        ]
-      }
-    },
-    {
-      "id": "tech_b_007",
-      "category": "behavioral",
+      "id": "it_m_004",
+      "category": "manager",
       "seniority": [
         "mid",
-        "senior"
+        "manager"
       ],
-      "text": "Describe a time you successfully reduced the complexity of an existing system.",
+      "text": "How do you decide what to outsource or buy versus build?",
       "answer_framework": {
-        "structure": "STAR",
+        "structure": "Framework",
         "key_points": [
-          "Identified the complexity hotspot via data or pain",
-          "Refactoring approach and risk management",
-          "Outcome: fewer bugs, faster onboarding, lower MTTR"
+          "Start from what is core: things that differentiate the business stay close, commodity services can be bought",
+          "Count the real cost of building: the build, the run, the on call, the documentation, and the person who owns it in three years",
+          "Consider the risk of the single person who knows how it works. That is the most common hidden cost in small IT teams",
+          "For a managed service: define what good looks like in the contract, keep the ability to leave, and retain enough knowledge to hold them to account",
+          "Do not outsource the accountability. The vendor can run it, you still own the outcome",
+          "Review the arrangement periodically rather than renewing by habit"
         ],
         "strong_answer_signals": [
-          "Data-driven identification",
-          "Incremental safe refactoring",
-          "Team productivity gain"
+          "Counts run cost and key person risk",
+          "Retains enough knowledge to hold a vendor to account",
+          "Keeps an exit route"
         ],
         "avoid": [
-          "Rewrote everything at once",
-          "No measurement of improvement"
+          "Building something that becomes one person knowledge",
+          "Outsourcing and assuming accountability transfers",
+          "Renewing a managed service without review"
         ]
       }
     },
     {
-      "id": "tech_b_008",
-      "category": "behavioral",
-      "seniority": [
-        "entry",
-        "mid",
-        "senior"
-      ],
-      "text": "Tell me about a time your technical estimate was significantly off. What happened?",
-      "answer_framework": {
-        "structure": "STAR",
-        "key_points": [
-          "Root cause of estimation error",
-          "How you communicated the slip early",
-          "What you changed in your estimation process"
-        ],
-        "strong_answer_signals": [
-          "Early transparent communication",
-          "Root cause analysis",
-          "Improved estimation technique applied since"
-        ],
-        "avoid": [
-          "Blaming requirements",
-          "No process change"
-        ]
-      }
-    },
-    {
-      "id": "tech_t_006",
-      "category": "technical",
+      "id": "it_m_005",
+      "category": "manager",
       "seniority": [
         "mid",
-        "senior"
+        "manager"
       ],
-      "text": "How do you approach monitoring and observability for a distributed system?",
+      "text": "How do you improve service without more headcount?",
       "answer_framework": {
-        "structure": "STAR",
+        "structure": "Framework",
         "key_points": [
-          "Three pillars: logs, metrics, traces",
-          "SLOs, SLIs and alerting strategy",
-          "On-call runbooks and incident response"
+          "Attack the top ticket categories. A small number of causes usually generates most of the volume",
+          "Self service for the repeatable: password reset, software install, access request, and a knowledge base people can actually find",
+          "Automate onboarding and offboarding, which are high volume, error prone and security relevant",
+          "Fix the underlying causes rather than getting faster at the same repairs",
+          "Shift left: give the front line the tools and permissions to resolve rather than escalating everything",
+          "Measure before and after, and be honest when something did not work",
+          "Give the number: volume reduced, first contact resolution improved, onboarding time cut"
         ],
         "strong_answer_signals": [
-          "SLO-driven alerting",
-          "Distributed tracing implementation",
-          "Runbook quality"
+          "Targets the top categories rather than working faster",
+          "Automates joiners and leavers",
+          "Shifts resolution to the front line"
         ],
         "avoid": [
-          "Log-only approach",
-          "Alerting on every error with no SLO context"
+          "Asking people to work harder",
+          "A knowledge base nobody can find",
+          "Measuring speed while volume grows"
         ]
       }
     },
     {
-      "id": "tech_t_007",
-      "category": "technical",
-      "seniority": [
-        "entry",
-        "mid"
-      ],
-      "text": "Explain how you would implement authentication and authorisation in a web app.",
-      "answer_framework": {
-        "structure": "STAR",
-        "key_points": [
-          "Auth vs authz distinction",
-          "JWT or session tokens, refresh token strategy",
-          "RBAC or ABAC for authorisation"
-        ],
-        "strong_answer_signals": [
-          "Token expiry and refresh",
-          "Secure storage (httpOnly cookies)",
-          "Least privilege principle"
-        ],
-        "avoid": [
-          "Storing passwords in plain text",
-          "No token expiry"
-        ]
-      }
-    },
-    {
-      "id": "tech_s_006",
-      "category": "situational",
+      "id": "it_m_006",
+      "category": "manager",
       "seniority": [
         "mid",
-        "senior"
+        "manager"
       ],
-      "text": "Two senior engineers disagree on the architecture approach for a critical component. You are the tech lead. How do you resolve it?",
+      "text": "How do you manage security risk as an IT manager?",
       "answer_framework": {
-        "structure": "STAR",
+        "structure": "Framework",
         "key_points": [
-          "Facilitate structured trade-off discussion",
-          "Define evaluation criteria together",
-          "Time-box the decision and document reasoning"
+          "Know your actual exposure: what data you hold, where it is, who can reach it, and what would hurt most if lost",
+          "Get the basics right before buying tools: patching, multi factor, least privilege, backup with an isolated copy, and endpoint protection",
+          "Have an incident response plan people have rehearsed, and know who decides and who communicates",
+          "Manage third party risk. Your suppliers access is your exposure",
+          "Report risk to leadership in business terms with options and costs, and record when a risk is accepted rather than fixed",
+          "Never present a security posture as complete. Present it as a position with known gaps and a plan"
         ],
         "strong_answer_signals": [
-          "Criteria-based decision framework",
-          "Inclusive process",
-          "Clear decision ownership"
+          "Basics before tools",
+          "Records accepted risk explicitly",
+          "Rehearsed incident plan"
         ],
         "avoid": [
-          "Imposing your own preference",
-          "Letting it drag indefinitely"
+          "Buying a product instead of fixing patching and access",
+          "A plan nobody has rehearsed",
+          "Claiming the environment is secure"
         ]
       }
     },
     {
-      "id": "tech_s_007",
-      "category": "situational",
+      "id": "it_m_007",
+      "category": "manager",
       "seniority": [
-        "entry",
         "mid",
-        "senior"
+        "manager"
       ],
-      "text": "You are onboarding to a new codebase with poor documentation. How do you get up to speed quickly?",
+      "text": "How do you keep and develop IT staff?",
       "answer_framework": {
-        "structure": "STAR",
+        "structure": "Framework",
         "key_points": [
-          "Run and explore the system first",
-          "Map key flows via debugger or tests",
-          "Pair with domain experts; document as you learn"
+          "Know why people leave IT roles: no progression, permanently reactive work, no training budget, being blamed for systems they did not choose, and on call with no recognition",
+          "Give project work and time to do it, since that is where people learn and stay",
+          "Fund certification and give study time. It is cheaper than replacing someone",
+          "Rotate specialisms so nobody is trapped as the only person who knows a system, which helps them and reduces your risk",
+          "Recognise the invisible work. IT is noticed when it fails and ignored when it works",
+          "Manage the on call load fairly and pay or compensate it properly",
+          "Give the number: turnover or average tenure"
         ],
         "strong_answer_signals": [
-          "Systematic exploration",
-          "Creating documentation as a by-product",
-          "Asking targeted questions"
+          "Names permanently reactive work as a retention issue",
+          "Rotates specialisms to remove key person risk",
+          "Manages on call fairly"
         ],
         "avoid": [
-          "Reading docs that don't exist",
-          "Asking too broadly with no prior exploration"
+          "Training budget as the first thing cut",
+          "One person owning a critical system indefinitely",
+          "On call treated as goodwill"
         ]
       }
     },
     {
-      "id": "tech_m_006",
+      "id": "it_m_008",
+      "category": "manager",
+      "seniority": [
+        "mid",
+        "manager"
+      ],
+      "text": "How do you work with the rest of the business?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be present before you are needed. A manager who only appears when something breaks is treated as a cost centre",
+          "Translate: talk about downtime, risk, hours and cost rather than about the technology",
+          "Get involved early in projects. IT invited at the end inherits decisions it cannot fix",
+          "Say yes to the objective and negotiate the method. A flat no drives shadow IT and you find out later",
+          "Report honestly, including the things that are going badly, and bring options rather than only problems",
+          "Build a relationship with the people who set budgets before you need one"
+        ],
+        "strong_answer_signals": [
+          "Present before being needed",
+          "Says yes to the objective, negotiates the method",
+          "Reports the bad news too"
+        ],
+        "avoid": [
+          "Appearing only during incidents",
+          "Blocking requests without alternatives",
+          "Being invited to projects at the end and accepting that"
+        ]
+      }
+    },
+    {
+      "id": "it_mo_001",
       "category": "motivation",
       "seniority": [
         "entry",
-        "mid",
-        "senior"
+        "mid"
       ],
-      "text": "Where do you see your technical career in three years?",
+      "text": "Why do you want to work in IT support?",
       "answer_framework": {
-        "structure": "STAR",
+        "structure": "Framework",
         "key_points": [
-          "Specific technical or leadership direction",
-          "Skills you are actively developing",
-          "How this role accelerates that path"
+          "Give a real reason: you like solving problems, you like that the work has an obvious result, you enjoy helping people who are stuck",
+          "Connect it to something you actually did, including outside work",
+          "Say what you want to grow into: systems, network, security, cloud, or team lead",
+          "Practical reasons such as stability and a clear certification path are respected when paired with genuine interest"
         ],
         "strong_answer_signals": [
-          "Concrete and credible goals",
-          "Self-awareness of gaps",
-          "Alignment with role"
+          "A concrete reason tied to real experience",
+          "Names a direction they want to grow in",
+          "Honest about practical motivations"
         ],
         "avoid": [
-          "Vague 'grow as an engineer'",
-          "Goals completely disconnected from the role"
+          "Saying you are good with computers",
+          "Nothing about the people you would be helping",
+          "Treating support as a stepping stone with no interest in it"
         ]
       }
     },
     {
-      "id": "tech_b_009",
-      "category": "behavioral",
-      "seniority": [
-        "senior",
-        "manager"
-      ],
-      "text": "Describe how you built a culture of code quality and engineering excellence in a team.",
-      "answer_framework": {
-        "structure": "STAR",
-        "key_points": [
-          "Set shared standards collaboratively",
-          "Led by example in reviews and design docs",
-          "Measured and celebrated quality improvements"
-        ],
-        "strong_answer_signals": [
-          "Collaborative standards",
-          "Measurable outcomes",
-          "Psychological safety for raising issues"
-        ],
-        "avoid": [
-          "Top-down mandates with no buy-in",
-          "Quality as policing not culture"
-        ]
-      }
-    },
-    {
-      "id": "tech_b_010",
-      "category": "behavioral",
+      "id": "it_mo_002",
+      "category": "motivation",
       "seniority": [
         "entry",
         "mid"
       ],
-      "text": "Tell me about a project where you had to collaborate across time zones or remote teams.",
+      "text": "Why this organisation?",
       "answer_framework": {
-        "structure": "STAR",
+        "structure": "Framework",
         "key_points": [
-          "Async communication strategy",
-          "Documentation and overlap hours management",
-          "Outcome and relationship quality"
+          "Be specific: the size, the sector, whether they are cloud first, regulated, growing, or mid migration",
+          "Connect it to your experience: a similar environment, a system they use, a transition you have done before",
+          "Say what you want to learn there and what you could bring in the first months",
+          "Be honest about practical fit alongside the real reason"
         ],
         "strong_answer_signals": [
-          "Proactive async documentation",
-          "Clear handoffs",
-          "Built trust without face-time"
+          "Specific knowledge of the environment",
+          "Connects their experience to the context",
+          "Says what they would bring early"
         ],
         "avoid": [
-          "Relying on synchronous-only communication",
-          "No documentation habit"
+          "An answer that fits any employer",
+          "Getting the size or the sector wrong",
+          "Only mentioning location or salary"
+        ]
+      }
+    },
+    {
+      "id": "it_mo_003",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you keep your skills current?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Name the actual sources: vendor documentation, certification study, home lab, communities, release notes, and the vendors you already use",
+          "Say what you have learned recently and where it showed up in your work. That is the evidence, not the intention",
+          "A home lab or a personal project is genuinely persuasive in this field. Say what you built and why",
+          "Say how you evaluate something new rather than adopting it because it is popular",
+          "Mention the direction of the field honestly: cloud, identity, automation and security are where the work is moving"
+        ],
+        "strong_answer_signals": [
+          "Names something learned recently and where it was used",
+          "A home lab or real project",
+          "Evaluates rather than adopts"
+        ],
+        "avoid": [
+          "Saying you keep up with no example",
+          "Only listing certifications you intend to take",
+          "No awareness of where the field is moving"
+        ]
+      }
+    },
+    {
+      "id": "it_mo_004",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "How do you handle repetitive work?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be honest. A share of this job is repetitive and pretending otherwise is not credible",
+          "Say how you handle it: do it well and consistently, then look for what can be automated or self served",
+          "Say that the repetitive ticket is often someone bad day, so consistency matters to them even when it is routine to you",
+          "Give an example of something repetitive you removed or reduced",
+          "Say what balance you want: some routine, some project work, and be honest that entirely reactive roles wear people down"
+        ],
+        "strong_answer_signals": [
+          "Honest that some of it is routine",
+          "Has removed a repetitive task",
+          "Knows the routine ticket matters to the user"
+        ],
+        "avoid": [
+          "Claiming to love repetition",
+          "Suggesting routine work is beneath you",
+          "No example of improving anything"
+        ]
+      }
+    },
+    {
+      "id": "it_mo_005",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Where do you want to be in a couple of years?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Honest options: senior support, systems or network administration, security, cloud, identity, or team lead",
+          "If you want to stay at the front line and be excellent at it, say so. Experienced reliable support staff are valued and increasingly rare",
+          "Name what you would need: a certification, exposure to a specific system, or project experience",
+          "Show you intend to do this job well regardless of the direction"
+        ],
+        "strong_answer_signals": [
+          "Names a direction and what it requires",
+          "Comfortable saying they want to stay hands on",
+          "Committed to the current role regardless"
+        ],
+        "avoid": [
+          "Claiming ambitions you do not have",
+          "No thought about direction",
+          "Making clear you will leave as soon as possible"
+        ]
+      }
+    },
+    {
+      "id": "it_mo_006",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Do you have any questions for us?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Ask what tells you what the job actually is:",
+          "\"How many users per technician, and what is the ticket volume?\"",
+          "\"Is the team firefighting, or is there protected project time?\"",
+          "\"What is the state of documentation and the asset register?\"",
+          "\"Who decides on tooling and budget?\"",
+          "\"What is the biggest thing you know needs fixing?\"",
+          "The firefighting versus project split is the most honest description of the role you will get"
+        ],
+        "strong_answer_signals": [
+          "Asks about the firefighting versus project split",
+          "Asks users per technician",
+          "Asks what they know needs fixing"
+        ],
+        "avoid": [
+          "No questions",
+          "Only asking about pay and hours",
+          "Asking something already in the advert"
         ]
       }
     }
