@@ -396,17 +396,795 @@
       },
       "text": "Tell me about a time you had to implement a testing strategy for a new technology stack.",
       "category": "behavioral"
+    },
+    {
+      "id": "qa_021",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How do you decide what to automate and what to test manually?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Automate what is repeated, stable and cheap to assert: regression paths, API contracts, critical user journeys, data driven permutations",
+          "Keep manual where judgement is the point: exploratory testing, usability, first pass on a brand new feature, anything visual that is hard to assert",
+          "Shape it like a pyramid rather than an ice cream cone. Most coverage at unit and integration level, a thin layer of end to end, because end to end is where flakiness and cost live",
+          "Weigh the maintenance cost honestly. An automated test that needs rewriting every sprint is a liability, not coverage",
+          "Prioritise by risk: what breaks the business if it fails, what changes most often, what has a history of defects",
+          "Say what you would not automate at all, since knowing that is what separates experience from enthusiasm"
+        ],
+        "strong_answer_signals": [
+          "Pyramid rather than end to end heavy",
+          "Maintenance cost weighed explicitly",
+          "Names what should stay manual"
+        ],
+        "avoid": [
+          "Automate everything",
+          "No risk based prioritisation",
+          "Ignoring maintenance"
+        ]
+      }
+    },
+    {
+      "id": "qa_022",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How do you do exploratory and risk based testing?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Time boxed sessions with a charter, so it is structured exploration rather than clicking around",
+          "Build the risk model first: what is new, what is complex, what changed recently, what has failed before, what hurts most if it breaks",
+          "Use heuristics deliberately: boundaries, interruptions, the back button, concurrency, permissions, empty and enormous inputs, bad network",
+          "Take notes as you go so findings are reproducible, since an unreproducible exploratory finding is close to worthless",
+          "Feed what you find back into the automated suite when it is worth keeping",
+          "Say what exploratory testing catches that scripted testing does not, because that is the real question"
+        ],
+        "strong_answer_signals": [
+          "Chartered, time boxed sessions",
+          "An explicit risk model",
+          "Findings feed back into automation"
+        ],
+        "avoid": [
+          "Unstructured clicking",
+          "No notes or reproduction steps",
+          "Treating it as a substitute for automation"
+        ]
+      }
+    },
+    {
+      "id": "qa_023",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How do you manage test environments and test data?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Environments should be reproducible from configuration rather than hand maintained, since drift between environments is the source of most it works here arguments",
+          "Seed data deliberately and make tests create what they need, because shared mutable data is why suites fail in random order",
+          "Never use raw production data. Mask, subset or synthesise it, and know the obligations you are working under",
+          "Isolate: parallel runs need their own data or their own tenant, or you get failures nobody can reproduce",
+          "Reset state between runs and make that cheap, whether that is containers, snapshots or transactions rolled back",
+          "Say who owns the environment when it breaks, because that ambiguity costs more days than the breakage"
+        ],
+        "strong_answer_signals": [
+          "Environments from configuration",
+          "Tests create their own data",
+          "Production data masked or synthesised"
+        ],
+        "avoid": [
+          "Shared hand maintained environments",
+          "Raw production data",
+          "No isolation for parallel runs"
+        ]
+      }
+    },
+    {
+      "id": "qa_024",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How do you approach accessibility testing?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know the standard you are testing against and at what level, since accessibility without a standard is opinion",
+          "Automated checks catch a real but limited share of issues. Say that plainly and do not present a clean automated run as compliance",
+          "Manual checks that matter most: keyboard only navigation, focus order and visible focus, screen reader output, colour contrast, zoom and reflow, form labels and error messaging",
+          "Test with an actual screen reader rather than only reading the markup",
+          "Build it into the definition of done rather than doing an audit at the end, since retrofitting is where the cost is",
+          "Report findings with the impact on a real user rather than a rule number, because that is what gets them fixed"
+        ],
+        "strong_answer_signals": [
+          "Names the standard and level",
+          "Honest about automated coverage limits",
+          "Keyboard and screen reader testing done"
+        ],
+        "avoid": [
+          "Automated scan presented as compliance",
+          "Accessibility as an end of project audit",
+          "Reporting rule numbers with no user impact"
+        ]
+      }
+    },
+    {
+      "id": "qa_025",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Release is tomorrow and there is still an open severity one. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Get the facts sharp first: reproduction steps, how many users hit it, whether there is a workaround, whether data is at risk",
+          "Say clearly that the go or no go decision is not yours alone, but the risk assessment is, and give it in writing",
+          "Present options rather than a veto: fix and retest, ship with the feature flagged off, ship with a documented workaround, delay",
+          "Say what retest coverage you would need after a late fix, since a rushed patch is its own risk",
+          "If it ships against your advice, record your assessment and make sure monitoring and rollback are ready",
+          "Follow up afterwards on how it escaped, without turning it into a blame exercise"
+        ],
+        "strong_answer_signals": [
+          "Risk stated in user impact terms",
+          "Options rather than a veto",
+          "Assessment recorded when overruled"
+        ],
+        "avoid": [
+          "Blocking on authority you do not have",
+          "Approving quietly to avoid conflict",
+          "No plan for the post release"
+        ]
+      }
+    },
+    {
+      "id": "qa_026",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "A developer says the bug does not reproduce on their machine. How do you handle it?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Assume a real difference rather than a disagreement, because there almost always is one",
+          "Nail down the variables: build number, environment, data state, user role and permissions, browser or device, feature flags, timing and network",
+          "Give them everything: exact steps, logs, network trace, screenshot or recording, and the request and response if it is an API",
+          "Try it yourself on their setup or pair with them, since ten minutes together usually ends it",
+          "If it is genuinely intermittent, say so and quantify it, because how often matters for the priority",
+          "Turn the difference you find into something durable: a fixed test environment, a seeded data state, or a check in the pipeline"
+        ],
+        "strong_answer_signals": [
+          "Treats it as an environment difference",
+          "Gives complete evidence",
+          "Pairs rather than argues"
+        ],
+        "avoid": [
+          "Reopening the ticket with no new information",
+          "Treating it as a personal dispute",
+          "Leaving intermittency unquantified"
+        ]
+      }
+    },
+    {
+      "id": "qa_027",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "A bug escaped to production. What happens next?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Containment before analysis: rollback, flag off, or hotfix, and confirm the customer impact is stopped",
+          "Then the honest question, which is not who missed it but why the process let it through: no coverage, coverage that did not assert the right thing, an environment gap, a rushed regression, or an unknown unknown",
+          "Write the failing test first, then fix, so the escape is locked out permanently",
+          "Look for siblings, since the same gap usually hides more than one defect",
+          "Feed it into the escape analysis with a real number: escaped defects by severity and where they were introduced",
+          "Say plainly that escapes happen, and that a team with zero escapes is usually shipping too slowly to matter"
+        ],
+        "strong_answer_signals": [
+          "Containment first",
+          "Failing test written before the fix",
+          "Looks for sibling defects"
+        ],
+        "avoid": [
+          "Blame on an individual",
+          "Fixing without adding coverage",
+          "Treating any escape as unacceptable"
+        ]
+      }
+    },
+    {
+      "id": "qa_028",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "You are asked to sign off with far less time than you need. How do you respond?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Do not refuse and do not silently comply. Both are ways of avoiding the actual conversation",
+          "Say what you can cover in the time and what you cannot, in specific terms rather than as a general warning",
+          "Prioritise by risk so the time you have goes to the paths that matter most: money, data, security, the main journey",
+          "Give a written statement of residual risk so the decision maker owns a real decision rather than an assumption",
+          "Ask what can reduce the risk instead of testing: a feature flag, a staged rollout, extra monitoring, a limited cohort",
+          "Do the retrospective afterwards on why the time compressed, since it is usually a planning problem rather than a testing one"
+        ],
+        "strong_answer_signals": [
+          "Specific coverage and gaps stated",
+          "Residual risk in writing",
+          "Suggests risk reduction outside testing"
+        ],
+        "avoid": [
+          "Blanket refusal",
+          "Signing off without qualification",
+          "Vague warnings nobody can act on"
+        ]
+      }
+    },
+    {
+      "id": "qa_029",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "The automated suite now takes hours and is blocking the pipeline. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Measure before cutting: which tests are slow, which fail rarely, which overlap, and where the time actually goes",
+          "Parallelise and shard first, since that is usually the cheapest large win",
+          "Split the suite by purpose: a fast gate on every commit, the full suite on a schedule or before release",
+          "Push coverage down the pyramid. Many slow end to end tests are asserting something a unit or contract test could assert in milliseconds",
+          "Delete tests that assert nothing or duplicate another test, and be willing to say that out loud",
+          "Set a target the team agrees on for pipeline time, because without a number this creeps straight back"
+        ],
+        "strong_answer_signals": [
+          "Measures before cutting",
+          "Fast gate plus scheduled full suite",
+          "Willing to delete redundant tests"
+        ],
+        "avoid": [
+          "Deleting tests to make the number look good",
+          "Running everything on every commit forever",
+          "No agreed target"
+        ]
+      }
+    },
+    {
+      "id": "qa_030",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "A test fails only in the pipeline and never locally. How do you chase it?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "List what is actually different: timing and machine speed, parallelism, clean state, time zone and locale, headless browser, network latency, resource limits, secrets and configuration",
+          "Get the evidence out of the run: full logs, screenshots or video on failure, the artifact from the exact failing run, not a rerun",
+          "Suspect timing first, since implicit sleeps and race conditions are the most common cause by a wide margin",
+          "Reproduce it deliberately by making local look like the pipeline: same container, same parallelism, constrained resources",
+          "Do not fix it by retrying. A retry that hides a real race condition ships that race condition to users",
+          "If it truly cannot be stabilised, quarantine it with an owner and a date rather than leaving it failing and ignored"
+        ],
+        "strong_answer_signals": [
+          "Timing and race conditions suspected first",
+          "Reproduces under pipeline conditions",
+          "Refuses blind retries"
+        ],
+        "avoid": [
+          "Adding a retry and moving on",
+          "Adding sleeps until it passes",
+          "Leaving a permanently red test in the suite"
+        ]
+      }
+    },
+    {
+      "id": "qa_031",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "You are handed a feature with no acceptance criteria. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Do not start writing tests against a guess, since that produces tests that assert your assumption rather than the requirement",
+          "Write down what you believe the behaviour should be and take it back to the product owner and the developer as a short list to confirm or correct",
+          "Ask the questions that always matter: what happens on the unhappy path, what the permissions are, what the limits are, what happens to existing data, what the error messages should say",
+          "Get the answers written into the ticket so the next person does not repeat this",
+          "Test the assumptions explicitly, and flag anywhere the behaviour is defined only by what the code happens to do",
+          "Say plainly that a feature with no criteria is a process gap, and what you would do to reduce it"
+        ],
+        "strong_answer_signals": [
+          "Writes assumptions and gets them confirmed",
+          "Asks about unhappy paths and limits",
+          "Answers land back in the ticket"
+        ],
+        "avoid": [
+          "Guessing and testing the guess",
+          "Refusing to start",
+          "Confirming criteria verbally only"
+        ]
+      }
+    },
+    {
+      "id": "qa_032",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "A customer reports a critical issue you cannot reproduce. How do you proceed?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Take it seriously from the start. Cannot reproduce is a statement about your information, not about whether it is real",
+          "Gather from their side: account and role, exact time, device and version, what they expected against what happened, a recording if possible",
+          "Go to the evidence you already have: logs, traces, error reporting, analytics, and the state of their actual data",
+          "Look for what is special about them: permissions, data volume, an old record, a feature flag, a locale, a migration they went through",
+          "Keep the customer informed while you work, since silence is what turns a bug into a complaint",
+          "When you find it, add the test that would have caught it, and check who else is exposed"
+        ],
+        "strong_answer_signals": [
+          "Uses production evidence, not just repro attempts",
+          "Looks for what is unique to that account",
+          "Customer kept informed"
+        ],
+        "avoid": [
+          "Closing it as not reproducible",
+          "Waiting for a second report",
+          "Fixing without checking who else is affected"
+        ]
+      }
+    },
+    {
+      "id": "qa_033",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "A third party dependency update breaks your tests. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Separate the two possibilities first: the dependency broke, or your test was asserting something that was never guaranteed",
+          "Read the release notes and the changelog before touching anything, since intentional breaking changes are usually documented",
+          "Pin the version and unblock the team, then deal with the change properly rather than under pipeline pressure",
+          "Check the security angle, because sometimes the update you want to roll back is the one closing a vulnerability",
+          "Look at whether the failure is telling you something real about behaviour your users will notice",
+          "Feed it into how you manage dependencies: pinning policy, a scheduled update window, and tests that assert your contract rather than the library's internals"
+        ],
+        "strong_answer_signals": [
+          "Distinguishes a real break from a brittle test",
+          "Checks release notes first",
+          "Considers the security tradeoff of rolling back"
+        ],
+        "avoid": [
+          "Rolling back automatically",
+          "Changing the test to match without understanding",
+          "Blocking the whole team while investigating"
+        ]
+      }
+    },
+    {
+      "id": "qa_034",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Two testers disagree about whether something is a defect. How do you settle it?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Go to the source of truth in order: acceptance criteria, then the specification or design, then the documented behaviour, then user expectation",
+          "If none of those settle it, that is the real finding, and the answer is a product decision rather than a testing argument",
+          "Frame it as impact rather than opinion: who is affected, how often, and what it costs them",
+          "Log it as a question to the product owner rather than as a defect or as nothing, since both of those hide the ambiguity",
+          "Record the decision back into the criteria so the same argument does not happen next release",
+          "Say plainly that not every unexpected behaviour is a defect, and that inflating defect counts damages the team's credibility"
+        ],
+        "strong_answer_signals": [
+          "Escalates to product when the spec is silent",
+          "Frames it as user impact",
+          "Decision written back into the criteria"
+        ],
+        "avoid": [
+          "Deciding by seniority",
+          "Logging everything unexpected as a defect",
+          "Dropping it because it is ambiguous"
+        ]
+      }
+    },
+    {
+      "id": "qa_035",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you build and structure a QA team?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Decide the model deliberately: embedded testers in product teams, a central quality function, or a hybrid with a platform team owning the tooling",
+          "Embedded gets you context and speed, central gets you consistency and career depth. Say which problem you are solving",
+          "Mix the skills rather than hiring one profile: strong exploratory testers, automation engineers, and someone who owns the pipeline and environments",
+          "Define what developers own, because a team where testing is entirely QA's problem produces worse software and a bitter QA team",
+          "Give testers a career path that does not require becoming a developer or a manager, since that is why good testers leave",
+          "Size it against risk and release cadence rather than against a ratio somebody read in a blog post"
+        ],
+        "strong_answer_signals": [
+          "Model chosen for a stated reason",
+          "Mixed skill profiles",
+          "Developer ownership defined"
+        ],
+        "avoid": [
+          "A fixed developer to tester ratio",
+          "Hiring only automation engineers",
+          "QA as the sole owner of quality"
+        ]
+      }
+    },
+    {
+      "id": "qa_036",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you move testing earlier in the process?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Get testers into refinement and design, since the cheapest defect is the one caught in a conversation before anyone writes code",
+          "Testable acceptance criteria as a standard, because a criterion nobody can test is not a criterion",
+          "Have testers review the test plan with developers rather than testing behind them, and agree who covers which layer",
+          "Practical practices that pull it left: contract tests between services, unit test expectations in the definition of done, static analysis, and preview environments per branch",
+          "Measure whether it is working: where defects are being introduced against where they are being found, and the trend in escape rate",
+          "Be honest that shift left is not shift all. Some things can only be found late, and pretending otherwise leaves a gap"
+        ],
+        "strong_answer_signals": [
+          "Testers in refinement and design",
+          "Testable acceptance criteria enforced",
+          "Measures where defects are found versus introduced"
+        ],
+        "avoid": [
+          "Shift left as a slogan",
+          "Removing late stage testing entirely",
+          "No measurement of the change"
+        ]
+      }
+    },
+    {
+      "id": "qa_037",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "What quality metrics do you report to leadership?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Lead with what leadership actually cares about: escaped defects by severity, production incidents caused by change, and time to detect and recover",
+          "Delivery health alongside it, since quality and speed are one conversation: change failure rate, lead time, and how long the pipeline takes",
+          "Coverage numbers reported carefully, because line coverage is a weak proxy and reporting it as a target corrupts it",
+          "Trends rather than snapshots, and always with the context of what changed",
+          "Say which metrics you deliberately do not use as targets: defects found per tester, test case counts, bugs closed. They all produce bad behaviour quickly",
+          "Tie each metric to a decision someone can actually make with it, or drop it"
+        ],
+        "strong_answer_signals": [
+          "Escape rate and change failure rate lead",
+          "Names metrics they refuse to target",
+          "Every metric tied to a decision"
+        ],
+        "avoid": [
+          "Test case counts as productivity",
+          "Coverage percentage as a target",
+          "Snapshot numbers with no trend"
+        ]
+      }
+    },
+    {
+      "id": "qa_038",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you manage automation debt against new feature testing?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Treat the automation suite as a product with an owner, a backlog and a maintenance budget, since an unowned suite decays quietly",
+          "Reserve a fixed share of each sprint for suite health rather than promising to catch up later, because later never arrives",
+          "Track the health signals: flake rate, average run time, tests quarantined, and time spent fixing tests that were not testing a real defect",
+          "Kill tests deliberately. A suite everyone ignores because it is always partly red is worse than a smaller suite people trust",
+          "Judge new automation on whether it will still be worth its maintenance in a year, not on whether it is easy to write today",
+          "Make the cost visible to leadership in hours, since automation debt is invisible until it stops a release"
+        ],
+        "strong_answer_signals": [
+          "Suite treated as a product with an owner",
+          "Fixed maintenance capacity each sprint",
+          "Flake rate tracked"
+        ],
+        "avoid": [
+          "Catching up later",
+          "Adding tests without a maintenance budget",
+          "Keeping a permanently amber suite"
+        ]
+      }
+    },
+    {
+      "id": "qa_039",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you onboard and develop a junior tester?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Product knowledge before tooling. A tester who does not understand the user cannot judge severity, and severity judgement is the job",
+          "Start them on exploratory work with a mentor rather than on writing automation, because it builds the instinct everything else rests on",
+          "Pair on defect reports early, since a well written report is the single most visible thing a tester produces",
+          "Give real ownership of a small area quickly so they build judgement rather than following scripts",
+          "Feedback weekly and specific, and explain the reasoning behind decisions rather than just the decision",
+          "Show them the path: deeper testing craft, automation, performance, security, or leading, and let them choose rather than assuming automation is the only route up"
+        ],
+        "strong_answer_signals": [
+          "Product knowledge first",
+          "Mentored exploratory work before automation",
+          "Real ownership early"
+        ],
+        "avoid": [
+          "Starting with tool training",
+          "Script following for months",
+          "Assuming everyone should become an automation engineer"
+        ]
+      }
+    },
+    {
+      "id": "qa_040",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you work with an outsourced or offshore testing team?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be explicit about scope and ownership, because the failures here are almost always about who owns a decision rather than about skill",
+          "Give them context, not just test cases. A team told only what to click finds only what you already thought of",
+          "Overlap hours deliberately for a real handover, and use written asynchronous updates for everything outside it",
+          "Same definition of done, same defect standard, same tooling and the same visibility into the pipeline",
+          "Measure the outcome rather than the activity: escaped defects from their area, not test cases executed",
+          "Invest in the relationship as if they were staff, since high turnover on a vendor team costs you the product knowledge every few months"
+        ],
+        "strong_answer_signals": [
+          "Context shared, not just scripts",
+          "Deliberate overlap and written handover",
+          "Measured on escapes, not activity"
+        ],
+        "avoid": [
+          "Treating them as script executors",
+          "Different defect standards",
+          "Measuring test cases executed"
+        ]
+      }
+    },
+    {
+      "id": "qa_041",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Why testing rather than development?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Answer it as a choice rather than as a fallback, since the interviewer is checking whether this is where you want to be",
+          "Say what the work actually is that appeals: thinking about how systems fail, protecting real users, the investigative side of finding why something breaks",
+          "Note that modern testing is technical work, and give the evidence: automation, pipelines, performance, security, APIs",
+          "Mention the part that suits you: breadth across the whole system rather than depth in one component",
+          "Avoid the trap of framing it as liking to break things, since experienced interviewers hear that as immature",
+          "Tie it to what this team builds and why quality matters in their specific domain"
+        ],
+        "strong_answer_signals": [
+          "Framed as a deliberate choice",
+          "Names the technical depth of the work",
+          "Tied to this product's domain"
+        ],
+        "avoid": [
+          "Sounding like a fallback from development",
+          "I like breaking things",
+          "Nothing specific to their product"
+        ]
+      }
+    },
+    {
+      "id": "qa_042",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Where do you want your testing career to go?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Name a real direction, since this field has several: deep testing craft, automation and tooling, performance, security, site reliability, or leading a quality function",
+          "Say the concrete next step rather than a title: owning a suite, taking on performance work, mentoring, running quality for a product area",
+          "Connect it to what this role would build so growth and staying are the same answer",
+          "Be honest if you want to move into development or product later, framed as what it would add here",
+          "Show that you know moving up in quality is not automatic. It means influence across teams, which is a different skill from testing well"
+        ],
+        "strong_answer_signals": [
+          "A specific direction with a next step",
+          "Growth tied to this role",
+          "Understands the leadership step is different work"
+        ],
+        "avoid": [
+          "No direction",
+          "A title with no reasoning",
+          "A plan that clearly needs another employer"
+        ]
+      }
+    },
+    {
+      "id": "qa_043",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Why are you leaving your current role?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Give a forward reason: more technical scope, a product with harder quality problems, a team where testing is respected, ownership you cannot get where you are",
+          "Handle the common real reasons carefully, because they are legitimate but easy to say badly: being treated as a gate at the end, no time ever given to the suite, quality raised and ignored",
+          "State it factually and without criticising individuals, since interviewers hear how you might describe them later",
+          "Say something genuinely good about what you are leaving, which reads as honest rather than rehearsed",
+          "Bring it back to something specific about this role"
+        ],
+        "strong_answer_signals": [
+          "Forward looking and specific",
+          "Factual about the difficulties",
+          "Balanced view of the current employer"
+        ],
+        "avoid": [
+          "Criticising a manager or team personally",
+          "Vague generalities",
+          "A reason that would apply here too"
+        ]
+      }
+    },
+    {
+      "id": "qa_044",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Do you prefer manual or automated testing?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Reject the framing gently, because they are not alternatives and a good answer says so",
+          "Say where each earns its place: automation for repetition, regression and speed of feedback; manual and exploratory for judgement, first look, usability and the unknown",
+          "Have a genuine preference and say which you are stronger at, since claiming perfect balance reads as evasive",
+          "Be honest about the gap you want to close and what you are doing about it",
+          "Give a concrete example of a time the one you use less was the right tool, which shows you actually choose rather than default"
+        ],
+        "strong_answer_signals": [
+          "Rejects the false choice with reasoning",
+          "Honest about their stronger side",
+          "Example of choosing the less preferred approach"
+        ],
+        "avoid": [
+          "Manual testing is obsolete",
+          "Claiming equal expertise in both",
+          "No example"
+        ]
+      }
+    },
+    {
+      "id": "qa_045",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "What makes someone a good tester?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Curiosity with structure. Asking what happens if is only useful when it is aimed by a risk model",
+          "Judgement about severity, since a tester who calls everything critical stops being listened to within a month",
+          "Communication, because a defect nobody can reproduce or prioritise from the report has not really been found",
+          "Empathy for the user, which is what separates a real defect from a technically interesting one",
+          "Technical depth enough to investigate rather than only observe: logs, network, data, the pipeline",
+          "Persistence balanced with knowing when to stop, since chasing an intermittent issue forever has a cost too"
+        ],
+        "strong_answer_signals": [
+          "Severity judgement named explicitly",
+          "Report quality treated as core skill",
+          "Knows when to stop chasing"
+        ],
+        "avoid": [
+          "Attention to detail as the whole answer",
+          "Everything is critical",
+          "No mention of communication"
+        ]
+      }
+    },
+    {
+      "id": "qa_046",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "What do you know about our product and how would you test it?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Actually use it before the interview if you can, and say what you noticed, since almost nobody does this and it lands",
+          "Name the domain risk: what hurts most if it breaks here, whether that is money, data, safety, compliance or reputation",
+          "Say the platforms and integrations that widen the test surface: mobile, browsers, third party services, offline behaviour, scale",
+          "Give a first ninety day sketch rather than a full strategy: understand the risk map, look at where defects escape today, find the biggest gap, fix one thing well",
+          "Have real questions ready about their release cadence, environments, how much is automated, and who owns quality today"
+        ],
+        "strong_answer_signals": [
+          "Has used the product and noticed something",
+          "Names the domain specific risk",
+          "A modest, sequenced first ninety days"
+        ],
+        "avoid": [
+          "Generic testing strategy",
+          "No idea what the product does",
+          "Promising to fix everything quickly"
+        ]
+      }
     }
   ],
   "metadata": {
     "categories": [
       "behavioral",
       "manager",
+      "motivation",
+      "situational",
       "technical"
     ],
-    "generated": "2026-08-30",
+    "generated": "2026-09-03",
     "schema_version": "1.1",
-    "total": 20,
-    "sector": "QA / Testing"
+    "total": 46,
+    "sector": "QA / Testing",
+    "region": "North America",
+    "note": "QA / Testing. 20 sorudan 46 ya cikarildi: ne otomatiklestirilir ne elde kalir, kesifsel ve risk tabanli test, test ortami ve veri yonetimi, erisilebilirlik, surum arifesinde acik kritik hata, sadece pipeline da patlayan test, kacan hata analizi, QA ekibi kurma, sola kaydirma, liderlige raporlanan metrikler, otomasyon borcu."
   }
 }

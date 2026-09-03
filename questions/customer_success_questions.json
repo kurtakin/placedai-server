@@ -591,18 +591,792 @@
         ],
         "structure": "Framework"
       }
+    },
+    {
+      "id": "csuc_021",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about yourself and your customer success background.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Segment first, because enterprise, mid market, small business and tech touch are different jobs with different ratios and rhythms",
+          "Book of business in real numbers: accounts, total value, average contract value, and whether you carried a renewal or expansion number",
+          "What you owned: onboarding, adoption, renewals, expansion, support escalation, or all of it",
+          "Product complexity, since a technical integration heavy product and a self serve tool need very different skills",
+          "Tools you ran: the customer success platform, the customer relationship system, product analytics, ticketing",
+          "One outcome with a figure: retention or net revenue retention improved, churn reduced, time to value cut, an account saved"
+        ],
+        "strong_answer_signals": [
+          "Segment and book size stated first",
+          "Says whether they carried a number",
+          "One measurable outcome"
+        ],
+        "avoid": [
+          "Vague about segment or book size",
+          "Describing the job as keeping customers happy",
+          "No numbers"
+        ]
+      }
+    },
+    {
+      "id": "csuc_022",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How do you run an onboarding programme?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Define time to first value and treat it as the metric that matters, since onboarding length means nothing on its own",
+          "Start before the contract is signed by capturing why they bought and what success looks like, and get that handed over properly from sales",
+          "A defined plan with milestones, owners on both sides and dates, agreed with the customer rather than sent to them",
+          "Identify the risks early: no executive sponsor, no internal owner, a technical dependency, a data migration, a competing internal project",
+          "Watch the leading signals: first login, first key action, breadth of users activated, and the integration completed",
+          "A real transition out of onboarding rather than a silent drop, with what good looks like at ninety days documented"
+        ],
+        "strong_answer_signals": [
+          "Time to first value as the metric",
+          "Handover from sales captured formally",
+          "Named risks with early signals"
+        ],
+        "avoid": [
+          "Onboarding measured by weeks elapsed",
+          "No customer side owner",
+          "Silent transition out of onboarding"
+        ]
+      }
+    },
+    {
+      "id": "csuc_023",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How do you build and use a renewal forecast?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Forecast from evidence rather than sentiment: usage trend, sponsor status, open escalations, contractual notice dates, budget cycle, and whether the original use case was achieved",
+          "Categorise honestly into commit, likely, at risk and lost, and define what each means so different people mean the same thing",
+          "Start the renewal conversation months out, not at the notice date, and say how many months for your segment",
+          "Separate the two questions that get confused: will they renew, and at what value, since a downgrade is not a renewal at full value",
+          "Review the forecast on a fixed cadence with a written reason for every change",
+          "Track your own accuracy over time, because a forecast nobody checks becomes optimistic within a quarter"
+        ],
+        "strong_answer_signals": [
+          "Evidence based categories with definitions",
+          "Renewal starts months ahead",
+          "Forecast accuracy tracked"
+        ],
+        "avoid": [
+          "Forecasting on gut feel",
+          "Renewal conversation at the notice date",
+          "Downgrade counted as a clean renewal"
+        ]
+      }
+    },
+    {
+      "id": "csuc_024",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How do you use product usage data day to day?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know which actions actually predict retention for your product rather than tracking logins, since logins are the weakest signal there is",
+          "Watch breadth as well as depth: how many users, how many teams, and whether it has spread beyond the original champion",
+          "Set alerts on the movements that matter: a drop in a key workflow, a power user going quiet, an integration failing, licences unassigned",
+          "Compare against a cohort rather than against the customer's own history alone, since a flat account may be fine or may be dying depending on the benchmark",
+          "Turn a signal into a specific action rather than a generic check in, because a call that says we noticed you stopped using X is worth ten how are things calls",
+          "Be honest about where the data misleads: seasonal businesses, service accounts, and the accounts that use you deeply through an API and barely log in"
+        ],
+        "strong_answer_signals": [
+          "Knows which actions predict retention",
+          "Breadth as well as depth",
+          "Signal turns into a specific action"
+        ],
+        "avoid": [
+          "Logins as the health signal",
+          "Generic check in calls",
+          "Ignoring where usage data misleads"
+        ]
+      }
+    },
+    {
+      "id": "csuc_025",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How do you design coverage for a large book of small accounts?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Accept that one to one does not scale and design the model rather than spreading yourself thinner: digital touch, pooled coverage, and one to one reserved for a defined trigger",
+          "Segment on value and on potential, not just on current spend, since some small accounts are next year's large ones",
+          "Build the digital layer properly: lifecycle emails driven by usage rather than by calendar date, in product guidance, self serve resources, webinars and a community",
+          "Define the triggers that pull a human in: a usage collapse, a sponsor change, an expansion signal, a renewal at risk",
+          "Measure the model rather than trusting it: retention by segment, engagement with the digital touches, and how often the triggers fire correctly",
+          "Be honest that this model fails quietly, so say what you watch to catch that"
+        ],
+        "strong_answer_signals": [
+          "Explicit coverage model with triggers",
+          "Segments on potential, not just spend",
+          "Digital touches driven by usage"
+        ],
+        "avoid": [
+          "Trying to call everyone",
+          "Calendar based email sequences",
+          "No measurement of the digital layer"
+        ]
+      }
+    },
+    {
+      "id": "csuc_026",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How do you work with sales on the same account?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Agree ownership up front and in writing: who owns the renewal, who owns expansion, who is the customer's main contact, and what triggers a handover",
+          "Handover from sales at close should be a real meeting with what was promised, why they bought, and who the sponsor is, since almost every onboarding problem starts here",
+          "Share the account view rather than maintaining two, and keep the notes where both can see them",
+          "Be clear about the tension and how you handle it: a promise made to close a deal that the product cannot keep is your problem next quarter",
+          "Bring expansion signals to sales early rather than sitting on them, and be honest when an account is not ready",
+          "Have a joint plan for the strategic accounts with both names on it"
+        ],
+        "strong_answer_signals": [
+          "Ownership agreed in writing",
+          "Real handover meeting at close",
+          "Expansion signals shared early"
+        ],
+        "avoid": [
+          "Two versions of the account truth",
+          "Handover by email",
+          "Competing for the customer relationship"
+        ]
+      }
+    },
+    {
+      "id": "csuc_027",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How do you handle a technical escalation you cannot resolve yourself?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Get the impact defined before escalating: who is affected, what is blocked, whether there is a workaround, and what the business consequence is",
+          "Escalate on the defined path with the right severity rather than by finding whoever answers fastest",
+          "Own the communication to the customer throughout, at a stated interval, even when there is nothing new to say, since silence is what turns an incident into a churn risk",
+          "Do not translate an engineering estimate into a promise, and be careful with dates you do not control",
+          "Coordinate rather than duplicate: one owner internally, one channel, and a clear record of what has been tried",
+          "After it closes, follow up properly with the customer and feed the pattern back into the product conversation"
+        ],
+        "strong_answer_signals": [
+          "Impact quantified before escalating",
+          "Communication at a stated interval",
+          "Careful with dates not in their control"
+        ],
+        "avoid": [
+          "Escalating by shouting",
+          "Going quiet while waiting for engineering",
+          "Promising a fix date"
+        ]
+      }
+    },
+    {
+      "id": "csuc_028",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Your champion at a key account leaves the company. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Treat it as a serious risk event immediately, since sponsor change is one of the strongest churn predictors there is",
+          "Reach the departing champion before they go if you can, for a warm introduction and their read on who matters now",
+          "Map the account again from scratch: who else uses it, who signs, who benefits, and who the new decision maker reports to",
+          "Get in front of the replacement early with the value story in their terms, not a relationship reset call, because they will be reviewing every contract they inherit",
+          "Assemble the evidence quickly: usage, outcomes achieved, and what removing it would cost them",
+          "Escalate internally and get your own leadership involved on the strategic accounts rather than carrying it alone"
+        ],
+        "strong_answer_signals": [
+          "Treated as a risk event immediately",
+          "Account remapped, not just recontacted",
+          "Value evidence assembled fast"
+        ],
+        "avoid": [
+          "Waiting for the replacement to reach out",
+          "Relying on a single relationship",
+          "Discovering it at renewal"
+        ]
+      }
+    },
+    {
+      "id": "csuc_029",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "A customer demands a feature that is not on the roadmap. How do you handle it?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Get to the underlying problem rather than the requested solution, since a large share of feature requests are solvable another way today",
+          "Be honest early. Stringing a customer along on a maybe costs far more trust than a clear no",
+          "Quantify it for product properly: revenue at stake, how many other customers want it, and what happens if it never ships",
+          "Do not promise a date or imply one, and be careful with language that sounds like a commitment",
+          "Give them what you can now: a workaround, a partner, an integration, a services option, or a timeline for a decision even if the answer is not yet",
+          "Close the loop when there is news, especially when the answer is no, because that is the follow up everyone skips"
+        ],
+        "strong_answer_signals": [
+          "Gets to the underlying problem",
+          "Honest early rather than vague hope",
+          "Quantifies it for product"
+        ],
+        "avoid": [
+          "Implying a roadmap commitment",
+          "Passing the request on with no context",
+          "Never closing the loop on a no"
+        ]
+      }
+    },
+    {
+      "id": "csuc_030",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "An account has healthy usage but the sponsor says they are cutting budget. What now?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Separate a real budget cut from a negotiating position, and find out which by asking about the process rather than the price",
+          "Build the value case in their financial language: hours saved, cost avoided, revenue supported, and headcount they did not need to add",
+          "Find who else in the business would notice if it disappeared, since the sponsor is often not the one who feels the loss",
+          "Prepare options before the conversation: a longer term for a better rate, a reduced scope that keeps the core, a payment change, a package adjustment",
+          "Involve your own leadership and know your limits before you sit down, rather than improvising a discount",
+          "Be willing to accept a smaller renewal, since a reduced account you keep is worth more than a lost one you defend to the end"
+        ],
+        "strong_answer_signals": [
+          "Distinguishes real cuts from negotiation",
+          "Value case in financial terms",
+          "Options prepared with known limits"
+        ],
+        "avoid": [
+          "Leading with a discount",
+          "Only talking to the sponsor",
+          "Defending full price to the point of losing it"
+        ]
+      }
+    },
+    {
+      "id": "csuc_031",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "A customer was promised something in the sales process that the product does not do. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Find out exactly what was said and in what form: a written statement, a demo, a proposal, or an inference the customer drew",
+          "Tell the customer the truth quickly, since the damage from discovering it later is far worse than the disappointment now",
+          "Do not blame your colleague to the customer, because that damages trust in the company rather than repairing it",
+          "Focus on what you can do: a workaround, a partner or integration, a services build, a roadmap conversation, or a commercial adjustment",
+          "Escalate internally the same day, since this is a commercial and sometimes a contractual matter and not yours to settle alone",
+          "Feed it back into the handover and the sales enablement, because it is almost never a one off"
+        ],
+        "strong_answer_signals": [
+          "Tells the customer quickly",
+          "Does not blame sales to the customer",
+          "Escalated internally the same day"
+        ],
+        "avoid": [
+          "Hoping they will not notice",
+          "Blaming a colleague",
+          "Committing to build it"
+        ]
+      }
+    },
+    {
+      "id": "csuc_032",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "A major outage affects your accounts. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Get accurate information before contacting anyone, and use the official incident channel rather than guessing",
+          "Contact proactively rather than waiting for them to notice, and prioritise by business impact rather than by account size",
+          "Say what is known, what is not, and when the next update comes, and then send the next update on time even if nothing changed",
+          "Do not speculate on the cause or on the recovery time, since a wrong estimate becomes the thing you are held to",
+          "Track what it cost each account so the follow up is specific rather than a general apology",
+          "Afterwards, close it properly: what happened, what is being done, and any contractual credit, and watch the affected accounts for months because trust damage shows up at renewal"
+        ],
+        "strong_answer_signals": [
+          "Proactive contact prioritised by impact",
+          "Updates on a promised schedule",
+          "Impact per account tracked"
+        ],
+        "avoid": [
+          "Waiting for customers to ask",
+          "Speculating on cause or timing",
+          "A generic apology afterwards"
+        ]
+      }
+    },
+    {
+      "id": "csuc_033",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you structure and size a customer success team?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Segment first and let the coverage model follow: enterprise one to one, mid market pooled or hybrid, small business digital",
+          "Size on workload rather than on a ratio someone quoted, since a technical product with heavy onboarding and a self serve product are not comparable at all",
+          "Decide what the role owns, because that changes everything: a customer success manager who carries a renewal number is a different hire from one who does not",
+          "Split specialist functions once there is scale: onboarding, technical account management, renewals, and customer success operations",
+          "Name the ratio you have run and defend it with the work rather than the benchmark",
+          "Plan for growth and attrition, and be honest that account transitions are a churn risk that has to be managed deliberately"
+        ],
+        "strong_answer_signals": [
+          "Coverage model follows segmentation",
+          "Sized on workload, not a benchmark ratio",
+          "Clear on whether the role carries a number"
+        ],
+        "avoid": [
+          "A universal accounts per manager ratio",
+          "Same model for every segment",
+          "Ignoring transition risk"
+        ]
+      }
+    },
+    {
+      "id": "csuc_034",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "What metrics do you run the customer success function on?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Net revenue retention as the headline, with gross retention beside it, since expansion can hide real churn in the same number",
+          "Logo retention separately from revenue retention, because losing many small customers and keeping one large one is not health",
+          "Leading indicators, since all of the above are lagging: product adoption depth and breadth, time to first value, support escalation trend, sponsor coverage per account",
+          "Churn reasons captured honestly and categorised, rather than everyone recording budget",
+          "Team level operating measures: onboarding completion time, coverage of at risk accounts, and forecast accuracy",
+          "Be careful with satisfaction scores as a target, since they move slowly, are easy to game and correlate weakly with renewal in many products"
+        ],
+        "strong_answer_signals": [
+          "Gross and net retention both used",
+          "Real leading indicators named",
+          "Churn reasons categorised honestly"
+        ],
+        "avoid": [
+          "Net revenue retention alone",
+          "Satisfaction score as the primary target",
+          "Churn reasons all recorded as budget"
+        ]
+      }
+    },
+    {
+      "id": "csuc_035",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you hire for customer success?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Define the actual job first, since a technical onboarding role, a commercial renewal role and a strategic advisory role need different people",
+          "Test the things that predict performance: a live account scenario, a difficult customer conversation, and how they read a usage report",
+          "Technical depth matters more than most hiring managers assume in a complex product, so test it rather than assuming it can be learned quickly",
+          "Screen for commercial comfort if the role carries a renewal or expansion number, because plenty of strong relationship people freeze at the pricing conversation",
+          "Look for how they handle being the person in the middle, since this job is constantly between the customer and internal teams",
+          "Keep it structured and consistent, with the same scenario and the same criteria for every candidate"
+        ],
+        "strong_answer_signals": [
+          "Job defined by type before hiring",
+          "Live scenario used in the loop",
+          "Commercial comfort tested when relevant"
+        ],
+        "avoid": [
+          "Hiring for warmth alone",
+          "Assuming technical depth is easy to add",
+          "Unstructured conversational interviews"
+        ]
+      }
+    },
+    {
+      "id": "csuc_036",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you coach a customer success manager whose accounts are churning?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Look at the pattern before the person: is it a segment, a product gap, a cohort that onboarded badly, or accounts inherited in poor shape",
+          "Go through specific accounts together rather than talking about churn in general, since the diagnosis is always in the detail",
+          "Common causes worth checking: reacting rather than anticipating, no sponsor mapping, avoiding the hard commercial conversation, spending time on the friendliest accounts rather than the riskiest",
+          "Watch them in a live customer call, because self reported account health is usually optimistic",
+          "Set specific behavioural changes with a review date rather than telling them to be more proactive",
+          "Be honest that some churn is not theirs, and say what you do to protect a person carrying a structurally bad book"
+        ],
+        "strong_answer_signals": [
+          "Checks for a systemic pattern first",
+          "Observes a live call",
+          "Specific behavioural changes with a date"
+        ],
+        "avoid": [
+          "Telling them to be more proactive",
+          "Blaming the person for a product problem",
+          "Coaching from a dashboard only"
+        ]
+      }
+    },
+    {
+      "id": "csuc_037",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you get the product team to act on customer feedback?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Bring evidence rather than anecdotes: how many accounts, how much revenue, which segment, and what happens if nothing changes",
+          "Aggregate systematically instead of forwarding individual complaints, since a stream of single requests trains product to ignore you",
+          "Separate the problem from the requested solution, because product will design a better solution if given the problem",
+          "Show up with the churn and expansion data attached, since that is the language a roadmap decision is made in",
+          "Build the relationship before you need it: regular sessions, product people on customer calls, and being reliable about what you promise back",
+          "Accept no gracefully and close the loop with customers, because credibility with product depends on not fighting every decision"
+        ],
+        "strong_answer_signals": [
+          "Aggregated evidence with revenue attached",
+          "Problem separated from solution",
+          "Product people put on customer calls"
+        ],
+        "avoid": [
+          "Forwarding individual complaints",
+          "Escalating every request",
+          "Never accepting a no"
+        ]
+      }
+    },
+    {
+      "id": "csuc_038",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you build the operations side of customer success?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Get the data foundation right first, since health scores built on unreliable data are worse than no health scores",
+          "Define the lifecycle stages and what triggers movement between them, so the team and the systems mean the same thing",
+          "Automate the repetitive parts: alerts, lifecycle communications, renewal task creation, reporting, and free the team for the judgement work",
+          "Build the health score iteratively and validate it against actual churn rather than trusting the first version",
+          "Instrument the team's own work so you know where time goes, because most customer success teams cannot answer that",
+          "Keep it simple enough to be maintained, since an elaborate system nobody updates decays into noise within two quarters"
+        ],
+        "strong_answer_signals": [
+          "Data quality before health scores",
+          "Health score validated against real churn",
+          "Automation aimed at repetitive work"
+        ],
+        "avoid": [
+          "Health score as a launch project",
+          "Automating judgement work",
+          "A system too complex to maintain"
+        ]
+      }
+    },
+    {
+      "id": "csuc_039",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you handle a quarter where retention is going to miss?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Know it early, since a miss found in the last two weeks of the quarter is a forecasting failure as much as a retention one",
+          "Triage the at risk list by winnable rather than by size, and put your effort where it can actually change the outcome",
+          "Get leadership and cross functional help onto the accounts that need it, including executive to executive contact where that is the missing piece",
+          "Be straight with leadership about the number, with the reasons split into what is fixable this quarter and what is structural",
+          "Protect next quarter while fighting for this one, because sacrificing onboarding quality to save renewals just moves the problem",
+          "Do the honest analysis afterwards on why the forecast was wrong, not only why the customers left"
+        ],
+        "strong_answer_signals": [
+          "Knew early through the forecast",
+          "Triage by winnable, not by size",
+          "Protects the following quarter"
+        ],
+        "avoid": [
+          "Discovering the miss late",
+          "Effort spread evenly across at risk accounts",
+          "Only analysing churn, not the forecast"
+        ]
+      }
+    },
+    {
+      "id": "csuc_040",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you handle handing accounts between customer success managers?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Treat it as a churn risk rather than an administrative task, because that is what the data says it is",
+          "Written handover with the real content: why they bought, the sponsor map, the history, open issues, commitments made, and the renewal position",
+          "Overlap where possible with a joint introduction, and never let the customer find out through a signature change on an email",
+          "Time it away from the renewal window and away from a live escalation whenever you can",
+          "Follow up as the manager a few weeks later, since the drop off usually shows up after the polite first call",
+          "Keep the volume of transitions down, because frequent reassignment is one of the quiet causes of churn in growing teams"
+        ],
+        "strong_answer_signals": [
+          "Treated as a churn risk",
+          "Joint introduction rather than an email",
+          "Manager follows up weeks later"
+        ],
+        "avoid": [
+          "Handover by inbox transfer",
+          "Transitioning during a renewal or escalation",
+          "Frequent reassignment as normal"
+        ]
+      }
+    },
+    {
+      "id": "csuc_041",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Where do you want your customer success career to go?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Name a real direction, since the paths are distinct: strategic and enterprise accounts, leading a team, customer success operations, solutions or technical account management, or a move into product or sales",
+          "Give the concrete next step rather than a title: a larger or more complex book, carrying a number, owning onboarding, first direct reports",
+          "Connect it to what this role would build so growth and staying are the same story",
+          "Be honest if you want to move toward product or commercial later, framed as what it adds here",
+          "Show that you know leading is a different job, since it is forecasting, coaching and cross functional influence rather than running accounts well"
+        ],
+        "strong_answer_signals": [
+          "A specific direction with a next step",
+          "Growth tied to this role",
+          "Knows leading is different work"
+        ],
+        "avoid": [
+          "No direction",
+          "A title with no reasoning",
+          "A plan needing a different employer"
+        ]
+      }
+    },
+    {
+      "id": "csuc_042",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Why are you leaving your current role?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Give a forward reason: a larger or more complex book, a product you believe in, carrying a commercial number, a company that resources customer success properly",
+          "Handle the common real reasons carefully, since they are legitimate but easy to say badly: an impossible ratio, a product that could not deliver what was sold, no support from product or leadership, constant reorganisation of accounts",
+          "Say it factually without criticising individuals, because interviewers hear how you might describe them later",
+          "Say something genuinely good about what you are leaving",
+          "Bring it back to something specific here rather than to the industry generally"
+        ],
+        "strong_answer_signals": [
+          "Forward looking and specific",
+          "Factual about difficulties",
+          "Balanced about the current employer"
+        ],
+        "avoid": [
+          "Criticising a manager or product personally",
+          "Vague generalities",
+          "A reason that would apply here too"
+        ]
+      }
+    },
+    {
+      "id": "csuc_043",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Are you comfortable carrying a renewal or expansion number?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Answer directly, since hedging here reads as a no and this is often the real question in the interview",
+          "Say what you have carried: renewal, expansion, or both, the size of the number, and how you performed against it",
+          "Explain how you hold both sides, because the honest tension is real: the trust that makes you useful is also what makes the commercial conversation possible",
+          "Give an example where you did not push an expansion because the account was not ready, and what that produced later",
+          "Say what support you would want: pricing clarity, approval limits, and alignment with sales on who owns what",
+          "Be honest if you have not carried a number, and say why you want to and what you would need"
+        ],
+        "strong_answer_signals": [
+          "Direct answer with real numbers",
+          "Holds trust and commercial together",
+          "Example of holding back an expansion"
+        ],
+        "avoid": [
+          "Evasive or conditional answers",
+          "Claiming quota experience vaguely",
+          "Treating commercial work as beneath the role"
+        ]
+      }
+    },
+    {
+      "id": "csuc_044",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "What kind of customers do you most want to work with?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Have a reasoned preference, since the segments genuinely differ: enterprise means depth, politics and long cycles; mid market means breadth and pace; small business means volume and process",
+          "Connect the preference to your strengths and to results you have produced",
+          "Be honest about what you have not done and how you would come up to speed, since claiming every segment reads as claiming none",
+          "Say something about the product type too, because a technical product and a business tool need different skills from you",
+          "Line the answer up with the customers this employer actually serves"
+        ],
+        "strong_answer_signals": [
+          "Reasoned preference with real differences",
+          "Honest about gaps",
+          "Matches the employer's customer base"
+        ],
+        "avoid": [
+          "Any customer is fine",
+          "Overstating unfamiliar segments",
+          "A preference that ignores their actual base"
+        ]
+      }
+    },
+    {
+      "id": "csuc_045",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "What do you know about our product and customers?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Use the product or at least the trial before the interview and say what you noticed, since very few candidates do",
+          "Know who buys it and who uses it, because they are often not the same people and that shapes the whole job",
+          "Name the likely hard part: a complex onboarding, a technical integration, a crowded market, a long time to value, or a champion who is not the budget holder",
+          "Connect your own experience to that specific challenge rather than to customer success in general",
+          "Have real questions ready: segment, ratio, whether the role carries a number, how churn is tracked, what the onboarding looks like today"
+        ],
+        "strong_answer_signals": [
+          "Has used the product and noticed something",
+          "Distinguishes buyer from user",
+          "Names their likely hard part"
+        ],
+        "avoid": [
+          "Generic praise",
+          "Not knowing who the customer is",
+          "No questions"
+        ]
+      }
+    },
+    {
+      "id": "csuc_046",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "How do you stay motivated when a customer is unhappy for reasons outside your control?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Name the reality plainly, since this job puts you between a customer's frustration and internal constraints regularly",
+          "Separate what you own from what you do not, and be clear that communication and honesty are always yours even when the fix is not",
+          "Say what you actually do: keep the customer informed on a schedule, push internally with evidence, and be straight about what will not change",
+          "Talk about the boundary honestly, because carrying every account's frustration personally is how people leave this profession",
+          "Point to what makes it worth it: an account you turned around, a customer who succeeded because of the work",
+          "Say what support you want from a manager, since that is a fair thing to want and interviewers respect it"
+        ],
+        "strong_answer_signals": [
+          "Separates owned from not owned",
+          "Honest about the emotional load",
+          "Names a real turnaround"
+        ],
+        "avoid": [
+          "Claiming it never affects you",
+          "Absorbing everything personally",
+          "No coping approach at all"
+        ]
+      }
     }
   ],
   "metadata": {
-    "generated": "2026-08-30",
+    "generated": "2026-09-03",
     "schema_version": "1.1",
     "categories": [
       "behavioral",
+      "manager",
       "motivation",
       "situational",
       "technical"
     ],
-    "total": 20,
-    "sector": "Customer Success"
+    "total": 46,
+    "sector": "Customer Success",
+    "region": "North America",
+    "note": "Customer Success. 20 sorudan 46 ya cikarildi: onboarding ve ilk degere gecis suresi, yenileme tahmini, kullanim verisinin gunluk kullanimi, buyuk ve kucuk hesap kapsama modeli, satisla is bolumu, teknik eskalasyon, sampiyonun ayrilmasi, butce kesintisi, satisin verdigi tutulamayan soz, kesinti yonetimi, ekip kurma ve olcekleme, NRR ve GRR, hesap devri."
   }
 }

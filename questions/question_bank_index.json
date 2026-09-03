@@ -2,7 +2,7 @@
   "metadata": {
     "description": "Master index for the Interview Aid App question bank",
     "generated": "2026-09-03",
-    "grand_total": 2087,
+    "grand_total": 2191,
     "total_files": 61,
     "schema_version": "1.1"
   },
@@ -149,9 +149,10 @@
     {
       "file": "construction_building_trades_questions.json",
       "sector": "Construction and Building Trades",
-      "total": 20,
+      "total": 46,
       "categories": [
         "behavioral",
+        "manager",
         "motivation",
         "situational",
         "technical"
@@ -219,9 +220,10 @@
     {
       "file": "customer_success_questions.json",
       "sector": "Customer Success",
-      "total": 20,
+      "total": 46,
       "categories": [
         "behavioral",
+        "manager",
         "motivation",
         "situational",
         "technical"
@@ -749,10 +751,12 @@
     {
       "file": "qa_testing_questions.json",
       "sector": "QA / Testing",
-      "total": 20,
+      "total": 46,
       "categories": [
         "behavioral",
         "manager",
+        "motivation",
+        "situational",
         "technical"
       ],
       "seniority_levels": [
@@ -798,9 +802,10 @@
     {
       "file": "recruiting_talent_acquisition_questions.json",
       "sector": "Recruiting / Talent Acquisition",
-      "total": 20,
+      "total": 46,
       "categories": [
         "behavioral",
+        "manager",
         "motivation",
         "situational",
         "technical"

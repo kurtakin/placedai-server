@@ -1,15 +1,18 @@
 {
   "metadata": {
     "sector": "Construction and Building Trades",
-    "generated": "2026-08-30",
-    "total": 20,
+    "generated": "2026-09-03",
+    "total": 46,
     "schema_version": "1.1",
     "categories": [
       "behavioral",
+      "manager",
       "motivation",
       "situational",
       "technical"
-    ]
+    ],
+    "region": "North America",
+    "note": "Construction trades ~8M US workers (BLS May 2025). 20 sorudan 46 ya cikarildi: is durdurma ve guvenlik, cizim ile sartname celiskisi, ekipman sertifikalari, aplikasyon ve tolerans, kaba is koordinasyonu, eksik kalan isler listesi, gizli hasar ve tehlikeli madde, ekip yonetimi, taseron siralama, is butcesi ve maliyet kodlari, ciraklik ve elde tutma, belgeleme."
   },
   "questions": [
     {
@@ -598,6 +601,780 @@
           "Installing over uneven subfloor",
           "Skipping moisture testing",
           "Failing to document pre-existing conditions"
+        ]
+      }
+    },
+    {
+      "id": "cbt_021",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about yourself and your trade background.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Trade first and honestly: carpentry, framing, concrete, electrical, plumbing, HVAC, roofing, drywall, tile, general labour, or a mix",
+          "Sector, because residential, commercial, industrial and civil are different worlds in pace, paperwork and inspection",
+          "Years in the trade, apprenticeship or ticket status, and any licence or certification with its current expiry",
+          "Tickets that let you start on Monday: fall protection, scaffold, aerial lift, forklift, confined space, first aid, WHMIS or OSHA cards",
+          "One project with real numbers: size, value, your scope, and how it finished",
+          "Whether you have run a crew, since that changes what they can put you on"
+        ],
+        "strong_answer_signals": [
+          "Names the trade and the sector in the first sentence",
+          "Ticket and licence status given without being asked",
+          "A project with size and outcome attached"
+        ],
+        "avoid": [
+          "Vague about certifications",
+          "Listing every trade as if expert in all",
+          "No named project"
+        ]
+      }
+    },
+    {
+      "id": "cbt_022",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about a time you stopped work because something was unsafe.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Name the hazard concretely: unprotected edge, bad shoring, damaged ladder or scaffold, live circuit, missing lockout, no gas monitoring, an unsafe lift",
+          "Say that you stopped first and reported second. That order is the whole point of the question",
+          "Who you told and how it was fixed, including whether the schedule took a hit",
+          "The pushback you got, since there is usually some, and how you handled it without a fight",
+          "What changed afterwards: a toolbox talk, a permit, a rescue plan, a different method",
+          "Say plainly that you would do the same again on their site"
+        ],
+        "strong_answer_signals": [
+          "Stopped work before reporting",
+          "Handled pushback calmly",
+          "A lasting change came out of it"
+        ],
+        "avoid": [
+          "Carrying on and mentioning it later",
+          "Naming and shaming a coworker",
+          "No follow up"
+        ]
+      }
+    },
+    {
+      "id": "cbt_023",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about a mistake that cost time or material.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Pick a real one with a number: a bad cut list, a wrong dimension carried through, a pour that had to be broken out, an order to the wrong spec",
+          "Say how it was caught and whether you raised it yourself",
+          "The immediate fix and what it cost in dollars, hours or a delayed inspection",
+          "The habit that came out of it: checking the revision on the drawing, measuring twice against the layout line, confirming the submittal before ordering",
+          "How you told the foreman or the client, because hiding it is what turns a small cost into a big one"
+        ],
+        "strong_answer_signals": [
+          "Real number, self reported",
+          "A checking habit that stuck",
+          "Told someone immediately"
+        ],
+        "avoid": [
+          "A fake mistake",
+          "Blaming the drawing or a supplier",
+          "No prevention"
+        ]
+      }
+    },
+    {
+      "id": "cbt_024",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Describe a disagreement with another trade on site.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Say what it was actually about, since it is nearly always space, sequence or damage: a duct through your framing, a wall closed before rough in was signed off, work damaged by the trade after you",
+          "Go to the drawings and the coordination plan rather than to volume",
+          "Escalate to the foreman or the superintendent early instead of letting two crews stall on the deck",
+          "Protect the schedule: agree a workaround so both crews keep moving while it gets settled",
+          "How you documented it, with photographs and a note, because damage claims land weeks later",
+          "End with the working relationship intact, since you will meet the same people on the next job"
+        ],
+        "strong_answer_signals": [
+          "Drawings as the referee",
+          "Escalated before both crews stopped",
+          "Photographs taken at the time"
+        ],
+        "avoid": [
+          "Arguing it out on the deck",
+          "Doing nothing and absorbing the rework",
+          "No record of damage"
+        ]
+      }
+    },
+    {
+      "id": "cbt_025",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid"
+      ],
+      "text": "Tell me about working through bad weather or hard physical conditions.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Be specific about the conditions: heat, cold, wind on a lift, rain on a pour, mud, night work, a long stretch of overtime",
+          "Say what you did to keep it safe rather than just tough: hydration and breaks in heat, layers and warm up periods in cold, wind limits on lifts and crane picks, traction and lighting",
+          "Show you know which conditions mean stop rather than push, and who makes that call",
+          "Reliability is the real question here, so say something about attendance and turning up on time in bad weather",
+          "One outcome: the pour protected, the deck kept dry, the schedule held"
+        ],
+        "strong_answer_signals": [
+          "Knows the stop conditions",
+          "Practical safety measures, not bravado",
+          "Speaks to attendance and reliability"
+        ],
+        "avoid": [
+          "Treating danger as toughness",
+          "Never stopping for anything",
+          "No mention of what protects the work"
+        ]
+      }
+    },
+    {
+      "id": "cbt_026",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "What do you do when the drawings and the specification contradict each other?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Stop before building it. A wrong assumption becomes demolition, not a correction",
+          "Check you are on the current revision, since a surprising number of conflicts are just an old sheet in someone's truck",
+          "Read across the set rather than one sheet: architectural, structural, mechanical and the details often settle it between them",
+          "Raise a written request for information through the foreman or the project manager, with the sheet numbers and what you propose",
+          "Keep working on something else so the crew is not standing while it is answered",
+          "Never accept a verbal instruction on a real conflict, since the paperwork is what protects you if it is wrong"
+        ],
+        "strong_answer_signals": [
+          "Checks the revision first",
+          "Written RFI, not a verbal fix",
+          "Keeps the crew productive while waiting"
+        ],
+        "avoid": [
+          "Building it and asking later",
+          "Accepting a verbal change on a real conflict",
+          "Stopping the whole crew"
+        ]
+      }
+    },
+    {
+      "id": "cbt_027",
+      "category": "technical",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "What equipment are you certified and comfortable operating?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Separate certified from experienced, and be exact, because they will check: aerial and scissor lift, forklift or telehandler, skid steer, scaffold erection, rigging and signalling, powder actuated tools",
+          "Say when each ticket was issued and when it expires, since expired is the same as not having it",
+          "Name the tools of your trade properly and what you have run daily rather than once",
+          "Be honest about what you have not operated and say you would want the site orientation and a check ride",
+          "Say what you do before operating anything: the pre use inspection, the ground conditions, overhead lines, the exclusion zone",
+          "Mention any equipment you have trained others on, since that is worth more than another ticket"
+        ],
+        "strong_answer_signals": [
+          "Certified and experienced kept separate",
+          "Expiry dates known",
+          "Pre use inspection described"
+        ],
+        "avoid": [
+          "Claiming a ticket that has lapsed",
+          "Overstating equipment hours",
+          "No pre use routine"
+        ]
+      }
+    },
+    {
+      "id": "cbt_028",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How do you set out and keep your work square, level and to line?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start from the control: benchmarks, gridlines and the datum given by the survey, not from something already built",
+          "Check the reference before you trust it, since inherited layout is often out and you inherit the blame with it",
+          "The methods you actually use: laser level, rotary and line laser, transit, three four five, string line, story pole, water level in a pinch",
+          "Tolerances belong to the trade and the finish. Concrete formwork, steel setting, cabinetry and tile do not carry the same allowance, so say the numbers you work to",
+          "Check as you go rather than at the end, because a small error found at the end is a big rework",
+          "Write down and mark the control so the next trade uses the same reference"
+        ],
+        "strong_answer_signals": [
+          "Works from control, not from existing work",
+          "Names real tolerances",
+          "Checks progressively"
+        ],
+        "avoid": [
+          "Trusting inherited layout unchecked",
+          "One tolerance for everything",
+          "Checking only at completion"
+        ]
+      }
+    },
+    {
+      "id": "cbt_029",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How do you coordinate rough in between trades before a wall or ceiling is closed?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Sequence is the whole job: layout, then the largest and least flexible service first, usually gravity drainage and large duct, then pipe, then conduit and low voltage",
+          "Walk the coordination drawing or the model with the other foremen before anyone starts, since ten minutes there saves two days of rework",
+          "Protect structure: know what you may drill or notch in a joist or stud and what needs an engineer, because that is where people get into real trouble",
+          "Nothing gets closed until the rough in inspection and the trade sign offs are done, and say who confirms that",
+          "Photograph the open wall before closing. Those photographs are worth money for years",
+          "Blocking and backing for what comes later: grab bars, cabinets, televisions, handrails, since it is cheap now and expensive after"
+        ],
+        "strong_answer_signals": [
+          "Correct service sequence",
+          "Knows drilling and notching limits",
+          "Photographs walls before closing"
+        ],
+        "avoid": [
+          "First trade in wins",
+          "Closing before inspection",
+          "Forgetting blocking for later fixtures"
+        ]
+      }
+    },
+    {
+      "id": "cbt_030",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How do you handle punch list and finish quality?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Do your own walk before the client or the general contractor does, because the list you write yourself is a fraction of the cost of the one they write",
+          "Know what the finish standard actually is: drywall levels, tile lippage, paint coverage, reveal and gap tolerances, and do not guess",
+          "Fix the cause when the same defect appears repeatedly rather than patching twenty instances of it",
+          "Protect completed work, since most punch items are damage done after the work was finished by someone else",
+          "Track the list properly with location, trade, and a date, rather than a pile of notes",
+          "Get sign off in writing as items close, because that is what releases the payment"
+        ],
+        "strong_answer_signals": [
+          "Self punch before the client walk",
+          "Knows the actual finish standards",
+          "Protection of completed work"
+        ],
+        "avoid": [
+          "Waiting for the client's list",
+          "Patching a repeating defect",
+          "No written closeout"
+        ]
+      }
+    },
+    {
+      "id": "cbt_031",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "A homeowner or client asks you on site to change something. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be pleasant and take it seriously, but do not start building it",
+          "Explain that a change needs to go through the office or the project manager as a written change order with a price and a schedule impact",
+          "Say what it affects, because clients rarely see it: inspection, other trades already sequenced, warranty, and sometimes code",
+          "Never take payment or an instruction directly on site if you are not the one contracted to do so",
+          "If it is genuinely trivial and inside your scope, say so and confirm it in writing anyway",
+          "Get the answer back to them quickly, since slow answers are what makes clients go around you"
+        ],
+        "strong_answer_signals": [
+          "Nothing built without a written change order",
+          "Explains the knock on effects",
+          "Fast response back to the client"
+        ],
+        "avoid": [
+          "Doing it as a favour",
+          "Quoting a price on the spot without authority",
+          "Ignoring the request"
+        ]
+      }
+    },
+    {
+      "id": "cbt_032",
+      "category": "situational",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "A delivery arrives short, late or damaged. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Check it against the packing slip and the order before signing anything, and note the shortage or damage on the slip itself",
+          "Photograph it on the truck, since a claim made after unloading is a much weaker claim",
+          "Tell the office or the supplier immediately so the replacement is moving the same day",
+          "Work out whether it stops you: reorder the day's tasks, put the crew on something else, and say what you can still complete",
+          "Escalate honestly if it will move the schedule rather than absorbing it silently and missing the date",
+          "Check the material is the specified product, not just the right quantity, because a substitution slipped in quietly is a bigger problem than a shortage"
+        ],
+        "strong_answer_signals": [
+          "Notes it on the slip before signing",
+          "Photographs before unloading",
+          "Resequences the day's work"
+        ],
+        "avoid": [
+          "Signing clean then complaining later",
+          "Accepting a substitution without approval",
+          "Hiding a schedule impact"
+        ]
+      }
+    },
+    {
+      "id": "cbt_033",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "You open up a wall and find hidden damage or a hazardous material. What now?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Stop and do not disturb it further, especially with anything that could be asbestos, lead paint, mould or vermiculite",
+          "Isolate the area and keep people out. Wetting or sealing may be needed before anyone else walks through",
+          "Report immediately: foreman, project manager, and the client, since this is always a cost and schedule conversation",
+          "Hazardous material has its own process, and testing and licensed abatement come before any further work. Do not try to remove it yourself",
+          "For structural rot, water damage or termite damage, get it looked at by someone qualified before repairing, because the cause matters more than the symptom",
+          "Document with photographs and a written note the same day, since this will show up in the change order and possibly a claim"
+        ],
+        "strong_answer_signals": [
+          "Stops and isolates rather than continuing",
+          "Knows abatement is licensed work",
+          "Same day documentation"
+        ],
+        "avoid": [
+          "Removing suspect material yourself",
+          "Repairing rot without finding the cause",
+          "Telling the client but not the office"
+        ]
+      }
+    },
+    {
+      "id": "cbt_034",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "You believe a coworker is impaired on site. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Treat it as a safety matter, not a personal one. On a site with heights, power tools and moving equipment this is a life safety issue",
+          "Get them away from the task and the equipment without a confrontation in front of the crew",
+          "Report it to the supervisor immediately, since this is not something to handle privately or to sit on",
+          "Follow the company policy, which usually has a defined process including testing, and do not improvise your own",
+          "Do not drive them anywhere or make decisions the policy assigns to someone else",
+          "Say plainly that you would report it even if it were a friend, because that is the question underneath"
+        ],
+        "strong_answer_signals": [
+          "Immediate removal from the task",
+          "Reports up rather than handling it alone",
+          "Would report a friend"
+        ],
+        "avoid": [
+          "Covering for them",
+          "Confronting them publicly",
+          "Improvising outside company policy"
+        ]
+      }
+    },
+    {
+      "id": "cbt_035",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "You are behind schedule and asked to skip a step. How do you respond?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Sort what is being asked into three buckets, because they are not the same: a code or safety step, an inspection hold point, or a sequencing preference",
+          "Say no clearly to anything that is code, safety or an inspection hold, and say why in terms of cost rather than principle: failed inspection, rework, liability, warranty",
+          "Offer real alternatives to recover time: more crew, a second shift, resequencing, prefabrication off site, splitting the area into zones",
+          "Put your position in writing when someone insists, since a verbal instruction disappears the moment there is a problem",
+          "Be honest about what the recovery plan will and will not achieve rather than agreeing to a date you cannot hit",
+          "Escalate rather than carrying the decision alone"
+        ],
+        "strong_answer_signals": [
+          "Separates code from preference",
+          "Frames refusal as cost, not principle",
+          "Offers a concrete recovery plan"
+        ],
+        "avoid": [
+          "Quietly skipping the step",
+          "Refusing without alternatives",
+          "Agreeing to an impossible date"
+        ]
+      }
+    },
+    {
+      "id": "cbt_036",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you run a crew day to day?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start the day with a short huddle covering the work, the sequence, the hazards and who is where. Five minutes saves an hour",
+          "Assign by skill and by who needs to grow, not only by who is fastest at it today",
+          "Have the materials, the drawings and the equipment staged before the crew arrives, because waiting crews are the most expensive thing on a site",
+          "Walk the work through the day rather than checking it at the end",
+          "Know your production rates so you can tell early whether the day is on track, and say the ones you use",
+          "Close the day with tomorrow's plan, a clean and safe site, and the daily report written while you still remember it"
+        ],
+        "strong_answer_signals": [
+          "Morning huddle with hazards included",
+          "Materials staged before the crew starts",
+          "Production rates known"
+        ],
+        "avoid": [
+          "Assigning work as people ask",
+          "Checking only at the end of the day",
+          "Writing the daily report from memory next week"
+        ]
+      }
+    },
+    {
+      "id": "cbt_037",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you schedule and sequence subcontractors?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Build backwards from the milestones that cannot move: inspections, concrete pours, crane picks, permanent power, occupancy",
+          "Know the real lead times, including the long ones people forget: switchgear, elevators, custom glazing, engineered trusses, specialty steel",
+          "Sequence by predecessor rather than by preference, and make the handover conditions explicit so a trade knows what a ready area means",
+          "Hold a look ahead meeting on a fixed cadence, usually three weeks, with the subs in the room rather than by email",
+          "Build float where the risk is, not evenly, and protect the critical path items first",
+          "Track it visibly and update it honestly, since a schedule everyone knows is wrong stops being a schedule"
+        ],
+        "strong_answer_signals": [
+          "Backwards from fixed milestones",
+          "Long lead items named",
+          "Look ahead meeting with subs present"
+        ],
+        "avoid": [
+          "Scheduling by who complains loudest",
+          "Ignoring lead times",
+          "A schedule that is never updated"
+        ]
+      }
+    },
+    {
+      "id": "cbt_038",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you manage a job budget and cost codes?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start from the estimate and know how it was built, since you cannot manage against a number you do not understand",
+          "Code labour, material, equipment and subcontract correctly and daily, because cost coding done at month end is fiction",
+          "Compare committed cost against the budget, not just what has been invoiced, since the commitment is the real position",
+          "Watch the leading indicators: production rate against the estimate, hours per unit, rework hours, and overtime creep",
+          "Change orders priced and approved before the work, because unapproved extras are the fastest way to lose a job's margin",
+          "Report variance early with a forecast to complete rather than presenting a loss at the end"
+        ],
+        "strong_answer_signals": [
+          "Committed cost, not just invoiced",
+          "Daily cost coding",
+          "Change orders approved before work"
+        ],
+        "avoid": [
+          "Managing on invoices only",
+          "Doing extras on a handshake",
+          "Reporting the loss at closeout"
+        ]
+      }
+    },
+    {
+      "id": "cbt_039",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you run safety for your crew beyond wearing the gear?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "A daily task hazard assessment done with the crew, not filled in for them, because the value is in the conversation",
+          "Toolbox talks on what is actually happening this week rather than a generic sheet off the internet",
+          "New workers and young workers get a proper orientation and are paired, since the injury statistics for the first weeks are brutal",
+          "Know the high risk work that needs a permit or a plan: heights, excavation, hot work, confined space, energised work, lifting operations",
+          "Correct in the moment and consistently, including for the experienced people, since selective enforcement kills the whole programme",
+          "Report and investigate near misses seriously, because they are the free warning before an injury"
+        ],
+        "strong_answer_signals": [
+          "Hazard assessment done with the crew",
+          "New worker pairing",
+          "Near misses actually investigated"
+        ],
+        "avoid": [
+          "Paperwork filled in afterwards",
+          "Generic toolbox talks",
+          "Enforcing only on the new people"
+        ]
+      }
+    },
+    {
+      "id": "cbt_040",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you hire and develop apprentices and tradespeople?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Hire for attitude, attendance and safety sense at the entry level, since the trade can be taught and reliability largely cannot",
+          "Test the skill practically for experienced hires rather than trusting a resume: a layout task, a cut, a diagnosis",
+          "Check tickets and licences properly, and verify rather than accept a photograph on a phone",
+          "Give apprentices real work with supervision and a progression, not just cleanup, because that is how you keep them",
+          "Pair deliberately and hold the journeyman accountable for the teaching, not just the production",
+          "Retention is the actual problem in this trade, so say what you do about it: predictable hours, tools, training paid for, and a route to foreman"
+        ],
+        "strong_answer_signals": [
+          "Practical skills test",
+          "Verifies tickets",
+          "Real progression for apprentices"
+        ],
+        "avoid": [
+          "Hiring on a resume alone",
+          "Apprentices used only as labour",
+          "No retention thinking"
+        ]
+      }
+    },
+    {
+      "id": "cbt_041",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you handle someone on the crew who is not performing?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Be specific about what is missing, with dates: production, quality, attendance, safety behaviour, or attitude affecting the crew",
+          "Check the obvious causes first: unclear instruction, missing tools, the wrong pairing, a skill gap nobody addressed, or something going on at home",
+          "Have the conversation privately and directly, with a clear expectation and a date to review it",
+          "Safety behaviour is different from production. That one has a much shorter runway and you should say so",
+          "Document it as you go, since the alternative costs the company when it ends",
+          "Be willing to move them off the crew or out, and say whether you have actually had to"
+        ],
+        "strong_answer_signals": [
+          "Specific evidence with dates",
+          "Separates safety from production",
+          "Has actually followed through"
+        ],
+        "avoid": [
+          "Talking to the crew instead of the person",
+          "Same runway for safety and output",
+          "Hoping the layoff solves it"
+        ]
+      }
+    },
+    {
+      "id": "cbt_042",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you manage the relationship with the general contractor or the client?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "One point of contact and one channel, so instructions do not arrive through three people on the deck",
+          "Bad news early and in writing, because a delay they hear about in advance is a problem, and one they discover is a dispute",
+          "Everything that costs money or time goes in writing the same day, including verbal instructions you are confirming back",
+          "Keep the progress claim clean: accurate quantities, backup attached, and submitted on time, since payment problems usually start with sloppy claims",
+          "Turn up to the coordination meetings prepared with your look ahead, your constraints and your requests, rather than reacting",
+          "Protect the relationship without giving away scope, and know the difference between goodwill and free work"
+        ],
+        "strong_answer_signals": [
+          "Single channel for instructions",
+          "Verbal instructions confirmed in writing",
+          "Clean and timely progress claims"
+        ],
+        "avoid": [
+          "Taking instructions from anyone on site",
+          "Absorbing extras to keep the peace",
+          "Reporting a delay after it happens"
+        ]
+      }
+    },
+    {
+      "id": "cbt_043",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "What documentation do you keep on a job and why?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Daily reports with crew, hours, weather, work done, deliveries, visitors and anything that stopped work, written the same day",
+          "Photographs constantly, especially of anything about to be covered up, dated and organised by area",
+          "Written record of every instruction, change, delay and request for information, and the answers",
+          "Safety records: hazard assessments, toolbox talks, orientations, inspections, incidents and near misses",
+          "Quality and inspection records: hold points signed off, test results, concrete tickets, material certificates and submittals",
+          "Say plainly why, since this is the question: disputes are decided on records months later, and the crew that documented wins"
+        ],
+        "strong_answer_signals": [
+          "Same day daily reports",
+          "Photographs before cover up",
+          "Understands records decide disputes"
+        ],
+        "avoid": [
+          "Reports written weekly from memory",
+          "Photographs only when there is a problem",
+          "Verbal instructions unrecorded"
+        ]
+      }
+    },
+    {
+      "id": "cbt_044",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Why do you want to work for this contractor?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Do the homework: the sector they build in, typical project size, whether they self perform or manage subs, and the market they work",
+          "Name something concrete: a project you have seen or driven past, the type of work, their safety record, their reputation for paying on time",
+          "Say what you want from them in a way that is fair to both sides: steady work, a chance to move up, better equipment, the kind of jobs you want to build",
+          "Connect your own experience to what they actually build rather than to construction in general",
+          "Have real questions ready: crew size, travel and per diem, overtime pattern, tool policy, how they run safety, where the work is next year"
+        ],
+        "strong_answer_signals": [
+          "Knows what they build and how",
+          "Names a specific project or trait",
+          "Real questions about the work"
+        ],
+        "avoid": [
+          "Generic praise",
+          "No idea what sector they work in",
+          "No questions"
+        ]
+      }
+    },
+    {
+      "id": "cbt_045",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Where do you want to be in a few years in this trade?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Name a real path, since this trade has clear ones: apprentice to journeyman, then lead hand, foreman, superintendent, estimator, project manager, or your own business",
+          "Say the concrete next step: finishing hours, a ticket, a red seal or licence, first crew, first job run start to finish",
+          "Connect it to what this employer can offer so growth and staying are the same story",
+          "If your goal is eventually your own business, say it in a way that adds value here rather than sounding like a stopover, because they will suspect it anyway",
+          "Show that you know the step up is a different job, not just more of the same, especially the paperwork and people side of foreman work"
+        ],
+        "strong_answer_signals": [
+          "A path with a concrete next step",
+          "Growth tied to this employer",
+          "Knows foreman work is a different job"
+        ],
+        "avoid": [
+          "No direction",
+          "A plan that obviously needs another employer",
+          "Assuming the step up is just seniority"
+        ]
+      }
+    },
+    {
+      "id": "cbt_046",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "What kind of work do you want to be doing, residential or commercial?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Have a preference with a reason, because these are genuinely different jobs: residential is faster, more varied, more client contact; commercial and industrial mean bigger crews, more paperwork, tighter inspection and different safety expectations",
+          "Say what transfers directly and what you would need to learn, since honesty here reads better than claiming both",
+          "Match it to what this employer actually builds rather than giving an answer that fits any site",
+          "Mention travel, shift work and per diem honestly if their work involves it, because the mismatch there is what ends jobs in the first month",
+          "Show flexibility without being shapeless, and say which parts of the work you actually like"
+        ],
+        "strong_answer_signals": [
+          "Reasoned preference with the real differences named",
+          "Honest about what transfers",
+          "Realistic about travel and shift"
+        ],
+        "avoid": [
+          "Any work is fine",
+          "Claiming both equally",
+          "Ignoring the travel or shift pattern"
         ]
       }
     }

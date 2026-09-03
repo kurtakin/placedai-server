@@ -2,14 +2,17 @@
   "metadata": {
     "sector": "Recruiting / Talent Acquisition",
     "schema_version": "1.1",
-    "generated": "2026-08-30",
-    "total": 20,
+    "generated": "2026-09-03",
+    "total": 46,
     "categories": [
       "behavioral",
+      "manager",
       "motivation",
       "situational",
       "technical"
-    ]
+    ],
+    "region": "North America",
+    "note": "Recruiting / Talent Acquisition. 20 sorudan 46 ya cikarildi: intake gorusmesi, yapilandirilmis mulakat ve skorkart, ucret kiyaslama ve teklif kurma, huni donusum teshisi, gec asamada kaybedilen aday, ise alim yoneticisine itiraz, karsi teklif, butceye uymayan profil, mulakatci egitimi, ise alim durdurma, ajans mi ic ekip mi, cesitli aday havuzu."
   },
   "questions": [
     {
@@ -602,6 +605,779 @@
           "Taking it personally or becoming confrontational",
           "Not investigating the root cause",
           "Ignoring the impact on team morale and hiring timelines"
+        ]
+      }
+    },
+    {
+      "id": "rta_021",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about yourself and your recruiting background.",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Setting first, because agency, in house, RPO and executive search are different jobs with different rhythms",
+          "What you recruit for: engineering, sales, clinical, hourly and high volume, executive, or generalist, since the sourcing motion differs completely",
+          "Scale with numbers: requisitions carried at once, hires per year, time to fill, offer acceptance rate",
+          "Where you sit in the process: sourcing only, full cycle, or leading a function",
+          "Tools you actually ran: the applicant tracking system, sourcing platforms, assessment tools, and what you built inside them",
+          "One outcome with a figure: a hard role filled, time to fill cut, acceptance rate lifted, a pipeline built that outlived the requisition"
+        ],
+        "strong_answer_signals": [
+          "Names the setting and the discipline recruited",
+          "Requisition load and hires stated",
+          "One measurable outcome"
+        ],
+        "avoid": [
+          "Vague about agency versus in house",
+          "No numbers on load or hires",
+          "Listing tools with no depth"
+        ]
+      }
+    },
+    {
+      "id": "rta_022",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about a candidate you lost late in the process.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Say honestly where it broke: compensation, a slow process, a poor interview experience, a counter offer, the role changing under them, or a competing offer that was simply better",
+          "Be specific about the signals you missed, because they are almost always there earlier than people admit",
+          "What you did at the time: the recovery attempt, and whether it was reasonable to make one",
+          "What you changed afterwards: closing conversations earlier, checking motivation properly rather than only interest, compensation ranges validated at the start, faster decisions",
+          "Say what you learned about your own process rather than blaming the market or the manager",
+          "If you kept the relationship and later placed them or got a referral, say so"
+        ],
+        "strong_answer_signals": [
+          "Honest about the real cause",
+          "Names the signals missed",
+          "A process change that stuck"
+        ],
+        "avoid": [
+          "Blaming the candidate or the market",
+          "No earlier signal acknowledged",
+          "Nothing changed afterwards"
+        ]
+      }
+    },
+    {
+      "id": "rta_023",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about a time you pushed back on a hiring manager.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Name the issue: an unrealistic profile, compensation below market, an interview loop that was driving candidates away, a decision that looked like bias, or a role that should not be open as written",
+          "Lead with their outcome rather than your process: they get a hire faster and one that stays",
+          "Bring data, since this only works with evidence. Market compensation, funnel conversion, time in stage, offer decline reasons, comparable profiles that succeeded",
+          "Offer options rather than a refusal: broaden the profile, split the role, adjust the band, change the loop, consider an internal move",
+          "Say what happened when they still said no, because that is the honest half of the story",
+          "Anything that touches fairness or legality goes to the right people rather than being negotiated"
+        ],
+        "strong_answer_signals": [
+          "Framed as the manager's outcome",
+          "Data rather than opinion",
+          "Escalates fairness issues properly"
+        ],
+        "avoid": [
+          "Arguing without evidence",
+          "Going silent and sourcing anyway",
+          "Handling a bias concern privately"
+        ]
+      }
+    },
+    {
+      "id": "rta_024",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about a hire that did not work out.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Own your share of it rather than putting it entirely on the manager or the candidate",
+          "Say what the process missed: the loop tested the wrong things, a reference signal was rationalised away, the role was described optimistically, or the team context was not assessed at all",
+          "Note when it failed, since a first month failure and a nine month failure point at completely different causes",
+          "What changed: a scorecard that tested the real work, an honest conversation about the team's state, a work sample, better reference questions",
+          "How you handled it with the manager, because the relationship after a bad hire is where credibility is won or lost",
+          "Say what your quality of hire signal is now, since most recruiters have none"
+        ],
+        "strong_answer_signals": [
+          "Owns a share of the failure",
+          "Distinguishes early from later failure",
+          "A concrete change to the loop"
+        ],
+        "avoid": [
+          "Blaming the hiring manager entirely",
+          "No quality of hire measure at all",
+          "Treating it as bad luck"
+        ]
+      }
+    },
+    {
+      "id": "rta_025",
+      "category": "behavioral",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "How do you handle rejections and candidate experience?",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Everyone gets an answer, including the ones you sourced who never applied, because silence is the single most damaging thing a recruiting team does",
+          "Speed matters more than wording. A fast no is a kindness, a slow one is not",
+          "Give real feedback where you are permitted to, and be honest with candidates about what you cannot share and why",
+          "Handle the late stage rejections by phone rather than email, since someone who took four interviews deserves a conversation",
+          "Keep the door open properly: say what would change your answer, and actually come back to them when it does",
+          "Measure it rather than assuming: candidate experience feedback, and how many rejected candidates you later hired or got referrals from"
+        ],
+        "strong_answer_signals": [
+          "Everyone gets a response",
+          "Late stage rejections by phone",
+          "Measures candidate experience"
+        ],
+        "avoid": [
+          "Ghosting sourced candidates",
+          "Vague feedback to avoid discomfort",
+          "No measurement"
+        ]
+      }
+    },
+    {
+      "id": "rta_026",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about a time your requisition load was more than you could carry.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Say the number, since load is a real and measurable thing: requisitions open, roles by difficulty, and what a sustainable load looks like in your experience",
+          "Triage explicitly by business impact and by difficulty rather than working every requisition equally",
+          "Take it to the hiring managers and the leadership with a proposal rather than absorbing it silently and failing quietly on all of them",
+          "Practical moves that buy capacity: sequencing requisitions, sharing a pipeline across similar roles, agency support on the hardest one, a hiring event, delaying an opening honestly",
+          "Protect the process quality that breaks first under load, which is usually candidate communication and the intake conversation",
+          "Say what you would not do again, since the honest version of this answer includes a cost"
+        ],
+        "strong_answer_signals": [
+          "Names the actual load number",
+          "Proposes a plan rather than absorbing it",
+          "Protects candidate communication"
+        ],
+        "avoid": [
+          "Working every requisition equally",
+          "Suffering silently",
+          "Claiming everything got filled anyway"
+        ]
+      }
+    },
+    {
+      "id": "rta_027",
+      "category": "behavioral",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Tell me about a recruiting process you improved.",
+      "answer_framework": {
+        "structure": "STAR",
+        "key_points": [
+          "Start with the measurement, since improvement without a baseline is a story rather than a result: conversion by stage, time in stage, decline reasons, source effectiveness",
+          "Name the specific bottleneck rather than improving the whole funnel vaguely: scheduling delays, too many interview rounds, a slow decision step, a weak first outreach, an application form that lost people",
+          "Say what you changed and what it cost, including the political cost of asking busy people to change how they interview",
+          "Show the before and after numbers",
+          "Say what did not work, because process work is full of changes that sounded good and moved nothing",
+          "How you kept it in place, since processes drift back within a quarter without an owner"
+        ],
+        "strong_answer_signals": [
+          "Baseline measured before changing",
+          "One specific bottleneck",
+          "Before and after numbers"
+        ],
+        "avoid": [
+          "Improved the whole funnel with no numbers",
+          "No mention of what it cost",
+          "No mechanism to keep it in place"
+        ]
+      }
+    },
+    {
+      "id": "rta_028",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How do you run an intake meeting with a hiring manager?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start from the work rather than the job title: what this person does in the first ninety days, what they own, and what success looks like at six months",
+          "Separate must have from nice to have and force a ranking, since a list of twelve requirements is not a profile",
+          "Agree the compensation band, the level and the approval path up front, because discovering the band at offer stage is how deals die",
+          "Agree the interview loop in the meeting: who interviews, what each stage tests, and the decision timeline",
+          "Calibrate on real people: profiles they would hire, profiles they would not, and why. This is where the actual bar gets set",
+          "Set the cadence for updates and what you need from them, and get it in writing so it can be referred back to"
+        ],
+        "strong_answer_signals": [
+          "Starts from the work, not the title",
+          "Compensation and level agreed up front",
+          "Calibration on real profiles"
+        ],
+        "avoid": [
+          "Taking a job description as the brief",
+          "Leaving the loop undefined",
+          "No agreed decision timeline"
+        ]
+      }
+    },
+    {
+      "id": "rta_029",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How do you build a structured interview process?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Define what each stage tests so no two interviewers cover the same ground while nobody covers the rest",
+          "Same questions in the same order for every candidate for a role, because comparison is impossible otherwise",
+          "Scorecards with defined levels and evidence, not a rating out of five with no anchor",
+          "Work samples and structured exercises beat conversation for predicting performance, and say what you have used",
+          "Independent written feedback submitted before the debrief, since the loudest voice otherwise sets the room",
+          "A debrief that examines evidence rather than impressions, with a decision rule agreed in advance",
+          "Note that structure is also the strongest practical defence against bias, and train interviewers rather than assuming they know how"
+        ],
+        "strong_answer_signals": [
+          "Each stage tests something distinct",
+          "Feedback submitted before the debrief",
+          "Anchored scorecards"
+        ],
+        "avoid": [
+          "Unstructured conversational interviews",
+          "Debriefs that start with a show of hands",
+          "Untrained interviewers"
+        ]
+      }
+    },
+    {
+      "id": "rta_030",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "How do you benchmark compensation and construct an offer?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Use real sources rather than a single site: survey data, offers you have actually closed and lost, market movement in the last six months, and the internal band",
+          "Check internal equity before external competitiveness, since an offer that breaks the internal band creates a problem that outlives the hire",
+          "Understand the whole package and be able to explain it: base, bonus, equity and how it vests, benefits, retirement, time off, and any sign on",
+          "Discuss expectations early and openly, and know the local rules on asking about salary history, since many places prohibit it",
+          "Build the offer to be accepted rather than negotiated when you can, and say when a best offer approach is right and when it is not",
+          "Handle the close properly: understand the motivation beyond money, and prepare for the counter offer before it arrives"
+        ],
+        "strong_answer_signals": [
+          "Internal equity checked first",
+          "Whole package explained",
+          "Knows salary history rules"
+        ],
+        "avoid": [
+          "One salary website as the benchmark",
+          "Ignoring internal bands",
+          "Discovering expectations at offer stage"
+        ]
+      }
+    },
+    {
+      "id": "rta_031",
+      "category": "technical",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Your funnel is converting badly. How do you diagnose it?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Get the conversion by stage first, since the fix is completely different depending on where it drops",
+          "Top of funnel weakness means sourcing, messaging or an unattractive role, so look at outreach response rate and application volume against the market",
+          "A drop at screen usually means the profile and the sourcing do not match what the manager actually wants, which is an intake problem",
+          "A drop at onsite means the loop is testing something different from the screen, or the bar is not calibrated",
+          "A drop at offer means compensation, speed, or the candidate experience during the loop, and decline reasons will tell you if you actually ask",
+          "Watch time in stage alongside conversion, because slow processes lose candidates without ever showing up as a rejection"
+        ],
+        "strong_answer_signals": [
+          "Stage by stage before conclusions",
+          "Maps each drop to a distinct cause",
+          "Tracks time in stage as well"
+        ],
+        "avoid": [
+          "More sourcing as the answer to everything",
+          "No decline reason data",
+          "Ignoring process speed"
+        ]
+      }
+    },
+    {
+      "id": "rta_032",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Two hiring managers want the same candidate. How do you handle it?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "The candidate decides, and your job is to give them the information to decide well rather than to allocate them",
+          "Tell both managers immediately rather than letting one find out at offer stage",
+          "Present both roles honestly, including the parts that differ in a way the candidate would care about: scope, team, manager, trajectory, location, compensation band",
+          "Do not let it become a bidding war inside the company, since that damages internal bands and both managers",
+          "Have a tie break principle agreed with leadership in advance, such as business priority or requisition age, for when the candidate genuinely has no preference",
+          "Support the losing manager afterwards with a real plan, because that relationship matters for every future requisition"
+        ],
+        "strong_answer_signals": [
+          "Candidate chooses with full information",
+          "Both managers told immediately",
+          "No internal bidding war"
+        ],
+        "avoid": [
+          "Steering the candidate to the favoured manager",
+          "Hiding one role from the candidate",
+          "Letting the offers escalate against each other"
+        ]
+      }
+    },
+    {
+      "id": "rta_033",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "A candidate tells you an interviewer said something inappropriate. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Take it seriously immediately and thank them, since raising this takes courage and most people simply withdraw instead",
+          "Get the facts carefully in their words: what was said, by whom, when, and who else was present. Do not lead them or minimise it",
+          "Report it through the proper channel the same day. This goes to human resources or legal, and it is not yours to investigate or to resolve quietly",
+          "Do not promise an outcome you cannot control, and do not discuss it with the interviewer yourself",
+          "Protect the candidate's process from retaliation and be clear with them about what happens next and what you can share",
+          "Follow up on the systemic side afterwards: interviewer training, who is on loops, and whether there is a pattern"
+        ],
+        "strong_answer_signals": [
+          "Reported the same day through the right channel",
+          "Does not investigate it personally",
+          "Protects the candidate's process"
+        ],
+        "avoid": [
+          "Handling it quietly to protect a colleague",
+          "Promising a specific outcome",
+          "Removing the candidate to make it simpler"
+        ]
+      }
+    },
+    {
+      "id": "rta_034",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Your final candidate receives a counter offer from their employer. How do you respond?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Expect it and prepare for it before the offer goes out rather than reacting when it arrives",
+          "Go back to why they were looking in the first place, since a counter offer usually fixes the money and none of the reasons",
+          "Ask the practical questions with them: what changes on Monday other than pay, why it took a resignation to get it, and how it changes how they are seen",
+          "Do not panic and raise your offer reflexively, because a candidate bought back once is often gone in six months anyway",
+          "Bring forward what your offer has that money cannot answer: the work, the manager, the trajectory",
+          "Respect their decision either way and keep the relationship, and feed what you learn back into how early you have the motivation conversation"
+        ],
+        "strong_answer_signals": [
+          "Prepared for it before the offer",
+          "Returns to original motivation",
+          "Does not reflexively raise the offer"
+        ],
+        "avoid": [
+          "Immediate counter to the counter",
+          "Pressuring the candidate",
+          "Ending the relationship badly"
+        ]
+      }
+    },
+    {
+      "id": "rta_035",
+      "category": "situational",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "A requisition opens with a profile that does not exist at that budget. What do you do?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Say it in the intake meeting rather than three months of sourcing later, and bring evidence rather than an opinion",
+          "Show the market: compensation data, how many profiles exist in the searchable market, what similar companies pay, and what your own recent offers looked like",
+          "Give options with tradeoffs: raise the band, cut a requirement, split into two roles, hire more junior and develop, consider remote or a different location, or use a contractor",
+          "Say which option you recommend and why, since managers want a recommendation and not a menu",
+          "Get the decision recorded, because this conversation repeats otherwise",
+          "If they choose to proceed unchanged, agree what the review point is rather than leaving it open indefinitely"
+        ],
+        "strong_answer_signals": [
+          "Raised at intake with market evidence",
+          "Options with tradeoffs and a recommendation",
+          "An agreed review point"
+        ],
+        "avoid": [
+          "Sourcing quietly for months",
+          "Refusing to open the requisition",
+          "No agreed checkpoint"
+        ]
+      }
+    },
+    {
+      "id": "rta_036",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you lead a recruiting team?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Structure the team deliberately: by business unit, by discipline, or split into sourcing and full cycle, and say what problem your structure solves",
+          "Allocate requisition load by difficulty rather than by count, since twelve straightforward roles and four executive searches are not comparable",
+          "A weekly operating rhythm: pipeline review by requisition, aging roles, offers out, and what is blocked",
+          "Coach on the parts that actually decide outcomes: the intake conversation, the closing conversation, and the manager relationship",
+          "Protect the team from unbounded load by making capacity visible to leadership, because recruiting teams burn out quietly",
+          "Career development matters here, since recruiting has high turnover and the specialisms are real: sourcing, executive search, operations, programmes"
+        ],
+        "strong_answer_signals": [
+          "Load allocated by difficulty",
+          "Coaches intake and closing specifically",
+          "Capacity made visible upward"
+        ],
+        "avoid": [
+          "Equal requisition counts as fairness",
+          "Managing only by hire numbers",
+          "No development path"
+        ]
+      }
+    },
+    {
+      "id": "rta_037",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you plan recruiting capacity against a hiring plan?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start from the hiring plan by quarter and by difficulty, not from a headcount total, since when roles land matters as much as how many",
+          "Use your own historical throughput per recruiter for that type of role rather than an industry ratio",
+          "Model the funnel backwards: to make one hire you need a known number of onsites, screens and sourced candidates, and that tells you the real work",
+          "Plan for attrition backfills, which almost every hiring plan forgets and which arrive without warning",
+          "Decide in advance where agency or contract recruiters flex the capacity, and what the trigger is",
+          "Say plainly what happens when the plan grows without the capacity growing, and get that agreed before it happens rather than after"
+        ],
+        "strong_answer_signals": [
+          "Own historical throughput, not a ratio",
+          "Funnel modelled backwards",
+          "Backfills planned for"
+        ],
+        "avoid": [
+          "A fixed recruiter to hire ratio",
+          "Ignoring when in the year roles land",
+          "Absorbing plan growth silently"
+        ]
+      }
+    },
+    {
+      "id": "rta_038",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "What recruiting metrics do you report to leadership?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Lead with the ones that affect the business: hires against plan, time to fill and time to hire kept separate, and offer acceptance rate",
+          "Quality of hire is the one that matters most and the one most teams cannot measure, so say what proxy you use: performance at six months, retention at twelve, hiring manager satisfaction",
+          "Funnel conversion by stage, since that is where a leader can actually intervene",
+          "Cost per hire and agency spend, with the tradeoff visible rather than presented as a number to minimise",
+          "Diversity of the pipeline at each stage rather than only at hire, because that is where the useful signal is",
+          "Be careful with vanity numbers such as candidates sourced or interviews conducted, and say why you do not target them"
+        ],
+        "strong_answer_signals": [
+          "Time to fill and time to hire distinguished",
+          "A real quality of hire proxy",
+          "Pipeline diversity measured by stage"
+        ],
+        "avoid": [
+          "Candidates sourced as a headline metric",
+          "Cost per hire as a pure minimise target",
+          "Diversity measured only at offer"
+        ]
+      }
+    },
+    {
+      "id": "rta_039",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you decide between in house recruiting and agencies?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Compare the full cost honestly: fee against loaded recruiter cost, but include the speed difference and the opportunity cost of an unfilled role",
+          "Agencies earn their place where the search is genuinely specialised, confidential, in a market you have no network in, or a short spike you should not hire for",
+          "Build in house where the hiring is continuous, since the network and the employer knowledge compound and a fee does not",
+          "Manage agencies properly: a short preferred list, exclusivity where it earns better work, clear terms on guarantees and ownership of candidates, and measured performance",
+          "Watch the failure mode where agencies become the default because the intake process is weak, since that is expensive and hides the real problem",
+          "Have a threshold agreed with finance rather than deciding it role by role under pressure"
+        ],
+        "strong_answer_signals": [
+          "Full cost including speed and opportunity cost",
+          "Clear criteria for when agencies fit",
+          "Agency performance actually measured"
+        ],
+        "avoid": [
+          "Agencies as a habit",
+          "Fee comparison only",
+          "No agreed decision threshold"
+        ]
+      }
+    },
+    {
+      "id": "rta_040",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you train hiring managers and interviewers?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Make it required before someone joins a loop rather than optional, since an untrained interviewer costs candidates and creates legal risk",
+          "Cover the practical ground: what to ask and what not to ask, structured questioning, evidence based scorecards, bias in decision making, and how to sell the role",
+          "Train the debrief specifically, because that is where good individual assessments get overwritten by the most senior opinion in the room",
+          "Practise rather than lecture: shadowing, reverse shadowing, and feedback on their written scorecards",
+          "Refresh it, and pay attention to who consistently rates far from the group or whose candidates decline at a high rate",
+          "Give managers the data on their own loop, since nothing changes behaviour like seeing your own decline reasons"
+        ],
+        "strong_answer_signals": [
+          "Training required before joining a loop",
+          "Debrief practised specifically",
+          "Managers shown their own loop data"
+        ],
+        "avoid": [
+          "Optional training",
+          "Lecture with no practice",
+          "No follow up on interviewer performance"
+        ]
+      }
+    },
+    {
+      "id": "rta_041",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you handle a hiring freeze or a reduction?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Communicate with candidates in the process immediately and honestly. Leaving people waiting on a role that no longer exists is the reputational damage that lasts",
+          "Deal with anyone who has accepted but not started as the highest priority, since they may have resigned elsewhere, and escalate that hard",
+          "Keep the strongest pipelines warm properly, with honest timing rather than vague hope",
+          "Redeploy the team into work that has value now: internal mobility, employer brand, process and tooling, interviewer training, and market mapping for when it reopens",
+          "Protect the team's own morale and be straight with them about their own risk, because they will assume the worst otherwise",
+          "Prepare the restart, since freezes end faster than anyone expects and the team that mapped the market wins the first month"
+        ],
+        "strong_answer_signals": [
+          "Candidates told immediately",
+          "Accepted but not started treated as urgent",
+          "Team redeployed to durable work"
+        ],
+        "avoid": [
+          "Leaving candidates in silence",
+          "Vague promises about timing",
+          "No preparation for the restart"
+        ]
+      }
+    },
+    {
+      "id": "rta_042",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you choose and implement recruiting tools?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Start from the problem rather than the demo. Most recruiting tool purchases solve a process problem badly by buying software",
+          "The applicant tracking system is the spine, so evaluate it on the workflow, the reporting, the integrations and the data you can get out, not on the interface",
+          "Data portability matters more than people expect, since you will change systems and the history is the asset",
+          "Check the compliance side properly: candidate data retention, privacy obligations in the regions you hire in, and any regulation covering automated screening tools",
+          "Pilot with a real requisition before committing, and define what success looks like before the pilot starts",
+          "Adoption is the whole game. Budget for training and for cleaning up the data, since a half used system is worse than the spreadsheet it replaced"
+        ],
+        "strong_answer_signals": [
+          "Problem defined before the demo",
+          "Data portability and reporting weighted",
+          "Piloted with success criteria set first"
+        ],
+        "avoid": [
+          "Buying on the demo",
+          "Ignoring data export",
+          "Assuming adoption will happen"
+        ]
+      }
+    },
+    {
+      "id": "rta_043",
+      "category": "manager",
+      "seniority": [
+        "senior"
+      ],
+      "text": "How do you build a diverse pipeline without lowering the bar?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Say plainly that the bar and the pipeline are separate things, and that widening the pipeline is where the work actually is",
+          "Fix the sourcing inputs: where you post, which schools and communities you go to, referral programmes that reproduce the existing team, and job descriptions that narrow the pool for no reason",
+          "Look at requirements honestly, since degree and years requirements often exclude broadly while predicting very little",
+          "Measure conversion by stage rather than only who applies, because a pipeline that is diverse at the top and not at the offer points at the loop, not the sourcing",
+          "Structure the interview and train the debrief, since that is the practical intervention that changes decisions",
+          "Know the legal line in your jurisdiction on what you can and cannot do, and work with legal rather than around them"
+        ],
+        "strong_answer_signals": [
+          "Separates pipeline work from bar",
+          "Challenges unnecessary requirements",
+          "Measures conversion by stage"
+        ],
+        "avoid": [
+          "Diversity framed as a tradeoff with quality",
+          "Measuring only applicant diversity",
+          "Improvising around legal constraints"
+        ]
+      }
+    },
+    {
+      "id": "rta_044",
+      "category": "motivation",
+      "seniority": [
+        "entry",
+        "mid",
+        "senior"
+      ],
+      "text": "Why do you want to recruit for us?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Do the homework on what they hire: disciplines, volume, growth stage, locations, and whether they are scaling, replacing or restructuring",
+          "Say what attracted you specifically: the hiring challenge itself, the market they compete in for talent, the product, or how they treat candidates",
+          "Show you understand what makes recruiting hard here, since a company competing against much larger employers has a different problem from one that everyone wants to join",
+          "Connect your own results to a problem they plausibly have: hard technical roles, high volume seasonal hiring, a new market, a weak employer brand",
+          "Have real questions ready: requisition load, how the loop is run today, who owns the offer decision, agency use, what the team looks like"
+        ],
+        "strong_answer_signals": [
+          "Knows what and where they hire",
+          "Names their specific talent challenge",
+          "Connects own results to their problem"
+        ],
+        "avoid": [
+          "Generic praise for the company",
+          "No idea of hiring volume or discipline",
+          "No questions"
+        ]
+      }
+    },
+    {
+      "id": "rta_045",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Where do you want your recruiting career to go?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Name a direction, since the field has clear ones: technical or executive specialisation, recruiting operations and analytics, employer brand, talent management, or leading a function",
+          "Give the concrete next step rather than a title: harder searches, owning a business unit, building a programme, first direct reports",
+          "Tie it to what this role would build so growth and staying are the same story",
+          "Be honest if you want to move into the wider people function later, framed as what it adds here",
+          "Show that you know leading recruiting is a different job from recruiting well, since it is mostly forecasting, stakeholder management and process"
+        ],
+        "strong_answer_signals": [
+          "A specific direction and next step",
+          "Growth tied to this role",
+          "Knows leading is different work"
+        ],
+        "avoid": [
+          "No direction",
+          "A plan needing a different employer",
+          "Assuming promotion follows tenure"
+        ]
+      }
+    },
+    {
+      "id": "rta_046",
+      "category": "motivation",
+      "seniority": [
+        "mid",
+        "senior"
+      ],
+      "text": "Why are you leaving your current role?",
+      "answer_framework": {
+        "structure": "Framework",
+        "key_points": [
+          "Give a forward reason: more complex searches, a seat at the planning table, ownership of a function, a company where recruiting is treated as strategic",
+          "Handle the common real reasons with care, since they are legitimate but easy to say badly: an unsustainable requisition load, managers who would not engage, a hiring freeze, or being measured on activity rather than outcomes",
+          "Say it factually without criticising individuals, because interviewers hear how you might describe them later",
+          "Say something genuinely good about what you are leaving",
+          "Bring it back to something specific about this role rather than to the industry in general"
+        ],
+        "strong_answer_signals": [
+          "Forward looking and specific",
+          "Factual about difficulties",
+          "Balanced about the current employer"
+        ],
+        "avoid": [
+          "Criticising managers personally",
+          "Vague generalities",
+          "A reason that would apply here too"
         ]
       }
     }
