@@ -30,6 +30,66 @@ function getSupabase() {
   return supabase;
 }
 
+// ── Token dogrulama onbellegi ────────────────────────────────────────────────
+//
+// Neden: requireAuth her /cues ve her /stream cagrisinda sb.auth.getUser(token)
+// yapiyordu, yani Supabase'e (eu-west-1) bir ag gidis donusu. Bu iki uc canli
+// mulakatta cevap yolunun uzerinde ve overlay ikisini AYNI ANDA cagiriyor.
+// Urunun tamami "ipucu bir saniyenin altinda ekranda" hedefi uzerine kurulu;
+// sadece token dogrulamak icin iki tur atmak o butcenin icinden yeniyor.
+//
+// Neden yerel JWT dogrulamasi DEGIL: request.user.app_metadata sadece kimlik
+// tasimiyor. admin.js ve errors.js rol kapisini, billing.js stripe_customer_id
+// ve plani, usage.js ucretsiz/ucretli ayrimini oradan okuyor. Token'dan
+// okusaydik yetkisi alinmis bir admin token omru boyunca (~1 saat) admin
+// kalirdi ve daha kotusu YENI ODEME YAPAN kullanici token yenilenene kadar
+// "free" gorurdu. Onbellek ayni kazancin cogunu veriyor ama bayatligi
+// 60 saniyeyle siniriyor.
+//
+// Ham token asla saklanmiyor: anahtar token'in sha256 ozeti.
+const TOKEN_TTL_MS  = 60 * 1000;
+const TOKEN_MAX     = 5000;          // bellek ust siniri
+const _tokenCache   = new Map();     // hash -> { user, expiresAt }
+
+function tokenKey(token) {
+  return require('crypto').createHash('sha256').update(token).digest('hex');
+}
+
+/** Onbellekten kullanici. Yoksa ya da suresi dolduysa null. */
+function cachedUser(token) {
+  const key = tokenKey(token);
+  const hit = _tokenCache.get(key);
+  if (!hit) return null;
+  if (Date.now() > hit.expiresAt) { _tokenCache.delete(key); return null; }
+  return hit.user;
+}
+
+/** Yalnizca BASARILI dogrulama onbellege girer. Basarisizlar hic girmez. */
+function cacheUser(token, user) {
+  if (!user) return;
+  // Sinir asilirsa en eski girdiyi at. Map ekleme sirasini koruyor.
+  if (_tokenCache.size >= TOKEN_MAX) {
+    const oldest = _tokenCache.keys().next().value;
+    if (oldest !== undefined) _tokenCache.delete(oldest);
+  }
+  _tokenCache.set(tokenKey(token), { user, expiresAt: Date.now() + TOKEN_TTL_MS });
+}
+
+/**
+ * Kullanicinin oturumunu hemen gecersiz kilmak icin (cikis, plan degisikligi,
+ * rol iptali). Su an cagiran yok; plan degisikliginde cagrilmasi mantikli
+ * olurdu, o yuzden disari veriliyor.
+ */
+function invalidateToken(token) {
+  if (token) _tokenCache.delete(tokenKey(token));
+}
+
+// Suresi dolmus girdiler birikmesin.
+setInterval(() => {
+  const now = Date.now();
+  for (const [k, v] of _tokenCache) if (now > v.expiresAt) _tokenCache.delete(k);
+}, 5 * 60 * 1000).unref();
+
 /**
  * requireAuth — preHandler hook.
  * Rejects unauthenticated requests with 401.
@@ -51,10 +111,18 @@ async function requireAuth(request, reply) {
 
   const token = authHeader.slice(7);
 
+  const cached = cachedUser(token);
+  if (cached) {
+    request.user = cached;
+    return;
+  }
+
   const { data, error } = await sb.auth.getUser(token);
   if (error || !data?.user) {
     return reply.status(401).send({ error: 'Invalid or expired token' });
   }
+
+  cacheUser(token, data.user);
 
   // Attach user to request for downstream handlers.
   request.user = data.user;
@@ -78,8 +146,12 @@ async function optionalAuth(request, reply) {
     return;
   }
 
-  const token = authHeader.slice(7);
+  const token  = authHeader.slice(7);
+  const cached = cachedUser(token);
+  if (cached) { request.user = cached; return; }
+
   const { data } = await sb.auth.getUser(token);
+  if (data?.user) cacheUser(token, data.user);
   request.user = data?.user ?? null;
 }
 
@@ -117,4 +189,8 @@ function requirePlan(allowed = PAID_PLANS) {
   };
 }
 
-module.exports = { requireAuth, optionalAuth, requirePlan };
+module.exports = {
+  requireAuth, optionalAuth, requirePlan,
+  // Test ve gelecekteki gecersiz kilma icin
+  invalidateToken, cachedUser, cacheUser, TOKEN_TTL_MS, TOKEN_MAX, _tokenCache,
+};
