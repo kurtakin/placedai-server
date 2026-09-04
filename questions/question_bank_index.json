@@ -1,7 +1,7 @@
 {
   "metadata": {
     "description": "Master index for the Interview Aid App question bank",
-    "generated": "2026-09-03",
+    "generated": "2026-09-04",
     "grand_total": 2191,
     "total_files": 61,
     "schema_version": "1.1"
@@ -761,6 +761,7 @@
       ],
       "seniority_levels": [
         "entry",
+        "manager",
         "mid",
         "senior"
       ]
@@ -795,6 +796,7 @@
       ],
       "seniority_levels": [
         "entry",
+        "manager",
         "mid",
         "senior"
       ]

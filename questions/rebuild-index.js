@@ -63,6 +63,27 @@ for (const file of files) {
     fwSeen.set(key, q.id);
   }
 
+  // Kategori "manager" ise seniority icinde de "manager" olmali.
+  //
+  // Neden: routes/practice.js:400 pratik sorularini seniority alanina gore
+  // filtreliyor. Etiket yoksa o soru "manager" seviyesini secen kullaniciya
+  // HIC gorunmuyor. 4 Eylul'de 273 manager sorusunun 63'unde bu etiket
+  // eksikti; Property Management ve QA / Testing bankalari manager
+  // seviyesinde tamamen bostu.
+  //
+  // Ustteki iki guard (ayni metin, ayni answer_framework) bunu yakalayamiyordu:
+  // ikisi de icerigin kendini kontrol ediyor, kategori ile seniority
+  // arasindaki tutarliligi kimse kontrol etmiyordu.
+  for (const q of qs) {
+    if (q.category === 'manager' && !(q.seniority || []).includes('manager')) {
+      throw new Error(
+        `${file}: ${q.id} kategorisi manager ama seniority icinde manager yok ` +
+        `(${JSON.stringify(q.seniority || [])}). ` +
+        `practice.js seniority ile filtreliyor, bu soru manager seviyesinde gorunmez.`
+      );
+    }
+  }
+
   const categories = [...new Set(qs.map((q) => q.category))].sort();
   const seniority  = [...new Set(qs.flatMap((q) => q.seniority))].sort();
 

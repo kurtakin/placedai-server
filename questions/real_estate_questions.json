@@ -981,7 +981,8 @@
       "id": "pm_m_001",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you lead an on site team of leasing and maintenance staff?",
       "answer_framework": {
@@ -1010,7 +1011,8 @@
       "id": "pm_m_002",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you hire for a property team?",
       "answer_framework": {
@@ -1039,7 +1041,8 @@
       "id": "pm_m_003",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "What numbers do you manage a property or portfolio by?",
       "answer_framework": {
@@ -1068,7 +1071,8 @@
       "id": "pm_m_004",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you handle an underperforming member of staff?",
       "answer_framework": {
@@ -1097,7 +1101,8 @@
       "id": "pm_m_005",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you train a team on fair housing and compliance?",
       "answer_framework": {
@@ -1126,7 +1131,8 @@
       "id": "pm_m_006",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you manage the relationship with owners or clients?",
       "answer_framework": {
@@ -1155,7 +1161,8 @@
       "id": "pm_m_007",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you manage several properties at once?",
       "answer_framework": {
@@ -1184,7 +1191,8 @@
       "id": "pm_m_008",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you take on a new property into management?",
       "answer_framework": {

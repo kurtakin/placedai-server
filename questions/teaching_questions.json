@@ -513,7 +513,8 @@
       "category": "manager",
       "seniority": [
         "mid",
-        "senior"
+        "senior",
+        "manager"
       ],
       "answer_framework": {
         "structure": "Framework",
@@ -957,7 +958,8 @@
       "category": "manager",
       "seniority": [
         "mid",
-        "senior"
+        "senior",
+        "manager"
       ],
       "answer_framework": {
         "structure": "STAR",
@@ -985,7 +987,8 @@
       "category": "manager",
       "seniority": [
         "mid",
-        "senior"
+        "senior",
+        "manager"
       ],
       "answer_framework": {
         "structure": "Framework",
@@ -1014,7 +1017,8 @@
       "seniority": [
         "entry",
         "mid",
-        "senior"
+        "senior",
+        "manager"
       ],
       "answer_framework": {
         "structure": "Framework",
@@ -1042,7 +1046,8 @@
       "category": "manager",
       "seniority": [
         "mid",
-        "senior"
+        "senior",
+        "manager"
       ],
       "answer_framework": {
         "structure": "Framework",

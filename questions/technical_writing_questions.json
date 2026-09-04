@@ -134,7 +134,8 @@
       "category": "manager",
       "seniority": [
         "mid",
-        "senior"
+        "senior",
+        "manager"
       ],
       "answer_framework": {
         "structure": "Framework",
@@ -445,7 +446,8 @@
       "category": "manager",
       "seniority": [
         "mid",
-        "senior"
+        "senior",
+        "manager"
       ],
       "answer_framework": {
         "structure": "Framework",

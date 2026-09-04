@@ -957,7 +957,8 @@
       "id": "csuc_033",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you structure and size a customer success team?",
       "answer_framework": {
@@ -986,7 +987,8 @@
       "id": "csuc_034",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "What metrics do you run the customer success function on?",
       "answer_framework": {
@@ -1015,7 +1017,8 @@
       "id": "csuc_035",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you hire for customer success?",
       "answer_framework": {
@@ -1044,7 +1047,8 @@
       "id": "csuc_036",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you coach a customer success manager whose accounts are churning?",
       "answer_framework": {
@@ -1073,7 +1077,8 @@
       "id": "csuc_037",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you get the product team to act on customer feedback?",
       "answer_framework": {
@@ -1102,7 +1107,8 @@
       "id": "csuc_038",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you build the operations side of customer success?",
       "answer_framework": {
@@ -1131,7 +1137,8 @@
       "id": "csuc_039",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you handle a quarter where retention is going to miss?",
       "answer_framework": {
@@ -1160,7 +1167,8 @@
       "id": "csuc_040",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you handle handing accounts between customer success managers?",
       "answer_framework": {

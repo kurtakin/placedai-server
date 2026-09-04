@@ -1065,7 +1065,8 @@
       "id": "rta_036",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you lead a recruiting team?",
       "answer_framework": {
@@ -1094,7 +1095,8 @@
       "id": "rta_037",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you plan recruiting capacity against a hiring plan?",
       "answer_framework": {
@@ -1123,7 +1125,8 @@
       "id": "rta_038",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "What recruiting metrics do you report to leadership?",
       "answer_framework": {
@@ -1152,7 +1155,8 @@
       "id": "rta_039",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you decide between in house recruiting and agencies?",
       "answer_framework": {
@@ -1181,7 +1185,8 @@
       "id": "rta_040",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you train hiring managers and interviewers?",
       "answer_framework": {
@@ -1210,7 +1215,8 @@
       "id": "rta_041",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you handle a hiring freeze or a reduction?",
       "answer_framework": {
@@ -1239,7 +1245,8 @@
       "id": "rta_042",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you choose and implement recruiting tools?",
       "answer_framework": {
@@ -1268,7 +1275,8 @@
       "id": "rta_043",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you build a diverse pipeline without lowering the bar?",
       "answer_framework": {

@@ -109,7 +109,8 @@
       "id": "qa_005",
       "seniority": [
         "mid",
-        "senior"
+        "senior",
+        "manager"
       ],
       "answer_framework": {
         "structure": "Framework",
@@ -311,7 +312,8 @@
       "id": "qa_016",
       "seniority": [
         "mid",
-        "senior"
+        "senior",
+        "manager"
       ],
       "answer_framework": {
         "structure": "STAR",
@@ -822,7 +824,8 @@
       "id": "qa_035",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you build and structure a QA team?",
       "answer_framework": {
@@ -851,7 +854,8 @@
       "id": "qa_036",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you move testing earlier in the process?",
       "answer_framework": {
@@ -880,7 +884,8 @@
       "id": "qa_037",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "What quality metrics do you report to leadership?",
       "answer_framework": {
@@ -909,7 +914,8 @@
       "id": "qa_038",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you manage automation debt against new feature testing?",
       "answer_framework": {
@@ -938,7 +944,8 @@
       "id": "qa_039",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you onboard and develop a junior tester?",
       "answer_framework": {
@@ -967,7 +974,8 @@
       "id": "qa_040",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you work with an outsourced or offshore testing team?",
       "answer_framework": {

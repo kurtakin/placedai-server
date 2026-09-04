@@ -1060,7 +1060,8 @@
       "id": "cbt_036",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you run a crew day to day?",
       "answer_framework": {
@@ -1089,7 +1090,8 @@
       "id": "cbt_037",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you schedule and sequence subcontractors?",
       "answer_framework": {
@@ -1118,7 +1120,8 @@
       "id": "cbt_038",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you manage a job budget and cost codes?",
       "answer_framework": {
@@ -1147,7 +1150,8 @@
       "id": "cbt_039",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you run safety for your crew beyond wearing the gear?",
       "answer_framework": {
@@ -1176,7 +1180,8 @@
       "id": "cbt_040",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you hire and develop apprentices and tradespeople?",
       "answer_framework": {
@@ -1205,7 +1210,8 @@
       "id": "cbt_041",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you handle someone on the crew who is not performing?",
       "answer_framework": {
@@ -1234,7 +1240,8 @@
       "id": "cbt_042",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "How do you manage the relationship with the general contractor or the client?",
       "answer_framework": {
@@ -1263,7 +1270,8 @@
       "id": "cbt_043",
       "category": "manager",
       "seniority": [
-        "senior"
+        "senior",
+        "manager"
       ],
       "text": "What documentation do you keep on a job and why?",
       "answer_framework": {
