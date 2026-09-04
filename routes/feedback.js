@@ -65,7 +65,9 @@ async function feedbackRoutes(fastify) {
       }
     } else {
       // No Supabase — log only (dev mode)
-      fastify.log.info('[feedback] (dev mode, not persisted)', { userId, rating, category, content });
+      // content loglanmiyor: kullanicinin yazdigi serbest metin. Bu dal
+      // yalnizca Supabase yokken (gelistirme) calisiyor ama yine de girmesin.
+      fastify.log.info({ userId, rating, category, contentChars: String(content || '').length }, '[feedback] (dev mode, not persisted)');
     }
 
     return reply.status(201).send({ ok: true, message: 'Feedback received, thank you!' });

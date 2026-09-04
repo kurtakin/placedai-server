@@ -66,7 +66,34 @@ const PORT = process.env.PORT || 3001;
 
 async function build() {
   const app = Fastify({
-    logger: process.env.NODE_ENV !== 'production',
+    // Uretimde de ACIK. Eskiden `NODE_ENV !== 'production'` idi, yani
+    // Railway'de logger: false. Fastify'in log nesnesi sessiz bir kukla
+    // oluyordu ve 77 fastify.log cagrisinin HICBIRI hicbir yere yazmiyordu.
+    // 42'si error logu. Uretimde bir sey patladiginda tek satir iz kalmiyordu.
+    //
+    // Olcum tarafi da bu yuzden kordu: [aid] first token ve [aid/cues]
+    // satirlari kodda duruyor ama bir hafta boyunca Railway logunda tek ornegi
+    // yok. Gecikme calismasinin tamami bu satirlara dayaniyor.
+    //
+    // Gizlilik: bu satirlar soru, cevap ya da CV metni TASIMIYOR; sadece ms,
+    // model adi, ip ucu sayisi, karakter sayisi gibi alanlar. Landing
+    // sayfasindaki "sorularin metnini loglamiyoruz" sozu bozulmuyor. Metin
+    // tasiyan iki satir bu commit'te ayrica budandi.
+    logger: {
+      level: process.env.LOG_LEVEL || (process.env.NODE_ENV === 'production' ? 'info' : 'debug'),
+      // Bir kaza sonucu Authorization basligi loga dusmesin.
+      redact: {
+        paths: [
+          'req.headers.authorization', 'req.headers.cookie',
+          'headers.authorization', 'authorization', 'token', 'client_secret',
+        ],
+        remove: true,
+      },
+    },
+    // Her HTTP istegi icin otomatik iki satir istemiyoruz. Ihtiyacimiz olan
+    // sey kasitli olarak yazdigimiz olcum ve hata satirlari; gerisi gurultu
+    // ve gurultu loglari okunmaz hale getiriyor.
+    disableRequestLogging: true,
     bodyLimit: 10 * 1024 * 1024, // 10MB — audio files can be large
   });
 

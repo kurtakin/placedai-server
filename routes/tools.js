@@ -234,7 +234,9 @@ async function toolsRoutes(fastify) {
 
       const jobData = safeParseJSON(raw);
       if (!jobData) {
-        fastify.log.error({ raw }, '[tools/parse-job-text] JSON parse failed');
+        // Ham yanitin tamami degil ilk 200 karakter: bu metin kullanicinin
+        // yapistirdigi is ilanindan turuyor ve loga tam girmemeli.
+        fastify.log.error({ rawPreview: String(raw || '').slice(0, 200) }, '[tools/parse-job-text] JSON parse failed');
         return reply.code(500).send({ error: 'Parse failed, the AI response was not valid JSON. Please try again.' });
       }
 

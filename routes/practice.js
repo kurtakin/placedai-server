@@ -471,7 +471,9 @@ Evaluate this answer against the framework and return your JSON scorecard.`.trim
       try {
         evaluation = JSON.parse(clean);
       } catch {
-        fastify.log.error({ raw }, '[practice] Failed to parse Claude JSON response');
+        // Ham yanitin tamami degil ilk 200 karakter: bu metin kullanicinin
+        // CV'sinden ve sorusundan turuyor, loga tam girmemeli.
+        fastify.log.error({ rawPreview: String(raw || '').slice(0, 200) }, '[practice] Failed to parse Claude JSON response');
         return reply.code(500).send({ error: 'Evaluation parsing failed', raw });
       }
 
