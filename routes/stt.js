@@ -18,6 +18,34 @@ const { getLiveUsage, addLiveSeconds } = require('../lib/usage');
 // kılınabilir; hata metni istemciye döner ki körlemesine tahmin etmeyelim.
 const MODEL = process.env.REALTIME_STT_MODEL || 'gpt-4o-transcribe';
 
+// Sunucu VAD'inin turu kapatmadan once bekledigi sessizlik.
+//
+// Bu deger dogrudan kritik yolda: uretimde olculdu (5 Eylul), sesin bitisinden
+// ipucunun ekrana gelmesine kadar, overlay'in kendi kod yolunda:
+//
+//   500 ms (eski) : 1.459 / 1.405 / 1.498 ms
+//   300 ms (yeni) : 1.009 / 1.009 ms
+//
+// Yani ~450 ms. Ilk kismi metnin gecikmesi neredeyse birebir bu degere esit.
+//
+// Neden 300'un altina inmiyoruz: esik konusmacinin cumle ici duraklamasindan
+// kisa oldugunda tur erken kapaniyor ve soru ikiye bolunuyor. Olculdu:
+// 300 + 350 ms duraklama butun kaldi, 300 + 500 ms duraklama bolundu,
+// 200 + 350 ms duraklama bolundu. Bolunme artik olumcul degil — overlay
+// tarafindaki joinIfContinuation devami birlestiriyor (5 Eylul, df8eab6) —
+// ama bedava da degil: fazladan bir uretim ve ekranda kisa sureli yanlis
+// cevap demek. 300 iki tarafi da gozeten deger.
+//
+// Ortam degiskeni deneme icin: dagitim yapmadan denemek isteyen
+// realtime-stt.js uzerinden session.update ile de degistirebilir.
+const SILENCE_MS = (() => {
+  const raw = Number(process.env.REALTIME_STT_SILENCE_MS);
+  if (!Number.isFinite(raw)) return 300;
+  // Sinirlar keyfi degil: 200'un altinda olculen bolunme, 800'un ustunde
+  // olculen gecikme kabul edilemez hale geliyor.
+  return Math.min(800, Math.max(200, Math.round(raw)));
+})();
+
 async function sttRoutes(fastify) {
   fastify.addHook('preHandler', requireAuth);
 
@@ -45,7 +73,7 @@ async function sttRoutes(fastify) {
           input: {
             format:         { type: 'audio/pcm', rate: 24000 },
             transcription:  { model: MODEL },
-            turn_detection: { type: 'server_vad', silence_duration_ms: 500 },
+            turn_detection: { type: 'server_vad', silence_duration_ms: SILENCE_MS },
           },
         },
       },
@@ -80,6 +108,7 @@ async function sttRoutes(fastify) {
       return {
         client_secret: secret,
         model:         MODEL,
+        silence_ms:    SILENCE_MS,
         expires_at:    data.expires_at || null,
         // Istemci kalan sureyi bilsin: gostergeyi ve uyariyi buna gore cizecek.
         remaining_seconds: quota.remaining_seconds,
