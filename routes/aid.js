@@ -465,6 +465,14 @@ async function aidRoutes(fastify) {
       '  cue 3 names the KIND of outcome to mention ("the accuracy gain you achieved"),',
       '  never a made-up one. The candidate may read this out loud in a real interview.',
       '- Always output three cues.',
+      // 5 Eylul 2026'da olculdu: model uc sorunun ikisinde su cevabi
+      // donduruyordu -> "I'm sorry, but I don't have the candidate's profile
+      // to generate specific cues." Yani reddediyordu, yavas degildi (284 ms).
+      // Ipuclari bos donunce istemci Claude akisindaki POINTS satirini
+      // beklemek zorunda kaliyor ve hizli yol tamamen devre disi kaliyor.
+      '- If no profile is given, or it is thin, STILL output three cues using the question alone.',
+      '- Never apologise. Never explain. Never say you lack information or context.',
+      '- Never ask a question back. The candidate is speaking right now and cannot answer you.',
       '- Output exactly one line, nothing else: cue one | cue two | cue three',
       langName && language !== 'en' ? `- Write the cues in ${langName}.` : '',
     ].filter(Boolean).join('\n');
