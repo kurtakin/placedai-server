@@ -106,10 +106,24 @@ async function build() {
     process.env.WEB_APP_ORIGIN, // optional override via env var
   ].filter(Boolean);
 
+  // maxAge olmadan Chrome preflight cevabini sadece 5 saniye tutuyor. Mulakatta
+  // sorular arasi 20+ saniye var, yani her soru /cues ve /stream icin bir ek
+  // gidis-donus odemis oluyor. Olculdu: 6 sn bosluktan sonra 330 ms, art arda
+  // 165 ms — aradaki 165 ms tam olarak bir round-trip. 7200 Chrome'un tavani,
+  // daha buyuk vermek ise yaramiyor.
+  // Timing-Allow-Origin: tarayicinin Resource Timing kirilimini capraz-origin
+  // istekte gorebilmek icin. Sadece zamanlama acar, kullanici icerigi tasimaz.
   await app.register(cors, {
     origin: allowedOrigins,
     methods: ['GET', 'POST', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
+    maxAge: 7200,
+  });
+
+  // onRequest: basliklar daha gonderilmeden yaziliyor. onSend olsaydi SSE
+  // (text/event-stream) yanitlarinda akisin ustune binme riski olurdu.
+  app.addHook('onRequest', async (request, reply) => {
+    reply.header('Timing-Allow-Origin', '*');
   });
 
   // ── Routes ────────────────────────────────────────────────────────────────
