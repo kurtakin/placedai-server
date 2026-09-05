@@ -487,10 +487,12 @@ async function aidRoutes(fastify) {
       const groq = require('../lib/groq');
       let raw;
 
+      let meta = null;
       if (groq.isConfigured()) {
         raw = await groq.createMessage({
           model: 'groq-fast', max_tokens: 60, temperature: 0.3,
           system, messages: [{ role: 'user', content: userPrompt }],
+          onMeta: (m) => { meta = m; },
         });
       } else {
         // Groq yoksa mevcut sağlayıcıya düş — yine paralel, sadece daha yavaş
@@ -503,8 +505,19 @@ async function aidRoutes(fastify) {
 
       const cues = parseCues(raw);
 
-      fastify.log.info({ ms: Date.now() - t0, cues: cues.length, groq: groq.isConfigured() }, '[aid/cues]');
+      // ms - groq_ms = Groq'a gidip gelen ag + bizim isleme payimiz. Bolge
+      // karari (G21) bu farka bakiyor: fark buyukse sunucu Groq'tan uzak
+      // demektir ve sunucuyu kullaniciya yaklastirmak o farki buyutur.
+      fastify.log.info({
+        ms: Date.now() - t0, cues: cues.length, groq: groq.isConfigured(),
+        ...(meta ? { groq_ms: meta.groq_ms, kuyruk_ms: meta.kuyruk_ms,
+                     uretim_ms: meta.uretim_ms, giris_tok: meta.giris_tok,
+                     ag_ms: meta.groq_ms != null ? (Date.now() - t0) - meta.groq_ms : null } : {}),
+      }, '[aid/cues]');
       const out = { cues, ms: Date.now() - t0 };
+      // Olcum icin istemciye de ver: Railway loguna bakmadan kirilim gorunsun.
+      if (meta) out.timing = { groq_ms: meta.groq_ms, kuyruk_ms: meta.kuyruk_ms,
+                               uretim_ms: meta.uretim_ms, giris_tok: meta.giris_tok };
       // Boş çıktıysa modelin ne döndürdüğünü görebilelim — sessiz başarısızlık
       // en kötü hata türü.
       if (!cues.length) {
