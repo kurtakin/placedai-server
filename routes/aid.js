@@ -505,19 +505,29 @@ async function aidRoutes(fastify) {
 
       const cues = parseCues(raw);
 
-      // ms - groq_ms = Groq'a gidip gelen ag + bizim isleme payimiz. Bolge
-      // karari (G21) bu farka bakiyor: fark buyukse sunucu Groq'tan uzak
-      // demektir ve sunucuyu kullaniciya yaklastirmak o farki buyutur.
+      // ag_ms = ms - kuyruk - groq. Groq'un `total_time` alani KUYRUGU
+      // ICERMIYOR; queue_time ayri geliyor. Ilk yazdigimda `ms - groq_ms`
+      // demistim ve kuyrugu aga sayiyordum - 6 Eylul olcumunde bu, ag'i
+      // 120-590 ms arasi savruluyor gosterdi. Dogru formulle ag 34-47 ms'de
+      // sabit kaliyor; savrulan sey kuyruktu. Yanlis olcen bir metrik
+      // olcmemekten kotudur, o yuzden formul burada yaziyor.
       fastify.log.info({
         ms: Date.now() - t0, cues: cues.length, groq: groq.isConfigured(),
         ...(meta ? { groq_ms: meta.groq_ms, kuyruk_ms: meta.kuyruk_ms,
                      uretim_ms: meta.uretim_ms, giris_tok: meta.giris_tok,
-                     ag_ms: meta.groq_ms != null ? (Date.now() - t0) - meta.groq_ms : null } : {}),
+                     ag_ms: (meta.groq_ms != null && meta.kuyruk_ms != null)
+                              ? (Date.now() - t0) - meta.kuyruk_ms - meta.groq_ms : null } : {}),
       }, '[aid/cues]');
       const out = { cues, ms: Date.now() - t0 };
       // Olcum icin istemciye de ver: Railway loguna bakmadan kirilim gorunsun.
-      if (meta) out.timing = { groq_ms: meta.groq_ms, kuyruk_ms: meta.kuyruk_ms,
-                               uretim_ms: meta.uretim_ms, giris_tok: meta.giris_tok };
+      // model: G22'nin ilk sorusu "su an hangi model kosuyor". pickModel()
+      // katalogdan seciyor ve katalog degisiyor (K10), yani sabit degil.
+      // Olcumun yaninda model adi olmazsa rakamlar bir sonraki katalog
+      // degisiminde sessizce baska bir modele ait olur.
+      if (meta) out.timing = { model: meta.model,
+                               groq_ms: meta.groq_ms, kuyruk_ms: meta.kuyruk_ms,
+                               prompt_ms: meta.prompt_ms, uretim_ms: meta.uretim_ms,
+                               giris_tok: meta.giris_tok, cikis_tok: meta.cikis_tok };
       // Boş çıktıysa modelin ne döndürdüğünü görebilelim — sessiz başarısızlık
       // en kötü hata türü.
       if (!cues.length) {
