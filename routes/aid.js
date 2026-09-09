@@ -310,9 +310,42 @@ function splitPointsAndAnswer(raw) {
  * İdeal biçim "a | b | c" ama modeller satır sonu, tire veya numara da
  * kullanabiliyor — hepsini kabul et, boş dönmektense esnek ol.
  */
+// Modelin kendi dusunme metni ipucu diye ekrana cikmasin.
+//
+// 9 Eylul 2026'da uretimde olculdu: model qwen/qwen3.6-27b bir "dusunen"
+// model ve cikti soyle geliyordu:
+//   ipucu 1: <think>
+//   ipucu 2: Here's a thinking process:
+//   ipucu 3: **Analyze User Input:**
+// Dort sorunun dordunde de ayni. Yani mulakat sirasinda kullanicinin
+// ekraninda ipucu yerine bu yaziyordu.
+//
+// Neden gorunmedi: cikti `|` ve satir sonlariyla tam uce boluniyor, uzunluk
+// filtresini de geciyor, yani sistem "uc ipucu urettim" saniyordu.
+// /cues yalnizca cues.length === 0 oldugunda alarm veriyor. Uzunluk 3'tu.
+//
+// Ayrica 60 token butcesinin TAMAMI dusunmeye gidiyordu (cikis_tok her
+// koside 60), yani gercek cevaba hic sira gelmiyordu.
+//
+// Bos donmek yanlis donmekten iyi: bos donunce overlay Claude akisindaki
+// gercek cevabi bekliyor. Yavas ama dogru.
+const DUSUNME_KALIBI =
+  /^\s*(?:<think>|<\/?thinking>|Here'?s (?:a|my) (?:thinking|reasoning|thought)|Okay,? (?:so )?(?:let'?s|I|the user)|\*\*(?:Analyz|Understand|Break|Consider|Deconstruct|Initial)|Let me (?:think|analyz|break))/i;
+
+/** Cikti modelin dusunme metni mi? */
+function dusunmeMetni(text) {
+  return DUSUNME_KALIBI.test(text) || /<think>/i.test(text);
+}
+
 function parseCues(raw) {
   let text = String(raw || '').trim();
   if (!text) return [];
+
+  // Kapali <think>...</think> blogunu at. Kapanmamis olani da at: model
+  // token butcesini dusunmeye harcadiginda kapanis etiketi hic gelmiyor.
+  text = text.replace(/<think>[\s\S]*?<\/think>/gi, '').replace(/<think>[\s\S]*$/i, '').trim();
+
+  if (!text || dusunmeMetni(text)) return [];
 
   text = text.replace(/^\s*(POINTS|CUES)\s*:\s*/i, '');
 
@@ -533,6 +566,14 @@ async function aidRoutes(fastify) {
       if (!cues.length) {
         out.raw_preview = String(raw || '').slice(0, 200);
         out.diag        = groq.isConfigured() ? groq.diagnostics() : { model: 'claude-haiku' };
+        // Dusunme metni ayri bir hata turu: model yanlis secilmis demektir,
+        // gecici bir aksaklik degil. Log'da ayirt edilebilsin.
+        const dusunme = dusunmeMetni(String(raw || '').trim());
+        fastify.log.error({
+          model: meta?.model ?? null, dusunme,
+          cikis_tok: meta?.cikis_tok ?? null,
+          onizleme: String(raw || '').slice(0, 120),
+        }, dusunme ? '[aid/cues] MODEL DUSUNME METNI DONDURDU' : '[aid/cues] bos ipucu');
       }
       return out;
     } catch (err) {
