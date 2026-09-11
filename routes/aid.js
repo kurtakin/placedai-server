@@ -258,6 +258,43 @@ detail becomes their lie, and can cost them the offer at reference check.`;
 //
 // Cozum istemcide DEGIL. Birlestirmeyi bozmak B ve C'yi kirar. Sinirin
 // nerede oldugunu dilbilgisiyle tahmin etmek yerine modele soyluyoruz.
+/**
+ * Birlesmis metindeki SON cumleyi ayirir.
+ *
+ * Neden: audio.js devam parcalarini birlestirdigi icin metinde birden fazla
+ * soru olabiliyor. 11 Eylul 2026'da uretimde olculdu, modele "yalnizca son
+ * soruyu cevapla" demek YETMEDI:
+ *
+ *   "What is your greatest strength? And what is your biggest weakness?"
+ *   + profil -> Data-driven forecasting | SAP IBP modeling | Reduced forecast error
+ *   (uc kosumda da zaaf hic gecmedi)
+ *
+ * Ayirt edici testte model ucuncu ipucunu son soruya ayirip ilk ikisini
+ * birinciye veriyordu:
+ *   "Tell me about your forecasting experience. And are you willing to relocate?"
+ *   -> SAP IBP statistical modeling | Reduced MAPE significantly | Willing to relocate
+ *
+ * Sebep: /cues prompt'u uc ipucunun seklini sabitliyor ("acilis, ornek,
+ * sonuc") ve "profile dayandir" diyor. Eklenen kural bunlarla yarisip
+ * kaybediyor. Talimatla cozulecek bir sey degil, o yuzden ayirmayi BIZ
+ * yapiyoruz ve modele tek soru veriyoruz.
+ *
+ * SINIRI: konusma tanima noktalama uretmezse ayirma tetiklenmez ve bugunku
+ * davranisa doneriz. Bu bir iyilestirme, garanti degil.
+ */
+function sonSoruyuAyir(metin) {
+  const ham = String(metin || '').trim();
+  const parcalar = ham.split(/(?<=[?.!])\s+/).map((x) => x.trim()).filter(Boolean);
+  if (parcalar.length < 2) return { onceki: '', son: ham };
+
+  const son = parcalar[parcalar.length - 1];
+  // Cok kisa bir kuyruk ("Right?", "Ok.") soru degil, kirpinti. Onu ayirmak
+  // gercek soruyu baglama surer ve cevabi tamamen kaybederiz.
+  if (son.split(/\s+/).length < 4) return { onceki: '', son: ham };
+
+  return { onceki: parcalar.slice(0, -1).join(' '), son };
+}
+
 const SON_SORU_KURALI = `
 
 The text may contain more than one question, because the interviewer paused
@@ -467,7 +504,13 @@ async function aidRoutes(fastify) {
     // 1500 chars, not 400: the candidate profile, the target role and the
     // learned corrections all travel in this field — 400 truncated the CV away.
     const jdSection    = hasJdContext  ? `\n\nJOB CONTEXT: ${jd_context.slice(0, 1500)}`         : '';
-    const userPrompt = `${sector} / ${seniority}: "${question.trim()}"${memory ? memory : ''}${jdSection}${webSection}`;
+    // /cues ile ayni ayirma. Iki yol ayni soruyu cevaplamali; biri ayirip
+    // digeri ayirmazsa ekrandaki ipuclari ile sesli cevap birbirini tutmaz.
+    const { onceki: akisOncesi, son: akisSon } = sonSoruyuAyir(question);
+    const oncekiBolum = akisOncesi
+      ? `\n\nEARLIER IN THE SAME TURN (context only, do not answer this):\n${akisOncesi}`
+      : '';
+    const userPrompt = `${sector} / ${seniority}: "${akisSon}"${oncekiBolum}${memory ? memory : ''}${jdSection}${webSection}`;
     const t0 = Date.now();
 
     // Use model from request body, fall back to claude-haiku
@@ -558,8 +601,13 @@ async function aidRoutes(fastify) {
       langName && language !== 'en' ? `- Write the cues in ${langName}.` : '',
     ].filter(Boolean).join('\n');
 
+    // Metinde birden fazla cumle varsa modele YALNIZCA sonuncusunu soru olarak
+    // veriyoruz; oncesi ayri ve etiketli bir baglam alanina gidiyor. Modele
+    // "sonuncuyu cevapla" demek olcumde yetmedi, bkz. sonSoruyuAyir.
+    const { onceki, son } = sonSoruyuAyir(question);
     const userPrompt = [
-      `Question: "${String(question).trim()}"`,
+      `Question: "${son}"`,
+      onceki ? `\nEARLIER IN THE SAME TURN (context only, do not answer this):\n${onceki}` : '',
       jd_context ? `\nCANDIDATE PROFILE AND TARGET ROLE:\n${String(jd_context).slice(0, 1500)}` : '',
     ].join('');
 
@@ -906,3 +954,4 @@ async function aidRoutes(fastify) {
 }
 
 module.exports = aidRoutes;
+module.exports.sonSoruyuAyir = sonSoruyuAyir;
