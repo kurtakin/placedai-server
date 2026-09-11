@@ -233,6 +233,40 @@ drop in forecast error") or leave a slot the candidate can fill from memory.
 The candidate speaks this answer aloud in a real interview, so a fabricated
 detail becomes their lie, and can cost them the offer at reference check.`;
 
+// Birlesmis transkriptte BIRDEN FAZLA soru olabilir.
+//
+// audio.js soruyu parca parca aliyor ve devam niteligindeki parcalari
+// birlestiriyor (joinIfContinuation, 4 saniyelik pencere). Bu birlestirme
+// olcuyle DOGRULANDI ve gerekli:
+//
+//   B "How do you decide what to work on first" + "when everything on your
+//     list looks urgent?"  -> birlesmeli, ayri ayri anlamsiz
+//   C "Tell me about a project you led that succeeded." + "And then tell me
+//     what you would do differently ... with half the budget."
+//     -> birlesmeli, ikinci yari birinciye atif yapiyor
+//
+// Ama ayni birlestirme ARKA ARKAYA IKI AYRI soruyu da birlestiriyor:
+//
+//   D "What is your greatest strength?" + "And what is your biggest weakness?"
+//     -> "What is your greatest strength And what is your biggest weakness?"
+//
+// 11 Eylul 2026'da uretimde olculdu: model bu metinde yalnizca BIRINCI soruyu
+// cevapliyordu. Ekrandaki ipuclari "Data-driven forecasting | SAP IBP modeling
+// | Reduced forecast error" idi, yani aday "en buyuk zaafin ne" sorusuyla
+// karsi karsiyayken ekraninda GUCLU YONLERI yaziyordu. Mulakatta bu,
+// yardimsiz kalmaktan daha kotu: yanlis cevabi guvenle okuyor.
+//
+// Cozum istemcide DEGIL. Birlestirmeyi bozmak B ve C'yi kirar. Sinirin
+// nerede oldugunu dilbilgisiyle tahmin etmek yerine modele soyluyoruz.
+const SON_SORU_KURALI = `
+
+The text may contain more than one question, because the interviewer paused
+mid-sentence or asked two things in a row. Answer ONLY the question asked
+LAST. Treat everything before it as context, not as something to answer. If
+the last question refers back to what came before ("do it again", "that
+project"), use that earlier text to understand it, but still answer only the
+final question.`;
+
 // Cue-first directive. The candidate is speaking RIGHT NOW, so the three cues
 // must arrive before the full answer — they are the only thing a person can
 // actually read mid-sentence. The overlay renders them the moment this first
@@ -263,6 +297,7 @@ function resolvePrompt(answer_length, has_web_context, interview_type = 'job_int
   // düşürür ve referans kontrolünde teklifini kaybettirir.
   system += NO_FABRICATION;
   system += NO_EM_DASH;
+  system += SON_SORU_KURALI;
 
   if (with_points) {
     // The base prompts end with "Output ONLY the spoken answer" — the format
