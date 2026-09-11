@@ -519,6 +519,19 @@ async function aidRoutes(fastify) {
       'The candidate is answering THIS question out loud right now. Give three cues that',
       'form the spine of the answer to THIS question, not a summary of their CV.',
       '',
+      // 11 Eylul 2026'da olculdu. Bu yol resolvePrompt'u KULLANMIYOR, kendi
+      // prompt'unu kuruyor; SON_SORU_KURALI'ni oraya eklemek buraya ulasmadi.
+      // audio.js devam parcalarini birlestirdigi icin metinde iki soru
+      // olabiliyor ("What is your greatest strength And what is your biggest
+      // weakness?") ve model yalnizca BIRINCISINI cue'luyordu. Aday "en buyuk
+      // zaafin ne" sorusuyla karsi karsiyayken ekraninda guclu yonleri
+      // yaziyordu. Profil verildiginde etki daha da guclu: ayni soru,
+      // baglamsiz "Overcommitting to projects" donerken baglamli
+      // "SAP IBP modeling" donuyordu.
+      'If the text holds more than one question, because the interviewer paused or asked',
+      'two things in a row, THIS question means the one asked LAST. Anything before it is',
+      'context that helps you understand it, never something to cue an answer for.',
+      '',
       'Cue 1 = how to open / the direct answer.',
       'Cue 2 = the specific example or reason that backs it up.',
       'Cue 3 = the outcome, number, or closing point.',

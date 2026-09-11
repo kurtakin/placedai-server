@@ -70,15 +70,72 @@ test('kural, oncesini BAGLAM olarak kullanmayi da soyluyor (C senaryosu bozulmas
     'geriye atif yapan son soru icin aciklama yok — C senaryosu (yarim butce) bozulabilir');
 });
 
-// ── Her yolda var mi ───────────────────────────────────────────────────────
-// Kural NO_FABRICATION'in yanina konuldu, yani with_points'ten bagimsiz.
-// /cues hizli yolu ile /stream akis yolu ayni kurali gormeli; biri gormezse
-// ekrandaki ipuclari ile sesli cevap FARKLI soruyu cevaplar.
-test('kural hem ipucu yolunda hem akis yolunda var', () => {
+// ── IKI AYRI PROMPT VAR ────────────────────────────────────────────────────
+// Bunu ilk yazdigimda kacirdim ve test beni YANILTTI.
+//
+// Ilk halinde su testi yazmistim:
+//
+//     for (const withPoints of [true, false]) { resolvePrompt(..., withPoints) }
+//
+// ve "kural hem ipucu yolunda hem akis yolunda var" diye adlandirmistim.
+// Yanlisti: with_points, /stream'in POINTS satiri icin. /cues hizli yolu
+// resolvePrompt'u HIC kullanmiyor, kendi sistem prompt'unu dizi olarak
+// kuruyor. 8 test geciyordu, alti mutasyon yakalaniyordu, ama kural ekrani
+// ILK boyayan yola hic ulasmamisti.
+//
+// 11 Eylul'de uretimde olculdu, ayni soru, tek fark jd_context:
+//   baglamsiz : Data-driven decision making | Overcommitting to projects | ...
+//   baglamli  : Data-driven forecasting | SAP IBP modeling | Reduced forecast error
+// Yani zaaf kismi tamamen kayboluyordu.
+//
+// Bu yuzden asagidaki testler resolvePrompt'a DEGIL, /cues'un kendi
+// prompt'una bakiyor.
+
+/** /cues rotasinin inline system prompt'unu kaynaktan kesip kurar. */
+function cuesPromptYukle(language = 'en') {
+  const bas = src.indexOf("    const system = [");
+  assert.notStrictEqual(bas, -1, '/cues system dizisi bulunamadi');
+  const son = src.indexOf("].filter(Boolean).join(", bas);
+  assert.ok(son > bas, '/cues system dizisinin sonu bulunamadi');
+  const dizi = src.slice(bas + '    const system = '.length, son + 1);
+  const LANGUAGE_NAMES = { en: 'English', tr: 'Turkish' };
+  return new Function('langName', 'language',
+    'return ' + dizi + ".filter(Boolean).join(String.fromCharCode(10));"
+  )(LANGUAGE_NAMES[language], language);
+}
+
+test('/cues prompt\'u da son soru kuralini iceriyor', () => {
+  const cues = cuesPromptYukle();
+  assert.match(cues, /more than one question/i,
+    '/cues prompt\'unda son soru kurali yok — ekrani ILK boyayan yol bu, ' +
+    'kural sadece /stream\'de kalirsa ipuclari yanlis soruyu cevaplar');
+  assert.match(cues, /asked\s+LAST/i, '/cues prompt\'unda LAST vurgusu yok');
+});
+
+test('/cues kurali oncesini BAGLAM saymayi soyluyor', () => {
+  const cues = cuesPromptYukle();
+  assert.match(cues, /context that helps you understand it/i,
+    'oncesinin baglam oldugu soylenmemis — C senaryosu (yarim butce) kirilir');
+});
+
+test('/cues prompt\'unun mevcut korumalari kaybolmadi', () => {
+  const cues = cuesPromptYukle();
+  assert.match(cues, /NEVER invent numbers/i,      'uydurma yasagi kaybolmus');
+  assert.match(cues, /Always output three cues/i,  'uc ipucu sarti kaybolmus');
+  assert.match(cues, /Never apologise/i,           'ozur dileme yasagi kaybolmus');
+  assert.match(cues, /exactly one line/i,          'tek satir bicimi kaybolmus');
+});
+
+test('/cues dil yonergesi hala calisiyor', () => {
+  assert.match(cuesPromptYukle('tr'), /Write the cues in Turkish/i);
+  assert.doesNotMatch(cuesPromptYukle('en'), /Write the cues in/i);
+});
+
+test('/stream yolunda da kural var (resolvePrompt)', () => {
   for (const withPoints of [true, false]) {
     const { system } = resolvePrompt('short', false, 'job_interview', 'en', withPoints);
     assert.match(system, /Answer ONLY the question asked\s+LAST/i,
-      `with_points=${withPoints} yolunda kural yok — ipuclari ve cevap farkli soruyu cevaplayabilir`);
+      `with_points=${withPoints} yolunda kural yok`);
   }
 });
 
