@@ -86,79 +86,11 @@ function safeParseJSON(raw) {
   return null;
 }
 
-function stripHTML(html) {
-  return html
-    .replace(/<script[\s\S]*?<\/script>/gi, '')
-    .replace(/<style[\s\S]*?<\/style>/gi, '')
-    .replace(/<[^>]+>/g, ' ')
-    .replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>')
-    .replace(/&nbsp;/g, ' ').replace(/&quot;/g, '"').replace(/&#39;/g, "'")
-    .replace(/\s{2,}/g, ' ')
-    .trim();
-}
-
-// ── HTTP fetcher (follows one redirect, 10s timeout) ─────────────────────────
-function fetchURL(rawUrl, redirectCount = 0) {
-  return new Promise((resolve, reject) => {
-    if (redirectCount > 4) return reject(new Error('Too many redirects'));
-    let parsed;
-    try { parsed = new NodeURL(rawUrl); }
-    catch { return reject(new Error('Invalid URL')); }
-
-    const client  = parsed.protocol === 'https:' ? https : http;
-    const options = {
-      hostname: parsed.hostname,
-      path:     parsed.pathname + parsed.search,
-      port:     parsed.port || (parsed.protocol === 'https:' ? 443 : 80),
-      method:   'GET',
-      headers:  {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36',
-        'Accept':     'text/html,application/xhtml+xml,*/*;q=0.9',
-        'Accept-Language': 'en-CA,en;q=0.9',
-        'Cache-Control': 'no-cache',
-      },
-    };
-
-    const req = client.request(options, (res) => {
-      if ((res.statusCode === 301 || res.statusCode === 302 || res.statusCode === 307) && res.headers.location) {
-        const loc = res.headers.location.startsWith('http') ? res.headers.location : `${parsed.protocol}//${parsed.host}${res.headers.location}`;
-        return fetchURL(loc, redirectCount + 1).then(resolve).catch(reject);
-      }
-      const chunks = [];
-      res.on('data', (c) => chunks.push(c));
-      res.on('end', () => resolve(Buffer.concat(chunks).toString('utf8', 0, 200000)));
-    });
-    req.on('error', reject);
-    req.setTimeout(12000, () => { req.destroy(); reject(new Error('Request timeout')); });
-    req.end();
-  });
-}
-
-// ── RSS parser (regex-based, no external deps) ────────────────────────────────
-function parseRSS(xml) {
-  const items = [];
-  const itemRx = /<item>([\s\S]*?)<\/item>/g;
-  let m;
-  while ((m = itemRx.exec(xml)) !== null) {
-    const raw = m[1];
-    const get = (tag) => {
-      const cdataM = new RegExp(`<${tag}[^>]*><!\\[CDATA\\[([\\s\\S]*?)\\]\\]>`, 'i').exec(raw);
-      if (cdataM) return cdataM[1].trim();
-      const tagM = new RegExp(`<${tag}[^>]*>([\\s\\S]*?)<\\/${tag}>`, 'i').exec(raw);
-      return tagM ? stripHTML(tagM[1]).trim() : '';
-    };
-    const title   = get('title');
-    const link    = get('link') || (/<link\s*\/?>([\s\S]*?)<\/(link|item)>/i.exec(raw) || [])[1] || '';
-    const company = get('source') || get('author') || '';
-    const desc    = get('description').slice(0, 400);
-    const date    = get('pubDate');
-    const location = get('location') || '';
-    if (title && link) {
-      items.push({ title, link: link.trim(), company, description: desc, date, location });
-    }
-  }
-  return items;
-}
+// ── Cekme ve besleme ayristirma: tek kaynak lib/net-feeds.js ──────────────────
+// stripHTML, fetchURL, parseRSS ve parseAtom artik burada tanimli DEGIL. Ayni
+// islerin iki kopyasi olmasin diye tasindi (K21).
+const { stripHTML, fetchURL } = require('../lib/net-feeds');
+const { searchJobs: kaynaklardanAra } = require('../lib/job-sources');
 
 // ── Job extraction prompt ─────────────────────────────────────────────────────
 const EXTRACT_JOB_SYSTEM = `You are a JSON-only job listing parser. Your entire response must be a single valid JSON object, no prose, no markdown, no code fences, no explanation before or after.
@@ -248,76 +180,25 @@ async function toolsRoutes(fastify) {
     }
   });
 
-  // ── POST /search-jobs — search Indeed Canada + Job Bank RSS ───────────────
+  // ── POST /search-jobs — resmi is ilani kaynaklari ──────────────────────────
+  //
+  // Kazima YOK. Sunucu kullanicinin uyeligiyle degil veri merkezi IP'siyle
+  // cikiyor; LinkedIn, Indeed, Glassdoor ve ZipRecruiter bunu engelliyor.
+  // Olculdu (12 Eylul 2026): eski surum her sorguda count:0 donuyordu.
+  //
+  // Cevap kaynak basina durum tasir; arayuz "kac site tarandi" sayisini
+  // kendi listesinden uydurmaz, buradan okur (K21).
   fastify.post('/search-jobs', async (request, reply) => {
-    const {
-      keywords = '',
-      location = '',
-      sources  = ['indeed', 'jobbank'],
-      radius   = 50,
-    } = request.body ?? {};
+    const { keywords = '', location = '', sources, rows = 25 } = request.body ?? {};
 
-    if (!keywords.trim()) {
-      return reply.code(400).send({ error: 'keywords required' });
+    try {
+      const sonuc = await kaynaklardanAra({ keywords, location, sources, rows });
+      return sonuc;
+    } catch (err) {
+      if (err.kullaniciHatasi) return reply.code(400).send({ error: err.message });
+      request.log.error({ err }, 'search-jobs basarisiz');
+      return reply.code(502).send({ error: 'Kaynaklara ulasilamadi', detay: err.message });
     }
-
-    const kw  = encodeURIComponent(keywords.trim());
-    const loc = encodeURIComponent(location.trim());
-    const results = [];
-
-    const searches = [];
-
-    if (sources.includes('indeed')) {
-      searches.push(
-        fetchURL(`https://ca.indeed.com/rss?q=${kw}&l=${loc}&radius=${radius}&sort=date`)
-          .then((xml) => {
-            const items = parseRSS(xml);
-            items.forEach((item) => results.push({ ...item, source: 'Indeed' }));
-          })
-          .catch((e) => fastify.log.warn(`Indeed fetch failed: ${e.message}`))
-      );
-    }
-
-    if (sources.includes('jobbank')) {
-      searches.push(
-        fetchURL(`https://www.jobbank.gc.ca/rss/jobsearch.xml?searchstring=${kw}&locationstring=${loc}`)
-          .then((xml) => {
-            const items = parseRSS(xml);
-            items.forEach((item) => results.push({ ...item, source: 'Job Bank' }));
-          })
-          .catch((e) => fastify.log.warn(`Job Bank fetch failed: ${e.message}`))
-      );
-    }
-
-    if (sources.includes('ziprecruiter')) {
-      searches.push(
-        fetchURL(`https://www.ziprecruiter.com/candidate/search?search=${kw}&location=${loc}&radius=${radius}`)
-          .then((html) => {
-            // ZipRecruiter doesn't have a public RSS; we do a best-effort HTML parse
-            const jobs = [];
-            const titleRx = /<h2[^>]*class="[^"]*job_title[^"]*"[^>]*>([\s\S]*?)<\/h2>/g;
-            let tm;
-            while ((tm = titleRx.exec(html)) !== null) {
-              jobs.push({ title: stripHTML(tm[1]).trim(), company: '', link: '', source: 'ZipRecruiter', description: '' });
-            }
-            jobs.slice(0, 10).forEach((j) => results.push(j));
-          })
-          .catch((e) => fastify.log.warn(`ZipRecruiter fetch failed: ${e.message}`))
-      );
-    }
-
-    await Promise.allSettled(searches);
-
-    // Sort by date (newest first), deduplicate by title+company
-    const seen = new Set();
-    const unique = results.filter((r) => {
-      const key = `${r.title}|${r.company}`.toLowerCase();
-      if (seen.has(key)) return false;
-      seen.add(key);
-      return true;
-    });
-
-    return { count: unique.length, jobs: unique.slice(0, 40) };
   });
 
   // ── POST /headshot — generate a professional headshot via DALL-E 3 ─────────
