@@ -91,6 +91,7 @@ function safeParseJSON(raw) {
 // islerin iki kopyasi olmasin diye tasindi (K21).
 const { stripHTML, fetchURL } = require('../lib/net-feeds');
 const { searchJobs: kaynaklardanAra } = require('../lib/job-sources');
+const { ilanCikarimiGecerliMi }         = require('../lib/job-extract');
 
 // ── Job extraction prompt ─────────────────────────────────────────────────────
 const EXTRACT_JOB_SYSTEM = `You are a JSON-only job listing parser. Your entire response must be a single valid JSON object, no prose, no markdown, no code fences, no explanation before or after.
@@ -137,6 +138,14 @@ async function toolsRoutes(fastify) {
       const jobData = safeParseJSON(raw);
       if (!jobData) return reply.code(500).send({ error: 'Parse failed, please try again.' });
 
+      // Cikarim ISE YARAR mi? Eskiden yalnizca girdinin uzunluguna bakiliyordu
+      // ve LinkedIn'in giris duvari o esigi CSS metniyle geciyordu; sonucta
+      // bos bir ilan HTTP 200 ile donuyor, arayuz yesil tik koyuyordu.
+      const denetim = ilanCikarimiGecerliMi(jobData);
+      if (!denetim.gecerli) {
+        return reply.code(422).send({ error: denetim.sebep, oneri: denetim.oneri });
+      }
+
       jobData.source_url = url;
       return jobData;
 
@@ -170,6 +179,11 @@ async function toolsRoutes(fastify) {
         // yapistirdigi is ilanindan turuyor ve loga tam girmemeli.
         fastify.log.error({ rawPreview: String(raw || '').slice(0, 200) }, '[tools/parse-job-text] JSON parse failed');
         return reply.code(500).send({ error: 'Parse failed, the AI response was not valid JSON. Please try again.' });
+      }
+
+      const denetim2 = ilanCikarimiGecerliMi(jobData);
+      if (!denetim2.gecerli) {
+        return reply.code(422).send({ error: denetim2.sebep, oneri: denetim2.oneri });
       }
 
       jobData.source_url = url || null;
