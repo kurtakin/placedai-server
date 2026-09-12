@@ -30,7 +30,7 @@ const fs       = require('node:fs');
 const path     = require('node:path');
 
 const { parseAtom, parseRSS, stripHTML } = require('./lib/net-feeds.js');
-const { searchJobs, SOURCES, tekillestir } = require('./lib/job-sources.js');
+const { searchJobs, SOURCES, tekillestir, VARSAYILAN_KAYNAKLAR } = require('./lib/job-sources.js');
 
 // Uretimden birebir alinan gercek Job Bank girdisi (12 Eylul 2026).
 const JOBBANK_ATOM = `<?xml version="1.0" encoding="UTF-8"?>
@@ -131,7 +131,7 @@ test('B3: bir kaynak patlarsa digeri sonuc dondurmeye devam ediyor', async () =>
   SOURCES.jobbank.ara = sahteKaynak(new Error('HTTP 404'));
   SOURCES.adzuna.ara  = sahteKaynak([{ title: 'Analyst', link: 'https://a.test/1', company: 'X', source: 'Adzuna' }]);
   try {
-    const r = await searchJobs({ keywords: 'analyst' });
+    const r = await searchJobs({ keywords: 'analyst', sources: ['jobbank', 'adzuna'] });
     assert.strictEqual(r.count, 1, 'saglam kaynak da dusurulmus');
     const jb = r.sources.find((s) => s.key === 'jobbank');
     assert.strictEqual(jb.status, 'error');
@@ -147,7 +147,7 @@ test('B4: sonuc dondurmeyen kaynak "none", donduren "found" ve sayisi dogru', as
   ]);
   SOURCES.adzuna.ara = sahteKaynak([]);
   try {
-    const r = await searchJobs({ keywords: 'analyst' });
+    const r = await searchJobs({ keywords: 'analyst', sources: ['jobbank', 'adzuna'] });
     const jb = r.sources.find((s) => s.key === 'jobbank');
     const ad = r.sources.find((s) => s.key === 'adzuna');
     assert.strictEqual(jb.status, 'found');
@@ -219,4 +219,64 @@ test('D3: Job Bank 404 donen eski adresi kullanmiyor', () => {
 test('D4: stripHTML bos ve null girdide patlamiyor', () => {
   assert.strictEqual(stripHTML(''), '');
   assert.strictEqual(stripHTML(null), 'null');
+});
+
+// ── Erisilebilirlik ve sayim tutarliligi ────────────────────────────────────
+
+test('E1: varsayilan kaynaklar YALNIZCA sunucudan erisilebilenler', () => {
+  // Job Bank Railway IP'sini reddediyor: 12 Eylul 2026, bes kez uste uste
+  // read ECONNRESET, ana sayfa dahil. Ayni anda example.com 200 donuyordu.
+  // Varsayilanda kalirsa her aramada kirmizi hata gorunur.
+  assert.ok(!VARSAYILAN_KAYNAKLAR.includes('jobbank'), 'erisilemeyen kaynak varsayilanda');
+  assert.ok(VARSAYILAN_KAYNAKLAR.includes('adzuna'), 'erisilebilir kaynak varsayilanda yok');
+  for (const k of VARSAYILAN_KAYNAKLAR) {
+    assert.strictEqual(SOURCES[k].sunucudanErisilebilir, true, k + ' erisilebilir isaretli degil');
+  }
+});
+
+test('E2: Job Bank tanimi SILINMEDI, acikca istenebiliyor', () => {
+  // Masaustu uygulamasi kullanicinin kendi baglantisindan cikiyor, orada
+  // calisabilir. Tanimi silmek o yolu da kapatirdi.
+  assert.ok(Object.prototype.hasOwnProperty.call(SOURCES, 'jobbank'), 'Job Bank tanimi silinmis');
+  assert.strictEqual(typeof SOURCES.jobbank.ara, 'function');
+});
+
+test('E3: kaynak sayilari tekrar ayiklama SONRASI, toplam ile tutarli', async () => {
+  // Once kutuda 25, ozet satirinda 23 yaziyordu: ikisi farkli sey sayiyordu.
+  const oJ = SOURCES.jobbank.ara, oA = SOURCES.adzuna.ara;
+  SOURCES.jobbank.ara = sahteKaynak([
+    { title: 'Data Analyst', company: 'Acme', link: 'https://a.test/1' },
+    { title: 'Nurse',        company: 'Beta', link: 'https://a.test/2' },
+  ]);
+  SOURCES.adzuna.ara = sahteKaynak([
+    { title: 'data analyst!', company: 'ACME', link: 'https://b.test/1' },
+    { title: 'Engineer',      company: 'Gama', link: 'https://b.test/3' },
+  ]);
+  try {
+    const r = await searchJobs({ keywords: 'x', sources: ['jobbank', 'adzuna'] });
+    assert.strictEqual(r.count, 3, 'tekrar ayiklanmis toplam beklenenden farkli');
+    const toplam = r.sources.reduce((a, s) => a + s.count, 0);
+    assert.strictEqual(toplam, r.count, 'kaynak sayilari toplami genel sayiyla tutmuyor: ' + toplam + ' vs ' + r.count);
+  } finally { SOURCES.jobbank.ara = oJ; SOURCES.adzuna.ara = oA; }
+});
+
+test('E4: tekrar ayiklanip sifira dusen kaynak artik found degil', async () => {
+  const oJ = SOURCES.jobbank.ara, oA = SOURCES.adzuna.ara;
+  SOURCES.jobbank.ara = sahteKaynak([{ title: 'Data Analyst', company: 'Acme', link: 'https://a.test/1' }]);
+  SOURCES.adzuna.ara  = sahteKaynak([{ title: 'data analyst', company: 'Acme', link: 'https://b.test/1' }]);
+  try {
+    const r = await searchJobs({ keywords: 'x', sources: ['jobbank', 'adzuna'] });
+    assert.strictEqual(r.count, 1);
+    const sifir = r.sources.filter((s) => s.status === 'none');
+    assert.strictEqual(sifir.length, 1, 'tekrar ayiklanan kaynak hala found gorunuyor');
+  } finally { SOURCES.jobbank.ara = oJ; SOURCES.adzuna.ara = oA; }
+});
+
+test('E5: ic kullanimlik _kaynakAnahtari cevaba sizmiyor', async () => {
+  const oA = SOURCES.adzuna.ara;
+  SOURCES.adzuna.ara = sahteKaynak([{ title: 'A', link: 'https://a.test/1' }]);
+  try {
+    const r = await searchJobs({ keywords: 'x' });
+    assert.ok(!('_kaynakAnahtari' in r.jobs[0]), 'ic alan disa sizdi');
+  } finally { SOURCES.adzuna.ara = oA; }
 });
