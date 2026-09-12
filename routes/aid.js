@@ -215,11 +215,23 @@ const WEB_SYSTEM_PROMPT = PROMPTS.job_interview.short;
  * @param {string} interview_type  'job_interview'|'client_discovery'|'freelancer'|'technical_interview'|'behavioral_interview'|'case_study'|'system_design'|'product_sense'|'media_press'
  * @param {string} language        ISO-639-1 code: 'en' | 'tr' | 'es' | 'fr' | 'de' | 'pt' | 'ar' | 'it' | 'nl' | 'ru' | 'zh' | 'ja' | 'ko'
  */
+// 12 Eylul 2026: 13 dilden 6'ya indirildi (urun sahibinin karari, K23).
+//
+// Gerekce: 13 dil sunmak, 13 dilde iyi cevap verdigimiz anlamina gelmiyordu.
+// Olculdu: Arapca /apply-package rotasinda 800 token butcesine sigmadigi icin
+// cevap cumlenin ortasinda kesiliyor ve kullaniciya 500 donuyordu. Kimse fark
+// etmemisti cunku o dil panelde secilemiyordu.
+//
+// Bu liste ARAYUZ CEVIRISIYLE BIRLIKTE hareket ediyor: dashboard-app/i18n.js
+// ayni 6 dile cevrilmis durumda. Ikisi ayrilirsa kullanici menuyu anladigi
+// dilde gorup cevabi baska dilde alir, ya da tersi.
+//
+// Dil eklemek isteyen: once i18n.js'e 89 anahtarin cevirisini ekle, sonra
+// overlay-app/index.html'deki secime etiketi koy, sonra burayi genislet.
+// build-sector-finder.js ucunu de karsilastirip uyusmazsa HATA FIRLATIR.
 const LANGUAGE_NAMES = {
-  en: 'English',   tr: 'Turkish',   es: 'Spanish',  fr: 'French',
-  de: 'German',    pt: 'Portuguese',ar: 'Arabic',   it: 'Italian',
-  nl: 'Dutch',     ru: 'Russian',   zh: 'Chinese',  ja: 'Japanese',
-  ko: 'Korean',
+  en: 'English',   tr: 'Turkish',   es: 'Spanish',
+  fr: 'French',    de: 'German',    it: 'Italian',
 };
 
 // Her cevap prompt'una eklenen kural.
