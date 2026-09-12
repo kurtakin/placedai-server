@@ -143,7 +143,7 @@ async function toolsRoutes(fastify) {
       // bos bir ilan HTTP 200 ile donuyor, arayuz yesil tik koyuyordu.
       const denetim = ilanCikarimiGecerliMi(jobData);
       if (!denetim.gecerli) {
-        return reply.code(422).send({ error: denetim.sebep, oneri: denetim.oneri });
+        return reply.code(422).send({ kod: denetim.kod, error: denetim.sebep, oneri: denetim.oneri });
       }
 
       jobData.source_url = url;
@@ -183,7 +183,7 @@ async function toolsRoutes(fastify) {
 
       const denetim2 = ilanCikarimiGecerliMi(jobData);
       if (!denetim2.gecerli) {
-        return reply.code(422).send({ error: denetim2.sebep, oneri: denetim2.oneri });
+        return reply.code(422).send({ kod: denetim2.kod, error: denetim2.sebep, oneri: denetim2.oneri });
       }
 
       jobData.source_url = url || null;

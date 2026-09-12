@@ -137,3 +137,21 @@ test('B3: denetim source_url atanmadan ONCE yapiliyor', () => {
   const u = g.indexOf('jobData.source_url');
   assert.ok(d > 0 && u > d, 'denetim cikti sekillendikten sonra yapiliyor');
 });
+
+// ── Kod dondurme: metni sunucu degil arayuz yazar ──────────────────────────
+
+test('C1: gecersiz cikarim KOD donduruyor', () => {
+  // Sunucu kullanicinin dilini bilmez. Ilk surumde hazir Turkce metin
+  // donuyordu ve Ingilizce arayuzde Turkce hata gorunuyordu; kullanicinin
+  // ekran goruntusunde yakalandi.
+  assert.strictEqual(ilanCikarimiGecerliMi(LINKEDIN).kod, 'ilan_okunamadi');
+  assert.strictEqual(ilanCikarimiGecerliMi({ title: 'A', company: 'B', description: 'kisa' }).kod, 'aciklama_kisa');
+  assert.strictEqual(ilanCikarimiGecerliMi({ title: 'A', company: 'B', description: 'x'.repeat(300) }).kod, '');
+});
+
+test('C2: 422 cevabinda kod alani var', () => {
+  for (const yol of ['/fetch-job', '/parse-job-text']) {
+    const g = ucGovdesi(yol);
+    assert.match(g, /reply\.code\(422\)\.send\(\{ kod:/, `${yol} kod gondermiyor`);
+  }
+});
