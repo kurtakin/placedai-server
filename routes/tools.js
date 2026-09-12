@@ -15,52 +15,8 @@ const { NO_EM_DASH }                 = require('../lib/style-rules');
 const { sendApplicationNotification, isConfigured } = require('../lib/mailer');
 const { requireAuth, requirePlan }   = require('../middleware/auth');
 
-// ── PDF metin çıkarıcı (pdf-parse yerine — browser API gerektirmez) ───────────
-function extractPDFText(buffer) {
-  const raw = buffer.toString('latin1');
-  const parts = [];
+// ── PDF metin cikarici: lib/pdf-text.js (tek kaynak, FlateDecode destekli) ───
 
-  // BT...ET bloklarındaki Tj / TJ operatörlerini bul
-  const btBlocks = raw.match(/BT[\s\S]{0,3000}?ET/g) || [];
-  for (const block of btBlocks) {
-    const tjRe = /\(([^)\\]*(?:\\.[^)\\]*)*)\)\s*Tj/g;
-    let m;
-    while ((m = tjRe.exec(block)) !== null) {
-      parts.push(decodePDFString(m[1]));
-    }
-    const tjArrRe = /\[([^\]]*)\]\s*TJ/g;
-    while ((m = tjArrRe.exec(block)) !== null) {
-      const inner = m[1];
-      const strRe = /\(([^)\\]*(?:\\.[^)\\]*)*)\)/g;
-      let s;
-      while ((s = strRe.exec(inner)) !== null) {
-        parts.push(decodePDFString(s[1]));
-      }
-    }
-  }
-
-  // Yedek: stream içeriğinden yazdırılabilir karakterler
-  if (parts.length === 0) {
-    const streamRe = /stream\r?\n([\s\S]*?)\r?\nendstream/g;
-    let sm;
-    while ((sm = streamRe.exec(raw)) !== null) {
-      const txt = sm[1].replace(/[^\x20-\x7E\n\r\t]/g, ' ').trim();
-      if (txt.length > 20) parts.push(txt);
-    }
-  }
-
-  return parts.join(' ')
-    .replace(/\s{2,}/g, ' ')
-    .replace(/(\w)-\s+(\w)/g, '$1$2')
-    .trim();
-}
-
-function decodePDFString(s) {
-  return s
-    .replace(/\\n/g, '\n').replace(/\\r/g, '\r').replace(/\\t/g, '\t')
-    .replace(/\\\\/g, '\\').replace(/\\\(/g, '(').replace(/\\\)/g, ')')
-    .replace(/\\([0-7]{1,3})/g, (_, oct) => String.fromCharCode(parseInt(oct, 8)));
-}
 
 const CV_PARSE_SYSTEM = `You are a CV/resume parser. Extract structured information and return ONLY a raw JSON object.
 CRITICAL: Start your response with { and end with }. No markdown, no code fences, no explanation.
@@ -92,6 +48,7 @@ function safeParseJSON(raw) {
 const { stripHTML, fetchURL } = require('../lib/net-feeds');
 const { searchJobs: kaynaklardanAra } = require('../lib/job-sources');
 const { ilanCikarimiGecerliMi }         = require('../lib/job-extract');
+const { extractPDFText, metinAnlamliMi } = require('../lib/pdf-text');
 
 // ── Job extraction prompt ─────────────────────────────────────────────────────
 const EXTRACT_JOB_SYSTEM = `You are a JSON-only job listing parser. Your entire response must be a single valid JSON object, no prose, no markdown, no code fences, no explanation before or after.
@@ -350,11 +307,17 @@ async function toolsRoutes(fastify) {
         return reply.code(422).send({ error: `Dosya okunamadı: ${err.message}` });
       }
 
-      if (!text || text.trim().length < 30) {
+      // Uzunluk YETMIYOR. Eski koruma "30 karakterden uzun mu" diye
+      // bakiyordu ve sikistirilmis PDF'ten cikan 68 karakterlik cop bunu
+      // geciyordu; AI bos alanlar donduruyor, arayuz basari sayip
+      // kullanicinin profilini eziyordu. Artik metne benzemesi de sart.
+      if (!metinAnlamliMi(text)) {
         return reply.code(422).send({
+          kod:   name.endsWith('.pdf') ? 'pdf_okunamadi' : 'dosya_okunamadi',
           error: name.endsWith('.pdf')
-            ? 'PDF\'den metin çıkarılamadı. Lütfen DOCX formatında deneyin.'
-            : 'Dosyadan yeterli metin çıkarılamadı.',
+            ? 'PDF icinden okunabilir metin cikarilamadi.'
+            : 'Dosyadan yeterli metin cikarilamadi.',
+          oneri: 'CV dosyani DOCX olarak kaydedip tekrar dene, ya da CV metnini asagidaki kutuya yapistir.',
         });
       }
 
@@ -380,6 +343,20 @@ async function toolsRoutes(fastify) {
         // ia_errors tablosuna dusebiliyor.
         fastify.log.error({ rawChars: (raw || '').length }, '[parse-cv] AI yaniti cozulemedi');
         return reply.code(422).send({ error: 'Could not read that CV. Please try again, or paste the text directly.' });
+      }
+
+      // AI hicbir alan cikaramadiysa bu BASARI degildir. Arayuz 200 gorunce
+      // alanlari doldurup otomatik kaydediyor; bos degerlerle kaydetmek
+      // kullanicinin elle yazdigi profili siler. Olculdu (12 Eylul 2026):
+      // sikistirilmis PDF -> 200, butun alanlar bos, cv_text 68 karakter cop.
+      const doluAlan = ['name', 'title', 'email', 'phone', 'location', 'skills']
+        .filter((k) => String(parsed[k] || '').trim().length > 0);
+      if (doluAlan.length === 0) {
+        return reply.code(422).send({
+          kod:   'cv_alan_cikmadi',
+          error: 'Bu dosyadan ozgecmis bilgisi cikarilamadi.',
+          oneri: 'CV dosyani DOCX olarak kaydedip tekrar dene, ya da CV metnini asagidaki kutuya yapistir.',
+        });
       }
 
       if (!parsed.cv_text) parsed.cv_text = trimmed;
