@@ -297,7 +297,7 @@ async function toolsRoutes(fastify) {
       // Dosya türüne göre metin çıkar
       try {
         if (name.endsWith('.pdf')) {
-          text = extractPDFText(buffer);
+          text = await extractPDFText(buffer);
         } else if (name.endsWith('.docx') || name.endsWith('.doc')) {
           const result = await mammoth.extractRawText({ buffer });
           text = result.value;
@@ -318,7 +318,7 @@ async function toolsRoutes(fastify) {
         // yaramaz, icinde hic metin yoktur.
         let kod = CV_HATA.DOSYA_OKUNAMADI;
         if (name.endsWith('.pdf')) {
-          const tani = pdfTani(buffer);
+          const tani = await pdfTani(buffer);
           kod = tani.kod === 'taranmis' ? CV_HATA.PDF_TARANMIS : CV_HATA.PDF_OKUNAMADI;
           request.log.info({ tani }, '[parse-cv] PDF okunamadi');
         }
