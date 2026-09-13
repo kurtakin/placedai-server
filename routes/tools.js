@@ -48,7 +48,8 @@ function safeParseJSON(raw) {
 const { stripHTML, fetchURL } = require('../lib/net-feeds');
 const { searchJobs: kaynaklardanAra } = require('../lib/job-sources');
 const { ilanCikarimiGecerliMi }         = require('../lib/job-extract');
-const { extractPDFText, metinAnlamliMi } = require('../lib/pdf-text');
+const { extractPDFText, metinAnlamliMi, pdfTani } = require('../lib/pdf-text');
+const { CV: CV_HATA }                    = require('../lib/hata-kodlari');
 
 // ── Job extraction prompt ─────────────────────────────────────────────────────
 const EXTRACT_JOB_SYSTEM = `You are a JSON-only job listing parser. Your entire response must be a single valid JSON object, no prose, no markdown, no code fences, no explanation before or after.
@@ -312,12 +313,19 @@ async function toolsRoutes(fastify) {
       // geciyordu; AI bos alanlar donduruyor, arayuz basari sayip
       // kullanicinin profilini eziyordu. Artik metne benzemesi de sart.
       if (!metinAnlamliMi(text)) {
+        // "Okunamadi" demek yetmiyor: kullanicinin ne yapmasi gerektigi
+        // duruma gore degisiyor. Taranmis bir belgeyi DOCX yapmak ise
+        // yaramaz, icinde hic metin yoktur.
+        let kod = CV_HATA.DOSYA_OKUNAMADI;
+        if (name.endsWith('.pdf')) {
+          const tani = pdfTani(buffer);
+          kod = tani.kod === 'taranmis' ? CV_HATA.PDF_TARANMIS : CV_HATA.PDF_OKUNAMADI;
+          request.log.info({ tani }, '[parse-cv] PDF okunamadi');
+        }
         return reply.code(422).send({
-          kod:   name.endsWith('.pdf') ? 'pdf_okunamadi' : 'dosya_okunamadi',
-          error: name.endsWith('.pdf')
-            ? 'PDF icinden okunabilir metin cikarilamadi.'
-            : 'Dosyadan yeterli metin cikarilamadi.',
-          oneri: 'CV dosyani DOCX olarak kaydedip tekrar dene, ya da CV metnini asagidaki kutuya yapistir.',
+          kod,
+          error: 'Dosyadan okunabilir metin cikarilamadi.',
+          oneri: 'CV metnini asagidaki kutuya yapistir.',
         });
       }
 
@@ -353,7 +361,7 @@ async function toolsRoutes(fastify) {
         .filter((k) => String(parsed[k] || '').trim().length > 0);
       if (doluAlan.length === 0) {
         return reply.code(422).send({
-          kod:   'cv_alan_cikmadi',
+          kod:   CV_HATA.ALAN_CIKMADI,
           error: 'Bu dosyadan ozgecmis bilgisi cikarilamadi.',
           oneri: 'CV dosyani DOCX olarak kaydedip tekrar dene, ya da CV metnini asagidaki kutuya yapistir.',
         });

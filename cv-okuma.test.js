@@ -23,7 +23,7 @@ const zlib     = require('node:zlib');
 const fs       = require('node:fs');
 const path     = require('node:path');
 
-const { extractPDFText, metinAnlamliMi } = require('./lib/pdf-text.js');
+const { extractPDFText, metinAnlamliMi, pdfTani } = require('./lib/pdf-text.js');
 
 const METIN = 'Ahmet Yilmaz Supply Chain Analyst Vancouver BC SAP IBP Power BI SQL demand planning';
 
@@ -111,14 +111,19 @@ test('C2: AI hicbir alan cikaramazsa 200 DONMUYOR', () => {
   const g = ucGovdesi('/parse-cv');
   assert.match(g, /const doluAlan = \[/, 'sonuc denetimi yok');
   assert.match(g, /doluAlan\.length === 0/, 'bos sonuc hala basari');
-  assert.match(g, /kod:\s*'cv_alan_cikmadi'/, 'kod dondurulmuyor');
+  assert.match(g, /kod:\s*CV_HATA\.ALAN_CIKMADI/, 'kod dondurulmuyor');
 });
 
-test('C3: hata cevaplari KOD tasiyor', () => {
+test('C3: hata cevaplari KOD tasiyor ve kodlar TEK KAYNAKTAN geliyor', () => {
+  // Kodlar rotada elle yazilmiyor, lib/hata-kodlari.js'ten geliyor: elle
+  // yazilan kod sessiz yazim hatasina acikti (K21).
+  const { CV_KODLARI } = require('./lib/hata-kodlari.js');
+  assert.deepStrictEqual(CV_KODLARI.sort(),
+    ['cv_alan_cikmadi', 'dosya_okunamadi', 'pdf_okunamadi', 'pdf_taranmis'].sort());
   const g = ucGovdesi('/parse-cv');
-  for (const kod of ['pdf_okunamadi', 'dosya_okunamadi', 'cv_alan_cikmadi']) {
-    assert.ok(g.includes(`'${kod}'`), `${kod} kodu yok`);
-  }
+  assert.match(g, /CV_HATA\.PDF_TARANMIS/, 'taranmis kodu kullanilmiyor');
+  assert.match(g, /CV_HATA\.PDF_OKUNAMADI/);
+  assert.match(g, /CV_HATA\.DOSYA_OKUNAMADI/);
 });
 
 test('C4: PDF cikarici tek kaynaktan geliyor', () => {
@@ -210,4 +215,36 @@ test('B9: kelime GIBI gorunen ama harf olmayan isaret yigini reddediliyor', () =
   const isaret = 'A' + '\u2019'.repeat(20);
   const metin = Array.from({ length: 8 }, () => isaret).join(' ');
   assert.strictEqual(metinAnlamliMi(metin), false, 'harf orani esigi is gormuyor');
+});
+
+// ── Tani: kullaniciya DOGRU seyi soylemek ──────────────────────────────────
+//
+// "Okunamadi" tek basina ise yaramaz. Taranmis bir belgeyi DOCX olarak
+// kaydetmek de iselemez, cunku icinde hic metin yoktur; kullaniciya yanlis
+// tavsiye vermis oluruz.
+
+test('D1: okunabilir PDF "okundu" taniisini aliyor', () => {
+  const ic = 'BT /F1 12 Tf 72 720 Td (Ahmet Yilmaz Supply Chain Analyst Vancouver BC SAP IBP) Tj ET';
+  const a = zlib.deflateSync(Buffer.from(ic, 'latin1'));
+  const pdf = Buffer.concat([
+    Buffer.from(`%PDF-1.4\n4 0 obj<</Filter/FlateDecode/Length ${a.length}>>stream\n`, 'latin1'),
+    a, Buffer.from('\nendstream endobj', 'latin1')]);
+  assert.strictEqual(pdfTani(pdf).kod, 'okundu');
+});
+
+test('D2: metin katmani OLMAYAN PDF "taranmis" taniisini aliyor', () => {
+  const pdf = Buffer.from('%PDF-1.4\n4 0 obj<</Filter/DCTDecode/Length 10>>stream\n0123456789\nendstream endobj', 'latin1');
+  assert.strictEqual(pdfTani(pdf).kod, 'taranmis');
+});
+
+test('D3: metin VAR ama cozulemiyorsa ayri tani veriliyor', () => {
+  // CID / Identity-H fontlarda Tj icindeki baytlar glif numarasidir, harf degil.
+  const pdf = Buffer.from('%PDF-1.4\n4 0 obj<</Length 40>>stream\nBT /F1 12 Tf (\\001\\002\\003) Tj ET\nendstream endobj', 'latin1');
+  assert.strictEqual(pdfTani(pdf).kod, 'metin_cozulemedi');
+});
+
+test('D4: uc tani birbirinden FARKLI', () => {
+  // Ucu de ayni kodu dondurse tani bir ise yaramaz.
+  const kodlar = new Set(['okundu', 'taranmis', 'metin_cozulemedi']);
+  assert.strictEqual(kodlar.size, 3);
 });
