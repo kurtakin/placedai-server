@@ -1,0 +1,13 @@
+# Bagimliliklar — Railway kendi kuruyor, depoya girmemeli
+node_modules/
+
+# Gizli
+.env
+.env.local
+
+# Gecici / artik dosyalar
+*.log
+*.yedek
+*.lock.stale-*
+.DS_Store
+Thumbs.db
