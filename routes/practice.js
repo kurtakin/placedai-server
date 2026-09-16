@@ -25,6 +25,7 @@
 'use strict';
 
 const { createMessage } = require('../lib/ai');
+const { JD: JD_HATA }                    = require('../lib/hata-kodlari');
 const path = require('path');
 const fs   = require('fs');
 const { requireAuth, requirePlan } = require('../middleware/auth');
@@ -118,6 +119,7 @@ const JD_ANALYSIS_SYSTEM = `You are an expert interview preparation coach. Analy
 CRITICAL: Return ONLY a raw JSON object. Start with { and end with }. No markdown, no explanation, no code fences.
 {
   "job_title": "extracted or inferred job title",
+  "company": "the hiring employer's name exactly as written in the listing, or empty string if the listing does not name it",
   "sector": "one of: Supply Chain & Logistics, Finance, Operations & Manufacturing, General & Operations Management, Nursing (Registered Nurse), Healthcare Support, Accounting & Bookkeeping, Technology, Data Analyst, Logistics & Transportation, Inventory Planner, Inventory Analyst, Inventory Control Analyst, Universal Behavioral",
   "seniority": "one of: entry, mid, senior, manager",
   "key_skills": ["skill 1", "skill 2", "skill 3", "skill 4", "skill 5"],
@@ -135,7 +137,8 @@ Rules:
 - key_skills: exactly 5-7 most critical skills from the JD, be specific
 - focus_areas: exactly 3 interview themes (e.g. "Cross-functional collaboration", "Data-driven decision making")
 - predicted_questions: exactly 5 behavioral or situational questions this company is MOST LIKELY to ask, written as actual interview questions
-- seniority: infer from years of experience, title, and responsibilities mentioned` + NO_EM_DASH;
+- seniority: infer from years of experience, title, and responsibilities mentioned
+- company: the employer, not the recruiting agency and not the candidate. Copy the name as the listing writes it. If no employer is named, use an empty string, never guess` + NO_EM_DASH;
 
 // ── Cover Letter system prompt ───────────────────────────────────────────────
 const COVER_LETTER_SYSTEM = `You are an expert career coach and professional cover letter writer.
@@ -275,11 +278,21 @@ async function practiceRoutes(fastify) {
   fastify.post('/analyze-jd', async (request, reply) => {
     const { job_description } = request.body ?? {};
 
-    if (!job_description || job_description.trim().length < 50) {
-      return reply.code(400).send({ error: 'job_description required (min 50 chars)' });
+    // Hata METNI degil KOD donuyoruz: sunucu kullanicinin dilini bilmez (K25).
+    // Onceden duz Ingilizce metin doner, arayuz onu oldugu gibi basardi.
+    const jd = String(job_description || '').trim();
+
+    if (/^https?:\/\//i.test(jd)) {
+      return reply.code(422).send({
+        kod:   JD_HATA.URL_YAPISTIRILDI,
+        error: 'Paste the listing text, not a link.',
+      });
     }
-    if (/^https?:\/\//i.test(job_description.trim())) {
-      return reply.code(400).send({ error: 'Not a URL, paste the listing text: open the page → Ctrl+A → Ctrl+C → paste here.' });
+    if (jd.length < 50) {
+      return reply.code(422).send({
+        kod:   JD_HATA.KISA_METIN,
+        error: 'job_description required (min 50 chars)',
+      });
     }
     if (!process.env.ANTHROPIC_API_KEY) {
       return reply.code(503).send({ error: 'ANTHROPIC_API_KEY not set' });
@@ -290,16 +303,37 @@ async function practiceRoutes(fastify) {
         model:      request.body?.model || 'claude-haiku',
         max_tokens: 1500,
         system:     JD_ANALYSIS_SYSTEM,
-        messages:   [{ role: 'user', content: `Job Description:\n\n${job_description.trim()}` }],
+        messages:   [{ role: 'user', content: `Job Description:\n\n${jd}` }],
       });
 
       const analysis = safeParseJSON(raw);
       if (!analysis) {
         fastify.log.error({ rawChars: (raw || '').length }, '[analyze-jd] AI yaniti cozulemedi');
-        return reply.code(500).send({ error: 'Could not read that job listing. Please try again.' });
+        return reply.code(422).send({
+          kod:   JD_HATA.COZULEMEDI,
+          error: 'Could not read that job listing.',
+        });
       }
 
-      return analysis;
+      // ── CIKTI DOGRULAMASI ──────────────────────────────────────────────────
+      //
+      // 16 Eylul 2026'da olculdu: burada hicbir denetim yoktu. AI bos diziler
+      // donse bile 200 donuyor, arayuz sonuc panelini aciyor ve ustune yesil
+      // "overlay'e yuklendi" rozetini basiyordu. Kullanici basari goruyor,
+      // ekranda hicbir sey yok. CV yuklemede ayni sinif zaten yakalanmisti.
+      const beceri = Array.isArray(analysis.key_skills) ? analysis.key_skills.filter(Boolean) : [];
+      const soru   = Array.isArray(analysis.predicted_questions)
+        ? analysis.predicted_questions.filter(Boolean) : [];
+
+      if (!beceri.length && !soru.length) {
+        fastify.log.info({ jdChars: jd.length }, '[analyze-jd] AI hicbir alan cikaramadi');
+        return reply.code(422).send({
+          kod:   JD_HATA.ALAN_CIKMADI,
+          error: 'No interview data could be extracted from that listing.',
+        });
+      }
+
+      return { ...analysis, key_skills: beceri, predicted_questions: soru };
     } catch (err) {
       fastify.log.error(err, '[practice/analyze-jd]');
       return reply.code(500).send({ error: err.message });
