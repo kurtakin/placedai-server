@@ -25,7 +25,7 @@
 'use strict';
 
 const { createMessage } = require('../lib/ai');
-const { JD: JD_HATA }                    = require('../lib/hata-kodlari');
+const { JD: JD_HATA, KAPAK: KAPAK_HATA }  = require('../lib/hata-kodlari');
 const path = require('path');
 const fs   = require('fs');
 const { requireAuth, requirePlan } = require('../middleware/auth');
@@ -147,13 +147,18 @@ Write a compelling, personalized cover letter based on the provided candidate in
 Rules:
 - Exactly 4 paragraphs, 280-350 words total
 - Paragraph 1: Strong opening hook: connect the candidate's specific background to THIS role (avoid "I am writing to express my interest")
-- Paragraph 2: Most relevant achievement with concrete metrics or outcomes
+- Paragraph 2: Most relevant achievement with concrete metrics or outcomes, taken ONLY from the candidate's CV text when one is provided
 - Paragraph 3: Why this specific company/role, alignment with their mission or values
 - Paragraph 4: Confident call-to-action close
 - Match the tone requested (professional / warm / confident)
 - Write in the same language as the job description
 - Output ONLY the letter text: start with salutation, end with sign-off + candidate name
-- Do NOT add subject line, date, or mailing addresses` + NO_EM_DASH;
+- Do NOT add subject line, date, or mailing addresses
+
+NEVER INVENT FACTS. This letter is sent to a real employer under the candidate's name.
+- If a CV text is provided, every achievement, number, employer, date and job title must come from it. Quote the candidate's real numbers, do not round them up and do not add new ones.
+- If NO CV text is provided, you have no achievements to work with. Write about the skills and the role instead, in general but honest terms. Do not invent percentages, dollar amounts, team sizes, years, awards, employers or project names. A letter with no numbers is far better than a letter with invented ones.
+- Never claim a certification, degree, tool or language that is not in the provided information` + NO_EM_DASH;
 
 // ── ATS Score system prompt ───────────────────────────────────────────────────
 const ATS_SYSTEM = `You are an ATS (Applicant Tracking System) expert and resume analyst.
@@ -808,18 +813,34 @@ ${questions.map((q, i) => `${i + 1}. ${q}`).join('\n')}`;
 
   // ── POST /cover-letter — generate a personalized cover letter ─────────────
   fastify.post('/cover-letter', async (request, reply) => {
-    const {
-      name             = 'Candidate',
-      current_title    = '',
-      company_name     = 'the company',
-      job_description  = '',
-      experience_years = '',
-      key_skills       = [],
-      tone             = 'professional',
-    } = request.body ?? {};
+    const g = request.body ?? {};
 
-    if (!job_description || job_description.trim().length < 50) {
-      return reply.code(400).send({ error: 'job_description required (min 50 chars)' });
+    // Alanlar BOS DIZGI ile de gelebilir. Nesne cozmedeki `= 'the company'`
+    // varsayilani yalnizca anahtar HIC YOKKEN calisir; istemci alani her zaman
+    // gonderdigi icin (bos olsa bile) varsayilan hic devreye girmiyordu ve
+    // isteme "Target Company:" diye bos bir satir gidiyordu. Olculdu:
+    //   { company_name: '' } -> ''            (varsayilan calismadi)
+    //   { }                  -> 'the company'
+    const yazi = (deger, yedek) => {
+      const d = String(deger == null ? '' : deger).trim();
+      return d || yedek;
+    };
+
+    const name             = yazi(g.name, 'Candidate');
+    const current_title    = yazi(g.current_title, 'not specified');
+    const company_name     = yazi(g.company_name, 'the company');
+    const experience_years = yazi(g.experience_years, 'not specified');
+    const tone             = yazi(g.tone, 'professional');
+    const language         = yazi(g.language, '');
+    const job_description  = String(g.job_description || '').trim();
+    const base_cv          = String(g.base_cv || '').trim();
+    const key_skills       = g.key_skills ?? [];
+
+    if (job_description.length < 50) {
+      return reply.code(422).send({
+        kod:   KAPAK_HATA.KISA_ILAN,
+        error: 'job_description required (min 50 chars)',
+      });
     }
     if (!process.env.ANTHROPIC_API_KEY) {
       return reply.code(503).send({ error: 'ANTHROPIC_API_KEY not set' });
@@ -829,29 +850,50 @@ ${questions.map((q, i) => `${i + 1}. ${q}`).join('\n')}`;
       ? key_skills.join(', ')
       : 'not specified';
 
+    // CV metni ISTEME GIRIYOR. Eskiden hic gonderilmiyordu: sistem istemi
+    // "somut rakamlarla en guclu basarisini yaz" diyor, modele verilen tek sey
+    // bir unvan ve bir beceri listesiydi. Model rakami uyduruyordu ve o mektup
+    // isverene gidiyordu. Sayfa 2'deki /full-package zaten base_cv gonderiyor.
+    const cvBolumu = base_cv
+      ? `\n\nCandidate CV (the ONLY source of achievements, numbers, employers and dates):\n${base_cv.slice(0, 6000)}`
+      : '\n\nNo CV text was provided. You have NO achievements to cite. Do not invent any.';
+
     const userPrompt = `
 Candidate Name: ${name}
-Current Title: ${current_title || 'not specified'}
-Years of Experience: ${experience_years || 'not specified'}
+Current Title: ${current_title}
+Years of Experience: ${experience_years}
 Key Skills: ${skillsText}
 Target Company: ${company_name}
-Desired Tone: ${tone}
+Desired Tone: ${tone}${language ? `\nWrite the letter in: ${language}` : ''}
 
 Job Description:
-${job_description.trim()}
+${job_description}${cvBolumu}
 
 Write the cover letter now.`.trim();
 
     try {
       const letter = await createMessage({
-        model:      request.body?.model || 'claude-sonnet',
+        model:      g.model || 'claude-sonnet',
         max_tokens: 800,
         system:     COVER_LETTER_SYSTEM,
         messages:   [{ role: 'user', content: userPrompt }],
       });
 
-      const words = letter.trim().split(/\s+/).length;
-      return { cover_letter: letter.trim(), word_count: words };
+      const metin = String(letter || '').trim();
+
+      // CIKTI DOGRULAMASI. Eskiden hic yoktu: bos bir yanit 200 ile donuyor,
+      // ustelik "1 words" yaziyordu, cunku ''.split(/\s+/) tek elemanli bir
+      // dizi verir. Ekranda bos kutu, yaninda basari gorunumu.
+      const words = metin ? metin.split(/\s+/).filter(Boolean).length : 0;
+      if (words < 40) {
+        fastify.log.info({ words, cvVar: Boolean(base_cv) }, '[cover-letter] mektup uretilemedi');
+        return reply.code(422).send({
+          kod:   KAPAK_HATA.URETILEMEDI,
+          error: 'The letter could not be written.',
+        });
+      }
+
+      return { cover_letter: metin, word_count: words, cv_kullanildi: Boolean(base_cv) };
 
     } catch (err) {
       fastify.log.error(err, '[practice/cover-letter]');
