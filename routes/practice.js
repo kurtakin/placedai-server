@@ -141,6 +141,16 @@ Rules:
 - company: the employer, not the recruiting agency and not the candidate. Copy the name as the listing writes it. If no employer is named, use an empty string, never guess` + NO_EM_DASH;
 
 // ── Cover Letter system prompt ───────────────────────────────────────────────
+// SURE KURALI NEDEN VAR. Olculdu (16 Eylul 2026): kullanicinin CV'sinde
+// "Inventory Control Specialist ... September 2022 to Present" yaziyordu,
+// uretilen mektup "the past two and a half years" dedi. Gercek sure DORT yil.
+// Model bugunun tarihini bilmedigi icin "Present"i kendi egitim verisinden
+// tahmin etmis ve deneyimi on sekiz ay EKSIK gostermisti.
+//
+// Bu teknik olarak uydurma degil: gercek bir tarihten yanlis hesap. Uydurma
+// yasagi ("CV'de olmayan sey yazma") bunu yakalayamiyordu, cunku tarih CV'de
+// vardi. Cozum iki parcali: isteme bugunun tarihi giriyor ve sistem istemi
+// sureyi kendi basina tahmin etmeyi yasakliyor.
 const COVER_LETTER_SYSTEM = `You are an expert career coach and professional cover letter writer.
 Write a compelling, personalized cover letter based on the provided candidate information and job description.
 
@@ -158,7 +168,12 @@ Rules:
 NEVER INVENT FACTS. This letter is sent to a real employer under the candidate's name.
 - If a CV text is provided, every achievement, number, employer, date and job title must come from it. Quote the candidate's real numbers, do not round them up and do not add new ones.
 - If NO CV text is provided, you have no achievements to work with. Write about the skills and the role instead, in general but honest terms. Do not invent percentages, dollar amounts, team sizes, years, awards, employers or project names. A letter with no numbers is far better than a letter with invented ones.
-- Never claim a certification, degree, tool or language that is not in the provided information` + NO_EM_DASH;
+- Never claim a certification, degree, tool or language that is not in the provided information
+
+DATES AND DURATIONS
+- The user prompt gives you today's date. Use ONLY that date to interpret "Present", "Current" or an open ended role.
+- Prefer writing dates the way the CV writes them ("since September 2022") over computing a duration.
+- If you do state a duration, compute it from today's date and round DOWN to a whole or half year. Never guess today's date.` + NO_EM_DASH;
 
 // ── ATS Score system prompt ───────────────────────────────────────────────────
 const ATS_SYSTEM = `You are an ATS (Applicant Tracking System) expert and resume analyst.
@@ -858,7 +873,12 @@ ${questions.map((q, i) => `${i + 1}. ${q}`).join('\n')}`;
       ? `\n\nCandidate CV (the ONLY source of achievements, numbers, employers and dates):\n${base_cv.slice(0, 6000)}`
       : '\n\nNo CV text was provided. You have NO achievements to cite. Do not invent any.';
 
+    // Bugunun tarihi ISTEME GIRIYOR. Model "Present"i kendi egitim verisinden
+    // tahmin ediyordu ve deneyimi oldugundan kisa gosteriyordu.
+    const bugun = new Date().toISOString().slice(0, 10);
+
     const userPrompt = `
+Today's date: ${bugun}
 Candidate Name: ${name}
 Current Title: ${current_title}
 Years of Experience: ${experience_years}
