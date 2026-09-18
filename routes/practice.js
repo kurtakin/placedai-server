@@ -25,7 +25,7 @@
 'use strict';
 
 const { createMessage } = require('../lib/ai');
-const { JD: JD_HATA, KAPAK: KAPAK_HATA }  = require('../lib/hata-kodlari');
+const { JD: JD_HATA, KAPAK: KAPAK_HATA, ATS: ATS_HATA } = require('../lib/hata-kodlari');
 const path = require('path');
 const fs   = require('fs');
 const { requireAuth, requirePlan } = require('../middleware/auth');
@@ -141,6 +141,21 @@ Rules:
 - company: the employer, not the recruiting agency and not the candidate. Copy the name as the listing writes it. If no employer is named, use an empty string, never guess` + NO_EM_DASH;
 
 // ── Cover Letter system prompt ───────────────────────────────────────────────
+// IKI BELGE KURALI NEDEN VAR. Olculdu (17 Eylul 2026): uydurma yasagi ve
+// tarih kurali tuttuktan sonra kalan tek hata buydu. Wesco ilaninda
+// "Executes accurate, scheduled daily, weekly, and monthly reports" yaziyordu;
+// uretilen mektup "I have built and sustained rigorous inventory reporting
+// cycles covering daily, weekly, and monthly cadences" dedi. CV'de `daily`,
+// `weekly`, `monthly`, `cadence` kelimelerinin HICBIRI gecmiyor.
+//
+// Yani model, isverenin ARADIGI gorevi adayin YAPTIGI is gibi yazdi. Bu
+// ucuncu ve farkli bir hata turu: ilk ikisi rakam uydurmak ve yanlis hesapti,
+// bu iki belgeyi karistirmak. Ustelik en tehlikelisi, cunku hic uydurma gibi
+// durmuyor ve mulakatta aday o gorevi anlatmak zorunda kaliyor.
+//
+// Onceki yasagin deligi belliydi: CV'yi "achievements, numbers, employers and
+// dates" icin tek kaynak ilan ediyordu. Gorev tanimi bu dordunun hicbiri degil.
+//
 // SURE KURALI NEDEN VAR. Olculdu (16 Eylul 2026): kullanicinin CV'sinde
 // "Inventory Control Specialist ... September 2022 to Present" yaziyordu,
 // uretilen mektup "the past two and a half years" dedi. Gercek sure DORT yil.
@@ -170,6 +185,12 @@ NEVER INVENT FACTS. This letter is sent to a real employer under the candidate's
 - If NO CV text is provided, you have no achievements to work with. Write about the skills and the role instead, in general but honest terms. Do not invent percentages, dollar amounts, team sizes, years, awards, employers or project names. A letter with no numbers is far better than a letter with invented ones.
 - Never claim a certification, degree, tool or language that is not in the provided information
 
+THE TWO DOCUMENTS ARE NOT THE SAME THING
+- The job description says what the EMPLOYER WANTS. It is never evidence of what the candidate has done.
+- Never write that the candidate has performed a task just because the listing asks for it. Only the CV can establish what they have done.
+- You may write that the candidate is interested in or prepared for a responsibility. "I have done X" requires X to be in the CV.
+- Do not state facts about the hiring company (rankings, revenue, headcount, awards, history) unless the job description states them. Write about the role and the work instead.
+
 DATES AND DURATIONS
 - The user prompt gives you today's date. Use ONLY that date to interpret "Present", "Current" or an open ended role.
 - Prefer writing dates the way the CV writes them ("since September 2022") over computing a duration.
@@ -195,7 +216,19 @@ Return ONLY valid JSON, no markdown:
   "top_recommendations": ["specific actionable recommendation 1", "recommendation 2", "recommendation 3"]
 }
 
-Grade scale: A+ (90-100), A (80-89), B (65-79), C (50-64), D (35-49), F (<35)`;
+Grade scale: A+ (90-100), A (80-89), B (65-79), C (50-64), D (35-49), F (<35)
+
+EVIDENCE RULES
+- A term belongs in "matched_keywords" ONLY if it appears in the CV. A term the job description asks for is not evidence that the candidate has it.
+- "missing_keywords" are terms the job description uses that the CV does not contain.
+- Base "strengths" only on what the CV states. Never credit the candidate with a responsibility that only the job description mentions.
+- If the CV is thin on a requirement, say so in "gaps". An inflated score is worse than a low one: the candidate applies believing they match.`;
+// Kanit kurallari 17 Eylul 2026'da eklendi. Gerekce K32 ile ayni: yalan iki
+// yone de isler. Kapak mektubunda model kullanici ADINA uyduruyordu; burada
+// kullaniciya KENDI hakkinda yaniltici bir olcum veriyor. Eslesen anahtar
+// kelime listesi ilandan kopyalanirsa puan sisiyor ve kullanici uymadigi bir
+// ise "uyuyorum" diyerek basvuruyor. Testler kuralin istemde OLDUGUNU
+// kilitler, modelin ona uydugunu degil (K32'deki ayni sinir).
 
 // ── Resume Builder system prompt ──────────────────────────────────────────────
 const RESUME_SYSTEM = `You are an expert resume writer specializing in ATS-optimized, professional resumes.
@@ -923,22 +956,29 @@ Write the cover letter now.`.trim();
 
   // ── POST /ats-score — ATS compatibility analysis ──────────────────────────
   fastify.post('/ats-score', async (request, reply) => {
-    const { cv_text, job_description, language = 'Turkish' } = request.body ?? {};
+    const g = request.body ?? {};
+    const cv_text         = String(g.cv_text || '').trim();
+    const job_description = String(g.job_description || '').trim();
+    // Varsayilan 'Turkish' idi. Urun Ingilizce birinci; istemci her zaman dil
+    // gonderdigi icin maskeliydi ama varsayilanin kendisi yanlisti.
+    const language        = String(g.language || '').trim() || 'English';
 
-    if (!cv_text || cv_text.trim().length < 50)
-      return reply.code(400).send({ error: 'cv_text required (min 50 chars)' });
-    if (!job_description || job_description.trim().length < 50)
-      return reply.code(400).send({ error: 'job_description required (min 50 chars)' });
+    if (cv_text.length < 50 || job_description.length < 50) {
+      return reply.code(422).send({
+        kod:   ATS_HATA.KISA_GIRDI,
+        error: 'cv_text and job_description are required (min 50 chars each)',
+      });
+    }
     if (!process.env.ANTHROPIC_API_KEY)
       return reply.code(503).send({ error: 'ANTHROPIC_API_KEY not set' });
 
     const userPrompt = `Provide all text feedback (strengths, gaps, recommendations) in ${language}.
 
 JOB DESCRIPTION:
-${job_description.trim()}
+${job_description}
 
 CANDIDATE CV/RESUME:
-${cv_text.trim()}
+${cv_text}
 
 Analyze the match and return the JSON scorecard.`;
 
@@ -950,8 +990,51 @@ Analyze the match and return the JSON scorecard.`;
         messages:   [{ role: 'user', content: userPrompt }],
       });
       const result = safeParseJSON(raw);
-      if (!result) return reply.code(500).send({ error: 'Parse failed, please try again.' });
-      return result;
+
+      // ── CIKTI DOGRULAMASI ──────────────────────────────────────────────────
+      //
+      // Eskiden yoktu ve SIFIR, hata gibi degil OLCUM gibi gorunuyordu:
+      //   {}            -> istemcide `data.score || 0` -> ekranda buyuk "0"
+      //   score: "85%"  -> Math.max(0,"85%") -> NaN -> ekranda "NaN"
+      // Ikisinde de daire ciziliyor, panel aciliyor, kullanici CV'sinin bu ise
+      // sifir uydugunu saniyordu. Hicbir sey gostermemek bundan iyidir.
+      const puan = Number(result && result.score);
+      if (!result || !Number.isFinite(puan) || puan < 0 || puan > 100) {
+        fastify.log.info({ hamPuan: result && result.score }, '[ats-score] puan gecersiz');
+        return reply.code(422).send({
+          kod:   ATS_HATA.HESAPLANAMADI,
+          error: 'The ATS score could not be calculated.',
+        });
+      }
+
+      // Not ile puan CELISEBILIYORDU: istemde olcek yazili ama donen cevap
+      // denetlenmiyordu, `score: 95, grade: "C"` ikisi birden ekrana basilirdi.
+      // Notu puandan biz turetiyoruz; tek dogru kaynak puan.
+      const not = puan >= 90 ? 'A+' : puan >= 80 ? 'A' : puan >= 65 ? 'B'
+                : puan >= 50 ? 'C'  : puan >= 35 ? 'D' : 'F';
+
+      // Number('') === 0, Number(null) === 0, Number(true) === 1. Yalnizca
+      // Number()'a guvenen surum bos bir bolum puanini ekranda "0" yapiyordu:
+      // ust duzeydeki sahte sifir kusurunun bir kat asagidaki ayni hali.
+      // Testte yakalandi (A6), uretimde degil.
+      const sayiVeya = (d) => {
+        if (typeof d !== 'number' && typeof d !== 'string') return null;
+        if (typeof d === 'string' && !d.trim()) return null;
+        const n = Number(d);
+        return Number.isFinite(n) && n >= 0 && n <= 100 ? Math.round(n) : null;
+      };
+      const bs = result.section_scores || {};
+
+      return {
+        ...result,
+        score: Math.round(puan),
+        grade: not,
+        section_scores: {
+          skills_match:     sayiVeya(bs.skills_match),
+          experience_match: sayiVeya(bs.experience_match),
+          education_match:  sayiVeya(bs.education_match),
+        },
+      };
     } catch (err) {
       fastify.log.error(err, '[practice/ats-score]');
       return reply.code(500).send({ error: err.message });
