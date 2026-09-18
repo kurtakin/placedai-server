@@ -218,6 +218,12 @@ Return ONLY valid JSON, no markdown:
 
 Grade scale: A+ (90-100), A (80-89), B (65-79), C (50-64), D (35-49), F (<35)
 
+LENGTH LIMITS (the response is cut off if you exceed them)
+- At most 10 entries in "matched_keywords" and at most 10 in "missing_keywords". Pick the most important ones.
+- "strengths" and "gaps": at most 2 sentences each.
+- Exactly 3 entries in "top_recommendations", each under 30 words.
+- Output the JSON only. No preamble, no explanation, no markdown fence.
+
 EVIDENCE RULES
 - A term belongs in "matched_keywords" ONLY if it appears in the CV. A term the job description asks for is not evidence that the candidate has it.
 - "missing_keywords" are terms the job description uses that the CV does not contain.
@@ -983,13 +989,51 @@ ${cv_text}
 Analyze the match and return the JSON scorecard.`;
 
     try {
+      // BUTCE. 900 idi ve Turkce cevap tam sinirda kaliyordu: gercekci bir
+      // Turkce puan karti ~815-915 token tutuyor (JSON'un bicimli yazilmasi
+      // farki buyutuyor). Yani cevap bazen siyor, bazen asiyordu; asinca JSON
+      // kapanmiyor ve kullaniciya "puan hesaplanamadi" deniyordu.
+      //
+      // Sadece sayiyi buyutmek yanlis duzeltme olurdu: sinirsiz buyuyebilen
+      // bir cikti her butceyi bir gun asar. Istemdeki LENGTH LIMITS bolumu
+      // ciktiyi bagliyor, buradaki 1600 de ona rahat bir pay birakiyor.
+      const ustveri = {};
       const raw = await createMessage({
         model:      request.body?.model || 'claude-haiku',
-        max_tokens: 900,
+        max_tokens: 1600,
         system:     ATS_SYSTEM,
         messages:   [{ role: 'user', content: userPrompt }],
-      });
+      }, ustveri);
       const result = safeParseJSON(raw);
+
+      // KESILME AYRI BIR HATA. Model puani vermis olabilir; biz dinlemeyi
+      // erken kestik. Kullaniciya "olcemedik" demek yanlis olur, cunku
+      // yapmasi gereken sey farkli (metni kisaltmak ya da tekrar denemek).
+      // GUNLUGE ICERIK DEGIL SEKIL. Ilk yazimda ham metnin ilk 200 karakterini
+      // gunluge koymustum; lib/logging.test.js bunu reddetti ve HAKLIYDI.
+      // Modelin ciktisi kullanicinin CV'sinden turetiliyor: adi, isvereni,
+      // tarihleri tasiyabilir. Railway gunlugu bunun yeri degil.
+      //
+      // Teshis icin gereken sey zaten icerik degil SEKIL: cevap kac karakter,
+      // suslu parantezle basliyor mu, kapaniyor mu. Bu uc alan dort durumu
+      // birbirinden ayirir: bos cevap, duz cumle (suslu ile baslamaz),
+      // kesilmis JSON (baslar ama kapanmaz), gecerli JSON ama kotu puan.
+      const hamMetin = String(raw || '');
+      const hamSekli = {
+        hamChars:      hamMetin.length,
+        susluBasliyor: /^\s*\{/.test(hamMetin),
+        susluBitiyor:  /\}\s*$/.test(hamMetin),
+      };
+
+      if (!result && ustveri.kesildi) {
+        fastify.log.warn(
+          { cikti_token: ustveri.cikti_token, ...hamSekli },
+          '[ats-score] yanit kesildi');
+        return reply.code(422).send({
+          kod:   ATS_HATA.YANIT_KESILDI,
+          error: 'The response was cut off before it was complete.',
+        });
+      }
 
       // ── CIKTI DOGRULAMASI ──────────────────────────────────────────────────
       //
@@ -1000,7 +1044,16 @@ Analyze the match and return the JSON scorecard.`;
       // sifir uydugunu saniyordu. Hicbir sey gostermemek bundan iyidir.
       const puan = Number(result && result.score);
       if (!result || !Number.isFinite(puan) || puan < 0 || puan > 100) {
-        fastify.log.info({ hamPuan: result && result.score }, '[ats-score] puan gecersiz');
+        // `result` null oldugunda `hamPuan` her zaman undefined dusuyordu ve
+        // modelin gercekte NE dondurdugu kayboluyordu. Hata yolunun kendisi
+        // teshis edilebilir olmali: ham metnin basi da yaziliyor.
+        fastify.log.info({
+          hamPuan:      result && result.score,
+          ayristirildi: Boolean(result),
+          stop_reason:  ustveri.stop_reason,
+          cikti_token:  ustveri.cikti_token,
+          ...hamSekli,
+        }, '[ats-score] puan gecersiz');
         return reply.code(422).send({
           kod:   ATS_HATA.HESAPLANAMADI,
           error: 'The ATS score could not be calculated.',
