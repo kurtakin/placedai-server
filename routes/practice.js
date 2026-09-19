@@ -26,6 +26,7 @@
 
 const { createMessage } = require('../lib/ai');
 const { JD: JD_HATA, KAPAK: KAPAK_HATA, ATS: ATS_HATA } = require('../lib/hata-kodlari');
+const { eslesmeleriDogrula } = require('../lib/kelime-eslesme');
 const path = require('path');
 const fs   = require('fs');
 const { requireAuth, requirePlan } = require('../middleware/auth');
@@ -1085,10 +1086,36 @@ Analyze the match and return the JSON scorecard.`;
       };
       const bs = result.section_scores || {};
 
+      // ── ESLESME DOGRULAMASI ────────────────────────────────────────────────
+      //
+      // Uretimde olculdu (19 Eylul 2026): on "eslesen" kelimeden ikisi
+      // kullanicinin CV'sinde HIC gecmiyordu; biri dogrudan ILANDAN
+      // geliyordu ("quantitative research"). Istemdeki EVIDENCE RULES bunu
+      // yasakliyordu, model uymadi. K32'nin siniri: kuralin istemde durdugunu
+      // kilitleyebiliriz, modelin uydugunu kilitleyemeyiz. O yuzden modele
+      // guvenmek yerine iki belgeye bakiyoruz.
+      //
+      // PUANA DOKUNULMUYOR, bilerek. Model puani bu kelimeleri sayarak
+      // hesapladi, yani puan bir miktar sisik. Ama puani kendimiz yeniden
+      // hesaplamak uydurma olurdu; elimizde modelin agirliklandirmasi yok.
+      // Listeler duzeltiliyor ve kullaniciya durum SOYLENIYOR; istemci
+      // `dogrulama.elenen` dolu oldugunda uyari gosteriyor.
+      const d = eslesmeleriDogrula(result.matched_keywords, result.missing_keywords,
+                                   cv_text, job_description);
+      if (d.elenen.length || d.atilan.length) {
+        fastify.log.info({ elenen: d.elenen.length, atilan: d.atilan.length },
+          '[ats-score] dogrulanmayan eslesme');
+      }
+
       return {
         ...result,
         score: Math.round(puan),
         grade: not,
+        matched_keywords: d.eslesen,
+        missing_keywords: d.eksik,
+        // Kullaniciya gosterilecek: CV'de bulunamadigi icin eslesen
+        // listesinden cikarilan terimler.
+        dogrulama: { elenen: d.elenen, atilan: d.atilan },
         section_scores: {
           skills_match:     sayiVeya(bs.skills_match),
           experience_match: sayiVeya(bs.experience_match),
