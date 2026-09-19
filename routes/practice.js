@@ -25,7 +25,7 @@
 'use strict';
 
 const { createMessage } = require('../lib/ai');
-const { JD: JD_HATA, KAPAK: KAPAK_HATA, ATS: ATS_HATA } = require('../lib/hata-kodlari');
+const { JD: JD_HATA, KAPAK: KAPAK_HATA, ATS: ATS_HATA, CVB: CVB_HATA } = require('../lib/hata-kodlari');
 const { eslesmeleriDogrula } = require('../lib/kelime-eslesme');
 const path = require('path');
 const fs   = require('fs');
@@ -245,10 +245,30 @@ Format rules:
 - Plain text only: no tables, no graphics, no columns, no special characters
 - Use exact section headers: PROFESSIONAL SUMMARY, PROFESSIONAL EXPERIENCE, EDUCATION, SKILLS
 - Bullet points with strong action verbs (Led, Developed, Achieved, Reduced, Increased, Built)
-- Quantify achievements with metrics where possible based on the provided information
 - Each bullet under 20 words
 - Total length: 400-550 words
-- Output ONLY the resume text, start directly with the candidate's name` + NO_EM_DASH;
+- Output ONLY the resume text, start directly with the candidate's name
+
+NEVER INVENT FACTS
+- Every employer, job title, date, school, degree and skill must come from the information given to you. Invent none of them.
+- Numbers are the easiest thing to fabricate and the most damaging. Use a percentage, a dollar amount, a headcount or a volume ONLY if that exact number is in the information given. If none is given, write the achievement without a number.
+- Do not upgrade a plain skill into a qualified one. "Excel" does not become "advanced Excel"; "reporting" does not become "executive reporting".
+
+MISSING INFORMATION
+- A field that was not provided is simply absent. Do not guess it, do not write a placeholder, and do not carry a label like "Company" or "Dates" into the resume.
+- If a whole section has no information, leave that section out rather than filling it with invented content.
+
+DATES
+- Write dates exactly as they were given to you. Do not convert them, do not compute durations, and do not infer a year that was not provided.
+- If a date was not given, omit it rather than estimating one.` + NO_EM_DASH;
+// K32'nin uc kurali burada da geciyor, cunku bu metin de kullanicinin ADIYLA
+// isverene gidiyor. Kaldirilan satir sunu diyordu:
+//   "Quantify achievements with metrics where possible based on the provided
+//    information"
+// Nitelik ("based on the provided information") vardi ama emir kipi ondan
+// guclu: modele "rakam koy" deniyor, eline rakam verilmiyordu. Kapak
+// mektubunda ayni cumlenin bedeli olculmustu (K32): model rakami uyduruyor ve
+// kullanici o metni isverene gonderiyordu.
 
 // ── CV Adaptation system prompt ───────────────────────────────────────────────
 const ADAPT_CV_SYSTEM = `You are an expert resume writer. Your job is to adapt a candidate's existing CV/resume to better match a specific job description.
@@ -1139,24 +1159,53 @@ Analyze the match and return the JSON scorecard.`;
       language    = 'English',
     } = request.body ?? {};
 
-    if (!name || name.trim().length < 2)
-      return reply.code(400).send({ error: 'name required' });
+    if (!name || String(name).trim().length < 2) {
+      return reply.code(422).send({
+        kod:   CVB_HATA.AD_GEREKLI,
+        error: 'A name is required.',
+      });
+    }
     if (!process.env.ANTHROPIC_API_KEY)
       return reply.code(503).send({ error: 'ANTHROPIC_API_KEY not set' });
 
-    const expText = experience.length
-      ? experience.map((e) =>
-          `• ${e.title || 'Role'} at ${e.company || 'Company'} (${e.dates || 'Dates'}): ${e.description || ''}`
-        ).join('\n')
+    // ── YER TUTUCULAR KALDIRILDI ──────────────────────────────────────────
+    //
+    // Eskiden bos alanlar isteme SAHTE DEGER olarak giriyordu:
+    //   `• ${e.title || 'Role'} at ${e.company || 'Company'} (${e.dates || 'Dates'})`
+    // Kullanici sirket adini bos biraktiginda modele su gidiyordu:
+    //   "• Analyst at Company (Dates): ..."
+    // Modelin iki secenegi vardi ve ikisi de kotu: "Company" kelimesini CV'ye
+    // yazmak, ya da bosluga bir sirket ve bir tarih UYDURMAK. Istemdeki
+    // MISSING INFORMATION kurali da ancak eksik alan GERCEKTEN eksik
+    // gorundugunde ise yarar.
+    const yazi = (d) => String(d == null ? '' : d).trim();
+    const dizi = (d) => (Array.isArray(d) ? d : []);
+
+    const satir = (parcalar) => parcalar.filter(Boolean).join(' ');
+
+    const expText = dizi(experience).length
+      ? dizi(experience).map((e) => {
+          const bas = satir([
+            '•',
+            yazi(e.title),
+            yazi(e.company) && `at ${yazi(e.company)}`,
+            yazi(e.dates)   && `(${yazi(e.dates)})`,
+          ]);
+          return yazi(e.description) ? `${bas}: ${yazi(e.description)}` : bas;
+        }).filter((x) => x.length > 1).join('\n')
       : 'Not provided';
 
-    const eduText = education.length
-      ? education.map((e) =>
-          `• ${e.degree || 'Degree'} · ${e.institution || 'Institution'} (${e.year || ''})`
-        ).join('\n')
+    const eduText = dizi(education).length
+      ? dizi(education).map((e) => satir([
+          '•',
+          yazi(e.degree),
+          yazi(e.institution) && `· ${yazi(e.institution)}`,
+          yazi(e.year)        && `(${yazi(e.year)})`,
+        ])).filter((x) => x.length > 1).join('\n')
       : 'Not provided';
 
-    const skillsText = Array.isArray(skills) ? skills.join(', ') : skills;
+    const skillsText = dizi(skills).map(yazi).filter(Boolean).join(', ')
+      || (typeof skills === 'string' ? yazi(skills) : '');
 
     const userPrompt = `Write the resume in ${language}.
 
@@ -1177,14 +1226,42 @@ Skills: ${skillsText || 'Not provided'}
 Write the complete ATS-optimized resume now.`;
 
     try {
+      // BUTCE. 1200 idi. Istem 400-550 KELIME istiyor; Turkce ~2.27
+      // token/kelime, yani 550 kelime ~1250 token tutuyor ve 1200 tam
+      // sinirin altinda kaliyordu. Kesilen bir CV, kesilen bir JSON gibi
+      // gurultu cikarmaz: CV GIBI GORUNUR, cumlenin ortasinda biter ve
+      // kullanici fark etmezse isverene yarim bir metin gonderir.
+      const ustveri = {};
       const resume = await createMessage({
         model:      request.body?.model || 'claude-sonnet',
-        max_tokens: 1200,
+        max_tokens: 1800,
         system:     RESUME_SYSTEM,
         messages:   [{ role: 'user', content: userPrompt }],
-      });
-      const words = resume.trim().split(/\s+/).length;
-      return { resume: resume.trim(), word_count: words };
+      }, ustveri);
+
+      const metin = String(resume || '').trim();
+      // `''.trim().split(/\s+/).length` BIR verir. Eski kod bunu kullaniyordu,
+      // yani bos bir CV ekranda "1 words" ile BASARI gibi gorunuyordu.
+      // Kapak mektubunda ayni kusur duzeltilmisti (K33); burada duruyordu.
+      const words = metin ? metin.split(/\s+/).filter(Boolean).length : 0;
+
+      if (ustveri.kesildi) {
+        fastify.log.warn({ words, cikti_token: ustveri.cikti_token },
+          '[build-resume] yanit kesildi');
+        return reply.code(422).send({
+          kod:   CVB_HATA.YANIT_KESILDI,
+          error: 'The resume was cut off before it was complete.',
+        });
+      }
+      if (words < 120) {
+        fastify.log.info({ words }, '[build-resume] cv uretilemedi');
+        return reply.code(422).send({
+          kod:   CVB_HATA.URETILEMEDI,
+          error: 'The resume could not be written.',
+        });
+      }
+
+      return { resume: metin, word_count: words };
     } catch (err) {
       fastify.log.error(err, '[practice/build-resume]');
       return reply.code(500).send({ error: err.message });
