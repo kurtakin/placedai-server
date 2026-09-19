@@ -24,7 +24,7 @@
 const { test } = require('node:test');
 const assert   = require('node:assert');
 
-const { normalle, tekille, terimGecer, izVar, eslesmeleriDogrula } = require('./lib/kelime-eslesme');
+const { normalle, tekille, tekilAdaylari, terimGecer, izVar, eslesmeleriDogrula } = require('./lib/kelime-eslesme');
 
 /** Kullanicinin gercek CV'sinden alinmis, kisaltilmis bir ornek. */
 const CV = `
@@ -171,6 +171,57 @@ test('B3: sertifika ADI da eslesme sayilir ve bu BILEREK boyle', () => {
   // mu" diyor, "deneyimi var mi" demiyor. Ayrimi bir metin suzgeci yapamaz;
   // yapmaya calismak yeni bir yalan turu uretir.
   assert.strictEqual(terimGecer('demand planning', normalle(CV)).gecer, true);
+});
+
+test('B5: kelime BASKA KELIMENIN ICINDE aranmiyor', () => {
+  // URETIMDE GORULDU (19 Eylul 2026). Ekranda "Google Drive" eslesen anahtar
+  // kelime olarak cikti. Kullanicinin CV'sinde "Drive" kelimesi HIC gecmiyor;
+  // eslesmenin sebebi "data-driven" icindeki "drive" parcasiydi.
+  //
+  // Ayni tuzak: "art" -> "start", "ai" -> "email", "cv" -> "recover".
+  const cv = normalle('Data-Driven Decisions, Google Analytics');
+  assert.strictEqual(terimGecer('Google Drive', cv).gecer, false,
+    '"drive" kelimesi "data-driven" icinden eslesti');
+  // Gercek olanlar bozulmadi:
+  assert.strictEqual(terimGecer('Google Analytics', cv).gecer, true);
+  assert.strictEqual(terimGecer('data-driven decisions', cv).gecer, true);
+});
+
+test('B6: iz olcutu YARIDAN COGU, "en az biri" degil', () => {
+  // Ilk surum "en az bir kelime" diyordu ve cok gevsekti: "Google Drive"
+  // yalnizca "Google" yuzunden, "statistical analysis" yalnizca "analysis"
+  // yuzunden kaliyordu. Iki kelimelik bir terimin yarisi tek kelimedir ve o
+  // kelime cogu zaman genel olandir ("data", "google", "analysis").
+  const cv = normalle(CV);
+  assert.strictEqual(izVar('Google Drive', cv), false, '1/2 yeterli sayildi');
+  assert.strictEqual(izVar('statistical analysis', cv), false, '1/2 yeterli sayildi');
+  assert.strictEqual(izVar('process automation', cv), false, '1/2 yeterli sayildi');
+  // Ama 2/3 hala yeterli: guvenlik payi duruyor.
+  assert.strictEqual(izVar('root cause analysis', cv), true, 'guvenlik payi kayboldu');
+});
+
+test('B7: tireli yazim iki bicimde de esleşiyor', () => {
+  // Ilan "data driven decision making" yazar, CV "Data-Driven Decisions"
+  // yazar. Ikisi ayni sey; tire yuzunden eslesmemek sessiz bir kayip olurdu.
+  const cv = normalle('Data-Driven Decisions, Power BI');
+  assert.strictEqual(terimGecer('data driven', cv).gecer, true, 'tireli yazim bolunmuyor');
+  assert.strictEqual(terimGecer('data-driven', cv).gecer, true);
+  // Ama tire parcasi hala TAM KELIME: "drive" tek basina eslesmemeli.
+  assert.strictEqual(terimGecer('Google Drive', normalle('Data-Driven, Google Analytics')).gecer,
+    false, '"drive" parcasi "driven" icinden eslesti');
+});
+
+test('B8: tekil adaylari HEM "process" HEM "cause" bicimini uretiyor', () => {
+  // Ingilizce'de "-ses" iki farkli ekten gelir ve ayrimi sozluk yapar:
+  //   processes = process + es      causes = cause + s
+  // Tek kurala baglayan surum "causes"i "caus" yapiyordu ve "root cause
+  // analysis" eslesmesi sessizce kayboluyordu. Tahmin yerine ikisi de
+  // uretiliyor; yanlis aday hicbir belgede gecmeyecegi icin zararsiz.
+  assert.ok(tekilAdaylari('causes').includes('cause'), '"cause" adayi uretilmiyor');
+  assert.ok(tekilAdaylari('processes').includes('process'), '"process" adayi uretilmiyor');
+  assert.ok(tekilAdaylari('boxes').includes('box'));
+  assert.ok(tekilAdaylari('capabilities').includes('capability'));
+  assert.ok(tekilAdaylari('class').includes('class'), 'tekil kelime bozuldu');
 });
 
 // ── C: suzgecin kendisi anlamsizlasmiyor ───────────────────────────────────
