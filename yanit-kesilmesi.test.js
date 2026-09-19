@@ -4,26 +4,35 @@
  *
  * Calistir: node --test "*.test.js" "lib/*.test.js" "middleware/*.test.js"
  *
- * NEDEN VAR. 18 Eylul 2026'da uretimde olculdu. ATS puani sayfasi gercek bir
- * CV ve gercek bir ilanla "ATS puani hesaplanamadi" dedi. Sebep modelin
- * puan verememesi DEGILDI:
+ * NEDEN VAR. 18 Eylul 2026'da uretimde ATS puani sayfasi gercek bir CV ve
+ * gercek bir ilanla "ATS puani hesaplanamadi" dedi.
  *
- *   /ats-score max_tokens : 900
- *   gercekci bir TURKCE puan kartinin tuttugu yer : ~815-915 token
+ * ILK TESHISIM YANLISTI VE BURAYA YAZILIYOR. "Turkce cevap 900 token
+ * butcesini asiyor, JSON yarim kaliyor" dedim. O tahmini karakter/2 gibi
+ * uydurma bir olcutle yapmistim. Gercek tokenlestiriciyle olcunce:
  *
- * Yani cevap sinirin tam ustunde duruyordu. Asinca model cumlenin ortasinda
- * kesiliyor, JSON kapanmiyor, `safeParseJSON` null donuyor ve kullaniciya
- * "puan hesaplanamadi" deniyordu. Model puani vermisti; biz dinlemeyi erken
- * kesmistik.
+ *   /ats-score max_tokens                         : 900
+ *   Turkce bir puan kartinin GERCEKTEN tuttugu yer: 366-450 token
+ *   (cl100k ile; Turkce ~2.27 token/kelime, Ingilizce ~1.13)
+ *
+ * Yani 900 zaten yetiyordu. Hatanin sebebi hala bilinmiyor.
+ *
+ * Bu dosya yine de duruyor, cunku ortaya cikardigi YAPISAL kusur gercek ve
+ * teshisten bagimsiz: kesilme ile basarisizlik ayirt EDILEMIYORDU.
  *
  * Kusuru GORUNMEZ yapan sey `createMessage`'in `stop_reason`'i atmasiydi.
  * Cagiran, cevabin kesildigini bilemiyordu; elinde yalnizca "JSON
  * ayristirilamadi" vardi ve bunu "model beceremedi" diye okuyordu. Yani hata
  * yolunun kendisi teshis edilemiyordu.
  *
- * Bu testler iki seyi kilitler:
+ * Bu testler uc seyi kilitler:
  *   1. `stop_reason` cagirana ULASIYOR (davranis, metin degil).
  *   2. Kesilme, /ats-score'da AYRI bir kod donduruyor.
+ *   3. Hata yolu, sebebi ayirt edecek kadar yaziyor ama kullanici metnini
+ *      yazmiyor.
+ *
+ * Ve bir ders: olcum aracinin kendisi de dogrulanmali. Uydurma bir olcutle
+ * yapilan "olcum", olcum degildir.
  */
 
 const { test } = require('node:test');
@@ -213,10 +222,14 @@ test('C2: butce TEK BASINA duzeltme sayilmiyor: cikti da sinirli', () => {
     'oneri uzunlugu baglanmamis');
 });
 
-test('C3: olcum kayitli: 900 neden yetmiyordu', () => {
-  // Bu test bir SAYIYI degil, GEREKCEYI kilitler. Gerekce kaybolursa biri
-  // "1600 fazla" deyip geri dusurur ve hata geri gelir.
+test('C3: butcenin gerekcesi ve YANLIS CIKAN tahmin kayitli', () => {
+  // Bu test bir SAYIYI degil, GEREKCEYI kilitler. Ozellikle de yanlis cikan
+  // tahmini: "Turkce cevap 900'u asiyor" dedim, olcut uydurmaydi
+  // (karakter/2). Gercek tokenlestiriciyle 366-450 cikti, yani 900 zaten
+  // yetiyordu. Bu kayit silinirse biri ayni yanlis teshise geri doner.
   const g = PRACT.slice(PRACT.indexOf("fastify.post('/ats-score'"));
   assert.match(g, /900 idi/, 'eski butce kayitli degil');
-  assert.match(g, /815-915 token/, 'olcum kayitli degil');
+  assert.match(g, /YANLISTI/, 'yanlis cikan tahmin kayitli degil');
+  assert.match(g, /366-450 token/, 'gercek olcum kayitli degil');
+  assert.match(g, /bir DUZELTME degil, pay/, '1600\'un ne oldugu yazilmamis');
 });

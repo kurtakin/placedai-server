@@ -989,14 +989,21 @@ ${cv_text}
 Analyze the match and return the JSON scorecard.`;
 
     try {
-      // BUTCE. 900 idi ve Turkce cevap tam sinirda kaliyordu: gercekci bir
-      // Turkce puan karti ~815-915 token tutuyor (JSON'un bicimli yazilmasi
-      // farki buyutuyor). Yani cevap bazen siyor, bazen asiyordu; asinca JSON
-      // kapanmiyor ve kullaniciya "puan hesaplanamadi" deniyordu.
+      // BUTCE. 900 idi. Ilk tahminim "Turkce cevap 900'u asiyor" idi ve
+      // YANLISTI: o tahmini karakter/2 gibi uydurma bir olcutle yapmistim.
+      // Gercek tokenlestiriciyle olculdugunde LENGTH LIMITS icindeki Turkce
+      // bir puan karti 366-450 token tutuyor, yani 900 zaten yetiyordu.
+      // (Olcum cl100k ile yapildi; Claude'un tokenlestiricisi birebir ayni
+      // degil ama ayni buyukluk sinifinda. Turkce ~2.27 token/kelime,
+      // Ingilizce ~1.13; yani Turkce iki kat, uc kat degil.)
       //
-      // Sadece sayiyi buyutmek yanlis duzeltme olurdu: sinirsiz buyuyebilen
-      // bir cikti her butceyi bir gun asar. Istemdeki LENGTH LIMITS bolumu
-      // ciktiyi bagliyor, buradaki 1600 de ona rahat bir pay birakiyor.
+      // 1600 yine de kaliyor: pay birakmanin bedeli yok, ve LENGTH LIMITS
+      // ciktiyi zaten bagliyor. Ama bu sayi bir DUZELTME degil, pay.
+      // "Hesaplanamadi" hatasinin gercek sebebi hala bilinmiyor; asagidaki
+      // gunluk alanlari onu soyleyecek.
+      //
+      // Sadece sayiyi buyutmek zaten yanlis duzeltme olurdu: sinirsiz
+      // buyuyebilen bir cikti her butceyi bir gun asar.
       const ustveri = {};
       const raw = await createMessage({
         model:      request.body?.model || 'claude-haiku',
