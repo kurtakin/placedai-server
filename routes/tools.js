@@ -12,7 +12,6 @@ const XLSX     = require('xlsx');
 const mammoth  = require('mammoth');
 const { createMessage }              = require('../lib/ai');
 const { NO_EM_DASH }                 = require('../lib/style-rules');
-const { sendApplicationNotification, isConfigured } = require('../lib/mailer');
 const { requireAuth, requirePlan }   = require('../middleware/auth');
 
 // ── PDF metin cikarici: lib/pdf-text.js (tek kaynak, FlateDecode destekli) ───
@@ -211,22 +210,25 @@ async function toolsRoutes(fastify) {
     }
   });
 
-  // ── POST /notify-apply — başvuru bildirimi e-postası ─────────────────────
-  fastify.post('/notify-apply', async (request, reply) => {
-    const app = request.body ?? {};
-
-    if (!isConfigured()) {
-      // Return 200 silently — user hasn't configured email yet
-      return { ok: false, reason: 'not_configured', hint: '.env dosyasına GMAIL_USER ve GMAIL_APP_PASSWORD ekle' };
-    }
-
-    const result = await sendApplicationNotification(app);
-    if (!result.ok) {
-      fastify.log.warn(`[notify-apply] E-posta gönderilemedi: ${result.error}`);
-      return { ok: false, error: result.error };
-    }
-    return { ok: true };
-  });
+  // ── /notify-apply KALDIRILDI (23 Eylul 2026) ──────────────────────────
+  //
+  // Basvuru Takibi'ndeki "Add & Send Email" dugmesi, kullanicinin kendisine
+  // degil SUNUCUNUN TEK adresine (NOTIFY_EMAIL || GMAIL_USER) e-posta
+  // gonderiyordu. Yani HER kullanicinin her basvurusu, notlari dahil (not
+  // alaninin yer tutucusu "salary expectation: $80k" diyordu) operatorun
+  // gelen kutusuna gidiyordu ve bu kullaniciya hicbir yerde soylenmiyordu.
+  //
+  // Uc ek kusur: rota KIMLIK DOGRULAMASIZ ve HIZ SINIRSIZDI (internetteki
+  // herkes operatorun kutusuna istedigi icerikte e-posta yollatabilir,
+  // Resend kotasini tuketebilirdi); e-posta HTML'i kacissizdi; yapilandirma
+  // eksikken son kullaniciya ".env dosyasina ekle" diyordu.
+  //
+  // Karar: ucretsiz testten once KAPATILDI, kimlik dogrulama arkasina
+  // ALINMADI. Kapatacagimiz bir ozelligi korumaya almak, hala operatore
+  // e-posta gonderen bir uc birakirdi; kaldirmak artik yuzey birakmayan tek
+  // secenek. "Kullaniciya kendi basvurusunu gonder" gercek bir ozellik:
+  // oturumdaki kullanicinin dogrulanmis adresi, kimlik dogrulama, kullanici
+  // basina hiz siniri ve kapatma secenegi gerekir. O ayri bir is (K52).
 
   // ── POST /export-excel — başvuruları Excel dosyası olarak indir ──────────
   fastify.post('/export-excel', async (request, reply) => {
@@ -376,12 +378,11 @@ async function toolsRoutes(fastify) {
     }
   });
 
-  // ── GET /email-status — e-posta yapılandırma durumu ──────────────────────
-  fastify.get('/email-status', async () => ({
-    configured: isConfigured(),
-    user:       process.env.GMAIL_USER ? process.env.GMAIL_USER.replace(/(.{2}).+(@.+)/, '$1…$2') : null,
-    notify_to:  process.env.NOTIFY_EMAIL || process.env.GMAIL_USER || null,
-  }));
+  // ── /email-status KALDIRILDI (23 Eylul 2026) ──────────────────────────
+  // `notify_to: NOTIFY_EMAIL || GMAIL_USER` MASKESIZ donuyordu ve Basvuru
+  // Takibi bunu "📧 Bildirim: ..." diye her ziyaretciye gosteriyordu:
+  // operatorun adresi herkese acikti. Tek tuketicisi kaldirilan bildirim
+  // rozetiydi (K52).
 
   // ── POST /performance-analysis — post-interview performance ───────────────
   // Ultimate: mulakat sonrasi gelisim dongusu. Tek mulakata hazirlanan
