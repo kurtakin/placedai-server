@@ -25,7 +25,8 @@
 'use strict';
 
 const { createMessage } = require('../lib/ai');
-const { JD: JD_HATA, KAPAK: KAPAK_HATA, ATS: ATS_HATA, CVB: CVB_HATA } = require('../lib/hata-kodlari');
+const { JD: JD_HATA, KAPAK: KAPAK_HATA, ATS: ATS_HATA, CVB: CVB_HATA, LI: LI_HATA } = require('../lib/hata-kodlari');
+const { profilDenetimi, mevcutBaslikDogrula } = require('../lib/linkedin-denetim');
 const { eslesmeleriDogrula } = require('../lib/kelime-eslesme');
 const path = require('path');
 const fs   = require('fs');
@@ -295,6 +296,60 @@ Return ONLY valid JSON, no markdown:
   "red_flags": ["potential concern 1 (or empty array if none)"],
   "apply_recommendation": "Strong Match / Good Match / Partial Match / Weak Match"
 }` + NO_EM_DASH;
+
+// ── LinkedIn optimizer system prompt ─────────────────────────────────────────
+// K32'NIN UC KURALI BURADA DA GECIYOR, ve burada daha agir: kapak mektubunu
+// tek bir isveren okur, LinkedIn profilini HERKES. 23 Eylul 2026'da olculdu
+// (K53), eski istem sunlari diyordu:
+//
+//   "quantified achievements"   "include 2-3 numbers"
+//   "about ... 2400-2500 chars" "Skills: pick the 10 most searched/valued
+//                                for the target role"
+//
+// ve hicbir yerde "uydurma" demiyordu. Profilde rakam yoksa modelin tek
+// secenegi rakam uydurmakti; ince bir profili 2.400 karaktere cikarmak icin
+// tek secenegi dolgu yazmakti; "hedef pozisyon icin en degerli 10 beceri"
+// ise kullanicinin SAHIP OLMADIGI becerileri profiline koymakti.
+//
+// Beceri ile anahtar kelime bu yuzden ayrildi: `skills` profilde gorunen
+// beceriler (kullanici hakkinda iddia), `keywords` recruiter aramalari
+// (kullaniciya tavsiye). Ikisini karistirmak K32'nin ucuncu hatasi: isverenin
+// ISTEDIGINI adayin YAPTIGI gibi yazmak.
+//
+// Puan alanlari (score_before, score_after, score_note) kaldirildi; yerine
+// kodda olculen liste geldi (lib/linkedin-denetim.js).
+const LINKEDIN_SYSTEM = `You are a senior LinkedIn profile writer. You rewrite the candidate's own LinkedIn profile so that recruiters searching for the target role find it and read it.
+
+Return ONLY valid JSON (no markdown, no preamble):
+{
+  "headline_before": "<the current headline copied exactly from the profile text, or an empty string if you cannot find it>",
+  "headline": "<new headline, at most 220 characters>",
+  "about": "<new About section, at most 2,600 characters>",
+  "skills": ["up to 10 skills"],
+  "keywords": ["up to 8 search terms"],
+  "recommendations": ["exactly 5 specific improvements"]
+}
+
+WHAT EACH FIELD MAY CONTAIN
+- headline: role + what the candidate does + a differentiator, 3-4 keywords separated by | or ·. No buzzwords like "results-driven".
+- about: first person, open with a hook (not "I am"), put the most important keywords in the first three lines, end with an invitation to connect. Length follows the material: a thin profile gets a short About. Never pad to reach a length.
+- skills: skills the profile shows the candidate HAS, ordered by value for the target role. At most 10. If the profile supports fewer, return fewer.
+- keywords: terms recruiters search for when hiring for this role. These are advice for the candidate, not claims about them, and may include skills the profile does not show.
+- recommendations: specific actions (e.g. "Add a Featured section with your top project", not "improve your profile"). If an important skill for the target role is missing from the profile, write "if you have X, add it"; never assume they have it.
+
+NEVER INVENT FACTS. This text is published on the candidate's public profile under their name.
+- Every employer, job title, date, school, degree, certification, tool and achievement in the headline and About must come from the profile text.
+- Use a percentage, a dollar amount, a headcount, a volume or any other number ONLY if that exact number is in the profile text. If the profile has no numbers, write the About without numbers. A profile with no numbers is far better than one with invented ones.
+- Do not upgrade a skill: "Excel" does not become "advanced Excel", "reporting" does not become "executive reporting".
+
+THE TARGET ROLE IS NOT EVIDENCE
+- The target role and industry say what the candidate WANTS. They are never evidence of what the candidate has done.
+- Never write that the candidate has done a task or has a skill because the target role usually requires it. You may write that they are moving toward that role or are interested in it.
+
+DATES AND DURATIONS
+- The user prompt gives you today's date. Use ONLY that date to interpret "Present", "Current" or an open ended role.
+- Prefer writing dates the way the profile writes them ("since September 2022") over computing a duration.
+- If you do state a duration, compute it from today's date and round DOWN to a whole year. Never guess today's date.` + NO_EM_DASH;
 
 // ── Generate prompt for custom questions ─────────────────────────────────────
 const GENERATE_SYSTEM = `You are an expert interview coach. Given any interview question, generate a structured answer framework.
@@ -724,79 +779,107 @@ Write the complete formal letter.`;
   });
 
   // ── POST /optimize-linkedin — LinkedIn profile optimizer ─────────────────────
+  //
+  // 23 Eylul 2026'da olculdu (K53): cikti denetimi yoktu, cozulemeyen yanitta
+  // modelin HAM metni istemciye donuyordu, hatalar duz Ingilizce metindi (K25)
+  // ve iki "puan" modelin uydurmasiydi. Yanit kesilmesi de hic sorulmuyordu:
+  // kesilen JSON "Parse failed" olarak gorunurdu, sebep kaybolurdu.
   fastify.post('/optimize-linkedin', async (request, reply) => {
     const {
-      profile_text  = '',
+      profile_text     = '',
       current_headline = '',
-      target_role   = '',
-      industry      = 'General',
-      tone          = 'professional',
-      language      = 'English',
+      target_role      = '',
+      industry         = 'General',
+      tone             = 'professional',
+      language         = 'English',
       model,
     } = request.body ?? {};
 
-    if (!profile_text || profile_text.trim().length < 50) {
-      return reply.code(400).send({ error: 'profile_text required (min 50 chars)' });
+    const profil = String(profile_text || '').trim();
+    if (profil.length < 50) {
+      return reply.code(422).send({
+        kod:   LI_HATA.KISA_PROFIL,
+        error: 'profile_text required (min 50 chars)',
+      });
+    }
+    if (!process.env.ANTHROPIC_API_KEY) {
+      return reply.code(503).send({ error: 'ANTHROPIC_API_KEY not set' });
     }
 
-    const trimmed = profile_text.trim().slice(0, 6000);
+    const kaynak = profil.slice(0, 6000);
+    const hedef  = String(target_role || '').trim().slice(0, 120);
+    const TONLAR = { professional: 'professional', confident: 'confident and bold', warm: 'warm and approachable' };
+    const ton    = TONLAR[tone] || TONLAR.professional;
+    const dil    = String(language || 'English').slice(0, 40);
+    const bugun  = new Date().toISOString().slice(0, 10);
 
-    const systemPrompt = `You are a senior LinkedIn profile optimizer and career coach. Analyze the LinkedIn profile and return a JSON optimization report.
-
-Return ONLY valid JSON (no markdown):
-{
-  "score_before": <0-100 number based on the current profile>,
-  "score_after": <0-100 projected score after optimization>,
-  "score_note": "<one sentence why the score changed>",
-  "headline_before": "<extracted current headline from profile text, or empty string>",
-  "headline": "<optimized headline in ${language}, max 220 chars, keyword-rich, role + value proposition + differentiator>",
-  "about": "<optimized About/Summary section in ${language}, 2400-2500 chars, hook first line, keywords in first 3 lines, quantified achievements, call-to-action last line>",
-  "skills": ["skill1", "skill2", "skill3", "skill4", "skill5", "skill6", "skill7", "skill8", "skill9", "skill10"],
-  "keywords": ["keyword1", "keyword2", "keyword3", "keyword4", "keyword5", "keyword6", "keyword7", "keyword8"],
-  "recommendations": [
-    "Specific actionable improvement 1",
-    "Specific actionable improvement 2",
-    "Specific actionable improvement 3",
-    "Specific actionable improvement 4",
-    "Specific actionable improvement 5"
-  ]
-}
-
-Rules:
-- Tone: ${tone}
-- Target role: ${target_role || 'not specified, infer from profile'}
-- Industry: ${industry}
-- Headline: pack 3-4 keywords, separate with | or ·, no buzzwords like "results-driven"
-- About: use first-person, start with a hook (not "I am"), include 2-3 numbers, end with "Let's connect" or similar
-- Skills: pick the 10 most searched/valued for the target role, mix technical + soft
-- Keywords: terms recruiters actually search for this role in LinkedIn Recruiter
-- Recommendations: be specific (e.g. "Add a Featured section with your top project", not "improve your profile")` + NO_EM_DASH;
-
-    const userPrompt = `Target role: ${target_role || '(infer from profile)'}
-Industry: ${industry}
-Current headline: ${current_headline || '(extract from profile)'}
+    const userPrompt = `Today's date: ${bugun}
+Write the headline, About, skills, keywords and recommendations in ${dil}.
+Tone: ${ton}
+Target role: ${hedef || '(not given, infer it from the profile)'}
+Industry: ${String(industry || 'General').slice(0, 80)}
+Current headline: ${String(current_headline || '').trim().slice(0, 300) || '(find it in the profile text)'}
 
 Profile text:
-${trimmed}`;
+${kaynak}`;
 
     try {
+      const ustveri = {};
       const raw = await createMessage({
         model:      model || 'claude-sonnet',
         max_tokens: 1800,
-        system:     systemPrompt,
+        system:     LINKEDIN_SYSTEM,
         messages:   [{ role: 'user', content: userPrompt }],
-      });
+      }, ustveri);
 
-      const clean = raw.replace(/^```json\s*/i, '').replace(/```\s*$/, '').trim();
-      let result;
-      try { result = JSON.parse(clean); }
-      catch {
-        const m = clean.match(/\{[\s\S]+\}/);
-        if (m) { try { result = JSON.parse(m[0]); } catch { return reply.code(500).send({ error: 'Parse failed', raw }); } }
-        else   { return reply.code(500).send({ error: 'Parse failed', raw }); }
+      if (ustveri.kesildi) {
+        fastify.log.warn({ cikti_token: ustveri.cikti_token }, '[optimize-linkedin] yanit kesildi');
+        return reply.code(422).send({
+          kod:   LI_HATA.YANIT_KESILDI,
+          error: 'The response was cut off before it was complete.',
+        });
       }
 
-      return result;
+      const sonuc = safeParseJSON(raw);
+      if (!sonuc || typeof sonuc !== 'object') {
+        // Ham metin ISTEMCIYE GITMEZ: kullaniciya bir anlam tasimiyor ve
+        // modelin kismi ciktisini disari tasiyor. Iz icin uzunlugu yeter.
+        fastify.log.error({ rawChars: String(raw || '').length }, '[optimize-linkedin] yanit cozulemedi');
+        return reply.code(422).send({
+          kod:   LI_HATA.COZULEMEDI,
+          error: 'The response could not be read.',
+        });
+      }
+
+      const yazi  = (d) => (typeof d === 'string' ? d.trim() : '');
+      const liste = (d, en) => (Array.isArray(d) ? d : [])
+        .map((x) => (typeof x === 'string' ? x.trim() : ''))
+        .filter(Boolean).slice(0, en);
+
+      const temiz = {
+        headline:        yazi(sonuc.headline),
+        about:           yazi(sonuc.about),
+        skills:          liste(sonuc.skills, 15),
+        keywords:        liste(sonuc.keywords, 15),
+        recommendations: liste(sonuc.recommendations, 8),
+      };
+
+      // Bos baslik ya da bos Hakkinda BASARI DEGILDIR. Eskiden 200 donuyor,
+      // arayuz bos panelleri aciyor ve ustune iki "puan" basiyordu.
+      if (!temiz.headline || temiz.about.length < 100) {
+        fastify.log.info({ baslik: temiz.headline.length, hakkinda: temiz.about.length },
+          '[optimize-linkedin] metin uretilemedi');
+        return reply.code(422).send({
+          kod:   LI_HATA.URETILEMEDI,
+          error: 'The profile text could not be written.',
+        });
+      }
+
+      return {
+        ...temiz,
+        headline_before: mevcutBaslikDogrula(kaynak, sonuc.headline_before),
+        denetim:         profilDenetimi({ profil: kaynak, hedef, sonuc: temiz }),
+      };
     } catch (err) {
       fastify.log.error(err, '[practice/optimize-linkedin]');
       return reply.code(500).send({ error: err.message });
