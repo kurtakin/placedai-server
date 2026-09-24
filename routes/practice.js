@@ -25,7 +25,8 @@
 'use strict';
 
 const { createMessage } = require('../lib/ai');
-const { JD: JD_HATA, KAPAK: KAPAK_HATA, ATS: ATS_HATA, CVB: CVB_HATA, LI: LI_HATA, EL: EL_HATA } = require('../lib/hata-kodlari');
+const { JD: JD_HATA, KAPAK: KAPAK_HATA, ATS: ATS_HATA, CVB: CVB_HATA, LI: LI_HATA, EL: EL_HATA, OA: OA_HATA, ONAY: ONAY_HATA } = require('../lib/hata-kodlari');
+const { ONAY_SURUMLERI, onayDurumu, onayKaydet } = require('../lib/onay');
 const { profilDenetimi, mevcutBaslikDogrula } = require('../lib/linkedin-denetim');
 const { eslesmeleriDogrula } = require('../lib/kelime-eslesme');
 const path = require('path');
@@ -296,6 +297,54 @@ Return ONLY valid JSON, no markdown:
   "red_flags": ["potential concern 1 (or empty array if none)"],
   "apply_recommendation": "Strong Match / Good Match / Partial Match / Weak Match"
 }` + NO_EM_DASH;
+
+// ── Online Assessment hazirligi ──────────────────────────────────────────────
+// 24 Eylul 2026'da olculdu (K55). Kullanicinin karari: sayfa bir HAZIRLIK
+// araci olarak kaliyor (ornek sorularla calismak, sinavdan sonra cevaplari
+// gozden gecirmek); islevi ayni. Istemdeki degisiklikler:
+//   - HireVue cevabi "Complete spoken STAR answer, first-person" diyordu ve
+//     modele adayin gecmisi VERILMIYORDU. Model birinci agizdan bir hikaye
+//     uyduruyor, aday onu kayitli bir mulakatta kendi hikayesi gibi
+//     anlatiyordu. K32'nin en agir hali. Artik CV varsa oradan kuruluyor,
+//     yoksa [koseli parantezli] bir iskelet veriliyor.
+//   - Kullanici kendi cevabini yazarsa degerlendiriliyor (istege bagli).
+//   - Ciktilarin hepsi JSON; eskiden coktan secmeli duz metindi ve cikti
+//     denetimi yoktu.
+const OA_FEEDBACK_RULES = `
+IF THE CANDIDATE'S OWN ANSWER IS GIVEN
+- Add a "feedback" object: {"strengths": ["..."], "gaps": ["..."], "summary": "one or two sentences"}.
+- Judge only what the candidate wrote. Be specific and honest; an answer that is wrong must be called wrong.
+- If no own answer is given, omit "feedback".`;
+
+const OA_CODING_SYSTEM = `You are an expert coding interview coach. The candidate is preparing for or reviewing an online coding assessment.
+
+Return ONLY valid JSON (no markdown):
+{"approach": "brief approach", "time_complexity": "O(?)", "space_complexity": "O(?)", "solution_code": "complete runnable code in the requested programming language", "step_by_step": "numbered steps that explain the solution so the candidate can learn it", "talking_points": ["tp1", "tp2", "tp3"]}
+- Write explanations in the requested output language. Code, identifiers and complexity notation stay as they are.
+${OA_FEEDBACK_RULES}` + NO_EM_DASH;
+
+const OA_WRITTEN_SYSTEM = `You are an expert assessment coach. The candidate is preparing for or reviewing a multiple choice or written assessment question.
+
+Return ONLY valid JSON (no markdown):
+{"analysis": "the correct answer and why, the reasoning behind it, and why the other options are wrong when there are options"}
+- Be direct and specific. If the question is ambiguous or you are not sure, say so instead of guessing.
+${OA_FEEDBACK_RULES}` + NO_EM_DASH;
+
+const OA_VIDEO_SYSTEM = `You are an expert video interview coach (HireVue style). The candidate is preparing an answer they will speak in their own words.
+
+Return ONLY valid JSON (no markdown):
+{
+  "key_points": ["3-5 key points to hit, each starting with a strong verb, max 8 words"],
+  "answer_draft": "a spoken STAR answer, 60-90 words, natural first-person tone",
+  "avoid": ["3 things to avoid for this question"],
+  "time_plan": "how to split the time limit across STAR, e.g. S:15s T:10s A:45s R:20s"
+}
+
+NEVER INVENT THE CANDIDATE'S EXPERIENCE. They will say this answer on a recorded interview as their own story.
+- If a CV is given, build the answer from a real role, task or achievement in the CV. Use numbers ONLY if that exact number is in the CV.
+- If no CV is given, you do not know their story. Write the answer as a skeleton with clear placeholders in square brackets, for example "When I was working as [your role] at [company], [the situation]...". Do not fill the placeholders with invented details.
+- Situational questions use hypothetical framing ("In that situation I would..."); they may describe an approach without claiming past experience.
+${OA_FEEDBACK_RULES}` + NO_EM_DASH;
 
 // ── Deneyim / referans mektubu ve IK rica e-postasi ──────────────────────────
 // 24 Eylul 2026'da olculdu (K54). Eski istem:
@@ -716,54 +765,150 @@ Evaluate this answer against the framework and return your JSON scorecard.`.trim
     }
   });
 
-  // ── POST /online-assessment — platform bazlı sınav yardımı ──────────────────
+  // ── GET/POST /onay/:ozellik — ozellik onayi (K56) ─────────────────────────
+  //
+  // Kullanicinin karari (B secenegi): onay tarayicida degil SUNUCUDA kayitli.
+  // Kim, ne zaman, hangi metin surumunu onayladi. Metin surumu tek kaynaktan
+  // (lib/onay.js) gelir; istemci eski bir surumu onaylarsa kabul edilmez.
+  fastify.get('/onay/:ozellik', async (request, reply) => {
+    const ozellik = request.params.ozellik;
+    const surum = ONAY_SURUMLERI[ozellik];
+    if (!surum) return reply.code(404).send({ kod: ONAY_HATA.BILINMEYEN, error: 'Unknown feature.' });
+    const durum = await onayDurumu(request.user, ozellik);
+    if (durum === 'okunamadi') {
+      return reply.code(503).send({ kod: ONAY_HATA.KAYDEDILEMEDI, error: 'Consent record could not be read.' });
+    }
+    return { ozellik, surum, onaylandi: durum === 'var' };
+  });
+
+  fastify.post('/onay/:ozellik', async (request, reply) => {
+    const ozellik = request.params.ozellik;
+    const surum = ONAY_SURUMLERI[ozellik];
+    if (!surum) return reply.code(404).send({ kod: ONAY_HATA.BILINMEYEN, error: 'Unknown feature.' });
+    if (Number(request.body?.surum) !== surum) {
+      return reply.code(409).send({ kod: ONAY_HATA.SURUM_ESKI, error: 'The consent text has changed.', surum });
+    }
+    const yazildi = await onayKaydet(request.user, ozellik, request.body?.dil);
+    if (!yazildi) {
+      fastify.log.error({ ozellik }, '[onay] kaydedilemedi');
+      return reply.code(503).send({ kod: ONAY_HATA.KAYDEDILEMEDI, error: 'Consent could not be saved.' });
+    }
+    return { ozellik, surum, onaylandi: true };
+  });
+
+  // ── POST /online-assessment — sinav hazirligi (K55) ────────────────────────
   // Ucretli katmanlar: HireVue bir video mulakat elemesi, TestGorilla yetenek
   // sinavi. Elemeyi ust katmana kilitlemek, Pro musterisini mulakata varmadan
   // savunmasiz birakirdi.
+  //
+  // 24 Eylul 2026'da olculdu: girdiler beyaz listesizdi (platform, dil ve zorluk
+  // isteme ham giriyordu), cozulemeyen yanitta modelin HAM metni istemciye
+  // donuyordu, kesilme ve cikti denetimi yoktu, hatalar duz metindi.
   fastify.post('/online-assessment', { preHandler: requirePlan() }, async (request, reply) => {
-    const { platform = 'general', question_type = 'video_behavioral', question = '', language = 'Python', difficulty = 'Medium', time_limit = 120, model } = request.body ?? {};
-    if (!question.trim()) return reply.code(400).send({ error: 'question required' });
+    const b = request.body ?? {};
+    const sec = (d, liste, varsayilan) => (liste.includes(d) ? d : varsayilan);
+    const yazi = (d, en) => (typeof d === 'string' ? d.trim().slice(0, en) : '');
 
-    // Coding sorusu → coding-solve'a yönlendir
-    if (question_type === 'coding') {
-      const systemPrompt = `You are an expert coding interview coach for ${platform}. Solve the problem and return JSON only:
-{"approach":"brief approach","time_complexity":"O(?)","space_complexity":"O(?)","solution_code":"complete runnable code in ${language}","step_by_step":"numbered steps","talking_points":["tp1","tp2","tp3"]}`;
-      try {
-        const raw = await createMessage({ model: model || 'claude-sonnet', max_tokens: 1200, system: systemPrompt, messages: [{ role: 'user', content: `${platform} ${difficulty} problem:\n${question}` }] });
-        const clean = raw.replace(/^```json\s*/i,'').replace(/```\s*$/,'').trim();
-        let r; try { r = JSON.parse(clean); } catch { return reply.code(500).send({ error: 'Parse failed', raw }); }
-        return { type: 'coding', ...r };
-      } catch (err) { return reply.code(500).send({ error: err.message }); }
+    const soru = yazi(b.question, 6000);
+    if (soru.length < 10) {
+      return reply.code(422).send({ kod: OA_HATA.KISA_SORU, error: 'question required (min 10 chars)' });
+    }
+    // ONAY KAPISI (K56). Kullanici uyariyi onaylamadan bolum calismiyor ve
+    // onay SUNUCUDA kayitli olmali: istemcideki kutu atlanarak dogrudan bu
+    // uca istek atilsa da kapi burada. Tablo okunamazsa kapi KAPALI kalir.
+    const onay = await onayDurumu(request.user, 'online-assessment');
+    if (onay === 'okunamadi') {
+      fastify.log.error('[online-assessment] onay tablosu okunamadi');
+      return reply.code(503).send({ kod: OA_HATA.ONAY_OKUNAMADI, error: 'Consent record could not be read.' });
+    }
+    if (onay !== 'var') {
+      return reply.code(428).send({ kod: OA_HATA.ONAY_GEREKLI, error: 'Consent required.',
+        surum: ONAY_SURUMLERI['online-assessment'] });
+    }
+    if (!process.env.ANTHROPIC_API_KEY) {
+      return reply.code(503).send({ error: 'ANTHROPIC_API_KEY not set' });
     }
 
-    // MCQ / Yazılı
-    if (question_type === 'mcq' || question_type === 'written') {
-      const systemPrompt = `You are an expert assessment coach for ${platform}. Analyze the question and provide a comprehensive answer guide. Be direct and specific. Return plain text (no JSON).` + NO_EM_DASH;
-      try {
-        const analysis = await createMessage({ model: model || 'claude-haiku', max_tokens: 600, system: systemPrompt, messages: [{ role: 'user', content: `Platform: ${platform}\nType: ${question_type}\nQuestion:\n${question}` }] });
-        return { type: 'mcq', analysis };
-      } catch (err) { return reply.code(500).send({ error: err.message }); }
+    const PLATFORM = { hirevue: 'HireVue', codesignal: 'CodeSignal', hackerrank: 'HackerRank',
+      codility: 'Codility', testgorilla: 'TestGorilla', general: 'a general online assessment' };
+    const platform  = PLATFORM[b.platform] || PLATFORM.general;
+    const tur       = sec(b.question_type, ['video_behavioral', 'video_situational', 'coding', 'mcq', 'written'], 'video_behavioral');
+    const programDili = sec(b.language, ['Python', 'JavaScript', 'Java', 'C++', 'SQL'], 'Python');
+    const zorluk    = sec(b.difficulty, ['Easy', 'Medium', 'Hard'], 'Medium');
+    const sure      = Math.min(Math.max(parseInt(b.time_limit, 10) || 120, 0), 3600);
+    const ciktiDili = yazi(b.output_language, 40) || 'auto';
+    const kendi     = yazi(b.own_answer, 4000);
+    const cv        = yazi(b.cv_text, 6000);
+
+    const dilSatiri = ciktiDili === 'auto'
+      ? 'Output language: the same language the question is written in.'
+      : `Output language: ${ciktiDili}.`;
+    const satirlar = [`Platform: ${platform}`, dilSatiri];
+    let system, butce;
+    if (tur === 'coding') {
+      system = OA_CODING_SYSTEM; butce = kendi ? 2000 : 1500;
+      satirlar.push(`Programming language: ${programDili}`, `Difficulty: ${zorluk}`);
+    } else if (tur === 'mcq' || tur === 'written') {
+      system = OA_WRITTEN_SYSTEM; butce = kendi ? 1200 : 900;
+      satirlar.push(`Question type: ${tur === 'mcq' ? 'multiple choice' : 'written'}`);
+    } else {
+      system = OA_VIDEO_SYSTEM; butce = kendi ? 1100 : 700;
+      const dk = Math.floor(sure / 60), sn = sure % 60;
+      satirlar.push(`Question type: ${tur === 'video_situational' ? 'situational' : 'behavioral'}`,
+        `Time limit: ${sure ? `${dk ? `${dk} min ` : ''}${sn ? `${sn}s` : ''}`.trim() : 'none'}`,
+        cv ? `Candidate CV:\n${cv}` : 'Candidate CV: (not given)');
     }
-
-    // Video Behavioral / Situational (HireVue style)
-    const timeSec = parseInt(time_limit) || 120;
-    const timeStr = timeSec >= 60 ? `${Math.floor(timeSec/60)} min ${timeSec%60 > 0 ? timeSec%60+'s' : ''}`.trim() : `${timeSec}s`;
-    const isSituational = question_type === 'video_situational';
-
-    const systemPrompt = `You are an expert HireVue & video interview coach for ${platform}. Return JSON only:
-{
-  "key_points": ["3-5 key points to hit, each starting with a strong verb, max 8 words"],
-  "answer_draft": "Complete spoken STAR answer, 60-90 words, natural conversational tone, first-person",
-  "avoid": ["3 things to avoid specific to this question"],
-  "time_plan": "How to split ${timeStr} across STAR: e.g. S:15s T:10s A:45s R:20s (adjust for actual limit)"
-}
-${isSituational ? 'This is situational, use hypothetical framing: "In that situation I would…"' : 'This is behavioral, use past tense: "There was a time when…"'}`;
+    satirlar.push(`Question:\n${soru}`);
+    if (kendi) satirlar.push(`Candidate's own answer:\n${kendi}`);
 
     try {
-      const raw = await createMessage({ model: model || 'claude-haiku', max_tokens: 500, system: systemPrompt, messages: [{ role: 'user', content: `Platform: ${platform}\nTime limit: ${timeStr}\nQuestion: "${question}"` }] });
-      const clean = raw.replace(/^```json\s*/i,'').replace(/```\s*$/,'').trim();
-      let r; try { r = JSON.parse(clean); } catch { const m = clean.match(/\{[\s\S]+\}/); r = m ? JSON.parse(m[0]) : null; if (!r) return reply.code(500).send({ error: 'Parse failed', raw }); }
-      return { type: 'video', ...r };
+      const ustveri = {};
+      const raw = await createMessage({
+        model:      b.model || (tur === 'coding' ? 'claude-sonnet' : 'claude-haiku'),
+        max_tokens: butce,
+        system,
+        messages:   [{ role: 'user', content: satirlar.join('\n') }],
+      }, ustveri);
+
+      if (ustveri.kesildi) {
+        fastify.log.warn({ tur, cikti_token: ustveri.cikti_token }, '[online-assessment] yanit kesildi');
+        return reply.code(422).send({ kod: OA_HATA.YANIT_KESILDI, error: 'The response was cut off.' });
+      }
+      const r = safeParseJSON(raw);
+      if (!r || typeof r !== 'object') {
+        fastify.log.error({ tur, rawChars: String(raw || '').length }, '[online-assessment] yanit cozulemedi');
+        return reply.code(422).send({ kod: OA_HATA.COZULEMEDI, error: 'The response could not be read.' });
+      }
+
+      const metin = (d, en = 8000) => (typeof d === 'string' ? d.trim().slice(0, en) : '');
+      const liste = (d, en) => (Array.isArray(d) ? d : [])
+        .map((x) => (typeof x === 'string' ? x.trim() : '')).filter(Boolean).slice(0, en);
+      const geri = r.feedback && typeof r.feedback === 'object' && kendi ? {
+        strengths: liste(r.feedback.strengths, 6),
+        gaps:      liste(r.feedback.gaps, 6),
+        summary:   metin(r.feedback.summary, 800),
+      } : null;
+
+      let cikti;
+      if (tur === 'coding') {
+        cikti = { type: 'coding', approach: metin(r.approach, 1000), time_complexity: metin(r.time_complexity, 60),
+          space_complexity: metin(r.space_complexity, 60), solution_code: metin(r.solution_code, 12000),
+          step_by_step: metin(r.step_by_step, 4000), talking_points: liste(r.talking_points, 6) };
+        if (!cikti.solution_code) cikti = null;
+      } else if (tur === 'mcq' || tur === 'written') {
+        cikti = { type: 'mcq', analysis: metin(r.analysis, 6000) };
+        if (!cikti.analysis) cikti = null;
+      } else {
+        cikti = { type: 'video', key_points: liste(r.key_points, 6), answer_draft: metin(r.answer_draft, 2000),
+          avoid: liste(r.avoid, 5), time_plan: metin(r.time_plan, 400) };
+        if (!cikti.key_points.length || !cikti.answer_draft) cikti = null;
+      }
+      if (!cikti) {
+        fastify.log.info({ tur }, '[online-assessment] cikti bos');
+        return reply.code(422).send({ kod: OA_HATA.URETILEMEDI, error: 'No usable answer was produced.' });
+      }
+      if (geri) cikti.feedback = geri;
+      return cikti;
     } catch (err) {
       fastify.log.error(err, '[practice/online-assessment]');
       return reply.code(500).send({ error: err.message });
