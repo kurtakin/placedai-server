@@ -221,3 +221,37 @@ test('C7: denetimin her kodu tanimli listede (ceviri testi buradan okur)', () =>
   assert.deepStrictEqual(l.map((m) => m.kod).sort(), [...D.DENETIM_KODLARI].sort());
   assert.deepStrictEqual(LI_KODLARI.sort(), Object.values(LI).sort());
 });
+
+// ── D: canli denemeden cikanlar (24 Eylul 2026) ────────────────────────────
+//
+// Kullanicinin kendi profiliyle yapilan ilk canli denemede uc sey olculdu:
+// Ingilizce profil Turkceye cevrildi (arayuz Turkce oldugu icin), "Fluent in
+// Turkish" -> "Turkce anadil duzeyinde" oldu, ve profilde yalnizca "acik
+// oldugu roller" arasinda gecen "Supply Chain Analyst" basliga UNVAN gibi
+// yazildi.
+
+test('D1: dil verilmezse ya da "auto" ise PROFILIN KENDI DILI isteniyor', async () => {
+  for (const govde of [{ profile_text: PROFIL }, { profile_text: PROFIL, language: 'auto' }]) {
+    await istek(govde, { yanit: JSON.stringify(IYI) });
+    const k = sahte.cagri[0].messages[0].content;
+    assert.match(k, /in the same language the profile text is written in/, 'profil dili istenmedi');
+    assert.ok(!/ in auto\./.test(k), '"auto" dil adi gibi isteme girdi');
+  }
+});
+
+test('D2: acikca secilen dil AYNEN isteniyor', async () => {
+  await istek({ profile_text: PROFIL, language: 'Turkish' }, { yanit: JSON.stringify(IYI) });
+  const k = sahte.cagri[0].messages[0].content;
+  assert.match(k, /recommendations in Turkish\./);
+  assert.ok(!/same language the profile/.test(k), 'secilen dil yok sayildi');
+});
+
+test('D3: dil duzeyi yukseltme yasagi istemde', () => {
+  assert.match(istem(), /"fluent" does not become "native"/);
+});
+
+test('D4: istenen rol basliga UNVAN olarak yazilamaz', () => {
+  const i = istem();
+  assert.match(i, /Never present it as their current or past title/);
+  assert.match(i, /roles the profile says the candidate is "open to"/, '"acik oldugu roller" kanit sayilabiliyor');
+});

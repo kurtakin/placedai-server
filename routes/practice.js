@@ -25,7 +25,7 @@
 'use strict';
 
 const { createMessage } = require('../lib/ai');
-const { JD: JD_HATA, KAPAK: KAPAK_HATA, ATS: ATS_HATA, CVB: CVB_HATA, LI: LI_HATA } = require('../lib/hata-kodlari');
+const { JD: JD_HATA, KAPAK: KAPAK_HATA, ATS: ATS_HATA, CVB: CVB_HATA, LI: LI_HATA, EL: EL_HATA } = require('../lib/hata-kodlari');
 const { profilDenetimi, mevcutBaslikDogrula } = require('../lib/linkedin-denetim');
 const { eslesmeleriDogrula } = require('../lib/kelime-eslesme');
 const path = require('path');
@@ -297,6 +297,49 @@ Return ONLY valid JSON, no markdown:
   "apply_recommendation": "Strong Match / Good Match / Partial Match / Weak Match"
 }` + NO_EM_DASH;
 
+// ── Deneyim / referans mektubu ve IK rica e-postasi ──────────────────────────
+// 24 Eylul 2026'da olculdu (K54). Eski istem:
+//
+//   "Write a formal ${typeLabel} ... Use professional business letter format
+//    with date, recipient section, body paragraphs, and signature block."
+//
+// Uc kusur: (1) modele bugunun tarihi verilmiyordu, yani imzali bir belgenin
+// ustundeki tarih modelin TAHMINIYDI (K32'nin tarih hatasi); (2) uydurma
+// yasagi yoktu, bos basari alanina "general duties performed
+// satisfactorily" gidiyordu ve yonetici dogrulamadigi iddialari
+// imzalayacakti; (3) "Employment Verification" turu, isverenin KENDI
+// kayitlarindan verecegi resmi belgeyi calisana urettiriyordu. O tur,
+// kullanicinin onayiyla IK'dan belge isteyen bir e-postaya donustu.
+const LETTER_RULES = `
+NEVER INVENT FACTS. Someone will sign or send this under their own name.
+- Every employer, job title, date, responsibility, achievement and number must come from the information given to you.
+- Use a percentage, an amount, a headcount or any other number ONLY if that exact number was given. If none was given, write without numbers.
+- If no responsibilities or achievements were given, confirm the employment and the title in plain terms. Do not invent duties or praise.
+- Do not upgrade anything: "team member" does not become "team lead", "helped with" does not become "led".
+
+MISSING INFORMATION
+- If a name, title or date that the text needs was not given, write a clear placeholder in square brackets, for example [Manager Name] or [Start date - End date], so the person can fill it in before signing or sending. Never guess it.
+
+DATES
+- The user prompt gives you today's date. Use it as the date of the letter or email, written in the conventions of the output language. Never guess today's date.
+- Write employment dates exactly as they were given. Do not compute or restate a duration that was not given.`;
+
+const EXPERIENCE_LETTER_SYSTEM = `You are an experienced HR professional. Write a DRAFT letter that a former manager will review and sign. The letter is written in the manager's voice about the employee.
+
+Output ONLY the letter text: no explanation, no markdown, no JSON. Use a professional business letter format: date, a "To Whom It May Concern" style salutation, body paragraphs, and a signature block for the manager.
+- "experience": confirms the employment, the title, the dates and the responsibilities.
+- "reference": a recommendation letter; it may express the manager's opinion only in general terms that follow from the information given.
+- Keep the letter between 150 and 350 words.
+${LETTER_RULES}` + NO_EM_DASH;
+
+const HR_REQUEST_SYSTEM = `You are an experienced career coach. Write a short, polite email FROM the employee TO the HR department of their former employer, asking for an employment verification letter that confirms their employment dates and job title.
+
+Output ONLY the email: a "Subject:" line, then the body, then the employee's name. No explanation, no markdown, no JSON.
+- Ask what the letter should confirm (dates of employment, job title) and ask how and when it can be provided.
+- Do not ask for salary information and do not mention salary.
+- Keep it under 150 words.
+${LETTER_RULES}` + NO_EM_DASH;
+
 // ── LinkedIn optimizer system prompt ─────────────────────────────────────────
 // K32'NIN UC KURALI BURADA DA GECIYOR, ve burada daha agir: kapak mektubunu
 // tek bir isveren okur, LinkedIn profilini HERKES. 23 Eylul 2026'da olculdu
@@ -341,10 +384,12 @@ NEVER INVENT FACTS. This text is published on the candidate's public profile und
 - Every employer, job title, date, school, degree, certification, tool and achievement in the headline and About must come from the profile text.
 - Use a percentage, a dollar amount, a headcount, a volume or any other number ONLY if that exact number is in the profile text. If the profile has no numbers, write the About without numbers. A profile with no numbers is far better than one with invented ones.
 - Do not upgrade a skill: "Excel" does not become "advanced Excel", "reporting" does not become "executive reporting".
+- Do not upgrade a language level either: "fluent" does not become "native", "proficient" does not become "fluent". Keep the level the profile states.
 
 THE TARGET ROLE IS NOT EVIDENCE
-- The target role and industry say what the candidate WANTS. They are never evidence of what the candidate has done.
+- The target role, the industry and any roles the profile says the candidate is "open to" say what the candidate WANTS. They are never evidence of what the candidate has done.
 - Never write that the candidate has done a task or has a skill because the target role usually requires it. You may write that they are moving toward that role or are interested in it.
+- In the headline, a wanted role may appear only as something the candidate is open to ("Open to Supply Chain Analyst roles"). Never present it as their current or past title. The title part of the headline must be one the profile shows they hold or held.
 
 DATES AND DURATIONS
 - The user prompt gives you today's date. Use ONLY that date to interpret "Present", "Current" or an open ended role.
@@ -378,7 +423,6 @@ const METERED_ROUTES = new Set([
   '/online-assessment',
   '/experience-letter',
   '/optimize-linkedin',
-  '/linkedin-headlines',
 ]);
 
 /** Route path without the /api/v1/practice prefix, across Fastify versions. */
@@ -713,65 +757,86 @@ ${isSituational ? 'This is situational, use hypothetical framing: "In that situa
     }
   });
 
-  // ── POST /linkedin-headlines — LinkedIn headline varyasyonları ──────────────
-  fastify.post('/linkedin-headlines', async (request, reply) => {
-    const { current_title = '', target_role = '', skills = '', industry = 'General', tone = 'professional', count = 5, model } = request.body ?? {};
-    if (!current_title.trim()) return reply.code(400).send({ error: 'current_title required' });
+  // ── /linkedin-headlines KALDIRILDI (K54) ──────────────────────────────────
+  //
+  // Kariyer Araclari'ndaki baslik sekmesi LinkedIn Optimizasyon sayfasinin
+  // ikinci kopyasiydi: ayni isi uydurma yasagi ve kodda olculen denetim
+  // olmadan yapiyordu (K31'in kalibi). Kullanicinin karariyla sekme ve uc
+  // birlikte kaldirildi; baslik uretmenin tek yeri /optimize-linkedin.
 
-    const systemPrompt = `You are a LinkedIn profile expert. Generate ${count} distinct headline variations. Return ONLY a JSON array of strings, no markdown:
-["headline 1", "headline 2", ...]
-
-Rules:
-- Max 220 chars each
-- Tone: ${tone}
-- Mix separators: | · / (vary between options)
-- Front-load the most important keyword
-- Include role + top 2-3 skills + value hint
-- Avoid clichés: "results-driven", "passionate", "dynamic", "guru", "ninja"
-- Each variation should feel genuinely different (not just reordered)` + NO_EM_DASH;
-
-    const userPrompt = `Current title: ${current_title}
-Target role: ${target_role || current_title}
-Key skills: ${skills || 'not specified'}
-Industry: ${industry}
-
-Generate ${count} headline variations.`;
-
-    try {
-      const raw = await createMessage({ model: model || 'claude-haiku', max_tokens: 600, system: systemPrompt, messages: [{ role: 'user', content: userPrompt }] });
-      const clean = raw.replace(/^```json\s*/i, '').replace(/```\s*$/, '').trim();
-      let headlines;
-      try { headlines = JSON.parse(clean); }
-      catch { const m = clean.match(/\[[\s\S]+\]/); headlines = m ? JSON.parse(m[0]) : [clean]; }
-      return { headlines: (Array.isArray(headlines) ? headlines : [headlines]).slice(0, count) };
-    } catch (err) {
-      fastify.log.error(err, '[practice/linkedin-headlines]');
-      return reply.code(500).send({ error: err.message });
-    }
-  });
-
-  // ── POST /experience-letter — deneyim / referans mektubu ─────────────────────
+  // ── POST /experience-letter — deneyim / referans mektubu, IK rica e-postasi ─
   fastify.post('/experience-letter', async (request, reply) => {
-    const { emp_name = '', emp_title = '', company = '', duration = '', manager_name = '', manager_title = '', achievements = '', language = 'Turkish', type = 'experience', model } = request.body ?? {};
-    if (!emp_name.trim() || !emp_title.trim() || !company.trim()) return reply.code(400).send({ error: 'emp_name, emp_title, company required' });
+    const b = request.body ?? {};
+    const yazi = (d, en = 300) => String(d == null ? '' : d).trim().slice(0, en);
 
-    const typeLabel = { experience: 'Deneyim Mektubu / Experience Letter', reference: 'Referans/Tavsiye Mektubu / Reference Letter', employment: 'Çalışma Belgesi / Employment Certificate' }[type] || 'Experience Letter';
+    const ad = yazi(b.emp_name, 120), unvan = yazi(b.emp_title, 120), sirket = yazi(b.company, 160);
+    if (!ad || !unvan || !sirket) {
+      return reply.code(422).send({
+        kod:   EL_HATA.ALAN_EKSIK,
+        error: 'emp_name, emp_title and company are required.',
+      });
+    }
+    if (!process.env.ANTHROPIC_API_KEY) {
+      return reply.code(503).send({ error: 'ANTHROPIC_API_KEY not set' });
+    }
 
-    const systemPrompt = `You are an expert HR professional. Write a formal ${typeLabel} in ${language}. Output ONLY the letter text, no explanation, no markdown, no JSON. Use professional business letter format with date, recipient section, body paragraphs, and signature block.` + NO_EM_DASH;
+    // Eski istemciler "employment" gonderebilir (onbellekteki sayfa); o tur
+    // artik yok, en yakin karsiligi IK'ya rica e-postasi.
+    const TURLER = ['experience', 'reference', 'hr_request'];
+    const tur = b.type === 'employment' ? 'hr_request' : (TURLER.includes(b.type) ? b.type : 'experience');
+    const dil = yazi(b.language, 40) || 'English';
+    const bugun = new Date().toISOString().slice(0, 10);
 
-    const userPrompt = `Employee: ${emp_name}, ${emp_title}
-Company: ${company}
-Duration: ${duration || 'not specified'}
-Signing manager: ${manager_name || '[Manager Name]'}, ${manager_title || '[Title]'}
-Key responsibilities & achievements: ${achievements || 'general duties performed satisfactorily'}
-Letter type: ${type}
-Language: ${language}
-
-Write the complete formal letter.`;
+    // Eksik alan BOS gider, yer tutucu olarak degil: istemdeki MISSING
+    // INFORMATION kurali modele koseli parantez yazdirir. Eskiden bos basari
+    // alanina "general duties performed satisfactorily" gidiyordu; yani
+    // kullanicinin yazmadigi bir degerlendirme yoneticinin agzina konuyordu.
+    const satir = (etiket, deger) => `${etiket}: ${deger || '(not given)'}`;
+    const userPrompt = [
+      `Today's date: ${bugun}`,
+      `Write in ${dil}.`,
+      `Type: ${tur}`,
+      satir('Employee', ad),
+      satir('Job title', unvan),
+      satir('Company', sirket),
+      satir('Employment dates', yazi(b.duration, 120)),
+      satir('Manager name', yazi(b.manager_name, 120)),
+      satir('Manager title', yazi(b.manager_title, 120)),
+      satir('Responsibilities and achievements', yazi(b.achievements, 2000)),
+    ].join('\n');
 
     try {
-      const letter = await createMessage({ model: model || 'claude-sonnet', max_tokens: 900, system: systemPrompt, messages: [{ role: 'user', content: userPrompt }] });
-      return { letter: letter.trim() };
+      // BUTCE 900'du ve istem hicbir uzunluk vermiyordu. K36'nin kurali:
+      // butce, ciktinin kendisi sinirlanmadan buyutulmez. Istem artik en fazla
+      // 350 kelime diyor; Turkce ~2,27 token/kelime (K36, cl100k ile olculdu,
+      // Claude'un tokenlestiricisi degil, yaklasik) -> ~800 token. 1400 bu
+      // tahminin ustunde pay birakiyor. Kesilen mektup mektup gibi gorunur ve
+      // imza blogu olmadan biter; o yuzden kesilme ayrica soruluyor.
+      const ustveri = {};
+      const metin = String(await createMessage({
+        model:      b.model || 'claude-sonnet',
+        max_tokens: 1400,
+        system:     tur === 'hr_request' ? HR_REQUEST_SYSTEM : EXPERIENCE_LETTER_SYSTEM,
+        messages:   [{ role: 'user', content: userPrompt }],
+      }, ustveri) || '').trim();
+
+      if (ustveri.kesildi) {
+        fastify.log.warn({ tur, cikti_token: ustveri.cikti_token }, '[experience-letter] yanit kesildi');
+        return reply.code(422).send({
+          kod:   EL_HATA.YANIT_KESILDI,
+          error: 'The letter was cut off before it was complete.',
+        });
+      }
+      const kelime = metin ? metin.split(/\s+/).filter(Boolean).length : 0;
+      if (kelime < 40) {
+        fastify.log.info({ tur, kelime }, '[experience-letter] metin uretilemedi');
+        return reply.code(422).send({
+          kod:   EL_HATA.URETILEMEDI,
+          error: 'The letter could not be written.',
+        });
+      }
+
+      return { letter: metin, type: tur, word_count: kelime };
     } catch (err) {
       fastify.log.error(err, '[practice/experience-letter]');
       return reply.code(500).send({ error: err.message });
@@ -791,7 +856,7 @@ Write the complete formal letter.`;
       target_role      = '',
       industry         = 'General',
       tone             = 'professional',
-      language         = 'English',
+      language         = 'auto',
       model,
     } = request.body ?? {};
 
@@ -810,11 +875,19 @@ Write the complete formal letter.`;
     const hedef  = String(target_role || '').trim().slice(0, 120);
     const TONLAR = { professional: 'professional', confident: 'confident and bold', warm: 'warm and approachable' };
     const ton    = TONLAR[tone] || TONLAR.professional;
-    const dil    = String(language || 'English').slice(0, 40);
+    // DIL VARSAYILANI PROFILIN KENDI DILI. 24 Eylul 2026'da olculdu: Ingilizce
+    // bir profil, arayuz Turkce oldugu icin Turkceye cevrildi; kullanici
+    // British Columbia'da is ariyor. Beceri adlari da Turkce geldi ("Depo
+    // Yonetimi (WMS)") ve LinkedIn'in Ingilizce beceri listesiyle eslesmez.
+    // Metni okuyan recruiter; dili arayuz degil profil belirler (K39).
+    const dil    = String(language || 'auto').slice(0, 40);
+    const dilSatiri = dil === 'auto'
+      ? 'Write the headline, About, skills, keywords and recommendations in the same language the profile text is written in.'
+      : `Write the headline, About, skills, keywords and recommendations in ${dil}.`;
     const bugun  = new Date().toISOString().slice(0, 10);
 
     const userPrompt = `Today's date: ${bugun}
-Write the headline, About, skills, keywords and recommendations in ${dil}.
+${dilSatiri}
 Tone: ${ton}
 Target role: ${hedef || '(not given, infer it from the profile)'}
 Industry: ${String(industry || 'General').slice(0, 80)}
