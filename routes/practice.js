@@ -310,6 +310,15 @@ Return ONLY valid JSON, no markdown:
 // imzalayacakti; (3) "Employment Verification" turu, isverenin KENDI
 // kayitlarindan verecegi resmi belgeyi calisana urettiriyordu. O tur,
 // kullanicinin onayiyla IK'dan belge isteyen bir e-postaya donustu.
+//
+// 24 Eylul 2026, canli deneme (kullanicinin ekran goruntusu): iki kural daha.
+//   - Tarih verilmeyince model koseli parantez yerine mektuba NOT yazdi:
+//     "the employment dates are not available to me at this time and should
+//     be verified...". Yonetici bunu imzalarsa "tarihler bende yok" diyen bir
+//     mektup imzalar. Yer tutucu artik cumlenin ICINDE.
+//   - Model "Akin" adindan cinsiyet cikarip "his time" yazdi. Bu kullanici
+//     icin dogru, bir baskasi icin yanlis; imzali belgede yanlis zamir
+//     cok gorunur. Zamir verilmedigi icin ad ya da cinsiyetsiz ifade.
 const LETTER_RULES = `
 NEVER INVENT FACTS. Someone will sign or send this under their own name.
 - Every employer, job title, date, responsibility, achievement and number must come from the information given to you.
@@ -319,6 +328,10 @@ NEVER INVENT FACTS. Someone will sign or send this under their own name.
 
 MISSING INFORMATION
 - If a name, title or date that the text needs was not given, write a clear placeholder in square brackets, for example [Manager Name] or [Start date - End date], so the person can fill it in before signing or sending. Never guess it.
+- Put the placeholder inside the sentence where the information belongs, for example "worked with us from [Start date] to [End date]". Never write a note about missing information into the text (such as "the dates are not available to me"): whoever signs it would be signing that note.
+
+PRONOUNS
+- You do not know the employee's gender. Do not infer it from their name. Refer to them by name, or use wording without a gendered pronoun ("during their time with us", or the employee's name).
 
 DATES
 - The user prompt gives you today's date. Use it as the date of the letter or email, written in the conventions of the output language. Never guess today's date.

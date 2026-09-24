@@ -162,3 +162,23 @@ test('C4: kodlar listesi tanimli (ceviri testi buradan okur)', () => {
   assert.deepStrictEqual([...EL_KODLARI].sort(), Object.values(EL).sort());
   assert.strictEqual(EL_KODLARI.length, 3);
 });
+
+// ── D: canli denemeden (24 Eylul 2026) ─────────────────────────────────────
+
+test('D1: eksik bilgi mektuba NOT olarak yazilmaz, yer tutucu cumlenin icinde', () => {
+  const k = KURALLAR();
+  assert.match(k, /Put the placeholder inside the sentence/);
+  assert.match(k, /Never write a note about missing information into the text/);
+  assert.match(k, /from \[Start date\] to \[End date\]/, 'ornek yok; model notu tercih eder');
+});
+
+test('D2: addan cinsiyet cikarilmaz', () => {
+  const k = KURALLAR();
+  assert.match(k, /Do not infer it from their name/);
+  assert.match(k, /without a gendered pronoun/);
+  // Kural iki istemde de: e-posta calisanin agzindan ama IK'ya ucuncu
+  // sahis olarak da anilabilir.
+  for (const ad of ['EXPERIENCE_LETTER_SYSTEM', 'HR_REQUEST_SYSTEM']) {
+    assert.ok(sabit(ad).includes('${LETTER_RULES}'), ad);
+  }
+});
