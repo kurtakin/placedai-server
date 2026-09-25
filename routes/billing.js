@@ -3,7 +3,7 @@
  *
  *   POST /checkout   → auth: Stripe Checkout oturumu açar, URL döner
  *   POST /portal     → auth: Stripe müşteri portalı (iptal, kart güncelleme)
- *   GET  /status     → auth: kullanıcının güncel planı
+ *   GET  /status     → auth: kullanıcının güncel planı ve kalan hakkı
  *   POST /webhook    → Stripe çağırır. İmza doğrulanır, plan Supabase'e yazılır.
  *
  * Doğruluk kaynağı Supabase'deki `app_metadata.plan`. Overlay, profil sınırı ve
@@ -22,6 +22,7 @@
 const { requireAuth } = require('../middleware/auth');
 const { FEATURE_PLANS, LIVE_MINUTES, ALL_PLANS } = require('../lib/plans');
 const { logError }    = require('../lib/errors');
+const { getUsage, getLiveUsage } = require('../lib/usage');
 
 const APP_URL = process.env.APP_URL || 'https://www.placedai.app';
 
@@ -246,8 +247,32 @@ async function billingRoutes(fastify) {
       has_billing_account:   !!meta.stripe_customer_id,
       billing_ready:         !!process.env.STRIPE_SECRET_KEY,
       merchant_of_record:    String(process.env.STRIPE_MANAGED_PAYMENTS || '') === '1' ? 'stripe' : 'placedai',
+      usage:                 await kullanimOku(request.user, fastify.log),
     };
   });
+
+  // Kenar cubugundaki "kalan hak" kutusu (yol haritasi madde 4, 25 Eylul
+  // 2026). Yeni tablo yok: sunucunun zaten tuttugu iki sayaci okuyor.
+  // Istisna olursa null: plan bilgisi yine gider, kutu yalnizca plani
+  // gosterir. SINIR: lib/usage.js Supabase'in {error} donusunu kontrol
+  // etmiyor, okuma hatasini "0 kullanildi" sayiyor. Bu, kutudan once de
+  // vardi ve sayac kapilarini da etkiliyor; ayri bir not olarak DEVAM'da.
+  async function kullanimOku(user, log) {
+    try {
+      const [cevap, canli] = await Promise.all([getUsage(user), getLiveUsage(user)]);
+      return {
+        answers: { used: cevap.used, limit: cevap.limit },
+        live: {
+          used_seconds:      canli.used_seconds,
+          limit_seconds:     canli.limit_seconds,
+          remaining_seconds: canli.remaining_seconds,
+        },
+      };
+    } catch (err) {
+      log.warn({ err: err.message }, '[billing/status] kullanim okunamadi');
+      return null;
+    }
+  }
 
   // ── GET /plans ────────────────────────────────────────────────────────────
   // Kilit haritasi ve kotalar. Dashboard bunu cekip kartlara kilit ciziyor —
