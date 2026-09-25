@@ -28,6 +28,7 @@ const { createMessage } = require('../lib/ai');
 const { JD: JD_HATA, KAPAK: KAPAK_HATA, ATS: ATS_HATA, CVB: CVB_HATA, LI: LI_HATA, EL: EL_HATA, OA: OA_HATA, ONAY: ONAY_HATA } = require('../lib/hata-kodlari');
 const { ONAY_SURUMLERI, onayDurumu, onayKaydet } = require('../lib/onay');
 const { profilDenetimi, mevcutBaslikDogrula } = require('../lib/linkedin-denetim');
+const { kaynaksizSayilariParantezle, zamanPlaniniDenkle } = require('../lib/oa-denetim');
 const { eslesmeleriDogrula } = require('../lib/kelime-eslesme');
 const path = require('path');
 const fs   = require('fs');
@@ -307,6 +308,11 @@ Return ONLY valid JSON, no markdown:
 //     uyduruyor, aday onu kayitli bir mulakatta kendi hikayesi gibi
 //     anlatiyordu. K32'nin en agir hali. Artik CV varsa oradan kuruluyor,
 //     yoksa [koseli parantezli] bir iskelet veriliyor.
+//   - 25 Eylul 2026 (K55 eki): gercek CV ile model CV'de OLMAYAN bir olay
+//     kurdu ve parantezsiz yazdi. Artik CV'den yalnizca yazanlar (isveren,
+//     unvan, tarih, sistem, gorev) kullaniliyor; olayin kendisi CV'de
+//     yoksa parantezde kaliyor. Anahtar noktalar basari cumlesi degil,
+//     yonlendirme. Sayilar ve zaman plani lib/oa-denetim.js'de kodda.
 //   - Kullanici kendi cevabini yazarsa degerlendiriliyor (istege bagli).
 //   - Ciktilarin hepsi JSON; eskiden coktan secmeli duz metindi ve cikti
 //     denetimi yoktu.
@@ -334,14 +340,17 @@ const OA_VIDEO_SYSTEM = `You are an expert video interview coach (HireVue style)
 
 Return ONLY valid JSON (no markdown):
 {
-  "key_points": ["3-5 key points to hit, each starting with a strong verb, max 8 words"],
+  "key_points": ["3-5 things this answer should cover, written as coaching guidance for the candidate (for example 'Name the system where you spotted the gap'), never as achievements; max 10 words each"],
   "answer_draft": "a spoken STAR answer, 60-90 words, natural first-person tone",
   "avoid": ["3 things to avoid for this question"],
-  "time_plan": "how to split the time limit across STAR, e.g. S:15s T:10s A:45s R:20s"
+  "time_plan": "how to split the time limit across STAR; the seconds must add up to the time limit, e.g. S:20s T:15s A:55s R:30s for 120 seconds"
 }
 
 NEVER INVENT THE CANDIDATE'S EXPERIENCE. They will say this answer on a recorded interview as their own story.
-- If a CV is given, build the answer from a real role, task or achievement in the CV. Use numbers ONLY if that exact number is in the CV.
+- From the CV, use only what it actually states: employers, job titles, dates, systems and tools (for example a WMS or ERP name), duties, and achievements written there.
+- A CV rarely describes a specific incident. Every story detail the CV does not state stays as a placeholder in square brackets: the specific situation, its cause, what the candidate did, who they worked with, and the result. For example: "At Acme Logistics I handled stock control in SAP. I noticed [the discrepancy you found] and traced it to [the root cause]. I [what you did], and [the result]."
+- A plausible detail is still an invented detail. Do not describe an event, a cause, a colleague, a team or a result unless the CV states it.
+- Use numbers ONLY if that exact number is in the CV.
 - If no CV is given, you do not know their story. Write the answer as a skeleton with clear placeholders in square brackets, for example "When I was working as [your role] at [company], [the situation]...". Do not fill the placeholders with invented details.
 - Situational questions use hypothetical framing ("In that situation I would..."); they may describe an approach without claiming past experience.
 ${OA_FEEDBACK_RULES}` + NO_EM_DASH;
@@ -855,7 +864,7 @@ Evaluate this answer against the framework and return your JSON scorecard.`.trim
       system = OA_VIDEO_SYSTEM; butce = kendi ? 1100 : 700;
       const dk = Math.floor(sure / 60), sn = sure % 60;
       satirlar.push(`Question type: ${tur === 'video_situational' ? 'situational' : 'behavioral'}`,
-        `Time limit: ${sure ? `${dk ? `${dk} min ` : ''}${sn ? `${sn}s` : ''}`.trim() : 'none'}`,
+        `Time limit: ${sure ? `${`${dk ? `${dk} min ` : ''}${sn ? `${sn}s` : ''}`.trim()} (${sure} seconds)` : 'none'}`,
         cv ? `Candidate CV:\n${cv}` : 'Candidate CV: (not given)');
     }
     satirlar.push(`Question:\n${soru}`);
@@ -899,8 +908,13 @@ Evaluate this answer against the framework and return your JSON scorecard.`.trim
         cikti = { type: 'mcq', analysis: metin(r.analysis, 6000) };
         if (!cikti.analysis) cikti = null;
       } else {
-        cikti = { type: 'video', key_points: liste(r.key_points, 6), answer_draft: metin(r.answer_draft, 2000),
-          avoid: liste(r.avoid, 5), time_plan: metin(r.time_plan, 400) };
+        // K55 eki: CV + soruda olmayan sayi "[number]" olur; plan secilen
+        // sureye denklenir. Ikisi de modelden bagimsiz, kodda.
+        const kaynak = `${cv}\n${soru}`;
+        cikti = { type: 'video',
+          key_points: liste(r.key_points, 6).map((k) => kaynaksizSayilariParantezle(k, kaynak)),
+          answer_draft: kaynaksizSayilariParantezle(metin(r.answer_draft, 2000), kaynak),
+          avoid: liste(r.avoid, 5), time_plan: zamanPlaniniDenkle(metin(r.time_plan, 400), sure) };
         if (!cikti.key_points.length || !cikti.answer_draft) cikti = null;
       }
       if (!cikti) {

@@ -166,3 +166,49 @@ test('D4: kodlar listesi tanimli', () => {
   assert.deepStrictEqual([...OA_KODLARI].sort(), Object.values(OA).sort());
   assert.strictEqual(OA_KODLARI.length, 6);
 });
+
+// ── E: CV varken uydurma (K55 eki, 25 Eylul 2026) ──────────────────────────
+// Gercek CV ile model CV'de olmayan bir olay kurdu (etiketleme hatasi,
+// Operasyon ekibi, rastgele sayim) ve parantezsiz yazdi; plan 90 sn, sure 120.
+
+const OAD = require('./lib/oa-denetim');
+
+test('E1: istem CV\'de yazmayan olayi parantezde tutuyor, noktalar yonlendirme, plan sureye denk', () => {
+  const i = sabit('OA_VIDEO_SYSTEM');
+  assert.match(i, /use only what it actually states/);
+  assert.match(i, /Every story detail the CV does not state stays as a placeholder in square brackets/);
+  assert.match(i, /A plausible detail is still an invented detail/);
+  assert.match(i, /\[the root cause\]/, 'CV varken parantez ornegi yok');
+  assert.match(i, /never as achievements/);
+  assert.match(i, /the seconds must add up to the time limit/);
+  assert.ok(!/each starting with a strong verb/.test(i), 'eski basari-cumlesi kurali geri gelmis');
+});
+
+test('E2: CV + soruda olmayan sayi "[number]" oluyor; olan ve zaten parantezli olan kaliyor', async () => {
+  const cv = 'Stock Analyst at Norhaven since 2019. Reconciled 1,450 SKUs weekly.';
+  const r = await istek({ question: SORU, cv_text: cv }, { yanit: JSON.stringify({ ...VIDEO,
+    key_points: ['Mention the 1450 SKUs', 'Say it saved 37 hours'],
+    answer_draft: 'Since 2019 at Norhaven I reconciled 1450 SKUs and cut errors by 37% within [45] days.' }) });
+  assert.strictEqual(r.govde.answer_draft,
+    'Since 2019 at Norhaven I reconciled 1450 SKUs and cut errors by [number]% within [45] days.');
+  assert.deepStrictEqual(r.govde.key_points, ['Mention the 1450 SKUs', 'Say it saved [number] hours']);
+});
+
+test('E3: zaman plani secilen sureye denkleniyor ve sure saniyeyle isteme giriyor', async () => {
+  const r = await istek({ question: SORU, time_limit: 150 }, { yanit: JSON.stringify({ ...VIDEO,
+    time_plan: 'S:25s (situation) T:15s A:35s R:15s (result)' }) });
+  assert.match(kullanici(), /Time limit: 2 min 30s \(150 seconds\)/);
+  assert.strictEqual(r.govde.time_plan, 'S:40s (situation) T:25s A:60s R:25s (result)');
+});
+
+test('E4: bicimi bilinmeyen, zaten denk olan veya suresiz plan bozulmuyor', () => {
+  const Z = OAD.zamanPlaniniDenkle;
+  assert.strictEqual(Z('Spend most of the time on the action.', 150), 'Spend most of the time on the action.');
+  assert.strictEqual(Z('S:30s T:20s A:70s R:30s', 150), 'S:30s T:20s A:70s R:30s');
+  assert.strictEqual(Z('S:25s T:15s A:35s R:15s', 0), 'S:25s T:15s A:35s R:15s');
+  assert.strictEqual(Z('T:15s S:25s A:35s R:15s', 150), 'T:15s S:25s A:35s R:15s', 'sira STAR degil');
+  assert.strictEqual(Z('S:25s T:15s A:35s', 150), 'S:25s T:15s A:35s', 'uc parca');
+  const t = Z('S:10s T:10s A:10s R:10s', 45);
+  const top = [...t.matchAll(/(\d+)s/g)].reduce((a, m) => a + Number(m[1]), 0);
+  assert.strictEqual(top, 45, 'yuvarlama sonrasi toplam tutmuyor');
+});
