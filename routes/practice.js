@@ -1717,7 +1717,7 @@ Return the adapted CV now.`;
 
       // 3. ATS score
       createMessage({
-        model: 'claude-haiku-4-5-20251001', max_tokens: 700, system: ATS_SYSTEM,
+        model: 'claude-haiku', max_tokens: 700, system: ATS_SYSTEM,
         messages: [{ role: 'user', content: `Feedback in ${language}.\n\nJOB DESCRIPTION:\n${job_description.trim()}\n\nCV:\n${base_cv.trim() || 'Not provided: evaluate based on candidate skills: ' + skillsText}` }],
       }),
     ]);
