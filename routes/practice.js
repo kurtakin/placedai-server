@@ -494,6 +494,10 @@ const METERED_ROUTES = new Set([
   '/online-assessment',
   '/experience-letter',
   '/optimize-linkedin',
+  // Sesli deneme mulakati: oturum basina 2 hak (soru plani + geri bildirim).
+  // /mock/followup bilerek disarida; takip sorusu ayri bir hak yemesin.
+  '/mock/plan',
+  '/mock/feedback',
 ]);
 
 /** Route path without the /api/v1/practice prefix, across Fastify versions. */
@@ -1730,6 +1734,10 @@ Return the adapted CV now.`;
 
     return { adapted_cv, cover_letter, ats };
   });
+
+  // Sesli deneme mulakati (yol haritasi M1-M3). Kimlik ve AI hakki kancalari
+  // yukarida; alt eklenti onlari devraliyor. Yol: /api/v1/practice/mock/*
+  fastify.register(require('./mock'));
 }
 
 module.exports = practiceRoutes;
