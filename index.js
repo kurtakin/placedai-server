@@ -198,6 +198,8 @@ build().then(async (app) => {
   try {
     await app.listen({ port: PORT, host: '0.0.0.0' });
     console.log(`[server] Listening on http://127.0.0.1:${PORT}`);
+    // Model takibi (K60): ayin 1'i bir kez, bulgu varsa e-posta. Model degistirmez.
+    require('./lib/model-takip').zamanlayiciBaslat(app.log);
   } catch (err) {
     console.error('[server] Failed to start:', err);
     process.exit(1);

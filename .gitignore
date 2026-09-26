@@ -11,3 +11,6 @@ node_modules/
 *.lock.stale-*
 .DS_Store
 Thumbs.db
+
+# Altin test seti sonuclari (her calistirmada yeni dosya)
+olcum/sonuc-*.json

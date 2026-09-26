@@ -1,0 +1,13 @@
+{
+  "_aciklama": "Milyon token basina ABD dolari (girdi / cikti). Altin test setinin maliyet satiri bunu kullanir. Fiyatlar degisir: olcumden once saglayicinin resmi sayfasiyla karsilastir ve _tarih alanini guncelle. Listede olmayan model icin maliyet 'fiyat yok' yazilir, token sayilari yine gosterilir.",
+  "_kaynaklar": ["https://www.anthropic.com/pricing", "https://developers.openai.com/api/docs/pricing"],
+  "_tarih": "2026-09-26 (dogrulanmadi, Claude'un bilgisinden)",
+  "modeller": {
+    "claude-haiku-4-5": { "girdi": 1.0, "cikti": 5.0 },
+    "claude-sonnet-4-6": { "girdi": 3.0, "cikti": 15.0 },
+    "gpt-4o-mini": { "girdi": 0.15, "cikti": 0.6 },
+    "gpt-4o": { "girdi": 2.5, "cikti": 10.0 },
+    "gpt-4.1-mini": { "girdi": 0.4, "cikti": 1.6 },
+    "gpt-4.1": { "girdi": 2.0, "cikti": 8.0 }
+  }
+}
