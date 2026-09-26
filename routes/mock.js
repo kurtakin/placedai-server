@@ -78,6 +78,10 @@ Return ONLY valid JSON (no markdown):
 
 RULES
 - Judge ONLY what the candidate said. Be honest and specific; weak answers are called weak.
+- Judge each answer against its OWN question (A1 answers Q1, A2 answers Q2).
+- A short answer that is relevant to its question is SHORT, not incoherent: say it needs more detail and an example. Call an answer incoherent only if it does not make sense as a reply to its question.
+- Never infer a lack of knowledge or skill from a short answer. If no answer touches what a category measures (for example no technical question was asked), use "not_assessable".
+- Each quote may support only ONE category; use a different quote for each category or mark it "not_assessable".
 - "evidence" is an EXACT quote of at least 3 words copied from the candidate's answers (not from the questions). Copy it word for word.
 - If the transcript does not show a category (for example no technical question was asked), use "not_assessable" with an empty evidence.
 - No numbers or scores. No other categories.

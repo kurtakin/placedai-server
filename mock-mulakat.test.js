@@ -200,3 +200,31 @@ test('F2: geri bildirim adaya "sen" diye hitap ediyor', () => {
   assert.match(s, /address them directly as "you"/);
   assert.match(s, /never as "the candidate"/);
 });
+
+// ── G: ikinci canli test (26 Eylul 2026) ───────────────────────────────────
+// "Gune nasil baslarsin?" sorusuna "My email box and customer requests"
+// cevabi: tek parca dort kategorinin kaniti yapildi ve cevap "anlamsiz" dendi.
+
+test('G1: ayni alinti (ya da birinin digerini icermesi) yalnizca ILK kategoriyi destekliyor', () => {
+  const cevap = 'I start with my email box and customer requests every morning.';
+  const r = D.geriBildirimDenetle({ categories: {
+    communication:   { band: 'weak', comment: 'Short.', evidence: 'my email box and customer requests' },
+    technical:       { band: 'weak', comment: 'No knowledge.', evidence: 'my email box and customer requests' },
+    problem_solving: { band: 'weak', comment: 'x', evidence: 'email box and customer' },
+    role_fit:        { band: 'fair', comment: 'y', evidence: 'I start with my email box and customer requests every morning' },
+    confidence:      { band: 'fair', comment: 'Direct.', evidence: 'every morning' },
+  } }, cevap);
+  assert.deepStrictEqual(r.categories.communication, { band: 'weak', comment: 'Short.', evidence: 'my email box and customer requests' });
+  assert.deepStrictEqual(r.categories.technical, { band: 'not_assessable', comment: '', evidence: '', reused: true });
+  assert.strictEqual(r.categories.problem_solving.band, 'not_assessable', 'icerilen parca yeniden kullanildi');
+  assert.strictEqual(r.categories.role_fit.band, 'not_assessable', 'iceren alinti yeniden kullanildi');
+  assert.strictEqual(r.categories.confidence.band, 'not_assessable', 'iki kelimelik alinti kanit sayildi');
+});
+
+test('G2: istem her cevabi kendi sorusuna gore, kisa-ama-ilgiliyi "kisa" diye degerlendirtiyor', () => {
+  const s = require('./routes/mock').MOCK_FEEDBACK_SYSTEM;
+  assert.match(s, /Judge each answer against its OWN question/);
+  assert.match(s, /A short answer that is relevant to its question is SHORT, not incoherent/);
+  assert.match(s, /Never infer a lack of knowledge or skill from a short answer/);
+  assert.match(s, /Each quote may support only ONE category/);
+});
