@@ -13,6 +13,10 @@
  *   GET  /users      → list users with plan + role
  *   POST /set-plan   → { user_id, plan }  plan ∈ free | pro | multi
  *   POST /set-role   → { user_id, role }  role ∈ admin | user
+ *   GET  /models       → model takibi raporu (e-posta yok)          (K60)
+ *   POST /models/check → rapor + bulgu varsa e-posta (tekrar kontrolu yok)
+ *   GET  /ats-dogrula  → aday sirket listesini Railway'den yoklar        (K65)
+ *   POST /ats-dogrula  → { linkler?: string[], sirketler?: [{platform,kod}] }
  */
 
 'use strict';
@@ -174,6 +178,50 @@ async function adminRoutes(fastify) {
 
     return { ok: true, user: toRow(data.user) };
   });
+
+  /**
+   * GET /api/v1/admin/models
+   * Kullandigimiz modelleri saglayici listeleriyle karsilastirir (K60).
+   * Hicbir modeli degistirmez; yalnizca rapor.
+   */
+  fastify.get('/models', { preHandler: requireAdmin }, async () => {
+    return require('../lib/model-takip').raporOlustur();
+  });
+
+  /**
+   * POST /api/v1/admin/models/check
+   * Ayni rapor; bulgu varsa NOTIFY_EMAIL adresine hemen e-posta atar
+   * (aylik zamanlayicinin "ayni bulgulari tekrar gonderme" kurali atlanir).
+   */
+  fastify.post('/models/check', { preHandler: requireAdmin }, async () => {
+    return require('../lib/model-takip').kontrolEt({ zorla: true });
+  });
+
+  /**
+   * GET/POST /api/v1/admin/ats-dogrula (yol haritasi madde 5, adim 0, K65)
+   * Greenhouse / Lever / Workable panolarini Railway'den GERCEKTEN sorar:
+   * ulasiliyor mu, sirket kodu dogru mu, kac ilan var. Job Bank'in dersi:
+   * kagit uzerinde resmi olan kaynak Railway'in IP'sini reddedebilir.
+   * Adresler sabit uc platform; kullanicidan gelen yalnizca sirket kodu ve
+   * o da bicim denetiminden geciyor (baska sunucuya istek atilamaz).
+   */
+  const atsYoklama = async (request, reply) => {
+    const ats = require('../lib/ats-kaynaklari');
+    const b = request.body || {};
+    const linkler = Array.isArray(b.linkler) ? b.linkler.slice(0, 60) : [];
+    const cozulen = linkler.map((l) => ats.linktenSirket(l));
+    const tanimsiz = linkler.filter((_, i) => !cozulen[i]);
+    const verilen = (Array.isArray(b.sirketler) ? b.sirketler : [])
+      .filter((x) => x && ats.PLATFORMLAR[x.platform] && typeof x.kod === 'string');
+    const sirketler = [...cozulen.filter(Boolean), ...verilen];
+    if ((linkler.length || (Array.isArray(b.sirketler) && b.sirketler.length)) && !sirketler.length) {
+      return reply.code(422).send({ error: 'Taninan sirket linki yok', tanimsiz });
+    }
+    const r = await ats.yoklama(sirketler);
+    return { zaman: new Date().toISOString(), ...r, ...(tanimsiz.length ? { tanimsiz } : {}) };
+  };
+  fastify.get('/ats-dogrula', { preHandler: requireAdmin }, atsYoklama);
+  fastify.post('/ats-dogrula', { preHandler: requireAdmin }, atsYoklama);
 }
 
 module.exports = adminRoutes;
