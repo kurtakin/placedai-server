@@ -185,3 +185,18 @@ test('E1: alinti buyuk-kucuk harf ve noktalamadan bagimsiz; 3 kelimenin alti kan
 });
 
 test.after(() => { usage.checkAndIncrement = eskiSay; });
+
+// ── F: canli test bulgulari (26 Eylul 2026) ────────────────────────────────
+
+test('F1: plan istemi beceri ile rolu birlestirip proje uydurmayi adiyla yasakliyor', () => {
+  const s = require('./routes/mock').MOCK_PLAN_SYSTEM;
+  assert.match(s, /A skill listed in the CV is not a project/);
+  assert.match(s, /NEVER combine separate CV items \(a skill, a tool, a job title, an employer\) into a project, achievement or result the CV does not describe/);
+  assert.match(s, /How have you used SAP in your work\?/);
+});
+
+test('F2: geri bildirim adaya "sen" diye hitap ediyor', () => {
+  const s = require('./routes/mock').MOCK_FEEDBACK_SYSTEM;
+  assert.match(s, /address them directly as "you"/);
+  assert.match(s, /never as "the candidate"/);
+});

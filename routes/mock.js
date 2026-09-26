@@ -15,6 +15,13 @@
  *     olmayan bir sey IDDIA edilmiyor (K32)
  *   - geri bildirim sayi degil bant; her yargi adayin kendi cevabindan bir
  *     alintiyla ve alinti kodda araniyor (lib/mock-denetim.js)
+ *
+ * CANLI TEST (26 Eylul 2026, kullanicinin gercek CV'si): soru plani "You've
+ * built a Power BI dashboard for inventory optimization" diye sordu. CV'de
+ * Power BI bir BECERI, envanter kontrolu bir ROL; boyle bir proje yok. Model
+ * iki gercegi birlestirip olmayan bir proje kurmustu. Istem artik bunu
+ * adiyla yasakliyor. KODDA denetlenemiyor ("you built / you led" kaliplari
+ * sayilamayacak kadar cesitli); koruma istemde, test istemin kuralini tutuyor.
  */
 
 'use strict';
@@ -46,6 +53,7 @@ Return ONLY valid JSON (no markdown): {"questions": ["q1", "q2", ...]}
 - Match the seniority level.
 - If a job description is given, cover its main requirements.
 - If a CV is given, you may ask about a role, project or tool that the CV names. NEVER state or assume anything about the candidate that the CV does not say: ask, do not claim.
+- A skill listed in the CV is not a project. NEVER combine separate CV items (a skill, a tool, a job title, an employer) into a project, achievement or result the CV does not describe. Ask how they used a skill ("How have you used SAP in your work?"), do not assert a project ("You implemented SAP for the warehouse, walk me through it").
 - One question per item, under 40 words, natural spoken style.` + NO_EM_DASH;
 
 const MOCK_FOLLOWUP_SYSTEM = `You are an interviewer in a spoken mock interview. The candidate just answered.
@@ -74,6 +82,7 @@ RULES
 - If the transcript does not show a category (for example no technical question was asked), use "not_assessable" with an empty evidence.
 - No numbers or scores. No other categories.
 - Spoken answers come from speech recognition and may contain small transcription errors; do not judge spelling.
+- The candidate reads this feedback themselves: address them directly as "you" ("Your answer...", "You explained..."), never as "the candidate".
 - Write comments, strengths, improvements and summary in the requested language.` + NO_EM_DASH;
 
 async function mockRoutes(fastify) {
