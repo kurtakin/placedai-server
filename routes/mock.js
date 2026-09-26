@@ -89,6 +89,12 @@ RULES
 - The candidate reads this feedback themselves: address them directly as "you" ("Your answer...", "You explained..."), never as "the candidate".
 - Write comments, strengths, improvements and summary in the requested language.` + NO_EM_DASH;
 
+// Mulakatci sesi. Ortam degiskeniyle degistirilebilir (dagitim gerekmeden ses denemek icin).
+const MOCK_TTS_MODEL = process.env.MOCK_TTS_MODEL || 'gpt-4o-mini-tts';
+const MOCK_TTS_SESI  = process.env.MOCK_TTS_VOICE || 'coral';
+const MOCK_TTS_TALIMAT = 'You are a friendly, professional job interviewer. Speak naturally at a calm, '
+  + 'conversational pace, with a warm but neutral tone. Do not sound like a narrator or an announcer.';
+
 async function mockRoutes(fastify) {
   const yazi = (d, en) => (typeof d === 'string' ? d.trim().slice(0, en) : '');
   const dilSatiri = (b) => `Interview language: ${yazi(b.language, 40) || 'English'}`;
@@ -149,6 +155,43 @@ async function mockRoutes(fastify) {
     } catch (err) {
       fastify.log.warn({ err: err.message }, '[mock/followup] takip sorusu yok sayildi');
       return { followup: null };
+    }
+  });
+
+  // ── POST /mock/speak — mulakatcinin sesi ────────────────────────────────
+  // 26 Eylul 2026, kullanicinin karari (B): tarayici sesi robotikti ve masaustu
+  // uygulamasinda dogal ses yok. OpenAI gpt-4o-mini-tts, dakikasi yaklasik
+  // 0,015 dolar; bir oturumda sorular toplam 1-2 dakika. AI hakkindan dusmez
+  // (oturumun suresi zaten canli dakikalardan dusuyor). Hata olursa istemci
+  // tarayici sesine duser; bu yuzden hata govdesi kullaniciya gosterilmez.
+  fastify.post('/mock/speak', async (request, reply) => {
+    const b = request.body ?? {};
+    const metin = yazi(b.text, 600);
+    if (!metin) return reply.code(422).send({ error: 'text required' });
+    const key = process.env.OPENAI_API_KEY;
+    if (!key) return reply.code(503).send({ error: 'tts_unavailable' });
+    try {
+      const res = await fetch('https://api.openai.com/v1/audio/speech', {
+        method: 'POST',
+        headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          model: MOCK_TTS_MODEL,
+          voice: MOCK_TTS_SESI,
+          input: metin,
+          instructions: MOCK_TTS_TALIMAT,
+          response_format: 'mp3',
+        }),
+      });
+      if (!res.ok) {
+        const t = await res.text().catch(() => '');
+        fastify.log.warn({ status: res.status, body: t.slice(0, 200) }, '[mock/speak] seslendirme basarisiz');
+        return reply.code(502).send({ error: 'tts_failed' });
+      }
+      const ses = Buffer.from(await res.arrayBuffer());
+      return reply.type('audio/mpeg').send(ses);
+    } catch (err) {
+      fastify.log.warn({ err: err.message }, '[mock/speak] seslendirme hatasi');
+      return reply.code(502).send({ error: 'tts_failed' });
     }
   });
 

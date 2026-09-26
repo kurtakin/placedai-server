@@ -44,7 +44,8 @@ async function istek(yol, govde, ayar = {}) {
   await app.ready();
   try {
     const r = await app.inject({ method: 'POST', url: `/api/v1/practice/mock/${yol}`, payload: govde });
-    return { durum: r.statusCode, govde: r.json(), ham: r.body };
+    let yanitGovde = null; try { yanitGovde = r.json(); } catch { /* ikili yanit (ses) */ }
+    return { durum: r.statusCode, govde: yanitGovde, ham: r.body, tur: r.headers['content-type'], ikili: r.rawPayload };
   } finally {
     await app.close();
     if (eski == null) delete process.env.ANTHROPIC_API_KEY; else process.env.ANTHROPIC_API_KEY = eski;
@@ -227,4 +228,51 @@ test('G2: istem her cevabi kendi sorusuna gore, kisa-ama-ilgiliyi "kisa" diye de
   assert.match(s, /A short answer that is relevant to its question is SHORT, not incoherent/);
   assert.match(s, /Never infer a lack of knowledge or skill from a short answer/);
   assert.match(s, /Each quote may support only ONE category/);
+});
+
+// ── H: mulakatci sesi (26 Eylul 2026) ─────────────────────────────────────
+
+test('H1: /mock/speak OpenAI seslendirmesini cagirip mp3 donuyor; AI hakkindan dusmuyor', async () => {
+  const giden = [];
+  const eskiFetch = global.fetch, eskiAnahtar = process.env.OPENAI_API_KEY;
+  global.fetch = async (url, s) => { giden.push({ url, govde: JSON.parse(s.body), yetki: s.headers.Authorization });
+    return { ok: true, status: 200, arrayBuffer: async () => Uint8Array.from([1, 2, 3]).buffer }; };
+  process.env.OPENAI_API_KEY = 'oa-test';
+  try {
+    const r = await istek('speak', { text: '  How have you used SAP in your work?  ', language: 'English' });
+    assert.strictEqual(r.durum, 200);
+    assert.match(r.tur, /audio\/mpeg/);
+    assert.deepStrictEqual([...r.ikili], [1, 2, 3]);
+    assert.strictEqual(giden[0].url, 'https://api.openai.com/v1/audio/speech');
+    assert.strictEqual(giden[0].govde.model, 'gpt-4o-mini-tts');
+    assert.strictEqual(giden[0].govde.input, 'How have you used SAP in your work?');
+    assert.strictEqual(giden[0].govde.voice, 'coral');
+    assert.match(giden[0].govde.instructions, /professional job interviewer/);
+    assert.strictEqual(giden[0].yetki, 'Bearer oa-test');
+    assert.strictEqual(sayilan.length, 0, 'seslendirme AI hakki yedi');
+  } finally {
+    global.fetch = eskiFetch;
+    if (eskiAnahtar == null) delete process.env.OPENAI_API_KEY; else process.env.OPENAI_API_KEY = eskiAnahtar;
+  }
+});
+
+test('H2: metin yoksa 422, anahtar yoksa 503, servis hata verirse 502 (istemci tarayici sesine duser)', async () => {
+  const eskiFetch = global.fetch, eskiAnahtar = process.env.OPENAI_API_KEY;
+  try {
+    process.env.OPENAI_API_KEY = 'oa-test';
+    assert.strictEqual((await istek('speak', { text: '  ' })).durum, 422);
+    delete process.env.OPENAI_API_KEY;
+    global.fetch = async () => { throw new Error('cagrilmamali'); };
+    const y = await istek('speak', { text: 'Hello?' });
+    // istek() ANTHROPIC anahtari koyuyor; OPENAI anahtari yok
+    assert.strictEqual(y.durum, 503);
+    process.env.OPENAI_API_KEY = 'oa-test';
+    global.fetch = async () => ({ ok: false, status: 500, text: async () => 'boom' });
+    assert.strictEqual((await istek('speak', { text: 'Hello?' })).durum, 502);
+    global.fetch = async () => { throw new Error('ag'); };
+    assert.strictEqual((await istek('speak', { text: 'Hello?' })).durum, 502);
+  } finally {
+    global.fetch = eskiFetch;
+    if (eskiAnahtar == null) delete process.env.OPENAI_API_KEY; else process.env.OPENAI_API_KEY = eskiAnahtar;
+  }
 });
