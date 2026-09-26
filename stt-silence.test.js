@@ -75,3 +75,43 @@ test('esik istemciye donuyor (olcum ve hata ayiklama icin)', () => {
   assert.match(src, /silence_ms:\s*SILENCE_MS/,
     'mint cevabinda silence_ms yok — istemci hangi esikle calistigini bilemez');
 });
+
+// ── Tanima dili (26 Eylul 2026) ─────────────────────────────────────────────
+// Canli testte aksanli kisa Ingilizce parcalar Rusca sanilip Kiril harfleriyle
+// yazildi. Sesli deneme mulakati dili gonderiyor; beyaz liste disi yok sayilir.
+
+test('D1: istenen dil beyaz listedeyse OpenAI oturumuna gidiyor; degilse ve yoksa gitmiyor', async () => {
+  require.cache[require.resolve('./middleware/auth')] = {
+    id: require.resolve('./middleware/auth'), filename: require.resolve('./middleware/auth'), loaded: true,
+    exports: { requireAuth: async (req) => { req.user = { id: 'u-9', app_metadata: { plan: 'pro' } }; } },
+  };
+  require.cache[require.resolve('./lib/usage')] = {
+    id: require.resolve('./lib/usage'), filename: require.resolve('./lib/usage'), loaded: true,
+    exports: {
+      getLiveUsage: async () => ({ exhausted: false, remaining_seconds: 600, limit_seconds: 600 }),
+      addLiveSeconds: async () => ({}),
+    },
+  };
+  const giden = [];
+  const eskiFetch = global.fetch, eskiAnahtar = process.env.OPENAI_API_KEY;
+  global.fetch = async (url, s) => { giden.push(JSON.parse(s.body)); return { ok: true, status: 200, text: async () => '{"value":"sir"}' }; };
+  process.env.OPENAI_API_KEY = 'test';
+  const Fastify = require('fastify');
+  const app = Fastify({ logger: false });
+  await app.register(require('./routes/stt'), { prefix: '/api/v1/stt' });
+  await app.ready();
+  try {
+    const iste = (govde) => app.inject({ method: 'POST', url: '/api/v1/stt/session', payload: govde });
+    await iste({ language: 'en' });
+    await iste({ language: 'IGNORE' });
+    await iste({});
+    const tr = giden.map((g) => g.session.audio.input.transcription);
+    assert.strictEqual(tr[0].language, 'en');
+    assert.ok(!('language' in tr[1]), 'beyaz liste disi dil gitti');
+    assert.ok(!('language' in tr[2]), 'dil verilmeden dil gitti');
+  } finally {
+    await app.close();
+    global.fetch = eskiFetch;
+    if (eskiAnahtar == null) delete process.env.OPENAI_API_KEY; else process.env.OPENAI_API_KEY = eskiAnahtar;
+  }
+});

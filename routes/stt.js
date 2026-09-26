@@ -46,6 +46,14 @@ const SILENCE_MS = (() => {
   return Math.min(800, Math.max(200, Math.round(raw)));
 })();
 
+// Tanima dili (26 Eylul 2026). Dil verilmezse model her parcada dili kendisi
+// tahmin ediyor. Canli testte aksanli, kisa Ingilizce parcalar Rusca sanildi
+// ve Kiril harfleriyle yazildi ("I'm checking my" -> "Анчекинг май").
+// Sesli deneme mulakati dili biliyor ve gonderiyor; overlay mulakatcinin
+// dilini bilmedigi icin gondermiyor ve otomatik tahmin orada suruyor.
+// Beyaz liste: arayuzun alti dili, ISO-639-1.
+const TANIMA_DILLERI = ['en', 'tr', 'de', 'fr', 'es', 'it'];
+
 async function sttRoutes(fastify) {
   fastify.addHook('preHandler', requireAuth);
 
@@ -66,13 +74,16 @@ async function sttRoutes(fastify) {
       });
     }
 
+    const istenen = request.body && typeof request.body.language === 'string' ? request.body.language : '';
+    const dil = TANIMA_DILLERI.includes(istenen) ? istenen : null;
+
     const body = {
       session: {
         type: 'transcription',
         audio: {
           input: {
             format:         { type: 'audio/pcm', rate: 24000 },
-            transcription:  { model: MODEL },
+            transcription:  { model: MODEL, ...(dil ? { language: dil } : {}) },
             turn_detection: { type: 'server_vad', silence_duration_ms: SILENCE_MS },
           },
         },
