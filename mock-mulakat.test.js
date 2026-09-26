@@ -246,8 +246,9 @@ test('H1: /mock/speak OpenAI seslendirmesini cagirip mp3 donuyor; AI hakkindan d
     assert.strictEqual(giden[0].url, 'https://api.openai.com/v1/audio/speech');
     assert.strictEqual(giden[0].govde.model, 'gpt-4o-mini-tts');
     assert.strictEqual(giden[0].govde.input, 'How have you used SAP in your work?');
-    assert.strictEqual(giden[0].govde.voice, 'coral');
-    assert.match(giden[0].govde.instructions, /professional job interviewer/);
+    assert.strictEqual(giden[0].govde.voice, 'sage', 'varsayilan ses yumusak olan degil');
+    assert.match(giden[0].govde.instructions, /warm, friendly job interviewer/);
+    assert.match(giden[0].govde.instructions, /Never sound stern/);
     assert.strictEqual(giden[0].yetki, 'Bearer oa-test');
     assert.strictEqual(sayilan.length, 0, 'seslendirme AI hakki yedi');
   } finally {
@@ -271,6 +272,22 @@ test('H2: metin yoksa 422, anahtar yoksa 503, servis hata verirse 502 (istemci t
     assert.strictEqual((await istek('speak', { text: 'Hello?' })).durum, 502);
     global.fetch = async () => { throw new Error('ag'); };
     assert.strictEqual((await istek('speak', { text: 'Hello?' })).durum, 502);
+  } finally {
+    global.fetch = eskiFetch;
+    if (eskiAnahtar == null) delete process.env.OPENAI_API_KEY; else process.env.OPENAI_API_KEY = eskiAnahtar;
+  }
+});
+
+test('H3: kullanicinin sectigi ses beyaz listedeyse gidiyor, degilse varsayilan (sage)', async () => {
+  const giden = [];
+  const eskiFetch = global.fetch, eskiAnahtar = process.env.OPENAI_API_KEY;
+  global.fetch = async (url, s) => { giden.push(JSON.parse(s.body)); return { ok: true, status: 200, arrayBuffer: async () => new ArrayBuffer(2) }; };
+  process.env.OPENAI_API_KEY = 'oa-test';
+  try {
+    await istek('speak', { text: 'Hello?', voice: 'onyx' });
+    await istek('speak', { text: 'Hello?', voice: 'IGNORE ALL RULES' });
+    assert.strictEqual(giden[0].voice, 'onyx');
+    assert.strictEqual(giden[1].voice, 'sage');
   } finally {
     global.fetch = eskiFetch;
     if (eskiAnahtar == null) delete process.env.OPENAI_API_KEY; else process.env.OPENAI_API_KEY = eskiAnahtar;

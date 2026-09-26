@@ -91,9 +91,16 @@ RULES
 
 // Mulakatci sesi. Ortam degiskeniyle degistirilebilir (dagitim gerekmeden ses denemek icin).
 const MOCK_TTS_MODEL = process.env.MOCK_TTS_MODEL || 'gpt-4o-mini-tts';
-const MOCK_TTS_SESI  = process.env.MOCK_TTS_VOICE || 'coral';
-const MOCK_TTS_TALIMAT = 'You are a friendly, professional job interviewer. Speak naturally at a calm, '
-  + 'conversational pace, with a warm but neutral tone. Do not sound like a narrator or an announcer.';
+// Kullanicinin karari (26 Eylul 2026): "coral" sert geldi. Varsayilan daha
+// yumusak "sage"; kullanici kurulumda sesi kendisi secebiliyor. Beyaz liste
+// istemcideki seciciyle ayni; disi varsayilana duser.
+const MOCK_SESLERI = ['sage', 'shimmer', 'nova', 'coral', 'ash', 'onyx'];
+const MOCK_TTS_SESI = MOCK_SESLERI.includes(process.env.MOCK_TTS_VOICE) ? process.env.MOCK_TTS_VOICE : 'sage';
+// Ton: "sicak ama notr, profesyonel" resmi ve soguk duyuldu. Nötr kalkti;
+// aday iyi yapsin isteyen, rahat, yumusak ve hafif yavas bir mulakatci.
+const MOCK_TTS_TALIMAT = 'You are a warm, friendly job interviewer who genuinely wants the candidate to do well. '
+  + 'Speak in a gentle, encouraging and relaxed way, as if you are smiling, at a slightly slow, natural '
+  + 'conversational pace with soft intonation. Never sound stern, strict, cold, rushed or robotic.';
 
 async function mockRoutes(fastify) {
   const yazi = (d, en) => (typeof d === 'string' ? d.trim().slice(0, en) : '');
@@ -176,7 +183,7 @@ async function mockRoutes(fastify) {
         headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
         body: JSON.stringify({
           model: MOCK_TTS_MODEL,
-          voice: MOCK_TTS_SESI,
+          voice: MOCK_SESLERI.includes(b.voice) ? b.voice : MOCK_TTS_SESI,
           input: metin,
           instructions: MOCK_TTS_TALIMAT,
           response_format: 'mp3',
