@@ -116,14 +116,16 @@ test('B1: anahtar kelime bos ise kullanici hatasi firlatiliyor', async () => {
 });
 
 test('B2: Adzuna anahtari yoksa kaynak "unconfigured" — sessizce yutulmuyor', async () => {
-  const orj = SOURCES.jobbank.ara;
+  // K68: varsayilan kaynaklara sirket panolari eklendi; bu test aga cikmasin.
+  const orj = SOURCES.jobbank.ara, oS = SOURCES.sirketler.ara;
   SOURCES.jobbank.ara = sahteKaynak([]);
+  SOURCES.sirketler.ara = sahteKaynak([]);
   try {
     const r = await searchJobs({ keywords: 'analyst', env: {} });
     const ad = r.sources.find((s) => s.key === 'adzuna');
     assert.strictEqual(ad.status, 'unconfigured');
     assert.match(ad.reason, /ADZUNA_APP_ID/);
-  } finally { SOURCES.jobbank.ara = orj; }
+  } finally { SOURCES.jobbank.ara = orj; SOURCES.sirketler.ara = oS; }
 });
 
 test('B3: bir kaynak patlarsa digeri sonuc dondurmeye devam ediyor', async () => {
@@ -273,10 +275,13 @@ test('E4: tekrar ayiklanip sifira dusen kaynak artik found degil', async () => {
 });
 
 test('E5: ic kullanimlik _kaynakAnahtari cevaba sizmiyor', async () => {
-  const oA = SOURCES.adzuna.ara;
+  const oA = SOURCES.adzuna.ara, oS = SOURCES.sirketler.ara;
   SOURCES.adzuna.ara = sahteKaynak([{ title: 'A', link: 'https://a.test/1' }]);
+  SOURCES.sirketler.ara = sahteKaynak([{ title: 'B', link: 'https://b.test/1', location: 'Remote', _yapisal: { ulke: 'CA', uzaktan: true } }]);
   try {
     const r = await searchJobs({ keywords: 'x' });
-    assert.ok(!('_kaynakAnahtari' in r.jobs[0]), 'ic alan disa sizdi');
-  } finally { SOURCES.adzuna.ara = oA; }
+    for (const j of r.jobs) {
+      for (const ic of ['_kaynakAnahtari', '_yapisal', 'konum_gorunur']) assert.ok(!(ic in j), `ic alan disa sizdi: ${ic}`);
+    }
+  } finally { SOURCES.adzuna.ara = oA; SOURCES.sirketler.ara = oS; }
 });

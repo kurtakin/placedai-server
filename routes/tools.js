@@ -161,9 +161,14 @@ async function toolsRoutes(fastify) {
   // kendi listesinden uydurmaz, buradan okur (K21).
   fastify.post('/search-jobs', async (request, reply) => {
     const { keywords = '', location = '', sources, rows = 25 } = request.body ?? {};
+    // K68: yakinlik icin kullanicinin konumu (istemci: arama konumu, yoksa CV
+    // profilindeki konum) ve "uzak ilanlari da goster" secimi.
+    const b = request.body ?? {};
+    const kullaniciKonumu = typeof b.kullanici_konumu === 'string' ? b.kullanici_konumu.slice(0, 120) : '';
+    const uzaklariGoster  = b.uzaklari_goster === true;
 
     try {
-      const sonuc = await kaynaklardanAra({ keywords, location, sources, rows });
+      const sonuc = await kaynaklardanAra({ keywords, location, sources, rows, kullaniciKonumu, uzaklariGoster });
       return sonuc;
     } catch (err) {
       if (err.kullaniciHatasi) return reply.code(400).send({ error: err.message });
