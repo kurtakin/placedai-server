@@ -161,3 +161,76 @@ test('S7: /search-jobs kullanici konumunu ve "uzaklari goster" secimini iletiyor
     delete require.cache[require.resolve('./routes/tools')];
   }
 });
+
+// ── Adim 4 (K69): kullanicinin ekledigi sirketler ───────────────────────────
+
+async function araclarUygulamasi(jobSourcesStub) {
+  const yolA = require.resolve('./middleware/auth');
+  const yolJ = require.resolve('./lib/job-sources');
+  const eski = { a: require.cache[yolA], j: require.cache[yolJ] };
+  require.cache[yolA] = { id: yolA, filename: yolA, loaded: true, exports: { requireAuth: async (q) => { q.user = { id: 'u' }; }, requirePlan: () => async () => {} } };
+  if (jobSourcesStub) require.cache[yolJ] = { id: yolJ, filename: yolJ, loaded: true, exports: { ...JS, ...jobSourcesStub } };
+  delete require.cache[require.resolve('./routes/tools')];
+  const app = require('fastify')({ logger: false });
+  await app.register(require('./routes/tools'), { prefix: '/api/v1/tools' });
+  await app.ready();
+  const kapat = async () => {
+    await app.close();
+    if (eski.a) require.cache[yolA] = eski.a; else delete require.cache[yolA];
+    if (eski.j) require.cache[yolJ] = eski.j; else delete require.cache[yolJ];
+    delete require.cache[require.resolve('./routes/tools')];
+  };
+  return { app, kapat };
+}
+
+test('S8: /sirket-dogrula: link cozulur, pano GERCEKTEN sorulur; hatalar kodla doner', async () => {
+  const eskiFetch = globalThis.fetch;
+  const istek = [];
+  globalThis.fetch = async (url) => {
+    istek.push(url);
+    if (url.includes('/kestrel')) return { ok: true, status: 200, json: async () => [{ text: 'Planner', hostedUrl: 'https://jobs.lever.co/kestrel/1', categories: {} }] };
+    if (url.includes('/ferngrove')) return { ok: true, status: 200, json: async () => ({ name: 'Ferngrove Foods', jobs: [] }) };
+    if (url.includes('/cokmus')) throw new Error('ECONNRESET');
+    return { ok: false, status: 404, json: async () => ({}) };
+  };
+  const { app, kapat } = await araclarUygulamasi();
+  const iste = async (link) => { const r = await app.inject({ method: 'POST', url: '/api/v1/tools/sirket-dogrula', payload: { link } }); return [r.statusCode, r.json()]; };
+  try {
+    assert.deepStrictEqual(await iste('https://jobs.lever.co/kestrel/abc'), [200, { platform: 'lever', kod: 'kestrel', ad: 'kestrel', adet: 1 }]);
+    assert.deepStrictEqual(await iste('https://apply.workable.com/ferngrove/'), [200, { platform: 'workable', kod: 'ferngrove', ad: 'ferngrove', adet: 0 }]);
+    const [k1, g1] = await iste('https://ornek.test/kariyer');
+    assert.deepStrictEqual([k1, g1.kod], [422, 'sirket_link_tanimsiz']);
+    const [k2, g2] = await iste('https://boards.greenhouse.io/yokboyle');
+    assert.deepStrictEqual([k2, g2.kod], [404, 'sirket_bulunamadi']);
+    const [k3, g3] = await iste('https://boards.greenhouse.io/cokmus');
+    assert.deepStrictEqual([k3, g3.kod], [502, 'sirket_okunamadi']);
+    const [k4] = await iste({ ornek: 1 });
+    assert.strictEqual(k4, 422);
+    assert.ok(istek.every((u) => /^https:\/\/(boards-api\.greenhouse\.io|api\.lever\.co|apply\.workable\.com)\//.test(u)), 'baska sunucuya istek gitti');
+    assert.ok(!istek.some((u) => u.includes('ornek.test')), 'tanimsiz linke istek atildi');
+  } finally { await kapat(); globalThis.fetch = eskiFetch; }
+});
+
+test('S9: /search-jobs kullanicinin sirketlerini TEMIZLEYEREK iletiyor', async () => {
+  let gelen = null;
+  const { app, kapat } = await araclarUygulamasi({ searchJobs: async (a) => { gelen = a; return { jobs: [], count: 0, gizlenen: 0, sources: [] }; } });
+  try {
+    const cok = Array.from({ length: 30 }, (_, i) => ({ platform: 'greenhouse', kod: `s${i}` }));
+    await app.inject({ method: 'POST', url: '/api/v1/tools/search-jobs', payload: { keywords: 'analyst', sirketler: [
+      { platform: 'lever', kod: 'kestrel', ad: '  Kestrel Co  ', bolge: 'eu' },
+      { platform: 'indeed', kod: 'x' },
+      { platform: 'greenhouse', kod: '../etc' },
+      { platform: 'workable', kod: 42 },
+      'metin',
+      { platform: 'workable', kod: 'ferngrove', bolge: 'eu' },
+    ] } });
+    assert.deepStrictEqual(gelen.ekSirketler, [
+      { platform: 'lever', kod: 'kestrel', bolge: 'eu', ad: 'Kestrel Co' },
+      { platform: 'workable', kod: 'ferngrove' },
+    ]);
+    await app.inject({ method: 'POST', url: '/api/v1/tools/search-jobs', payload: { keywords: 'analyst', sirketler: cok } });
+    assert.strictEqual(gelen.ekSirketler.length, 20, 'sinir yok');
+    await app.inject({ method: 'POST', url: '/api/v1/tools/search-jobs', payload: { keywords: 'analyst', sirketler: 'hepsi' } });
+    assert.deepStrictEqual(gelen.ekSirketler, []);
+  } finally { await kapat(); }
+});

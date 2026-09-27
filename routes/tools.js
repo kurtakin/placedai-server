@@ -46,6 +46,27 @@ function safeParseJSON(raw) {
 // islerin iki kopyasi olmasin diye tasindi (K21).
 const { stripHTML, fetchURL } = require('../lib/net-feeds');
 const { searchJobs: kaynaklardanAra } = require('../lib/job-sources');
+const ats = require('../lib/ats-kaynaklari');
+const { SIRKET: SIRKET_HATA } = require('../lib/hata-kodlari');
+
+// Kullanicinin ekledigi sirketler (K69): istemciden gelen liste guvenilmez;
+// yalnizca bilinen platform ve bicim denetiminden gecen kod kabul edilir.
+const EK_SIRKET_SINIRI = 20;
+function ekSirketleriTemizle(ham) {
+  if (!Array.isArray(ham)) return [];
+  return ham.slice(0, EK_SIRKET_SINIRI)
+    .filter((x) => {
+      if (!x || typeof x !== 'object' || !ats.PLATFORMLAR[x.platform] || typeof x.kod !== 'string') return false;
+      // Kod, linkten cozuldugu haliyle AYNI olmali: "../etc" gibi bir deger
+      // URL normallesince "etc"ye donusur ve kacak gibi gecerdi.
+      const ev = { greenhouse: 'boards.greenhouse.io', lever: 'jobs.lever.co', workable: 'apply.workable.com' }[x.platform];
+      const c = ats.linktenSirket(`https://${ev}/${x.kod}`);
+      return !!c && c.kod === x.kod;
+    })
+    .map((x) => ({ platform: x.platform, kod: x.kod,
+      ...(x.platform === 'lever' && x.bolge === 'eu' ? { bolge: 'eu' } : {}),
+      ...(typeof x.ad === 'string' && x.ad.trim() ? { ad: x.ad.trim().slice(0, 80) } : {}) }));
+}
 const { ilanCikarimiGecerliMi }         = require('../lib/job-extract');
 const { extractPDFText, metinAnlamliMi, pdfTani } = require('../lib/pdf-text');
 const { CV: CV_HATA }                    = require('../lib/hata-kodlari');
@@ -159,6 +180,26 @@ async function toolsRoutes(fastify) {
   //
   // Cevap kaynak basina durum tasir; arayuz "kac site tarandi" sayisini
   // kendi listesinden uydurmaz, buradan okur (K21).
+  // ── POST /sirket-dogrula — kullanicinin yapistirdigi kariyer sayfasi (K69) ──
+  //
+  // Link cozulur (platform + sirket kodu) ve pano GERCEKTEN sorulur: listeye
+  // yalnizca var olan pano girer ve kullaniciya su an kac ilan oldugu
+  // soylenir. Adresler sabit uc platform; linkten yalnizca kod alinir.
+  fastify.post('/sirket-dogrula', async (request, reply) => {
+    const link = typeof request.body?.link === 'string' ? request.body.link.slice(0, 500) : '';
+    const s = ats.linktenSirket(link);
+    if (!s) return reply.code(422).send({ kod: SIRKET_HATA.LINK_TANIMSIZ, error: 'Not a Greenhouse, Lever or Workable link' });
+    const r = await ats.sirketIlanlari(s);
+    if (r.durum === 'yok') return reply.code(404).send({ kod: SIRKET_HATA.BULUNAMADI, error: 'Board not found' });
+    if (r.durum === 'hata') {
+      request.log.warn({ platform: s.platform, hata: r.hata }, '[sirket-dogrula] pano okunamadi');
+      return reply.code(502).send({ kod: SIRKET_HATA.OKUNAMADI, error: 'Board could not be read' });
+    }
+    // Lever sirket adi vermiyor: ad = kod. Greenhouse/Workable cevaptaki ad.
+    return { platform: s.platform, kod: s.kod, ...(s.bolge ? { bolge: s.bolge } : {}),
+      ad: (r.ilanlar[0] && r.ilanlar[0].company) || s.kod, adet: r.ilanlar.length };
+  });
+
   fastify.post('/search-jobs', async (request, reply) => {
     const { keywords = '', location = '', sources, rows = 25 } = request.body ?? {};
     // K68: yakinlik icin kullanicinin konumu (istemci: arama konumu, yoksa CV
@@ -166,9 +207,10 @@ async function toolsRoutes(fastify) {
     const b = request.body ?? {};
     const kullaniciKonumu = typeof b.kullanici_konumu === 'string' ? b.kullanici_konumu.slice(0, 120) : '';
     const uzaklariGoster  = b.uzaklari_goster === true;
+    const ekSirketler     = ekSirketleriTemizle(b.sirketler);
 
     try {
-      const sonuc = await kaynaklardanAra({ keywords, location, sources, rows, kullaniciKonumu, uzaklariGoster });
+      const sonuc = await kaynaklardanAra({ keywords, location, sources, rows, kullaniciKonumu, uzaklariGoster, ekSirketler });
       return sonuc;
     } catch (err) {
       if (err.kullaniciHatasi) return reply.code(400).send({ error: err.message });
