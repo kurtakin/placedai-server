@@ -196,8 +196,8 @@ test('S8: /sirket-dogrula: link cozulur, pano GERCEKTEN sorulur; hatalar kodla d
   const { app, kapat } = await araclarUygulamasi();
   const iste = async (link) => { const r = await app.inject({ method: 'POST', url: '/api/v1/tools/sirket-dogrula', payload: { link } }); return [r.statusCode, r.json()]; };
   try {
-    assert.deepStrictEqual(await iste('https://jobs.lever.co/kestrel/abc'), [200, { platform: 'lever', kod: 'kestrel', ad: 'kestrel', adet: 1 }]);
-    assert.deepStrictEqual(await iste('https://apply.workable.com/ferngrove/'), [200, { platform: 'workable', kod: 'ferngrove', ad: 'ferngrove', adet: 0 }]);
+    assert.deepStrictEqual(await iste('https://jobs.lever.co/kestrel/abc'), [200, { platform: 'lever', kod: 'kestrel', ad: 'Kestrel', adet: 1 }]);
+    assert.deepStrictEqual(await iste('https://apply.workable.com/ferngrove/'), [200, { platform: 'workable', kod: 'ferngrove', ad: 'Ferngrove', adet: 0 }]);
     const [k1, g1] = await iste('https://ornek.test/kariyer');
     assert.deepStrictEqual([k1, g1.kod], [422, 'sirket_link_tanimsiz']);
     const [k2, g2] = await iste('https://boards.greenhouse.io/yokboyle');
@@ -233,4 +233,29 @@ test('S9: /search-jobs kullanicinin sirketlerini TEMIZLEYEREK iletiyor', async (
     await app.inject({ method: 'POST', url: '/api/v1/tools/search-jobs', payload: { keywords: 'analyst', sirketler: 'hepsi' } });
     assert.deepStrictEqual(gelen.ekSirketler, []);
   } finally { await kapat(); }
+});
+
+test('S10: onerilen listedeki sirket eklenmiyor: panoya istek yok, bilinen ad donuyor', async () => {
+  const eskiFetch = globalThis.fetch;
+  const istek = [];
+  globalThis.fetch = async (url) => {
+    istek.push(url);
+    if (url.includes('/pine-grove.co') || url.includes('/pine_grove.co')) return { ok: true, status: 200, json: async () => [{ text: 'Buyer', hostedUrl: 'https://jobs.lever.co/pine-grove.co/1', categories: {} }] };
+    if (url.includes('/tidewater')) return { ok: true, status: 200, json: async () => ({ jobs: [{ title: 'Clerk', absolute_url: 'https://x.test/1', company_name: 'Tidewater Supply', location: {} }] }) };
+    return { ok: false, status: 404, json: async () => ({}) };
+  };
+  const { ONERILEN } = require('./lib/ats-sirketler');
+  const ornek = ONERILEN.find((o) => o.platform === 'lever');
+  const { app, kapat } = await araclarUygulamasi();
+  const iste = async (link) => { const r = await app.inject({ method: 'POST', url: '/api/v1/tools/sirket-dogrula', payload: { link } }); return [r.statusCode, r.json()]; };
+  try {
+    // buyuk harfli link de ayni sirket
+    assert.deepStrictEqual(await iste(`https://jobs.lever.co/${ornek.kod.toUpperCase()}/abc`),
+      [200, { zaten_onerilen: true, platform: 'lever', kod: ornek.kod, ad: ornek.ad }]);
+    assert.strictEqual(istek.length, 0, 'onerilen sirket icin panoya istek gitti');
+    // onerilende olmayan: koddan okunur ad; cevapta ad varsa o
+    assert.deepStrictEqual((await iste('https://jobs.lever.co/pine-grove.co'))[1].ad, 'Pine Grove');
+    assert.deepStrictEqual((await iste('https://jobs.lever.co/pine_grove.co'))[1].ad, 'Pine Grove');
+    assert.deepStrictEqual((await iste('https://boards.greenhouse.io/tidewater'))[1].ad, 'Tidewater Supply');
+  } finally { await kapat(); globalThis.fetch = eskiFetch; }
 });

@@ -52,6 +52,13 @@ const { SIRKET: SIRKET_HATA } = require('../lib/hata-kodlari');
 // Kullanicinin ekledigi sirketler (K69): istemciden gelen liste guvenilmez;
 // yalnizca bilinen platform ve bicim denetiminden gecen kod kabul edilir.
 const EK_SIRKET_SINIRI = 20;
+/** Sirket kodundan ekranda gosterilecek ad (yalnizca gorunum; kod degismez). */
+function koddanAd(kod) {
+  const govde = String(kod || '').replace(/\.(com|ca|io|co|net|org|ai|app)$/i, '');
+  const ad = govde.split(/[-_.]+/).filter(Boolean).map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
+  return ad || String(kod || '');
+}
+
 function ekSirketleriTemizle(ham) {
   if (!Array.isArray(ham)) return [];
   return ham.slice(0, EK_SIRKET_SINIRI)
@@ -189,15 +196,21 @@ async function toolsRoutes(fastify) {
     const link = typeof request.body?.link === 'string' ? request.body.link.slice(0, 500) : '';
     const s = ats.linktenSirket(link);
     if (!s) return reply.code(422).send({ kod: SIRKET_HATA.LINK_TANIMSIZ, error: 'Not a Greenhouse, Lever or Workable link' });
+    // Onerilen listede zaten varsa eklenmez (canli test, 27 Eylul 2026: Arc'teryx
+    // eklendi, kullanicinin 20 hakkindan biri bosa gitti). Panoya istek yok.
+    const onerilen = ats.ONERILEN.find((o) => o.platform === s.platform && o.kod.toLowerCase() === s.kod.toLowerCase());
+    if (onerilen) return { zaten_onerilen: true, platform: onerilen.platform, kod: onerilen.kod, ad: onerilen.ad || onerilen.kod };
     const r = await ats.sirketIlanlari(s);
     if (r.durum === 'yok') return reply.code(404).send({ kod: SIRKET_HATA.BULUNAMADI, error: 'Board not found' });
     if (r.durum === 'hata') {
       request.log.warn({ platform: s.platform, hata: r.hata }, '[sirket-dogrula] pano okunamadi');
       return reply.code(502).send({ kod: SIRKET_HATA.OKUNAMADI, error: 'Board could not be read' });
     }
-    // Lever sirket adi vermiyor: ad = kod. Greenhouse/Workable cevaptaki ad.
+    // Lever sirket adi vermiyor; Greenhouse/Workable cevaptaki ad. Ad yoksa
+    // koddan okunur bir ad: "arcteryx.com" -> "Arcteryx", "cobs-bread" -> "Cobs Bread".
+    const cevaptakiAd = r.ilanlar[0] && r.ilanlar[0].company;
     return { platform: s.platform, kod: s.kod, ...(s.bolge ? { bolge: s.bolge } : {}),
-      ad: (r.ilanlar[0] && r.ilanlar[0].company) || s.kod, adet: r.ilanlar.length };
+      ad: cevaptakiAd && cevaptakiAd !== s.kod ? cevaptakiAd : koddanAd(s.kod), adet: r.ilanlar.length };
   });
 
   fastify.post('/search-jobs', async (request, reply) => {
