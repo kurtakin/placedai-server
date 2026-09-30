@@ -48,11 +48,11 @@ function safeParseJSON(raw) {
 const { stripHTML, fetchURL } = require('../lib/net-feeds');
 const { searchJobs: kaynaklardanAra } = require('../lib/job-sources');
 const ats = require('../lib/ats-kaynaklari');
+// Kullanicinin ekledigi sirketler (K69): tek kaynak lib/ats-kaynaklari.js (K81,
+// bot ayarlari da ayni denetimi kullaniyor).
+const { ekSirketleriTemizle } = ats;
 const { SIRKET: SIRKET_HATA } = require('../lib/hata-kodlari');
 
-// Kullanicinin ekledigi sirketler (K69): istemciden gelen liste guvenilmez;
-// yalnizca bilinen platform ve bicim denetiminden gecen kod kabul edilir.
-const EK_SIRKET_SINIRI = 20;
 /**
  * Ucretsiz planda arama basina ilk 10 ilan (yol haritasi 6, K77). Ilanlar
  * konum kademesine gore sirali geliyor: kullaniciya en yakin 10'u kalir.
@@ -75,21 +75,6 @@ function koddanAd(kod) {
   return ad || String(kod || '');
 }
 
-function ekSirketleriTemizle(ham) {
-  if (!Array.isArray(ham)) return [];
-  return ham.slice(0, EK_SIRKET_SINIRI)
-    .filter((x) => {
-      if (!x || typeof x !== 'object' || !ats.PLATFORMLAR[x.platform] || typeof x.kod !== 'string') return false;
-      // Kod, linkten cozuldugu haliyle AYNI olmali: "../etc" gibi bir deger
-      // URL normallesince "etc"ye donusur ve kacak gibi gecerdi.
-      const ev = { greenhouse: 'boards.greenhouse.io', lever: 'jobs.lever.co', workable: 'apply.workable.com' }[x.platform];
-      const c = ats.linktenSirket(`https://${ev}/${x.kod}`);
-      return !!c && c.kod === x.kod;
-    })
-    .map((x) => ({ platform: x.platform, kod: x.kod,
-      ...(x.platform === 'lever' && x.bolge === 'eu' ? { bolge: 'eu' } : {}),
-      ...(typeof x.ad === 'string' && x.ad.trim() ? { ad: x.ad.trim().slice(0, 80) } : {}) }));
-}
 const { ilanCikarimiGecerliMi }         = require('../lib/job-extract');
 const { extractPDFText, metinAnlamliMi, pdfTani } = require('../lib/pdf-text');
 const { CV: CV_HATA }                    = require('../lib/hata-kodlari');
