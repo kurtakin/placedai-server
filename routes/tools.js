@@ -13,6 +13,7 @@ const mammoth  = require('mammoth');
 const { createMessage }              = require('../lib/ai');
 const { NO_EM_DASH }                 = require('../lib/style-rules');
 const { requireAuth, requirePlan }   = require('../middleware/auth');
+const { jobListingLimitFor }         = require('../lib/plans');
 
 // ── PDF metin cikarici: lib/pdf-text.js (tek kaynak, FlateDecode destekli) ───
 
@@ -52,6 +53,21 @@ const { SIRKET: SIRKET_HATA } = require('../lib/hata-kodlari');
 // Kullanicinin ekledigi sirketler (K69): istemciden gelen liste guvenilmez;
 // yalnizca bilinen platform ve bicim denetiminden gecen kod kabul edilir.
 const EK_SIRKET_SINIRI = 20;
+/**
+ * Ucretsiz planda arama basina ilk 10 ilan (yol haritasi 6, K77). Ilanlar
+ * konum kademesine gore sirali geliyor: kullaniciya en yakin 10'u kalir.
+ * Kalanlar GONDERILMEZ, yalnizca sayisi (`kilitli`): sinir tarayicidan
+ * asilamaz. Plan yoksa ucretsiz; yerel gelistirme kullanicisi sinirsiz
+ * (requirePlan ile ayni istisna).
+ */
+function ilanSiniriUygula(sonuc, kullanici) {
+  const plan = kullanici && kullanici.id === 'dev-user' ? 'ultimate' : ((kullanici && kullanici.app_metadata && kullanici.app_metadata.plan) || 'free');
+  const sinir = jobListingLimitFor(plan);
+  const jobs = Array.isArray(sonuc && sonuc.jobs) ? sonuc.jobs : [];
+  if (sinir == null) return { ...sonuc, jobs, kilitli: 0, ilan_siniri: null };
+  return { ...sonuc, jobs: jobs.slice(0, sinir), kilitli: Math.max(0, jobs.length - sinir), ilan_siniri: sinir };
+}
+
 /** Sirket kodundan ekranda gosterilecek ad (yalnizca gorunum; kod degismez). */
 function koddanAd(kod) {
   const govde = String(kod || '').replace(/\.(com|ca|io|co|net|org|ai|app)$/i, '');
@@ -224,7 +240,7 @@ async function toolsRoutes(fastify) {
 
     try {
       const sonuc = await kaynaklardanAra({ keywords, location, sources, rows, kullaniciKonumu, uzaklariGoster, ekSirketler });
-      return sonuc;
+      return ilanSiniriUygula(sonuc, request.user);
     } catch (err) {
       if (err.kullaniciHatasi) return reply.code(400).send({ error: err.message });
       request.log.error({ err }, 'search-jobs basarisiz');
