@@ -5,6 +5,8 @@
  *
  *   GET  /api/v1/bot/ayarlar        kendi ayarlarin (oturum gerekir)
  *   POST /api/v1/bot/ayarlar        ayarlari kaydet; YALNIZCA Ultimate
+ *   GET  /api/v1/bot/ilanlar        onay bekleyen ilanlar, en uygun once (K82)
+ *   POST /api/v1/bot/ilanlar/:id/durum   goruldu | atlandi | basvuruldu (K82)
  *   GET  /api/v1/bot/eposta-kapat   imzali baglanti: onay sayfasi
  *   POST /api/v1/bot/eposta-kapat   imzali baglanti: ozet e-postalarini kapat
  *
@@ -28,6 +30,8 @@ const YENIDEN_ARAMA_MS = 60 * 60 * 1000;   // ayar degisince en erken bir saat s
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 const GORUNUR = ['aktif', 'anahtar_kelime', 'konum', 'sirketler', 'profil', 'eposta_ozet', 'son_arama', 'sonraki_arama', 'son_eposta'];
 const ARAMAYI_DEGISTIREN = ['anahtar_kelime', 'konum', 'sirketler'];
+// Kullanicinin verebilecegi durumlar; 'yeni'ye geri donulmez.
+const ILAN_DURUMLARI = new Set(['goruldu', 'atlandi', 'basvuruldu']);
 
 function gorunur(ayar) {
   if (!ayar) return null;
@@ -102,6 +106,34 @@ async function botRoutes(fastify) {
     } catch (e) {
       request.log.error({ err: e }, '[bot] ayarlar yazilamadi');
       return reply.code(503).send({ kod: BOT.KAYDEDILEMEDI, error: 'Bot settings could not be saved' });
+    }
+  });
+
+  // ── Onay kuyrugu (K82) ──────────────────────────────────────────────────
+  // Plan kapisi yok: plani dusen kullanici da onceden bulunan ilanlarini
+  // gorebilmeli ve kapatabilmeli. Yalnizca kendi satirlari (user_id sarti).
+  fastify.get('/ilanlar', { preHandler: requireAuth }, async (request, reply) => {
+    try {
+      const ilanlar = await depo.bekleyenIlanlar(request.user.id);
+      return { ilanlar: ilanlar.map(({ id, baslik, sirket, konum, link, kaynak, konum_kademe, durum, bulundu }) =>
+        ({ id, baslik, sirket, konum, link, kaynak, konum_kademe, durum, bulundu })) };
+    } catch (e) {
+      request.log.error({ err: e }, '[bot] ilanlar okunamadi');
+      return reply.code(503).send({ kod: BOT.KAYDEDILEMEDI, error: 'Bot listings unavailable' });
+    }
+  });
+
+  fastify.post('/ilanlar/:id/durum', { preHandler: requireAuth }, async (request, reply) => {
+    const id = request.params && request.params.id;
+    const durum = request.body && request.body.durum;
+    if (!UUID.test(String(id || '')) || !ILAN_DURUMLARI.has(durum)) return reply.code(400).send({ error: 'Invalid listing or status' });
+    try {
+      const n = await depo.ilanDurumu(request.user.id, id, durum);
+      if (!n) return reply.code(404).send({ kod: BOT.ILAN_YOK, error: 'Listing not found' });
+      return { id, durum };
+    } catch (e) {
+      request.log.error({ err: e }, '[bot] ilan durumu yazilamadi');
+      return reply.code(503).send({ kod: BOT.KAYDEDILEMEDI, error: 'Listing could not be updated' });
     }
   });
 

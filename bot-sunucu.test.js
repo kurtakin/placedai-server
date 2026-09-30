@@ -401,5 +401,54 @@ test('Y6: index.js rotayi ve zamanlayiciyi bagliyor; hata kodlari disa acik', ()
   const src = require('fs').readFileSync(require.resolve('./index.js'), 'utf8');
   assert.match(src, /app\.register\(botRoutes,\s*\{ prefix: '\/api\/v1\/bot' \}\)/);
   assert.match(src, /require\('\.\/lib\/bot-zamanlayici'\)\.zamanlayiciBaslat\(app\.log\)/);
-  assert.deepStrictEqual(require('./lib/hata-kodlari').BOT_KODLARI.sort(), ['bot_anahtar_bos', 'bot_kaydedilemedi', 'bot_konum_bolge']);
+  assert.deepStrictEqual(require('./lib/hata-kodlari').BOT_KODLARI.sort(), ['bot_anahtar_bos', 'bot_ilan_yok', 'bot_kaydedilemedi', 'bot_konum_bolge']);
+});
+
+// ── K82: onay kuyrugu ───────────────────────────────────────────────────────
+test('D5: kuyruk sorgusu: yalnizca kendi, karar verilmemis, en uygun once; durum yalnizca kendi satiri', async () => {
+  const sb = sahteSb([{ data: [{ id: 'a' }] }, { data: [{ id: 'x' }] }, { data: [] }]);
+  depo._setSupabase(sb);
+  assert.deepStrictEqual(await depo.bekleyenIlanlar('u1'), [{ id: 'a' }]);
+  const k = sb.kayit[0];
+  assert.strictEqual(k.tablo, 'ia_bot_ilanlari');
+  assert.deepStrictEqual(k.adimlar.slice(1), [['eq', 'user_id', 'u1'], ['in', 'durum', ['yeni', 'goruldu']],
+    ['order', 'uygunluk', { ascending: false }], ['order', 'bulundu', { ascending: false }], ['limit', 100]]);
+  assert.strictEqual(await depo.ilanDurumu('u1', 'i1', 'atlandi'), 1);
+  assert.deepStrictEqual(sb.kayit[1].adimlar, [['update', { durum: 'atlandi' }], ['eq', 'user_id', 'u1'], ['eq', 'id', 'i1'], ['select', 'id']]);
+  assert.strictEqual(await depo.ilanDurumu('u1', 'i2', 'atlandi'), 0);
+  depo._setSupabase(undefined);
+});
+
+test('Y7: GET ilanlar: yalnizca izinli alanlar, plan kapisi yok; hata 503', async () => {
+  const u = await uygulama(kisi('free'), { bekleyenIlanlar: async (id) => {
+    assert.strictEqual(id, UID);
+    return [{ id: 'a', baslik: 'Data Analyst', sirket: 'Acme', konum: 'Toronto', link: 'https://x.test', kaynak: 'Adzuna', konum_kademe: 'sehir', durum: 'yeni', bulundu: 't', uygunluk: 70, user_id: UID, ilan_anahtari: 'k' }];
+  } });
+  const r = await u.app.inject({ method: 'GET', url: '/api/v1/bot/ilanlar' });
+  assert.strictEqual(r.statusCode, 200);
+  assert.deepStrictEqual(Object.keys(r.json().ilanlar[0]).sort(), ['baslik', 'bulundu', 'durum', 'id', 'kaynak', 'konum', 'konum_kademe', 'link', 'sirket']);
+  await u.bitir();
+  const h = await uygulama(kisi('ultimate'), { bekleyenIlanlar: async () => { throw new Error('x'); } });
+  const r2 = await h.app.inject({ method: 'GET', url: '/api/v1/bot/ilanlar' });
+  assert.deepStrictEqual([r2.statusCode, r2.json().kod], [503, BOT.KAYDEDILEMEDI]);
+  await h.bitir();
+});
+
+test('Y8: POST durum: gecerli durumlar, kendi ilani; baskasininki 404; gecersiz 400', async () => {
+  const cagri = [];
+  const u = await uygulama(kisi('ultimate'), { ilanDurumu: async (uid, id, d) => { cagri.push([uid, id, d]); return id === UID ? 1 : 0; } });
+  for (const d of ['goruldu', 'atlandi', 'basvuruldu']) {
+    const r = await u.app.inject({ method: 'POST', url: `/api/v1/bot/ilanlar/${UID}/durum`, payload: { durum: d, user_id: 'baskasi' } });
+    assert.deepStrictEqual([r.statusCode, r.json()], [200, { id: UID, durum: d }]);
+  }
+  assert.deepStrictEqual(cagri[0], [UID, UID, 'goruldu'], 'kullanici kimligi oturumdan');
+  const baska = '99999999-2222-4333-8444-555555555555';
+  const y = await u.app.inject({ method: 'POST', url: `/api/v1/bot/ilanlar/${baska}/durum`, payload: { durum: 'atlandi' } });
+  assert.deepStrictEqual([y.statusCode, y.json().kod], [404, BOT.ILAN_YOK]);
+  for (const [id, d] of [[UID, 'yeni'], [UID, 'silindi'], [UID, undefined], ['abc', 'atlandi']]) {
+    const x = await u.app.inject({ method: 'POST', url: `/api/v1/bot/ilanlar/${id}/durum`, payload: d === undefined ? {} : { durum: d } });
+    assert.strictEqual(x.statusCode, 400, `${id} ${d}`);
+  }
+  assert.strictEqual(cagri.length, 4, 'gecersiz istek depoya ulasti');
+  await u.bitir();
 });
