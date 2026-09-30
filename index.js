@@ -28,6 +28,7 @@ const errorRoutes       = require('./routes/errors');
 const billingRoutes     = require('./routes/billing');
 const sttRoutes         = require('./routes/stt');
 const botRoutes         = require('./routes/bot');
+const basvuruRoutes     = require('./routes/basvuru');
 const { logError }      = require('./lib/errors');
 
 // ── Question bank self-check (used by /health) ────────────────────────────────
@@ -141,6 +142,7 @@ async function build() {
   await app.register(sttRoutes,        { prefix: '/api/v1/stt' });
   await app.register(billingRoutes,    { prefix: '/api/v1/billing' });
   await app.register(botRoutes,        { prefix: '/api/v1/bot' });
+  await app.register(basvuruRoutes,    { prefix: '/api/v1/basvurular' });
 
   // ── Merkezi hata yakalayıcı ───────────────────────────────────────────────
   // 5xx hataları ia_errors'a yazılır; kullanıcıya iç detay sızmaz.
@@ -204,6 +206,8 @@ build().then(async (app) => {
     require('./lib/model-takip').zamanlayiciBaslat(app.log);
     // Is botu (K81): sayfa kapaliyken 12 saatte bir arar, gunde en fazla bir ozet.
     require('./lib/bot-zamanlayici').zamanlayiciBaslat(app.log);
+    // Basvuru sonuc hatirlatmasi (K85): gunde bir, kisi basina en fazla bir e-posta.
+    require('./lib/hatirlatma').zamanlayiciBaslat(app.log);
   } catch (err) {
     console.error('[server] Failed to start:', err);
     process.exit(1);
