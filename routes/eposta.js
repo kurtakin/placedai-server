@@ -8,6 +8,7 @@
  *   GET  /api/v1/eposta/pazarlama         {izin, karar_verildi, gonderen}
  *   POST /api/v1/eposta/pazarlama         {izin: boolean, kaynak: 'serit' | 'ayarlar'}
  *   GET|POST /api/v1/eposta/eposta-kapat  imzali baglanti: teklif e-postalarini kapat
+ *   GET  /api/v1/eposta/geri-kazanma/olcum admin: gonderilen kod / kullanilan (K88)
  *
  * Izin her zaman kullanicinin kendi istegiyle ve kanitla (zaman, kaynak, metin
  * surumu) yazilir; govdedeki user_id yok sayilir. Kayit sirasindaki karar
@@ -51,6 +52,23 @@ async function epostaRoutes(fastify) {
       await pazarlama.kararYaz(request.user.id, b.izin, b.kaynak);
       return { izin: b.izin, karar_verildi: true };
     } catch (e) { return hata(request, reply, e, 'yazilamadi'); }
+  });
+
+  // Admin (routes/admin.js ile ayni kural): geri kazanma kodlarinin olcumu (K88).
+  fastify.get('/geri-kazanma/olcum', {
+    preHandler: async (request, reply) => {
+      await requireAuth(request, reply);
+      if (reply.sent) return;
+      if (request.user?.app_metadata?.role !== 'admin') return reply.code(403).send({ error: 'Admin access required' });
+    },
+  }, async (request, reply) => {
+    const sb = require('../lib/bot-depo').getSupabase();
+    const key = process.env.STRIPE_SECRET_KEY;
+    if (!sb || !key) return reply.code(503).send({ error: 'Supabase or Stripe not configured' });
+    try {
+      const Stripe = require('stripe');
+      return await require('../lib/geri-kazanma').olcum({ sb, stripe: new Stripe(key) });
+    } catch (e) { return hata(request, reply, e, 'olcum'); }
   });
 
   kapatmaRotalari(fastify, {

@@ -212,6 +212,9 @@ build().then(async (app) => {
     require('./lib/bot-zamanlayici').zamanlayiciBaslat(app.log);
     // Basvuru sonuc hatirlatmasi (K85): gunde bir, kisi basina en fazla bir e-posta.
     require('./lib/hatirlatma').zamanlayiciBaslat(app.log);
+    // Geri kazanma (K88): izinli, hic odememis Free uyeye 37. gun TEK teklif.
+    // Kupon, Stripe ve POSTA_ADRESI yoksa hic calismaz.
+    require('./lib/geri-kazanma').zamanlayiciBaslat(app.log);
   } catch (err) {
     console.error('[server] Failed to start:', err);
     process.exit(1);
