@@ -31,6 +31,7 @@ const botRoutes         = require('./routes/bot');
 const basvuruRoutes     = require('./routes/basvuru');
 const yorumRoutes       = require('./routes/yorum');
 const epostaRoutes      = require('./routes/eposta');
+const davetRoutes       = require('./routes/davet');
 const { logError }      = require('./lib/errors');
 
 // ── Question bank self-check (used by /health) ────────────────────────────────
@@ -147,6 +148,7 @@ async function build() {
   await app.register(basvuruRoutes,    { prefix: '/api/v1/basvurular' });
   await app.register(yorumRoutes,      { prefix: '/api/v1/yorumlar' });
   await app.register(epostaRoutes,     { prefix: '/api/v1/eposta' });
+  await app.register(davetRoutes,      { prefix: '/api/v1/davet' });
 
   // ── Merkezi hata yakalayıcı ───────────────────────────────────────────────
   // 5xx hataları ia_errors'a yazılır; kullanıcıya iç detay sızmaz.
@@ -215,6 +217,8 @@ build().then(async (app) => {
     // Geri kazanma (K88): izinli, hic odememis Free uyeye 37. gun TEK teklif.
     // Kupon, Stripe ve POSTA_ADRESI yoksa hic calismaz.
     require('./lib/geri-kazanma').zamanlayiciBaslat(app.log);
+    // Arkadas daveti (K89): 14 gunu dolanlari say, odulleri ver, biten erisimleri kapat.
+    require('./lib/davet').zamanlayiciBaslat(app.log);
   } catch (err) {
     console.error('[server] Failed to start:', err);
     process.exit(1);

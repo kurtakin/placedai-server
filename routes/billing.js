@@ -187,6 +187,13 @@ async function billingRoutes(fastify) {
       // çağrısını hataya düşürür, o yüzden değişkene bağlı.
       const managed = String(process.env.STRIPE_MANAGED_PAYMENTS || '') === '1';
 
+      // Arkadas daveti (K89): davetle gelen ve hic odememis kisiye ilk ayda %15
+      // otomatik uygulanir. Stripe ayni oturumda hem otomatik indirim hem kod
+      // alanini kabul etmiyor; indirim varsa kod alani kapanir (zaten ilk odeme).
+      let arkadasKuponu = null;
+      try { const sb = getSupabase(); if (sb) arkadasKuponu = await require('../lib/davet').arkadasIndirimi(sb, user); }
+      catch (err) { fastify.log.warn({ err: err.message }, '[billing] davet indirimi okunamadi'); }
+
       const session = await stripe.checkout.sessions.create({
         mode:                'subscription',
         customer:            customerId,
@@ -196,7 +203,7 @@ async function billingRoutes(fastify) {
         // Abonelik olaylarında kullanıcıyı bulabilmek için: müşteri kaydı
         // silinse bile abonelik metadata'sı olayla birlikte geliyor.
         subscription_data:   { metadata: { user_id: user.id, plan: wanted } },
-        allow_promotion_codes: true,
+        ...(arkadasKuponu ? { discounts: [{ coupon: arkadasKuponu }] } : { allow_promotion_codes: true }),
         // Plan adini geri tasiyoruz: donus sayfasi oturumu tazelerken neyi
         // bekledigini bilmeli. "Plan degisti mi" kiyaslamasi, ayni plani
         // yeniden satin alan kullanicida yanlis sonuc verirdi.
@@ -315,13 +322,20 @@ async function billingRoutes(fastify) {
           let plan   = 'pro';
           let anchor = null;
           let facts  = {};
+          let sub    = null;
           if (s.subscription) {
-            const sub = await stripe.subscriptions.retrieve(s.subscription);
+            sub = await stripe.subscriptions.retrieve(s.subscription);
             plan   = planForPrice(sub.items?.data?.[0]?.price?.id) || sub.metadata?.plan || 'pro';
             anchor = periodStartOf(sub);
             facts  = billingFacts(sub);
           }
           await setUserPlan(userId, plan, { stripe_customer_id: s.customer, billing_anchor: anchor, ...facts });
+          // Arkadas daveti (K89): davet edilen ilk kez odedi; 14 gun sonra degerlendirilir.
+          // Hatasi odemeyi/plani etkilemesin.
+          if (sub) {
+            try { const sb = getSupabase(); if (sb) await require('../lib/davet').odemeKaydet(sb, stripe, { userId, sub }); }
+            catch (err) { fastify.log.warn({ err: err.message }, '[billing] davet odemesi yazilamadi'); }
+          }
           break;
         }
 
