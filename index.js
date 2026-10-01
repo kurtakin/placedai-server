@@ -29,6 +29,7 @@ const billingRoutes     = require('./routes/billing');
 const sttRoutes         = require('./routes/stt');
 const botRoutes         = require('./routes/bot');
 const basvuruRoutes     = require('./routes/basvuru');
+const yorumRoutes       = require('./routes/yorum');
 const { logError }      = require('./lib/errors');
 
 // ── Question bank self-check (used by /health) ────────────────────────────────
@@ -143,6 +144,7 @@ async function build() {
   await app.register(billingRoutes,    { prefix: '/api/v1/billing' });
   await app.register(botRoutes,        { prefix: '/api/v1/bot' });
   await app.register(basvuruRoutes,    { prefix: '/api/v1/basvurular' });
+  await app.register(yorumRoutes,      { prefix: '/api/v1/yorumlar' });
 
   // ── Merkezi hata yakalayıcı ───────────────────────────────────────────────
   // 5xx hataları ia_errors'a yazılır; kullanıcıya iç detay sızmaz.
