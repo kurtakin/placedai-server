@@ -877,74 +877,40 @@ async function aidRoutes(fastify) {
     });
   });
 
-  // ── POST /scorecard — session sonu değerlendirme ────────────────────────────
+  // ── POST /scorecard — oturum sonu degerlendirme (K91) ───────────────────────
+  // Adayin GERCEKTE soyledigini puanlar; bkz. lib/puan-karti.js. Aday cevabi
+  // olmayan soru puanlanmaz, onerilen cevap aday cevabi yerine konmaz.
   fastify.post('/scorecard', async (request, reply) => {
     try {
       const { transcripts = [], jd_context = '', language = 'en' } = request.body ?? {};
-      if (!transcripts.length) return reply.code(400).send({ error: 'No transcripts provided' });
+      if (!Array.isArray(transcripts) || !transcripts.length) {
+        return reply.code(400).send({ error: 'No transcripts provided' });
+      }
+
+      const PK = require('../lib/puan-karti');
+      const { ciftler, atlanan } = PK.ciftleriHazirla(transcripts);
+      if (!ciftler.length) {
+        // Kimse bizim onerimizi aday cevabi sanmasin: puanlanacak bir sey yok.
+        return reply.code(422).send({ error: 'no_candidate_answers', skipped_count: atlanan });
+      }
 
       const { createMessage } = require('../lib/ai');
-
-      // Q&A metni oluştur (en fazla 20 soru)
-      const pairs = transcripts.slice(-20);
-      const qaText = pairs.map((t, i) =>
-        `Q${i + 1}: ${(t.question || '').trim()}\nA${i + 1}: ${(t.answer || '').trim()}`
-      ).join('\n\n');
-
-      const systemPrompt = [
-        'You are an expert interview coach scoring a candidate\'s session.',
-        jd_context ? `Candidate context: ${jd_context.slice(0, 400)}` : '',
-        '',
-        'Evaluate the Q&A pairs holistically. Consider: structure (STAR), specificity, confidence, conciseness, relevance.',
-        '',
-        NO_EM_DASH,
-      'Output EXACTLY this format, with no extra text:',
-        'SCORE: [1-10]',
-        'GRADE: [A+|A|A-|B+|B|B-|C+|C|C-|D|F]',
-        'SUMMARY: [2-3 sentences overall assessment]',
-        'STRENGTHS:',
-        '- [specific strength 1]',
-        '- [specific strength 2]',
-        '- [specific strength 3]',
-        'IMPROVEMENTS:',
-        '- [specific improvement 1]',
-        '- [specific improvement 2]',
-        '- [specific improvement 3]',
-        LANGUAGE_NAMES[language] && language !== 'en'
-          ? `\nIMPORTANT: Write SUMMARY, STRENGTHS, and IMPROVEMENTS in ${LANGUAGE_NAMES[language]} only. Keep the labels (SCORE:, GRADE:, SUMMARY:, STRENGTHS:, IMPROVEMENTS:) in English so the parser works.`
-          : '',
-      ].filter(Boolean).join('\n');
-
       const raw = await createMessage({
         model:      'claude-haiku',
-        max_tokens: 500,
-        system:     systemPrompt,
-        messages:   [{ role: 'user', content: `Interview session (${pairs.length} questions):\n\n${qaText}` }],
+        max_tokens: 600,
+        system:     PK.istemOlustur({ jd_context, language }),
+        messages:   [{ role: 'user', content: PK.kullaniciMetni(ciftler) }],
       });
 
-      // Parse structured output
-      const scoreMatch   = raw.match(/SCORE:\s*(\d+)/i);
-      const gradeMatch   = raw.match(/GRADE:\s*([A-F][+\-]?)/i);
-      const summaryMatch = raw.match(/SUMMARY:\s*(.+?)(?:\n(?:STRENGTHS|IMPROVEMENTS):|$)/is);
-      const strengthsMatch    = raw.match(/STRENGTHS:\s*([\s\S]+?)(?:\nIMPROVEMENTS:|$)/i);
-      const improvementsMatch = raw.match(/IMPROVEMENTS:\s*([\s\S]+?)$/i);
+      const sonuc = PK.ciktiyiAyristir(raw);
+      if (!sonuc) {
+        // Eskiden burada 7/10 uyduruluyordu.
+        fastify.log.warn({ len: String(raw || '').length }, '[aid/scorecard] unparseable');
+        return reply.code(502).send({ error: 'scorecard_unparseable' });
+      }
 
-      const parseList = (str) =>
-        (str || '').match(/[-•*]\s*(.+)/g)
-          ?.map((s) => s.replace(/^[-•*]\s*/, '').trim())
-          .filter(Boolean)
-          .slice(0, 3) || [];
-
-      const result = {
-        overall_score: Math.min(10, Math.max(1, parseInt(scoreMatch?.[1] || '7', 10))),
-        grade:         gradeMatch?.[1] || 'B',
-        summary:       (summaryMatch?.[1] || '').trim(),
-        strengths:     parseList(strengthsMatch?.[1]),
-        improvements:  parseList(improvementsMatch?.[1]),
-        question_count: pairs.length,
-      };
-
-      fastify.log.info({ score: result.overall_score, grade: result.grade }, '[aid/scorecard]');
+      const result = { ...sonuc, question_count: ciftler.length, skipped_count: atlanan };
+      fastify.log.info({ score: result.overall_score, grade: result.grade, n: ciftler.length, skipped: atlanan }, '[aid/scorecard]');
       return reply.send(result);
 
     } catch (err) {

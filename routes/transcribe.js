@@ -5,7 +5,12 @@
  * forwards it to OpenAI Whisper, and returns the transcript.
  *
  * Request body (JSON):
- *   { audio_base64: string, mime_type?: string }
+ *   { audio_base64: string, mime_type?: string, kanal?: 'soru'|'aday', language?: string }
+ *
+ * K91 (2 Ekim 2026): `kanal: 'aday'` overlay'in aday kanali. Adayin kendi
+ * cevabi, soru tanimaya HIC girmiyor; puan kartina gidiyor. Kendi istemi ve
+ * dili var (beyaz liste). Verilmezse eski davranis: 'en' + soru istemi.
+ * Metnin kendisi LOGLANMIYOR, yalnizca uzunlugu.
  *
  * Response:
  *   { text: string, duration_ms: number }
@@ -15,6 +20,17 @@
 
 const { transcribeBase64 } = require('../lib/whisper');
 const { requireAuth }      = require('../middleware/auth');
+
+// Aday kanali icin izin verilen diller: arayuzun alti dili (stt.js ile ayni).
+const ADAY_DILLERI = ['en', 'tr', 'de', 'fr', 'es', 'it'];
+const ADAY_ISTEMI  = 'A job candidate answering an interview question in their own words, first person.';
+
+/** Istek govdesinden saglayici seceneklerini cikarir. Soru kanali: {}. */
+function secenekler(govde) {
+  if (!govde || govde.kanal !== 'aday') return {};
+  const dil = ADAY_DILLERI.includes(govde.language) ? govde.language : 'en';
+  return { language: dil, prompt: ADAY_ISTEMI };
+}
 
 async function transcribeRoutes(fastify) {
   fastify.addHook('preHandler', requireAuth);
@@ -31,9 +47,9 @@ async function transcribeRoutes(fastify) {
     fastify.log.info({ audioBytes }, '[transcribe] start');
 
     try {
-      const text = await transcribeBase64(audio_base64, mime_type);
+      const text = await transcribeBase64(audio_base64, mime_type, secenekler(request.body));
 
-      fastify.log.info({ text_length: text.length, ms: Date.now() - start, audioBytes }, '[transcribe] OK');
+      fastify.log.info({ text_length: text.length, ms: Date.now() - start, audioBytes, kanal: request.body?.kanal === 'aday' ? 'aday' : 'soru' }, '[transcribe] OK');
 
       return {
         text,
@@ -58,3 +74,4 @@ async function transcribeRoutes(fastify) {
 }
 
 module.exports = transcribeRoutes;
+module.exports.secenekler = secenekler;
