@@ -746,12 +746,20 @@ async function aidRoutes(fastify) {
       return reply.code(500).send({ error: err.message });
     }
   });
-  // ── POST /screenshot — ekran görüntüsü → AI analiz ──────────────────────────
-  // Screenshot analysis is a Pro feature (see lib/features-config.ts).
+  // ── POST /screenshot — ekrandaki soru (K93, 3 Ekim 2026) ─────────────────────
+  // Pro ozelligi (lib/features-config.ts). Kare YALNIZCA kullanici tetikleyince
+  // gelir (Ctrl+Shift+Space / 📸) ve hicbir yerde saklanmaz. Kurallar ve
+  // maliyet: lib/ekran-sorusu.js.
   fastify.post('/screenshot', { preHandler: requirePlan() }, async (request, reply) => {
     try {
-      const { image_base64, jd_context = '' } = request.body ?? {};
-      if (!image_base64) return reply.code(400).send({ error: 'image_base64 required' });
+      const { image_base64, jd_context = '', language = 'en', answer_length = 'short', experience_level, communication_style } = request.body ?? {};
+      const ES = require('../lib/ekran-sorusu');
+
+      // Once dogrula, SONRA hakki dus: bozuk istek kullanicinin aylik hakkini yemesin.
+      const g = ES.goruntuCoz(image_base64);
+      if (g.hata === 'gerekli') return reply.code(400).send({ error: 'image_base64 required' });
+      if (g.hata === 'buyuk')   return reply.code(413).send({ error: 'image_too_large' });
+      if (g.hata)               return reply.code(400).send({ error: 'Invalid image format' });
 
       // ── Free plan monthly limit (screenshot counts as 1 answer) ──────────
       const usage = await checkAndIncrement(request.user);
@@ -764,56 +772,26 @@ async function aidRoutes(fastify) {
         });
       }
 
-      // "data:image/png;base64,<data>" → parts
-      const match = image_base64.match(/^data:image\/(\w+);base64,(.+)$/);
-      if (!match) return reply.code(400).send({ error: 'Invalid image format' });
-
-      const mediaType = 'image/' + match[1]; // e.g. 'image/png'
-      const imgData   = match[2];            // raw base64
-
       const { createMessage } = require('../lib/ai');
-
-      const systemPrompt = [
-        'You are a real-time interview assistant analyzing the candidate\'s screen.',
-        'Identify any interview question, coding problem, technical task, or assessment question visible in the screenshot.',
-        'Then provide a concise, practical answer or approach.',
-        jd_context ? `Candidate context: ${jd_context.slice(0, 400)}` : '',
-        '',
-        'Output format (strictly two labeled sections):',
-        'QUESTION: [the question or task you identified, 1 sentence]',
-        'ANSWER: [2-4 sentence spoken answer; for coding: key approach + 2-3 steps]',
-        NO_EM_DASH,
-      ].filter(Boolean).join('\n');
-
       const raw = await createMessage({
         model:      'claude-haiku',
-        max_tokens: 450,
-        system:     systemPrompt,
+        max_tokens: answer_length === 'detailed' ? 700 : 450,
+        system:     ES.istemOlustur({ jd_context, language, answer_length, kisisel: kisiselBlok({ experience_level, communication_style }) }),
         messages:   [{
           role:    'user',
           content: [
-            {
-              type:   'image',
-              source: { type: 'base64', media_type: mediaType, data: imgData },
-            },
-            {
-              type: 'text',
-              text: 'Identify the interview question or task and provide a helpful answer.',
-            },
+            { type: 'image', source: { type: 'base64', media_type: `image/${g.tur}`, data: g.veri } },
+            { type: 'text',  text: 'Read the task on my screen and answer it.' },
           ],
         }],
       });
 
-      const qMatch = raw.match(/QUESTION:\s*(.+?)(?:\n|$)/i);
-      const aMatch = raw.match(/ANSWER:\s*([\s\S]+)/i);
-
+      const sonuc = ES.cevapAyristir(raw);
       // Sorunun metni de loga gitmiyor; ekran goruntusunden cikan soru,
       // kullanicinin o an hangi sirketle gorustugunu ele verebilir.
-      fastify.log.info({ questionFound: !!qMatch }, '[aid/screenshot]');
-      return reply.send({
-        question: (qMatch?.[1] || '📸 Ekran görüntüsü').trim(),
-        answer:   (aMatch?.[1] || raw).trim(),
-      });
+      fastify.log.info({ questionFound: sonuc.bulundu }, '[aid/screenshot]');
+      if (!sonuc.bulundu) return reply.send({ found: false });
+      return reply.send({ found: true, question: sonuc.question, answer: sonuc.answer });
 
     } catch (err) {
       fastify.log.error(err, '[aid/screenshot] error');

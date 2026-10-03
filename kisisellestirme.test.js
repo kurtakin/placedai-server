@@ -62,10 +62,10 @@ test('S3: resolvePrompt: bos blok istemi birebir ayni birakir; blok POINTS bicim
   assert.strictEqual(max_tokens, resolvePrompt('short', false, 'job_interview', 'en', true).max_tokens, 'uslup uzunlugu degistirmez');
 });
 
-test('S4: rota: /stream ve /answer bloku geciriyor; /cues ve /screenshot etkilenmiyor', () => {
-  assert.strictEqual((src.match(/kisiselBlok\(\{ experience_level, communication_style \}\)/g) || []).length, 2);
+test('S4: rota: /stream, /answer ve /screenshot (K93) bloku geciriyor; /cues etkilenmiyor', () => {
+  assert.strictEqual((src.match(/kisiselBlok\(\{ experience_level, communication_style \}\)/g) || []).length, 3);
   const cues = src.slice(src.indexOf("fastify.post('/cues'"), src.indexOf("fastify.post('/answer'"));
   assert.doesNotMatch(cues, /experience_level|kisisel/);
   const ss = src.slice(src.indexOf("fastify.post('/screenshot'"), src.indexOf("fastify.post('/chat'"));
-  assert.doesNotMatch(ss, /experience_level|kisisel/);
+  assert.match(ss, /kisisel: kisiselBlok\(\{ experience_level, communication_style \}\)/);
 });
