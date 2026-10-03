@@ -19,6 +19,7 @@ const { streamMessage } = require('../lib/ai');
 const { requireAuth, requirePlan } = require('../middleware/auth');
 const { checkAndIncrement, getUsage } = require('../lib/usage');
 const { NO_EM_DASH } = require('../lib/style-rules');
+const { kisiselBlok } = require('../lib/kisisellestirme');
 
 // ── System prompts — 3 interview types × 2 lengths ───────────────────────────
 
@@ -332,7 +333,10 @@ can read at a glance and speak from. Draw them from the candidate's own
 background and the target role. No full sentences, no filler like "be confident".
 Output nothing outside these two lines, no markdown, no labels, no preamble.`;
 
-function resolvePrompt(answer_length, has_web_context, interview_type = 'job_interview', language = 'en', with_points = false) {
+// `kisisel`: K92 deneyim/uslup satirlari (lib/kisisellestirme.js kisiselBlok).
+// Burada uretilmiyor, disaridan geliyor: bu fonksiyon testlerde kaynaktan
+// kesilip bagimsiz calistiriliyor.
+function resolvePrompt(answer_length, has_web_context, interview_type = 'job_interview', language = 'en', with_points = false, kisisel = '') {
   const type     = PROMPTS[interview_type] ? interview_type : 'job_interview';
   const detailed = answer_length === 'detailed';
   let   system   = PROMPTS[type][detailed ? 'detailed' : 'short'];
@@ -347,6 +351,7 @@ function resolvePrompt(answer_length, has_web_context, interview_type = 'job_int
   system += NO_FABRICATION;
   system += NO_EM_DASH;
   system += SON_SORU_KURALI;
+  if (kisisel) system += kisisel;
 
   if (with_points) {
     // The base prompts end with "Output ONLY the spoken answer" — the format
@@ -469,7 +474,7 @@ async function aidRoutes(fastify) {
   // The live interview answer endpoint — the core paid feature, so it spends
   // a Free-plan credit before the stream opens.
   fastify.post('/stream', { preHandler: meterFreePlan }, (request, reply) => {
-    const { question, sector = 'universal_behavioral', seniority = 'mid', model, memory = '', web_context = '', jd_context = '', answer_length = 'short', interview_type = 'job_interview', language = 'en', with_points = false } = request.body ?? {};
+    const { question, sector = 'universal_behavioral', seniority = 'mid', model, memory = '', web_context = '', jd_context = '', answer_length = 'short', interview_type = 'job_interview', language = 'en', with_points = false, experience_level, communication_style } = request.body ?? {};
 
     if (!question || typeof question !== 'string' || question.trim().length < 5) {
       return reply.code(400).send({ error: 'question is required (min 5 chars)' });
@@ -529,7 +534,7 @@ async function aidRoutes(fastify) {
     const aiModel = model || 'claude-haiku';
     if (hasWebContext) fastify.log.info({ ms: 0 }, '[aid] web context enjekte edildi');
 
-    const { system: streamSystem, max_tokens: streamMaxTokens } = resolvePrompt(answer_length, hasWebContext, interview_type, language, with_points);
+    const { system: streamSystem, max_tokens: streamMaxTokens } = resolvePrompt(answer_length, hasWebContext, interview_type, language, with_points, kisiselBlok({ experience_level, communication_style }));
 
     streamMessage({
       model:      aiModel,
@@ -694,7 +699,7 @@ async function aidRoutes(fastify) {
   // ── POST /answer — basit JSON, SSE yok ───────────────────────────────────
   fastify.post('/answer', async (request, reply) => {
     try {
-      const { question, jd_context = '', model, answer_length = 'short', interview_type = 'job_interview', language = 'en', conversation_history = [] } = request.body ?? {};
+      const { question, jd_context = '', model, answer_length = 'short', interview_type = 'job_interview', language = 'en', conversation_history = [], experience_level, communication_style } = request.body ?? {};
       if (!question) return reply.code(400).send({ error: 'question required' });
 
       // ── Free plan monthly limit ───────────────────────────────────────────
@@ -720,7 +725,7 @@ async function aidRoutes(fastify) {
       ].join('');
 
       const { createMessage } = require('../lib/ai');
-      const { system: ansSystem, max_tokens: ansTokens } = resolvePrompt(answer_length, false, interview_type, language, true);
+      const { system: ansSystem, max_tokens: ansTokens } = resolvePrompt(answer_length, false, interview_type, language, true, kisiselBlok({ experience_level, communication_style }));
       const raw = await createMessage({
         model:      model || 'claude-haiku',
         max_tokens: ansTokens,
