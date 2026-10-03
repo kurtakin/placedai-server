@@ -221,6 +221,8 @@ build().then(async (app) => {
     require('./lib/geri-kazanma').zamanlayiciBaslat(app.log);
     // Arkadas daveti (K89): 14 gunu dolanlari say, odulleri ver, biten erisimleri kapat.
     require('./lib/davet').zamanlayiciBaslat(app.log);
+    // Saklama sureleri (K94 Adim 4): bot ilanlari 30/90 gun, hata kayitlari 90 gun, izin arsivi 3 yil.
+    require('./lib/temizlik').zamanlayiciBaslat(app.log);
   } catch (err) {
     console.error('[server] Failed to start:', err);
     process.exit(1);

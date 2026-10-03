@@ -66,9 +66,10 @@ test('D2: sorgu bicimleri: siradakiler, ilan ekleme, ozet', async () => {
   assert.strictEqual(ek.tablo, 'ia_bot_ilanlari');
   assert.deepStrictEqual(ek.adimlar[0], ['upsert', [{ ilan_anahtari: 'x', user_id: 'u1' }], { onConflict: 'user_id,ilan_anahtari', ignoreDuplicates: true }], 'user_id ezilemez');
 
-  await depo.ozetIlanlari('u1');
-  assert.deepStrictEqual(adimlar(sb.kayit[2]), ['select', 'eq', 'eq', 'is', 'order', 'order', 'limit']);
-  assert.deepStrictEqual(sb.kayit[2].adimlar.slice(1, 4), [['eq', 'user_id', 'u1'], ['eq', 'durum', 'yeni'], ['is', 'epostada', null]]);
+  await depo.ozetIlanlari('u1', 200, simdi);
+  assert.deepStrictEqual(adimlar(sb.kayit[2]), ['select', 'eq', 'eq', 'is', 'gte', 'order', 'order', 'limit']);
+  // K94 Adim 4: 30 gunu gecen ilan (icerigi temizlige gidiyor) ozete girmez
+  assert.deepStrictEqual(sb.kayit[2].adimlar.slice(1, 5), [['eq', 'user_id', 'u1'], ['eq', 'durum', 'yeni'], ['is', 'epostada', null], ['gte', 'bulundu', '2026-08-31T12:00:00.000Z']]);
 
   await depo.ozetIsaretle('u1', ['i1'], simdi);
   assert.deepStrictEqual(sb.kayit[3].adimlar, [['update', { epostada: '2026-09-30T12:00:00.000Z' }], ['eq', 'user_id', 'u1'], ['in', 'id', ['i1']]]);
@@ -408,11 +409,12 @@ test('Y6: index.js rotayi ve zamanlayiciyi bagliyor; hata kodlari disa acik', ()
 test('D5: kuyruk sorgusu: yalnizca kendi, karar verilmemis, en uygun once; durum yalnizca kendi satiri', async () => {
   const sb = sahteSb([{ data: [{ id: 'a' }] }, { data: [{ id: 'x' }] }, { data: [] }]);
   depo._setSupabase(sb);
-  assert.deepStrictEqual(await depo.bekleyenIlanlar('u1'), [{ id: 'a' }]);
+  assert.deepStrictEqual(await depo.bekleyenIlanlar('u1', 100, new Date('2026-09-30T12:00:00Z')), [{ id: 'a' }]);
   const k = sb.kayit[0];
   assert.strictEqual(k.tablo, 'ia_bot_ilanlari');
-  assert.deepStrictEqual(k.adimlar.slice(1), [['eq', 'user_id', 'u1'], ['in', 'durum', ['yeni', 'goruldu']],
+  assert.deepStrictEqual(k.adimlar.slice(1), [['eq', 'user_id', 'u1'], ['in', 'durum', ['yeni', 'goruldu']], ['gte', 'bulundu', '2026-08-31T12:00:00.000Z'],
     ['order', 'uygunluk', { ascending: false }], ['order', 'bulundu', { ascending: false }], ['limit', 100]]);
+  assert.strictEqual(depo.GOSTERIM_GUN, 30);
   assert.strictEqual(await depo.ilanDurumu('u1', 'i1', 'atlandi'), 1);
   assert.deepStrictEqual(sb.kayit[1].adimlar, [['update', { durum: 'atlandi' }], ['eq', 'user_id', 'u1'], ['eq', 'id', 'i1'], ['select', 'id']]);
   assert.strictEqual(await depo.ilanDurumu('u1', 'i2', 'atlandi'), 0);
