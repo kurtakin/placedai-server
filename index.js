@@ -32,6 +32,7 @@ const basvuruRoutes     = require('./routes/basvuru');
 const yorumRoutes       = require('./routes/yorum');
 const epostaRoutes      = require('./routes/eposta');
 const davetRoutes       = require('./routes/davet');
+const hesapRoutes       = require('./routes/hesap');        // K95: hesap silme
 const { logError }      = require('./lib/errors');
 
 // ── Question bank self-check (used by /health) ────────────────────────────────
@@ -149,6 +150,7 @@ async function build() {
   await app.register(yorumRoutes,      { prefix: '/api/v1/yorumlar' });
   await app.register(epostaRoutes,     { prefix: '/api/v1/eposta' });
   await app.register(davetRoutes,      { prefix: '/api/v1/davet' });
+  await app.register(hesapRoutes,      { prefix: '/api/v1/hesap' });
 
   // ── Merkezi hata yakalayıcı ───────────────────────────────────────────────
   // 5xx hataları ia_errors'a yazılır; kullanıcıya iç detay sızmaz.
