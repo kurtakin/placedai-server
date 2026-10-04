@@ -807,29 +807,10 @@ async function aidRoutes(fastify) {
       return reply.code(400).send({ error: 'messages required' });
     }
 
-    // Build transcript block — last 20 Q&As
-    const pairs = transcripts.slice(-20);
-    const transcriptBlock = pairs.length > 0
-      ? pairs.map((t, i) =>
-          `Q${i + 1}: ${(t.question || '').trim()}\nA${i + 1}: ${(t.answer || '').trim()}`
-        ).join('\n\n')
-      : '(No interview transcript provided)';
-
-    const systemPrompt = [
-      'You are an expert interview coach. The candidate just completed an interview session and wants to review their performance.',
-      `\nINTERVIEW TRANSCRIPT:\n${transcriptBlock}`,
-      jd_context ? `\nCANDIDATE CONTEXT:\n${jd_context.slice(0, 400)}` : '',
-      '\nGuidelines:',
-      '- Give specific, actionable feedback referencing their ACTUAL answers (quote them when relevant)',
-      '- Help rewrite weak answers using the STAR method (Situation → Task → Action → Result)',
-      '- Identify missing concrete examples, vague language, or missed opportunities',
-      '- Be encouraging but direct and honest',
-      '- Keep responses concise (3-5 sentences) unless asked for a detailed rewrite',
-      NO_EM_DASH,
-      LANGUAGE_NAMES[language] && language !== 'en'
-        ? `\nIMPORTANT: Respond ONLY in ${LANGUAGE_NAMES[language]}. Do not use English at all.`
-        : '',
-    ].filter(Boolean).join('\n');
+    // Adayin gercek cevabi ile bizim onerimiz AYRI etiketli (C, 3 Ekim 2026).
+    // Eskiden `answer` (bizim onerimiz) adayin cevabi diye elestiriliyordu.
+    const { system: systemPrompt, soru, yakalanan } =
+      require('../lib/sohbet-transkript').sohbetIstemi({ transcripts, jd_context, language });
 
     const readable = new Readable({ read() {} });
     const send = (obj) => readable.push(`data: ${JSON.stringify(obj)}\n\n`);
@@ -851,7 +832,7 @@ async function aidRoutes(fastify) {
     .then(() => {
       send({ type: 'done' });
       readable.push(null);
-      fastify.log.info({ msgs: messages.length, q: pairs.length }, '[aid/chat] done');
+      fastify.log.info({ msgs: messages.length, q: soru, yakalanan }, '[aid/chat] done');
     })
     .catch((err) => {
       fastify.log.error(err, '[aid/chat] error');
