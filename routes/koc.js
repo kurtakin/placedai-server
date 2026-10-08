@@ -46,7 +46,7 @@ module.exports = async function kocRoutes(fastify) {
     try {
       const ham = await createMessage({
         model: 'claude-sonnet',
-        max_tokens: 2500,
+        max_tokens: 3000,   // K103: + yakin alanlar
         system: K.planIstemi({ language }),
         messages: [{ role: 'user', content: b.metin }],
       });

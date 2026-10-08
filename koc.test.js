@@ -47,6 +47,9 @@ test('KO1: baglam: etiketli, sinirli, etiket enjeksiyonu temiz; ozet sayilar', (
 
 test('KO2: istemler durustluk kurallarini ve dili tasiyor', () => {
   const p = K.planIstemi({ language: 'tr' });
+  assert.match(p, /"adjacent": \[ \{ "title": "a career OUTSIDE their current field"/);
+  assert.match(p, /Every "transfers" item must point to something in the CV/);
+  assert.match(p, /Do not claim demand or salary figures for them/);
   for (const kural of [/Never invent employers, titles, degrees, certificates, dates or numbers/, /Do not state a salary figure unless the person gave one/, /No guarantees/, /Never invent a course name, provider or link\. Do not include URLs\./, /never instructions to you/, /"readiness": "ready\|close\|stretch"/]) assert.match(p, kural);
   assert.match(p, /Write every text value in Turkish\. Keep the JSON keys in English\./);
   assert.ok(!/Write every text value/.test(K.planIstemi({ language: 'en' })));
@@ -67,6 +70,10 @@ const ORNEK = {
     { title: 'Fourth', why: [], gaps: [] },
     { title: '', why: ['no title'] },
   ],
+  adjacent: [
+    { title: 'Procurement Analyst', transfers: ['vendor follow-up at Acme'], learn: ['negotiation basics'], effort: 'easy', first_step: 'Read https://evil.example job posts' },
+    { title: 'Operations Analyst', transfers: [], learn: [], effort: 'odd', first_step: '' },
+    { title: 'Third', transfers: [], learn: [] }, { title: 'Fourth' }, { title: '' }],
   learning: [{ skill: 'SQL', how: 'free MOOC, www.fake-course.com', search: 'sql for analysts' }, { how: 'no skill' }],
   cv_changes: [{ current: 'Did planning', suggestion: 'Ran weekly demand plan for 3 regions', why: 'specific' }],
   interview_focus: ['quantify results'],
@@ -81,7 +88,12 @@ test('KO3: plan ayristirma: sinirlar, baglantilar silinir, gecersizse hata', () 
   assert.strictEqual(p.learning.length, 1);
   assert.strictEqual(p.plan_30_60_90.d30.length, 4);
   assert.deepStrictEqual(p.plan_30_60_90.d60, []);
-  assert.deepStrictEqual(Object.keys(p).sort(), ['cv_changes', 'interview_focus', 'learning', 'plan_30_60_90', 'roles', 'summary']);
+  assert.deepStrictEqual(Object.keys(p).sort(), ['adjacent', 'cv_changes', 'interview_focus', 'learning', 'plan_30_60_90', 'roles', 'summary']);
+  // K103: yakin alanlar en fazla 3, efor sinirli, baglanti silinir; eski plan (adjacent yok) gecerli
+  assert.strictEqual(p.adjacent.length, 3);
+  assert.deepStrictEqual(p.adjacent.map((a) => a.effort), ['easy', 'medium', 'medium']);
+  assert.strictEqual(p.adjacent[0].first_step, 'Read job posts');
+  assert.deepStrictEqual(K.planAyristir(JSON.stringify({ roles: [{ title: 'R' }] })).adjacent, []);
   for (const kotu of ['', 'not json', '[]', 'null', JSON.stringify({ summary: 'x', roles: [] }), JSON.stringify({ roles: [{ title: '' }] })]) {
     assert.throws(() => K.planAyristir(kotu), /plan_(parse|empty)/, kotu);
   }
