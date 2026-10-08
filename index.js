@@ -33,6 +33,7 @@ const yorumRoutes       = require('./routes/yorum');
 const epostaRoutes      = require('./routes/eposta');
 const davetRoutes       = require('./routes/davet');
 const hesapRoutes       = require('./routes/hesap');        // K95: hesap silme
+const kocRoutes         = require('./routes/koc');          // K102: AI kariyer kocu (Ultimate)
 const { logError }      = require('./lib/errors');
 
 // ── Question bank self-check (used by /health) ────────────────────────────────
@@ -151,6 +152,7 @@ async function build() {
   await app.register(epostaRoutes,     { prefix: '/api/v1/eposta' });
   await app.register(davetRoutes,      { prefix: '/api/v1/davet' });
   await app.register(hesapRoutes,      { prefix: '/api/v1/hesap' });
+  await app.register(kocRoutes,        { prefix: '/api/v1/koc' });
 
   // ── Merkezi hata yakalayıcı ───────────────────────────────────────────────
   // 5xx hataları ia_errors'a yazılır; kullanıcıya iç detay sızmaz.
