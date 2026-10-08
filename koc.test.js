@@ -238,4 +238,6 @@ test('KO9: kayit, SQL, icerik loglanmiyor', () => {
   assert.ok(loglar.length >= 3);
   for (const l of loglar) assert.ok(!/b\.metin|\bplan\b(?!\.roles)|messages|mesajlar|\bcv\b|system|tanisma/.test(l), l);
   assert.deepStrictEqual(K.SINIR, { plan: 5, mesaj: 100 });
+  // Pano kilidi: gorunum yalnizca Ultimate (Asama 2)
+  assert.deepStrictEqual(require('./lib/plans').FEATURE_PLANS['career-coach'], ['ultimate']);
 });
