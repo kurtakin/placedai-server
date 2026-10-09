@@ -217,15 +217,22 @@ test('OL9: tekrar engeli (10 dk) ve IP basina dakika/saat siniri', async () => {
   } finally { await g.bitir(); }
 });
 
-test('OL10: istemci IP X-Forwarded-For en sagdan; uydurulmus sol girdiler siniri asamaz', async () => {
+test('OL10: istemci IP once X-Real-IP (Railway yazar), sonra XFF en sag; uydurulmus sol XFF siniri asamaz', async () => {
   const rota = require('./routes/olay');
+  assert.strictEqual(rota._istemciIp({ headers: { 'x-real-ip': '5.5.5.5', 'x-forwarded-for': '1.1.1.1, 9.9.9.9' }, ip: '10.0.0.1' }), '5.5.5.5');
   assert.strictEqual(rota._istemciIp({ headers: { 'x-forwarded-for': '1.1.1.1, 9.9.9.9' }, ip: '10.0.0.1' }), '9.9.9.9');
   assert.strictEqual(rota._istemciIp({ headers: {}, ip: '10.0.0.1' }), '10.0.0.1');
+  assert.strictEqual(rota._istemciIp({ headers: { 'x-real-ip': 'x'.repeat(200) }, ip: '10.0.0.1' }), '10.0.0.1', 'asiri uzun baslik');
   const g = await uygulama(null);
   try {
     for (let i = 0; i < 30; i++) await gonder(g.app, JSON.stringify({ olay: 'ana_sayfa', sayfa: `/u${i}` }), { 'x-forwarded-for': `10.0.${i}.1, 198.51.100.9` });
     await bekle();
     assert.ok(g.sb.yazilan.length <= 20, `sahte XFF siniri asti (${g.sb.yazilan.length})`);
+    // Railway X-Real-IP'yi gercek IP ile ezdiginde, istemcinin XFF'i ne olursa olsun tek kisi sayilir
+    const once = g.sb.yazilan.length;
+    for (let i = 0; i < 30; i++) await gonder(g.app, JSON.stringify({ olay: 'ana_sayfa', sayfa: `/r${i}` }), { 'x-real-ip': '198.51.100.50', 'x-forwarded-for': `10.9.${i}.1` });
+    await bekle();
+    assert.ok(g.sb.yazilan.length - once <= 20, `X-Real-IP sabitken XFF degistirerek sinir asildi (${g.sb.yazilan.length - once})`);
   } finally { await g.bitir(); }
 });
 

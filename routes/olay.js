@@ -19,12 +19,15 @@
  *   5. Gunluk tavan: anonim satir sayisi gunde OLAY_GUNLUK_TAVAN (varsayilan
  *      20.000). Asilirsa o gun anonim olay yazilmaz, veritabani sismez.
  *   6. masaustu_ilgi: giris sart; kisi basina gunde bir.
- * Istemci IP'si: Railway kenar sunucusu araya girdigi icin request.ip herkes
- * icin AYNI (sunucu trustProxy kullanmiyor). Bu yuzden X-Forwarded-For'un EN
- * SAGDAKI girdisi alinir: onu Railway ekliyor, istemci soldakileri uydurabilir.
- * Railway bu konuda kesin bir sozlesme vermiyor; saatlik gunluk satirda kac
- * FARKLI IP ozeti goruldugu (yalnizca sayi) loglanir ki hepsi tek ozete
- * cokerse (sinir herkesi birden keser) fark edilsin. Kesin sinir gunluk tavan.
+ * Istemci IP'si (K112b, Railway forum yanitlari 9 Ekim 2026 incelendi):
+ * request.ip herkes icin Railway kenar sunucusu (trustProxy yok). Railway
+ * calisanlarinin yanitlari: X-Real-IP kenar tarafindan HER ZAMAN yazilir ve
+ * istemcinin gonderdigi deger ezilir (eski bir hata duzeltilmis). XFF icin
+ * yanitlar celisiyor ("en sagdaki guvenilir" / "kenarda temizlenir, ilk deger
+ * gercek"). Bu yuzden sira: X-Real-IP -> XFF en sag -> baglanti IP'si.
+ * Resmi belgede soz yok; canlida dogrulama adimi DEVAM.md K112b'de. Saatlik
+ * log yalnizca SAYI yazar: farkli IP ozeti, olay sayisi ve basliklarin
+ * bulunma sayilari (degerleri degil). Kesin sinir yine gunluk tavan.
  * IP HICBIR YERE YAZILMAZ. Bellekte bile ham tutulmaz: surec acilisinda
  * uretilen rastgele tuzla ozetlenir ve en gec 1 saatte silinir.
  * Kayit oncesi olaylar kisiye BAGLANMAZ (user_id bos).
@@ -52,8 +55,10 @@ const _hiz    = new Map();   // ipOzeti -> { dk, dkSon, saat, saatSon }
 const _tekrar = new Map();   // anahtar -> bitis
 const _gun    = { gun: '', anonim: 0, uyarildi: false };
 
-/** X-Forwarded-For'un en sagdaki girdisi; yoksa baglanti IP'si. */
+/** Railway'in yazdigi X-Real-IP; yoksa X-Forwarded-For en sag; yoksa baglanti IP'si. */
 function istemciIp(request) {
+  const gercek = request.headers['x-real-ip'];
+  if (typeof gercek === 'string' && gercek.trim() && gercek.length <= 64) return gercek.trim();
   const xff = request.headers['x-forwarded-for'];
   if (typeof xff === 'string' && xff.trim()) {
     const parcalar = xff.split(',').map((x) => x.trim()).filter(Boolean);
@@ -103,7 +108,7 @@ function gunlukTavanDolu(simdi, log) {
 }
 
 // Saatlik yalnizca SAYI: kac farkli IP ozeti, kac anonim olay. IP yazilmaz.
-const _saatlik = { ozetler: new Set(), olay: 0 };
+const _saatlik = { ozetler: new Set(), olay: 0, xRealIp: 0, xff: 0, xffCok: 0 };
 let _log = null;
 setInterval(() => {
   const simdi = Date.now();
@@ -111,8 +116,10 @@ setInterval(() => {
   for (const [k, b] of _tekrar) if (simdi > b) _tekrar.delete(k);
 }, 5 * 60 * 1000).unref();
 setInterval(() => {
-  if (_log && _saatlik.olay > 0) _log.info?.({ farkliIp: _saatlik.ozetler.size, anonimOlay: _saatlik.olay }, '[olay] son 1 saat');
-  _saatlik.ozetler.clear(); _saatlik.olay = 0;
+  if (_log && _saatlik.olay > 0) {
+    _log.info?.({ farkliIp: _saatlik.ozetler.size, anonimOlay: _saatlik.olay, xRealIpVar: _saatlik.xRealIp, xffVar: _saatlik.xff, xffCokGirdili: _saatlik.xffCok }, '[olay] son 1 saat');
+  }
+  _saatlik.ozetler.clear(); _saatlik.olay = 0; _saatlik.xRealIp = 0; _saatlik.xff = 0; _saatlik.xffCok = 0;
 }, SAAT_MS).unref();
 
 let _sbTest;   // testler icin
@@ -141,6 +148,8 @@ async function olayRoutes(fastify) {
     const oz = ipOzeti(istemciIp(request));
     if (_saatlik.ozetler.size < 100000) _saatlik.ozetler.add(oz);
     _saatlik.olay += 1;
+    if (request.headers['x-real-ip']) _saatlik.xRealIp += 1;
+    if (request.headers['x-forwarded-for']) { _saatlik.xff += 1; if (String(request.headers['x-forwarded-for']).includes(',')) _saatlik.xffCok += 1; }
     if (hizAsildi(oz, simdi)) return reply.code(204).send();
     if (tekrarMi(`a|${oz}|${o.olay}|${o.sayfa || ''}|${o.ayrinti || ''}`, simdi)) return reply.code(204).send();
     if (gunlukTavanDolu(simdi, fastify.log)) return reply.code(204).send();
