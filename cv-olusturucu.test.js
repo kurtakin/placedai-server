@@ -171,8 +171,10 @@ test('B5: token butcesi 400-550 KELIMELIK Turkce cikti icin yeterli', () => {
 });
 
 test('B6: her CVB kodunun istemci cevirisi var', () => {
-  const I18N = fs.readFileSync(
-    path.join(__dirname, '..', 'web', 'public', 'dashboard-app', 'i18n.js'), 'utf8');
+  // Web deposu kardes klasorde: calisma alaninda 'web'/'wf', kullanicinin bilgisayarinda 'interview-aid-web'.
+  const yol = ['web', 'wf', 'interview-aid-web'].map((k) => path.join(__dirname, '..', k, 'public', 'dashboard-app', 'i18n.js')).find((y) => fs.existsSync(y));
+  if (!yol) return;   // web kopyasi yoksa atla
+  const I18N = fs.readFileSync(yol, 'utf8');
   const eksik = [];
   for (const k of CVB_KODLARI) {
     if (!I18N.includes(`'rv.hata_${k}'`))  eksik.push(`rv.hata_${k}`);

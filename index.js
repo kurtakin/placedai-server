@@ -153,6 +153,8 @@ async function build() {
   await app.register(davetRoutes,      { prefix: '/api/v1/davet' });
   await app.register(hesapRoutes,      { prefix: '/api/v1/hesap' });
   await app.register(kocRoutes,        { prefix: '/api/v1/koc' });
+  // Donusum olcumu (K112): cerezsiz, kisisel veri yok. Ziyaretci de cagirabilir.
+  await app.register(require('./routes/olay'), { prefix: '/api/v1/olay' });
 
   // ── Merkezi hata yakalayıcı ───────────────────────────────────────────────
   // 5xx hataları ia_errors'a yazılır; kullanıcıya iç detay sızmaz.

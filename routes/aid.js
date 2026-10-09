@@ -498,6 +498,9 @@ async function aidRoutes(fastify) {
       .header('X-Accel-Buffering', 'no')
       .send(readable);
 
+    // Olcum (K112): yeni kullanicinin ILK gercek canli cevabi. Beklenmez, firlatmaz.
+    require('../lib/olay').ilkCanli(require('../lib/bot-depo').getSupabase(), request.user, { log: fastify.log });
+
     // ── Streaming parse state ─────────────────────────────────────────────────
     let accumulated  = '';
     let lastSentIdx  = 0;

@@ -211,6 +211,8 @@ async function billingRoutes(fastify) {
         cancel_url:  `${APP_URL}/#pricing`,
       });
 
+      // Olcum (K112): odeme sayfasi acildi. Beklenmez, firlatmaz.
+      require('../lib/olay').olayYaz(getSupabase(), { olay: 'odeme_basladi', ayrinti: wanted, user, log: fastify.log });
       return { url: session.url };
     } catch (err) {
       fastify.log.error(err, '[billing] checkout');
@@ -330,6 +332,8 @@ async function billingRoutes(fastify) {
             facts  = billingFacts(sub);
           }
           await setUserPlan(userId, plan, { stripe_customer_id: s.customer, billing_anchor: anchor, ...facts });
+          // Olcum (K112): satin alma. olayYaz firlatmaz; odeme akisini etkilemez.
+          await require('../lib/olay').olayYaz(getSupabase(), { olay: 'satin_alma', ayrinti: plan, user: { id: userId, app_metadata: { plan } }, log: fastify.log });
           // Arkadas daveti (K89): davet edilen ilk kez odedi; 14 gun sonra degerlendirilir.
           // Hatasi odemeyi/plani etkilemesin.
           if (sub) {

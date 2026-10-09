@@ -42,15 +42,16 @@ test('T1: sureler politikayla ayni; bosaltilan alanlar anahtari ve durumu biraki
   assert.strictEqual(T.ILAN_ICERIK_GUN, 30);
   assert.strictEqual(T.ILAN_IZ_GUN, 90);
   assert.strictEqual(T.HATA_GUN, 90);
+  assert.strictEqual(T.OLAY_GUN, 180);
   assert.deepStrictEqual(T.BOS_ICERIK, { baslik: '', sirket: '', konum: '', link: '', kaynak: '', konum_kademe: null });
   for (const kalan of ['ilan_anahtari', 'durum', 'bulundu', 'user_id']) assert.ok(!(kalan in T.BOS_ICERIK), kalan);
 });
 
 test('T2: sorgular: once 90 gun silme, sonra 30 gun bosaltma (iki gecis), hata kayitlari, izin arsivi', async () => {
-  const sb = sahteSb([{ data: [{ id: 1 }, { id: 2 }] }, { data: [{ id: 3 }] }, { data: [{ id: 4 }] }, { data: [{ id: 5 }] }, { data: [] }]);
+  const sb = sahteSb([{ data: [{ id: 1 }, { id: 2 }] }, { data: [{ id: 3 }] }, { data: [{ id: 4 }] }, { data: [{ id: 5 }] }, { data: [] }, { data: [{ id: 6 }, { id: 7 }, { id: 8 }] }]);
   const s = await T.turCalistir({ sb, simdi: SIMDI, log: sessiz });
-  assert.deepStrictEqual(s, { ilanSilindi: 2, ilanBosaltildi: 2, hataSilindi: 1, izinSilindi: 0 });
-  const [sil90, bos1, bos2, hata, izin] = sb.kayit;
+  assert.deepStrictEqual(s, { ilanSilindi: 2, ilanBosaltildi: 2, hataSilindi: 1, izinSilindi: 0, olaySilindi: 3 });
+  const [sil90, bos1, bos2, hata, izin, olay] = sb.kayit;
   assert.strictEqual(sil90.tablo, 'ia_bot_ilanlari');
   assert.deepStrictEqual(sil90.adimlar, [['delete'], ['lt', 'bulundu', '2026-07-05T12:00:00.000Z'], ['select', 'id']]);
   for (const [k, alan] of [[bos1, 'baslik'], [bos2, 'link']]) {
@@ -61,8 +62,10 @@ test('T2: sorgular: once 90 gun silme, sonra 30 gun bosaltma (iki gecis), hata k
   assert.deepStrictEqual(hata.adimlar, [['delete'], ['or', 'last_seen.lt.2026-07-05T12:00:00.000Z,and(last_seen.is.null,created_at.lt.2026-07-05T12:00:00.000Z)'], ['select', 'id']]);
   assert.strictEqual(izin.tablo, 'ia_izin_arsivi');
   assert.deepStrictEqual(izin.adimlar, [['delete'], ['lt', 'sil_sonra', '2026-10-03T12:00:00.000Z'], ['select', 'id']]);
+  assert.strictEqual(olay.tablo, 'ia_olaylar');
+  assert.deepStrictEqual(olay.adimlar, [['delete'], ['lt', 'created_at', '2026-04-06T12:00:00.000Z'], ['select', 'id']]);
   // Baska hicbir tabloya dokunulmaz (basvurular, yorumlar, hesaplar...)
-  assert.deepStrictEqual([...new Set(sb.kayit.map((k) => k.tablo))].sort(), ['ia_bot_ilanlari', 'ia_errors', 'ia_izin_arsivi']);
+  assert.deepStrictEqual([...new Set(sb.kayit.map((k) => k.tablo))].sort(), ['ia_bot_ilanlari', 'ia_errors', 'ia_izin_arsivi', 'ia_olaylar']);
 });
 
 test('T3: bir adimin hatasi digerlerini durdurmaz; basarisiz adim null', async () => {
@@ -70,8 +73,8 @@ test('T3: bir adimin hatasi digerlerini durdurmaz; basarisiz adim null', async (
   const log = { info() {}, error: (m) => hatalar.push(m) };
   const sb = sahteSb([{ data: null, error: { message: 'kilit' } }, new Error('ag'), { data: [{ id: 1 }] }, { data: [{ id: 2 }] }, { data: [{ id: 3 }, { id: 4 }] }]);
   const s = await T.turCalistir({ sb, simdi: SIMDI, log });
-  assert.deepStrictEqual(s, { ilanSilindi: null, ilanBosaltildi: null, hataSilindi: 1, izinSilindi: 2 });
-  assert.strictEqual(sb.kayit.length, 5, 'adimlar atlandi');
+  assert.deepStrictEqual(s, { ilanSilindi: null, ilanBosaltildi: null, hataSilindi: 1, izinSilindi: 2, olaySilindi: 0 });
+  assert.strictEqual(sb.kayit.length, 6, 'adimlar atlandi');
   assert.strictEqual(hatalar.length, 2);
   assert.ok(hatalar.every((m) => /^\[temizlik\] /.test(m)));
 });
@@ -80,7 +83,7 @@ test('T4: log yalnizca sayilar', async () => {
   const kayit = [];
   await T.turCalistir({ sb: sahteSb([{ data: [{ id: 'a', baslik: 'Gizli' }] }]), simdi: SIMDI, log: { info: (o, m) => kayit.push([o, m]), error() {} } });
   assert.strictEqual(kayit.length, 1);
-  assert.deepStrictEqual(Object.keys(kayit[0][0]).sort(), ['hataSilindi', 'ilanBosaltildi', 'ilanSilindi', 'izinSilindi']);
+  assert.deepStrictEqual(Object.keys(kayit[0][0]).sort(), ['hataSilindi', 'ilanBosaltildi', 'ilanSilindi', 'izinSilindi', 'olaySilindi']);
   for (const v of Object.values(kayit[0][0])) assert.ok(v === null || Number.isInteger(v));
 });
 
