@@ -119,13 +119,15 @@ async function uygulama(kullanici) {
   } };
 }
 const TARAYICI = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0 Safari/537.36';
-const gonder = (app, payload, ek = {}) => app.inject({ method: 'POST', url: '/api/v1/olay', headers: { 'content-type': 'text/plain', 'user-agent': TARAYICI, ...ek }, payload });
+const KOKEN = 'https://www.placedai.app';
+const gonder = (app, payload, ek = {}) => app.inject({ method: 'POST', url: '/api/v1/olay', headers: { 'content-type': 'text/plain', 'user-agent': TARAYICI, origin: KOKEN, 'x-forwarded-for': '203.0.113.7', ...ek }, payload });
 
 test('OL2: kayit oncesi olaylar kisiye baglanmaz; masaustu_ilgi yalnizca girisle ve kisiye bagli', async () => {
   const kisi = { id: UID, app_metadata: { plan: 'free' }, created_at: new Date().toISOString() };
   const g = await uygulama(kisi);
   try {
     assert.strictEqual((await gonder(g.app, JSON.stringify({ olay: 'ana_sayfa', sayfa: '/' }))).statusCode, 204);
+    assert.strictEqual((await gonder(g.app, JSON.stringify({ olay: 'masaustu_ilgi', ayrinti: 'dashboard' }))).statusCode, 204);
     assert.strictEqual((await gonder(g.app, JSON.stringify({ olay: 'masaustu_ilgi', ayrinti: 'dashboard' }))).statusCode, 204);
     await bekle();
     assert.deepStrictEqual(g.sb.yazilan.map((y) => [y.satir.olay, y.satir.user_id, y.satir.plan]), [['ana_sayfa', null, null], ['masaustu_ilgi', UID, 'free']]);
@@ -149,11 +151,10 @@ test('OL3: bot sayilmaz, hiz siniri, gecersiz govde 400, JSON da kabul', async (
     assert.strictEqual(g.sb.yazilan.length, 0, 'bot sayildi');
     assert.strictEqual((await gonder(g.app, 'bozuk')).statusCode, 400);
     assert.strictEqual((await gonder(g.app, JSON.stringify({ olay: 'satin_alma' }))).statusCode, 400);
-    const j = await g.app.inject({ method: 'POST', url: '/api/v1/olay', headers: { 'user-agent': TARAYICI }, payload: { olay: 'kayit_sayfasi', sayfa: '/signup' } });
+    const j = await g.app.inject({ method: 'POST', url: '/api/v1/olay', headers: { 'user-agent': TARAYICI, origin: KOKEN }, payload: { olay: 'kayit_sayfasi', sayfa: '/signup' } });
     assert.strictEqual(j.statusCode, 204);
-    for (let i = 0; i < 40; i++) await gonder(g.app, JSON.stringify({ olay: 'ana_sayfa' }));
     await bekle();
-    assert.ok(g.sb.yazilan.length <= 30, `hiz siniri calismadi (${g.sb.yazilan.length})`);
+    assert.strictEqual(g.sb.yazilan.length, 1, 'JSON govde yazilmadi');
   } finally { await g.bitir(); }
 });
 
@@ -165,12 +166,175 @@ test('OL7: baglanti noktalari ve gizlilik', () => {
   assert.match(akis, /require\('\.\.\/lib\/olay'\)\.ilkCanli\(/, '/stream ilk canli olcmuyor');
   assert.ok(!/await require\('\.\.\/lib\/olay'\)\.ilkCanli/.test(aid), 'ilk canli cevabi bekletiyor');
   const bil = fs.readFileSync(path.join(__dirname, 'routes', 'billing.js'), 'utf8');
-  assert.match(bil, /olay: 'odeme_basladi', ayrinti: wanted/);
-  assert.match(bil, /olay: 'satin_alma', ayrinti: plan/);
+  assert.match(bil, /if \(session\.livemode === true\) \{\s*require\('\.\.\/lib\/olay'\)\.olayYaz\(getSupabase\(\), \{ olay: 'odeme_basladi', ayrinti: wanted, user, disKimlik: session\.id/);
+  // satin_alma YALNIZCA odeme oturumu olaylarinda yazilir; abonelik / fatura olaylari sayim yapmaz
+  const satinYerleri = [...bil.matchAll(/olay: 'satin_alma'/g)].length;
+  assert.strictEqual(satinYerleri, 2, 'satin_alma baska bir Stripe olayinda da yaziliyor');
+  for (const m of bil.matchAll(/olay: 'satin_alma'[^}]*\}[^}]*disKimlik: s\.id/g)) assert.ok(m);
+  assert.strictEqual([...bil.matchAll(/disKimlik: s\.id/g)].length, 2);
   const rota = fs.readFileSync(path.join(__dirname, 'routes', 'olay.js'), 'utf8');
   const lib = fs.readFileSync(path.join(__dirname, 'lib', 'olay.js'), 'utf8');
   // Satira giden alanlar yalnizca bunlar: IP / UA / e-posta yazilmaz.
-  assert.match(lib, /insert\(\{\s*olay,\s*ayrinti: temizAyrinti\(ayrinti\),\s*sayfa:\s+temizSayfa\(sayfa\),\s*plan:\s+planOf\(user\),\s*user_id: user && user\.id \? user\.id : null,\s*\}\)/);
+  const satir = lib.slice(lib.indexOf('const satir = {'), lib.indexOf("sb.from('ia_olaylar').insert(satir)"));
+  for (const alan of ['olay', 'ayrinti', 'sayfa', 'plan', 'user_id', 'dis_kimlik']) assert.ok(satir.includes(alan), alan);
+  assert.ok(!/\bip\b|user_agent|email/i.test(satir), 'satira IP/UA/e-posta giriyor');
   assert.ok(!/request\.ip[^)]*olayYaz|ip:\s*request\.ip/.test(rota), 'IP yaziliyor');
   assert.strictEqual(require('./lib/temizlik').OLAY_GUN, O.SAKLAMA_GUN);
+});
+
+
+// ── K112b: kotuye kullanima karsi katmanlar ─────────────────────────────────
+test('OL8: koken kontrolu (Origin, yoksa Referer); izinsiz kaynaktan yazilmaz', async () => {
+  const g = await uygulama(null);
+  try {
+    await gonder(g.app, JSON.stringify({ olay: 'ana_sayfa', sayfa: '/' }), { origin: 'https://kotu.example' });
+    await gonder(g.app, JSON.stringify({ olay: 'ana_sayfa', sayfa: '/' }), { origin: '' });
+    await gonder(g.app, JSON.stringify({ olay: 'ana_sayfa', sayfa: '/' }), { origin: 'http://localhost:3000' });
+    await bekle();
+    assert.strictEqual(g.sb.yazilan.length, 0, 'izinsiz koken yazildi');
+    const r = await g.app.inject({ method: 'POST', url: '/api/v1/olay', headers: { 'content-type': 'text/plain', 'user-agent': TARAYICI, referer: 'https://placedai.app/signup?plan=pro', 'x-forwarded-for': '203.0.113.8' }, payload: JSON.stringify({ olay: 'kayit_sayfasi', sayfa: '/signup' }) });
+    assert.strictEqual(r.statusCode, 204);
+    await bekle();
+    assert.strictEqual(g.sb.yazilan.length, 1, 'Referer yedegi calismadi');
+  } finally { await g.bitir(); }
+});
+
+test('OL9: tekrar engeli (10 dk) ve IP basina dakika/saat siniri', async () => {
+  const g = await uygulama(null);
+  try {
+    for (let i = 0; i < 5; i++) await gonder(g.app, JSON.stringify({ olay: 'ana_sayfa', sayfa: '/' }));
+    await bekle();
+    assert.strictEqual(g.sb.yazilan.length, 1, 'ayni olay tekrar sayildi');
+    // farkli sayfalarla dakika siniri (20)
+    for (let i = 0; i < 40; i++) await gonder(g.app, JSON.stringify({ olay: 'ana_sayfa', sayfa: `/p${i}` }), { 'x-forwarded-for': '198.51.100.1' });
+    await bekle();
+    const birIp = g.sb.yazilan.length - 1;
+    assert.ok(birIp <= 20, `dakika siniri calismadi (${birIp})`);
+    // baska IP etkilenmez
+    await gonder(g.app, JSON.stringify({ olay: 'ana_sayfa', sayfa: '/x' }), { 'x-forwarded-for': '198.51.100.2' });
+    await bekle();
+    assert.strictEqual(g.sb.yazilan.length, birIp + 2);
+  } finally { await g.bitir(); }
+});
+
+test('OL10: istemci IP X-Forwarded-For en sagdan; uydurulmus sol girdiler siniri asamaz', async () => {
+  const rota = require('./routes/olay');
+  assert.strictEqual(rota._istemciIp({ headers: { 'x-forwarded-for': '1.1.1.1, 9.9.9.9' }, ip: '10.0.0.1' }), '9.9.9.9');
+  assert.strictEqual(rota._istemciIp({ headers: {}, ip: '10.0.0.1' }), '10.0.0.1');
+  const g = await uygulama(null);
+  try {
+    for (let i = 0; i < 30; i++) await gonder(g.app, JSON.stringify({ olay: 'ana_sayfa', sayfa: `/u${i}` }), { 'x-forwarded-for': `10.0.${i}.1, 198.51.100.9` });
+    await bekle();
+    assert.ok(g.sb.yazilan.length <= 20, `sahte XFF siniri asti (${g.sb.yazilan.length})`);
+  } finally { await g.bitir(); }
+});
+
+test('OL11: gunluk anonim tavan; asilinca o gun yazilmaz', async () => {
+  const g = await uygulama(null);
+  const rota = require('./routes/olay');
+  rota._ayarla({ tavan: 3 });
+  try {
+    for (let i = 0; i < 6; i++) await gonder(g.app, JSON.stringify({ olay: 'ana_sayfa', sayfa: `/t${i}` }), { 'x-forwarded-for': `192.0.2.${i}` });
+    await bekle();
+    assert.strictEqual(g.sb.yazilan.length, 3);
+  } finally { rota._ayarla({ tavan: 20000 }); await g.bitir(); }
+});
+
+test('OL12: IP hicbir yerde ham durmaz (bellek dahil)', async () => {
+  const g = await uygulama(null);
+  const rota = require('./routes/olay');
+  try {
+    await gonder(g.app, JSON.stringify({ olay: 'ana_sayfa', sayfa: '/' }), { 'x-forwarded-for': '203.0.113.77' });
+    await bekle();
+    const durum = JSON.stringify(rota._durum());
+    assert.ok(!durum.includes('203.0.113.77'), 'ham IP bellekte');
+    assert.ok(!JSON.stringify(g.sb.yazilan).includes('203.0.113'), 'IP satira yazildi');
+  } finally { await g.bitir(); }
+});
+
+// ── K112b: Stripe webhook, imzali sahte bildirim (gercek odeme YOK) ─────────
+async function webhookUygulamasi() {
+  const SIR = 'whsec_test_placedai';
+  const eskiEnv = { ...process.env };
+  Object.assign(process.env, { STRIPE_SECRET_KEY: 'sk_test_sahte', STRIPE_WEBHOOK_SECRET: SIR, SUPABASE_URL: 'https://sahte.supabase.co', SUPABASE_SERVICE_ROLE_KEY: 'sahte' });
+  const olaylar = [];       // ia_olaylar satirlari (dis_kimlik benzersiz)
+  const planlar = [];
+  const sahteSb = {
+    auth: { admin: {
+      getUserById: async () => ({ data: { user: { app_metadata: {} } }, error: null }),
+      updateUserById: async (id, a) => { planlar.push([id, a.app_metadata.plan]); return { error: null }; },
+    } },
+    from(tablo) {
+      return { insert: async (satir) => {
+        if (tablo !== 'ia_olaylar') return { error: null };
+        if (satir.dis_kimlik && olaylar.some((o) => o.dis_kimlik === satir.dis_kimlik)) return { error: { code: '23505', message: 'dup' } };
+        olaylar.push(satir); return { error: null };
+      } };
+    },
+  };
+  const yolS = require.resolve('@supabase/supabase-js');
+  const eskiS = require.cache[yolS];
+  require.cache[yolS] = { id: yolS, filename: yolS, loaded: true, exports: { createClient: () => sahteSb } };
+  delete require.cache[require.resolve('./routes/billing')];
+  const app = require('fastify')({ logger: false });
+  await app.register(require('./routes/billing'), { prefix: '/api/v1/billing' });
+  await app.ready();
+  const Stripe = require('stripe');
+  const stripe = new Stripe('sk_test_sahte');
+  const gonderOlay = (olay) => {
+    const govde = JSON.stringify(olay);
+    const imza = stripe.webhooks.generateTestHeaderString({ payload: govde, secret: SIR });
+    return app.inject({ method: 'POST', url: '/api/v1/billing/webhook', headers: { 'content-type': 'application/json', 'stripe-signature': imza }, payload: govde });
+  };
+  return { app, olaylar, planlar, gonderOlay, bitir: async () => {
+    await app.close();
+    if (eskiS) require.cache[yolS] = eskiS; else delete require.cache[yolS];
+    delete require.cache[require.resolve('./routes/billing')];
+    process.env = eskiEnv;
+  } };
+}
+const oturum = (id, ek = {}) => ({ id: 'evt_' + Math.random().toString(36).slice(2, 10), object: 'event', type: 'checkout.session.completed', livemode: true,
+  data: { object: { id, object: 'checkout.session', client_reference_id: UID, customer: 'cus_1', subscription: null, payment_status: 'paid', ...ek } }, ...(ek.__ust || {}) });
+
+test('OL13: Stripe tekrar bildirimi ve ayni odemenin farkli olaylari CIFT SAYILMAZ; yalnizca canli + odenmis', async () => {
+  const w = await webhookUygulamasi();
+  try {
+    const ilk = oturum('cs_live_A1');
+    assert.strictEqual((await w.gonderOlay(ilk)).statusCode, 200);
+    assert.strictEqual((await w.gonderOlay(ilk)).statusCode, 200, 'tekrar bildirim');                  // ayni event tekrar
+    assert.strictEqual((await w.gonderOlay({ ...oturum('cs_live_A1'), id: 'evt_baska' })).statusCode, 200);  // ayni odeme, farkli event
+    const gecikmeli = { ...oturum('cs_live_A1'), type: 'checkout.session.async_payment_succeeded' };
+    assert.strictEqual((await w.gonderOlay(gecikmeli)).statusCode, 200);                               // ayni odeme, baska olay turu
+    await bekle();
+    assert.strictEqual(w.olaylar.filter((o) => o.olay === 'satin_alma').length, 1, 'ayni odeme birden fazla sayildi');
+    assert.strictEqual(w.olaylar[0].dis_kimlik, 'cs_live_A1');
+    // plan atamasi her bildirimde calismaya devam ediyor (davranis degismedi)
+    assert.ok(w.planlar.length >= 3);
+
+    // test modu, odenmemis ve %100 indirimli: satin alma sayilmaz
+    await w.gonderOlay({ ...oturum('cs_test_B1'), livemode: false });
+    await w.gonderOlay(oturum('cs_live_C1', { payment_status: 'unpaid' }));
+    await w.gonderOlay(oturum('cs_live_D1', { payment_status: 'no_payment_required' }));
+    await bekle();
+    assert.strictEqual(w.olaylar.filter((o) => o.olay === 'satin_alma').length, 1);
+
+    // ikinci gercek odeme sayilir
+    await w.gonderOlay(oturum('cs_live_E1'));
+    await bekle();
+    assert.strictEqual(w.olaylar.filter((o) => o.olay === 'satin_alma').length, 2);
+  } finally { await w.bitir(); }
+});
+
+test('OL14: imzasiz ya da sahte imzali webhook hicbir sey yazmaz', async () => {
+  const w = await webhookUygulamasi();
+  try {
+    const govde = JSON.stringify(oturum('cs_live_Z9'));
+    const r1 = await w.app.inject({ method: 'POST', url: '/api/v1/billing/webhook', headers: { 'content-type': 'application/json' }, payload: govde });
+    const r2 = await w.app.inject({ method: 'POST', url: '/api/v1/billing/webhook', headers: { 'content-type': 'application/json', 'stripe-signature': 't=1,v1=deadbeef' }, payload: govde });
+    assert.strictEqual(r1.statusCode, 400);
+    assert.strictEqual(r2.statusCode, 400);
+    await bekle();
+    assert.strictEqual(w.olaylar.length, 0);
+    assert.strictEqual(w.planlar.length, 0);
+  } finally { await w.bitir(); }
 });

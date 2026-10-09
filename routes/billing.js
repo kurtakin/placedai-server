@@ -211,8 +211,11 @@ async function billingRoutes(fastify) {
         cancel_url:  `${APP_URL}/#pricing`,
       });
 
-      // Olcum (K112): odeme sayfasi acildi. Beklenmez, firlatmaz.
-      require('../lib/olay').olayYaz(getSupabase(), { olay: 'odeme_basladi', ayrinti: wanted, user, log: fastify.log });
+      // Olcum (K112b): odeme sayfasi acildi. Yalnizca canli; oturum basina bir.
+      // Beklenmez, firlatmaz.
+      if (session.livemode === true) {
+        require('../lib/olay').olayYaz(getSupabase(), { olay: 'odeme_basladi', ayrinti: wanted, user, disKimlik: session.id, log: fastify.log });
+      }
       return { url: session.url };
     } catch (err) {
       fastify.log.error(err, '[billing] checkout');
@@ -332,8 +335,13 @@ async function billingRoutes(fastify) {
             facts  = billingFacts(sub);
           }
           await setUserPlan(userId, plan, { stripe_customer_id: s.customer, billing_anchor: anchor, ...facts });
-          // Olcum (K112): satin alma. olayYaz firlatmaz; odeme akisini etkilemez.
-          await require('../lib/olay').olayYaz(getSupabase(), { olay: 'satin_alma', ayrinti: plan, user: { id: userId, app_metadata: { plan } }, log: fastify.log });
+          // Olcum (K112b): yalnizca CANLI ve ODENMIS. Odeme oturumu (s.id) basina bir
+          // satir: Stripe ayni bildirimi tekrar gonderse de ikinci kez sayilmaz.
+          // %100 indirimli ilk ay ('no_payment_required') satin alma sayilmaz.
+          // olayYaz firlatmaz; plan atamasi ve odeme akisi etkilenmez.
+          if (event.livemode === true && s.payment_status === 'paid') {
+            await require('../lib/olay').olayYaz(getSupabase(), { olay: 'satin_alma', ayrinti: plan, user: { id: userId, app_metadata: { plan } }, disKimlik: s.id, log: fastify.log });
+          }
           // Arkadas daveti (K89): davet edilen ilk kez odedi; 14 gun sonra degerlendirilir.
           // Hatasi odemeyi/plani etkilemesin.
           if (sub) {
@@ -373,6 +381,18 @@ async function billingRoutes(fastify) {
             subscription_ends_at: null,
             subscription_cancels: false,
           });
+          break;
+        }
+
+        // Olcum (K112b): gecikmeli odeme yontemlerinde odeme sonradan tamamlanir.
+        // YALNIZCA olcum: plan atamasi abonelik olaylariyla zaten yapiliyor. Ayni
+        // odeme oturumu (s.id) checkout.session.completed'da sayildiysa yeniden sayilmaz.
+        case 'checkout.session.async_payment_succeeded': {
+          const s      = event.data.object;
+          const userId = s.client_reference_id || s.metadata?.user_id;
+          if (userId && event.livemode === true && s.payment_status === 'paid') {
+            await require('../lib/olay').olayYaz(getSupabase(), { olay: 'satin_alma', ayrinti: 'gecikmeli', user: { id: userId }, plan: null, disKimlik: s.id, log: fastify.log });
+          }
           break;
         }
 
