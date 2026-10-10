@@ -11,6 +11,8 @@
  *   OL5 kayit_tamam yalnizca son 7 gunde acilan hesap
  *   OL6 ilk_canli yalnizca olcumden sonra kayit olan, bir kez, surec basina bir sorgu
  *   OL7 IP, e-posta ya da UA hicbir satira yazilmaz; sunucuya baglanti noktalari yerinde
+ *   OL15 (K115b) kayit kaynagi: bes etiket, yalnizca kendi satiri, 24 saat, ilk yazilan kalir
+ *   OL16 (K115b) /kayit ucu kaynakla ve kaynaksiz; plan/odeme/guvenlik kodu etiketi okumaz
  */
 'use strict';
 
@@ -97,7 +99,7 @@ test('OL6: ilk_canli yalnizca olcumden sonra kayit olan, bir kez; surec basina t
 });
 
 // ── Rota ────────────────────────────────────────────────────────────────────
-async function uygulama(kullanici) {
+async function uygulama(kullanici, sb = sahteSb()) {
   const yolA = require.resolve('./middleware/auth');
   const gercek = require('./middleware/auth');
   const eskiA = require.cache[yolA];
@@ -106,7 +108,6 @@ async function uygulama(kullanici) {
     optionalAuth: async (q) => { q.user = kullanici; } } };
   delete require.cache[require.resolve('./routes/olay')];
   const rota = require('./routes/olay');
-  const sb = sahteSb();
   rota._testSb(sb);
   rota._sifirla();
   const app = require('fastify')({ logger: false });
@@ -344,4 +345,127 @@ test('OL14: imzasiz ya da sahte imzali webhook hicbir sey yazmaz', async () => {
     assert.strictEqual(w.olaylar.length, 0);
     assert.strictEqual(w.planlar.length, 0);
   } finally { await w.bitir(); }
+});
+
+
+// ── K115b: kayit kaynagi ────────────────────────────────────────────────────
+/** insert + update(...).eq().is().select() destekleyen, durum tutan sahte Supabase. */
+function durumluSb(satirlar = []) {
+  return {
+    satirlar,
+    from() {
+      return {
+        insert: async (s) => {
+          if (s.olay === 'kayit_tamam' && satirlar.some((r) => r.user_id === s.user_id && r.olay === 'kayit_tamam')) return { error: { code: '23505', message: 'tekrar' } };
+          satirlar.push({ ayrinti: null, ...s });
+          return { error: null };
+        },
+        update(deg) {
+          const f = [];
+          const z = {
+            eq: (k, v) => { f.push((r) => r[k] === v); return z; },
+            is: (k, v) => { f.push((r) => (r[k] ?? null) === v); return z; },
+            select: async () => {
+              const hit = satirlar.filter((r) => f.every((fn) => fn(r)));
+              hit.forEach((r) => Object.assign(r, deg));
+              return { data: hit.map((_, i) => ({ id: i })), error: null };
+            },
+          };
+          return z;
+        },
+      };
+    },
+  };
+}
+const UID2 = '99999999-2222-4333-8444-555555555555';
+
+test('OL15: kaynak etiketi: bes deger, yalnizca kendi satiri, 24 saat, ilk yazilan kalir', async () => {
+  assert.deepStrictEqual([...O.KAYIT_KAYNAKLARI].sort(), ['demo', 'direct', 'hero', 'other', 'pricing']);
+  const simdi = new Date('2026-10-10T12:00:00Z');
+  const yeni = { id: UID, created_at: '2026-10-10T11:00:00Z' };
+  const baska = { id: UID2, created_at: '2026-10-10T11:30:00Z' };
+  const sb = durumluSb([
+    { olay: 'kayit_tamam', user_id: UID, ayrinti: null },
+    { olay: 'kayit_tamam', user_id: UID2, ayrinti: null },
+    { olay: 'ilk_canli', user_id: UID, ayrinti: null },
+  ]);
+  assert.strictEqual(await O.kaynakEkle(sb, yeni, 'facebook', { simdi, log: sessiz }), false, 'listede olmayan deger');
+  assert.strictEqual(await O.kaynakEkle(sb, yeni, 'demo', { simdi, log: sessiz }), true);
+  assert.strictEqual(await O.kaynakEkle(sb, yeni, 'hero', { simdi, log: sessiz }), false, 'ilk etiket ezildi');
+  assert.deepStrictEqual(sb.satirlar.map((r) => [r.olay, r.user_id === UID ? 'A' : 'B', r.ayrinti]),
+    [['kayit_tamam', 'A', 'demo'], ['kayit_tamam', 'B', null], ['ilk_canli', 'A', null]], 'baska kullanici ya da baska olay degisti');
+  // 24 saatten eski hesap: etiket yazilamaz
+  assert.strictEqual(await O.kaynakEkle(sb, { ...baska, created_at: '2026-10-09T10:00:00Z' }, 'pricing', { simdi, log: sessiz }), false);
+  assert.strictEqual(await O.kaynakEkle(sb, { id: UID2 }, 'pricing', { simdi, log: sessiz }), false, 'olusma zamani yok');
+  assert.strictEqual(sb.satirlar[1].ayrinti, null);
+  // satir yoksa kayitTamam etiketle yazar; gecersiz etiket bos kalir
+  const bos = durumluSb();
+  assert.strictEqual(await O.kayitTamam(bos, baska, { simdi, log: sessiz, kaynak: 'pricing' }), true);
+  assert.strictEqual(bos.satirlar[0].ayrinti, 'pricing');
+  const bos2 = durumluSb();
+  await O.kayitTamam(bos2, baska, { simdi, log: sessiz, kaynak: '<script>' });
+  assert.strictEqual(bos2.satirlar[0].ayrinti, null);
+  // asla firlatmaz
+  const bozuk = { from() { throw new Error('ag'); } };
+  assert.strictEqual(await O.kaynakEkle(bozuk, yeni, 'demo', { simdi, log: sessiz }), false);
+});
+
+test('OL16: /kayit ucu kaynakla ve kaynaksiz; plan / odeme / guvenlik kodu etiketi okumaz', async () => {
+  const kisi = { id: UID, app_metadata: { plan: 'free' }, created_at: new Date(Date.now() - 60 * 1000).toISOString() };
+  // tetikleyici satiri yazmis; panel kaynakla geliyor (JSON)
+  const sb = durumluSb([{ olay: 'kayit_tamam', user_id: UID, ayrinti: null }]);
+  let g = await uygulama(kisi, sb);
+  try {
+    const r = await g.app.inject({ method: 'POST', url: '/api/v1/olay/kayit', headers: { 'content-type': 'application/json' }, payload: { kaynak: 'demo' } });
+    assert.strictEqual(r.statusCode, 204);
+    assert.strictEqual(sb.satirlar[0].ayrinti, 'demo');
+    // ikinci kez (yenileme, baska sekme): degismez
+    await g.app.inject({ method: 'POST', url: '/api/v1/olay/kayit', headers: { 'content-type': 'application/json' }, payload: { kaynak: 'pricing' } });
+    assert.strictEqual(sb.satirlar[0].ayrinti, 'demo');
+    assert.strictEqual(sb.satirlar.length, 1, 'ikinci kayit satiri');
+    // govdesiz eski cagri hala calisir; bozuk govde 204, hicbir sey yazmaz
+    assert.strictEqual((await g.app.inject({ method: 'POST', url: '/api/v1/olay/kayit' })).statusCode, 204);
+    assert.strictEqual((await g.app.inject({ method: 'POST', url: '/api/v1/olay/kayit', headers: { 'content-type': 'text/plain' }, payload: '{bozuk' })).statusCode, 204);
+    assert.strictEqual(sb.satirlar[0].ayrinti, 'demo');
+  } finally { await g.bitir(); }
+  // e-posta kaydi: etiket hesap bilgisinde; adres baska bir sey soylese de hesabinki gecer
+  const sb3 = durumluSb([{ olay: 'kayit_tamam', user_id: UID, ayrinti: null }]);
+  g = await uygulama({ ...kisi, user_metadata: { kayit_kaynagi: 'pricing' } }, sb3);
+  try {
+    await g.app.inject({ method: 'POST', url: '/api/v1/olay/kayit', headers: { 'content-type': 'application/json' }, payload: { kaynak: 'hero' } });
+    assert.strictEqual(sb3.satirlar[0].ayrinti, 'pricing');
+  } finally { await g.bitir(); }
+  // farkli cihaz: adres parametresi yok, panel govdesiz cagirir; etiket yine hesaptan gelir
+  const sb4 = durumluSb([{ olay: 'kayit_tamam', user_id: UID, ayrinti: null }]);
+  g = await uygulama({ ...kisi, user_metadata: { kayit_kaynagi: 'demo' } }, sb4);
+  try {
+    await g.app.inject({ method: 'POST', url: '/api/v1/olay/kayit' });
+    assert.strictEqual(sb4.satirlar[0].ayrinti, 'demo');
+  } finally { await g.bitir(); }
+  // hesap bilgisinde gecersiz deger: yazilmaz
+  const sb5 = durumluSb([{ olay: 'kayit_tamam', user_id: UID, ayrinti: null }]);
+  g = await uygulama({ ...kisi, user_metadata: { kayit_kaynagi: 'admin' } }, sb5);
+  try {
+    await g.app.inject({ method: 'POST', url: '/api/v1/olay/kayit', headers: { 'content-type': 'application/json' }, payload: { kaynak: 'demo' } });
+    assert.strictEqual(sb5.satirlar[0].ayrinti, null, 'gecersiz hesap etiketi yerine adres de yazilmamali');
+  } finally { await g.bitir(); }
+  // satir yoksa (tetikleyici yazamadi): kayit + etiket tek seferde
+  const sb2 = durumluSb();
+  g = await uygulama(kisi, sb2);
+  try {
+    await g.app.inject({ method: 'POST', url: '/api/v1/olay/kayit', headers: { 'content-type': 'text/plain' }, payload: JSON.stringify({ kaynak: 'hero' }) });
+    assert.deepStrictEqual(sb2.satirlar.map((r) => [r.olay, r.ayrinti]), [['kayit_tamam', 'hero']]);
+  } finally { await g.bitir(); }
+  // etiket yalnizca olcum dosyalarinda: plan, odeme, sinir, kimlik kodu okumaz
+  const okuyan = [];
+  const tara = (d) => { for (const a of fs.readdirSync(d, { withFileTypes: true })) {
+    const y = path.join(d, a.name);
+    if (a.isDirectory()) { if (!['node_modules', '.git'].includes(a.name)) tara(y); }
+    else if (a.name.endsWith('.js') && !a.name.endsWith('.test.js') && /kaynakEkle|KAYIT_KAYNAKLARI|govde\.kaynak|kaynakGecerli|kayit_kaynagi/.test(fs.readFileSync(y, 'utf8'))) okuyan.push(path.relative(__dirname, y).replace(/\\/g, '/'));
+  } };
+  tara(__dirname);
+  assert.deepStrictEqual(okuyan.sort(), ['lib/olay.js', 'routes/olay.js'], 'kaynak etiketi baska kodda kullaniliyor');
+  for (const f of ['routes/billing.js', 'lib/plans.js', 'middleware/auth.js']) {
+    if (fs.existsSync(path.join(__dirname, f))) assert.ok(!/\.kaynak\b|'kaynak'|kaynakEkle|KAYIT_KAYNAKLARI|kayit_kaynagi/.test(fs.readFileSync(path.join(__dirname, f), 'utf8').replace(/\/\*[\s\S]*?\*\/|\/\/.*$/gm, '')), `${f} kaynak etiketini okuyor`);
+  }
 });

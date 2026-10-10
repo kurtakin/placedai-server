@@ -8,6 +8,10 @@
  *   POST /kayit  → giris yapmis kullanici: hesap son 7 gunde acildiysa bir kez
  *                  'kayit_tamam'. Asil kayit olcumu artik Supabase tetikleyicisinde
  *                  (k112b SQL); bu uc yedek olarak kaliyor, cift sayim olmaz.
+ *                  K115b: hesap bilgisinde (user_metadata.kayit_kaynagi) ya da
+ *                  govdede { kaynak } etiket varsa (hero/demo/pricing/other/direct)
+ *                  KENDI kayit satirina bir kez yazilir; hesap 24 saatten eskiyse
+ *                  ya da etiket zaten varsa yok sayilir. Yalnizca olcum etiketi.
  *
  * Kotuye kullanima karsi KATMANLAR (K112b; hicbiri tek basina guvenlik degil):
  *   1. Koken: Origin (yoksa Referer) placedai.app olmali. Tarayici disi
@@ -159,7 +163,16 @@ async function olayRoutes(fastify) {
   });
 
   fastify.post('/kayit', { preHandler: requireAuth, bodyLimit: 256 }, async (request, reply) => {
-    O.kayitTamam(sb(), request.user, { log: fastify.log });
+    let govde = request.body;
+    if (typeof govde === 'string') { try { govde = JSON.parse(govde); } catch { govde = null; } }
+    // Hesap bilgisindeki etiket (e-posta kaydinda yazilir) once gelir: hesaba
+    // ait oldugu kesin. Adresle gelen (Google ile kayit) yalnizca o yoksa.
+    const meta = request.user && request.user.user_metadata && request.user.user_metadata.kayit_kaynagi;
+    const adres = govde && typeof govde === 'object' && typeof govde.kaynak === 'string' ? govde.kaynak : null;
+    const kaynak = typeof meta === 'string' ? meta : adres;
+    // Once satir (tetikleyici yazmadiysa), sonra etiket. Beklenir ama hatada bile 204.
+    await O.kayitTamam(sb(), request.user, { log: fastify.log, kaynak });
+    if (kaynak) await O.kaynakEkle(sb(), request.user, kaynak, { log: fastify.log });
     return reply.code(204).send();
   });
 }
