@@ -1,0 +1,245 @@
+{
+ "not": "HAYALI kisiler ve sirketler. Kaynak: web sitesindeki CV ornekleri (resume-examples/ornekler.ts). Gercek kisi/sirket adi yok.",
+ "sahneler": [
+  {
+   "id": "genel",
+   "etiket": "Any role",
+   "soru": "Tell me about a challenge you overcame at work.",
+   "profil": {
+    "ad": "Samuel Grant",
+    "unvan": "Project Manager, PMP",
+    "yer": "Atlanta, GA",
+    "beceriler": "PMP, Agile and Scrum, Risk management, Budgeting, Stakeholder management, MS Project, Jira, Change management",
+    "cv": "PMP-certified project manager with 7 years delivering operations and IT projects. Known for clear plans, honest status reports and calm risk handling. Project Manager, Quellbrook Clinic Group (2021 to present): Delivered a $2.1M scheduling system rollout across 11 clinics on time and 4% under budget; Led a cross-functional team of 14 across IT, clinical and finance; Introduced a weekly risk log that surfaced issues 3 weeks earlier on average; Ran training for 300 staff with a 2-week stabilization period Project Coordinator, Southfork Construction Services (2018 to 2021): Coordinated schedules, vendors and permits for 6 commercial projects; Tracked budgets in Excel and flagged overruns to project leads; Prepared weekly client updates and meeting minutes; Set up a shared document system that ended version confusion"
+   },
+   "ilan": {
+    "rol": "Project Manager",
+    "sirket": "Riverquill Logistics",
+    "kidem": "mid",
+    "beceriler": [
+     "project management",
+     "PMP",
+     "Agile",
+     "Scrum",
+     "risk management",
+     "budget"
+    ],
+    "odak": [
+     "delivering projects on time",
+     "working across teams"
+    ]
+   },
+   "kaynak_ornek": "project-manager"
+  },
+  {
+   "id": "hemsire",
+   "etiket": "Nurse",
+   "soru": "How do you handle a patient who refuses care?",
+   "profil": {
+    "ad": "Maria Okafor",
+    "unvan": "Registered Nurse, Med-Surg and Telemetry",
+    "yer": "Phoenix, AZ",
+    "beceriler": "Telemetry, Med-Surg, BLS, ACLS, Epic EHR, Patient education, Charge nurse, Precepting",
+    "cv": "RN with 6 years in medical-surgical and telemetry units. BLS and ACLS certified, calm in high-acuity situations and known for clear patient education. Registered Nurse, Telemetry, Sagebrush Regional Medical Center (2021 to present): Care for 4 to 5 telemetry patients per shift, monitoring rhythms and escalating changes; Served as charge nurse for a 28-bed unit on rotating shifts; Led a fall-prevention huddle that helped the unit go 9 months without a fall; Precept new graduate nurses through their 12-week orientation Registered Nurse, Med-Surg, Mesa Valley Hospital (2018 to 2021): Managed care for 5 to 6 post-operative patients per shift; Educated patients and families on wound care and discharge plans; Documented accurately in Epic, with zero charting audit findings; Joined the unit practice council to update the pain reassessment protocol"
+   },
+   "ilan": {
+    "rol": "Registered Nurse, Medical-Surgical",
+    "sirket": "Alderpoint Health",
+    "kidem": "mid",
+    "beceriler": [
+     "Registered Nurse",
+     "RN",
+     "BSN",
+     "BLS",
+     "ACLS",
+     "telemetry"
+    ],
+    "odak": [
+     "patient safety",
+     "clear communication with patients and families"
+    ]
+   },
+   "kaynak_ornek": "registered-nurse"
+  },
+  {
+   "id": "yazilim",
+   "etiket": "Software engineer",
+   "soru": "Tell me about a bug that was hard to find.",
+   "profil": {
+    "ad": "Jordan Ellis",
+    "unvan": "Software Engineer, backend and APIs",
+    "yer": "Austin, TX",
+    "beceriler": "Python, Go, PostgreSQL, REST APIs, Docker, Kubernetes, CI/CD, AWS",
+    "cv": "Backend engineer with 5 years building APIs and data pipelines in Python and Go. Comfortable owning a service from design to on-call. Software Engineer II, Tallowbrook Payments (2022 to present): Rebuilt the refunds API in Go, cutting p95 latency from 820 ms to 140 ms; Led the move of 14 services to a shared CI pipeline, reducing average build time by 40%; Designed an idempotency layer that ended duplicate charges reported by support; Mentored two junior engineers through their first on-call rotations Software Engineer, Quarrystone Labs (2019 to 2022): Built a Python ETL job that replaced 6 manual reports for the finance team; Added contract tests to 9 internal APIs, catching breaking changes before release; Cut cloud spend for the analytics cluster by 22% by right-sizing instances; Wrote the onboarding guide used by every new backend hire"
+   },
+   "ilan": {
+    "rol": "Backend Software Engineer",
+    "sirket": "Northpeak Cloud",
+    "kidem": "mid",
+    "beceriler": [
+     "Python",
+     "Go",
+     "REST API",
+     "microservices",
+     "PostgreSQL",
+     "Docker"
+    ],
+    "odak": [
+     "reliable production systems",
+     "debugging and root-cause analysis"
+    ]
+   },
+   "kaynak_ornek": "software-engineer"
+  },
+  {
+   "id": "satis",
+   "etiket": "Sales",
+   "soru": "What do you do when a client says your price is too high?",
+   "profil": {
+    "ad": "Chris Delgado",
+    "unvan": "Account Executive, B2B SaaS",
+    "yer": "Denver, CO",
+    "beceriler": "HubSpot, Salesforce, Prospecting, Discovery calls, Demos, Negotiation, Forecasting, Account planning",
+    "cv": "B2B sales representative with 5 years selling software to mid-market companies. Hit or beat quota in 9 of the last 10 quarters. Account Executive, Pinegate Software (2021 to present): Closed $1.4M in new annual revenue in 2024, 118% of quota; Built pipeline through outbound calls, LinkedIn and partner referrals; Shortened the average sales cycle from 74 to 58 days with a clearer demo flow; Kept HubSpot records accurate, supporting reliable team forecasts Sales Development Representative, Redcliff Systems (2019 to 2021): Booked 25 qualified meetings a month on average for 3 account executives; Wrote outbound email sequences with a 9% reply rate; Promoted to account executive after 18 months; Researched target accounts to personalize first calls"
+   },
+   "ilan": {
+    "rol": "Account Executive",
+    "sirket": "Quillmark Office Supply",
+    "kidem": "mid",
+    "beceriler": [
+     "B2B sales",
+     "quota",
+     "pipeline",
+     "prospecting",
+     "CRM",
+     "Salesforce"
+    ],
+    "odak": [
+     "closing new business",
+     "handling objections"
+    ]
+   },
+   "kaynak_ornek": "sales-representative"
+  },
+  {
+   "id": "musteri",
+   "etiket": "Customer service",
+   "soru": "Tell me about a time you calmed an upset customer.",
+   "profil": {
+    "ad": "Daniel Brooks",
+    "unvan": "Customer Service Representative",
+    "yer": "Columbus, OH",
+    "beceriler": "Zendesk, Salesforce Service Cloud, Live chat, De-escalation, Billing support, Typing 70 wpm, Knowledge base writing, Bilingual English/Spanish",
+    "cv": "Customer service representative with 4 years of phone, chat and email support. Consistently above team targets for satisfaction and first-contact resolution. Customer Service Representative, Fernhill Home Insurance (2022 to present): Handle 60 to 70 calls and chats a day about policies, billing and claims; Keep a 94% customer satisfaction score against a team target of 88%; Resolve 82% of issues on first contact by learning the policy system in depth; Wrote 15 knowledge base answers that cut repeat questions for the team Customer Support Associate, Larkspur Online Outfitters (2020 to 2022): Answered email and chat for an online store during peak holiday seasons; Processed returns and exchanges in Zendesk and Shopify; Calmed and resolved escalated complaints, reducing manager handoffs; Trained 6 seasonal agents on tone and return policies"
+   },
+   "ilan": {
+    "rol": "Customer Service Representative",
+    "sirket": "Tidewell Telecom",
+    "kidem": "mid",
+    "beceriler": [
+     "customer service",
+     "call center",
+     "CSAT",
+     "first contact resolution",
+     "Zendesk",
+     "Salesforce"
+    ],
+    "odak": [
+     "first-contact resolution",
+     "calm, empathetic service"
+    ]
+   },
+   "kaynak_ornek": "customer-service-representative"
+  },
+  {
+   "id": "veri",
+   "etiket": "Data analyst",
+   "soru": "How do you explain data to people who are not technical?",
+   "profil": {
+    "ad": "Priya Nair",
+    "unvan": "Data Analyst, SQL and Power BI",
+    "yer": "Toronto, ON",
+    "beceriler": "SQL, Power BI, Excel, Python (pandas), A/B testing, Data cleaning, Forecasting, Stakeholder communication",
+    "cv": "Data analyst with 4 years turning sales and operations data into dashboards and decisions. Strong in SQL, Power BI and explaining numbers to non-analysts. Data Analyst, Cedarline Grocers (2022 to present): Built a Power BI sales dashboard used weekly by 40 store managers; Found a pricing error worth $180K a year by reconciling POS and ERP data in SQL; Automated a monthly KPI pack, saving the finance team 2 days per month; Ran an A/B test on promotions that lifted basket size by 6% Junior Analyst, Brightmere Logistics (2020 to 2022): Cleaned and merged shipment data from 3 systems into one reporting table; Built Excel models that forecast weekly volume within 5%; Created the first on-time delivery report, now a company KPI; Trained 12 coordinators to read and use the new reports"
+   },
+   "ilan": {
+    "rol": "Data Analyst",
+    "sirket": "Maplecrest Retail",
+    "kidem": "mid",
+    "beceriler": [
+     "SQL",
+     "Power BI",
+     "Tableau",
+     "Excel",
+     "data visualization",
+     "KPI"
+    ],
+    "odak": [
+     "turning data into decisions",
+     "explaining findings to non-technical teams"
+    ]
+   },
+   "kaynak_ornek": "data-analyst"
+  },
+  {
+   "id": "depo",
+   "etiket": "Warehouse",
+   "soru": "How do you stay accurate when the pace is fast?",
+   "profil": {
+    "ad": "Marcus Reed",
+    "unvan": "Warehouse Associate, forklift certified",
+    "yer": "Indianapolis, IN",
+    "beceriler": "Forklift, Pallet jack, RF scanners, Picking and packing, Receiving, Cycle counts, Safety procedures, WMS",
+    "cv": "Warehouse associate with 4 years in picking, packing and receiving. Forklift certified with a clean safety record and 99.8% picking accuracy. Warehouse Associate, Midfield Distribution Center (2022 to present): Pick and pack 180 orders per shift with 99.8% accuracy; Operate forklifts and pallet jacks safely, with zero incidents in 3 years; Receive and check inbound shipments against purchase orders; Train new hires on scanners and safety procedures Order Picker, Bluecreek Supply (2020 to 2022): Picked orders using RF scanners in a high-volume warehouse; Helped reorganize shelving that shortened pick paths; Completed cycle counts and reported discrepancies; Covered extra shifts during peak season"
+   },
+   "ilan": {
+    "rol": "Warehouse Associate",
+    "sirket": "Ridgefold Distribution",
+    "kidem": "mid",
+    "beceriler": [
+     "warehouse",
+     "forklift",
+     "picking",
+     "packing",
+     "shipping and receiving",
+     "RF scanner"
+    ],
+    "odak": [
+     "order accuracy",
+     "safety on the floor"
+    ]
+   },
+   "kaynak_ornek": "warehouse-associate"
+  },
+  {
+   "id": "ogretmen",
+   "etiket": "Teacher",
+   "soru": "How do you handle a student who keeps disrupting class?",
+   "profil": {
+    "ad": "Olivia Turner",
+    "unvan": "Middle School Science Teacher",
+    "yer": "Sacramento, CA",
+    "beceriler": "Lesson planning, Differentiated instruction, Classroom management, Formative assessment, Google Classroom, English learner support, Family communication, STEM",
+    "cv": "Certified science teacher with 6 years teaching grades 6 to 8. Builds hands-on lessons, differentiates for every learner and works closely with families. Science Teacher, Grades 7 and 8, Riverside Valley Middle School (2021 to present): Teach 5 science classes of 28 students each, including English learners; Raised the share of students meeting science standards from 54% to 67% in 2 years; Designed a lab-based unit on ecosystems adopted by the whole department; Lead the after-school robotics club of 20 students Science Teacher, Grade 6, Oak Hollow Elementary (2018 to 2021): Planned and taught science and math to 2 sixth-grade classes; Used formative assessments to adjust lessons each week; Held family conferences with 95% attendance; Mentored a student teacher for one semester"
+   },
+   "ilan": {
+    "rol": "Middle School Science Teacher",
+    "sirket": "Willowmere School District",
+    "kidem": "mid",
+    "beceriler": [
+     "teacher",
+     "teaching credential",
+     "lesson planning",
+     "classroom management",
+     "differentiated instruction",
+     "curriculum"
+    ],
+    "odak": [
+     "classroom management",
+     "student engagement"
+    ]
+   },
+   "kaynak_ornek": "teacher"
+  }
+ ]
+}

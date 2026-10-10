@@ -443,7 +443,9 @@ function parseCues(raw) {
     : text.split(/\r?\n/);
 
   return parts
-    .map(x => x.replace(/^\s*(?:[-*•]|\d+[.)])\s*/, '').trim())   // madde imi / numara
+    // Numara yalnizca arkasindan rakam gelmiyorsa: "1. Lead" -> "Lead", ama
+    // "99.8% accuracy" bozulmaz (K113b: eskiden "8% accuracy" oluyordu).
+    .map(x => x.replace(/^\s*(?:[-*•]|\d+[.)](?!\d))\s*/, '').trim())   // madde imi / numara
     .map(x => x.replace(/^["'`]|["'`]$/g, '').trim())
     .filter(x => x.length > 1 && x.length < 60)
     .slice(0, 3);

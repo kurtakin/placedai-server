@@ -1,0 +1,127 @@
+{
+ "uretildi": "2026-10-09T04:48:24.642Z",
+ "model": "claude-haiku (/stream) + canli /cues yolu",
+ "not": "Canli PlacedAI rotalariyla, hayali profiller icin bir kez uretildi. Elle duzenlenmedi.",
+ "sahneler": [
+  {
+   "id": "genel",
+   "etiket": "Any role",
+   "soru": "Tell me about a challenge you overcame at work.",
+   "ipuclari": [
+    "$2.1M scheduling system rollout",
+    "weekly risk log surfaced issues",
+    "4% under budget delivery"
+   ],
+   "cevap": "At Quellbrook, we were rolling out a major scheduling system across 11 clinics, and about halfway through we hit a critical issue where the clinical staff's workflow requirements didn't match what IT had built. I brought IT, clinical leadership, and finance together in a working session, got everyone on the same page about what we could adjust without blowing the budget, and we pivoted the implementation approach. That experience actually led me to introduce a weekly risk log that caught issues like that three weeks earlier on average, so we could solve them proactively instead of in crisis mode.",
+   "ipucu_kaynagi": "cues",
+   "aday": "Samuel Grant",
+   "rol": "Project Manager",
+   "uretildi": "2026-10-09T04:48:24.642Z"
+  },
+  {
+   "id": "hemsire",
+   "etiket": "Nurse",
+   "soru": "How do you handle a patient who refuses care?",
+   "ipuclari": [
+    "Active listening and empathy",
+    "Explaining risks clearly",
+    "Documenting refusal and offering support"
+   ],
+   "cevap": "I start by really listening to understand why they're refusing, because there's always a reason behind it, whether it's fear, pain, or something else. Once I know what's driving it, I explain the risks and benefits clearly, educate them on what we're recommending, and involve their family if they want me to. If they still refuse, I document everything and loop in the provider and care team so we can keep them safe and explore other options together.",
+   "ipucu_kaynagi": "cues",
+   "aday": "Maria Okafor",
+   "rol": "Registered Nurse, Medical-Surgical",
+   "uretildi": "2026-10-09T04:41:21.935Z"
+  },
+  {
+   "id": "yazilim",
+   "etiket": "Software engineer",
+   "soru": "Tell me about a bug that was hard to find.",
+   "ipuclari": [
+    "Idempotency layer duplicate charges",
+    "Race condition in refund flow",
+    "Eliminated support duplicate reports"
+   ],
+   "cevap": "I was working on the refunds API at Tallowbrook, and we started seeing intermittent duplicate charges slip through our idempotency layer, but only under high load. Turned out there was a race condition in how we were checking and writing the idempotency key to PostgreSQL, so two concurrent requests could both think they were the first one. I added more detailed logging and metrics around that critical section, reproduced it in staging, then fixed it with proper locking, which actually became the idempotency layer I built out later.",
+   "ipucu_kaynagi": "cues",
+   "aday": "Jordan Ellis",
+   "rol": "Backend Software Engineer",
+   "uretildi": "2026-10-09T04:41:21.935Z"
+  },
+  {
+   "id": "satis",
+   "etiket": "Sales",
+   "soru": "What do you do when a client says your price is too high?",
+   "ipuclari": [
+    "Reframe value over price",
+    "Discovery questions to uncover pain",
+    "118% quota attainment proof"
+   ],
+   "cevap": "I ask a lot of questions first, because usually when someone says price is too high, it means I haven't shown them enough value yet or I'm not talking to the right person. I'll dig into their actual problem, what they're trying to solve, and what it costs them if they do nothing, and that often shifts the conversation. If it's a real fit but budget is tight, I'll work with them on payment terms or scope to find something that works for both of us, but I'm not just cutting the price without understanding what we're solving for.",
+   "ipucu_kaynagi": "cues",
+   "aday": "Chris Delgado",
+   "rol": "Account Executive",
+   "uretildi": "2026-10-09T04:41:21.935Z"
+  },
+  {
+   "id": "musteri",
+   "etiket": "Customer service",
+   "soru": "Tell me about a time you calmed an upset customer.",
+   "ipuclari": [
+    "Empathetic listening and active validation",
+    "Specific billing dispute de-escalation",
+    "94% customer satisfaction score"
+   ],
+   "cevap": "I had a customer really upset about a billing charge on their policy, and they were frustrated because they'd already called once before. I started by acknowledging what they were frustrated about and let them explain the full situation without interrupting, which actually calmed them down right away. Then I dug into their account, found the issue was a system error on our end, walked them through the fix, and made sure they understood what happened so they wouldn't worry it'd happen again, all in one call.",
+   "ipucu_kaynagi": "cues",
+   "aday": "Daniel Brooks",
+   "rol": "Customer Service Representative",
+   "uretildi": "2026-10-09T04:41:21.935Z"
+  },
+  {
+   "id": "veri",
+   "etiket": "Data analyst",
+   "soru": "How do you explain data to people who are not technical?",
+   "ipuclari": [
+    "Storytelling over jargon",
+    "40 store managers dashboard",
+    "Clear business decisions"
+   ],
+   "cevap": "I focus on the story the data tells rather than the technical details. When I built the sales dashboard at Cedarline, I made it visual and straightforward so our store managers could spot trends at a glance without needing to understand the SQL behind it. I also learned early on to lead with the business impact, like when I found that pricing error, I explained it in terms of dollars saved rather than the data reconciliation process.",
+   "ipucu_kaynagi": "cues",
+   "aday": "Priya Nair",
+   "rol": "Data Analyst",
+   "uretildi": "2026-10-09T04:41:21.935Z"
+  },
+  {
+   "id": "depo",
+   "etiket": "Warehouse",
+   "soru": "How do you stay accurate when the pace is fast?",
+   "ipuclari": [
+    "99.8% picking accuracy",
+    "RF scanner verification",
+    "Zero safety incidents"
+   ],
+   "cevap": "I've learned that accuracy comes before speed, not after it. I use my RF scanner to verify every pick against the order, and I follow a consistent process so I'm not rushing through steps, even when the volume is high. That routine is what keeps me at my accuracy level, and it's kept me safe too.",
+   "ipucu_kaynagi": "cues",
+   "aday": "Marcus Reed",
+   "rol": "Warehouse Associate",
+   "uretildi": "2026-10-09T04:48:24.642Z"
+  },
+  {
+   "id": "ogretmen",
+   "etiket": "Teacher",
+   "soru": "How do you handle a student who keeps disrupting class?",
+   "ipuclari": [
+    "Private conversation first",
+    "Proximity and redirection",
+    "Restored classroom focus"
+   ],
+   "cevap": "I start by having a private conversation with the student to understand what's driving the disruption, because there's usually something underneath, whether it's not understanding the material, needing movement, or something happening outside school. Then I work with them to set clear expectations and often give them a specific role in class, like helping with lab setup or leading a small group discussion, so they feel invested. I also loop in families early to problem-solve together and make sure we're all on the same page about supporting that student.",
+   "ipucu_kaynagi": "cues",
+   "aday": "Olivia Turner",
+   "rol": "Middle School Science Teacher",
+   "uretildi": "2026-10-09T04:41:21.935Z"
+  }
+ ]
+}

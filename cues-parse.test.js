@@ -111,3 +111,17 @@ test('dusunme metni log da ayri isaretleniyor', () => {
   assert.match(src, /fastify\.log\.error\(/,
     'bos ipucu error seviyesinde loglanmiyor');
 });
+
+// ── K113b: ondalikli sayiyla baslayan ipucu ────────────────────────────────
+// Uretimde goruldu (9 Ekim 2026, demo uretimi): "99.8% picking accuracy"
+// ipucu "8% picking accuracy" olarak ekrana cikti; "99." liste numarasi sanildi.
+test('ondalikli sayiyla baslayan ipucu bozulmaz, liste numarasi yine silinir', () => {
+  assert.deepStrictEqual(parseCues('99.8% picking accuracy|RF scanner verification|Zero safety incidents'),
+    ['99.8% picking accuracy', 'RF scanner verification', 'Zero safety incidents']);
+  assert.deepStrictEqual(parseCues('4.5 star rating|2.1M rollout|3.2x faster builds'),
+    ['4.5 star rating', '2.1M rollout', '3.2x faster builds']);
+  assert.deepStrictEqual(parseCues('1. Lead with impact\n2) Give one number\n3.Close with the result'),
+    ['Lead with impact', 'Give one number', 'Close with the result']);
+  assert.deepStrictEqual(parseCues('1. 99.8% accuracy|- 14-person team|• $2.1M rollout'),
+    ['99.8% accuracy', '14-person team', '$2.1M rollout']);
+});
