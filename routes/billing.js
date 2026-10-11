@@ -124,6 +124,54 @@ async function setUserPlan(userId, plan, extra = {}) {
   return { ok: true };
 }
 
+/**
+ * K116: Stripe "bu ortamda boyle bir musteri yok" dedi mi?
+ *
+ * Test anahtarlariyla acilmis bir musteri kimligi (sandbox) canli anahtarla
+ * sorulunca Stripe 404 resource_missing ve "No such customer: ..." doner.
+ * YALNIZCA bu kesin cevap "yok" sayilir. Baglanti, hiz siniri, yetki, Stripe
+ * ici hata ya da baska herhangi bir hata "yok" DEGILDIR: o durumda yeni
+ * musteri acilmaz, hata oldugu gibi yukari gider.
+ */
+function musteriYokHatasi(err) {
+  return !!err
+    && err.type === 'StripeInvalidRequestError'
+    && err.statusCode === 404
+    && err.code === 'resource_missing'
+    && /^No such customer\b/.test(String(err.message || ''));
+}
+
+/**
+ * K116: Kayitli musteri kimligi su anki Stripe ortaminda kullanilabilir mi?
+ *   'var' -> oldugu gibi kullanilir (gercek canli musteri ve abonelikleri korunur)
+ *   'yok' -> Stripe kesin olarak "yok" dedi ya da kayit silinmis (deleted: true)
+ * Diger her hata FIRLATILIR.
+ */
+async function musteriDurumu(stripe, customerId) {
+  try {
+    const c = await stripe.customers.retrieve(customerId);
+    return c && c.deleted === true ? 'yok' : 'var';
+  } catch (err) {
+    if (musteriYokHatasi(err)) return 'yok';
+    throw err;
+  }
+}
+
+/**
+ * K116: Yalnizca odeme hesabi alanlarini yaz; PLANA DOKUNMA. setUserPlan'dan
+ * farki bu: istekteki (60 sn'ye kadar bayat olabilen) plan geri yazilmaz.
+ */
+async function musteriKaydet(userId, extra) {
+  const sb = getSupabase();
+  if (!sb || !userId) return { ok: false, reason: 'no_supabase_or_user' };
+  const { data: current, error: readErr } = await sb.auth.admin.getUserById(userId);
+  if (readErr) return { ok: false, error: readErr.message };
+  const existing = current?.user?.app_metadata || {};
+  const { error } = await sb.auth.admin.updateUserById(userId, { app_metadata: { ...existing, ...extra } });
+  if (error) return { ok: false, error: error.message };
+  return { ok: true };
+}
+
 /** Stripe müşteri kimliğinden kullanıcıyı bul (metadata yoksa son çare). */
 async function userIdFromCustomer(customerId) {
   const stripe = getStripe();
@@ -172,6 +220,26 @@ async function billingRoutes(fastify) {
     try {
       // Müşteriyi tekrar tekrar yaratmayalım: varsa app_metadata'daki kimliği kullan.
       let customerId = user.app_metadata?.stripe_customer_id || null;
+
+      // K116: sandbox'tan kalan musteri kimligi canli ortamda yoktur (ya da
+      // tersi). Yalnizca Stripe bunu KESIN soylerse yeni musteri acilir; eski
+      // kimlik iz icin saklanir. Ayni kullanici + eski kimlik + e-posta icin
+      // idempotency anahtari: cift tiklama ya da bayat oturumla tekrar gelen
+      // istek Stripe'ta IKINCI musteri acmaz, ayni musteriyi geri alir.
+      if (customerId && (await musteriDurumu(stripe, customerId)) === 'yok') {
+        const eski = customerId;
+        const customer = await stripe.customers.create(
+          { email: user.email, metadata: { user_id: user.id, onceki_musteri: eski } },
+          { idempotencyKey: `placedai-musteri-yenile:${user.id}:${eski}:${user.email || ''}` },
+        );
+        customerId = customer.id;
+        const kayit = await musteriKaydet(user.id, { stripe_customer_id: customerId, stripe_customer_id_onceki: eski });
+        fastify.log.warn({ user: user.id, eski, yeni: customerId, kaydedildi: kayit.ok },
+          '[billing] kayitli musteri bu Stripe ortaminda yok; yeni musteri acildi');
+        // Kayit basarisiz olsa bile odeme surer: webhook (checkout.session.completed)
+        // musteri kimligini zaten yazar; tekrar gelen istek ayni anahtarla ayni musteriyi alir.
+      }
+
       if (!customerId) {
         const customer = await stripe.customers.create({
           email:    user.email,
@@ -240,6 +308,12 @@ async function billingRoutes(fastify) {
       });
       return { url: session.url };
     } catch (err) {
+      // K116: kayitli musteri bu ortamda yok (or. sandbox'tan kalma). Burada
+      // hicbir sey olusturulmaz; kullaniciya "henuz abonelik yok" denir.
+      if (musteriYokHatasi(err)) {
+        fastify.log.warn({ user: request.user.id, customerId }, '[billing] portal: musteri bu Stripe ortaminda yok');
+        return reply.code(400).send({ error: 'You do not have a subscription yet.' });
+      }
       fastify.log.error(err, '[billing] portal');
       return reply.code(500).send({ error: err.message });
     }
@@ -426,3 +500,4 @@ async function billingRoutes(fastify) {
 }
 
 module.exports = billingRoutes;
+billingRoutes._musteriYokHatasi = musteriYokHatasi;   // K116 testleri icin
